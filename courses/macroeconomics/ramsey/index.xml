@@ -1,0 +1,902 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Overview | Èric Roca Fernández</title>
+    <link>https://eric-roca.github.io/courses/macroeconomics/ramsey/</link>
+      <atom:link href="https://eric-roca.github.io/courses/macroeconomics/ramsey/index.xml" rel="self" type="application/rss+xml" />
+    <description>Overview</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 11 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://eric-roca.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Overview</title>
+      <link>https://eric-roca.github.io/courses/macroeconomics/ramsey/</link>
+    </image>
+    
+    <item>
+      <title>Firms</title>
+      <link>https://eric-roca.github.io/courses/macroeconomics/ramsey/ramsey_firms/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/macroeconomics/ramsey/ramsey_firms/</guid>
+      <description>&lt;p&gt;We assume that a large number of identical firms populate the economy.
+Firms produce a single, homogeneous good using labour and capital.
+The production function $F(K,L)$ has the following properties:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Assumption R3:&lt;/strong&gt;
+The production function satisfies the following properties:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;R3.1&lt;/strong&gt; $F(K, L)$ is continuous and defined on $[0,+\infty)^{2},$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;R3.2&lt;/strong&gt; $F(K, L)$ has continuous derivatives of every required order on $(0,+\infty)^2,$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;R3.3&lt;/strong&gt; The production function is strictly increasing in both arguments:
+$F_{i}(K, L) &amp;gt; 0$,&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;R3.4&lt;/strong&gt; The production function is strictly concave:
+$$F_{ii}(K, L) &amp;lt; 0$$
+$$F_{ii}(K,L) F_{jj}(K, L) - F_{ij}(K, L)F_{ji}(K, L)&amp;gt;0$$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;R3.5&lt;/strong&gt; $F(K, L)$ is homogeneous of degree one.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;R3.6&lt;/strong&gt; $F(K, L) \label{eq:inada_firm}$ satisfies the Inada conditions:
+$$\lim_{K \rightarrow 0} F^\prime_{K}(K, L) = \lim_{L \rightarrow 0} F^\prime_{L}(K, L) = +\infty$$
+$$\lim_{K \rightarrow +\infty} F^\prime_{K}(K, L) = \lim_{L \rightarrow +\infty} F^\prime_{L}(K, L) = 0.$$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Assumption R3.4 implies that the  Hessian matrix of the production function is negative definite, hence the function is strictly concave.&lt;/p&gt;
+&lt;p&gt;Firms maximise real profits.
+Since there are many firms competing, in equilibrium they make exactly zero profits.
+Moreover, in equilibrium factors are paid their marginal productivity.
+Since the production function $F$ is homogeneous of degree, we can write it in &lt;em&gt;intensive&lt;/em&gt; terms:&lt;/p&gt;
+&lt;p&gt;$$f(k) \equiv F\left(\frac{K}{L},1\right), \quad k \equiv \frac{K}{L}. \tag{5, Prod. Func.}$$&lt;/p&gt;
+&lt;p&gt;Because markets are competitive, capital earns its marginal product $\partial F(K,L)/ \partial K$ or, equivalently, $f^{\prime}(k)$ in intensive terms. Thus, the real interest rate at time $t$ is:&lt;/p&gt;
+&lt;p&gt;$$r_{t} = f^{\prime}(k_{t}). \tag{6, Interest rate}$$&lt;/p&gt;
+&lt;p&gt;The marginal product of labour is given by $\partial F(K,L)/\partial L.$
+In intensive terms, it is equal to:&lt;/p&gt;
+&lt;p&gt;$$w_{t} = f(k) - f^{\prime}(k) k. \tag{7, Wage}$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: The &lt;a href=&#34;https://eric-roca.github.io/courses/mathematical_appendix/homogenous_functions/&#34;&gt;appendix&lt;/a&gt; details how to obtain the previous expressions.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Households</title>
+      <link>https://eric-roca.github.io/courses/macroeconomics/ramsey/ramsey_households/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/macroeconomics/ramsey/ramsey_households/</guid>
+      <description>&lt;p&gt;The economy is populated by a large number of identical households.
+Each household is composed of one individual who lives indefinitely.&lt;/p&gt;
+&lt;h2 id=&#34;utility-representation&#34;&gt;Utility representation&lt;/h2&gt;
+&lt;p&gt;Households  exhibit the following utility representation:
+$$U = \sum_{t=0}^{\infty} \beta^{t} u(c_{t}),\quad \beta \in (0,1) \tag{1, Utility}$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Assumption R1:&lt;/strong&gt;
+The utility function satisfies the following properties:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;R1.1&lt;/strong&gt; $u( c )$ is a continuous function defined over $[0,+\infty)$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;R1.2&lt;/strong&gt; It has continuous derivatives of any required order defined over $(0,+\infty)$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;R1.3&lt;/strong&gt; $u^{\prime}( c )&amp;gt;0$ and $u^{\prime \prime}( c )&amp;lt;0$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;R1.4&lt;/strong&gt; $u (c )$ satisfies the Inada conditions:
+$$\lim_{c \rightarrow 0}u^{\prime}( c ) = +\infty$$
+$$\lim_{c \rightarrow +\infty}u^{\prime}( c ) = 0$$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;households-budget-constraint&#34;&gt;Household&amp;rsquo;s budget constraint&lt;/h2&gt;
+&lt;p&gt;At each period, the household receives labour income $(w_t)$ which is used to save $(k_{t+1})$ and consume $(c_t)$.
+For simplicity, savings take the form of capital (instead of assets).
+Households lend capital to firms, obtaining a real interest $r_t$.
+However, capital is subject to a constant depreciation rate $\delta$.&lt;/p&gt;
+&lt;p&gt;Therefore, at each period of time, households face the following budget constraint:&lt;/p&gt;
+&lt;p&gt;$$c_{t} + k_{t+1} = w_{t} + r_{t} k_{t} + (1-\delta) k_{t}. \tag{2, Budget C.}$$&lt;/p&gt;
+&lt;p&gt;The left-hand side represents expenditures during the period $t$:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Consumption&lt;/li&gt;
+&lt;li&gt;Saving&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The right-hand side includes all sources of income:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Wages&lt;/li&gt;
+&lt;li&gt;Interests&lt;/li&gt;
+&lt;li&gt;Remaining capital after depreciation
+&lt;ul&gt;
+&lt;li&gt;Effectively, households can &lt;em&gt;eat&lt;/em&gt; capital&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; The budget constraint could have included &lt;em&gt;dividends&lt;/em&gt; $d_{t}$ on the right-hand side.
+However, as we shall see, firms operate in perfect competition, and make zero profits.&lt;/p&gt;
+&lt;h2 id=&#34;solving-the-households-problem&#34;&gt;Solving the household&amp;rsquo;s problem&lt;/h2&gt;
+&lt;p&gt;First, we assume that households have &lt;strong&gt;perfect foresight.&lt;/strong&gt;
+This means that a household is able to perfectly forecast all the future values of the relevant variables when deciding.
+For instance, at time $t$ the household is able to correctly compute $r_{t+1}$ and $w_{t+1}.$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Assumption R2:&lt;/strong&gt; Households have perfect foresight.&lt;/p&gt;
+&lt;p&gt;We are interested in finding the optimal consumption and savings path, this is, the one that yields maximum utility.
+Note that the problem is infinite, in the sense that we need to determine $c_{t}$ and $k_{t+1}$ for each and every period of time.
+From the perspective of a household, the intertemporal maximisation problem reads:&lt;/p&gt;
+&lt;p&gt;$$\begin{eqnarray}
+&amp;amp;\max_{c_{t}, k_{t+1}} \sum_{t=0}^{\infty} \beta^{t} u(c_{t}) \\\
+&amp;amp; c_{t} + k_{t+1}  = w_{t} + r_{t} k_{t} + (1- \delta) k_{t} \forall t\geq0.
+\end{eqnarray}$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;First, we write the Langrangian equation corresponding to the problem:&lt;/p&gt;
+&lt;p&gt;$$\mathcal{L} = \sum_{t=0}^{\infty} \beta^t u(c_{t}) + \sum_{t=0}^{\infty} \lambda_{t}(w_{t} + r_{t}k_{t} + (1-\delta)k_{t} - c_{t} - k_{t+1}).$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; this Lagrangian has infinite multipliers $\lambda_{t},$ one for each period.&lt;/p&gt;
+&lt;p&gt;At time $t$, households have &lt;em&gt;two&lt;/em&gt; decisions to make:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;How much to consume at $t$: $c_{t}$&lt;/li&gt;
+&lt;li&gt;How much to save at $t$: $k_{t+1}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Therefore, we derive the Lagrangian function with respect to $c_{t}$ and $k_{t+1}$.&lt;/p&gt;
+&lt;p&gt;$$\frac{\partial \mathcal{L}}{\partial c_{t}} = \beta^{t} u^{\prime}(c_{t}) - \lambda_{t}$$
+$$\frac{\partial \mathcal{L}}{\partial k_{t+1}} = - \lambda_{t} + \lambda_{t+1}(r_{t+1}+(1-\delta))$$&lt;/p&gt;
+&lt;p&gt;Setting both expressions equal to zero to obtain the maximum and combining them yields:&lt;/p&gt;
+&lt;p&gt;$$u^{\prime}(c_{t}) = \beta u^{\prime}(c_{t+1})(r_{t+1}+1-\delta). \tag{3, Euler Eq.}$$&lt;/p&gt;
+&lt;p&gt;This condition is called the &lt;strong&gt;Euler equation&lt;/strong&gt;.
+It tells us the optimal behaviour of the household.
+Rearranging the expression a little bit, we are left with a clearer expression linking present and future consumption:&lt;/p&gt;
+&lt;p&gt;$$\frac{u^{\prime}(c_{t})}{u^{\prime}(c_{t+1})} = \beta (r_{t+1} + 1 - \delta). \tag{3.1, Euler eq.}$$&lt;/p&gt;
+&lt;p&gt;Slightly more complex relationships can arise if the population grows or there is technological progress, see Romer, Chapter 2.&lt;/p&gt;
+&lt;h3 id=&#34;the-euler-equation&#34;&gt;The Euler equation&lt;/h3&gt;
+&lt;p&gt;The Euler equation often appears in optimisation problems: either using discrete or continuous time.
+The discrete-time version is relatively easier to interpret and obtain.
+In our case, the Euler equation relates the present and future marginal utilities of consumption.
+Imagine that the household decreased the amount consumed today, $c_{t}$ by an infinitesimally small amount $\Delta_{c_{t}}$.
+This causes a utility loss of $\Delta_{c_{t}} u^{\prime}(c_{t})$.
+Saving $\Delta_{c_{t}}$ until tomorrow and consuming all the proceedings generates a utility gain of $\Delta_{c_{t}}(r_{t+1} + 1 - \delta) u^{\prime}(c_{t+1})$.
+This gain &lt;em&gt;must&lt;/em&gt; be, of course, discounted using the rate $\beta$ to compare present-day equivalents.&lt;/p&gt;
+&lt;p&gt;Since the household is optimising, both the loss and the gain must be equal, otherwise, there would be an alternative consumption level that would maximise utility.
+Hence, putting everything together:
+$\Delta_{c_{t}} u^{\prime}(c_{t}) = \beta \Delta_{c_{t}} (r_{t+1} + 1 - \delta) u^{\prime}(c_{t+1}).$
+Cancel $\Delta_{c_{t}} &amp;gt; 0$ on both sides to obtain the Euler equation.
+Alternatively, we can interpret the Euler equation as stating that it is not optimal to slightly deviate from the optimal path, consuming slightly less for instance, and later returning to the optimal path.
+&lt;strong&gt;Remark:&lt;/strong&gt; the scheme we are putting in place here does not modify the intertemporal budget constraint because all the additional proceedings from savings are consumed.&lt;/p&gt;
+&lt;h3 id=&#34;the-transversality-condition&#34;&gt;The Transversality Condition&lt;/h3&gt;
+&lt;p&gt;The Euler equation is &lt;em&gt;not&lt;/em&gt; enough to fully determine the optimal sequence of consumption and savings.
+For the moment, trajectories where capital or consumption grows boundedless are feasible, but these should not be optimal.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;First, consider the economy continuously accumulates capital. In that case, consumption must decrease towards zero.
+Since we have assumed that $\lim_{c \rightarrow 0}u^{\prime}( c )=+\infty$ (Inada condition) a small increase in consumption raises utility by a large amount, this is, the marginal utility of consumption is very large.
+Hence, it cannot be optimal to accumulate capital and let consumption go to zero.&lt;/li&gt;
+&lt;li&gt;Alternatively, let savings vanish. This case typically implies that $k_{t}$ converges to zero in finite time (this is, for some $t&amp;lt;\infty$). The condition that capital must be positive prevents such cases.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; the preceding points are only descriptive of what the transversality condition implies.&lt;/p&gt;
+&lt;p&gt;In fact, that transversality condition reads as:&lt;/p&gt;
+&lt;p&gt;$$\lim_{t \rightarrow \infty} \beta^{t}u^{\prime}(c_{t})k_{t+1} = 0. \tag{4, Trans. Cond.}$$&lt;/p&gt;
+&lt;p&gt;In general, we will obtain a steady-state equilibrium in which the path of capital and consumption are bounded.
+This is, in the optimal solution, consumption $c_{t} \rightarrow c^{\star}$ and capital $k_{t} \rightarrow k^{\star}$.
+In this case, the fact that $\beta \in (0,1)$ ensures the validity of the transversality condition.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Intertemporal equilibrium</title>
+      <link>https://eric-roca.github.io/courses/macroeconomics/ramsey/ramsey_intertemporal_equilibrium/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/macroeconomics/ramsey/ramsey_intertemporal_equilibrium/</guid>
+      <description>&lt;p&gt;At the equilibrium, factors are paid their marginal productivity, thus:&lt;/p&gt;
+&lt;p&gt;$$r_{t} = f^{\prime}(k_{t})$$&lt;/p&gt;
+&lt;center&gt;and&lt;/center&gt;
+&lt;p&gt;$$w_{t} = f(k_{t}) - f^{\prime}(k_{t})k_{t}.$$&lt;/p&gt;
+&lt;h2 id=&#34;definition-of-intertemporal-equilibrium&#34;&gt;Definition of intertemporal equilibrium&lt;/h2&gt;
+&lt;p&gt;An intertemporal equilibrium with perfect foresight is &lt;strong&gt;a sequence&lt;/strong&gt; $(k_{t}, c_{t}) \in \mathbb{R}_{++}^{2}, t=0,\ldots,+\infty$, such that given $k_{0} &amp;gt; 0$, &lt;strong&gt;households and firms optimise&lt;/strong&gt;, &lt;strong&gt;markets clear&lt;/strong&gt;, and &lt;strong&gt;capital accumulation follows&lt;/strong&gt; $k_{t+1} = f(k_{t}) + (1-\delta)k_{t} -c_{t}.$
+Thus, all the following equations must be satisfied:&lt;/p&gt;
+&lt;p&gt;$$\left.
+\begin{eqnarray}
+u^{\prime}(c_{t}) = \beta (r_{t+1} + 1 - \delta) u^{\prime}(c_{t+1}) \\\
+k_{t+1} = f(k_{t}) + (1-\delta)k_{t} - c_{t} \\\
+w_{t} = f(k_{t}) - f^{\prime}(k_{t})k_{t} \\\
+r_{t} = f^{\prime}(k_{t}) \\\
+\lim_{t \rightarrow \infty} \beta^{t}u^{\prime}(c_{t})k_{t+1} = 0
+\end{eqnarray}
+\right\} \tag{8, Equilibrium} \label{eq:equilibrium}$$&lt;/p&gt;
+&lt;p&gt;The first equation in \ref{eq:equilibrium} is the Euler equation, which implies that households optimise.
+The second equation is the law of motion for capital: capital next period equals production net of consumption plus the remaining capital that has not depreciated.
+The third and fourth equations ensure that capital and labour markets clear.
+Finally, the transversality condition allows us to pick a non-explosive path.&lt;/p&gt;
+&lt;p&gt;After some substitutions, we can express the intertemporal equilibrium &amp;mdash;forgetting for a moment about the transversality condition&amp;mdash; as:&lt;/p&gt;
+&lt;p&gt;$$\left.
+\begin{eqnarray}
+&amp;amp; u^{\prime}(c_{t}) = \beta (f^{\prime}(k_{t+1}) + 1 - \delta) u^{\prime}(c_{t+1}) \\\
+&amp;amp; k_{t+1} = f(k) + (1-\delta)k_{t} - c_{t}.
+\end{eqnarray}
+\right\} \tag{8.1, Equilibrium} \label{eq:equilibrium2}$$&lt;/p&gt;
+&lt;p&gt;\ref{eq:equilibrium2} is a two-dimensional dynamic system with a unique predetermined state variable: $k_{t}.$
+To analyse it, we first compute its steady state and then check the dynamics.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Steady state</title>
+      <link>https://eric-roca.github.io/courses/macroeconomics/ramsey/ramsey_steady_state/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/macroeconomics/ramsey/ramsey_steady_state/</guid>
+      <description>&lt;h2 id=&#34;steady-states&#34;&gt;Steady states&lt;/h2&gt;
+&lt;p&gt;A steady state of an N-dimensional dynamic system is a configuration of the system variables such that the system remains unchanged over time.
+This is, upon reaching a steady state, the system remains there forever.
+Hence, if the system is given by:&lt;/p&gt;
+&lt;p&gt;$$\left.
+\begin{eqnarray}
+x^{1}_{t+1} &amp;amp; = f_{1}(x^{1}_{t}, \ldots, x^{N}_{t}) \\\
+\vdots &amp;amp; \\\
+x^{N}_{t+1} &amp;amp; = f_{N}(x^{1}_{t}, \ldots, x^{N}_{t})
+\end{eqnarray}
+\right\}$$&lt;/p&gt;
+&lt;p&gt;in a steady state we have that&lt;/p&gt;
+&lt;p&gt;$$\left.
+\begin{eqnarray}
+x^{1}_{t+1} &amp;amp; = x^{1}_{t} \\\
+\vdots &amp;amp; \\\
+x^{N}_{t+1} &amp;amp; = x^{N}_{t}.
+\end{eqnarray}
+\right\}$$&lt;/p&gt;
+&lt;p&gt;In many cases, a steady state is only reached at the limit when $t \rightarrow +\infty,$ unless we intentionally start the dynamics exactly at the steady state.
+Moreover, the steady state is often approached asymptotically: it is never fully reached, but we get infinitesimally close to it.
+Finally, steady states can be (asymptotically) stable or unstable.
+In the first sort, variables approach the steady-state level.
+In the second, the system &lt;em&gt;diverges&lt;/em&gt; from the steady state.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;the-steady-state-in-the-ramsey-model&#34;&gt;The steady state in the Ramsey model&lt;/h2&gt;
+&lt;p&gt;In our case, denote by $(\bar{k}, \bar{c}) \in \mathbb{R}_{+}^{2}$ the capital and consumption levels at the steady state.
+Then, a steady-state solution satisfies the following system of equations:&lt;/p&gt;
+&lt;p&gt;$$\left.
+\begin{eqnarray}
+u^{\prime}(\bar{c}) &amp;amp; = \beta (f^{\prime}(\bar{k}) + 1 -\delta) u^{\prime}(\bar{c}), \\\
+\bar{k} &amp;amp; = f(\bar{k}) + (1-\delta) \bar{k} - \bar{c}.
+\end{eqnarray}
+\right\} \tag{9, Steady St.} \label{eq:ss}$$&lt;/p&gt;
+&lt;p&gt;Simplifying we can obtain the following, equivalent expression:&lt;/p&gt;
+&lt;p&gt;$$\left.
+\begin{eqnarray}
+f^{\prime}(\bar{k})  = \frac{\theta}{\beta}, \\\
+\bar{c}  = f(\bar{k}) - \delta \bar{k},
+\end{eqnarray}
+\right\} \tag{9.1, Steady St.} \label{eq:ss2}$$&lt;/p&gt;
+&lt;p&gt;where $\theta \equiv 1 - \beta(1-\delta) \in (0,1).$&lt;/p&gt;
+&lt;h3 id=&#34;existence-of-the-steady-state&#34;&gt;Existence of the steady state&lt;/h3&gt;
+&lt;p&gt;From the Inada conditions for the production (Assumption R3.6) function we have that&lt;/p&gt;
+&lt;p&gt;$$0 = \lim_{k \rightarrow +\infty} f^{\prime}(k) &amp;lt; \frac{\theta}{\beta} &amp;lt; \lim_{k \rightarrow 0}f^{\prime}(k) = +\infty.$$&lt;/p&gt;
+&lt;p&gt;Hence, $f^\prime (k)$ takes values on the interval $(0, +\infty).$
+Since the function $f^\prime$ is continuous, by the intermediate value theorem there exists at least one $k=\bar{k}$ such that $f^\prime{\bar{k}} = \frac{\theta}{\beta}.$&lt;/p&gt;
+&lt;p&gt;Moreover, from Assumption R3.4 the function $f^\prime (k)$ is monotonically decreasing.
+Therefore, there exists one and only one value $\bar{k} \in (0,+\infty)$ that solves the first equation in \ref{eq:ss2}.
+Also, the second equation in \ref{eq:ss2} uniquely determines the level of consumption given capital.
+Hence, the steady-state consumption level $\bar{c}$ is unique.&lt;/p&gt;
+&lt;p&gt;We can obtain an overview of the dynamics of the model using the &lt;a href=&#34;https://eric-roca.github.io/courses/macroeconomics/ramsey/ramsey_phase_diagram/&#34;&gt;phase diagram&lt;/a&gt; and derive the exact solution using the method outlined in &lt;a href=&#34;https://eric-roca.github.io/courses/macroeconomics/ramsey/ramsey_trajectory/&#34;&gt;trajectory&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;stability&#34;&gt;Stability of the steady state&lt;/h3&gt;
+&lt;p&gt;We are now interested in determining the behaviour of the economy when it starts with some level of capital $k_0$ and consumption $c_0.$
+The economy is represented by a $2 \times 2$ system of first-order difference equations.
+The stability of a steady state depends on the Jacobian matrix&amp;rsquo;s eigenvalues evaluated at the steady state.
+&lt;strong&gt;Note:&lt;/strong&gt; the &lt;a href=&#34;https://eric-roca.github.io/courses/mathematical_appendix/steady_state/&#34;&gt;Appendix&lt;/a&gt; discusses this in more detail.
+In particular, we wonder whether the dynamics are such that they converge towards the steady state or diverge away from it.&lt;/p&gt;
+&lt;p&gt;The equations that govern the economy are the Euler equation and the law for capital accumulation:&lt;/p&gt;
+&lt;p&gt;$$\left.
+\begin{eqnarray}
+u^{\prime}(c_{t}) = \beta (f^{\prime}(k_{t+1}) + 1 - \delta) u^{\prime}(c_{t+1}), \\\
+k_{t+1} = f(k_{t}) + (1-\delta) k_{t} - c_{t}
+\end{eqnarray}
+\right\}. \tag{8.1 Equilibrium}
+$$&lt;/p&gt;
+&lt;p&gt;The stability of the steady state first requires computing the Jacobian matrix.
+The Jacobian matrix associated to the system is:&lt;/p&gt;
+&lt;p&gt;$$\bar{A} = \begin{pmatrix}
+\frac{\partial c_{t+1}}{\partial c_{t}} &amp;amp; \frac{\partial c_{t+1}}{\partial k_{t}} \\\
+\frac{\partial k_{t+1}}{\partial c_{t}} &amp;amp; \frac{\partial k_{t+1}}{\partial k_{t}}
+\end{pmatrix}.$$&lt;/p&gt;
+&lt;p&gt;Notice that $\bar{A}$ represents the approximate linear behaviour of the economy at any given point: $\begin{pmatrix}c_{t+1} \\\ k_{t+1}\end{pmatrix} \approx \begin{pmatrix} c_0 \\\ k_0 \end{pmatrix} + \bar{A} \begin{pmatrix} c_t - c_0 \\\ k_t - k_0 \end{pmatrix}.$&lt;/p&gt;
+&lt;p&gt;In our case, the Jacobian matrix reads:&lt;/p&gt;
+&lt;p&gt;$$\bar{A} = \begin{pmatrix}
+\frac{u^{\prime \prime}(c_{t})+\beta f^{\prime \prime}(k_{t+1})u^{\prime}(c_{t+1})}{\beta \left[ f^{\prime}(k_{t+1}) + 1 - \delta \right] u^{\prime \prime}(c_{t+1})} &amp;amp; -\frac{\beta f^{\prime \prime}(k_{t+1}) \left[ f^{\prime}(k_{t}) + 1 - \delta \right] u^{\prime}(c_{t+1})}{\beta \left[ f^{\prime}(k_{t+1}) + 1 - \delta \right] u^{\prime \prime}(c_{t+1})} \\\
+-1 &amp;amp; f^{\prime}(k_{t}) + 1 - \delta
+\end{pmatrix}. \tag{10, Jacobian} \label{eq:jacobian}$$&lt;/p&gt;
+&lt;p&gt;Then, we evaluate \ref{eq:jacobian} at the steady state.
+In particular, we use \ref{eq:ss} characterising the steady state.&lt;/p&gt;
+&lt;p&gt;$$\color{red}{k_{t+1} = k_{t} = \bar{k},} $$
+$$\color{green}{c_{t+1} = c_{t} = \bar{c},} $$
+$$\color{blue}{1 = \beta \left( f^{\prime}(\bar{k}) + 1 - \delta \right).}  $$&lt;/p&gt;
+&lt;p&gt;Substituting all $t$ and $t+1$ variables for their steady-state values $\bar{k}$ and $\bar{c}$ yields:&lt;/p&gt;
+&lt;p&gt;$$\bar{A}\bigr\rvert_{\substack{
+k_{t} = k_{t+1} = \bar{k} \\\
+c_{t} = c_{t+1} = \bar{c}
+}
+}
+= \begin{pmatrix}
+\frac{
+u^{\prime \prime}(\textcolor{green}{\bar{c}})+\beta f^{\prime \prime}(\textcolor{red}{\bar{k}})u^{\prime}(\textcolor{green}{\bar{c})}
+}
+{
+\beta \left[ f^{\prime}(\textcolor{red}{\bar{k}}) + 1 - \delta \right] u^{\prime \prime}(\bar{\textcolor{green}{c}})
+}
+&amp;amp;
+-\frac{
+\beta f^{\prime \prime}(\bar{k}) \left[ f^{\prime}(\bar{k}) + 1 - \delta \right] u^{\prime}(\bar{\textcolor{green}{c}})
+}
+{
+\beta \left[ f^{\prime}(\bar{k}) + 1 - \delta \right] u^{\prime \prime}(\bar{\textcolor{green}{c}})}
+\\\
+-1
+&amp;amp;
+f^{\prime}(\textcolor{red}{\bar{k}}) + 1 - \delta
+\end{pmatrix} = $$&lt;/p&gt;
+&lt;p&gt;$$\begin{pmatrix}
+\frac{
+u^{\prime \prime}(\bar{c})+\beta f^{\prime \prime}(\bar{k})u^{\prime}(\bar{c)}
+}
+{
+\textcolor{blue}{\beta \left[ f^{\prime}(\bar{k}) + 1 - \delta \right]} u^{\prime \prime}(\bar{c})
+}
+&amp;amp;
+-\frac{
+\textcolor{blue}{\beta} f^{\prime \prime}(\bar{k}) \textcolor{blue}{\left[ f^{\prime}(\bar{k}) + 1 - \delta \right]} u^{\prime}(\bar{c})
+}
+{
+\textcolor{blue}{\beta \left[ f^{\prime}(\bar{k}) + 1 - \delta \right]} u^{\prime \prime}(\bar{c})}
+\\\
+-1
+&amp;amp;
+\color{blue}{f^{\prime}(\bar{k}) + 1 - \delta}
+\end{pmatrix} = $$&lt;/p&gt;
+&lt;p&gt;$$\begin{pmatrix}
+\frac{
+u^{\prime \prime}(\bar{c})+\beta f^{\prime \prime}(\bar{k})u^{\prime}(\bar{c)}
+}
+{
+u^{\prime \prime}(\bar{c})
+}
+&amp;amp;
+-\frac{
+f^{\prime \prime}(\bar{k}) u^{\prime}(\bar{c})
+}
+{
+u^{\prime \prime}(\bar{c})}
+\\\
+-1
+&amp;amp;
+\frac{1}{\beta}
+\end{pmatrix} = $$&lt;/p&gt;
+&lt;p&gt;$$\begin{pmatrix}
+1 - \beta f^{\prime \prime}(\bar{k}) \frac{\bar{c}}{\epsilon_{\bar{c}}}
+&amp;amp;
+f^{\prime \prime}(\bar{k}) \frac{\bar{c}}{\epsilon_{\bar{c}}}
+\\\
+-1
+&amp;amp;
+\frac{1}{\beta}
+\end{pmatrix}, $$&lt;/p&gt;
+&lt;p&gt;where $\epsilon_{c} = - \frac{u^{\prime \prime}( c )}{u^{\prime}( c )} c$ represents the degree of relative risk aversion.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Technical note on steady states&lt;/strong&gt;
+A steady state can be:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Source: starting from any point, trajectories diverge away from it,&lt;/li&gt;
+&lt;li&gt;Sink: starting from any point, trajectories converge towards it,&lt;/li&gt;
+&lt;li&gt;Saddle: a unique combination of initial points presents a converging trajectory (saddle path), all other initial conditions imply an diverging trajectory.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;As mentioned before, the stability of a steady state depends on the eigenvalues of $\bar{A}$ (eigenvalues are the roots of the characteristic equation).
+Typically, we are only interested in some properties of the eigenvalues.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Blanchard-Kahn&lt;/strong&gt; characterises the types of steady states in terms of their eigenvalues.
+Denote by $l$ the number of eigenvalues in the unit circle, and denote by $m$ the number of pre-determined state variables:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;if $l=m$ (standard case): saddle-path, &lt;em&gt;unique&lt;/em&gt; optimal trajectory. The eigenvalues within the unit circle govern the speed of convergence.&lt;/li&gt;
+&lt;li&gt;if $l \lt m$: unstable&lt;/li&gt;
+&lt;li&gt;if $l \gt m$: multiple optimal trajectories.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We can use different techniques to determine whether the eigenvalues lay in the interval $(-1,1).$&lt;/p&gt;
+&lt;h4 id=&#34;direct-computation-of-the-eigenvalues&#34;&gt;Direct computation of the eigenvalues&lt;/h4&gt;
+&lt;p&gt;The first method we present uses the definition of eigenvalue: the roots of the characteristic equation.
+It requires solving:&lt;/p&gt;
+&lt;p&gt;$$\begin{vmatrix}
+1-\beta f^{\prime \prime}(\bar{k})\frac{\bar{c}}{\epsilon_{\bar{c}}} - \lambda &amp;amp; f^{\prime \prime}(\bar{k}) \frac{\bar{c}}{\epsilon_{\bar{c}}} \\\
+-1 &amp;amp; \frac{1}{\beta} - \lambda
+\end{vmatrix} =
+\lambda^{2} + \lambda \left( \beta f^{\prime \prime} (\bar{k}) \frac{\bar{c}}{\epsilon_{\bar{c}}} - 1 - \frac{1}{\beta} \right) + \frac{1}{\beta} = 0.$$&lt;/p&gt;
+&lt;p&gt;The roots of this equation are:&lt;/p&gt;
+&lt;p&gt;$$\lambda_{1} = \frac{\overbrace{1+\overbrace{\frac{1}{\beta}}^{&amp;gt;1} - \overbrace{\beta f^{\prime \prime}(\bar{k}) \frac{\bar{c}}{\epsilon_{\bar{c}}}}^{&amp;lt;0} + \sqrt{\left( 1+\frac{1}{\beta} - \beta f^{\prime \prime}(\bar{k})\frac{\bar{c}}{\epsilon_{\bar{c}}} \right)^2 - \frac{4}{\beta}}}^{&amp;gt;2}}{2} &amp;gt; 1 .$$&lt;/p&gt;
+&lt;p&gt;For $\lambda_{2}$ we have:&lt;/p&gt;
+&lt;p&gt;$$\lambda_{2} = \frac{1+\frac{1}{\beta} - \beta f^{\prime \prime}(\bar{k}) \frac{\bar{c}}{\epsilon_{\bar{c}}} - \sqrt{\left( 1+\frac{1}{\beta} - \beta f^{\prime \prime}(\bar{k})\frac{\bar{c}}{\epsilon_{\bar{c}}} \right)^2 - \frac{4}{\beta}}}{2} &amp;gt; 0$$&lt;/p&gt;
+&lt;p&gt;To simplify notation, let $\phi \equiv 1+\frac{1}{\beta} - \beta f^{\prime \prime}(\bar{k}) \frac{\bar{c}}{\epsilon_{\bar{c}}}$ and $\kappa \equiv \frac{4}{\beta}$.&lt;br/&gt;
+Assume that $\lambda_{2} &amp;gt; 1$, then we must have:&lt;/p&gt;
+&lt;p&gt;$$\frac{\phi - \sqrt{\phi^{2} - \kappa}}{2} &amp;gt; 1 \implies \kappa &amp;gt; 4\phi - 4.$$
+Substituting:
+$$4 + \frac{4}{\beta} - 4 \beta f^{\prime \prime}(\bar{k})\frac{\bar{c}}{\epsilon_{\bar{c}}} - 4 &amp;lt; \frac{4}{\beta} \implies -4\beta f^{\prime \prime}(\bar{k})\frac{\bar{c}}{\epsilon_{\bar{c}}} &amp;lt; 0.$$
+But this is impossible because $f^{\prime \prime}(\cdot) &amp;lt; 0.$
+Hence, $\lambda_{2} &amp;lt; 1$.&lt;/p&gt;
+&lt;p&gt;Summarising, the eigenvalues are such that
+$$\lambda_{1} &amp;gt; 1$$&lt;/p&gt;
+&lt;center&gt;and&lt;/center&gt;
+&lt;p&gt;$$\lambda_{2}\in(0,1)$$&lt;/p&gt;
+&lt;p&gt;and the &lt;strong&gt;steady state is a saddle.&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;use-the-intermediate-value-theorem&#34;&gt;Use the intermediate value theorem&lt;/h4&gt;
+&lt;p&gt;The characteristic equation associated with the Jacobian evaluated at the steady state is:&lt;/p&gt;
+&lt;p&gt;$$G(\lambda) = \lambda^{2} + \lambda \left( \beta f^{\prime \prime} (\bar{k}) \frac{\bar{c}}{\epsilon_{\bar{c}}} - 1 - \frac{1}{\beta} \right) + \frac{1}{\beta} = 0.$$&lt;/p&gt;
+&lt;p&gt;First, notice that $G(\lambda)$ is a continuous function on $\lambda.$
+We want to assess whether its roots (or at least one root) lay in the interval $(-1,1)$.
+The behaviour of $G(\lambda)$ is as follows:&lt;/p&gt;
+&lt;p&gt;$$\lim_{\lambda \rightarrow -\infty} G(\lambda) = + \infty$$
+$$\lim_{\lambda \rightarrow +\infty} G(\lambda) = + \infty$$
+$$G(-1) = 2 + \frac{2}{\beta} - \beta f^{\prime \prime}(\bar{k})\frac{\bar{c}}{\epsilon_{\bar{c}}} &amp;gt; 0$$
+$$G(0) = \frac{1}{\beta} &amp;gt; 0 $$
+$$G(1) =  \beta f^{\prime \prime}(\bar{k})\frac{\bar{c}}{\epsilon_{\bar{c}}} &amp;lt; 0.$$&lt;/p&gt;
+&lt;p&gt;Hence, $\exists \lambda_{2} \in (-1,0)$ such that $G(\lambda_{2}) = 0$.
+The second root lies beyond $1.$
+Therefore, $\lambda_{1} &amp;gt; 1, \lambda_{2}\in(0,1)$ and the &lt;strong&gt;steady state is a saddle.&lt;/strong&gt;&lt;/p&gt;
+&lt;h4 id=&#34;use-eigenvalues-properties&#34;&gt;Use eigenvalues&amp;rsquo; properties&lt;/h4&gt;
+&lt;p&gt;For any matrix, we have the following:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The product of eigenvalues equals the &lt;strong&gt;determinant&lt;/strong&gt; of the matrix: $\mathrm{det}(M) = \lambda_{1} \lambda_{2} \ldots \lambda_{N},$&lt;/li&gt;
+&lt;li&gt;The sum of eigenvalues equals the &lt;strong&gt;trace&lt;/strong&gt; of matrix: $\mathrm{tr}(M) = \lambda_{1} + \lambda_{2} + \ldots + \lambda_{N}.$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In our case:&lt;/p&gt;
+&lt;p&gt;$$\lambda_{1} \lambda_{2} = \frac{1}{\beta} $$
+$$\lambda_{1} + \lambda_{2} = \underbrace{1+ \frac{1}{\beta} - \beta f^{\prime \prime}(\bar{k})\frac{\bar{c}}{\epsilon_{\bar{c}}}}_{&amp;gt;1}.$$&lt;/p&gt;
+&lt;p&gt;The first equation implies that either&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;a) $\lambda_{1} &amp;gt; 0, \lambda_{2} &amp;gt; 0$ or&lt;/li&gt;
+&lt;li&gt;b) $\lambda_{1} &amp;lt; 0, \lambda_{2} &amp;lt; 0.$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;However, since $\lambda_{1} + \lambda_{2} &amp;gt; 1$ b) is impossible.
+Therefore, $\lambda_{1} &amp;gt; 0, \lambda_{2} &amp;gt; 0.$&lt;/p&gt;
+&lt;p&gt;Substitute $\lambda_{1} \lambda_{2} = \frac{1}{\beta}$ in the second equation:&lt;/p&gt;
+&lt;p&gt;$$ \lambda_{1} + \lambda_{2} = 1+ \lambda_{1} \lambda_{2} - \beta f^{\prime \prime}(\bar{k})\frac{\bar{c}}{\epsilon_{\bar{c}}}.$$&lt;/p&gt;
+&lt;p&gt;Rearranging:
+$$ \lambda_{1} + \lambda_{2} - \lambda_{1} \lambda_{2} =  1+  - \beta f^{\prime \prime}(\bar{k})\frac{\bar{c}}{\epsilon_{\bar{c}}} &amp;gt; 1 \implies \lambda_{1} + \lambda_{2} - \lambda_{1}\lambda_{2} - 1 &amp;gt;0.$$
+Factorisation leads to:
+$$(1 - \lambda_{2})(\lambda_{1} - 1) &amp;gt; 0.$$
+Therefore, because $\lambda_{1},, \lambda_{2} &amp;gt; 0$ we must have&lt;/p&gt;
+&lt;p&gt;$$ \lambda_{2} &amp;lt; 1 $$
+$$ \lambda_{1} &amp;gt; 1 $$
+$$ \lambda_{1} &amp;gt; 0, \lambda_{2} &amp;gt; 0$$
+and &lt;strong&gt;the steady state is a saddle.&lt;/strong&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The phase diagram</title>
+      <link>https://eric-roca.github.io/courses/macroeconomics/ramsey/ramsey_phase_diagram/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/macroeconomics/ramsey/ramsey_phase_diagram/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; based on Section 2.3 of &lt;em&gt;Romer, Advanced Macroeconomics&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;The Ramsey model is fully described by two dynamic equations:&lt;/p&gt;
+&lt;p&gt;$$\left.
+\begin{eqnarray}
+u^{\prime}(c_{t}) = \beta(f^{\prime}(k_{t+1}) + 1 - \delta)u^{\prime}(c_{t+1}), \\\
+k_{t+1} = f(k_{t} + (1-\delta)k_{t} - c_{t}.
+\end{eqnarray}
+\right\} \tag{8.1, Equilibrium} \label{eq:eq}
+$$&lt;/p&gt;
+&lt;p&gt;The &lt;em&gt;phase diagram&lt;/em&gt; is a representation on the $(c,k)$ plane of all the stationary points for $c$ and $k.$
+This is, we plot all $(c,k)$ combinations such that $c$ is constant, and all the $(c,k)$ combinations such that $k$ is constant.
+The set of points $(c,k)$ implying a constant consumption is called the $c$-locus.
+Similarly, we have the $k$-locus.&lt;/p&gt;
+&lt;p&gt;These loci are curves on the $(c,k)$ plane, and any intersection between them is a steady state because both $c$ and $k$ are simultaneously constant.
+The phase diagram is a useful tool to analyse the behaviour of a dynamic system because it indicates the direction of movement of the variables at any point on the plane.&lt;/p&gt;
+&lt;h2 id=&#34;the-dynamics-of-c&#34;&gt;The dynamics of $c$&lt;/h2&gt;
+&lt;p&gt;The first equation of \ref{eq:eq} describes the dynamics of consumption.&lt;/p&gt;
+&lt;p&gt;$$u^{\prime}(c_{t}) = \beta ( f^{\prime}(k_{t+1}) + 1 - \delta) u^{\prime}(c_{t+1}).$$&lt;/p&gt;
+&lt;p&gt;Rearranging it we arrive at:&lt;/p&gt;
+&lt;p&gt;$$\frac{u^{\prime}(c_{t})}{u^{\prime}(c_{t+1})} = \beta ( f^{\prime}(k_{t+1}) + 1 - \delta).$$&lt;/p&gt;
+&lt;p&gt;In the phase diagram we want to plot combinations of $(c,k)$ such that $c$ is constant.
+Constant consumption implies $c_t = c_{t+1} \implies \frac{u^\prime (c_t)}{u^\prime (c_{t+1})} = 1.$
+Therefore, the $c$-locus is&lt;/p&gt;
+&lt;p&gt;$$ 1 = \beta ( f^{\prime}(k_{t+1}) + 1 - \delta)$$&lt;/p&gt;
+&lt;p&gt;and any level of capital satisfying it implies constant consumption.
+This condition depends only on the level of capital.&lt;/p&gt;
+&lt;p&gt;Denote such level $k^{\star}$.&lt;br/&gt;
+When $k &amp;lt; k^{\star}, f^{\prime}(k) &amp;gt; f^{\prime}(k^{\star})$, implying that $u^{\prime}(c_{t}) &amp;gt; u^{\prime}(c_{t+1})$ and hence consumption will raise over time.
+Similarly, if $k &amp;gt; k^{\star}$ implies that consumption falls.
+&lt;strong&gt;Note&lt;/strong&gt;: remember that we are looking at $f^{\prime}(k)$ and $u^{\prime}(c)$, not $k$ and $c.$
+This information is summarised in the following Figure.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/ramsey/dynamics_c.webp&#34; alt=&#34;dynamics of c&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The arrows show the direction in which consumption $c$ evolves.
+As discussed before, consumption raises when capital is below $k^{\star}$ and raises when above.
+Note the vertical line: it denotes the level of capital $k^{\star}$ such that $c$ is constant.
+The value $k^{\star}$ can be easily computed: $k^{\star} = {f^{\prime}}^{-1}\left(\frac{1-\beta (1-\delta)}{\beta}\right).$&lt;/p&gt;
+&lt;h2 id=&#34;the-dynamics-of-k&#34;&gt;The dynamics of $k$&lt;/h2&gt;
+&lt;p&gt;We can proceed similarly with the motion of capital.
+The relevant equation in this case is:&lt;/p&gt;
+&lt;p&gt;$$k_{t+1} = f(k_{t}) + (1- \delta)k_{t} - c_{t}.$$&lt;/p&gt;
+&lt;p&gt;As before, we are interested in the combinations of $(k,c)$ such that capital remains constant over time.
+In this case, though, and contrasting with the previous, we will obtain that both capital and consumption affect capital levels in the future: production uses current capital, and current consumption depletes current production.
+We can rearrange the previous equation to obtain the following:&lt;/p&gt;
+&lt;p&gt;$$k_{t+1} - k_{t} = f(k_{t}) - \delta k_{t} - c_{t}.$$
+Setting $k_{t+1} = k_{t} \implies k_{t+1} - k_{t} = 0$ so capital is constant yields:&lt;/p&gt;
+&lt;p&gt;$$ 0 = f(k_{t}) - \delta k_{t} - c_{t} \implies c_{t} = f(k_{t}) - \delta k_{t}.$$&lt;/p&gt;
+&lt;p&gt;In the $(k,c)$ space, the equation takes a form similar to a parabola: it combines production &amp;mdash;with decreasing marginal returns&amp;mdash; with a linear depreciation rate.
+In fact, f(k_t)-\delta k_t$ admits one maximum $(f^\prime (k_t) = \delta)$ the &lt;a href=&#34;https://eric-roca.github.io/courses/macroeconomics/ramsey/ramsey_golden_rule/&#34;&gt;Golden rule&lt;/a&gt; we discuss later.
+Since $f^{\prime \prime}(k_t)&amp;lt;0,$ the stationary point is a maximum.&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s now analyse how capital evolves when consumption is above and below the level that makes it constant.
+From $k_{t+1} - k_{t} = f(k_{t}) - \delta k_{t} - c_{t}$, if consumption is above the level we have that $k_{t+1} - k_{t} &amp;lt; 0,$ meaning that capital decreases over time.
+The opposite applies when consumption is below the level that guarantees a constant level of capital.
+The Figure below summarises these findings:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/ramsey/dynamics_g.webp&#34; alt=&#34;dynamics of g&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;the-phase-diagram&#34;&gt;The phase diagram&lt;/h2&gt;
+&lt;p&gt;We can combine the information above to produce the &lt;em&gt;phase diagram&lt;/em&gt;.
+It indicates the motion of variables at different points of the $(k,c)$ space.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/ramsey/phase_diagram.webp&#34; alt=&#34;phase diagram&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The arrows show the motion of each variable at different combinations of $(k,c).$
+For instance, to the left of the $c$-locus and above the $k0$-locus consumption increases and capital decreases.
+Finally, the point indicating the intersection of both curves is the steady state: all variables remain constant at their values.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Additional material -  trajectory</title>
+      <link>https://eric-roca.github.io/courses/macroeconomics/ramsey/ramsey_trajectory/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/macroeconomics/ramsey/ramsey_trajectory/</guid>
+      <description>&lt;h2 id=&#34;the-trajectory-around-the-steady-state&#34;&gt;The trajectory around the steady state&lt;/h2&gt;
+&lt;p&gt;For the moment, we have established that the model converges towards a unique steady state following a saddle path.
+&lt;strong&gt;Note:&lt;/strong&gt; This means that there is only one combination of initial capital and consumption, $(k_{0}, c_{0})$, such that the economy converges towards it.
+Any other initial value consumption at $t=0$ (capital is pre-determined and thus we &lt;em&gt;cannot&lt;/em&gt; change it) has a diverging trajectory.&lt;/p&gt;
+&lt;p&gt;We now compute the exact behaviour of $(k_{t}, c_{t})$ around the steady state.&lt;/p&gt;
+&lt;p&gt;The model is highly non-linear, so we study a simpler linearised version around the steady state.
+First, let&amp;rsquo;s approximate the dynamics of capital and consumption &lt;a href=&#34;https://eric-roca.github.io/courses/mathematical_appendix/steady_state/#Approximation&#34;&gt;around the steady state.&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;the-approximation-around-the-steady-state&#34;&gt;The approximation around the steady state&lt;/h3&gt;
+&lt;p&gt;The behaviour of the dynamical system around the steady state can be approximated using a first-order Taylor expansion around it.
+In that sense:&lt;/p&gt;
+&lt;p&gt;$$\begin{pmatrix}
+c_{t+1} - \bar{c} \\\ k_{t+1} - \bar{k}
+\end{pmatrix}
+\approx
+\bar{A}
+\begin{pmatrix}
+c_{t} - \bar{c} \\\ k_{t} - \bar{k}
+\end{pmatrix}.$$&lt;/p&gt;
+&lt;p&gt;Next, we solve this equation of difference equations, this is, we obtain $c_t = \mathcal{C}(c_0, k_0, t), k_t = \mathcal{K}(c_0, k_0, t).$&lt;/p&gt;
+&lt;h3 id=&#34;diagonalising-the-matrix-eigenvalues-and-eigenvectors&#34;&gt;Diagonalising the matrix: eigenvalues and eigenvectors&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; based on the notes by &lt;a href=&#34;http://www.princeton.edu/~moll/ECO503Web/Lecture4_ECO503.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Benjamin Moll&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To simplify the notation, let $y_{t} = \begin{pmatrix} c_{t} - \bar{c} \\\ k_{t} -\bar{k} \end{pmatrix}.$
+Hence, our problem becomes:
+$$y_{t+1} = \bar{A} y_{t}.$$&lt;/p&gt;
+&lt;p&gt;It $\bar{A}$ were a diagonal matrix, the solution to the system would be straightforward.
+In fact, if that were the case it would have been (I change variables to avoid confusion):&lt;/p&gt;
+&lt;p&gt;$$\begin{pmatrix} \phi_{t+1} \\ \omega_{t+1} \end{pmatrix} = \begin{pmatrix} a_{1,1} &amp;amp; 0 \\\ 0 &amp;amp; a_{2,2} \end{pmatrix} \begin{pmatrix} \phi_{t} \\\ \omega_{t} \end{pmatrix}.$$
+So, it is clear that $\phi_{t+1} = a_{1,1} \phi_{t} \implies \phi_{t} = a_{1,1}^{t} \phi_{0}$ and we would find a similar expression for $\omega.$&lt;/p&gt;
+&lt;p&gt;$\bar{A}$ is not diagonal, but we can apply a spectral decomposition and obtain an equivalent system governed by a diagonal matrix.
+In particular, we are looking for an $2 \times 2$ invertible matrix $X$ such that $ X^{-1} \bar{A} X = \Lambda$, where $\Lambda$ is diagonal.
+We will then apply the following transformation to our system (pre-multiplying by $\color{red}{X^{-1}}$ on both sides and multiplying by $\color{green}{XX^{-1}}$ on the right-hand side).
+$$ \color{red}{X^{-1}} y_{t+1} = \color{red}{X^{-1}} \bar{A} \color{green}{(X X^{-1})} y_{t} = X^{-1} \bar{A} X (X^{-1} y_{t}) =$$
+$$ = \Lambda X^{-1} y_{t}.$$&lt;/p&gt;
+&lt;p&gt;Denote $z \equiv X^{-1} y$.
+Thus, the system becomes:&lt;/p&gt;
+&lt;p&gt;$$z_{t+1} = \Lambda z_{t}.$$
+Since $\Lambda$ is diagonal, the solutions are of the form:
+$$z_{t} = \Lambda^{t} z_{0}.$$
+&lt;strong&gt;Note:&lt;/strong&gt; in general, the power of a matrix is complex.
+However, for a &lt;em&gt;diagonal matrix&lt;/em&gt; it is simply the power of each component.&lt;/p&gt;
+&lt;p&gt;Once we have the solution for the transformed system we must undo the transformation: in fact, we do not care about the evolution of $z$.
+This step involves using that $X^{-1} y = z \implies y = X z$.&lt;/p&gt;
+&lt;h4 id=&#34;the-matrix-lambda&#34;&gt;The matrix $\Lambda$&lt;/h4&gt;
+&lt;p&gt;In a spectral decomposition, the diagonal matrix $\Lambda$ consists of the matrix whose entries are its eigenvalues.
+Thus (we have a $2 \times 2$ system),
+$$\Lambda = \begin{pmatrix}
+\lambda_{1} &amp;amp; 0  \\\
+0 &amp;amp; \lambda_{2}
+\end{pmatrix}.$$&lt;/p&gt;
+&lt;h4 id=&#34;the-matrix-x&#34;&gt;The matrix $X$&lt;/h4&gt;
+&lt;p&gt;The matrix $X$ has as columns the eigenvectors of $\bar{A}.$
+There is one eigenvector associated with each eigenvalue.
+&lt;strong&gt;Note:&lt;/strong&gt; it is important to correctly relate each eigenvector to its eigenvalue.&lt;/p&gt;
+&lt;p&gt;To find an eigenvector associated with $\lambda_{1}$ (&lt;em&gt;there are infinitely many possible eigenvectors, we only want one&lt;/em&gt;) we solve the following system:&lt;/p&gt;
+&lt;p&gt;$$\bar{A} \begin{pmatrix} v_{1} \\\ v_{2} \end{pmatrix} = \lambda_{1} \begin{pmatrix} v_{1} \\\ v_{2} \end{pmatrix} \quad \mathrm{or} \quad (\bar{A} - \lambda_{1} \mathbb{I})
+\begin{pmatrix} v_{1} \\\ v_{2} \end{pmatrix} = \begin{pmatrix} 0 \\\ 0 \end{pmatrix}.$$&lt;/p&gt;
+&lt;p&gt;The matrix $X$ then becomes:&lt;/p&gt;
+&lt;p&gt;$$X = \begin{pmatrix} v_{1,1} &amp;amp; v_{2,1} \\\ 1 &amp;amp; 1 \end{pmatrix}.$$&lt;/p&gt;
+&lt;h3 id=&#34;solving-the-system&#34;&gt;Solving the system&lt;/h3&gt;
+&lt;p&gt;We begin with the solution for the transformed variable $z.$
+We already know it takes the form:&lt;/p&gt;
+&lt;p&gt;$$z_{t} = \Lambda^{t} z_{0} \quad \mathrm{or} \quad \begin{pmatrix} z_{t}^{1} \\\ z_{t}^{2} \end{pmatrix} = \begin{pmatrix} \lambda_{1}^{t} &amp;amp; 0 \\\ 0 &amp;amp; \lambda_{2}^{t} \end{pmatrix} \begin{pmatrix} v_{0}^{1} \\\ v_{0}^{2} \end{pmatrix}.$$&lt;/p&gt;
+&lt;p&gt;Next, we reverse the transformation, this is, we obtain the dynamics of $y: y_{t} = X z_{t}.$
+Therefore, we obtain:&lt;/p&gt;
+&lt;p&gt;$$y_{t} = X z_{t} = X \Lambda^{t} z_{0} = \begin{pmatrix} v_{1,1} &amp;amp; v_{2,1} \\\ v_{1,2} &amp;amp; v_{2,2} \end{pmatrix} \begin{pmatrix} \lambda_{1}^{t} &amp;amp; 0 \\\ 0 &amp;amp; \lambda_{2}^{t} \end{pmatrix} \begin{pmatrix} z_{0}^{1} \\\ z_{0}^{2} \end{pmatrix}.$$&lt;/p&gt;
+&lt;p&gt;Alternatively, multiplying the matrices and recalling that $y_{t}=\begin{pmatrix} c_{t} - \bar{c} \\\ k_{t} - \bar{k} \end{pmatrix}$ :&lt;/p&gt;
+&lt;p&gt;$$\begin{pmatrix} c_{t} - \bar{c} \\\ k_{t} - \bar{k} \end{pmatrix} = z_{0}^{1} \lambda_{1}^{t} \begin{pmatrix} v_{1,1} \\\ v_{1,2} \end{pmatrix} + z_{0}^{2} \lambda_{2}^{t} \begin{pmatrix} v_{2,1} \\\ v_{2,2} \end{pmatrix}.$$&lt;/p&gt;
+&lt;p&gt;The eigenvalues appear clearly in the solution.
+&lt;strong&gt;Remember&lt;/strong&gt; that we know that one eigenvalue is bigger than one, while the second lies within the unit circle.
+Without loss of generality, assume that $\lambda_{1} \in (-1,1)$ and $\lambda_{2} &amp;gt; 1.$
+According to the solution before, this implies an explosive behaviour: $\lambda_{2} &amp;gt; 1 \implies \lim_{t \rightarrow +\infty} \lambda_{2}^{t} = +\infty.$
+To have well-behaved dynamics we must impose $z_{0}^{2} = 0$, which eliminates explosive behaviour.&lt;/p&gt;
+&lt;p&gt;After imposing $z_{0}^{2} = 0$ the system becomes:&lt;/p&gt;
+&lt;p&gt;$$\begin{pmatrix} c_{t} - \bar{c} \\\ k_{t} - \bar{k} \end{pmatrix} = z_{0}^{1} \lambda_{1}^{t} \begin{pmatrix} v_{1,1} \\\ v_{1,2} \end{pmatrix}.$$&lt;/p&gt;
+&lt;h4 id=&#34;closing-the-model-with-initial-values&#34;&gt;Closing the model with initial values&lt;/h4&gt;
+&lt;p&gt;We know that the economy begins with a level of capital $k_{t=0} = k_{0} &amp;gt; 0.$
+Substituting $t=0$ in the equation above, and focusing on capital, we obtain:&lt;/p&gt;
+&lt;p&gt;$$k_{0} - \bar{k} = z_{0}^{1} v_{1,2} \implies \color{red}{z_{0}^{1} = \frac{k_{0} - \bar{k}}{v_{1,2}}}.$$
+Therefore, we can substitute the value for $z_{0}^{1}$ to obtain the dynamics of capital:&lt;/p&gt;
+&lt;p&gt;$$k_{t} - \bar{k} = \color{red}{z_{0}^{1}} \lambda_{1}^{t} v_{1,2} = \left(k_{0} - \bar{k} \right) \lambda^{t}.$$&lt;/p&gt;
+&lt;p&gt;Similarly,for consumption we have:&lt;/p&gt;
+&lt;p&gt;$$c_{t} - \bar{c} = \color{red}{z_{0}^{1}} \lambda_{1}^{t} v_{1,1} = \frac{v_{1,1}}{v_{1,2}} \lambda_{1}^{t} (k_{0} - \bar{k}).$$
+Finally, the initial value of consumption $c_{0}$ that puts the economy in the saddle path is obtained by setting $t=0$ in the previous equation:&lt;/p&gt;
+&lt;p&gt;$$c_{0} - \bar{c} = \frac{v_{1,1}}{v_{1,2}} (k_{0} - \bar{k}).$$&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Example</title>
+      <link>https://eric-roca.github.io/courses/macroeconomics/ramsey/ramsey_example/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/macroeconomics/ramsey/ramsey_example/</guid>
+      <description>&lt;p&gt;We can now completely solve an example.&lt;/p&gt;
+&lt;h2 id=&#34;utility-and-production-functions&#34;&gt;Utility and production functions&lt;/h2&gt;
+&lt;p&gt;We assume that utility is logarithmic and we take a Cobb-Douglas production function.&lt;/p&gt;
+&lt;p&gt;$$\begin{eqnarray}
+u(c_{t}) = \log (c_{t}), \\\
+F(K_{t},L_{t}) = K_{t}^{\alpha}L_{t}^{1-\alpha}, \\\
+\alpha \in (0,1).
+\end{eqnarray}
+$$
+We can check that both functions satisfy the Inada conditions:&lt;/p&gt;
+&lt;p&gt;$$\begin{eqnarray}\lim_{c_{t} \rightarrow 0}u^{\prime}(c_{t}) = \lim_{c_{t} \rightarrow 0} \frac{1}{c_{t}} = +\infty, \\\
+\lim_{c_{t} \rightarrow +\infty}u^{\prime}(c_{t}) = \lim_{c_{t} \rightarrow +\infty} \frac{1}{c_{t}} = 0, \\\
+\lim_{K_{t} \rightarrow 0} F^{\prime}_{K_{t}}(K_{t}, L_{t}) = \lim_{K_{t} \rightarrow 0} \alpha K_{t}^{\alpha - 1}L_{t}^{1-\alpha} = +\infty, \\\
+\lim_{K_{t} \rightarrow +\infty} F^{\prime}_{K_{t}}(K_{t}, L_{t}) = \lim_{K_{t} \rightarrow +\infty} \alpha K_{t}^{\alpha - 1}L_{t}^{1-\alpha} = 0, \\\
+\lim_{L_{t} \rightarrow 0} F^{\prime}_{L_{t}}(K_{t}, L_{t}) = \lim_{L_{t} \rightarrow 0}  (1-\alpha) K_{t}^{\alpha}L_{t}^{\alpha} = +\infty, \\\
+\lim_{L_{t} \rightarrow +\infty} F^{\prime}_{L_{t}}(K_{t}, L_{t}) = \lim_{L_{t} \rightarrow +\infty}  (1- \alpha) K_{t}^{\alpha}L_{t}^{\alpha} = 0.
+\end{eqnarray}
+$$&lt;/p&gt;
+&lt;p&gt;The production function, expressed in intensive terms, becomes:&lt;/p&gt;
+&lt;p&gt;$$F(K_{t}, L_{t}) = L_{T} F\left(\frac{K_{t}}{L_{t}},1\right) = L_{t} f(k_{t}) = L_{t} k_{t}^{\alpha}, k_{t} \equiv \frac{K_{t}}{L_{t}}.$$
+with total production $Y_{t} = F(K_{t},L_{t})$ and production per capita is equal to $y_{t} \equiv \frac{Y_{t}}{L_{t}} = f(k_{t}).$&lt;/p&gt;
+&lt;h2 id=&#34;households-optimisation&#34;&gt;Household&amp;rsquo;s optimisation&lt;/h2&gt;
+&lt;p&gt;Instead of using the results from previous sections, we develop again the utility maximisation.
+First, we write down the household&amp;rsquo;s budget constraint:&lt;/p&gt;
+&lt;h3 id=&#34;households-budget-constraint&#34;&gt;Household&amp;rsquo;s budget constraint&lt;/h3&gt;
+&lt;p&gt;At each period, the total received income is composed of &lt;em&gt;wages&lt;/em&gt; and &lt;em&gt;interest&lt;/em&gt;.
+It can be spent on &lt;em&gt;consumption&lt;/em&gt; or &lt;em&gt;saving&lt;/em&gt;.
+Remember that capital depreciates at a rate $\delta \in [0,1].$
+Hence, we receive back from firms $1-\delta$ times the capital we lend.
+Therefore:&lt;/p&gt;
+&lt;p&gt;$$ w_{t} + r_{t}k_{t} + (1-\delta)k_{t} = c_{t} + k _{t+1}.$$&lt;/p&gt;
+&lt;h3 id=&#34;intertemporal-utility-maximisation-lagrangian&#34;&gt;Intertemporal utility maximisation: Lagrangian&lt;/h3&gt;
+&lt;p&gt;The intertemporal utility maximisation problem is:&lt;/p&gt;
+&lt;p&gt;$$\begin{eqnarray}
+\max_{c_{t}, k_{t+1}}  \sum_{t=0}^{\infty} \beta^{t} u(c_{t}) &amp;amp; \\\
+\mathrm{s.t.} \quad 	 w_{t} + r_{t} k_{t} + (1-\delta)k_{t} = c_{t} + k_{t+1}, \\\
+c_{t}, k_{t+1} &amp;gt;0, k_{t=0} = k_{0} &amp;gt; 0.
+\end{eqnarray}
+$$&lt;/p&gt;
+&lt;p&gt;The Lagrangian becomes:&lt;/p&gt;
+&lt;p&gt;$$ \mathcal{L} = \sum_{t=0}^{\infty} \beta^{t} u(c_{t}) + \sum_{t=0}^{\infty} \lambda_{t}(w_{t} + (r_{t} + 1 - \delta)k_{t} - c_{t} - k_{t+1}).$$&lt;/p&gt;
+&lt;p&gt;We use the first-order conditions with respect to $c_{t}$ and $k_{t+1}$ to find the optimal consumption path: the Euler equation, which we combine later with the transversality condition.&lt;/p&gt;
+&lt;p&gt;$$\frac{\partial \mathcal{L}}{\partial c_{t}} = \beta^{t} u^{\prime}(c_{t}) - \lambda_{t} = \beta^{t}\frac{1}{c_{t}} - \lambda_{t} = 0$$
+$$\frac{\partial \mathcal{L}}{\partial k_{t+1}} = -\lambda_{t} + \lambda_{t+1} (r_{t+1} + 1 - \delta) = 0.$$&lt;/p&gt;
+&lt;p&gt;Combining both, we obtain the Euler equation:&lt;/p&gt;
+&lt;p&gt;$$\beta^{t}\frac{1}{c_{t}} = r_{t+1} \beta^{t+1} \frac{1}{c_{t+1}} \implies c_{t+1} = \beta (r_{t} + 1 - \delta)c_{t}.$$&lt;/p&gt;
+&lt;p&gt;Finally, we should remember to impose the transversality condition:&lt;/p&gt;
+&lt;p&gt;$$\lim_{t \rightarrow +\infty} \beta^{t}u^{\prime}(c_{t})k_{t+1} = \lim_{t \rightarrow +\infty}\beta^{t}\frac{1}{c_{t}}k_{t+1} = 0.$$&lt;/p&gt;
+&lt;h2 id=&#34;firms-optimisation&#34;&gt;Firm&amp;rsquo;s optimisation&lt;/h2&gt;
+&lt;p&gt;In this model, firms operate under perfect competition, making zero profits.
+Moreover, factors are paid their marginal productivity.&lt;/p&gt;
+&lt;p&gt;$$r_{t} = F^{\prime}_{K_{t}}(K_{t}, L_{t}) = \alpha K_{t}^{\alpha - 1}L_{t}^{1-\alpha} = \alpha \left(\frac{K_{t}}{L_{t}}\right)^{\alpha - 1} = \alpha k_{t}^{\alpha -1},$$
+$$w_{t} = F^{\prime}_{L_{t}}(K_{t}, L_{t}) = (1-\alpha) K_{t}^{\alpha} L_{t}^{-\alpha} = (1-\alpha)\left(\frac{K_{t}}{L_{t}}\right)^{\alpha} = (1-\alpha) k_{t}^{\alpha}.$$&lt;/p&gt;
+&lt;p&gt;Alternatively, using the information in the &lt;a href=&#34;https://eric-roca.github.io/courses/mathematical_appendix/homogenous_functions/#intensive-form&#34;&gt;Appendix&lt;/a&gt; and working directly with the intensive-form production function:&lt;/p&gt;
+&lt;p&gt;$$r_{t} = f^{\prime}(k_{t}) = \frac{\partial f(k_{t})}{\partial k_{t}} = \alpha k_{t}^{\alpha -1},$$
+$$w_{t} = f(k_{t}) - f^{\prime}(k_{t})k_{t} = k_{t}^{\alpha} - \alpha k_{t}^{\alpha - 1} k_{t} = (1-\alpha)k_{t}^{\alpha}.$$&lt;/p&gt;
+&lt;h2 id=&#34;the-dynamic-system&#34;&gt;The dynamic system&lt;/h2&gt;
+&lt;p&gt;We are now in a position to solve the model.
+We have the following equations:&lt;/p&gt;
+&lt;p&gt;$$ c_{t+1} = \beta (r_{t+1} + 1 - \delta) c_{t}, \\\
+w_{t} + r_{t}k_{t} + (1-\delta) k_{t} = c_{t} + k_{t+1}, \\\
+w_{t} = (1-\alpha) k^{\alpha}_{t}, \\\
+r_{t} = \alpha k^{\alpha-1}, \\\
+\lim_{t \rightarrow +\infty} \beta^{t}\frac{1}{c_{t}} k_{t+1} = 0.$$&lt;/p&gt;
+&lt;p&gt;Since markets clear, we substitute the wage and interest rate into the budget constraint.&lt;/p&gt;
+&lt;p&gt;$$c_{t+1} = \beta (\alpha k^{\alpha-1} + 1 - \delta) c_{t},$$
+$$k_{t}^{\alpha} + (1-\delta) k_{t} = c_{t} + k_{t+1},$$
+$$\lim_{t \rightarrow +\infty} \beta^{t}\frac{1}{c_{t}} k_{t+1} = 0.$$&lt;/p&gt;
+&lt;h3 id=&#34;steady-state&#34;&gt;Steady state&lt;/h3&gt;
+&lt;p&gt;Before trying to solve for the optimal trajectory, we analyse the steady states of this economy.
+A steady-state $(\bar{k}, \bar{c})$ is such that capital and consumption remain constant over time: $c_{t+1} = c_{t}$ and $k_{t+1} = k_{t}.$
+Applying this idea to the equations above we get &amp;mdash;here we can temporarily forget about the transversality condition.&lt;/p&gt;
+&lt;p&gt;$$\bar{c} = \beta(\alpha \bar{k}^{\alpha-1} + 1 - \delta) \bar{c},$$
+$$\bar{k}^{\alpha} + (1-\delta)\bar{k} = \bar{c} + \bar{k}.$$&lt;/p&gt;
+&lt;p&gt;Using the first equation we can easily get the steady level of capital:&lt;/p&gt;
+&lt;p&gt;$$ \bar{k} = \left(\frac{\alpha \beta}{1-\beta(1-\delta)}\right)^{\frac{1}{1-\alpha}}.$$&lt;/p&gt;
+&lt;p&gt;Applying $\bar{k}$ in the second equation yields the steady-state level of consumption:&lt;/p&gt;
+&lt;p&gt;$$ \bar{c} = \left(\frac{\alpha \beta}{1-\beta (1-\delta)}\right)^{\frac{\alpha}{1-\alpha}} - \delta \left(\frac{\alpha \beta}{1-\beta (1- \delta)}\right)^{\frac{1}{1-\alpha}}.$$&lt;/p&gt;
+&lt;h2 id=&#34;stability&#34;&gt;Stability&lt;/h2&gt;
+&lt;p&gt;First, we analyse the stability of the steady state, as we did in the &lt;a href=&#34;https://eric-roca.github.io/courses/macroeconomics/ramsey/ramsey_steady_state/#stability&#34;&gt;general case&lt;/a&gt;
+Since we are using log-utility, the coefficient of relative risk aversion $\epsilon_{c} = 1.$&lt;/p&gt;
+&lt;p&gt;Instead of plugging the correct values in the Jacobian matrix $\bar{A}$, for the sake of clarity, we derive everything again:&lt;/p&gt;
+&lt;p&gt;$$\bar{A} = \begin{pmatrix}
+\frac{\partial c_{t+1}}{\partial c_{t}} &amp;amp; \frac{\partial c_{t+1}}{\partial k_{t}} \\\
+\frac{\partial k_{t+1}}{\partial c_{t}} &amp;amp; \frac{\partial k_{t+1}}{\partial k_{t}}
+\end{pmatrix}
+$$
+$$ = $$
+$$\begin{pmatrix}
+\beta \left( \alpha k_{t+1}^{\alpha -1} + 1 - \delta \right) - \frac{\beta c_{t} \alpha (\alpha-1) }{k_{t+1}^{2-\alpha}} &amp;amp; \frac{\beta c_{t} \alpha (\alpha -1)}{k_{t+1}^{2-\alpha}} \left( \alpha k_{t}^{\alpha-1} + 1 - \delta \right) \\\
+-1 &amp;amp; \alpha k_{t}^{\alpha -1} + 1 - \delta \end{pmatrix}$$&lt;/p&gt;
+&lt;p&gt;Evaluating it at the steady state:
+$$\bar{A}\bigr\rvert_{\substack{
+k_{t} = k_{t+1} = \bar{k} \\\
+c_{t} = c_{t+1} = \bar{c}
+}
+}
+= \begin{pmatrix}
+1 - \beta \bar{c}  \alpha (\alpha -1) \bar{k}^{\alpha -2}  &amp;amp; \alpha (\alpha -1 ) \bar{c}  \bar{k}^{\alpha -2} \\\
+-1  &amp;amp; \frac{1}{\beta}
+\end{pmatrix},$$&lt;/p&gt;
+&lt;p&gt;where we have used $1 = \beta \left( \alpha \bar{k}^{\alpha -1} + 1 - \delta \right)$ at the steady state.&lt;/p&gt;
+&lt;h3 id=&#34;eigenvalues&#34;&gt;Eigenvalues&lt;/h3&gt;
+&lt;p&gt;We can use the fact $\mathrm{tr}(\bar{A}) = \lambda_{1} + \lambda_{2}, \mathrm{det}(\bar{A}) = \lambda_{1} \lambda_{2}.$
+Therefore:&lt;/p&gt;
+&lt;p&gt;$$\lambda_{1} \lambda_{2} = \frac{1}{\beta} $$
+$$\lambda_{1} + \lambda_{2} = \frac{1}{\beta} + 1 - \beta \bar{c} \alpha (\alpha-1) \bar{k}^{\alpha -2}.$$
+The first equation implies that either a) $\lambda_{1} &amp;gt; 0, \lambda_{2} &amp;gt; 0$ or b) $\lambda_{1} &amp;lt; 0, \lambda_{2} &amp;lt; 0.$
+However, since $\lambda_{1} + \lambda_{2} &amp;gt; 1$ b) is impossible.
+Then, $\lambda_{1} &amp;gt; 0, \lambda_{2} &amp;gt; 0.$
+Substitute $\lambda_{1} \lambda_{2} = \frac{1}{\beta} $ in the second equation:&lt;/p&gt;
+&lt;p&gt;$$ \lambda_{1} + \lambda_{2} = 1+ \lambda_{1} \lambda_{2} - \beta ( \alpha (\alpha - 1) \bar{k}^{\alpha -2}\frac{\bar{c}}{\epsilon_{\bar{c}}}.$$&lt;/p&gt;
+&lt;p&gt;Rearranging:
+$$ \lambda_{1} + \lambda_{2} - \lambda_{1} \lambda_{2} =  1+  - \beta \alpha (\alpha -1) \bar{k}^{\alpha -2}\frac{\bar{c}}{\epsilon_{\bar{c}}} &amp;gt; 1 \implies \lambda_{1} + \lambda_{2} - \lambda_{1}\lambda_{2} - 1 &amp;gt;0.$$
+Factorisation leads to:
+$$(1 - \lambda_{2})(\lambda_{1} - 1) &amp;gt; 0.$$
+Therefore, since $\lambda_1,, \lambda_2 &amp;gt;0:
+$$ \lambda_{2} &amp;lt; 1 \implies \lambda_{1} \in (0,1)$$
+$$ \lambda_{1} &amp;gt; 1 \implies \lambda_{2} \in (1,+\infty)$$
+and &lt;strong&gt;the steady state is saddle.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;trajectory&#34;&gt;Trajectory&lt;/h2&gt;
+&lt;p&gt;Describing the trajectory around the steady state analytically would be cumbersome.
+One possibility is to introduce an alternative production function of the $Ak$ family which alleviates this problem, see the notes by &lt;a href=&#34;https://eml.berkeley.edu/~webfac/obstfeld/e202a_f13/lecture2.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Maurice Obsfeld&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Instead, we solve this section numerically.
+In particular, assume that $\alpha = 0.3, \, \beta = 0.9, \, \delta = 0.1.$
+The initial level of capital $k_{t=0} = 1.$&lt;/p&gt;
+&lt;p&gt;With these values, we have the following:&lt;/p&gt;
+&lt;p&gt;$$\bar{k} = 1.65202, \, \bar{c}=0.997329, \, \bar{A} = \begin{pmatrix} 1.08029 &amp;amp; -0.089214 \\\ -1 &amp;amp; 1.11111 \end{pmatrix}.$$&lt;/p&gt;
+&lt;p&gt;The eigenvalues of the matrix $\bar{A}$ are
+$$\lambda_{1} = 0.796618 \in (-1,1)$$ $$\lambda_{2} =1.39479 &amp;gt; 1.$$&lt;/p&gt;
+&lt;p&gt;One possible set of eigenvectors is given by:&lt;/p&gt;
+&lt;p&gt;$$v_{1} = (0.314494 , 1), v_{2} = (-0.283675, 1)$$
+which are associated with $\lambda_{1}$ and $\lambda_{2}$, respectively.
+Hence, the matrix $X$ becomes:&lt;/p&gt;
+&lt;p&gt;$$X = \begin{pmatrix} 0.314494 &amp;amp; -0.283675 \\\ 1 &amp;amp; 1 \end{pmatrix}.$$&lt;/p&gt;
+&lt;h3 id=&#34;solving-the-system&#34;&gt;Solving the system&lt;/h3&gt;
+&lt;p&gt;Applying the results from before the system is:&lt;/p&gt;
+&lt;p&gt;$$\begin{pmatrix} c_{t} - \bar{c} \\\ k_{t} - \bar{k} \end{pmatrix} = z_{0}^{1}, 0.796618^{t} \begin{pmatrix} 0.314494 \\\ 1 \end{pmatrix} + z_{0}^{2}, 1.39479 \begin{pmatrix} -0.283675 \\\ 1 \end{pmatrix}.$$&lt;/p&gt;
+&lt;p&gt;Since $\lambda_{2} &amp;gt; 1$ we must set the value $z_{0}^{2} = 0$ to avoid explosive behaviour.
+Consequently:&lt;/p&gt;
+&lt;p&gt;$$\begin{pmatrix} c_{t} - \bar{c} \\\ k_{t} - \bar{k} \end{pmatrix} = z_{0}^{1}, 0.796618^{t} \begin{pmatrix} 0.314494 \\\ 1 \end{pmatrix}.$$&lt;/p&gt;
+&lt;p&gt;To solve the system of equations, first set $t=0$ and focus on $k_t - \bar{k}.$&lt;/p&gt;
+&lt;p&gt;$$\underbrace{k_{0}}_{=1} - \underbrace{\bar{k}}_{=1.65202} =  z_{0}^{1} \times 1= -0.652017.$$&lt;/p&gt;
+&lt;p&gt;Hence, capital dynamics are governed by&lt;/p&gt;
+&lt;p&gt;$k_{t} - \bar{k} = -0.652017 \times 0.796618^{t}$&lt;/p&gt;
+&lt;p&gt;The law of motion of consumption becomes&lt;/p&gt;
+&lt;p&gt;$c_{t} - \bar{c} = -0.652017 \times 0.314494 \times 0.796618^{t} = -0.205055 \times 0.786618^{t}.$&lt;/p&gt;
+&lt;p&gt;Finally, we solve for the initial level of consumption compatible with the saddle path.
+For $t=0$ we have:&lt;/p&gt;
+&lt;p&gt;$c_{0} - \underbrace{\bar{c}}_{=0.997329} = \underbrace{z_{0}^{1}}_{= -0.652017} \times 0.314494 \implies c_{0} = 0.792273.$&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Golden rule</title>
+      <link>https://eric-roca.github.io/courses/macroeconomics/ramsey/ramsey_golden_rule/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/macroeconomics/ramsey/ramsey_golden_rule/</guid>
+      <description>&lt;h2 id=&#34;Golden-rule&#34;&gt;The Golden rule&lt;/h2&gt;
+&lt;p&gt;This capital level $\bar{k}$ is called the &lt;em&gt;modified&lt;/em&gt; Golden-rule level of capital.
+The adjective &lt;em&gt;modified&lt;/em&gt; comes from the fact that the Golden rule level of capital is the level of capital, $k^{\mathcal{GR}}$ that maximises consumption, $c$ at the steady state, thus achieving maximum consumption: $c^{\mathcal{GR}}.$&lt;/p&gt;
+&lt;p&gt;We already know that, at the steady state:&lt;/p&gt;
+&lt;p&gt;$$k=f(k)+(1-\delta)k-c \implies c = f(k) -\delta k.$$&lt;/p&gt;
+&lt;p&gt;Hence, the level of capital that maximises $c$ is given by:&lt;/p&gt;
+&lt;p&gt;$$\frac{\partial c(k)}{\partial k} = f^{\prime}(k) - \delta = 0.$$&lt;/p&gt;
+&lt;p&gt;From here, the Golden-rule level of capital which maximises consumption at the steady state satisfies&lt;/p&gt;
+&lt;p&gt;$$f^{\prime}(k^\mathcal{GR}) = \delta \implies k^{\mathcal{GR}} = {f^{\prime}}^{-1}(\delta).$$&lt;/p&gt;
+&lt;p&gt;However, the &lt;em&gt;competitive&lt;/em&gt; steady-state level of capital $\bar{k}$ was characterised by&lt;/p&gt;
+&lt;p&gt;$$f^{\prime}(\bar{k}) = \frac{1-\beta (1 - \delta)}{\beta} \implies \bar{k} = {f^{\prime}}^{-1}\left(\frac{1-\beta (1 - \delta)}{\beta}\right). $$&lt;/p&gt;
+&lt;p&gt;Hence, $k^{\mathcal{GR}} = \bar{k}$ is only possible if and only if $\frac{1-\beta (1 - \delta)}{\beta} = \delta \implies \beta = 1.$&lt;/p&gt;
+&lt;h3 id=&#34;under--or-over-accumulation-of-capital-in-the-ramsey-model&#34;&gt;Under- or over-accumulation of capital in the Ramsey model&lt;/h3&gt;
+&lt;p&gt;According to the results before, the competitive steady-state level of capital maximises consumption at the steady state.
+In fact, we have that&lt;/p&gt;
+&lt;p&gt;$$f^{\prime}(\bar{k}) = \frac{1-\beta (1 - \delta)}{\beta}$$
+$$f^{\prime}(k^{\mathcal{GR}}) = \delta.$$&lt;/p&gt;
+&lt;p&gt;So, unless $\beta = 1,$ the economy is not at the Golden-rule level of capital.&lt;/p&gt;
+&lt;p&gt;Since $\frac{1-\beta (1 - \delta)}{\beta} &amp;gt; \delta$, we conclude that $\bar{k} &amp;lt; k^{\mathcal{GR}}:$ the level of capital is below its Golden-rule level.&lt;/p&gt;
+&lt;p&gt;We derived the level of capital in the competitive equilibrium by maximising total utility.
+However, $\bar{k}$ does &lt;strong&gt;not&lt;/strong&gt; maximise steady-state consumption.
+In that sense, achieving the Golden Rule level of capital $k^{\mathcal{GR}}$ is &lt;strong&gt;not&lt;/strong&gt; desirable from the viewpoint of utility maximisation.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Last remarks</title>
+      <link>https://eric-roca.github.io/courses/macroeconomics/ramsey/ramsey_remarks/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/macroeconomics/ramsey/ramsey_remarks/</guid>
+      <description>&lt;h2 id=&#34;optimality&#34;&gt;Optimality&lt;/h2&gt;
+&lt;p&gt;Before &lt;a href=&#34;https://eric-roca.github.io/courses/macroeconomics/ramsey/ramsey_steady_state/#Golden-rule&#34;&gt;we claimed&lt;/a&gt; that the solution is &lt;em&gt;optimal&lt;/em&gt; despite the fact that it does not maximise consumption at the steady state.
+However, what we claimed was that the &lt;em&gt;entire path&lt;/em&gt; was optimal.
+We can prove it by solving the Ramsey allocation problem from the perspective of the social planner.&lt;/p&gt;
+&lt;h3 id=&#34;social-planner&#34;&gt;Social planner&lt;/h3&gt;
+&lt;p&gt;A social planner maximises total welfare, given by:&lt;/p&gt;
+&lt;p&gt;$$\max \sum_{t=0}^{\infty} \beta^{t} u(c_{t}).$$&lt;/p&gt;
+&lt;p&gt;The social planner directly allocates resources between consumption and investment, so he is not bothered by wages or interest rates.
+In particular, he has to allocate total production and capital net of depreciation between $c_{t}$ and $k_{t+1}.$
+Hence his intertemporal budget constraint reads:&lt;/p&gt;
+&lt;p&gt;$$f(k_{t}) = c_{t} + k_{t+1} + (1-\delta) k_{t}.$$
+The planner operates under a certain level $k_{0} &amp;gt; 0$ given.&lt;/p&gt;
+&lt;p&gt;The budget constraint is equivalent to the one we found in the competitive equilibrium.
+Moreover, total welfare coincides, with household&amp;rsquo;s utility.
+Hence, the solutions will be the same, proving that the competitive equilibrium was optimal.&lt;/p&gt;
+&lt;p&gt;The two main equations of the model are relevant for the planner as well.
+First, he must follow the Euler equation.
+In fact, he can reduce present consumption by $\Delta c$ at time $t$ and save it.
+The present-day cost is $u^{\prime} ( c_{t} ) \Delta_{c}$.
+He obtains $f^{\prime}(k_t) \Delta_{c} + (1-\delta) \Delta_{c}$ at time $t+1,$ which raises utility by $\left( f^{\prime}(k_{t}) \Delta_{c} + (1-\delta) \Delta_{c} \right)  u^{\prime}_{c_{t+1}}.$
+Optimality implies that this trade off is not possible anymore, hence, we obtain the Euler equation again.&lt;/p&gt;
+&lt;p&gt;Second, although the planner directly allocates consumption and investments, he must follow the technological constraint displayed above.
+This does not represent preferences, and coincides with the household&amp;rsquo;s budget constraint after clearing the markets.&lt;/p&gt;
+&lt;p&gt;Finally, observe that the &lt;em&gt;first welfare theorem&lt;/em&gt; directly applies:
+if markets are competitive and there are no externalities, then the decentralised equilibrium is Pareto-efficient.
+All conditions hold in the Ramsey model.&lt;/p&gt;
+&lt;h2 id=&#34;the-golden-rule&#34;&gt;The Golden rule&lt;/h2&gt;
+&lt;p&gt;We have discussed before that, in the Ramsey model, the economy converges to a steady state with $\bar{k}$ below the Golden-rule level of capital $k^{\mathcal{GR}}$.&lt;/p&gt;
+&lt;p&gt;This contrasts with the Solow model: in the Solow model, a sufficiently high saving rate causes capital over-accumulation.
+This opens the possibility of finding alternative paths that yield higher consumption levels in each and every period &amp;mdash;meaning that such a saving rate was not Pareto-efficient.&lt;/p&gt;
+&lt;p&gt;In the Ramsey model, savings are optimally derived from utility maximisation, and the level of utility depends on consumption.
+Moreover, the model features &lt;em&gt;no&lt;/em&gt; externalities.
+Consequently, the model cannot produce a situation whereby it is possible to increase consumption at each and every period: this would contradict optimisation.&lt;/p&gt;
+&lt;p&gt;However, $\bar{k} &amp;lt; k^{\mathcal{GR}}$ implies that it is possible to increase the saving rate today, build up the extra capital needed to reach $k^{\mathcal{GR}}$ and then be able to consume $c^{\mathcal{GR}} &amp;gt; \bar{c}$ at the steady state &amp;mdash;which, remember, lasts forever.
+Suppose that we had reached the steady-state.
+Why do the households not change their saving rate to reach $c^{\mathcal{GR}}?$
+The reason is that households value present consumption more than future consumption.
+Therefore, the current utility cost of a reduction in consumption is larger the future gains once discounted.
+Because of the discount rate, the utility gains from an eventual permanent increase in consumption are bounded.&lt;/p&gt;
+&lt;p&gt;All in all, the economy converges to a value $\bar{k}$ below the steady state.
+Because $\bar{k}$ is the optimal level of $k$ for the economy to converge to, it is known as the &lt;em&gt;modified Golden-rule&lt;/em&gt; capital stock.&lt;/p&gt;
+&lt;p&gt;We &lt;a href=&#34;https://eric-roca.github.io/courses/macroeconomics/ramsey/ramsey_steady_state/#Golden-rule&#34;&gt;had already noticed&lt;/a&gt; that the discount factor $\beta$ prevents the economy from reaching the Golden-rule level of capital.
+According to our computation, the Golden-rule level of capital is only attained if $\beta = 1.$
+This implies that present and future consumption are valued the same, which complements the discussion above.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

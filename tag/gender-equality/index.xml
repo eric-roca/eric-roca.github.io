@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gender Equality | Èric Roca Fernández</title>
+    <link>https://eric-roca.github.io/tag/gender-equality/</link>
+      <atom:link href="https://eric-roca.github.io/tag/gender-equality/index.xml" rel="self" type="application/rss+xml" />
+    <description>Gender Equality</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 29 Oct 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://eric-roca.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Gender Equality</title>
+      <link>https://eric-roca.github.io/tag/gender-equality/</link>
+    </image>
+    
+    <item>
+      <title></title>
+      <link>https://eric-roca.github.io/publication/beguines/</link>
+      <pubDate>Fri, 29 Oct 2021 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/publication/beguines/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>In the Name of the Father: Inheritance Systems and the Dynamics of State Capacity</title>
+      <link>https://eric-roca.github.io/publication/inheritance-systems/</link>
+      <pubDate>Fri, 21 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/publication/inheritance-systems/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

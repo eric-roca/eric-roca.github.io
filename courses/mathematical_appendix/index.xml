@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mathematical appendix | Èric Roca Fernández</title>
+    <link>https://eric-roca.github.io/courses/mathematical_appendix/</link>
+      <atom:link href="https://eric-roca.github.io/courses/mathematical_appendix/index.xml" rel="self" type="application/rss+xml" />
+    <description>Mathematical appendix</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 11 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://eric-roca.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Mathematical appendix</title>
+      <link>https://eric-roca.github.io/courses/mathematical_appendix/</link>
+    </image>
+    
+    <item>
+      <title>Homogenous functions</title>
+      <link>https://eric-roca.github.io/courses/mathematical_appendix/homogenous_functions/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/mathematical_appendix/homogenous_functions/</guid>
+      <description>&lt;p&gt;Notes based on Appendix A.1.1 of &lt;em&gt;de la Croix and Michel: A Theory of Economic Growth.&lt;/em&gt; and Appendix M.B of &lt;em&gt;Mas-Colell, Whinston and Green: Microeconomic Theory.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;homogeneity&#34;&gt;Homogeneity&lt;/h2&gt;
+&lt;p&gt;A function of N variables $f(x_{1}, \ldots, x_{N})$ defined for all non-negative values $(x_{1}, \ldots, x_{N})$ is &lt;strong&gt;homogeneous of degree $p$&lt;/strong&gt; if:&lt;/p&gt;
+&lt;p&gt;$$f(\lambda x_{1}, \ldots, \lambda x_{N}) = \lambda^{p} f(x_{1}, \ldots, x_{N}) \forall \lambda &amp;gt; 0.$$&lt;/p&gt;
+&lt;p&gt;Hence, if we scale all the components $x_{1}, \ldots, x_{N}$ of the function by the same amount $\lambda$, the result that we obtain is equal to the one before scaling times $\lambda^{p}.$
+Production functions are often homogeneous of degree one: if all inputs are doubled, the output doubles as well.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example: A Cobb-Douglass production function&lt;/strong&gt;
+A Cobb-Douglass production function is of degree one.
+To see this, take its typical form:&lt;/p&gt;
+&lt;p&gt;$$f(x,y) = x^\alpha y^{1-\alpha}$$&lt;/p&gt;
+&lt;p&gt;and verify that $f(\lambda x, \lambda y) = \lambda f(x,y).$
+Indeed, $f(\lambda x, \lambda y) = (\lambda x)^{\alpha} (\lambda y)^{1-\alpha} = \lambda x^{\alpha} y^{1-\alpha} = \lambda f(x,y).$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example: A CES production function&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A CES production function takes the form $f(x,y) = \left(\alpha x^{\eta} + (1-\alpha) y ^{\eta}\right)^{\frac{\zeta}{\eta}},, \eta \leq 1.$
+This type of function is homogeneous of degree $\zeta:$&lt;/p&gt;
+&lt;p&gt;$$f(\lambda x, \lambda y) = \left(\alpha \lambda^{\eta} x^{\eta} + (1-\alpha) \lambda^{\eta} y^{\eta}\right)^{\frac{\zeta}{\eta}} = \lambda^{\zeta} f(x,y).$$&lt;/p&gt;
+&lt;h3 id=&#34;properties-of-the-derivatives-of-homogeneous-functions&#34;&gt;Properties of the derivatives of homogeneous functions&lt;/h3&gt;
+&lt;p&gt;Assume that $f$ is continuously differentiable of as many degrees as required.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The derivative of a function homogeneous of degree $p$ is homogeneous of degree $p-1$.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If a function $f$ is of degree $p$, then for any $n = 1, \ldots, N$ the partial derivative $\partial f(x_{1}, \ldots, x_{N})/\partial x_{n}$ is of degree $p-1.$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; see proof in Mas-Colell et al.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Examples:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;A Cobb-Douglas production function $f(x,y) = x^{\alpha} y^{1-\alpha}$ has derivates equal to $f_{x}(x,y) =  \alpha x^{\alpha-1} y^{1-\alpha}$ and $f_{y}(x,y) = (1-\alpha) x^{\alpha} y^{-\alpha}.$
+Then it is easy to check that
+$$f_{x}(\lambda x, \lambda y) = \lambda^{0} f_{x}(x,y)$$
+and
+$$f_{y}(\lambda x, \lambda y) = \lambda^{0} f_{y}(x,y),$$
+which implies that derivatives are homogeneous of degree zero.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The CES function $f$: $f(x,y) = (\alpha x^{\eta} + (1-\alpha) y^{\eta})^{\frac{\zeta}{\eta}}$ is homogeneous of degree $\zeta$.
+The derivative function $f_{x}(x,y) = \alpha \zeta x^{\eta - 1} (\alpha x^{\eta} + (1-\alpha)y^{\eta})^{\frac{\zeta-\eta}{\eta}}$ is homogeneous of degree $\zeta-1$:
+$$f_{x}(\lambda x, \lambda y) = \alpha \zeta x^{\eta - 1}\lambda^{\eta-1}(\alpha \lambda^{\eta} x^{\eta} + (1-\alpha) \lambda^{\eta} y^{\eta})^{\frac{\zeta-\eta}{\eta}} = \lambda^{\zeta-1} \alpha \zeta x^{\eta - 1}(\alpha x^{\eta} + (1-\alpha) y^{\eta})^{\frac{\zeta-\eta}{\eta}} = \lambda^{\zeta-1} f_{x}(x,y).$$
+We can proceed similarly for $y$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;eulers-formula&#34;&gt;Euler&amp;rsquo;s formula&lt;/h3&gt;
+&lt;p&gt;This is an interesting property of homogeneous functions.
+In particular, it is useful in showing that, if the production function is homogeneous of degree one and factors are paid their marginal product, then profits are zero.&lt;/p&gt;
+&lt;p&gt;Suppose that $f(x_{1}, \ldots, x_{N})$ is homogeneous of degree $p$ and differentiable.
+So, at any set of values $(\bar{x_{1}}, \ldots, \bar{x_{N}})$ we have:&lt;/p&gt;
+&lt;p&gt;$$\sum_{n=1}^{N} \frac{\partial f(\bar{x_{1}}, \ldots, \bar{x_{N}})}{\partial x_{n}} \bar{x_{n}} = p f(\bar{x_{1}}, \ldots, x_{N}).$$&lt;/p&gt;
+&lt;p&gt;In words, if we multiply the derivatives by the variable with respect which we derivate and add all of them up, we retrieve the original function $p$ times.
+Setting $p=1$ delivers the property we announced before.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;If the production function is homogeneous of degree one, under perfect competition (factors are paid their marginal product) firms make zero profits:
+For simplicity, take a Cobb-Douglas function
+$$f(x,y)=x^{\alpha} y^{1-\alpha}.$$
+Marginal products are
+$$f_{x} = \alpha x^{\alpha -1}y^{1-\alpha}$$
+and
+$$f_{y} = (1-\alpha) x^{\alpha} y^{-\alpha}.$$
+Applying Euler&amp;rsquo;s formula we get:
+$$f_{x} x + f_{y} y = \alpha x^{\alpha - 1} y^{1-\alpha} x + (1-\alpha) x^{\alpha} y^{-\alpha} y = f(x,y).$$
+Hence, the total amount produced ($f(x,y)$) is distributed to factor owners, and the firm necessarily makes zero profits.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;intensive-form&#34;&gt;Applications to work with intensive-form functions&lt;/h3&gt;
+&lt;p&gt;Often, we express the production function $F(K,L)$ in intensive terms.
+This is, instead of focusing on the level of capital and labour, we are interested in the level of capital &lt;em&gt;per&lt;/em&gt; worker.
+In other terms, we focus on $k \equiv \frac{K}{L}.$
+Since we assume a production function of degree one, the transformation is simple.
+Remember that if we multiply both factors by the same number, the result is also multiplied by that same number.
+Hence, if we pick $\lambda = \frac{1}{L}$ we obtain:&lt;/p&gt;
+&lt;p&gt;$$f(k) \equiv F\left(\frac{K}{L}, \frac{L}{L} \right) = \frac{1}{L} F\left( K,L \right).$$
+Therefore, rearranging:
+$$F(K,L) = Lf(k).$$&lt;/p&gt;
+&lt;p&gt;We use this last relationship to compute the marginal products in intensive form:
+$$F_{K}(K,L) = \frac{\partial F(K,L)}{\partial K} = \frac{\partial L f\left(\frac{K}{L} \right)}{\partial K} = L \frac{1}{L}f_{k}(k) = f^{\prime}(k).$$&lt;/p&gt;
+&lt;p&gt;Similarly:
+$$F_{L}(K,L) = \frac{\partial F(K,L)}{\partial L} = \frac{\partial L f\left(\frac{K}{L}\right)}{\partial L} = f\left(\frac{K}{L}\right)-Lf^{\prime}\left(\frac{K}{L}\right)\frac{K}{L^{2}} = f(k) - f^{\prime}(k)k.$$
+Alternatively, we can use the Euler&amp;rsquo;s formula to compute $F_{L}(K,L)$.
+$$F(K,L) = F_{K} K + F_{L} L$$
+hence, isolating
+$$F_{L} = \frac{F(K,L) - F^{\prime}_{K} K}{L}.$$
+We know that $F(K,L)$ is homogeneous of degree one, hence $F\left(\frac{K}{L},1\right) = \frac{F(K,L)}{L}.$
+Therefore,
+$$F_{L} = F\left(\frac{K}{L}\right) - F^{\prime}_{K}\frac{K}{L} = f(k) - f^{\prime}(k) k,$$
+where we use the fact that $F^{\prime}_{K}$ is homogeneous of degree zero ($F$ was homogeneous of degree one) and we can divide the arguments without changing the value of the function:
+$$F^{\prime}(K,L) =F^{\prime}\left(\frac{K}{L},\frac{L}{L}\right) = f^{\prime}(k).$$&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Difference equations</title>
+      <link>https://eric-roca.github.io/courses/mathematical_appendix/steady_state/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/mathematical_appendix/steady_state/</guid>
+      <description>&lt;p&gt;This note is based on Appendix A.3.2 of &lt;em&gt;de la Croix and Michel: A Theory of Economic Growth.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Macroeconomic models often have dynamic equations relating different periods of time.
+These can either be in continuous or discrete time.
+In this note, we focus only on the discrete-time case, but the intuition carries over to the continuous case.
+When equations are in discrete time, we call time &lt;em&gt;difference equations&lt;/em&gt;.
+The continuous-time equivalents are called &lt;em&gt;differential equations.&lt;/em&gt;
+&lt;strong&gt;Note:&lt;/strong&gt; the conditions for stability change between the continuous and discrete-time cases.&lt;/p&gt;
+&lt;h2 id=&#34;a-dynamic-equation-one-dimensional-case&#34;&gt;A dynamic equation: one-dimensional case&lt;/h2&gt;
+&lt;p&gt;A dynamic equation is an equation that relates the state of a variable through time to the value the variable took in previous periods.
+The number of lags the equation considers determines its order.
+A difference equation of order $T$ takes the form
+$$x_{t+1} = f(x_{t}, x_{t-1}, \ldots, x_{t-T}).$$&lt;/p&gt;
+&lt;h2 id=&#34;first-order-difference-equation&#34;&gt;First-order difference equation&lt;/h2&gt;
+&lt;p&gt;One of the most common cases that arises in macroeconomic models is the first-order difference equation.
+It relates the present value of a variable to the value it took in the period immediately before:&lt;/p&gt;
+&lt;p&gt;$$x_{t+1} = f(x_{t}).$$&lt;/p&gt;
+&lt;p&gt;We are often interested in the steady state of difference equations.
+The steady state is defined as the set of values $\bar{x}$ (there can be more than one steady state) such that, if reached, the economy remains there.
+Equivalently, once reached, the value of the variable $x$ remains unchanged.
+Mathematically, $\bar{x}$ is a steady state of a first-order difference equation if&lt;/p&gt;
+&lt;p&gt;$$\bar{x} = f(\bar{x}).$$&lt;/p&gt;
+&lt;p&gt;Proving that a steady state $\bar{x}$ exists may involve using different techniques.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt; Assume the following first-order difference equation:&lt;/p&gt;
+&lt;p&gt;$$x_{t+1} = x_{t}^{\eta} +\kappa, \kappa&amp;gt;0, \eta \in (0,1).$$&lt;/p&gt;
+&lt;p&gt;The steady state solves: $\bar{x} = \bar{x}^{\eta}+\kappa$.&lt;/p&gt;
+&lt;p&gt;To show that it exists we can prove that the function $F(\bar{x}) = \bar{x} - \bar{x}^{\eta} - \kappa$ as at least one root.&lt;br/&gt;
+Note that $F(0) = -\kappa &amp;lt;0$ and that $\lim_{\bar{x} \rightarrow +\infty} F(\bar{x}) = + \infty.$
+Hence, since it is a continuous function, it must have at least one solution.
+We can further show that it admits one and only one solution by proving that $x_{t+1}$ is a monotonous function of $x_{t}$.
+Monotonicity is the key here, not whether it increases or decreases, although in our case it is increasing.&lt;/p&gt;
+&lt;p&gt;$$\frac{\partial x_{t+1}}{\partial x_{t}} = \eta x_{t}^{\eta-1} &amp;gt; 0.$$&lt;/p&gt;
+&lt;p&gt;Hence, the function is monotonous (always increasing) and there is one and only one root.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/i../../Mathematical_Appendix/roots.webp&#34; alt=&#34;roots&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;stability-of-a-first-order-difference-equation&#34;&gt;Stability of a first-order difference equation&lt;/h3&gt;
+&lt;p&gt;A steady state solution $\bar{x}$ to $\bar{x} = f(\bar{x})$ which is interior to the domain of $f$ is &lt;em&gt;locally stable&lt;/em&gt; if for any initial value $x_{0}$ near enough to $\bar{x}$, the dynamics starting from $x_{0}$ converge to $\bar{x}$.
+In other terms,
+$$\lim_{t \rightarrow +\infty} x_{t} = \bar{x}.$$&lt;/p&gt;
+&lt;p&gt;To determine whether a steady state is stable we analyse whether the function converges towards that steady state.
+We typically use first-order conditions to determine the stability.
+However, these only apply to &lt;strong&gt;hyperbolic&lt;/strong&gt; steady states.&lt;/p&gt;
+&lt;h4 id=&#34;hyperbolic-steady-states&#34;&gt;Hyperbolic steady states&lt;/h4&gt;
+&lt;p&gt;Assume that $f$ is differentiable.
+Let $\bar{x}$ be a steady state of $f$.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If $|f^{\prime}(\bar{x}) = 1|,$ then the steady state is &lt;strong&gt;non-hyperbolic&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;If $|f^{\prime}(\bar{x}) \neq 1|,$ then the steady state &lt;strong&gt;is hyperbolic&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;first-order-stability&#34;&gt;First-order stability&lt;/h4&gt;
+&lt;p&gt;Suppose that $\bar{x}$ is a hyperbolic steady state of $f$.
+Then&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;if $|f^{\prime}(\bar{x})| &amp;lt; 1$ then $\bar{x}$ is locally stable,&lt;/li&gt;
+&lt;li&gt;if $|f^{\prime}(\bar{x})| &amp;gt; 1$ then $\bar{x}$ is unstable.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Page 316 of &lt;em&gt;de la Croix and Michel&lt;/em&gt; provides the proof.&lt;/p&gt;
+&lt;p&gt;Intuitively, the condition for stability requires that we approach the steady state slowly.
+In other terms, the curvature of $f$ is smaller than 1.
+Therefore, although $x_{t}$ grows over time, every time the increase in its value becomes smaller, eventually tending towards zero.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt; let $x_{t} = f(x_{t-1}) = x_{t-1}^{0.5}$. This first-order difference equation has two steady states: $\bar{x}_{1} = 0$ and $\bar{x}_{2} = 1.$
+The first derivative is $f^{\prime} = 0.5 x_{t-1}^{-0.5}.$
+Evaluating it at the steady states results in the following:&lt;/p&gt;
+&lt;p&gt;$$ \lim_{\bar{x} \rightarrow {\bar{x}_{1}}^{+}} |f^{\prime}(\bar{x}_{1})| = + \infty, $$
+$$ |f^{\prime}(\bar{x}_{2})| = 0.5 &amp;lt; 1.$$&lt;/p&gt;
+&lt;p&gt;Therefore, $\bar{x}_{1}= 0$ is an unstable steady state, while $\bar{x}_{2} = 1$ is stable.
+Below, we plot two trajectories of $x_{t}$ when $x_{t} = x_{t-1}^{0.5}:$ one starting below the steady state $x_{0} &amp;lt; 1$ and the other above.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/ramsey/Steady_States.webp&#34; alt=&#34;steady states&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Starting from $x_{0} &amp;lt; \bar{x}_{2}$, the variable slowly increases until it reaches the steady state $\bar{x}_{2}.$
+Notice how the curvature of the function decreases (and is smaller than one), generating the convergence.
+We can reason similarly for the case $x_{0} &amp;gt; \bar{x}_{2}.$&lt;/p&gt;
+&lt;h2 id=&#34;first-order-systems-of-difference-equations&#34;&gt;First-order systems of difference equations&lt;/h2&gt;
+&lt;p&gt;A system of first-order difference equations takes the form:&lt;/p&gt;
+&lt;p&gt;$$\begin{eqnarray}
+x^{1}_{t+1} &amp;amp; = f^{1}(x^{1}_{t}, \ldots, x^{N}_{t}), \\\
+\vdots &amp;amp; \\\
+x^{N}_{t+1} &amp;amp; = f^{N}(x^{1}_{t}, \ldots, x^{N}_{t}).
+\end{eqnarray}$$&lt;/p&gt;
+&lt;p&gt;As before, we often interested by the steady states of first-order systems of difference equations.
+Finding a steady state implies solving the system for a fixed point $(\bar{x}^{1}, \ldots, \bar{x}^{N})$ such that&lt;/p&gt;
+&lt;p&gt;$$\begin{eqnarray}
+\bar{x}^{1} &amp;amp; = f^{1}( \bar{x}^{1}, \ldots, \bar{x}^{N}), \\\
+\vdots &amp;amp; \\\
+\bar{x}^{N} &amp;amp; = f^{N}( \bar{x}^{1}, \ldots, \bar{x}^{N}).
+\end{eqnarray}$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example:&lt;/strong&gt; suppose the following system of first-order difference equations:&lt;/p&gt;
+&lt;p&gt;$$\begin{eqnarray}
+x_{t} &amp;amp; = 0.3x_{t-1} + y_{t-1}^{0.5}, \\\
+y_{t} &amp;amp; = x_{t-1} - 0.5y_{t-1}.
+\end{eqnarray}$$&lt;/p&gt;
+&lt;p&gt;Finding the steady states requires solving the system of equations:&lt;/p&gt;
+&lt;p&gt;$$\begin{eqnarray}
+\bar{x} &amp;amp; = 0.3 \bar{x} + \bar{y}^{0.5}, \\\
+\bar{y} &amp;amp; = \bar{x} - 0.5 \bar{y}.
+\end{eqnarray}$$&lt;/p&gt;
+&lt;p&gt;The system has two solutions: $(\bar{x}_{1}, \bar{y}_{1}) = (0,0)$ and $(\bar{x}_{2}, \bar{y}_{2}) = (1.36, 0.90).$&lt;/p&gt;
+&lt;h3 id=&#34;approximation&#34;&gt;Stability of a first-order system of difference equations&lt;/h3&gt;
+&lt;p&gt;Let the functions $f^{1}(\cdot), \ldots, f^{N}(\cdot)$ be differentiable and let $(\bar{x}^{1}, \ldots, \bar{x}^{N})$ be a steady state of the dynamic system.
+Moreover, assume the steady state is interior on the domain $\mathcal{J}\in \mathbb{R}^{N}.$
+The steady state is locally stable if for any initial value $(x^{1}_{0}, \ldots, x^{N}_{0})$ near enough to $(\bar{x}^{1}, \ldots, \bar{x}^{N})$ the dynamics of $(x^{1}_{0}, \ldots, x^{N}_{0})$ converge to $(\bar{x}^{1}, \ldots, \bar{x}^{N}).$&lt;/p&gt;
+&lt;p&gt;It may be difficult to assess whether the previous condition applies.
+&lt;strong&gt;Note:&lt;/strong&gt; &lt;em&gt;de la Croix and Michel&lt;/em&gt; provide a more technical version on pages 320&amp;ndash;321.
+Instead, we can analyse the stability of the system using a first-order Taylor approximation around the steady state and applying a technique similar to what we used for the single-equation case.&lt;/p&gt;
+&lt;p&gt;First, a first-order Taylor approximation of $f^{1}$ around the steady state is given by&lt;/p&gt;
+&lt;p&gt;$$f^{1}(x^{1}, \ldots, x^{N}) - f^{1}(\bar{x}^{1}, \ldots, \bar{x}^{N}) \simeq \sum_{i=1}^{N} {f^{1}_{i}}^{\prime}(\bar{x}^{1}, \ldots, \bar{x}^{N})(x^{i} - \bar{x}^{i}),$$&lt;/p&gt;
+&lt;p&gt;and similarly for $f^{2}(\cdot), \ldots, f^{N}(\cdot).$
+We can express these in matrix notation:&lt;/p&gt;
+&lt;p&gt;$$
+\begin{pmatrix}
+x^{1}_{t+1} - x^{1}_{t} \\\
+\vdots \\\
+x^{N}_{t+1} - x^{N}_{t}
+\end{pmatrix}
+= \bar{A}
+\begin{pmatrix}
+x^{1}_{t} - \bar{x}^{1} \\\
+\vdots \\\
+x^{N}_{t} - \bar{x}^{N}
+\end{pmatrix},
+$$
+where $\bar{A}$ is an $N \times N$ matrix of the derivatives of $f^{1}(\cdot), \ldots, f^{N}(\cdot)$ taken at the point $(\bar{x}^{1}, \ldots, \bar{x}^{N})^{\prime},$ called &lt;em&gt;Jacobian matrix&lt;/em&gt;:&lt;/p&gt;
+&lt;p&gt;$$\bar{A} =
+\begin{pmatrix}
+{f^{1}_{x_{1}}}^{\prime}(\bar{x}^{1}, \ldots, \bar{x}^{N}) &amp;amp; \ldots &amp;amp; {f^{1}_{x_{N}}}^{\prime}(\bar{x}^{1}, \ldots, \bar{x}^{N}) \\\
+\vdots &amp;amp;  \vdots &amp;amp; \vdots \\\
+{f^{N}_{x_{1}}}^{\prime}(\bar{x}^{1}, \ldots, \bar{x}^{N}) &amp;amp; \ldots &amp;amp; {f^{N}_{x_{N}}}^{\prime}(\bar{x}^{1}, \ldots, \bar{x}^{N})
+\end{pmatrix}
+$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; the matrix $\bar{A}$ is &lt;em&gt;evaluated at the steady state&lt;/em&gt; $(\bar{x}^{1}, \ldots, \bar{x}^{N})$.&lt;/p&gt;
+&lt;h3 id=&#34;hyperbolicity-of-the-hyperplane&#34;&gt;Hyperbolicity of the hyperplane&lt;/h3&gt;
+&lt;p&gt;Assume that functions $f^{1}(\cdot), \ldots, f^{N}(\cdot)$ are continuously differentiable in $\mathcal{J}$. Let $(\bar{x}^{1}, \ldots, \bar{x}^{N})$ be a steady state in $\mathcal{J}.$ If the moduli of the eigenvalues of the Jacobian are different from 1 $(|\lambda_{1}| \neq 1, \ldots, |\lambda_{N} \neq 1),$ then the steady state &lt;em&gt;is hyperbolic&lt;/em&gt;.
+If &lt;em&gt;any&lt;/em&gt; of the eigenvalues equals 1, then the steady state is &lt;em&gt;non-hyperbolic&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;However, even if the steady state is non-hyperbolic, adequately choosing the initial conditions for the control variables can put it in a &lt;em&gt;saddle-path trajectory&lt;/em&gt;, this is, one that leads to the steady state.
+In that case, we need some eigenvalues to be within the unit circle: $(-1,1).$&lt;/p&gt;
+&lt;p&gt;A steady state is stable if all the eigenvalues associated to the Jacobian matrix are inside the unit circle $(-1,1).$
+This is, if we denote the eigenvalues by $\lambda_1, \lambda_2,\ldots, \lambda_N,$ the steady state is stable if and only if $\lambda_i \in (-1,1), i=1,\ldots,N.$&lt;/p&gt;
+&lt;p&gt;In many economic applications we often find that one eigenvalue is outside the unit circle.
+Blanchard-Kahn characterises the types of steady states.&lt;/p&gt;
+&lt;details&gt;
+&lt;summary&gt;Blanchard-Kahn conditions&lt;/summary&gt;
+Denote by $l$ the number of eigenvalues in the unit circle, and denote by $m$ the number of pre-determined state variables:
+&lt;ul&gt;
+&lt;li&gt;if $l=m$ (standard case): saddle-path, &lt;em&gt;unique&lt;/em&gt; optimal trajectory. The eigenvalues within the unit circle govern the speed of convergence.&lt;/li&gt;
+&lt;li&gt;if $l \lt m$: unstable&lt;/li&gt;
+&lt;li&gt;if $l \gt m$: multiple optimal trajectories.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;
+&lt;p&gt;One important type is the &lt;em&gt;saddle path.&lt;/em&gt;
+In such case, there is only one initial configuration of variables such that the economy converges towards the steady state.
+Any other initial set of values delivers a non-converging trajectory.
+In economics, we often encounter a $2 \times 2$ system.
+Often, the initial value of one variable is fixed (state variable, in general capital).
+Hence, we have to select the value of the other variable (control variable, in general consumption) in such a way that it is on the saddle path.&lt;/p&gt;
+&lt;p&gt;We develop a full example in &lt;a href=&#34;https://eric-roca.github.io/courses/macroeconomics/ramsey/ramsey_example/&#34;&gt;Example&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The transversality condition</title>
+      <link>https://eric-roca.github.io/courses/mathematical_appendix/transversality_condition/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/mathematical_appendix/transversality_condition/</guid>
+      <description>&lt;p&gt;The transversality condition appears as a necessary condition to determine the optimal path in dynamic models.
+It complements the Euler equation and allows to pinpoint the exact optimal path (see example below).&lt;/p&gt;
+&lt;p&gt;We use the transversality condition to avoid explosive consumption or saving paths that would end up in:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Excessive consumption, driving the capital stock of the economy to zero and impeding future consumption,&lt;/li&gt;
+&lt;li&gt;Excessive savings, up to the point that a large amount of the output is devoted to replace capital that depreciates.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;Indeed, using only the Euler equation alongside with initial conditions allows for infinitely many optimal paths to be found.
+The Ramsey problem does not state any final value for capital $k_{t=T}$ (in fact, it does not even state a final period $T$ because $T \rightarrow \infty).$
+Therefore, working only with the Euler equation and the initial stock of capital $k_{t=0} = k_{0}$ allows for infinitely optimal paths.
+In the following example, we try to solve the simple cake-eating problem without imposing the transversality condition, and obtain infinitely many solutions.&lt;/p&gt;
+&lt;h2 id=&#34;example-cake-eating-problem&#34;&gt;Example: Cake-eating problem&lt;/h2&gt;
+&lt;p&gt;We try to maximise utility from eating a finite cake over an infinite amount of time.
+The size of the cake ($k$) is given: $k_{t=0} = k_0 \ &amp;gt; 0.$
+The problem reads:&lt;/p&gt;
+&lt;p&gt;$$\begin{eqnarray}
+\max &amp;amp; \sum_{t=0}^{\infty} \beta^{t} \ln ( c_{t} ) \\\
+&amp;amp; k_{t+1}  = k_{t} - c_{t} \\\
+&amp;amp; k_{t=0} = k_{0}
+\end{eqnarray}$$&lt;/p&gt;
+&lt;p&gt;We solve it noting that we can decide on $c_{t}$ and $k_{t}.$
+The Lagrangian is:
+$$\mathcal{L} = \sum_{t=0}^{\infty} \beta^{t} \ln (c_{t}) + \sum_{t=0}^{\infty} \lambda_{t} (k_{t+1} - k_{t} + c_{t}).$$
+Taking derivatives with respect to $c_{t}$ and $k_{t}$, and noticing that $k_{t}$ appears together with the $\lambda_{t-1}$ term gives us the Euler equation:
+$$c_{t+1} = \beta c_{t}.$$
+Hence, iterating, $c_{t} = \beta^{t}c_{0}$&lt;br/&gt;
+Plugging it in the constraint gives us: $k_{t+1} = k_{t} - \beta^{t}c_{0}.$&lt;br/&gt;
+Solving for $k_{t}$ gives us $k_{t} = D - \frac{c_{0}(1-\beta^{t})}{1-\beta}.$
+At this point, we can no longer proceed (we have the unknown $D$) unless we have the extra restriction given by the transversality condition.
+If we use it, which reads, $\lim_{t \rightarrow \infty} \beta^{t} u^{\prime} (c_{t})k_{t+1}=0$ we can substitute $c_{t} = \beta^{t} c_{0}$.
+Therefore: $\lim_{t \rightarrow \infty} \beta^{t} \frac{1}{c_{t} k_{t+1}} = \lim_{t \rightarrow \infty} \beta^{t} \frac{1}{\beta^{t} c_{0}} k_{t+1} = \lim_{t \rightarrow \infty} k_{t+1} = 0.$
+So, at the limit, the size of the cake becomes zero, and we eat it completely.&lt;br/&gt;
+&lt;strong&gt;Note:&lt;/strong&gt; This makes sense, because utility is increasing in consumption and leaving something behind would be a waste of resources.&lt;/p&gt;
+&lt;p&gt;Now, with this additional information ($\lim_{t \rightarrow \infty} k_{t+1} = 0$) we can close the problem using:
+$k_{t+1} = D - \frac{c_{0}(1-\beta^{t-1})}{1-\beta}$.
+Hence $\lim_{t \rightarrow \infty} k_{t+1} = \lim_{t \rightarrow \infty} D - \frac{c_{0}(1-\beta^{t-1})}{1-\beta} = D - \frac{c_{0}}{1-\beta} = 0.$
+Therefore, $D = \frac{c_{0}}{1-\beta}$ which implies that $k_{t} = \frac{c_{0}\beta^{t}}{1-\beta}$.
+Since $k_{t=0} = k_{0}$ we can easily obtain $c_{0}$ from: $k_{0} = \frac{c_{0}}{1-\beta} \implies c_{0} = (1-\beta)k_{0}.$&lt;/p&gt;
+&lt;p&gt;Finally, we have that $c_{t} = \beta^{t} c_{0} = \beta^{t}(1-\beta)k_{0}.$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; This problem is more easily solved assuming since the beginning that the entire cake will be consumed.
+This is, $\sum_{t=0}^{\infty} c_{t} = k_{0}$.
+In that case, the Lagrangian is: $\mathcal{L} = \sum_{t=0}^{\infty} \beta^{t} \ln (c_{t}) + \lambda (\sum_{t=0}^{\infty} c_{t} - k_{0}).$
+Notice that in this case we have only one $\lambda$.
+It is simple to show that $c_{t} = \beta c_{t-1}.$
+Substituting this information in the constraint gives us $k_{0} = \sum_{t=0}^{\infty} \beta^{t} c_{0} = \frac{c_{0}}{1-\beta}.$
+Therefore, $c_{t} = \beta^t (1-\beta)k_{0}.$
+There is one important remark regarding this alternative method.
+It &lt;em&gt;indirectly&lt;/em&gt; uses the transversality condition.
+Remember that we obtained that $\lim_{t \rightarrow \infty} k_{t+1} = 0$ which implies that the entire cake is consumed.
+In the alternative method we assumed it, which makes sense just by looking at the utility formulation.&lt;/p&gt;
+&lt;h2 id=&#34;a-wrong-proof-of-the-transversality-condition&#34;&gt;A &lt;strong&gt;wrong&lt;/strong&gt; proof of the transversality condition&lt;/h2&gt;
+&lt;p&gt;In some cases the transversality constraint is justified as the limit when time goes to infinity of an equivalent problem with a finite horizon.
+This is, one can write an optimal program that ends at some specific period.
+For instance, our Ramsey problem with a terminal state can be written as:
+$$\max_{c_{t}, k_{t+1}} \sum_{t=0}^{T} \beta^{t} u(c_{t}).$$&lt;/p&gt;
+&lt;p&gt;We impose that capital must be positive all periods: $k_{t+1} \geq 0.$
+Write the Lagrangian that corresponds to the Kuhn-Tucker problem:&lt;/p&gt;
+&lt;p&gt;$$\mathcal{L} = \sum_{t=0}^{T} \beta^{t} u(c_{t}) + \sum_{t=0}^{T} \lambda_{t}(w_{t} + r_{t} k_{t} + (1-\delta)k_{t} - c_{t} - k_{t+1}) + \sum_{t=0}^{T} \mu_{t}k_{t+1}.$$&lt;/p&gt;
+&lt;p&gt;Taking the appropriate derivatives with respect to $k_{t+1}, c_{t}$ and remembering the complementary slackness condition leaves us with the following system of equations, which we evaluate at $t=T.$
+$$\begin{eqnarray}
+\beta^{T} u^{\prime}(c_{T}) &amp;amp; = \lambda_{T} \\\
+\lambda_{T} &amp;amp; = \mu_{T} \\\
+\mu_{T} k_{T+1} &amp;amp; = 0.
+\end{eqnarray}$$&lt;/p&gt;
+&lt;p&gt;Rearranging we can get:
+$$\begin{equation}
+\beta^{T} u^{\prime} (c_{T}) k_{T+1} = 0.
+\end{equation}$$&lt;/p&gt;
+&lt;p&gt;The equation above indicates that one of either two possibilities must be true:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\beta^{T} u^{\prime} (c_{T}) &amp;gt;0$ which requires $k_{T+1} = 0,$&lt;/li&gt;
+&lt;li&gt;$\beta^{T} u^{\prime} (c_{T}) = 0$ and $k_{T+1} \geq 0.$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The first case indicates that we leave the world at time $T$ with zero capital.
+This makes sense because the optimisation does not go beyond $T$, and leaving resources unconsumed is not efficient: after all, we &lt;em&gt;eat&lt;/em&gt; capital.
+So we eat everything before dying.
+The second case never arises: the marginal utility is zero only when consumption is infinite.&lt;/p&gt;
+&lt;p&gt;Letting time go to infinity, the equation above becomes the transversality condition:
+$$\lim_{t \rightarrow \infty} \beta^{t}u^{\prime}(c_{t})k_{t+1} = 0.$$&lt;/p&gt;
+&lt;h2 id=&#34;the-transversality-condition-is-a-necessary-condition-proof&#34;&gt;The transversality condition is a necessary condition: proof&lt;/h2&gt;
+&lt;p&gt;Proof by Kamihigashi (2002): &lt;a href=&#34;https://www.jstor.org/stable/25055538?seq=1#page_scan_tab_contents&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;A Simple Proof of the Necessity of the Transversality Condition&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Kamihigashi (2002) shows that the transversality condition is a necessary condition in an optimal control problem.
+This proof neglects consumption and focuses on current and future values of $x_{t}.$
+Consider the following maximisation problem:&lt;/p&gt;
+&lt;p&gt;$$
+\max_{ \{x_{t} \}_{t=0}^{\infty} }  \sum_{t=0}^{\infty} v_{t}(x_{t}, x_{t+1}) \\\
+x_{0} = \bar{x_{0}}, \forall t \in \mathbb{Z}_{+}, (x_{t}, x_{t+1}) \in X_{t}.
+$$&lt;/p&gt;
+&lt;p&gt;We assume the following:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$x_{t} \in X \subset \mathbb{R}_{+}^{m}$, basically, $x_{t} \geq 0,$&lt;/li&gt;
+&lt;li&gt;$X_{t}$ is convex, $(0,0) \in X_{t},$&lt;/li&gt;
+&lt;li&gt;$U: Gr(\Gamma) \rightarrow \mathbb{R}$ is $\mathcal{C}^{1}$ and concave,&lt;/li&gt;
+&lt;li&gt;$\forall (x,y) \in Gr(\Gamma), U_{y}(x,y) \leq 0,$&lt;/li&gt;
+&lt;li&gt;For any feasible path ${x_{t}}, \sum_{t=0}^{\infty} v_{t}(x_{t}, x_{t+1}) \equiv \lim_{T \rightarrow \infty} \sum_{t=0}^{T} v_{t}(x_{t}, x_{t+1})$ exists in $(-\infty, \infty).$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;First, define an optimal path $\{x_{t}^{\star}\}$ as a feasible path such that:
+$$\sum_{t=0}^{\infty} v_{t}(x_{t}, x_{t+1}) \leq \sum_{t=0}^{\infty} v_{t}(x_{t}^{\star}, x_{t+1}^{\star}).$$&lt;/p&gt;
+&lt;p&gt;The proof only involves using an argument derived from concavity.
+$$\forall \gamma \in [0,1), \forall \lambda \in [\gamma, 1), \frac{f(1)-f(\lambda)}{1-\lambda} \leq \frac{f(1)-f(\gamma)}{1-\gamma}.$$&lt;/p&gt;
+&lt;p&gt;Suppose we deviate $\lambda \in [0,1)$ from the optimal path ${x_{t}^{\star}}$ and follow a path that is feasible:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Lemma 1&lt;/strong&gt;
+$${x_{0}^{\star}, x_{1}^{\star}, \ldots, x_{T}^{\star}, \lambda x_{T+1}^{\star}, \lambda x_{T+2}^{\star}, \ldots }.$$&lt;/p&gt;
+&lt;p&gt;Again, we are assuming that by taking $\lambda \in [0,1)$ this alternative path is feasible.
+By optimality we have:
+$$v_{T}(x_{T}^{\star}, \lambda x_{T+1}^{\star}) - v_{T}(x_{T}^{\star}, x_{T+1}^{\star}) + \sum_{t=T+1}^{\infty}[v_{t}(\lambda x_{t}^{\star}, \lambda x_{t+1}^{\star}) - v_{t}(x_{t}^{\star}, x_{t+1}^{\star})] \leq 0.$$
+This condition essentially says that deviating from the optimal path reports less utility than following it.&lt;/p&gt;
+&lt;p&gt;Divide through by $(1-\lambda)$ and obtain:&lt;/p&gt;
+&lt;p&gt;$$\frac{v_{T}(x_{T}^{\star}, \lambda x_{T+1}^{\star}) - v_{T}(x_{T}^{\star}, x_{T+1}^{\star})}{1-\lambda} \leq \sum_{t=T+1}^{\infty} \frac{v_{t}(x_{t}^{\star}, x_{t+1}^{\star}) - v_{t}(\lambda x_{t}^{\star}, \lambda x_{t+1}^{\star})}{1-\lambda} \leq \sum_{t=T+1}^{\infty} [v_{t}(x_{t}^{\star}, x_{t+1}^{\star}) - v_{t}(0,0)].$$&lt;/p&gt;
+&lt;p&gt;The last inequality follows because of Lemma 1 and because $v$ is concave, setting $\gamma = 0$.
+Now take the $\lim_{\lambda \rightarrow 1}$ on the right-hand side to obtain:&lt;/p&gt;
+&lt;p&gt;$$0 \leq -v_{T,2}(x_{T}^{\star}, x_{T+1}^{\star}x_{T+1)}^{\star} \leq \sum_{t=T+1}^{\infty} [v_{t}(x_{t}^{\star}, x_{t+1}^{\star}) - v_{t}(0,0)].$$&lt;/p&gt;
+&lt;p&gt;The first inequality follows from Assumption 4 and a rewrite of derivative definition: $f^{\prime}(x) = \lim_{\eta \rightarrow 0} \frac{f(\eta x) - f(x)}{x - \eta x}.$&lt;/p&gt;
+&lt;p&gt;Finally, take $\lim_{T \rightarrow \infty}$, which yields:&lt;/p&gt;
+&lt;p&gt;$$0 \leq \lim_{T \rightarrow \infty}[-v_{T,2}(x_{T}^{\star}, x_{T+1}^{\star}] \leq \lim_{T \rightarrow \infty} \sum_{t=T+1}^{\infty}[v_{t}(x_{t}^{\star}, x_{t+1}^{\star}) - v_{t}(0,0)] = 0,$$&lt;/p&gt;
+&lt;p&gt;where the equality holds by Assumption 5.
+We have obtained the transversality condition.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://link.springer.com/referenceworkentry/10.1007%2F978-1-4471-5102-9_200-1&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://link.springer.com/referenceworkentry/10.1007%2F978-1-4471-5102-9_200-1&lt;/a&gt;
+&lt;a href=&#34;https://www.encyclopediaofmath.org/index.php/Pontryagin_maximum_principle&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://www.encyclopediaofmath.org/index.php/Pontryagin_maximum_principle&lt;/a&gt;
+&lt;a href=&#34;http://web.sgh.waw.pl/~mbrzez/Adv_Macro/2_Ramsey_model.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://web.sgh.waw.pl/~mbrzez/Adv_Macro/2_Ramsey_model.pdf&lt;/a&gt;
+&lt;a href=&#34;http://cyber.sci-hub.tw/MTAuMTAwNy9zMDAxOTkwMTAwMTk4/10.1007%40s001990100198.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://cyber.sci-hub.tw/MTAuMTAwNy9zMDAxOTkwMTAwMTk4/10.1007%40s001990100198.pdf&lt;/a&gt;
+&lt;a href=&#34;https://economics.mit.edu/files/8336&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://economics.mit.edu/files/8336&lt;/a&gt;
+&lt;a href=&#34;http://www.econ2.jhu.edu/people/ccarroll/Public/LectureNotes/Growth/HamiltonianVSDiscrete.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://www.econ2.jhu.edu/people/ccarroll/Public/LectureNotes/Growth/HamiltonianVSDiscrete.pdf&lt;/a&gt;
+&lt;a href=&#34;https://eml.berkeley.edu/~webfac/obstfeld/e202a_f13/lecture2.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://eml.berkeley.edu/~webfac/obstfeld/e202a_f13/lecture2.pdf&lt;/a&gt;
+&lt;a href=&#34;http://www.princeton.edu/~moll/ECO503Web/Lecture2_ECO503.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;http://www.princeton.edu/~moll/ECO503Web/Lecture2_ECO503.pdf&lt;/a&gt;
+&lt;a href=&#34;https://dl1.cuni.cz/pluginfile.php/97847/mod_resource/content/0/Lecture_3.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://dl1.cuni.cz/pluginfile.php/97847/mod_resource/content/0/Lecture_3.pdf&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Elasticity of substitution</title>
+      <link>https://eric-roca.github.io/courses/mathematical_appendix/elasticity_of_substitution/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/mathematical_appendix/elasticity_of_substitution/</guid>
+      <description>&lt;p&gt;The elasticity of substitution between two inputs of a production function (or two goods in a utility function) measures &lt;em&gt;the percentage change in the ratio of the two inputs relative to the percentage change in their prices&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;The elasticity of substitution represents the curvature of the isoquant, this is, the degree of substitutability between inputs.
+Mathematically, for inputs $x_{1}$ and $x_{2}$ and a production function $f(x_{1}, x_{2}),$ it is defined as:&lt;/p&gt;
+&lt;p&gt;$$\sigma_{1,2} = - \frac{\partial \frac{x_{1}}{x_{2}}}{\partial \frac{p_{1}}{p_{2}}} \frac{\frac{p_{1}}{p_{2}}}{\frac{x_{1}}{x_{2}}}.$$&lt;/p&gt;
+&lt;p&gt;Assuming perfect competition, factor prices equal their margial product: $p_{1} = \frac{\partial f(x_{1},x_{2})}{\partial x_{1}}.$
+Hence:&lt;/p&gt;
+&lt;p&gt;$$\sigma_{1,2} =
+\textcolor{orange}{\boldsymbol{-}} \frac{ \partial \frac{x_{1}}{x_{2}}}
+{\partial \frac{ \frac{\partial f(x_{1},x_{2})}{\partial x_{1}}}{\frac{ \partial f(x_{1},x_{2})}{\partial x_{2}}}}&lt;br&gt;
+\frac{ \frac{ \frac{ \partial f(x_{1},x_{2})}{\partial x_{1}}}{ \frac{ \partial f(x_{1},x_{2})}{\partial x_{2}}}}
+{ \frac{x_{1}}{x_{2}}} =
+\textcolor{orange}{\boldsymbol{-}} \frac{ \partial \ln \left( \frac{x_1}{x_2} \right)}
+{\partial \ln \left( \frac{ \frac{\partial f(x_1,x_2)}{\color{red}{\partial x_1}}}{\frac{ \partial f(x_1, x_2)}{\color{green}{\partial x_2}}} \right)} =
+\frac{ \partial \ln \left( \frac{x_1}{x_2} \right)}
+{\partial \ln \left( \frac{ \frac{\partial f(x_1,x_2)}{ \color{green}{\partial x_2}}}{\frac{ \partial f(x_1, x_2)}{\color{red}{\partial x_1}}} \right)}
+$$&lt;/p&gt;
+&lt;h2 id=&#34;cobb-douglas-example&#34;&gt;Cobb-Douglas example&lt;/h2&gt;
+&lt;p&gt;The Cobb-Douglas production function has an elasticity of substitution equal to one.&lt;/p&gt;
+&lt;p&gt;$$\begin{eqnarray}
+&amp;amp; F(K,L)= A K^\alpha L^{1-\alpha}, \\\
+&amp;amp; w = A(1-\alpha) K^\alpha L^{-\alpha}, \\\
+&amp;amp; r = A \alpha K^{\alpha-1} L^{1-\alpha}.\end{eqnarray}$$
+Hence:
+$$\frac{w}{r} = \frac{1-\alpha}{\alpha} \frac{K}{L}.$$
+Therefore, we can compute $\sigma_{K,L}$ as&lt;/p&gt;
+&lt;p&gt;$$\frac{ \partial \ln \left(\frac{K}{L}\right)}{\partial \ln \left(\frac{w}{r}\right)} =
+\frac{\color{red}{\partial \left( \frac{K}{L} \right)}}{\color{green}{\frac{K}{L}}} \frac{\frac{w}{r}}{\color{red}{\partial \frac{w}{r}}} =
+\color{red}{\underbrace{\frac{\alpha}{1-\alpha}}_{\frac{\partial \left( \frac{K}{L} \right)}{\partial \frac{w}{r}}}}  \color{green}{\underbrace{\frac{1-\alpha}{\alpha}\frac{K}{L}}_{\left(\frac{w}{r}\right)}}\frac{L}{K}=1$$&lt;/p&gt;
+&lt;h2 id=&#34;ces-function&#34;&gt;CES function&lt;/h2&gt;
+&lt;p&gt;In the case of a CES function, the elasticity of substitution equals $\frac{1}{1-\rho}.$&lt;/p&gt;
+&lt;p&gt;$$\begin{eqnarray}
+&amp;amp; F(K,L)= A \left( \alpha K^{\rho} + (1-\alpha) L^{\rho} \right)^\frac{\nu}{\rho}, \rho \leq 1 \\\
+&amp;amp; w = A \frac{\nu}{\rho}\left( \alpha K^{\rho} + (1-\alpha) L^{\rho}\right)^{\frac{\nu}{\rho}-1} ( 1- \alpha) \rho L^{\rho-1}, \\\
+&amp;amp; r = A \frac{\nu}{\rho}\left( \alpha K^{\rho} + (1-\alpha) L^{\rho} \right)^{\frac{\nu}{\rho}-1}\alpha \rho K^{\rho-1}.\end{eqnarray}$$
+Hence:
+$$\frac{w}{r} = \frac{1-\alpha}{\alpha} \left(\frac{K}{L} \right)^{1-\rho}.$$&lt;/p&gt;
+&lt;p&gt;The parameter $\nu$ indicates the degree of &lt;a href=&#34;https://eric-roca.github.io/courses/mathematical_appendix/homogenous_functions/&#34;&gt;homogeneity of the function.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The elasticity of substitution equals:&lt;/p&gt;
+&lt;p&gt;$$\frac{ \partial \ln \left(\frac{K}{L}\right)}{\partial \ln \left( \frac{w}{r} \right)} =
+\frac{ \partial \frac{K}{L}}{\frac{K}{L}}\frac{\frac{w}{r}}{\partial \frac{w}{r}} =
+\frac{\alpha}{1-\alpha}\frac{1}{1-\rho}\left(\frac{w}{r}\frac{\alpha}{1-\alpha}\right)^{\frac{1}{1-\rho}-1}
+\frac{1-\alpha}{\alpha}\left(\frac{K}{L}\right)^{1-\rho}\frac{L}{K} =
+\frac{1}{1-\rho}.$$&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Non-separable utility in OLG</title>
+      <link>https://eric-roca.github.io/courses/mathematical_appendix/olg_non-separable_utility/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/mathematical_appendix/olg_non-separable_utility/</guid>
+      <description>&lt;p&gt;Here we analyse the behaviour of the savings function when utility is non-separable.
+In particular, let utility be represented by&lt;/p&gt;
+&lt;p&gt;$$U = u(c,d).$$&lt;/p&gt;
+&lt;p&gt;We use the substitution method, but in this case we will introduce different alternatives, depending on the derivative we compute.
+In particular, we introduce different elements of the budget constraint:&lt;/p&gt;
+&lt;p&gt;$$w = c + s$$
+$$d = Rs$$
+$$w = c + \frac{d}{R}$$&lt;/p&gt;
+&lt;h2 id=&#34;c-and-d-are-normal-goods&#34;&gt;$c$ and $d$ are normal goods&lt;/h2&gt;
+&lt;p&gt;First, we derive conditions such that $c$ and $d$ are normal goods.
+Optimality requires:&lt;/p&gt;
+&lt;p&gt;$$-u_c (w-s,Rs) + R u_d (w-s,Rs) =0.$$&lt;/p&gt;
+&lt;h3 id=&#34;consumption-when-young&#34;&gt;Consumption when young&lt;/h3&gt;
+&lt;p&gt;We are interested in computing $\frac{\partial c}{\partial w}$ and showing it is positive so that $c$ is a normal good.
+First, we rewrite the first order condition using some substitutions:&lt;/p&gt;
+&lt;p&gt;$$-u_c (c, R(w-c)) + R u_d (c, R(w-c)) =0.$$&lt;/p&gt;
+&lt;p&gt;Using implicit derivation we have:&lt;/p&gt;
+&lt;p&gt;$$\frac{\partial c}{\partial w} = - \frac{ -R u_{cd} + R^2 u_{dd}}{-u_{cc} + u_{cd} R + u_{dc} R -u_{dd} R^2} = \frac{R(u_{cd} - R u_{dd})}{-\underbrace{u_{cc}}_{&amp;lt;0} + 2 R u_{cd} - R^2 \underbrace{u_{dd}}_{&amp;lt;0}} &amp;gt;0$$&lt;/p&gt;
+&lt;center&gt; if and only if &lt;/center&gt;
+&lt;p&gt;$$u_{cd}- R u_{dd} &amp;gt;0.$$&lt;/p&gt;
+&lt;p&gt;Since, in equilibrium $R = \frac{u_c}{u_d}$, the condition becomes&lt;/p&gt;
+&lt;p&gt;$$\frac{u_{cd}}{u_c} - \frac{u_{dd}}{u_d} &amp;gt; 0.$$&lt;/p&gt;
+&lt;h3 id=&#34;consumption-when-old&#34;&gt;Consumption when old&lt;/h3&gt;
+&lt;p&gt;In this case, we write the optimality condition as&lt;/p&gt;
+&lt;p&gt;$$ - u_c (w-\frac{d}{R}, d) + R u_d(w-\frac{d}{R}, d).$$&lt;/p&gt;
+&lt;p&gt;Hence, we can compute the derivative&lt;/p&gt;
+&lt;p&gt;$$\frac{\partial d}{\partial w} = - \frac{-u_{cc} + R u_{cd}}{u_{cc} \frac{1}{R} - u_{cd} - u_{cd} + u_{dd} R} = \frac{R (R u_{cd} - u_{cc})}{-\underbrace{u_{cc} +2Ru_{cd} - R^2 u_{dd}}_{&amp;gt;0}} &amp;gt; 0$$&lt;/p&gt;
+&lt;center&gt;if and only if&lt;/center&gt;
+&lt;p&gt;$$R u_{cd} - u_{cc} &amp;gt; 0 \implies \frac{u_{cd}}{u_d}-\frac{u_{cc}}{u_c} &amp;gt; 0.$$&lt;/p&gt;
+&lt;h2 id=&#34;savings-wages-and-interest-rate&#34;&gt;Savings, wages and interest rate&lt;/h2&gt;
+&lt;p&gt;We now show that savings are increasing in wages, and that they may increase or decrease with the interest rate.&lt;/p&gt;
+&lt;p&gt;First, we compute the relationship between savings and wages using the optimality condition $-u_c(w-s, Rs) + u_d(w-s, Rs)$:&lt;/p&gt;
+&lt;p&gt;$$\frac{\partial s}{\partial w} = - \frac{- u_{cc} + Ru_{cd}}{u_{cc}-u_{cd}R - u_{cd}R + u_{dd}R^2}= \frac{\overbrace{u_{cc}-Ru_{cd}}^{&amp;lt;0,, \mathrm{normal, goods}}}{\underbrace{u_{cc}-2u_{cd}R+u_{dd}R^2}_{&amp;lt;0}} \gt 0 $$&lt;/p&gt;
+&lt;p&gt;Using the same optimality condition we proceed with the relationship between savings and the interest rate:&lt;/p&gt;
+&lt;p&gt;$$\frac{\partial s}{\partial R} = - \frac{-u_{cd}s+Ru_{dd}s+u_d}{u_{cc}-2Ru_{cd}+R^2u_{dd}} = \frac{u_d + s(Ru_{dd}-u_{cd})}{\underbrace{-u_{cc} + 2Ru_{cd}-u_{dd}R^2}_{&amp;gt;0}}.$$&lt;/p&gt;
+&lt;p&gt;Hence, the sign of the derivative depends on&lt;/p&gt;
+&lt;p&gt;$$u_d + s(R u_{dd} - u_{cd}) \gtreqqless 0 \implies 1 + \underbrace{s}_{\frac{d}{R}}\left(R \frac{u_{dd}}{u_{d}} - \frac{u_{cd}}{u_{d}}\right) \gtreqqless 0 \implies $$
+$$1 + \underbrace{\frac{u_{dd}}{u_{d}}d}_{-\frac{1}{\sigma}} - \frac{u_{cd}}{u_{d}}\frac{d}{R} \gtreqqless 0.$$&lt;/p&gt;
+&lt;p&gt;The relationship depends on the intertemporal elasticity of substitution ($\sigma$) and on the degree of complementarity between $c$ and $d$ as captured by $u_{cd}.$&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

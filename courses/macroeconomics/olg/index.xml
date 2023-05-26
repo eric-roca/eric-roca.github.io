@@ -1,0 +1,1821 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Overlapping generations model | Èric Roca Fernández</title>
+    <link>https://eric-roca.github.io/courses/macroeconomics/olg/</link>
+      <atom:link href="https://eric-roca.github.io/courses/macroeconomics/olg/index.xml" rel="self" type="application/rss+xml" />
+    <description>Overlapping generations model</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 11 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://eric-roca.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Overlapping generations model</title>
+      <link>https://eric-roca.github.io/courses/macroeconomics/olg/</link>
+    </image>
+    
+    <item>
+      <title>Preliminaries</title>
+      <link>https://eric-roca.github.io/courses/macroeconomics/olg/olg_preliminaries/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/macroeconomics/olg/olg_preliminaries/</guid>
+      <description>&lt;p&gt;In this model, time is discrete and extends from $t=0, 1, \ldots, \infty.$
+Individuals make decisions at points in time.
+We shall have initial conditions detailing the state of the economy at $t=0.$&lt;/p&gt;
+&lt;h2 id=&#34;individuals-live-for-two-periods&#34;&gt;Individuals live for two periods&lt;/h2&gt;
+&lt;p&gt;The main difference with respect to the Ramsey model is that in the OLG model, individuals live for two periods.
+&lt;strong&gt;Note:&lt;/strong&gt; this means that, at every point in time, two generations are alive and overlap.&lt;/p&gt;
+&lt;p&gt;This is relevant: the economy goes on forever but individuals only operate during some periods.
+Hence, there will be infinite two-period-lived generations.
+In particular, at $t=0$, we will have a young and an adult generation.
+This adult generation will die at the end of $t=1$, the young generation will become adults and have children: the &lt;em&gt;new&lt;/em&gt; young generation of $t=2.$
+Hence, we can represent the generations diagrammatically &amp;mdash;in brackets I have denoted the year in which each generation was born.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;$t=0$&lt;/th&gt;
+&lt;th&gt;$t=1$&lt;/th&gt;
+&lt;th&gt;$t=2$&lt;/th&gt;
+&lt;th&gt;$t=3$&lt;/th&gt;
+&lt;th&gt;$t=4$&lt;/th&gt;
+&lt;th&gt;$t=5$&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Old (t=-1)&lt;/td&gt;
+&lt;td&gt;Die&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Young(t=0)&lt;/td&gt;
+&lt;td&gt;Old (t=0)&lt;/td&gt;
+&lt;td&gt;Die&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Young(t=1)&lt;/td&gt;
+&lt;td&gt;Old (t=1)&lt;/td&gt;
+&lt;td&gt;Die&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Young(t=2)&lt;/td&gt;
+&lt;td&gt;Old (t=2)&lt;/td&gt;
+&lt;td&gt;Die&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Young(t=3)&lt;/td&gt;
+&lt;td&gt;Old (t=3)&lt;/td&gt;
+&lt;td&gt;Die&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Young(t=4)&lt;/td&gt;
+&lt;td&gt;Old (t=4)&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;Young(t=5)&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;To simplify the model, we assume that each adult born in $t-1$ has $n&amp;gt;-1$ children.
+&lt;strong&gt;Note:&lt;/strong&gt; we assume the number of children to be constant.&lt;br/&gt;
+More complex set-ups include endogenous fertility.&lt;br/&gt;
+These are the young population at time $t$
+Therefore, the total population $N$ at time $t$ is composed of adults and young people.&lt;/p&gt;
+&lt;p&gt;$$N_{t} = \underbrace{N_{t-1}}_{\mathrm{Adults}} + \underbrace{N_{t-1}n}_{\mathrm{Youngs}} = N_{t-1}(1+n).$$&lt;/p&gt;
+&lt;p&gt;The total population at any time $t$ is:&lt;/p&gt;
+&lt;p&gt;$$N_{t} = N_{0}(1+n)^{t}.$$&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Households</title>
+      <link>https://eric-roca.github.io/courses/macroeconomics/olg/olg_households/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/macroeconomics/olg/olg_households/</guid>
+      <description>&lt;h2 id=&#34;building-the-budget-constraint&#34;&gt;Building the budget constraint&lt;/h2&gt;
+&lt;p&gt;Individuals live for two periods.
+As before, we assume perfect foresight for individuals.
+&lt;strong&gt;Assumption OLG.1&lt;/strong&gt; Individuals have perfect foresight.&lt;/p&gt;
+&lt;p&gt;When &lt;strong&gt;young&lt;/strong&gt;, they are endowed with &lt;em&gt;one unit of labour&lt;/em&gt; that they &lt;em&gt;supply inestastically.&lt;/em&gt;
+&lt;strong&gt;Assumption OLG.2&lt;/strong&gt; Individuals supply one unit of labour inelastically when young.
+They receive the ongoing wage rate $w_{t}$ and allocate this income between:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;current consumption $c_{t}$,&lt;/li&gt;
+&lt;li&gt;savings $s_{t}$ that are invested in the firms.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Therefore, the budget constraint of a &lt;em&gt;young&lt;/em&gt; individual in period $t$ is:&lt;/p&gt;
+&lt;p&gt;$$ w_{t} = c_{t} + s_{t}.$$&lt;/p&gt;
+&lt;p&gt;Once an individual reaches old age the next period, he consumes his savings (plus the interest rate received), reproduces &amp;mdash;exogenous fertility at rate $n$&amp;mdash; and dies.
+Old people &lt;em&gt;do not care&lt;/em&gt; about anything happening after death.
+Therefore, an agent has one unique choice:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;consumption when adult, $d_{t+1}.$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The budget constraint for this period is:&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;$$s_{t}(1 - \delta + r_{t+1}) = d_{t+1}.$$&lt;/p&gt;
+&lt;p&gt;with $\delta \in (0,1)$ being the capital depreciation rate.&lt;/p&gt;
+&lt;p&gt;Hence, an individual faces two budget constraints.
+However, we can collapse both into a unique &lt;em&gt;intertemporal budget constraint.&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;the-intertemporal-budget-constraint&#34;&gt;The intertemporal budget constraint&lt;/h3&gt;
+&lt;p&gt;In the economy, we have consumption as the numeraire.
+It is more convenient for us to combine the two budget constraints corresponding to young and old ages into one single constraint.
+Starting from&lt;/p&gt;
+&lt;p&gt;$$\left. \begin{eqnarray}
+w_{t} = c_{t} + s_{t} \\\
+d_{t+1} = s_{t}(1 - \delta + r_{t+1}) = s_{t} R_{t+1} \end{eqnarray}
+\right\}.$$&lt;/p&gt;
+&lt;p&gt;where $R_{t} \equiv 1 - \delta + r_{t+1}$ represents the return on savings, isolate $s_{t}$ in the second equation and plug it in the first one:&lt;/p&gt;
+&lt;p&gt;$$ w_{t} = c_{t} + \frac{d_{t+1}}{R_{t+1}}. \tag{1, Int. Budget Const.} \label{eq:budget}$$&lt;/p&gt;
+&lt;p&gt;The intertemporal budget constraint indicates that the total present value of income ($w_{t}$, the only source of income) equals the total present value of expenditures.
+The present value of consumption when old $d_{t+1}$ is discounted using the interest rate $R_{t+1}.$&lt;/p&gt;
+&lt;p&gt;It is clear that savings, as usual, will be a function of wages $w$ and interests $R.$
+So will consumption at all periods of time.&lt;/p&gt;
+&lt;h2 id=&#34;utility-function&#34;&gt;Utility function&lt;/h2&gt;
+&lt;p&gt;We suppose that the life-cycle utility function is additively separable:&lt;/p&gt;
+&lt;p&gt;$$U(c,d) = u( c ) + \beta u(d),, \beta \in(0,1) \tag{2, Utility} \label{eq:utility}$$&lt;/p&gt;
+&lt;p&gt;where $\beta \in (0,1)$ is the psychological discount factor.
+We assume that $u( c )$ has the properties&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Assumption OLG.3&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;OLG.3.1&lt;/strong&gt; $u^{\prime}( c ) &amp;gt; 0,$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OLG.3.2&lt;/strong&gt; $u^{\prime \prime} ( c ) &amp;lt; 0,$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;OLG.3.3&lt;/strong&gt; $ \lim_{c \rightarrow 0} u^{\prime}( c) = +\infty.$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The last assumption $\lim_{c \rightarrow 0} u^{\prime}( c ) = +\infty$ implies that an individual will always have a positive consumption &amp;mdash;as long as he has enough income to finance it.&lt;/p&gt;
+&lt;p&gt;Another important implication of the choice of the utility formulation is that $c$ and $d$ are normal goods: the demand is &lt;em&gt;not decreasing&lt;/em&gt; in wealth.
+It follows from additive separability and concavity.
+In the &lt;a href=&#34;https://eric-roca.github.io/courses/mathematical_appendix/olg_non-separable_utility/&#34;&gt;Appendix&lt;/a&gt; we discuss it in more detail for a non-separable utility function.&lt;/p&gt;
+&lt;h2 id=&#34;the-behaviour-of-individuals&#34;&gt;The behaviour of individuals&lt;/h2&gt;
+&lt;p&gt;At time $t$, young individuals receive their wages, consume and save while maximising the utility function.&lt;/p&gt;
+&lt;p&gt;$$\begin{eqnarray}
+&amp;amp; \max u(c_{t}) + \beta u(d_{t+1}) \\\
+&amp;amp; \mathrm{s.t.} \quad w_{t} = c_{t} + s_{t} \\\
+&amp;amp; \phantom{s.t.} \quad d_{t+1} = R_{t+1}s_{t} \\\
+&amp;amp; \phantom{s.t.} \quad c_{t} \geq 0, d_{t+1} \geq 0.
+\end{eqnarray}$$&lt;/p&gt;
+&lt;p&gt;We have two possibilities to solve this problem:&lt;/p&gt;
+&lt;h3 id=&#34;substitution&#34;&gt;Substitution&lt;/h3&gt;
+&lt;p&gt;First, we can substitute $c_{t}$ and $d_{t+1}$ in the utility function, leading to:&lt;/p&gt;
+&lt;p&gt;$$u(w_{t} - s_{t}) + \beta u(R_{t+1}s_{t}).$$&lt;/p&gt;
+&lt;p&gt;This function is strictly concave with respect to $s_{t}$ because of our assumptions.
+The solution is &lt;em&gt;the savings function&lt;/em&gt;:&lt;/p&gt;
+&lt;p&gt;$$s_{t} = s(w_{t}, R_{t+1}).$$&lt;/p&gt;
+&lt;p&gt;The solution is interior as a consequence of the assumptions, and it is characterised by the first-order condition:&lt;/p&gt;
+&lt;p&gt;$$u^{\prime}(w_{t} - s_{t}) = \beta R_{t+1} u^{\prime}(R_{t+1}s_{t}).$$&lt;/p&gt;
+&lt;h3 id=&#34;lagrangian&#34;&gt;Lagrangian&lt;/h3&gt;
+&lt;p&gt;Instead, we can use the intertemporal budget constraint and build the Lagrangian:&lt;/p&gt;
+&lt;p&gt;$$\mathcal{L} = u(c_{t}) + \beta u(d_{t+1}) + \lambda_{t}(w_{t} - c_{t} - \frac{d_{t+1}}{R_{t+1}}).$$&lt;/p&gt;
+&lt;p&gt;The first order conditions imply that:&lt;/p&gt;
+&lt;p&gt;$$u^{\prime}(c_{t}) = \lambda_{t}, \quad \beta u^{\prime}(d_{t+1}) = \frac{\lambda_{t}}{R_{t+1}}$$&lt;/p&gt;
+&lt;p&gt;Combining both, we obtain the Euler equation:&lt;/p&gt;
+&lt;p&gt;$$u^{\prime}(c_{t}) = \beta R_{t+1} u^\prime (d_{t+1}).$$&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;There plenty of alternative notations for the OLG model.
+One may write $c^{y}_{t}$ and $c^{o}_{t}$ for young and adult consumption.
+Similarly, the subindeces $t, t+1, \ldots$ denote the period of consumption, but we could have denoted the period in which the individual was born.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Savings function</title>
+      <link>https://eric-roca.github.io/courses/macroeconomics/olg/olg_savings_function/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/macroeconomics/olg/olg_savings_function/</guid>
+      <description>&lt;p&gt;We now study how savings are affected by the remaining variables of the model.
+Before turning to it, we compute the intertemporal elasticity of substitution on this model, because it turns out to be a crucial element influencing savings.
+The &lt;em&gt;intertemporal elasticity of substitution&lt;/em&gt; is a special case of the &lt;a href=&#34;https://eric-roca.github.io/courses/mathematical_appendix/elasticity_of_substitution/&#34;&gt;elasticity of substitution&lt;/a&gt;, that measures how the ratio of future to present consumption changes with the relative price (the interest rate).&lt;/p&gt;
+&lt;h2 id=&#34;intertemporal-elasticity-of-substitution&#34;&gt;Intertemporal elasticity of substitution&lt;/h2&gt;
+&lt;p&gt;The intertemporal elasticity of substitution is defined as:&lt;/p&gt;
+&lt;p&gt;$$\epsilon_{d_{t+1}, c_{t}} = \frac{ \partial \left( \frac{d_{t+1}}{c_{t}} \right)}{\partial R_{t+1}} \frac{ R_{t+1}}{\left( \frac{d_{t+1}}{c_{t}} \right)}.$$&lt;/p&gt;
+&lt;p&gt;From the Euler equation we have $\frac{u^{\prime}(c_{t})}{u^{\prime}(d_{t+1})} = \beta R_{t+1}.$
+So, consumption when old $d_{t+1}$ is going to be proportional to consumption when young $c_{t}.$&lt;/p&gt;
+&lt;p&gt;Let $d_{t+1} = x_{t+1} c_{t}.$
+Then, the intertemporal elasticity of substitution becomes:&lt;/p&gt;
+&lt;p&gt;$$\epsilon_{d_{t+1}, c_{t}} = \frac{ \partial x_{t+1}}{\partial R_{t+1}} \frac{ R_{t+1}}{x_{t+1}}.$$&lt;/p&gt;
+&lt;p&gt;We can compute it using the Euler equation $u^\prime(c_{t}) = \beta R_{t+1} u^\prime(x_{t+1}c_t).$
+In fact, totally differentiating on both sides yields&lt;/p&gt;
+&lt;p&gt;$$0 = \beta u^\prime(x_{t+1}c_t)\mathrm{d}R_{t+1} + \beta R_{t+1}u^{\prime \prime}(x_{t+1}c_t) c_{t} \mathrm{d}x_{t+1}.$$&lt;/p&gt;
+&lt;p&gt;Hence,&lt;/p&gt;
+&lt;p&gt;$$\frac{\mathrm{d}x_{t+1}}{\mathrm{d}R_{t+1}} = - \frac{u^\prime(x_{t+1}c_{t})}{R_{t+1}u^{\prime \prime}(x_{t+1}c_t)c_t} = - \frac{u^\prime (d_{t+1})}{R_{t+1}u^{\prime \prime}(d_{t+1})c_t}.$$&lt;/p&gt;
+&lt;p&gt;The intertemporal elasticity of substitution is then given by:&lt;/p&gt;
+&lt;p&gt;$$\epsilon_{d_{t+1}, c_{t}} = \frac{\mathrm{d}x_{t+1}}{\mathrm{d}R_{t+1}}\frac{R_{t+1}}{x_{t+1}} = - \frac{u^\prime (d_{t+1})}{R_{t+1}u^{\prime \prime}(d_{t+1})c_t}\frac{R_{t+1}}{\underbrace{x_{t+1}}_{\frac{d_{t+1}}{c_{t}}}} = - \frac{u^\prime(d_{t+1})}{u^{\prime \prime}(d_{t+1}) d_{t+1}}.$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: the intertemporal elasticity of substitution is equal to the inverse of the coefficient of relative risk aversion.
+Risk averse individuals do &lt;em&gt;not&lt;/em&gt; want large changes in consumption, so they have a large risk aversion and are &lt;em&gt;not&lt;/em&gt; willing to trade off future and present consumption.
+Conversely, risk neutral individuals do not mind abrupt changes in consumption, so they are willing to trade off future and present consumption.&lt;/p&gt;
+&lt;p&gt;Hence, in this model, the intertemporal elasticity of substitution coincides with the inverse of the coefficient of relative risk aversion.
+&lt;strong&gt;Note:&lt;/strong&gt; If you read p. 12 in &lt;em&gt;de la Croix and Michel&lt;/em&gt;, they take a different approach and also refuse to use the concept or risk aversion: the model does not feature risk.&lt;/p&gt;
+&lt;h3 id=&#34;cies-example&#34;&gt;CIES example&lt;/h3&gt;
+&lt;p&gt;We illustrate the previous concept using a constant intertemporal elasticity of substitution utility function:&lt;/p&gt;
+&lt;p&gt;$$u( c ) = \frac{c^{1-\frac{1}{\sigma}}}{1-\frac{1}{\sigma}}.$$&lt;/p&gt;
+&lt;p&gt;In this case, we have the following Euler condition:&lt;/p&gt;
+&lt;p&gt;$$u^{\prime}(c_{t}) = \beta R_{t+1} u^{\prime}(d_{t+1}) \implies \frac{d_{t+1}}{c_{t}} = \left( \beta R_{t+1} \right)^\sigma.$$&lt;/p&gt;
+&lt;p&gt;Therefore, the intertemporal elasticity of substitution is&lt;/p&gt;
+&lt;p&gt;$$\epsilon_{d_{t+1}, c_{t}} = \frac{ \partial  \frac{d_{t+1}}{c_{t}} }{\partial R_{t+1}} \frac{R_{t+1}}{\color{red}{\frac{d_{t+1}}{c_{t}}}}= \sigma (\beta R_{t+1})^{\sigma-1}\beta R_{t+1} \color{red}{\frac{1}{(\beta R_{t+1})^{\sigma}}} = \sigma. $$&lt;/p&gt;
+&lt;p&gt;Meanwhile, the coefficient of relative risk aversion&lt;/p&gt;
+&lt;p&gt;$$RRA( c ) = - \frac{u^{\prime \prime}( c )}{u^{\prime}( c )}c = \frac{1}{\sigma} = \epsilon^{-1}_{d_{t+1},c_{t}}$$&lt;/p&gt;
+&lt;p&gt;is the inverse of the intertemporal elasticity of substitution.&lt;/p&gt;
+&lt;h2 id=&#34;the-savings-function&#34;&gt;The savings function&lt;/h2&gt;
+&lt;p&gt;The savings function arises from solving:&lt;/p&gt;
+&lt;p&gt;$$s(w, R) = \arg \max \left[ u(w-s) + \beta u(Rs) \right].$$&lt;/p&gt;
+&lt;p&gt;Taking the first derivative with respect to $s$ and solving provides an implicit function: the savings function.&lt;/p&gt;
+&lt;p&gt;$$u^\prime(w-s)(-1) + \beta u^\prime(Rs)R = 0.$$&lt;/p&gt;
+&lt;p&gt;Denote this function $\phi(s,w,R)$:&lt;/p&gt;
+&lt;p&gt;$$\phi(s, w, R ) = -u^\prime(w-s)+ \beta R u^\prime(Rs) = 0.$$&lt;/p&gt;
+&lt;p&gt;Following from the assumption on the utility function, the savings function is continuous and continuously differentiable.&lt;/p&gt;
+&lt;p&gt;We are interested in determining whether savings increase or decrease with wealth and the interest rate.&lt;/p&gt;
+&lt;h3 id=&#34;the-effect-of-wages&#34;&gt;The effect of wages&lt;/h3&gt;
+&lt;p&gt;We begin by analysing the effect of wages on savings:&lt;/p&gt;
+&lt;p&gt;$$\frac{\partial s}{\partial w} = - \frac{\frac{\partial \phi(\cdot)}{\partial w}}{\frac{\partial \phi(\cdot)}{\partial s}} = - \frac{ - u^{\prime \prime}(w-s)}{u^{\prime \prime}(w-s)+\beta R^{2} u^{\prime \prime}(Rs)} = \frac{1}{\underbrace{1+\beta R^{2} \underbrace{\frac{u^{\prime \prime}(Rs)}{u^{\prime \prime}(w-s)}}_{&amp;gt;0}}_{&amp;gt;1}} \in (0,1).$$&lt;/p&gt;
+&lt;p&gt;We thus have that the marginal propensity to save out of income is between 0 and 1:
+$0 &amp;lt; s^{\prime}_{w}  &amp;lt; 1,$
+which reflects the fact that consumption goods are normal goods.&lt;/p&gt;
+&lt;h3 id=&#34;the-effect-of-the-interest-rate&#34;&gt;The effect of the interest rate&lt;/h3&gt;
+&lt;p&gt;Similarly, we compute the derivative of $\frac{\partial s(w,R)}{\partial R}$:&lt;/p&gt;
+&lt;p&gt;$$\frac{\partial s}{\partial R} = -\frac{ \beta u^{\prime}(d) + \beta R s u^{\prime \prime}(d)}{u^{\prime \prime}( c )+\beta R^{2} u^{\prime \prime}(d)} =- \frac{\beta u^{\prime}(d)\left[1-\frac{1}{\sigma (d)} \right]}{u^{\prime \prime}(c ) + \beta R^{2} u^{\prime \prime}(d)}.$$&lt;/p&gt;
+&lt;p&gt;Hence,
+$$\frac{\partial s}{\partial R} \gtreqqless 0 \quad \mathrm{if} \quad \sigma (d) \gtreqqless 1.$$&lt;/p&gt;
+&lt;p&gt;Two effects interact in this derivative:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Wealth effect: if the interest rate rises, we obtain more out of the same savings, hence become wealthier.
+We consume more of all goods &amp;mdash;$c_{t}$ and $d_{t+1}$ are normal goods.&lt;/li&gt;
+&lt;li&gt;Substitution effect: it is more profitable to save and consume $d_{t+1},$ inducing savings.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;When the inter-temporal elasticity of substitution is lower than 1, the substitution effect is dominated by the income effect.
+In that case, a rise in the rate of return has a negative effect on savings.
+When the inter-temporal elasticity of substitution is higher than 1, households are ready to exploit the rise in the remuneration of savings by consuming relatively less today.
+In this case, raising the rate of return boosts savings.
+When the inter-temporal elasticity of substitution is equal to 1 (log-utility), the income effect exactly compensates the substitution effect and there is no effect of the rate of return on savings.&lt;/p&gt;
+&lt;h4 id=&#34;example-using-a-cies-function&#34;&gt;Example using a CIES function&lt;/h4&gt;
+&lt;p&gt;Under a CIES utility, we have that:&lt;/p&gt;
+&lt;p&gt;$$s(w,R) = \frac{1}{1+\beta^{-\sigma}R^{1-\sigma}}w,$$&lt;/p&gt;
+&lt;p&gt;and
+$$s^{\prime}_w  =\frac{1}{1+\beta^{-\sigma}R^{1-\sigma}} &amp;gt; 0.$$&lt;/p&gt;
+&lt;p&gt;However, $s^{\prime}_{R} = - \frac{w R^{-\sigma}}{\left(1+\beta^{-\sigma}R^{1-\sigma}\right)^{2}}(1-\sigma)\gtreqqless 0$ depending on $\sigma \lesseqqgtr 1.$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Log-utility:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In the case of logarithmic utility, savings are independent of the interest rate $R$ and are linear in wages.
+Log-utility is a special case of the CIES function when $\sigma=1.$
+In this case, the wealth and substitution effects cancel each other:&lt;/p&gt;
+&lt;p&gt;$$s(w,R) = \frac{\beta}{1+\beta}w.$$&lt;/p&gt;
+&lt;h4 id=&#34;example-using-a-ces-function&#34;&gt;Example using a CES function&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; This is a transformation of the CIES function, so things will look rather similar.&lt;/p&gt;
+&lt;p&gt;$$U(c,d) = \left[ \alpha c^{\frac{\epsilon-1}{\epsilon}} + (1-\alpha)d^{\frac{\epsilon-1}{\epsilon}} \right]^{\frac{\epsilon}{\epsilon-1}}.$$&lt;/p&gt;
+&lt;p&gt;From here, substituting $c=w-s$ and $d=Rs$, and solving for the optimal savings we obtain:&lt;/p&gt;
+&lt;p&gt;$$\begin{eqnarray}
+&amp;amp; \alpha (w-s)^{-\frac{1}{\epsilon}} = (1-\alpha) R (Rs)^{-\frac{1}{\epsilon}} \\\
+&amp;amp; s = \frac{\left[ \frac{\alpha}{1-\alpha} \right]^{-\epsilon} w}{R^{1-\epsilon} + \left[\frac{\alpha}{1-\alpha} \right]^{-\epsilon}} = \frac{w}{1+\left[ \frac{\alpha}{1-\alpha} \right]^{\epsilon} R^{1-\epsilon}}.
+\end{eqnarray}
+$$&lt;/p&gt;
+&lt;p&gt;Therefore,&lt;/p&gt;
+&lt;p&gt;$$s^{\prime}_{R} = - \frac{w}{\left(1+\left[ \frac{\alpha}{1-\alpha} \right]^{\epsilon} R^{1-\epsilon}\right)^{2}} \left(\frac{\alpha}{1-\alpha}\right)^{\epsilon}(1-\epsilon)R^{-\epsilon}.$$&lt;/p&gt;
+&lt;p&gt;Then, when $\epsilon &amp;gt;1$ savings increase with the interest rate: $s^{\prime}_{R} &amp;gt; 0.$
+In that case, &lt;em&gt;the substitution effect dominates&lt;/em&gt;.
+&lt;strong&gt;Alternative interpretation:&lt;/strong&gt; $\epsilon$ is the elasticity of intertemporal substitutability, hence if it is large, individuals are willing to substitute present consumption for future consumption.
+&lt;strong&gt;Alternative interpretation:&lt;/strong&gt; $\frac{1}{\epsilon}$ measures the relative risk aversion.
+Hence, for large $\epsilon$ individuals accept more risk, meaning that they are willing to accept more changes in consumption.
+Smoothing is less important.&lt;/p&gt;
+&lt;p&gt;Conversely, when $\epsilon &amp;lt;1$, an increase in the interest rate lowers savings: $s^{\prime}_{R} &amp;lt; 0.$
+In that case, the wealth effect dominates.
+$\epsilon &amp;lt; 1$ also means that $c$ and $d$ are intertemporally complementary, and individuals want to consume them in constant proportions.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Intertemporal equilibrium</title>
+      <link>https://eric-roca.github.io/courses/macroeconomics/olg/olg_equilibrium/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/macroeconomics/olg/olg_equilibrium/</guid>
+      <description>&lt;h2 id=&#34;temporary-equilibrium&#34;&gt;Temporary equilibrium&lt;/h2&gt;
+&lt;p&gt;Before turning to the intertemporal equilibrium and the analysis of the steady state, we study the temporary equilibrium that takes place every period.&lt;/p&gt;
+&lt;p&gt;We have not discussed the firms, but they follow the same setup as in Ramsey: use capital and labour in a perfectly competitive environment.&lt;/p&gt;
+&lt;p&gt;We shall work in intensive form: $k_{t} \equiv \frac{K_{t}}{N_{t}}.$&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Labour market equilibrium:&lt;/strong&gt;
+&lt;em&gt;Only&lt;/em&gt; young individuals supply labour.
+Moreover, they do so &lt;em&gt;inelastically&lt;/em&gt;.
+During period $t$ there are $N_{t}$ young agents and, hence, the supply of labour is $N_{t}$.
+Equating this to labour demand from firms $L_{t}$ gives the wage rate:
+$$w_{t} = \omega\left(\frac{K_{t}}{N_{t}}\right)=\omega(k_{t}).$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Capital market:&lt;/strong&gt;
+&lt;em&gt;Only&lt;/em&gt; old individuals own capital.
+Since firms operate competitively, they make zero profits.
+Hence, $f^{\prime}(k_{t})K_{t}$ is distributed as interests.
+Old households receive $N_{t-1}R_{t}s_{t-1} = R_{t}K_{t}.$
+So, what old households receive must equal what firms distribute
+In other terms: $R_{t}K_{t}= f^{\prime}(k_{t}) K_{t}$ and $R_t = f^\prime (k_t).$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Good market:&lt;/strong&gt;
+Finding the equilibrium for this market departs from the otherwise similar Ramsey case.
+Remember that we have &lt;em&gt;two&lt;/em&gt; types of agents: young and old.
+Total production is given by:
+$$Y_{t} = F(K_{t}, N_{t}) = \color{red}{N_{t}} f(k_{t}).$$
+Total demand for goods combines the consumption of $d_{t}$, the old generation living in period $t$,
+and the demand for consumption &lt;em&gt;and&lt;/em&gt; investment from the young: $c_{t}, s_{t}.$
+Therefore, counting how many old and young individuals live during period $t$ we have that total demand equals:
+$$N_{t-1}d_{t} + N_{t}(c_{t}+s_{t}).$$
+The equilibrium on the goods market implies:
+$$Y_{t} = N_{t-1}d_{t} + N_{t}(c_{t}+s_{t}).$$&lt;/p&gt;
+&lt;p&gt;Also, we can check that total production equals total consumption:
+$$N_{t}(c_{t}+s_{t}) = N_{t}w_{t}=N_{t}(f(k_{t})-k_{t}f^{\prime}(k_{t})) = Y_{t}-K_{t}f^{\prime}(k_{t}),$$
+$$N_{t-1}d_{t} = N_{t-1}R_{t}s_{t-1} = R_{t}K_{t} = K_{t}f^{\prime}(k_{t}).$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;A temporary equilibrium is a set $\{w_{t}, R_{t}, K_{t}, L_{t}, Y_{t}, k_{t}, I_{t}, c_{t}, s_{t}, d_{t}\}$ that satisfies:&lt;/p&gt;
+&lt;p&gt;$$\begin{eqnarray}
+w_{t} = \omega(k_{t}), \\\
+R_{t} = f^{\prime}(k_{t}), \\\
+L_{t} = N_{t}, \\\
+Y_{t} = N_{t}f(k_{t}), \\\
+Y_{t} = N_{t-1}d_t + N_{t}(c_{t}+s_{t}) \\\
+I_{t} = N_{t}s_{t}, \\\
+c_{t} = w_{t} - s_{t}, \\\
+s_{t} = s(\omega(k_{t}),R_{t+1}), \\\
+d_{t} = R_{t}s_{t-1}.
+\end{eqnarray}$$&lt;/p&gt;
+&lt;p&gt;The existence of a temporary equilibrium is guaranteed because the functions are single-valued.&lt;/p&gt;
+&lt;h2 id=&#34;intertemporal-equilibrium-with-perfect-foresight&#34;&gt;Intertemporal equilibrium with perfect foresight&lt;/h2&gt;
+&lt;p&gt;The equilibrium equation that links two consecutive periods is the capital accumulation equation.
+In particular, the savings of young individuals at period $t$ are transformed into productive capital at $t+1.$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; in this model, it is useful to write the equations first in aggregate terms and then convert them to its intensive-form representation.&lt;/p&gt;
+&lt;p&gt;$$K_{t+1} = N_{t}s_{t} = N_{t} s\left( \omega(k_{t}), R_{t+1} \right).$$&lt;/p&gt;
+&lt;p&gt;In intensive form:&lt;/p&gt;
+&lt;p&gt;$$k_{t+1} = \frac{K_{t+1}}{\color{red}{N_{t+1}}} = \frac{N_{t}}{\color{red}{N_{t+1}}} s\left( \omega(k_{t}), R_{t+1} \right) = \frac{1}{1+n}s\left( \omega(k_{t}), R_{t+1} \right) .$$&lt;/p&gt;
+&lt;p&gt;Finally, we can incorporate the equilibrium in the capital market (together with perfect foresight) and replace $R_{t+1} = f^{\prime}(k_{t+1}):$&lt;/p&gt;
+&lt;p&gt;$$k_{t+1} =\frac{1}{1+n}s \left( \omega(k_{t}), f^{\prime}(k_{t+1}) \right).$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Intertemporal equilibrium (for perfect foresigt)&lt;/strong&gt;:
+Given an initial capital stock $k_{0} = K_{0} \big{/} N_{-1}$, an intertemporal equilibrium (for perfect foresight) is a sequence of temporary equilibria that satisfies for all $t&amp;gt;0$ the equation:&lt;/p&gt;
+&lt;p&gt;$$k_{t+1} =\frac{1}{1+n}s \left( \omega(k_{t}), f^{\prime}(k_{t+1}) \right).$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; &lt;em&gt;de la Croix and Michel&lt;/em&gt; discuss on pp. 20&amp;ndash;27 the existence and uniqueness of the intertemporal equilibrium.&lt;/p&gt;
+&lt;h2 id=&#34;existence-of-an-intertemporal-equilibrium&#34;&gt;Existence of an intertemporal equilibrium&lt;/h2&gt;
+&lt;p&gt;The existence of at least one temporary equilibrium is guaranteed by the properties of the functions.
+The proof is quite involved, though, as is presented below.
+Having an intertemporal equilibrium means having a solution for $k_{t+1}$ in the equation&lt;/p&gt;
+&lt;p&gt;$$k_{t+1} = \frac{1}{1+n}s(\omega(k_t), f^\prime (k_{t+1})),$$&lt;/p&gt;
+&lt;p&gt;where $k_t$ is predetermined at $t.$&lt;/p&gt;
+&lt;details&gt;
+&lt;summary&gt;Proof&lt;/summary&gt;
+&lt;p&gt;The proof uses the following equation about savings:
+$$0&amp;lt; s\left( w, f^\prime(k) \right) &amp;lt; w.$$
+In words, it indicates that individuals have positive savings, and they save &lt;em&gt;only&lt;/em&gt; part of their total income.&lt;/p&gt;
+&lt;p&gt;Next, define
+$$H(k,w) = (1+n)k - s(w, f^\prime(k))= 0.$$
+Basically, here we are using the definition of an intertemporal equilibrium.
+Having an intertemporal equilibrium is then equivalent to finding a $k$ satisfying the previous equation.&lt;/p&gt;
+&lt;p&gt;We use the intermediate value theorem to show that at least one solution exists.
+First, we analyse the behaviour of $H(k,w)$ when $k$ tends to $+\infty.$&lt;/p&gt;
+&lt;p&gt;From $0&amp;lt; s\left( w, f^\prime(k) \right) &amp;lt; w,$ we have&lt;/p&gt;
+&lt;p&gt;$$0 &amp;lt; \frac{s(w, f^\prime (k))}{k} &amp;lt; \frac{w}{k}.$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limit when $k \rightarrow +\infty$&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Keeping $w$ fixed, the limit of $\frac{w}{k}$ when $k \rightarrow +\infty$ is 0.
+Then,&lt;/p&gt;
+&lt;p&gt;$$\lim_{k \rightarrow +\infty} \frac{s(w, f^\prime (k))}{k} = 0.$$&lt;/p&gt;
+&lt;p&gt;Consequently,&lt;/p&gt;
+&lt;p&gt;$$\lim_{k \rightarrow +\infty}\frac{H(w,k)}{k} = \lim_{k \rightarrow +\infty} (1+n) - \frac{s(w, f^\prime (k))}{k} = 1+n &amp;gt; 0.$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Limit when $k \rightarrow 0$&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;When $k$ tends to zero, we shall distinguish two cases regarding $f^\prime (k)$.
+It can be that either&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Case $\lim_{k \rightarrow 0} f^\prime (k) = f^\prime (0)&amp;gt; 0$ and finite.
+Then, the function $s(w, f^\prime(k))$ is well defined and positive and we have:&lt;/p&gt;
+&lt;p&gt;$$\lim_{k \rightarrow 0} H(w,k) = \lim_{k \rightarrow 0} \left[(1+n)k - s(w,f^\prime (k)) \right] = -s(w, f^\prime (k)) &amp;lt; 0.$$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Case $\lim_{k \rightarrow 0} f^\prime (k) = +\infty.$
+Two things can occur in that case.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Savings are positive: $\lim_{k \rightarrow 0} s(w,f^\prime (k))&amp;gt;0.$
+This case is analogous to the previous one:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;$$\lim_{k \rightarrow 0} H(w,k) = \lim_{k \rightarrow 0} \left[(1+n)k - s(w,f^\prime (k)) \right] = -s(w, f^\prime (k)) &amp;lt; 0.$$&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Savings tend to zero: $\lim_{k \rightarrow 0} s(w, f^\prime (k)) = 0.$
+In this case, since the interest rate goes to infinity individuals tend to save zero.
+This implies that consumption in the second period, $d$, tends to infinity.
+To see this, first notice that $d = f^\prime (k) s(w, f^\prime (k)).$
+Moreover, from the first order conditions we know that:
+$$u^\prime (d) = \frac {u^\prime ( w - s)}{\beta f^\prime (k)}$$
+and hence
+$$\lim_{k \rightarrow 0}u^\prime (d) = \lim_{k \rightarrow 0}\frac {u^\prime ( w - s)}{\beta f^\prime (k)}=0.$$
+Hence, $u^\prime (d)$ tends to zero which means that $d$ goes to infinity.
+Therefore:
+$$\lim_{k \rightarrow 0} f^\prime (k) s(w, f^\prime (k)) = +\infty.$$&lt;/p&gt;
+&lt;p&gt;We also know that $0 &amp;lt; f^\prime (k) k &amp;lt; f(k)$ because $f^\prime (k) k + \omega(k) = f(k)$ and $\omega(k) &amp;gt; 0.$
+Therefore, for a bounded $0&amp;lt;k&amp;lt;1$ we also have $f^\prime (k) k &amp;lt; f(1).
+Hence, for $k&amp;lt;1$:&lt;/p&gt;
+&lt;p&gt;$$\frac{s(w, f^\prime (k))}{k} = \frac{f^\prime(k) s(w,f^\prime(k))}{f^\prime (k) k} &amp;gt; \frac{f^\prime (k) s(w, f^\prime (k))}{f(1)}.$$
+Then,&lt;/p&gt;
+&lt;p&gt;$$\lim_{k \rightarrow 0} \frac{s(w,f^\prime(k)}{k} = +\infty$$
+and
+$$\frac{H(w,k)}{k} = 1+n-\frac{s(w,f^\prime(k)}{k} &amp;lt; 0$$
+for small $k$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;
+&lt;h2 id=&#34;uniqueness-of-the-intertemporal-equilibrium&#34;&gt;Uniqueness of the intertemporal equilibrium&lt;/h2&gt;
+&lt;p&gt;Having established that at least one level $k_{t+1}$ exists that solves the equation, we would like it to be unique, thus having a unique equilibrium.
+Otherwise, for some level $k$ there would be multiple values for $k_{t+1}$ (meaning multiple values for the savings).
+Individuals lack a coordinating mechanism to select any of these equilibria.&lt;/p&gt;
+&lt;p&gt;We show that the intertemporal elasticity of substitution $\sigma$ is important in determining uniqueness.
+In particular, if $\sigma &amp;gt; 1$, then the equilibrium is unique.
+We will revisit this issue &lt;a href=&#34;https://eric-roca.github.io/courses/macroeconomics/olg/olg_multiple_intertemporal_equilibria/&#34;&gt;later.&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;We have used the intermediate value theorem to show that solutions exist.
+Moreover, it shows that $\lim_{k\rightarrow 0} \frac{H(w,k)}{k} &amp;lt; 0$ and $\lim_{k \rightarrow +\infty} \frac{H(w,k)}{k} &amp;gt; 0.$
+Therefore, if $H(w,k)$ is monotonically increasing in $k$, then there is one and only one solution to $H(w,k)=0.$
+Hence, we would have a unique solution.
+This means that given a value $k_{t},$ we can find a unique valu $k_{t+1}.$&lt;/p&gt;
+&lt;p&gt;If we take the derivative of $H(w,k)$ with respect to $k$, we obtain:&lt;/p&gt;
+&lt;p&gt;$$1+n - s^{\prime}_R f^{\prime \prime}(k).$$&lt;/p&gt;
+&lt;p&gt;Consequently, in order to have a monotonous function it is sufficient to impose:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Assumption OLG.4&lt;/strong&gt; : $$1+n - s^{\prime}_R f^{\prime \prime}(k) &amp;gt; 0.$$&lt;/p&gt;
+&lt;p&gt;And then, $k_{t+1} = g(k_{t}).$&lt;/p&gt;
+&lt;p&gt;In particular, this condition indicates that the effect of the interest rate on savings should &lt;em&gt;not&lt;/em&gt; be too negative.&lt;/p&gt;
+&lt;p&gt;Moreover, if &lt;strong&gt;OLG.4&lt;/strong&gt; is verified, then $k_{t+1}$ is increasing in $k_{t}.$
+Indeed,&lt;/p&gt;
+&lt;p&gt;$$k_{t+1} = g(k_t, k_{t+1}) = \frac{1}{1+n} s(\omega(k_t), R(k_{t+1})).$$&lt;/p&gt;
+&lt;p&gt;and&lt;/p&gt;
+&lt;p&gt;$$\frac{\partial k_{t+1}}{\partial k_t} = - \frac{\frac{\partial g(k_{t}, k_{t+1})}{\partial k_t}}{\frac{\partial g(k_t, k_{t+1})}{\partial k_{t+1}}} = \frac{\overbrace{s^\prime_{\omega} \omega^\prime(k_t)}^{&amp;gt;0}}{1+n-s^\prime_{R} \underbrace{R^\prime(k_{t+1})}_{=f^{\prime \prime} (k_{t+1}) &amp;lt; 0}} &amp;gt; 0,$$&lt;/p&gt;
+&lt;p&gt;and $k_{t+1}$ increases in $k_{t}.$&lt;/p&gt;
+&lt;p&gt;Finally, we can use a more restrictive &amp;mdash;but easier to work with&amp;mdash; assumption that ensures a unique solution for the intertemporal equilibrium.
+Assumption &lt;strong&gt;OLG.4&lt;/strong&gt; states:&lt;/p&gt;
+&lt;p&gt;$$1+n - s^{\prime}_R f^{\prime \prime}(k) &amp;gt; 0.$$&lt;/p&gt;
+&lt;p&gt;Therefore, it is sufficient to have&lt;/p&gt;
+&lt;p&gt;$$s^{\prime}_R \geq 0$$&lt;/p&gt;
+&lt;p&gt;meaning that savings increase with the interest rate.
+This behaviour is readily verified when the &lt;a href=&#34;https://eric-roca.github.io/courses/macroeconomics/olg/olg_savings_function/#intertemporal-elasticity-of-substitution&#34;&gt;intertemporal elasticity of substitution of at least one.&lt;/a&gt;
+Then, to have monotonic dynamics and unique temporal equilibrium it is sufficient to have $\sigma \geq 1.$&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Multiple intertemporal equilibria</title>
+      <link>https://eric-roca.github.io/courses/macroeconomics/olg/olg_multiple_intertemporal_equilibria/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/macroeconomics/olg/olg_multiple_intertemporal_equilibria/</guid>
+      <description>&lt;p&gt;In the OLG model, a unique intertemporal equilibrium arises if, for a given $k_t$, the equation&lt;/p&gt;
+&lt;p&gt;$$H(k_{t+1}) = k_{t+1} - \frac{1}{1+n}s\left(\omega(k_t), f^\prime(k_{t+1})\right) = 0$$&lt;/p&gt;
+&lt;p&gt;has a unique solution.
+We know that $\lim_{k\rightarrow 0}H(k) &amp;lt; 0$ and $\lim_{k\ rightarrow +\infty}H(k) &amp;gt; 0,$
+which guarantees the existence of at least one solution.&lt;/p&gt;
+&lt;p&gt;Hence, if the function $H$ is monotonously increasing, the solution is unique.
+This condition depends on the sign of:&lt;/p&gt;
+&lt;p&gt;$$\frac{\partial H(k_{t+1})}{\partial k_{t+1}} = 1 + \frac{1}{1+n}s^{\prime}_{R}f^{\prime \prime}(k_{t+1}).$$&lt;/p&gt;
+&lt;p&gt;We have different cases (check &lt;a href=&#34;https://eric-roca.github.io/courses/macroeconomics/olg/olg_savings_function/&#34;&gt;the notes&lt;/a&gt; on the savings function):&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;$s^\prime_{R} = 0$, which happens under log-utility.
+In this case, $s^\prime_{R} = 0 &amp;gt; \frac{1+n}{R^\prime(k_{t+1})}$ and $H(k_{t+1})$ is always increasing.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$s^\prime_{R} &amp;gt;0$, the intertemporal elasticity of substitution is greater than 1 and individuals are willing to trade off higher future consumption against present consumption.
+Savings increase to consume more in the future.
+Then, clearly $s^\prime_{R} &amp;gt; 0 &amp;gt; \frac{1+n}{R^\prime(k_{t+1})}.$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;$s^\prime_{R} &amp;lt; 0$, we can have a non-monotonous capital path as $k_{t+1}$ can be increasing or decreasing with $k_{t}$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Under case 3, the condition is not satisfied, multiple levels of $k_{t+1}$ solve the intertemporal equilibrium.&lt;/p&gt;
+&lt;h3 id=&#34;non-monotonous-dynamics&#34;&gt;Non-monotonous dynamics&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Based on the &lt;a href=&#34;http://web.econ.ku.dk/okocg/MAT-OEK/Mak%C3%98k2/Mak%C3%98k2-2016/Forel%C3%A6sninger/Ch%203-2016-1.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;lecture notes of Groth, pp. 92&amp;ndash;93&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Under case 3, the function $g(k)$ is backwards bending for some values of $k.$
+This feature implies that there is more than one &lt;em&gt;intemporal equilibrium&lt;/em&gt;, check &lt;a href=&#34;https://eric-roca.github.io/courses/macroeconomics/olg/olg_equilibrium/#temporary-equilibrium&#34;&gt;also&lt;/a&gt;.
+We ruled out such a possibility assuming that $\sigma( c ) \geq 1$, this is, we imposed a large enough intertemporal elasticity of substitution.&lt;/p&gt;
+&lt;p&gt;If this is not the case and $s^\prime_{R}(\omega(k_t), R(k_{t+1})) &amp;lt; \frac{1+n}{R^\prime(k_{t+1})}$ then there are multiple temporary equilibriums.&lt;/p&gt;
+&lt;p&gt;For instance, take an isoelastic utility function $u( c ) = \frac{c^{1-\frac{1}{\sigma}}-1}{1-\frac{1}{\sigma}}$ and a CES production with $A=20, , \alpha = \frac{1}{2}, , \beta = 0.3, , n = 1.097, , \sigma = 0.1, , \rho = -2.$
+First, since $\sigma &amp;lt; 1$, it allows for the possibility of having multiple temporary equilibria.
+Second, we can verify that this is the case.
+For example, if $k_{t} = 1$, then:&lt;/p&gt;
+&lt;p&gt;$k_{t+1} = \frac{1}{1+n} s(\omega(k_{t}), R(k_{t+1})) \implies k_{t+1} = \begin{cases} 0.26 \\\ 1.234 \\\ 5.832 \end{cases}.$&lt;/p&gt;
+&lt;p&gt;In fact, for the entire range $k_{t} \in [0.76, 1.37]$ there is multiplicity of equilibria.
+Consequently, in all these cases we also have that $\frac{\mathrm{d}k_{t+1}}{\mathrm{d}k_t} &amp;lt; 0.$&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/olg/backwards.webp&#34; alt=&#34;multiple_eq&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Steady state</title>
+      <link>https://eric-roca.github.io/courses/macroeconomics/olg/olg_steady_state/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/macroeconomics/olg/olg_steady_state/</guid>
+      <description>&lt;p&gt;We assume that the intertemporal equilibrium exists and is unique.
+As noted when characterising the &lt;a href=&#34;https://eric-roca.github.io/courses/macroeconomics/olg/olg_equilibrium/#temporary-equilibrium&#34;&gt;uniqueness of the temporary equilibrium&lt;/a&gt;, assuming that $\sigma&amp;gt;1$ is a sufficient condition.
+Therefore, the dynamics of capital are given by:&lt;/p&gt;
+&lt;p&gt;$$k_{t+1} = \frac{1}{1+n}s(\omega(k_{t}), f^{\prime}(k_{t+1})).$$&lt;/p&gt;
+&lt;p&gt;Hence, $k_{t+1}$ is an implicit function of $k_{t}$:&lt;/p&gt;
+&lt;p&gt;$$k_{t+1} = g(k_{t}).$$&lt;/p&gt;
+&lt;h2 id=&#34;steady-states&#34;&gt;Steady states&lt;/h2&gt;
+&lt;p&gt;The steady states of this economy can be found solving the previous equation for $k_{t+1} = k_{t}=\bar{k}.$&lt;/p&gt;
+&lt;p&gt;$$\bar{k} = \frac{1}{1+n}s\left(\omega(\bar{k}), f^{\prime}(\bar{k})\right).$$&lt;/p&gt;
+&lt;h3 id=&#34;steady-state-with-bark0&#34;&gt;Steady state with $\bar{k}=0$&lt;/h3&gt;
+&lt;p&gt;A steady state with $\bar{k}=0$ is only possible if $f(0)=0$ or, equivalently, $\omega(0)=0.$
+We may call this steady state an &lt;em&gt;autarky steady state.&lt;/em&gt;
+In that case, since $\omega(0)=0$ and we know that individuals save a fraction of their income:&lt;/p&gt;
+&lt;p&gt;$$s(\omega(0), R(0)) &amp;lt; \omega(0) = 0.$$&lt;/p&gt;
+&lt;p&gt;Hence, given zero capital, savings are equally zero and capital remains there, constituting a steady state.&lt;/p&gt;
+&lt;p&gt;Alternatively, if it is possible to produce without capital (CES production function with large enough substitutability), the autarkic steady state does not exist.&lt;/p&gt;
+&lt;h4 id=&#34;example-of-the-autarkic-steady-state&#34;&gt;Example of the autarkic steady state&lt;/h4&gt;
+&lt;p&gt;Take $F(K,L)=(\alpha K^{\rho} + (1-\alpha)L^{\rho})^{\frac{1}{\rho}}$ and $u( c ) = \log( c ).$
+Furthermore, assume a low elasticity of substitution, $\rho &amp;laquo; 0.$
+In intensive form, production equals:&lt;/p&gt;
+&lt;p&gt;$$f(k_{t}) = (\alpha k_{t}^{\rho} + (1-\alpha))^{\frac{1}{\rho}}.$$
+Wages and savings are:&lt;/p&gt;
+&lt;p&gt;$$\omega(k_{t}) = (1-\alpha)(\alpha k^\rho + (1-\alpha))^{\frac{1}{\rho}-1}$$
+$$s_{t} = \frac{\beta}{1+\beta}w_{t}.$$&lt;/p&gt;
+&lt;p&gt;Then, capital accumulation becomes:&lt;/p&gt;
+&lt;p&gt;$$k_{t+1} = \frac{1}{1+n}\frac{\beta}{1+\beta}(1-\alpha)\left[\alpha k_{t}^\rho + 1 - \alpha \right]^\frac{1-\rho}{\rho}.$$&lt;/p&gt;
+&lt;p&gt;With low substitutability, $\rho &amp;lt; 0$, zero is always a possible steady state.
+There can be two additional, positive steady states depending on the curvature of $k_{t+1}.$&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/olg/example_1.webp&#34; alt=&#34;steady states&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Similarly, the Cobb-Douglas case $\rho \rightarrow 0$ also has zero as a steady state.
+However, it is unstable.&lt;/p&gt;
+&lt;h3 id=&#34;other-steady-state&#34;&gt;Other steady state&lt;/h3&gt;
+&lt;p&gt;The economy can also present interior steady states with $\bar{k}&amp;gt;0.$
+Unlike the Ramsey model, here we can have stable and unstable steady states, as we shall see.
+Moreover, the configuration varies depending on the production and utility functions.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/olg/example_2.webp&#34; alt=&#34;behaviour&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;stability-of-the-steady-state&#34;&gt;Stability of the steady state&lt;/h2&gt;
+&lt;p&gt;This model can feature one or several steady states.
+This depends on the characteristics of the production and utility functions.&lt;/p&gt;
+&lt;p&gt;First, the dynamics of $k$ are monotonic: either continuously increase or decrease.
+This follows from assuming a unique intertemporal equilibrium, &lt;a href=&#34;https://eric-roca.github.io/courses/macroeconomics/olg/olg_equilibrium/#uniqueness-of-the-intertemporal-equilibrium&#34;&gt;see also&lt;/a&gt;.
+This extra assumption also implies that the intermporal elasticity of substitution is &lt;em&gt;not too small&lt;/em&gt;.
+In particular, we operationalise (p. 25 in &lt;em&gt;de la Croix and Michel&lt;/em&gt;.) it as:&lt;/p&gt;
+&lt;p&gt;$$\forall c&amp;gt;0, \quad u^\prime( c ) + c u^{\prime \prime}( c ) \geq 0 \Leftrightarrow \sigma( c ) \geq 1.$$&lt;/p&gt;
+&lt;p&gt;Due to the fact the monotonicity of the dynamics, capital can converge either to $0,, \bar{k}\in (0,+\infty),, $ or $+\infty.$&lt;/p&gt;
+&lt;h3 id=&#34;the-economy-_never_-goes-to-k--infty&#34;&gt;The economy &lt;em&gt;never&lt;/em&gt; goes to $k = +\infty$&lt;/h3&gt;
+&lt;p&gt;This is equivalent to saying that starting with a a high level of capital $k_{0}$, the dynamics imply $k_{t+1} &amp;lt; k_{t}.$&lt;/p&gt;
+&lt;p&gt;First, we have that:&lt;/p&gt;
+&lt;p&gt;$$g(k) = \frac{1}{1+n}s(\omega(k),f^\prime(\underbrace{g(k)}_{k_{t+1}}))&amp;lt;\frac{\omega(k)}{1+n}.$$
+This holds because savings $s$ are &lt;em&gt;always&lt;/em&gt; a fraction of wages $\omega.$&lt;/p&gt;
+&lt;p&gt;Second, we show that:&lt;/p&gt;
+&lt;p&gt;$$\lim_{k \rightarrow +\infty}\frac{g(k)}{k} = 0.$$&lt;/p&gt;
+&lt;p&gt;To see the intuition for this limit, assume for a moment it holds.
+Then, it must be that for large enough $k,, g(k) = k_{t+1} &amp;lt; k_{t}$ and the dynamics are decreasing and converge to some $\bar{k}.$
+In this case, $\bar{k}$ is the largest steady state, and because the dynamics are monotonic, the economy never goes to the other side of the steady state.&lt;/p&gt;
+&lt;p&gt;We show next that $\lim_{k \rightarrow +\infty}\frac{g(k)}{k} = 0.$
+We do so by showing that $\lim_{k \rightarrow +\infty} \color{green}{\frac{\omega(k)}{k}} = 0.$&lt;/p&gt;
+&lt;details&gt;
+&lt;summary&gt;Detailed explanation&lt;/summary&gt;
+We start by noting that:
+&lt;p&gt;$$\color{green}{\frac{\omega(k)}{k}} = \color{red}{\frac{f(k)}{k}} - \color{blue}{f^\prime (k)} \leftarrow \omega(k) = f(k) - f^\prime (k) k.$$&lt;/p&gt;
+&lt;p&gt;When $k \rightarrow +\infty$, &lt;strong&gt;the first term $\color{red}{\frac{f(k)}{k}}$&lt;/strong&gt; admits a positive limit, let&amp;rsquo;s call it $\mathcal{l}_{1}.$
+This is because:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;$\color{red}{\frac{f(k)}{k}} &amp;gt; 0.$&lt;/li&gt;
+&lt;li&gt;$\color{red}{\frac{f(k)}{k}}$ is decreasing:
+$$\frac{\partial \color{red}{\frac{f(k)}{k}}}{\partial k} = \frac{f^\prime(k)k-f(k)}{k^{2}} = - \frac{f(k) - f^\prime (k) k}{k^{2}} = - \frac{\omega(k)}{k^{2}} &amp;lt; 0.$$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The &lt;strong&gt;second term $\color{blue}{f^\prime (k)}$&lt;/strong&gt; is decreasing and positive, thus it admits a limit $\mathcal{l}_{2}$ when $k \rightarrow +\infty.$&lt;/p&gt;
+&lt;p&gt;Apply the mean value theorem evaluated at $k$ and $2k$:&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;$$f(2k) - f(k) = (2k-k)f^\prime(k(1+\theta)), \quad \mathrm{with}, \theta \in (0,1).$$
+Then,
+$$\frac{2f(2k)}{2k} - \frac{f(k)}{k} = f^\prime(k(1+\theta))$$
+Taking the limit when $k \rightarrow +\infty$ we obtain $2\mathcal{l}_{1}-\mathcal{l}_{1} = \mathcal{l}_{2} \implies \mathcal{l}_{1} = \mathcal{l}_{2}.$&lt;/p&gt;
+&lt;p&gt;Finally,&lt;/p&gt;
+&lt;p&gt;$$\lim_{k \rightarrow + \infty}\color{green}{\frac{\omega(k)}{k}} =\lim_{k \rightarrow +\infty}\color{red}{\frac{f(k)}{k}} - \color{blue}{f^\prime (k)}=  \mathcal{l}_{1} - \mathcal{l}_{2} = 0.$$&lt;/p&gt;
+&lt;/details&gt;
+&lt;p&gt;Since $\lim_{k \rightarrow +\infty} \color{green}{\frac{\omega(k)}{k}}=0$ and $\frac{g(k)}{k} &amp;lt; \color{green}{\frac{\omega(k)}{k}}$ then $\lim_{k \rightarrow +\infty}\frac{g(k)}{k} = 0.$
+In conclusion, if the inital value of capital is large enough, the dynamics are decreasing and $k$ converges to an interior steady state $\bar{k}.$&lt;/p&gt;
+&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+&lt;h3 id=&#34;example-1-log-utility-and-cobb-douglas&#34;&gt;Example 1: Log-utility and Cobb-Douglas&lt;/h3&gt;
+&lt;p&gt;Suppose that $u(c,d) = \log ( c ) + \beta \log(d)$ and $f(k_t) = Ak_t^\alpha.$&lt;/p&gt;
+&lt;p&gt;The wage rate is given by
+$$w_t = f(k_{t}) - f^\prime (k_{t}) = (1-\alpha)Ak_{t}^\alpha$$&lt;/p&gt;
+&lt;p&gt;and the savings function is obtained solving
+$$u^\prime(w_{t} - s_{t}) = \beta R_{t+1} u^\prime (R_{t+1}s_{t}).$$&lt;/p&gt;
+&lt;p&gt;Rearranging and isolating $s$ we are left with the savings function&lt;/p&gt;
+&lt;p&gt;$$s_{t} = \frac{\beta}{1+\beta}w_{t}.$$&lt;/p&gt;
+&lt;p&gt;The dynamics are given by the capital accumulation law&lt;/p&gt;
+&lt;p&gt;$$k_{t+1} = \frac{1}{1+n}s_{t} = \frac{1}{1+n}\frac{\beta}{1+\beta}w_{t} = \frac{1}{1+n}\frac{\beta}{1+\beta}(1-\alpha)Ak_{t}^\alpha.$$&lt;/p&gt;
+&lt;p&gt;The model with log-utility and Cobb-Douglas production functions has two steady states: zero and a unique positive steady state.
+We can solve for them:&lt;/p&gt;
+&lt;p&gt;$$\bar{k} = \frac{1}{1+n}\frac{\beta}{1+\beta}(1-\alpha)A\bar{k}^\alpha \implies \bar{k} = \begin{cases} 0 \\\ \left(\frac{1}{1+n}\frac{\beta}{1+\beta}(1-\alpha)A\right)^{\frac{1}{1-\alpha}} \equiv \phi^\frac{1}{1-\alpha}\end{cases}.$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Local dynamics: stability&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We check the stability of the two steady states using the first derivative evaluated at the steady state.
+&lt;strong&gt;Note:&lt;/strong&gt; in general we would use the Jacobian matrix, but the OLG model has only one equation in one variable.&lt;/p&gt;
+&lt;p&gt;Remember that, for a discrete-time system, a &lt;a href=&#34;https://eric-roca.github.io/courses/mathematical_appendix/steady_state/#hyperbolic-steady-states&#34;&gt;&lt;em&gt;non-hyperbolic&lt;/em&gt;&lt;/a&gt; steady state is stable if it the determinant of the Jacobian (here the absolute value of the derivative) evaluated at the steady state is in the unit circle $(-1, 1).$&lt;/p&gt;
+&lt;p&gt;In our case:&lt;/p&gt;
+&lt;p&gt;$$g(k) = k_{t+1} = \frac{1}{1+n}\frac{\beta}{1+\beta}(1-\alpha)Ak_{t}^\alpha$$
+$$g^\prime(k) = \frac{1}{1+n}\frac{\beta}{1+\beta}(1-\alpha)\alpha Ak_{t}^{\alpha-1}&amp;gt; 0.$$&lt;/p&gt;
+&lt;p&gt;Then&lt;/p&gt;
+&lt;p&gt;$$\bar{k}=0 \implies g^\prime (0) = + \infty \quad \rightarrow \mathrm{unstable}$$
+$$\bar{k}=\phi^\frac{1}{1-\alpha} \implies g^\prime(\phi^\frac{1}{1-\alpha}) = \phi \alpha \phi^\frac{\alpha-1}{1-\alpha} = \alpha \in (0,1) \quad \rightarrow \mathrm{stable}.$$&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Global dynamics&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Suppose we have $k_{t+1} \geq k_{t}$.
+We show that the dynamics are bounded above by the steady state $\bar{k} = \phi^\frac{1}{1-\alpha}.$&lt;/p&gt;
+&lt;p&gt;$$k_{t+1} \geq k_{t} \Leftrightarrow g(k_t) \geq k_t \Leftrightarrow \phi k_t^\alpha \geq k_t \Leftrightarrow \phi \geq k_t^{1-\alpha} \Leftrightarrow \bar{k} \geq k_t.$$&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/olg/Log_CD.webp&#34; alt=&#34;log_cd&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;log-utility-and-ces-technology&#34;&gt;Log-utility and CES technology&lt;/h3&gt;
+&lt;p&gt;Under a CES specification, $y_{t} = A \left[ \alpha k_{t}^\rho + (1-\alpha) \right]^\frac{1}{\rho}, \rho \leq 1$
+wages are given by
+$$\omega_{t} = (1-\alpha)\left[\alpha k^\rho + 1 -\alpha \right]^{\frac{1-\rho}{\rho}}.$$
+Hence, the dynamics of capital are governed by:&lt;/p&gt;
+&lt;p&gt;$$k_{t+1} = g(k_t) = \frac{1}{1+n}s_{t} = \frac{1}{1+n}\frac{\beta}{1+\beta}A(1-\alpha)\left[\alpha k_{t}^\rho + 1 - \alpha\right]^\frac{1-\rho}{\rho}.$$
+The curve $g(k)$ is increasing:&lt;/p&gt;
+&lt;p&gt;$$g^\prime (k) = \frac{\beta A (1-\alpha)}{(1+n)(1+\beta )}(1-\rho)\left[ \alpha k^\rho + 1 - \alpha \right]^\frac{1-2 \rho}{\rho}k^{\rho -1} &amp;gt; 0.$$&lt;/p&gt;
+&lt;p&gt;Depending on the value of $\rho$ we can have different configurations regarding the steady states.
+Ultimately, what matters is the concavity of the function $g(k_{t}).$&lt;/p&gt;
+&lt;p&gt;$$g^{\prime \prime}(k_t) = -\frac{1}{1+n}\frac{\beta}{1+\beta}A(1-\rho)\alpha\left[\alpha k^\rho+1-\alpha\right]^\frac{1-3\rho}{\rho}k^{\rho-2}\left(\rho \alpha k^\rho +(1-\alpha)(1-\rho)\right).$$&lt;/p&gt;
+&lt;h4 id=&#34;unique-steady-state-bark--0&#34;&gt;Unique steady state, $\bar{k} &amp;gt; 0$&lt;/h4&gt;
+&lt;p&gt;If $\rho \in (0,1)$, the second derivative is clearly negative, and $g$ is concave.
+Moreover, $g(0)&amp;gt;0$, so $\bar{k} = 0$ cannot be a steady state:&lt;/p&gt;
+&lt;p&gt;$$g(k_{t}) = \frac{\beta A(1-\alpha)}{(1+n)(1+\beta)}(\alpha k^\rho + 1 - \alpha)^\frac{1-\rho}{\rho} \implies g(0)=\frac{\beta A(1-\alpha)^\frac{1}{\rho}}{(1+n)(1+\beta)}&amp;gt; 0.$$
+In that case, the economy displays a unique steady state, and it is globally stable.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/olg/ces0.webp&#34; alt=&#34;ces0&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h4 id=&#34;unique-bark0-or-multiple-steady-states&#34;&gt;Unique $\bar{k}=0$ or multiple steady states&lt;/h4&gt;
+&lt;p&gt;If $\rho &amp;lt; 0,$ the function $g(k)$ changes concavity.
+In particular, there exists a level $\hat{k}$ such that:
+$$g^{\prime \prime}(k) &amp;gt; 0, \mathrm{if} ,  k &amp;lt; \hat{k}.$$
+$$g^{\prime \prime}(k) &amp;lt; 0, \mathrm{if} , k &amp;gt; \hat{k}.$$
+with
+$$\hat{k} = \left( - \frac{(1-\alpha)(1-\rho)}{\rho \alpha}\right)^\frac{1}{\rho} &amp;gt; 0 , \mathrm{since}, \rho &amp;lt;0.$$
+Moreover, $g(0)=0$ so $\bar{k}=0$ can be a steady state.&lt;/p&gt;
+&lt;p&gt;In this case, there are two sub-cases:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;If $k_{t+1} &amp;lt; k_{t} \implies \frac{\omega(k)}{k} &amp;lt; (1+n)\frac{1+\beta}{\beta}$ then the trajectory of $k_{t+1}$ is always below $k$.
+Then, there is one unique steady state: $\bar{k}=0.$
+The economy converges towards this unique steady state.
+We can derive the condition above from:
+$\begin{align}
+k_{t+1} &amp;lt; k_{t} &amp;amp; \implies \frac{1}{1+n}s\left(\omega(k_{t}),R_{t+1}\right) &amp;lt; k_{t}  \implies \\\
+\frac{1}{1+n}\frac{\beta}{1+\beta}w_t &amp;lt; k_{t} &amp;amp; \implies \frac{w_{t}}{k_{t}} &amp;lt; (1+n)\frac{1+\beta}{\beta}.
+\end{align}$&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;If there is some $k_{t+1} &amp;gt; k_{t} \implies \frac{\omega(k)}{k} &amp;gt; (1+n)\frac{1+\beta}{\beta}$ then there are two positive steady states $\bar{k}_{a} &amp;lt; \bar{k}_{b}$ plus the zero steady state $\bar{k}=0.$&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;All trajectories starting at $k_0 &amp;lt; \bar{k}_{a}$ converge to $\bar{k}=0$ and $\bar{k}=0$ is locally stable in the range $[0,\bar{k}_{a}].$
+The steady state with $\bar{k}=0$ is a &lt;strong&gt;poverty trap&lt;/strong&gt;: whenever the economy starts with a low enough level of capital, it will always converge towards the $\bar{k}=0$ steady state.&lt;/li&gt;
+&lt;li&gt;Trajectories starting at $k_0=\bar{k}_{a}$ remain at $\bar{k}_{a}$. This steady state is unstable.&lt;/li&gt;
+&lt;li&gt;Finally, trajectories starting with $k_0 &amp;gt; \bar{k}_{a}$ converge towards $\bar{k}_{b}$, which is a locally stable steady state in $(\bar{k}_{a}, +\infty).$&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/olg/ces1.webp&#34; alt=&#34;ces1&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;The mean value theorem states that, for a continuous function on $[a,b],$ there is a point $c \in (a,b)$ such that the derivative a $c, f^\prime( c)$ coincides with the slope of the secant between $a$ and $b, \frac{f(b) - f(a)}{b-a}.$
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Mean_value_theorem&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;More information&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Optimality</title>
+      <link>https://eric-roca.github.io/courses/macroeconomics/olg/olg_optimality/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/macroeconomics/olg/olg_optimality/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Based on &lt;em&gt;de la Croix and Michel, Chapter 2&lt;/em&gt; and &lt;a href=&#34;http://web.econ.ku.dk/okocg/MAT-OEK/Mak%C3%98k2/Mak%C3%98k2-2016/Forel%C3%A6sninger/Ch%203-2016-1.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Gorth&amp;rsquo;s&lt;/em&gt;&lt;/a&gt; lecture notes.&lt;/p&gt;
+&lt;p&gt;The first welfare theorem states that a competitive equilibrium is Pareto optimal.
+However, the first welfare theorem has two requisites the Diamond model does not meet: a finite number of goods and a finite number of agents.
+Therefore, the allocation resulting from the competitive equilibrium may &lt;em&gt;not&lt;/em&gt; be Pareto optimal.&lt;/p&gt;
+&lt;h2 id=&#34;the-golden-rule-level-of-capital&#34;&gt;The golden-rule level of capital&lt;/h2&gt;
+&lt;p&gt;We begin the discussion by bringing back the idea of &lt;a href=&#34;https://eric-roca.github.io/courses/macroeconomics/ramsey/ramsey_remarks/#the-golden-rule&#34;&gt;over- and under-accumulation of capital&lt;/a&gt; we have seen before.
+In the Diamond model &amp;mdash;and different from the Ramsey model&amp;mdash;, the capital stock on the balanced growth path may exceed the golden-rule level.
+This implies that a permanent increase in consumption is possible.&lt;/p&gt;
+&lt;p&gt;When discussing the golden-rule level of capital, we are &lt;em&gt;not&lt;/em&gt; interested in how consumption is divided between the old and the young.
+Rather, we seek to maximise total consumption during one period.
+In fact, if we maximise total consumption, the ensuing allocations between young and old will be efficient.
+First, let $\mathfrak{C}_t$ represent total consumption: $$\mathfrak{C}_t \equiv C_t + D_t.$$
+The economy-wide resource constraint dictates that total production is either consumed or invested:&lt;/p&gt;
+&lt;p&gt;$$\mathfrak{C}_t  + K_{t+1} = F(K_t, N_t)+ (1-\delta)K_t.$$&lt;/p&gt;
+&lt;p&gt;Alternatively, aggregate consumption per unit of labour is:&lt;/p&gt;
+&lt;p&gt;$$\mathfrak{c}_t \equiv \frac{\mathfrak{C}_t}{N_t} = \frac{F(K_t, N_t) +(1-\delta)K_t - K_{t+1}}{N_t} = f(k_t) + (1-\delta)k_t - (1+n)k_{t+1}.$$&lt;/p&gt;
+&lt;p&gt;The &lt;em&gt;golden-rule level of the capital-labour ratio&lt;/em&gt; $k^\mathcal{GR}$ is the value of the capital-labour ratio $k$ that results in the highest possible &lt;em&gt;sustainable&lt;/em&gt; level of consumption per unit of labour.
+The fact that it is sustainable requires that it is replicable forever.
+For this reason, we consider the steady state with $k_{t+1} = k_t = \bar{k}$.
+The resource constraint at the steady state simplifies to:&lt;/p&gt;
+&lt;p&gt;$$\bar{\mathfrak{c}} = f(\bar{k})-(\delta + n)\bar{k} \equiv \mathfrak{c}(k).$$&lt;/p&gt;
+&lt;p&gt;We maximise this function with respect to $\bar{k}$:&lt;/p&gt;
+&lt;p&gt;$$\mathfrak{c}^\prime(\bar{k}) = f^\prime (\bar{k}) - (n+\delta) = 0$$
+The fact that $\mathfrak{c}^{\prime \prime}(\bar{k}) = f^{\prime \prime}(\bar{k})&amp;lt;0$ assures that we have the maximum.&lt;/p&gt;
+&lt;p&gt;Assuming that $n+\delta &amp;gt;0$ and that $f$ satisfies:&lt;/p&gt;
+&lt;p&gt;$$\lim_{k \rightarrow +\infty} f^\prime(k) &amp;lt; n+ \delta &amp;lt; \lim_{k \rightarrow 0} f^\prime(k),$$&lt;/p&gt;
+&lt;p&gt;then $\mathfrak{c}^\prime(\bar{k}) = f^\prime (\bar{k}) - (n+\delta) = 0$ has a solution in $\bar{k}$ and it is unique.
+Hence, the golden-rule level of capital is given by:&lt;/p&gt;
+&lt;p&gt;$$f^\prime(k^\mathcal{GR}) = n + \delta.$$&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/olg/golden_rule.webp&#34; alt=&#34;golden_rule&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The highest sustainable consumption level per unit of labour is obtained when, at steady state, the net marginal productivity of capital equals the growth rate of the economy.&lt;/p&gt;
+&lt;h3 id=&#34;over--and-under-accumulation-of-capital&#34;&gt;Over- and under-accumulation of capital&lt;/h3&gt;
+&lt;p&gt;The golden-rule level of capital is given by $f^\prime(k) = n+\delta.$
+However, in the decentralised economy, the steady-state level of savings is highly &lt;em&gt;unlikely&lt;/em&gt; to coincide with it.
+For instance, a log-utility function coupled with a Cobb-Douglas production function leads to a steady-state value of capital such that $f^\prime (k) = \frac{\beta}{(1+n)(1+\beta)}^\frac{1}{1-\alpha}.$
+In general, $\frac{\beta}{(1+n)(1+\beta)}^\frac{1}{1-\alpha} \neq n+\delta.$&lt;/p&gt;
+&lt;p&gt;If the steady-state level of the economy is such that $f^\prime (\bar{k}) &amp;lt; n+ \delta,$ the economy has accumulated too much capital: if $f^\prime (\bar{k}) &amp;lt; f^\prime(k^\mathcal{GR}) \implies \bar{k} &amp;gt; k^\mathcal{GR}.$
+Conversely, if the interest rate at the competitive steady state is such that $f^\prime (\bar{k}) &amp;gt; n + \delta,$ then it lacks capital compared to the golden rule.&lt;/p&gt;
+&lt;h4 id=&#34;improving-the-situation-dynamic-inefficiency&#34;&gt;Improving the situation: dynamic inefficiency&lt;/h4&gt;
+&lt;p&gt;Let&amp;rsquo;s suppose for the moment that the decentralised economy reaches a situation of over-accumulation of capital, this is, $f^\prime(\bar{k}) &amp;lt; n + \delta.$
+It is possible to improve upon it by means of redistribution.
+Simply, a planner could order young individuals to save less, as to reach $k^\mathcal{GR}.$
+Doing so increases the available total output per worker, which can be consumed either by the old or the young, improving their utility.
+In subsequent periods, the economy would remain at $k^\mathcal{GR}$, which maximises total output per worker.&lt;/p&gt;
+&lt;p&gt;In particular, assume we impose a lump-sum tax on all young individuals and we transfer it to the old generation.
+The transfer is fully consumed (old individuals gain utility from consuming it).
+Suppose the transfer is one good from each young to the old.
+There are $1+n$ young individuals per old individual, so the old receive $1+n$ goods.
+Let&amp;rsquo;s repeat this scheme every period.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The young transfer one good to the old&lt;/li&gt;
+&lt;li&gt;Consumption of the young does not change because they refrain from saving.&lt;/li&gt;
+&lt;li&gt;In the future, they receive $1+n$, which represents a return rate of $1+n$ on their &amp;ldquo;investment&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;In the competitive market, they would have obtained $f^\prime(k) &amp;lt; n + \delta.$&lt;/li&gt;
+&lt;li&gt;Clearly, the return young individuals achieve under the tax system is larger, and hence they are better off.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;At the same time, old individuals are also better off.
+In the first period, when the reform is introduced, they consume more.
+Later generations obtain a higher return for the tax they pay, leaving them better off, too.&lt;/p&gt;
+&lt;p&gt;When organising such scheme is possible, we say that the competitive economy was &lt;strong&gt;dynamically inefficient.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; it is possible to solve the dynamic inefficiency introducing money.
+Young individuals would exchange goods for paper notes with the expectation of exchanging them back again when old.&lt;/p&gt;
+&lt;h4 id=&#34;dynamic-efficiency&#34;&gt;Dynamic efficiency&lt;/h4&gt;
+&lt;p&gt;In the opposite case, when $\bar{k} &amp;lt; k^\mathrm{GR}$, reaching the golden-rule level of capital requires increasing it.
+Suppose we are at time $t_0$.
+Increasing the capital to $k^\mathcal{GR}$ would certainly improve consumption for all generations $t &amp;gt; t_0$.
+However, young individuals at $t_0$ should forgo some consumption to save more and build the necessary capital.
+Hence, the consumption of the young generation at $t_0$ necessarily decreases.
+Our policy of improving utility for all individuals fails in this case.&lt;/p&gt;
+&lt;p&gt;We call such situations &lt;strong&gt;dynamically efficient&lt;/strong&gt;: it is impossible to increase the utility of all generations.&lt;/p&gt;
+&lt;h3 id=&#34;example&#34;&gt;Example&lt;/h3&gt;
+&lt;p&gt;We use a log-utility and Cobb-Douglas case to illustrate over- and under-accumulation of capital.&lt;/p&gt;
+&lt;p&gt;$U(c,d) = \log( c ) + \beta \log (d)$$
+$$f(k)= Ak^\alpha.$$&lt;/p&gt;
+&lt;p&gt;The golden-rule level of capital dictates that total consumption per worker should be maximised.
+Using the resource constraint:&lt;/p&gt;
+&lt;p&gt;$$\max \mathcal{c_t}= f(k_t) +(1-\delta)k_t  - (1+n)k_{t+1}.$$&lt;/p&gt;
+&lt;p&gt;Evaluating it at the steady state yields:&lt;/p&gt;
+&lt;p&gt;$$\max \mathfrak{c} = f(k) - (n+\delta)k \implies f^\prime(k^\mathcal{GR}) = n+\delta.$$&lt;/p&gt;
+&lt;p&gt;Hence, in our case:&lt;/p&gt;
+&lt;p&gt;$$A \alpha {k^\mathcal{GR}}^{\alpha-1} = n + \delta \implies k^\mathcal{GR} = \left(\frac{A\alpha}{n+\delta}\right)^\frac{1}{1-\alpha}.$$&lt;/p&gt;
+&lt;p&gt;In the decentralised economy, we have that:&lt;/p&gt;
+&lt;p&gt;$$k_{t+1} = \frac{1}{1+n} s(\omega(k_t), f^\prime(k_{t+1})) = \frac{1}{1+n}\frac{\beta}{1+\beta}A(1-\alpha)k_t^\alpha.$$&lt;/p&gt;
+&lt;p&gt;Hence, the steady-state level of capital is:&lt;/p&gt;
+&lt;p&gt;$$\bar{k} = \frac{A \beta (1-\alpha)}{(1+n)(1+\beta )}\bar{k}^\alpha \implies \bar{k} = \frac{A(1-\alpha) \beta}{(1+n)(1+\beta)}^\frac{1}{1-\alpha}.$$&lt;/p&gt;
+&lt;p&gt;We have capital over-accumulation if: $\bar{k} &amp;gt; k^\mathcal{GR} \implies \frac{(n+\delta) \beta}{(1+n)(1+\beta)} &amp;gt; \frac{\alpha}{1-\alpha}.$&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Check &lt;em&gt;Romer, pp. 89&amp;ndash;90&lt;/em&gt; for an empirical discussion about the dynamic efficiency.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Debt and public expenditures</title>
+      <link>https://eric-roca.github.io/courses/macroeconomics/olg/olg_government/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/macroeconomics/olg/olg_government/</guid>
+      <description>&lt;p&gt;Based on &lt;em&gt;de la Croix and Michel, Chapter 4.4&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;the-ricardian-equivalence&#34;&gt;The Ricardian equivalence&lt;/h2&gt;
+&lt;p&gt;The Ricardian equivalence states that forward-looking agents internalise the government&amp;rsquo;s budget constraint when deciding.
+Hence, whether public expenditures are financed using debt or taxes is irrelevant.&lt;/p&gt;
+&lt;p&gt;Intuitively, forward-looking agents &amp;mdash;who shall live forever&amp;ndash; know that, if the government increases expenditures today without raising taxes, debt will be issued and taxes eventually increased to pay it off.&lt;/p&gt;
+&lt;p&gt;However, as we shall see, in the &lt;strong&gt;OLG model, the Ricardian equivalence does not hold.&lt;/strong&gt;
+Clearly, the main difference between the OLG and Ramsey models is that agents live only for two periods in the former.
+Suppose that the government decides to run a deficit today to increase public expenditures.
+Young and old individuals today are not that much affected because, when the government raises the taxes to pay the debt off, they would have already died.
+Instead, if the government decides to increase taxes today, it affects present-day young and old individuals.&lt;/p&gt;
+&lt;h2 id=&#34;the-model-with-a-government&#34;&gt;The model with a government&lt;/h2&gt;
+&lt;h3 id=&#34;the-government&#34;&gt;The government&lt;/h3&gt;
+&lt;p&gt;Suppose the government has public expenditures of $g_t$ per young individual.
+Total expenditures are then $G_t = N_t g_t.$
+These public expenditures are financed by a lump-sum tax of $\tau_t$, which is paid only by the young.
+Total revenues are $T_t = N_t \tau_t.$
+Finally, the government can have debt.
+The total outstanding debt is $B_t,$ and $b_t$ represents it per young terms.
+The government pays interest on the debt of the previous period: $R_t B_{t-1}.$&lt;/p&gt;
+&lt;p&gt;We can write the government&amp;rsquo;s budget constraint:&lt;/p&gt;
+&lt;p&gt;$$G_t + R_t B_{t-1} = B_t + T_t.$$&lt;/p&gt;
+&lt;p&gt;The constraint, expressed in per capita terms, is:&lt;/p&gt;
+&lt;p&gt;$$\frac{G_t}{N_t} + R_t \frac{B_{t-1}}{N_t} = \frac{B_t}{N_t} + \frac{T_t}{N_t} = $$
+$$g_t + R_t \underbrace{\frac{B_{t-1}}{N_{t-1}}}_{b_{t-1}}\underbrace{\frac{N_{t-1}}{N_{t}}}_{\frac{1}{1+n}} = b_t + \tau_t = $$
+$$g_t + R_t \frac{b_{t-1}}{1+n}  = b_t + \tau_t $$&lt;/p&gt;
+&lt;p&gt;As a final note, government spending is unproductive: it does not affect the production function.
+Moreover, individuals do &lt;em&gt;not&lt;/em&gt; derive utility from it.
+Finally, we assume that the government &lt;em&gt;always&lt;/em&gt; honors its debt.
+In that sense, government debt is a riskless asset.&lt;/p&gt;
+&lt;h3 id=&#34;individuals&#34;&gt;Individuals&lt;/h3&gt;
+&lt;p&gt;The budget constraint of a young individual who now pays taxes $\tau_t$ is:&lt;/p&gt;
+&lt;p&gt;$$w_t = c_t + s_t + \tau_t$$
+$$R_{t+1}s_t = d_{t+1}.$$&lt;/p&gt;
+&lt;p&gt;Alternatively, we can express it as an intertemporal budget constraint:&lt;/p&gt;
+&lt;p&gt;$$w_t = c_t + \tau_t +\frac{d_{t+1}}{R_{t+1}}.$$&lt;/p&gt;
+&lt;p&gt;We can easily obtain the savings function as we did before by substitution:&lt;/p&gt;
+&lt;p&gt;$$\max_{c_t, s_t, d_{t+1}} u(c_t) + \beta u(d_{t+1})$$
+$$\mathrm{s.t.}, w_t = c_t + s_t - \tau_t$$
+$$\phantom{\mathrm{s.t.}}, d_{t+1} = R_{t+1}s_t.$$&lt;/p&gt;
+&lt;p&gt;Then:&lt;/p&gt;
+&lt;p&gt;$$\max_{s_t} u(w_t-s_t-\tau_t) + \beta u(R_{t+1}s_t).$$&lt;/p&gt;
+&lt;p&gt;The first order condition reads:&lt;/p&gt;
+&lt;p&gt;$$u^\prime(w_t - s_t-\tau_t) = \beta R_{t+1} u^\prime(R_{t+1}s_t).$$&lt;/p&gt;
+&lt;p&gt;From here, we can recover the savings function:&lt;/p&gt;
+&lt;p&gt;$$s_t = s(w_t-\tau_t, R_{t+1}).$$&lt;/p&gt;
+&lt;p&gt;In this model, households have access to &lt;strong&gt;two&lt;/strong&gt; types of savings:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;savings in capital&lt;/li&gt;
+&lt;li&gt;and government bonds.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Moreover, the risk of both types of investment is the same: none, because both assets are riskless.
+Hence, &lt;strong&gt;bonds and capital are perfect substitutes.&lt;/strong&gt; in the portfolio of wealth owners.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
+Therefore, the entire amount households decide to save is split between the two&lt;/p&gt;
+&lt;p&gt;$$N_t s_t = K_{t+1} + N_t b_t.$$&lt;/p&gt;
+&lt;h3 id=&#34;equilibrium&#34;&gt;Equilibrium&lt;/h3&gt;
+&lt;p&gt;At the (temporal) equilibrium , the government chooses $B_t, \tau_t$ to satisfy its budget constraint: $g_t + R_t \frac{b_{t-1}}{1+n}  = b_t + \tau_t.$
+Moreover, as we have already discussed, because debt and capital are substitutes, both bear the same interest $R.$
+Also, firms operate in a perfectly competitive environment and factors are paid their marginal productivities:&lt;/p&gt;
+&lt;p&gt;$$w_t = \omega(k_t)$$&lt;/p&gt;
+&lt;center&gt;and&lt;/center&gt;
+$$R\_t = f^\prime(k\_t)$$
+with $k\_t \equiv \frac{K\_t}{N\_t}.$
+&lt;p&gt;Introducing this into the government budget constraint we obtain:&lt;/p&gt;
+&lt;p&gt;$$B_t + N_t \tau_t = G_t + f^\prime(\color{red}{k_t})B_{t-1}.$$&lt;/p&gt;
+&lt;p&gt;We have implicitly assumed that investment is positive, this is,
+$$K_{t+1} = N_t s_t - B_t = N_t s(w_t - \tau_t, R_{t+1}) - B_t &amp;gt;0.$$&lt;/p&gt;
+&lt;p&gt;Capital thus evolves:&lt;/p&gt;
+&lt;p&gt;$$K_{t+1} = N_t s_t - N_t b_t \implies k_{t+1} = \frac{1}{1+n} s(\omega(k_t)-\tau_t, R(k_{t+1})) - b_t.$$&lt;/p&gt;
+&lt;h3 id=&#34;constant-deficit-policy&#34;&gt;Constant deficit policy&lt;/h3&gt;
+&lt;p&gt;To simplify the analysis, we assume that the government faces constant expenditures $g_t = g$ and that the number of bonds is also constant: $b_t = b.$
+The government can adjust the tax rate $\tau_t$ each period.
+Therefore, the &lt;em&gt;deficit&lt;/em&gt; at time $t$ is given by:&lt;/p&gt;
+&lt;p&gt;$$\mathcal{d}_t \equiv g - \tau_t = b\left(1-\frac{R_t}{1+n}\right) = b\left(\frac{n+\delta - r_t}{1+n}\right),$$&lt;/p&gt;
+&lt;p&gt;where we have used $R_t = 1 + r_t - \delta$ together with the budget constraint of the government evaluated when $g_{t}=g$ and $b_{t}=b:$&lt;/p&gt;
+&lt;p&gt;$$g + \frac{b}{1+n}R_{t} = \tau_{t} + b \implies g - \tau_{t} = b\left(1-\frac{R_{t}}{1+n}\right).$$&lt;/p&gt;
+&lt;p&gt;If $n + \delta &amp;gt; r_t$, then the government can be perpetually indebted while running a public deficit $g-\tau_t.$
+Otherwise, if $n + \delta &amp;lt; r_t$, the government needs to run a budget surplus: $\tau_t &amp;gt; g.$&lt;/p&gt;
+&lt;p&gt;Replacing the new government budget $g - \tau_t = b\left(\frac{n+\delta - r_t}{1+n}\right)$ in the equation for capital dynamics we obtain:&lt;/p&gt;
+&lt;p&gt;$$k_{t+1} = \frac{1}{1+n}s\left(\omega(k_t)-b\frac{r(\color{red}{k_t})-\delta - n}{1+n}-g, R(\color{green}{k_{t+1}})\right)- \frac{b}{1+n}.$$&lt;/p&gt;
+&lt;p&gt;In this case, the &lt;em&gt;policy parameters&lt;/em&gt; $g, b$ affect the evolution of the capital stock.
+Notice also that if $b=g=0$ we recover the original version of the OLG model.&lt;/p&gt;
+&lt;h3 id=&#34;steady-state&#34;&gt;Steady state&lt;/h3&gt;
+&lt;p&gt;For the moment, let&amp;rsquo;s assume that this model features, at least, one steady state.
+As usual, we denote its level of capital by $\bar{k}.$&lt;/p&gt;
+&lt;p&gt;As before, we can compute how $k_{t+1}$ changes with $k_t.$&lt;/p&gt;
+&lt;p&gt;$$\frac{\partial k_{t+1}}{\partial k_t} = \frac{s^\prime_{\omega}\left(w^\prime (k_t)-b\frac{r^\prime (k_t)}{1+n}\right)}{1+n-s^\prime_{R}R^\prime (k_{t+1})}.$$&lt;/p&gt;
+&lt;p&gt;Since $r^\prime (k) &amp;lt;0$ we can already see that the speed at which capital adjusts in the presence of a government is larger than without it.&lt;/p&gt;
+&lt;p&gt;$$\frac{s^\prime_{\omega}\left(\omega^\prime (k_t)-b\frac{r^\prime (k_t)}{1+n}\right)}{1+n-s^\prime_{R}R^\prime (k_{t+1})} &amp;gt; \frac{s^\prime_{\omega}\omega^\prime (k_t)}{1+n-s^\prime_{R} R^\prime(k_{t+1})}.$$&lt;/p&gt;
+&lt;p&gt;Also, notice that the numerator is positive: $\omega^\prime (k) - b \frac{\overbrace{r^\prime(k)}^{&amp;lt;0}}{1+n} &amp;gt; 0.$
+Hence,if $1+n-s^\prime_{R}R^\prime(k) &amp;gt; 0$ the dynamics will be monotonous.
+A sufficient condition is $s^\prime_{R} &amp;gt; 0 \implies \sigma &amp;gt; 1.$
+Let&amp;rsquo;s assume this condition is verified.&lt;/p&gt;
+&lt;h3 id=&#34;stability&#34;&gt;Stability&lt;/h3&gt;
+&lt;p&gt;We have assumed that a steady state exists.
+We analyse its stability.
+In particular, we should evaluate the derivative $\frac{\partial k_{t+1}}{\partial k_t}$ at the steady state:&lt;/p&gt;
+&lt;p&gt;$$\frac{\partial k_{t+1}}{\partial k_t} = \frac{s^\prime_{\omega}\left(w^\prime (k_t)-b\frac{\overbrace{r^\prime (k_t)}^{&amp;lt;0}}{1+n}\right)}{1+n-s^\prime_{R}R^\prime (k_{t+1})}.$$&lt;/p&gt;
+&lt;p&gt;At the steady state we have that:&lt;/p&gt;
+&lt;p&gt;$$\frac{\partial k_{t+1}}{\partial k_t}\Bigg|_{k_t=k_{t+1}=\bar{k}} = \frac{s^\prime_{\omega}\left(w^\prime (\bar{k})-b\frac{\overbrace{r^\prime (\bar{k})}^{&amp;lt;0}}{1+n}\right)}{1+n-s^\prime_{R}R^\prime (\bar{k})}.$$&lt;/p&gt;
+&lt;p&gt;We then have that the steady state is stable if $\frac{\partial k_{t+1}}{\partial k_t}\Bigg|_{k_t = k_{t+1} = \bar{k}} \in (-1,1).$
+Therefore, the steady state is stable if and only if:&lt;/p&gt;
+&lt;p&gt;$$\frac{s^\prime_{\omega}\left(w^\prime (\bar{k})-b\frac{\overbrace{r^\prime (\bar{k})}^{&amp;lt;0}}{1+n}\right)}{1+n-s^\prime_{R}R^\prime (\bar{k})} &amp;lt; 1 \implies s^\prime_\omega \omega^\prime(\bar{k})-b\frac{r^\prime(\bar{k})}{1+n} &amp;lt; 1+n-s^\prime_R R^\prime(\bar{k}).$$&lt;/p&gt;
+&lt;p&gt;We shall assume that the steady state is stable.
+Hence, we assume that:&lt;/p&gt;
+&lt;p&gt;$$s^\prime_\omega \omega^\prime(\bar{k})-b\frac{r^\prime(\bar{k})}{1+n} &amp;lt; 1+n-s^\prime_R R^\prime(\bar{k}).$$&lt;/p&gt;
+&lt;h3 id=&#34;the-effects-of-fiscal-policy-on-bark&#34;&gt;The effects of fiscal policy on $\bar{k}$&lt;/h3&gt;
+&lt;p&gt;We can now study how the fiscal policy variables $b$ and $g$ affect the steady-state level of capital.&lt;/p&gt;
+&lt;p&gt;$$\bar{k}=\frac{1}{1+n}s\left(w(\bar{k})-b\frac{r(\bar{k})-n-\delta}{1+n}-g, R(\bar{k})\right)-\frac{b}{1+n}.$$&lt;/p&gt;
+&lt;p&gt;$$\frac{\partial \bar{k}}{\partial b} = - \frac{s^\prime_{\omega}\left(\frac{r(\bar{k}) -n - \delta}{1+n}\right)+1}{\underbrace{1+n-s^\prime_\omega \left(\omega^\prime(\bar{k})-b\frac{r^\prime(\bar{k})}{1+n}\right)-s^\prime_R R^\prime(\bar{k})}_{&amp;gt;0, \mathrm{because, of, stability}}}.
+$$&lt;/p&gt;
+&lt;p&gt;Using the fact that $R(k) = 1 + r(k) - \delta$ we can rewrite the numerator as:&lt;/p&gt;
+&lt;p&gt;$$s^\prime_{\omega}\left(\frac{r(\bar{k}) -n - \delta}{1+n}\right)+1=s^\prime_\omega \left(\frac{R(\bar{k})-1-n}{1+n}\right)+1 = 1 - \underbrace{s^{\prime}_\omega}_{\in (0,1)} + \underbrace{s^\prime_\omega}_{&amp;gt;0} \frac{R(\bar{k})}{1+n} &amp;gt; 0.$$&lt;/p&gt;
+&lt;p&gt;We showed that $s^\prime_{\omega} \in (0,1)$ when we discussed &lt;a href=&#34;https://eric-roca.github.io/courses/macroeconomics/olg/olg_savings_function/#the-effect-of-wages&#34;&gt;the savings function.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Then, we have that&lt;/p&gt;
+&lt;p&gt;$$\frac{\partial \bar{k}}{\partial b} = - \frac{s^\prime_{\omega}\left(\overbrace{1-s^\prime_\omega+s^\prime_\omega\frac{R(\bar{k})}{1+n}}^{&amp;gt;0}\right)}{\underbrace{1+n-s^\prime_\omega \left(\omega^\prime(\bar{k})-b\frac{r^\prime(\bar{k})}{1+n}\right)-s^\prime_R R^\prime(\bar{k})}_{&amp;gt;0, \mathrm{because, of, stability}}}&amp;lt; 0 .$$&lt;/p&gt;
+&lt;p&gt;We proceed similarly with $g$:&lt;/p&gt;
+&lt;p&gt;$$\frac{\partial \bar{k}}{\partial g}= - \frac{s^\prime_\omega}{\underbrace{1+n-s^\prime_\omega \left(\omega^\prime(\bar{k})-b\frac{r^\prime(\bar{k})}{1+n}\right)-s^\prime_R R^\prime(\bar{k})}_{&amp;gt;0, \mathrm{because, of, stability}}}&amp;lt; 0 .$$&lt;/p&gt;
+&lt;p&gt;Therefore, as long as the steady state is stable, increasing the fiscal policies decreases the long-run value of $\bar{k}.$
+In other terms, higher expenditures or debt reduce capital.
+Thus, the fiscal policy &lt;strong&gt;makes over-accumulation less likely&lt;/strong&gt; if the steady state is stable.
+The role of debt is intuitive: government bonds are perfect substitutes with capital, hence households holding them invest less in capital.
+Similarly, higher expenditures must be financed either with debt or taxes.
+The latter reduces available income, which reduces savings, impacting capital accumulation.&lt;/p&gt;
+&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
+&lt;p&gt;To illustrate the findings so far we proceed with an example.
+As usual, we take a log-utility function and a Cobb-Douglas production function.
+&lt;strong&gt;Note:&lt;/strong&gt; this choice of utility already implies that $s^\prime_R = 0.$&lt;/p&gt;
+&lt;p&gt;Furthermore, we assume that $\delta = 1:$ capital fully depreciates in one period.
+Since here one period corresponds to roughly 30 years, this may be a good approximation.&lt;/p&gt;
+&lt;p&gt;$$f(k) = k^\alpha, \alpha \in (0,1)$$
+$$u(c,d) = \log ( c ) + \beta \log(d), \beta \in (0,1).$$&lt;/p&gt;
+&lt;p&gt;The budget constraint is:&lt;/p&gt;
+&lt;p&gt;$$w_t = c_t + s_t + \tau_ t$$
+$$d_{t+1} = R_{t+1} s_t.$$&lt;/p&gt;
+&lt;p&gt;We can readily see that the savings function satisfies:&lt;/p&gt;
+&lt;p&gt;$$u^\prime(w_t - \tau_t - s_t) = R_{t+1}\beta u^\prime (R_{t+1} s) \implies s_t = \frac{\beta}{1+\beta}(w_t - \tau_t).$$&lt;/p&gt;
+&lt;p&gt;With the technology we are given we also know that:&lt;/p&gt;
+&lt;p&gt;$$R_t = \alpha k_t^{\alpha-1},\quad  w_t = (1-\alpha)k_t^\alpha.$$&lt;/p&gt;
+&lt;p&gt;The law of motion of capital follows:&lt;/p&gt;
+&lt;p&gt;$$k_{t+1} = \frac{1}{1+n}s\left(w_t - \tau_t \right) = \frac{1}{1+n}\frac{\beta}{1+\beta}(w_t - \tau_t) - \frac{b}{1+n}.$$&lt;/p&gt;
+&lt;p&gt;We can already substitute into it the equilibrium values for the interest rate and the government&amp;rsquo;s budget constraint:&lt;/p&gt;
+&lt;p&gt;$$\tau_t = g + \frac{R_t - 1 -n}{1+n}.$$&lt;/p&gt;
+&lt;p&gt;Hence&lt;/p&gt;
+&lt;p&gt;$$k_{t+1} = \frac{\beta}{(1+n)(1+\beta)}\left((1-\alpha)k_t^\alpha - b \frac{\alpha k_t^{\alpha -1} -1 -n}{1+n}-g\right)-\frac{b}{1+n} =  \xi \left((1-\alpha)k_t^\alpha - b \frac{\alpha k_t^{\alpha -1}}{1+n}-g\right)-\frac{b}{1+n}+\xi b = \phi(b,g,k_t),$$
+where $\xi \equiv \frac{\beta}{(1+n)(1+\beta)}.$&lt;/p&gt;
+&lt;h3 id=&#34;stability-1&#34;&gt;Stability&lt;/h3&gt;
+&lt;p&gt;Instead of computing the value of capital at the steady state (which we cannot do), we study the function $\phi(b,g,k_t).$&lt;/p&gt;
+&lt;p&gt;First, notice that changing $b$ or $g$ displaces $\phi$ downwards, but the displacement is not parallel.
+$$\phi^\prime_b = - \frac{\beta}{(1+n)(1+\beta)}\frac{\alpha k^{\alpha-1}}{1+n} - \frac{1}{1+n} + \xi &amp;lt; 0$$
+$$\phi^\prime_g = -\frac{\beta}{(1+n)(1+\beta)} &amp;lt; 0.$$&lt;/p&gt;
+&lt;p&gt;However, increasing $g$ always reduces $k_{t+1}$ by the same amount: $g$ moves the curve vertically.
+$$\phi^{\prime \prime}_{g,k} = 0.$$
+Instead, raising $b$ has a different effect depending on the value of $k.$
+In particular, the gap widens and reaches a constant difference:
+$$\phi^{\prime \prime}_{b,k} = \frac{k^{\alpha-2}(1-\alpha)\alpha\beta}{(1+n)^2(1+\beta)} &amp;gt; 0$$
+and
+$$\lim_{k \rightarrow +\infty}\phi^{\prime \prime}_{b,k} = 0.$$&lt;/p&gt;
+&lt;p&gt;The function $\phi$ is increasing and concave in $k$:&lt;/p&gt;
+&lt;p&gt;$$\phi^\prime_k = \xi \left((1-\alpha)k^{\alpha-1}-\frac{b \alpha (\alpha-1)}{1+n}k^{\alpha-2}\right) &amp;gt; 0.$$
+$$\phi^{\prime \prime}_{k,k} = \xi \left((1-\alpha)(\alpha-1)k^{\alpha-2}-\frac{b \alpha(\alpha-1)(\alpha-2)}{1+n}k^{\alpha-3}\right) &amp;lt; 0.$$&lt;/p&gt;
+&lt;p&gt;Finally, we have the following limits:&lt;/p&gt;
+&lt;p&gt;$$\lim_{k \rightarrow 0}\phi = 0 , \mathrm{if} , b=0$$
+$$\lim_{k \rightarrow 0}\phi = -\infty , \mathrm{if} b&amp;gt;0.$$
+$$\lim_{k \rightarrow +\infty}\phi = +\infty.$$&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/olg/taxes.webp&#34; alt=&#34;taxes&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;When $b=g=0$ we are back to the initial case without government.
+The Cobb-Douglas and log-utility specifications are characterised by two steady states:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\bar{k} &amp;gt; 0$, which is stable,&lt;/li&gt;
+&lt;li&gt;$\bar{k}=0$, which is unstable.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;With $b,g&amp;gt;0$ the $k_{t+1}$ curve moves downwards and the economy displays two steady states:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\bar{k}$, which is unstable,&lt;/li&gt;
+&lt;li&gt;$\overline{k}$, which is stable.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There are two additional possibilities:
+in the first one, the $k_{t+1}$ curve is tangent to the 45 degree line.
+In that (unlikely) case, a unique steady state arises, but it is non-hyperbolic and we cannot infer its stability from the linearised version.
+&lt;strong&gt;Note:&lt;/strong&gt; we know that the steady state is non-hyperbolic because $k_{t+1}$ evaluated at the steady state is tangent to a 45 degree line.&lt;/p&gt;
+&lt;p&gt;In the second case, if $b$ or $g$ are big enough, the economy has no steady state.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;We have implicitly assumed it when we stated that bonds payed the same interest rate as capital.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Planner</title>
+      <link>https://eric-roca.github.io/courses/macroeconomics/olg/olg_planner/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/macroeconomics/olg/olg_planner/</guid>
+      <description>&lt;p&gt;Suppose now, instead, that a central planner is in charge of organising consumption and investment for all individuals.
+The planner operates by aggregating individual utility, discounting future generations at the rate $\gamma.$&lt;br/&gt;
+&lt;strong&gt;Note:&lt;/strong&gt; $\gamma$ is the discount rate of future &lt;em&gt;generations&lt;/em&gt;, not how young people discount old-age utility.&lt;/p&gt;
+&lt;p&gt;Her utility considers the utility of all generations, including the initial old generation who owns the initial stock of capital $k_0.$&lt;/p&gt;
+&lt;h2 id=&#34;planners-utility&#34;&gt;Planner&amp;rsquo;s utility&lt;/h2&gt;
+&lt;p&gt;Planner&amp;rsquo;s utility reads:&lt;/p&gt;
+&lt;p&gt;$$\sum_{t=-1}^\infty \gamma^t U(c_t, d_{t+1}).$$&lt;/p&gt;
+&lt;p&gt;Note that, although the planner can decide any allocation, she must respect the resource constraint:&lt;/p&gt;
+&lt;p&gt;$$f(k_t) + (1-\delta) k_t = c_t + \frac{1}{1+n} d_t + (1+n)k_{t+1}.$$&lt;/p&gt;
+&lt;p&gt;Assume that $U(c_t, d_{t+1})$ is separable: $U(c_t, d_{t+1}) = u(c_t) + \beta u(d_{t+1}).$
+Expanding the utility of the planner, we can reformulate it in more convenient terms:&lt;/p&gt;
+&lt;p&gt;$$\sum_{t=-1}^\infty \gamma^t \left(u(c_t)+\beta u(d_{t+1}) \right) = $$
+$$\gamma^{-1}u(c_{-1}) +\gamma^{-1}\beta u(d_0) + \gamma^0 u(c_0)+ \gamma^0 \beta u(d_1) + \gamma^1 u(c_1) + \gamma^1 \beta u(d_2) + \ldots $$
+$$= \sum_{t=0}^\infty \gamma^t \left(u(c_t) + \frac{\beta}{\gamma} u(d_t) \right) + \gamma^{-1}u(c_{-1}).$$
+The term $\gamma^{-1}u(c_{-1})$ represents the consumption of the generation born at $t=-1$, but since it is a constant it will not affect the maximisation.&lt;/p&gt;
+&lt;p&gt;Hence, the planner&amp;rsquo;s problem is now how to allocate consumption between the young and old that are alive during period $t$.&lt;/p&gt;
+&lt;h2 id=&#34;maximisation&#34;&gt;Maximisation&lt;/h2&gt;
+&lt;p&gt;We use a substitution to obtain the planner&amp;rsquo;s optimal allocation, namely, the Euler equation;&lt;/p&gt;
+&lt;p&gt;$$\begin{eqnarray}
+&amp;amp;\max_{k_{t+1}, c_t, d_t} \sum_{t=0}^\infty \gamma^t \left(u(c_t) + \frac{\beta}{\gamma} u(d_t)\right) \\\
+&amp;amp;\mathrm{s.t.}, f(k_t) + (1-\delta)k_{t} = c_t + \frac{1}{1+n}d_t + (1+n)k_{t+1}. \end{eqnarray}$$&lt;/p&gt;
+&lt;p&gt;$$\max_{c_t, k_{t+1}} \sum_{t=0}^\infty \gamma^t \left( u(c_t) + \frac{\beta}{\gamma}u\Bigg(\underbrace{\left[1+n\right]\left[f(k_t)+(1-\delta)k_t -(1+n)k_{t+1} - c_t\right]\Bigg)}_{d_t}\right).$$&lt;/p&gt;
+&lt;p&gt;Taking derivatives and equating them to zero yields:&lt;/p&gt;
+&lt;p&gt;$$\gamma^t u^\prime(c_t) = \gamma^t \frac{\beta}{\gamma} u^\prime(d_t)(1+n)$$
+$$\gamma^t\frac{\beta}{\gamma}u^\prime (d_t)(1+n)(1+n)=\gamma^{t+1}\frac{\beta}{\gamma}(1+n)u^\prime (d_{t+1})\left(f^\prime (k_{t+1}) + 1 - \delta \right).$$&lt;/p&gt;
+&lt;p&gt;Combining both equations we get the Euler equation:&lt;/p&gt;
+&lt;p&gt;$$u^\prime (c_t) = \beta u^\prime (d_{t+1})\left(f^\prime (k_{t+1}) + 1 -\delta \right).$$&lt;/p&gt;
+&lt;p&gt;The planner&amp;rsquo;s Euler equation coincides with the decentralised one, where we had $R_{t+1} = f^\prime(k_{t+1}) + 1 -\delta.$&lt;/p&gt;
+&lt;p&gt;However, the planner also allocates consumption between the young and the old at time $t$.
+$$\gamma^t u^\prime(c_t) = \gamma^t \frac{\beta}{\gamma} u^\prime(d_t)(1+n)$$
+In the centralised equilibrium, individuals do &lt;em&gt;not&lt;/em&gt; arbitrage between young and old consumption at time $t.$
+We missed this equation because individuals are short-sighted, and only derive utility while alive.
+Hence, they have no interest in trading off utility with the young generation once they are old.&lt;/p&gt;
+&lt;h2 id=&#34;steady-state-and-modified-golden-rule&#34;&gt;Steady state and modified golden rule&lt;/h2&gt;
+&lt;p&gt;Using the fact that
+$$\gamma^t\frac{\beta}{\gamma}u^\prime (d_t)(1+n)(1+n)=\gamma^{t+1}\frac{\beta}{\gamma}(1+n)u^\prime (d_{t+1})\left(f^\prime (k_{t+1}) + 1 - \delta \right)$$
+we can easily characterise the steady state knowing that $d_t = d_{t+1} = \bar{d}, k_t = k_{t+1} = \bar{k}.$&lt;/p&gt;
+&lt;p&gt;$$f^\prime (\bar{k}) = \frac{1+n}{\gamma}+1-\delta.$$&lt;/p&gt;
+&lt;p&gt;This equation provides us with the modified golden rule: the level of capital that maximises the planner&amp;rsquo;s utility.
+Clearly, if $\gamma=1$, the planner attributes the same weight to all generations and we recover the golden rule: $f^\prime(k) = n + \delta.$
+As we discussed &lt;a href=&#34;https://eric-roca.github.io/courses/macroeconomics/olg/olg_optimality/&#34;&gt;before&lt;/a&gt;, it is quite &lt;em&gt;unlikely&lt;/em&gt; the decentralised equilibrium converges towards the golden rule (modified or not).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Papers using the OLG model</title>
+      <link>https://eric-roca.github.io/courses/macroeconomics/olg/olg_papers/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/macroeconomics/olg/olg_papers/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;This section revisits some papers that use the OLG framework to assess different types of outcomes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fertility and population dynamics
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://eric-roca.github.io/courses/macroeconomics/olg/papers/de_la_croix_dottori__2008/&#34;&gt;de la Croix, D., Dottori, D. Easter Island’s collapse: a tale of a population race. J Econ Growth 13, 27–55 (2008).&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Education
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://eric-roca.github.io/courses/macroeconomics/olg/papers/galor_moav__2006/&#34;&gt;Oded Galor, Omer Moav, Das Human-Kapital: A Theory of the Demise of the Class Structure, The Review of Economic Studies, Volume 73, Issue 1, January 2006, Pages 85–117.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Population characteristics
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://eric-roca.github.io/courses/macroeconomics/olg/papers/galor_ozak__2016/&#34;&gt;Galor, Oded, and Ömer Özak. 2016. &amp;ldquo;The Agricultural Origins of Time Preference.&amp;rdquo; American Economic Review, 106 (10): 3064-3103.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>de la Croix and Dottori, 2008</title>
+      <link>https://eric-roca.github.io/courses/macroeconomics/olg/papers/de_la_croix_dottori__2008/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/macroeconomics/olg/papers/de_la_croix_dottori__2008/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;This paper analyses the very distinct population patterns of two remote islands in the Pacific Ocean: Eastern Island and Tikopia.
+While Tikopians managed to control population growth and natural resources usage, the inhabitants of Eastern Island engaged in clan competition for the control of resources, leading to overpopulation and overexplotation of resources.&lt;/p&gt;
+&lt;p&gt;A key aspect of this paper is the especial role of fertility.
+Most papers assume that parents derive some utility from having children.
+However, in de la Croix and Dottori, fertility is the result of a Nash bargaining process for the control of resources.
+In particular, a larger population, facilitated by having more children, raises the value of the fallback option during the negotiation process.
+Consequently, individuals optimally decide to have more children, because this implies a better bargaining position.
+In this sense, equilibrium-level fertility rates result from the complementarities between different groups&amp;rsquo; fertility decisions.
+However, the externalities of a higher fertiltiy rate are not internalised and, in the long run, population explodes, leading to a natural catastrophe.&lt;/p&gt;
+&lt;h3 id=&#34;historical-data&#34;&gt;Historical data&lt;/h3&gt;
+&lt;p&gt;Based on data from archaeological studies, it has been estimated that the population of Eastern Island increased very little between 400CE (100 people by that time) and 110CE, and from then on, it exploded, reaching 10000 people during 1400-1600CE.
+The effects of the population race could be perceived by 1600CE: food consumption declined and population plummeted during the 17th century.
+By 1772, when Europeans arrived at Eastern Island, the total population was around 3000 people.
+In parallel, data about forests in Eastern Island indicate that upon the arrival of the first settlers during 400CE, tree-cutting begun.
+By 1400CE, deforestation had reached its peak and when the Europeans arrived, there were basically no trees in the island.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/olg/de_la_croix_and_dottori__2008_Figure_1.webp&#34; alt=&#34;de_la_croix_and_dottori__2008_Figure_1&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/olg/de_la_croix_and_dottori__2008_Figure_2.webp&#34; alt=&#34;de_la_croix_and_dottori__2008_Figure_2&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Meanwhile, Tikopia was settled around 900BCE and people lived by slash and burn agriculture.
+By 100BCE, due to decreasing returns from natural resources, pig breeding began, lasting until the 17th century, when Tikopians abandoned it because pigs required too many resources.
+Total population stabilized at around 1200 people and was kept at that level by purposeful mechanisms: celibacy, abortion, infanticide, sea exploration by young males, etc.&lt;/p&gt;
+&lt;h2 id=&#34;the-model&#34;&gt;The model&lt;/h2&gt;
+&lt;p&gt;De la Croix and Dottori work using the OLG framework.
+In the paper, agents live for two periods.
+However, important decisions are taken at the clan level, which acts as a representative agent.
+Clans (and individuals) are rational, have perfect foresight and take the actions of the other clans as given.
+The timing is as follows:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Each clan chooses its fertility level,&lt;/li&gt;
+&lt;li&gt;A Nash-Cournot fertility equilibrium level arises,&lt;/li&gt;
+&lt;li&gt;Crops are cultivated and shared between clans following a non-cooperative bargaining process.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;For simplicity, the island is populated by two opposed clans, all individuals belong to one clan only and they cannot change clan.&lt;/p&gt;
+&lt;h3 id=&#34;preferences&#34;&gt;Preferences&lt;/h3&gt;
+&lt;p&gt;Clan $i$ at time $t$ consists of $N_{i,t}$ adults.
+Adults work, support their parents and have children.
+Old agents only consume what their children provide for them.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
+Total utility is given by:
+$$U_{i,t} = c_{i,t} + \beta d_{i,t+1},$$
+where $c_{i,t}, d_{i,t+1}$ represents consumption when adult and old, respectively.&lt;/p&gt;
+&lt;h3 id=&#34;budget&#34;&gt;Budget&lt;/h3&gt;
+&lt;p&gt;The income of an adult agent is $y_{i,t}$.
+Each adult has to support his parents by giving them some resources.
+However, support for parents is not linear, but rather it depends on the number of siblings.
+In particular, each sibling contributes the following share of his income:
+$$\frac{\tau}{1+n_{i,t-1}},$$
+where $\tau \in (0,1)$.
+Clearly, the contribution decreases with the number of siblings.&lt;/p&gt;
+&lt;p&gt;Consequently, an agent in his old age who had $n_{i,t}$ children receives, as &lt;strong&gt;total&lt;/strong&gt; old age support,
+$$d_{i,t+1} = n_{i,t}\frac{\tau}{1+n_{i,t}}y_{i,t+1}.$$&lt;/p&gt;
+&lt;p&gt;Lastly, since total income is distributed between consumption and supporting parents $\left(y_{i,t} = c_{i,t} + \frac{\tau}{1+n_{i,t-1}} y_{i,t}\right)$, consumption when young is just:
+$$c_{i,t} = \left( 1 - \frac{\tau}{1+n_{i,t-1}}\right)y_{i,t}.$$&lt;/p&gt;
+&lt;h3 id=&#34;population&#34;&gt;Population&lt;/h3&gt;
+&lt;p&gt;The population of each clan evolves according to the chosen fertility level:
+$$N_{i,t+1} = N_{i,t}n_{i,t}.$$&lt;/p&gt;
+&lt;h3 id=&#34;production&#34;&gt;Production&lt;/h3&gt;
+&lt;p&gt;Production depends only on land.
+The amount of land is fixed at $L$, and total factor productivity depends on the available natural resources $R_t$.
+$$Y_{i,t} = A(R_t)L.$$&lt;/p&gt;
+&lt;p&gt;The dynamics of resources follow the paper by Matsumoto (2002):
+$$R_{t+1} = \left(1 +\delta - \delta \frac{R_t}{K} - b (N_{1,t} + N_{2,t})\right)R_t,$$
+where $K &amp;gt; 0$ is the carrying capacity (maximum possible number of resources), $\delta &amp;gt; 0$ is the growth rate of resources while $b&amp;gt;0$ measures the effect of population on resources.&lt;/p&gt;
+&lt;h4 id=&#34;crop-sharing&#34;&gt;Crop-sharing&lt;/h4&gt;
+&lt;p&gt;We denote by $\theta_t$ the share of crops $Y_t$ that Group 1 appropriates.
+Therefore, each adult in Groups 1 and 2 obtains:
+$$y_{1,t} = \theta_t \frac{Y_t}{N_{1,t}},$$
+$$y_{2,t} = (1-\theta_t) \frac{Y_t}{N_{2,t}}.$$&lt;/p&gt;
+&lt;p&gt;There are no property rights on the island, and groups have to bargain to decide how to split the total porduction $Y_{t}$.
+This bargaining process is non-cooperative and, if no agreement is reached, clans will battle to appropriate the entire production.&lt;/p&gt;
+&lt;h4 id=&#34;bargaining&#34;&gt;Bargaining&lt;/h4&gt;
+&lt;p&gt;Bargaining takes place under Nash-bargaining, and the outcome of the process solves:
+$$(U_{1,t}- \bar{U}_{1,t})^\gamma(U_{2,t} - \bar{U}_{2,t})^{1-\gamma},$$
+where $U_{1,t}$ is what Group 1 shall receive and $\bar{U}_{1,t}$ is the fall-back option of Group 1, this is, what Group 1 receives is there is no agreement.
+When there is no agreement between Group 1 and Group 2, the clans fight and the winner takes all.
+The probability that Group 1 wins the war, denoted by $\pi_t$, depends on its size.
+$$\pi_t = \frac{N_{1,t}}{N_{1,t} + N_{2,t}}.$$
+So, the more adults in one group, the more likely it is to win the war.
+From the equation, it is clear that clans have an incentive to increase their population: it helps win the war (if it happens) and provides them with a better bargaining position by raising $\bar{U}_{i,t}.$&lt;/p&gt;
+&lt;p&gt;Suppose than clans reach an agreement $\theta_t$ on how to share crops: $\theta_t$ goes to Group 1, and the remining $1-\theta_{t}$ goes to Group 2.
+Then, the indirect utility of an individual is given by:
+$$U_{1,t} = \left(1-\frac{\tau}{1+n_{1,t-1}}\right)\frac{\theta_t Y_t}{N_{1,t}}+\beta\frac{n_{1,t}\tau}{1+n_{1,t}}\frac{\theta_{t+1} Y_{t+1}}{N_{1,t+1}},$$
+$$U_{2,t} = \left(1-\frac{\tau}{1+n_{2,t-1}}\right)\frac{(1-\theta_t) Y_t}{N_{2,t}}+\beta\frac{n_{2,t}\tau}{1+n_{2,t}}\frac{(1-\theta_{t+1}) Y_{t+1}}{N_{2,t+1}}.$$&lt;/p&gt;
+&lt;p&gt;If, instead, there is no agreement, clans fight, and the winner takes the entire production.
+Since $\pi_t$ denotes the probability that Group 1 wins the fight, the fall-back utilities are given by:
+$$\bar{U}_{1,t} = \pi_t\left(1-\frac{\tau}{1+n_{1,t-1}}\right)\frac{ Y_t}{N_{1,t}}+\beta\frac{n_{1,t}\tau}{1+n_{1,t}}\frac{\theta_{t+1} Y_{t+1}}{N_{1,t+1}},$$
+$$\bar{U}_{2,t} = (1-\pi_t)\left(1-\frac{\tau}{1+n_{2,t-1}}\right)\frac{ Y_t}{N_{2,t}}+\beta\frac{n_{2,t}\tau}{1+n_{2,t}}\frac{(1-\theta_{t+1}) Y_{t+1}}{N_{2,t+1}}.$$&lt;/p&gt;
+&lt;p&gt;The difference between $U_{i,t}$ and $\bar{U}_{i,t}$ is:
+$$U_{1,t} - \bar{U}_{1,t} = \left(1 - \frac{\tau}{1+n_{1,t-1}}\right)(\theta_t - \pi_t)\frac{Y_t}{N_{1,t}},$$
+$$U_{2,t} - \bar{U}_{2,t} = \left(1 - \frac{\tau}{1+n_{2,t-1}}\right)(1 - \theta_t - (1-\pi_t))\frac{Y_t}{N_{2,t}}.$$&lt;/p&gt;
+&lt;p&gt;Since, at the time of bargaining, $\left(1-\frac{\tau}{1+n_{i,t}}\right)\frac{Y_t}{N_{i,t}}$ has already been determined, we can abstract from it in the maximisation.&lt;/p&gt;
+&lt;p&gt;After substituting, $\theta_t$, is the optimal sharing rule which solves
+$$\theta_t = \arg \max \left(\theta_t - \pi_t\right)^\gamma \left(1 - \theta_t - (1-\pi_t)\right)^{1-\gamma}.$$
+The optimal level $\theta_t$ is then:
+$$\theta_t = \frac{N_{1,t}}{N_{1,t} + N_{2,t}}.$$&lt;/p&gt;
+&lt;h3 id=&#34;fertility&#34;&gt;Fertility&lt;/h3&gt;
+&lt;p&gt;Finally, we can compute the optimal fertility levels for each group by maximising utility.
+So, Group 1 and Group 2 maximise:&lt;/p&gt;
+&lt;p&gt;$\begin{eqnarray}
+\max_{n_{1,t}} \overbrace{\left(1-\frac{\tau}{1+n_{1,t-1}}\right)\frac{\theta_t Y_t}{N_{1,t}}}^{constant\, at\, t} + \\\
++\frac{\beta \tau n_{1,t}}{1+n_{1,t}}\left[\frac{\overbrace{N_{1,t}n_{1,t}}^{N_{1,t+1}}}{\underbrace{N_{1,t}n_{1,t}}_{N_{1,t+1}} + \underbrace{N_{2,t}n_{2,t}}_{N_{2,t+1}}}\right]\frac{A(R_{t+1})}{\underbrace{N_{t,1}n_{t,1}}_{N_{1,t+1}}}.
+\end{eqnarray}$&lt;/p&gt;
+&lt;p&gt;$\begin{eqnarray}
+\max_{n_{2,t}} \overbrace{\left(1-\frac{\tau}{1+n_{2,t-1}}\right)\frac{\theta_t Y_t}{N_{2,t}}}^{constant\, at\, t} + \\\
++\frac{\beta \tau n_{2,t}}{1+n_{2,t}}\left[1 - \frac{\overbrace{N_{2,t}n_{2,t}}^{N_{2,t+1}}}{\underbrace{N_{2,t}n_{2,t}}_{N_{2,t+1}} + \underbrace{N_{2,t}n_{2,t}}_{N_{2,t+1}}}\right]\frac{A(R_{t+1})}{\underbrace{N_{t,2}n_{t,2}}_{N_{2,t+1}}}.
+\end{eqnarray}$&lt;/p&gt;
+&lt;p&gt;The optimum levels of fertility satisfy:&lt;/p&gt;
+&lt;p&gt;$$n^\star_{1,t} = \left(\frac{N_{2,t}}{N_{1,t}}\right)^\frac{1}{3},$$
+$$n^\star_{2,t} = \left(\frac{N_{1,t}}{N_{2,t}}\right)^\frac{1}{3},$$&lt;/p&gt;
+&lt;p&gt;So, the best course of action for Group 1 is to increase its fertility as Group 2 becomes more populous, and a race for population occurs.
+Of course, this has implications for the environment, because larger populations are destructive:
+$$R_{t+1} = \left(1 +\delta - \delta \frac{R_t}{K} - b (N_{1,t} + N_{2,t})\right)R_t,$$&lt;/p&gt;
+&lt;h2 id=&#34;steady-state-level-of-population-and-natural-resources&#34;&gt;Steady state level of population and natural resources&lt;/h2&gt;
+&lt;p&gt;Lastly, we can compute the steady state level of population using the two dynamical equations:&lt;/p&gt;
+&lt;p&gt;$$n^\star_{1,t} = \left(\frac{N_{2,t}}{N_{1,t}}\right)^\frac{1}{3} \implies N_{1,t+1} = N_{1,t}\left(\frac{N_{2,t}}{N_{1,t}}\right)^\frac{1}{3}$$
+$$n^\star_{2,t} = \left(\frac{N_{1,t}}{N_{2,t}}\right)^\frac{1}{3} \implies N_{2,t+1} = N_{2,t}\left(\frac{N_{1,t}}{N_{2,t}}\right)^\frac{1}{3},$$&lt;/p&gt;
+&lt;p&gt;It is simpler to solve the corresponding linearised system, which we can obtain by taking logarithms:
+$$\tilde{N}_{i,t+1} = \frac{2}{3}\tilde{N}_{i,t} + \frac{1}{3} \tilde{N}_{j,t},$$
+where $\tilde{N} = \log N.$&lt;/p&gt;
+&lt;p&gt;Using the technique proposed in the &lt;a href=&#34;https://eric-roca.github.io/courses/macroeconomics/ramsey/ramsey_trajectory/&#34;&gt;Ramsey model&lt;/a&gt; we can obtain the dynamics of the logarithmic system:&lt;/p&gt;
+&lt;p&gt;$$\tilde{N}_{i,t} = \frac{\tilde{N}_{i,0} + \tilde{N}_{j,0}}{2} + \frac{1}{2} 3^{-t}\left( \tilde{N}_{i,0} - \tilde{N}_{j,0} \right).$$
+The steady state level of population, for each group is
+$$\bar{N}_i = \bar{N}_j = \sqrt{N_{1,0}}\sqrt{N_{2,0}},$$&lt;/p&gt;
+&lt;p&gt;and the corresponding level of natural resources at the steady state is&lt;/p&gt;
+&lt;p&gt;$$\bar{R} = K\left( 1 - \frac{\ b(\bar{N}_i + \bar{N}_j)}{\delta} \right).$$&lt;/p&gt;
+&lt;h3 id=&#34;simulated-trajectory&#34;&gt;Simulated trajectory&lt;/h3&gt;
+&lt;p&gt;Lastly, we can compute the trajectory of the system for a set of parameters to visualize the evolution of the main variables.
+For instance, if we take the following parametrisation $N_{1,0} = 9, N_{2,0} = 20, \delta = 0.08, K = 400, b = 0.0012, R_0 = 300$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/olg/de_la_croix_dottori__2008_plot.webp&#34; alt=&#34;evolution&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;In a sense, in this model individuals save by having children.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Galor and Moav, 2006</title>
+      <link>https://eric-roca.github.io/courses/macroeconomics/olg/papers/galor_moav__2006/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/macroeconomics/olg/papers/galor_moav__2006/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;This paper presents an OLG model to explain the rise of publicly financed education and the transition from a class structure characterised by capitalists and workers to another one where all individuals are capitalists.
+The papers undefined that the demise of the class structure was a deliberate action from the part of the capitalists to sustain their profits as human capital became more and more important in the production process.
+This is, at some point in time, human capital becomes &lt;em&gt;really&lt;/em&gt; necessary to produce, and the capitalists find it optimal to tax themselves to finance the education of workers.
+Doing so, raises the human capital level and allows them to keep their profits.&lt;/p&gt;
+&lt;p&gt;The paper is set-up after the industrial revolution, let&amp;rsquo;s say around 1850 and is meant to describe the transition of the modern economies between that time and the beginning of the 20th century.
+The authors motivate the paper by showing that during this time, school enrolment rates increased while, at the same time, inequality decreased: the demise of classes.
+The theory the authors propose parallels this evolution.
+Furthermore, they supplement the model with econometrics that are compatible with the predictions of the model.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/olg/Galor_Moav__2006_Figure_1.webp&#34; alt=&#34;Galor_Moav__2006_Figure_1&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;the-model&#34;&gt;The model&lt;/h2&gt;
+&lt;p&gt;We present a simplified version of the model using precise functional forms for the human capital accumulation process and the production function.
+This paper comprises two separate sections:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The general model&lt;/li&gt;
+&lt;li&gt;The application of the model to a society with two classes.
+We will follow this approach.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For the moment, the economy comprises &lt;em&gt;only&lt;/em&gt; one type of individuals.
+Individuals live for two periods of time: young and adult.
+Young individuals do not produce and use their time to acquire human capital.
+If education is provided, human capital accumulation is faster.&lt;/p&gt;
+&lt;h3 id=&#34;production-and-prices&#34;&gt;Production and prices&lt;/h3&gt;
+&lt;p&gt;A single homogenous good is produced using physical and human capital according to a Cobb-Douglas production function.
+In particular:&lt;/p&gt;
+&lt;p&gt;$$Y_t = F(H_t, K_t) = A K_t^\alpha H_t^{1-\alpha} = A H_t k_t^\alpha,\quad k_t \equiv \frac{K_t}{H_t}.$$&lt;/p&gt;
+&lt;p&gt;Given the wage rate per efficiency unit of labour $w_t$ and the return to capital $r_t$, producers maximise profits by choosing the level of capital $K_t$ and efficiency units of labour $H_t,$ this is, $\{K_t, H_t\} = \arg \max \left[A H_t k_t^\alpha - w_t H_t - r_t K_t\right].$
+Considering perfect competition, the inverse demand for each factor is:&lt;/p&gt;
+&lt;p&gt;$$r_t = f^\prime(k_t) = \alpha A k_t^{\alpha-1} = r(k_t),$$
+$$w_t = f(k_t) - f^\prime(k_t)k_t = (1-\alpha)Ak_t^\alpha = w(k_t).$$&lt;/p&gt;
+&lt;h3 id=&#34;individuals-and-preferences&#34;&gt;Individuals and preferences&lt;/h3&gt;
+&lt;p&gt;Every period, a new generation of size 1 is born.
+Individuals have only parent and each has only one son.
+Individuals live for two periods: during their youth, they accumulate human capital; and education improves human capital accumulation.
+Young individuals may receive a positive bequest from their parents on which they earn interests (the bequest is physical capital that is lent to producers).
+When adults, they supply their human capital as efficiency units of labour; receive interests on their assets and allocate the total income between consumption and a bequest.&lt;/p&gt;
+&lt;p&gt;The bequest $b_t$ is transferred from parents to children, and the government collects a tax $\tau_t \geq 0$ on it.
+The remaining $1-\tau_t$ is saved for future consumption.
+Physical capital &lt;strong&gt;fully depreciates&lt;/strong&gt; between periods.&lt;/p&gt;
+&lt;p&gt;As mentioned, individuals accumulate human capital during their youth, and if they are provided with education ($e_t$), human capital accumulation is enhanced.
+However, even if no education is provided, all young individuals manage to obtain a minimum level of human capital: we set it equal to one.
+We model human capital accumulation as follows:&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;$$h_{t+1} = 1 + \frac{e_t}{1+e_t} = h(e_t).$$&lt;/p&gt;
+&lt;p&gt;This type of function ensures that under some conditions, investment in education is not optimal; while guaranteeing a minimum level of human capital.&lt;/p&gt;
+&lt;p&gt;When adults, individuals receive wages on their human capital, as well as the rental price on the bequest (the part not taxed by the government).
+Therefore, an individual with a bequest $b_t$ and education level $e_t$ has income equal to:&lt;/p&gt;
+&lt;p&gt;$$I^i_{t+1} = w_{t+1}h(e_t) + (1-\tau)b^i_t R_{t+1},$$
+and, since capital fully depreciates, $R_{t+1} = r_{t+1} = r(k_{t+1}).$&lt;/p&gt;
+&lt;p&gt;Lastly, the preferences of adults include consumption and a taste for giving bequests.
+Bequests in the model are a type of luxury good: only when income is large enough, $b_t &amp;gt; 0.$
+In particular:
+$$u^i_t = (1-\beta) \log (c^i_{t+1}) + \beta \log (\bar{\theta} + b^i_{t+1}),$$
+where $\bar{\theta} &amp;gt; 0$ and $\beta \in (0,1).$
+The budget constraint is simple:
+$$c_{t+1}^i + b_{t+1}^i = I_{t+1}^i.$$&lt;/p&gt;
+&lt;h4 id=&#34;optimisation&#34;&gt;Optimisation&lt;/h4&gt;
+&lt;p&gt;We can easily compute the value of bequests, as a function of the income level.
+Replacing $c_{t+1}$ in the objective function and taking the derivative with respect to $b_{t+1}$ yields:&lt;/p&gt;
+&lt;p&gt;$$\frac{\partial}{\partial b^i_{t+1}} = 0 \implies \frac{1-\beta}{b^i_{t+1}-I^i_{t+1}}+\frac{\beta}{b^i_{t+1}+\bar{\theta}} = 0 \implies $$
+$$ b^i_{t+1} = \begin{cases}
+\beta (I^i_{t+1} - \theta) &amp;amp; \mathrm{if\quad} I^i_{t+1} &amp;gt; \theta \\\
+0                           &amp;amp; \mathrm{if\quad} I^i_{t+1} \leq \theta
+\end{cases}
+$$
+where $\theta \equiv \bar{\theta}\frac{1-\beta}{\beta}.$
+Hence, when income is relative low, individuals do not give bequests.&lt;/p&gt;
+&lt;h3 id=&#34;evolution-of-physical-and-human-capital&#34;&gt;Evolution of physical and human capital&lt;/h3&gt;
+&lt;p&gt;Remember that bequests left during period $t$ are the capital of period $t+1.$
+If $B_t$ is the total amount of bequests left during $t$, then
+$$K_{t+1} = (1-\tau) B_t.$$&lt;/p&gt;
+&lt;p&gt;The remaining $\tau B_t$ goes to the government, which uses it to fund education.
+Population is normalised to 1, therefore, each individual receives education equal to:
+$e_t = \tau B_t,$
+and human capital evolves as:&lt;/p&gt;
+&lt;p&gt;$$H_{t+1} = h(e_t) = h(\tau_t B_t) = 1 + \frac{\tau_t B_t}{1 + \tau_t B_t}.$$&lt;/p&gt;
+&lt;p&gt;Last, the level of $k_t = \frac{K_t}{H_t}$ is:&lt;/p&gt;
+&lt;p&gt;$$k_{t+1} = \frac{K_{t+1}}{H_{t+1}} = \frac{(1-\tau_t)B_t}{h(\tau_t B_t)} = \frac{(1-\tau_t)B_t}{ 1 + \frac{\tau_t B_t}{1 + \tau_t B_t}}= k(\tau_t, B_t).$$&lt;/p&gt;
+&lt;h2 id=&#34;optimal-level-of-taxation&#34;&gt;Optimal level of taxation&lt;/h2&gt;
+&lt;p&gt;The paper assumes that the government selects the tax rate that maximises individuals&amp;rsquo; utility.
+One important feature of the model is that utility is increasing in income $I^i_{t+1}$.
+We can easily check this by rewriting the indirect utility:
+$$
+\begin{align}
+&amp;amp; u^i_{t} = (1-\beta) \log (c^i_{t+1}) + \beta \log (\bar{\theta} +b^i_{t+1}) = \\\
+&amp;amp; = \begin{cases}
+(1-\beta) \log (I^i_{t+1} - \beta I^i_{t+1} + \beta \theta) + \beta \log (\beta I^i_{t+1} - \beta \theta) &amp;amp; \mathrm{if \quad} I^i_{t+1} &amp;gt; \theta \\\
+(1-\beta) \log (I^i_{t+1}) + \beta \log (\bar{\theta}) &amp;amp; \mathrm{if \quad} I^i_{t+1} \leq \theta
+\end{cases}
+\end{align}$$
+which is increasing in $I^i_{t+1}$ because $\beta \in (0,1).$&lt;/p&gt;
+&lt;p&gt;Therefore, instead of maximising the indirect utility, the government can maximise second-period income $I^i_{t+1}$, which in turn will maximise utility.
+Second-period income is: $w_{t+1}h(\tau^i_t B_t) + (1-\tau^i_t)b^i_tR_{t+1}$ where $w_{t+1} = w(k_{t+1}$ and $R_{t+1} = R(k_{t+1}.$
+At the same time, $k_{t+1} = \frac{(1-\tau_t)B_t}{h(\tau_t B_t)} = \frac{(1-\tau_t)B_t}{1+\frac{\tau_t B_t}{1 + \tau_t B_t}}.$
+Putting everything together,
+$$
+\begin{align}
+\tau^i_t &amp;amp; = \arg \max w_{t+1}h(\tau^i_t B_t) + (1-\tau^i_t)b^i_tR_{t+1} \\\
+&amp;amp; = \arg \max (1-\tau^i_t)^\alpha h(\tau^i_t B_t)^{1-\alpha}B_t^\alpha\left(1-\alpha + \alpha \frac{b_t^i}{B_t}\right)
+\end{align}.$$&lt;/p&gt;
+&lt;p&gt;Maximising with respect to $\tau^i_t$ yields:
+$$
+\begin{align}
+\frac{\partial}{\partial \tau^i_t} = 0 \implies &amp;amp; \\\
+&amp;amp; B_t^\alpha \left(1-\alpha + \alpha \frac{b_t^i}{B_t}\right)\left[ \alpha (1-\tau^i_t)^{\alpha-1}h(\tau^i_t B_t)^{1-\alpha}(-1)+ \right. \\\
+&amp;amp; \left. + (1-\alpha)h^\prime(\tau^i_t B_t)h(\tau^i_t B_t)^{-\alpha}B_t(1-\tau^i_t)^\alpha\right] = 0 \\\
+&amp;amp; \\\
+&amp;amp; \alpha (1-\tau)^{\alpha-1}h(\tau^i_t B_t)^{1-\alpha} = \\\
+&amp;amp; =(1-\alpha)h^\prime(\tau^i_t B_t) B_t (1-\tau)^\alpha h(\tau^i_t B_t)^\alpha \\\
+&amp;amp; \\\
+&amp;amp; \alpha (1-\tau)^{\alpha-1}h(\tau^i_t B_t)^{1-\alpha}B_t^{\alpha-1} = \\\
+&amp;amp; =(1-\alpha)h^\prime(\tau^i_t B_t) B^\alpha_t (1-\tau)^\alpha h(\tau^i_t B_t)^\alpha \\\
+&amp;amp; \\\
+&amp;amp; \underbrace{\alpha (1-\tau)^{\alpha-1}h(\tau^i_t B_t)^{1-\alpha}B_t^{\alpha-1}}_{R(k_{1+1})} = \\\
+&amp;amp; =\underbrace{(1-\alpha)B^\alpha_t (1-\tau)^\alpha h(\tau^i_t B_t)^\alpha}_{w(k_{t+1})} h^\prime(\tau^i_t B_t) \\\
+&amp;amp; \\\
+&amp;amp; R(k_{t+1}) = w(k_{t+1}) h^\prime(\tau^i_t B_t)
+\end{align}$$
+The optimal condition for $\tau^i_t$ does not involve the bequest received $b^i_t$.
+Consequently, everybody will agree on the optimality of the tax rate and it will be implemented.
+In our case, substituting and solving for $\tau_t$:
+$$\tau_t = \begin{cases}
+\frac{-B_t(1+2\alpha) + \sqrt{B_t^2(1+4(1+2B_t)(1-\alpha)\alpha)}}{4B^2_t \alpha} &amp;amp; \mathrm{if}\quad B_t &amp;gt; \frac{\alpha}{1-\alpha} \\\
+0 &amp;amp; \mathrm{if\quad} B_t \leq \frac{\alpha}{1-\alpha}
+\end{cases} = \tau(B_t)$$&lt;/p&gt;
+&lt;p&gt;Alternatively, it is possible to re-express the condition for positive taxation in terms of $k_{t+1}:$
+$$\tau_t = \begin{cases}
+\frac{-B_t(1+2\alpha) + \sqrt{B_t^2(1+4(1+2B_t)(1-\alpha)\alpha)}}{4B^2_t \alpha} &amp;amp; \mathrm{if}\quad k_{t+1} &amp;gt; \frac{\alpha}{1-\alpha} \\\
+0 &amp;amp; \mathrm{if\quad} k_{t+1} \leq \frac{\alpha}{1-\alpha}
+\end{cases} = \tau(B_t)$$&lt;/p&gt;
+&lt;h2 id=&#34;one-economy-two-groups&#34;&gt;One economy, two groups&lt;/h2&gt;
+&lt;p&gt;We suppose now that the economy, at time $t=0$, consists of two groups: capitalists (C) and workers (W).
+The share that capitalists represent is denoted by $\lambda_t.$
+However, since all individuals always have one child, shares remain constant, this is, $\lambda_t = \lambda.$
+The unique difference between the two groups is the initial endowment of capital:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Capitalists own the initial stock of capital (which we assume is sufficiently large as to be able to bequest).&lt;/li&gt;
+&lt;li&gt;Workers have no capital, and thus give no bequests.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Therefore, the total amount of bequests in a given period is:
+$$B_t = \lambda b_t^C + (1-\lambda)b_t^W$$.
+The remainder of the model is the same as before, in particular,
+$$k_{t+1} = \frac{(1-\tau(B_t))B_t}{h(\tau(B_t)B_t)}.$$&lt;/p&gt;
+&lt;p&gt;Such an economy shifts from having to classes of people to only one, where everybody owns capital.
+The critical transition occurs because of, eventually, capitalists find it optimal to impose a tax on themselves to finance public education.
+With it, and as wages keep increasing, workers are eventually able to give bequests, thus becoming capitalists.
+Instead of detailing the exact process (check the reference), we will simulate the economy for a set of parameters.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/olg/galor_moav__2006_plot.webp&#34; alt=&#34;galor_moav__2006_plot&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;In the paper, it is assumed that:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$h_{t+1}(0) = 1,$&lt;/li&gt;
+&lt;li&gt;$h^\prime_{t+1}(0) = \gamma &amp;lt; \infty,$&lt;/li&gt;
+&lt;li&gt;$\lim_{e_t \rightarrow \infty}h^\prime_{t+1}(e_t) = 0.$&lt;/li&gt;
+&lt;/ul&gt;
+&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Galor and Özak, 2016</title>
+      <link>https://eric-roca.github.io/courses/macroeconomics/olg/papers/galor_ozak__2016/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/macroeconomics/olg/papers/galor_ozak__2016/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;In this paper, Galor and Özak show empirically how differences in time preference (how much people discount the future) has an agricultural origin.
+This is important for development, because those who save more are the individuals who are more patient, this is, who are more future-oriented.
+Although the major contribution of the paper is empirical, the authors develop an OLG model from which they derive implications that are tested.&lt;/p&gt;
+&lt;p&gt;The theoretical model shows how the composition of a population can be modeled using the OLG framework.
+The most influential model in that regard is &lt;a href=&#34;https://doi.org/10.1006/jeth.2000.2678&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bisin, A., &amp;amp; Verdier, T. (2001). The Economics of Cultural Transmission and the Dynamics of Preferences. Journal of Economic Theory, 97(2), 298–319.&lt;/a&gt;
+However, the model in Galor and Özak is relatively simple and illustrates well some population dynamics.&lt;/p&gt;
+&lt;h2 id=&#34;the-model&#34;&gt;The model&lt;/h2&gt;
+&lt;p&gt;We work under the OLG framework, and we assume that the economy is agricultural and at the very early stages of development.
+In every period, the economy consists of individuals who live for &lt;strong&gt;three&lt;/strong&gt; periods.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;During the first period of life, individuals are children and are economically passive.
+Consumption during this period is provided by parents.&lt;/li&gt;
+&lt;li&gt;In the second period and third periods, individuals work&lt;/li&gt;
+&lt;li&gt;All individuals can choose between two modes of production:
+&lt;ul&gt;
+&lt;li&gt;Endowment mode: it provides an equal pay-off during the second and third periods of live.
+For instance, individuals may be hunters.&lt;/li&gt;
+&lt;li&gt;Investment mode: it pays little during the second period of live, but the pay-off during the third period is much larger.
+This represents farmers: they must seed and wait for crops to grow.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Lastly, a crucial assumption of the mode is the &lt;strong&gt;lack of financial markets and long-term storage technology&lt;/strong&gt;.
+This implies that individuals &lt;strong&gt;cannot&lt;/strong&gt; transfers consumption between periods two and three.
+Hence, production in the second period has to be consumed in the second period; and consumption in the third period must be consumed in the third period.&lt;/p&gt;
+&lt;h3 id=&#34;production-modes&#34;&gt;Production modes&lt;/h3&gt;
+&lt;p&gt;All adults must decide between the &lt;em&gt;endowment mode&lt;/em&gt; or the &lt;em&gt;investment mode&lt;/em&gt;.
+The endowment mode provides a constant level of output,$R^0&amp;gt;1$ in each of the working periods.
+If investment is instead chosen, it requires an investment during the first working period, which implies that less resources are available for consumption.
+In particular, we assume that it leaves individuals with $1$ unit of consumption during their second period of life.
+However, the output it yields during the third period $R^1$ is higher than under &lt;em&gt;endowment&lt;/em&gt;: $\ln(R^1) &amp;gt; 2 \ln (R^0).$&lt;/p&gt;
+&lt;p&gt;Finally, depending on the chosen production mode, the income of individual $i$ is given by:
+$$(y_{i,t}, y_{i,t+1}) = \begin{cases}
+(R^0, R^0) &amp;amp; \mathrm{if\, endowment} \\\
+(1, R^1)   &amp;amp; \mathrm{if\, investment}
+\end{cases}.$$&lt;/p&gt;
+&lt;h2 id=&#34;preferences&#34;&gt;Preferences&lt;/h2&gt;
+&lt;p&gt;A key aspect of the model to generate dynamics in the evolution of individual traits is the fertility decision.
+This approach is common: typically, fertility is linked to a trait through income.
+This is, individuals with more income will be able to have more children.
+If the trait is transmitted from parents to children, then the trait that allows generating more income will become more and more prevalent in the economy.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
+In any case, preferences are really important in this type of models, because fertility decisions are derived from them.&lt;/p&gt;
+&lt;p&gt;Every period $t$, a generation of size $L_t$ becomes economically active, this is, reaches the second period of life.
+Those individuals were born in period $t-1$.
+At this stage, each individual will live for two periods.
+Remember that financial markets do not exist, and also that it is &lt;strong&gt;impossible&lt;/strong&gt; to transfer resources between periods by storing them.&lt;/p&gt;
+&lt;p&gt;We assume that, during the second period of life, individuals only consume what they produce.
+Lastly, during the third and last period individuals consume and also have children.
+In particular, utility is given by:
+$$u^{i,t} = \ln c_{i,t} + \beta^i_t [\gamma \ln n_{i,t+1} + (1-\gamma) \ln c_{i,t+1}],\quad \gamma \in(0,1),$$
+where $c_{i,t}$ and $c_{i,t+1}$ are the levels of consumption in the second and third periods of life and $n_{i,t}$ is the number of children.
+It is important to comment on $\beta^i_t \in (0,1]$: it represents &lt;em&gt;individual i&lt;/em&gt;&amp;rsquo;s discount factor, this is, how much he values the future with respect to the present.
+The larger $\beta^i_t$, the more the value of future and, hence, the more patient the individual is.
+Notice that $\beta^i_t$ changes over time and also by individual.&lt;/p&gt;
+&lt;p&gt;During the second period, individuals do not really make any decision: since resources cannot be transferred, all production must be consumed.
+Hence, $c_{i,t} = y_{i,t}$.
+However, during the last period individuals can trade-off utility from consumption and utility from children.
+The paper assumes that each child costs $\tau$ units of consumption, which gives rise the last-period budget constraint:
+$$y_{i,t+1} = c_{i,t+1} + \tau n_{i,t+1}.$$&lt;br&gt;
+Considering the preferences, utility maximisation implies:
+$$c_{i,t+1} = (1-\gamma) y_{i,t+1},$$
+$$n_{i,t+1} = \frac{\gamma}{\tau} y_{i,t+1}.$$&lt;/p&gt;
+&lt;p&gt;Lastly, the indirect utility ($v_{i,t}$) of individual $i$ is given by:
+$$v_{i,t} = \ln y_{i,t} + \beta^i_t [\ln y_{i,t+1} + \xi],\quad \xi \equiv \gamma \ln\left(\frac{\gamma}{\tau} \right) + (1-\gamma)\ln(1-\gamma).$$&lt;/p&gt;
+&lt;h2 id=&#34;hunters-or-farmers&#34;&gt;Hunters or farmers&lt;/h2&gt;
+&lt;p&gt;Since individuals can decide on their mode of production, they are free to choose to become either hunters or farmers.
+This is, each individual will decide the mode of production (endowment or investment) that maximises lifetime utility.
+Hence,:
+$$v_{i,t} = \begin{cases}
+\ln R^0 + \beta^i_t (R^0 + \xi) &amp;amp; \mathrm{if\, endowment} \\\
+\ln 1 + \beta^i_t ( R^1 + \xi)   &amp;amp; \mathrm{if\, investment}
+\end{cases}.$$&lt;/p&gt;
+&lt;p&gt;An individual is indifferent between modes of production if he obtains the same utility from both.
+This is, the individual with $\beta^i_t = \hat{\beta}$ is indifferent between becoming a hunter or a farmer if and only if:
+$$\ln R^0 + \hat{\beta} (R^0 + \xi) = \ln 1 + \hat{\beta} \ln (R^1+\xi).$$
+Solving for $\hat{\beta}$ allows us to identify such individual:&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;
+$$\hat{\beta} = \frac{\ln R^0}{\ln R^1 - \ln R^0} \in (0,1).$$&lt;/p&gt;
+&lt;p&gt;Lastly, all individuals with $\beta^i_t &amp;lt; \hat{\beta}$ will optimally choose the endowment technology while those with $\beta^i_t &amp;gt; \hat{\beta}$ find the investment technology optimal.
+Note that, as the return to agriculture increases ($R^1$ increases), the cutoff value $\hat{\beta}$ decreases:
+$$\frac{\partial \hat{\beta}}{\partial R^1} = \frac{-\ln R^0}{R^1(\ln R^1 - \ln R^0)^2} &amp;lt; 0,$$
+this is, as agriculture becomes more and more profitable, more individuals will find it optimal to become hunters.&lt;/p&gt;
+&lt;p&gt;Hence, we can rewrite the income of an individual as a function of his $\beta^i_t$:
+$$(y_{i,t}, y_{i,t+1}) = \begin{cases}
+(R^0, R^0) &amp;amp; \mathrm{if\, \beta^i_t \leq \hat{\beta}} \\\
+(1, R^1)   &amp;amp; \mathrm{if\, \beta^i_t &amp;gt; \hat{\beta}}
+\end{cases}.$$&lt;/p&gt;
+&lt;p&gt;Of course, since income in the last period of life is different, hunters and farmers will have different number of children.
+In particular, using the optimal number of children derived above:
+$$n_{i,t+1} = \frac{\gamma}{\tau} y_{i,t+1} = \begin{cases}
+\frac{\gamma}{\tau}R^0\equiv n^E &amp;amp; \mathrm{if\, \beta^i_t \leq \hat{\beta}} \\\
+\frac{\gamma}{\tau}R^1\equiv n^I   &amp;amp; \mathrm{if\, \beta^i_t &amp;gt; \hat{\beta}}
+\end{cases}.$$
+Because $R^1 &amp;gt; R^0$, farmers have more children than hunters.&lt;/p&gt;
+&lt;h2 id=&#34;the-evolution-of-preferences&#34;&gt;The evolution of preferences&lt;/h2&gt;
+&lt;p&gt;Finally, we can compute how preferences change over time due to the differential fertility between farmers and hunters.
+This is, because farmers have more children than hunters, if we assume that preferences about time $\beta^i_t$ are transmitted between parents and children, the share of farmers will increase over time.
+The paper assumes almost that, although modifies slightly the transmission of preferences for individuals engaging in farming.
+In particular:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\beta^i_t$ is perfectly transmitted if an individual is a farmer.&lt;/li&gt;
+&lt;li&gt;Farmers transmit a larger value of $\beta^i_t$ to their children, reflecting an acquired tolerance to waiting and delaying reward.
+This is:
+$$\beta^i_{i,t+1} = \begin{cases}
+\beta^i_t   &amp;amp; \mathrm{if\, \beta^i_t \leq \hat{\beta}} \\\
+\phi(\beta^i_t, R^1)  &amp;amp; \mathrm{if\, \beta^i_t &amp;gt; \hat{\beta}}
+\end{cases},$$
+with&lt;/li&gt;
+&lt;li&gt;$\beta^i_t \leq \phi(\beta^i_t) &amp;lt; 1$: the transmitted $\beta$ is always more than the one the parent had,&lt;/li&gt;
+&lt;li&gt;$\phi(\hat{\beta},R^1) &amp;gt; \beta^i_t$,&lt;/li&gt;
+&lt;li&gt;$\phi_\beta(\beta^i_t,R^1)&amp;gt;0$: the higher the value of $\beta^i_{t+1}$, the more it increases,&lt;/li&gt;
+&lt;li&gt;$\phi_{\beta\beta}(\beta^i_t,R^1)&amp;gt;0$: but at a decreasing rate,&lt;/li&gt;
+&lt;li&gt;$\phi_R(\beta^i_t,R^1)&amp;gt;0$: the higher the value of $R$, the more $\beta^i_{t+1}$ increases.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Suppose an individual at the beginning of time who has $\beta^i_0 &amp;lt; \hat{\beta}.$
+This individual will optimally decide to be a hunter, and according to the process for the transmission of preferences, his sons will inherit $\beta^i_1 = \beta^i_0.$
+Because $\hat{\beta}$ is constant over time, all sons will decide to be hunters as well and transmit the same time preferences, over and over again.
+Hence, if $\beta^i_0 \leq \hat{\beta} \implies \lim_{t\rightarrow \infty} \beta^i_t = \beta^i_0.$&lt;/p&gt;
+&lt;p&gt;Suppose instead that $\beta^i_0 &amp;gt; \hat{\beta}.$
+The individual will become a farmer and transmit $\phi(\beta^i_0,R^1) &amp;gt; \beta^i_0.$
+Accordingly, all his sons will also be farmers and keep transmitting an ever-increasing value of $\beta^i_{t+1}.$
+However, because $\phi_{\beta \beta}(\beta^i_t,R^1) &amp;lt; 0$, the transmission process has a steady-state, this is, $\lim_{t \rightarrow \infty} \beta^i_t = \bar{\beta^I}.$
+Notice that $\hat{\beta^I}$ is the maximum level $\beta^i_t$ can reach.&lt;/p&gt;
+&lt;h3 id=&#34;proof-not-in-the-paper&#34;&gt;Proof (not in the paper)&lt;/h3&gt;
+&lt;p&gt;We want to show that $\beta^i_{t+1} = \phi(\beta^i_t,R^1)$ has a unique steady-state.
+This amount to showing that $\bar{\beta^I} = \phi(\bar{\beta^I},R^1)$ for a unique value $\bar{\beta^I}.$
+Define $G(\beta) = \phi(\beta,R) - \beta.$
+Since we focus on farmers, we know that the very initial one in the dynasty had $\beta^i_0 &amp;gt; \hat{\beta}$.
+So, for our purposes, the function $G$ has as domain $\beta \in [\hat{\beta},\infty).$
+We know that $G(\hat{\beta}) = \phi(\hat{\beta}, R^1) - \hat{\beta} &amp;gt; 0$ because $\phi(\hat{\beta},R^1) &amp;gt; \beta^i_t.$
+Moreover, the function $G$ has unique maximum at $\phi_\beta = 1$ because $\phi_{\beta \beta} &amp;lt; 0$, and the maximum is positive because it must be larger than $\phi(\hat{\beta},R^1)-\hat{\beta} &amp;gt; 0.$
+After the maxima, the function continuously decreases, thus crossing only one the horizontal axis, this is, there is a unique value $\bar{\beta}$ such that $G(\bar{\beta^I}) = 0$, which constitutes the unique steady state.&lt;/p&gt;
+&lt;h2 id=&#34;evolution-of-traits-over-time&#34;&gt;Evolution of traits over time&lt;/h2&gt;
+&lt;p&gt;Lastly, suppose that initially, at time $t=0$, the initial population presents different levels of time preference.
+We assume that, initially, traits are characterised by some distribution of $\eta(\beta^i_0)$ with support $[0,\bar{\beta^I}].$
+Furthermore, we normalise the initial generation to be of size one: $L_0 = 1.$
+Alternatively:
+$$L_0 = \int_0^\bar{\beta^I} \eta(\beta^i_0)\mathrm{d}\beta^i_0 = 1.$$
+We also know that all individuals whose $\beta^i_0 \leq \hat{\beta}$ decide to use the endowment technology, and the remaining opt for the investment technology.
+Therefore, the size of hunters (E) and farmers (I) is given by:
+$$L^E_0 = \int_0^\hat{\beta} \eta(\beta^i_0) \mathrm{d}\beta^i_0,$$
+$$L^I_0 = \int_\hat{\beta}^\bar{\beta^I} \eta(\beta^i_0) \mathrm{d}\beta^i_0.$$&lt;/p&gt;
+&lt;p&gt;The number of individuals evolves according to the fertility rate of each group, this is,
+$$L_t^E = L_0^E {n^E}^t = (\frac{\gamma}{\tau}R^0)^tL_0^E$$
+$$L_t^I = L_0^I {n^I}^t = (\frac{\gamma}{\tau}R^1)^tL_0^I$$
+and total population is $L_t = L_t^E + L_t^I.$&lt;/p&gt;
+&lt;p&gt;Finally, notice that the distribution of $\beta^i_t$ does not change for those individuals with $\beta^i_t \leq \bar{\beta}$: in fact, they all have the same number of children, and each child inherits the trait of his parent.
+Therefore, the average value $\bar{\beta^E}$ is constant over time.
+In contrast, the average value $\bar{\beta^E_t}$ increases.
+In any case, at any given period $t$, the overall average value for time preference is given by:
+$$\bar{\beta_t} = \theta^E_t \bar{\beta^E_t} + (1-\theta^E_t)\bar{\beta_t^I},$$
+where $\theta^E_t$ is the fraction of individuals who engage in the endowment production process, and $\bar{\beta_t}$ is just the weighted average.
+$$\theta^E_t = \frac{L_t^E}{L_t^E + L_t^I} = \frac{{R^0}^t}{{R^0}^t+{R^1}^t\frac{L^I_0}{L^E_0}}.$$&lt;/p&gt;
+&lt;p&gt;Hence, as time advances, the share of the population engaged in the endowment production process shrinks towards zero:
+$$\lim_{t\rightarrow\infty}\theta^E_t = 0.$$
+This process reflects their lower reproductive success.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Bisin and Verdier also model the case when parental indoctrination and how it affects the evolution of cultural traits.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;The assumption $\ln(R^1) &amp;gt; 2\ln(R^0)$ is important to establish that $\hat{\beta} \in (0,1).$&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

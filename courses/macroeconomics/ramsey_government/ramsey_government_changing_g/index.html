@@ -1,0 +1,1365 @@
+<!DOCTYPE html><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.5.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Èric Roca Fernández" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="We focus now on how a change in $G_{t}$ affects the behaviour of the economy. We rely on the phase diagram for this analysis: it conveys the message quite efficiently. In what follows, we assume that the economy is at its steady-state level $(\bar{k}^{\mathcal{Gov}}, \bar{c}^{\mathcal{Gov}})$ when the government decides to change $G_t." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://eric-roca.github.io/courses/macroeconomics/ramsey_government/ramsey_government_changing_g/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.1052fab8b7700a3dc49ee23683097d66.css" />
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://eric-roca.github.io/courses/macroeconomics/ramsey_government/ramsey_government_changing_g/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="Èric Roca Fernández" />
+  <meta property="og:url" content="https://eric-roca.github.io/courses/macroeconomics/ramsey_government/ramsey_government_changing_g/" />
+  <meta property="og:title" content="Changes in $G$ | Èric Roca Fernández" />
+  <meta property="og:description" content="We focus now on how a change in $G_{t}$ affects the behaviour of the economy. We rely on the phase diagram for this analysis: it conveys the message quite efficiently. In what follows, we assume that the economy is at its steady-state level $(\bar{k}^{\mathcal{Gov}}, \bar{c}^{\mathcal{Gov}})$ when the government decides to change $G_t." /><meta property="og:image" content="https://eric-roca.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="https://eric-roca.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2019-07-11T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2019-07-11T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>Changes in $G$ | Èric Roca Fernández</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="ae0023c63eeacb26b42a754db22949b9" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.2ed908358299dd7ab553faae685c746c.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="header--fixed">
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">Èric Roca Fernández</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">Èric Roca Fernández</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#publications"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#working_papers"><span>Working papers</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link  active" href="/courses/"><span>Teaching</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#talks"><span>Talks</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/files/CV.pdf"><span>CV</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    
+
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-md-3 w-100" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <div class="d-flex">
+      <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
+        
+          Government in the Ramsey-Cass-Koopmans model
+        
+      </span>
+      <span><i class="fas fa-chevron-down"></i></span>
+    </div>
+  </button>
+
+  
+  <button class="form-control sidebar-search js-search d-none d-md-flex">
+    <i class="fas fa-search pr-2"></i>
+    <span class="sidebar-search-text">Search...</span>
+    <span class="sidebar-search-shortcut">/</span>
+  </button>
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+
+    
+      
+
+      <ul class="nav docs-sidenav">
+        <li><a href="/courses/"><i class="fas fa-arrow-left pr-1"></i></a></li>
+      </ul>
+
+      
+      
+        
+          
+        
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/courses/macroeconomics/ramsey_government/">Government in the Ramsey-Cass-Koopmans model</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/courses/macroeconomics/ramsey_government/ramsey_government_households/">Households (2)</a></li>
+
+
+
+  <li class=""><a href="/courses/macroeconomics/ramsey_government/ramsey_government_equilibrium/">Steady state (2)</a></li>
+
+
+
+  <li class="active"><a href="/courses/macroeconomics/ramsey_government/ramsey_government_changing_g/">Changes in $G$</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+    
+  
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#un_perm">Unexpected, permanent rise in $G$</a></li>
+    <li><a href="#un_temp">Unexpected, temporary rise in $G$</a></li>
+    <li><a href="#anticipated-permanent-rise-in-g">Anticipated, permanent rise in $G$</a></li>
+    <li><a href="#anticipated-temporary-rise-in-g">Anticipated, temporary rise in $G$</a></li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          
+
+          <h1>Changes in $G$</h1>
+
+          <div class="article-style">
+            <p>We focus now on how a change in $G_{t}$ affects the behaviour of the economy.
+We rely on the phase diagram for this analysis: it conveys the message quite efficiently.
+In what follows, we assume that the economy is at its steady-state level $(\bar{k}^{\mathcal{Gov}}, \bar{c}^{\mathcal{Gov}})$ when the government decides to change $G_t.$
+Furthermore, we assume taxes are constant at some level $G_{t} = G_{1} &gt; 0.$</p>
+<h2 id="un_perm">Unexpected, permanent rise in $G$</h2>
+<p>Suppose that the government announces a <em>sudden and unexpected</em> increase in $G: G_{2} &gt; G_{1}.$
+The Ramsey model illustrates the consequences of such a change.</p>
+<p>First, we assumed that the economy was at its steady state.
+The change in $G$, as we discussed before, moves the $k$-locus closer to the horizontal axis.</p>
+<p>With the change in $G$, a new steady state emerges.
+The steady-state capital level $\bar{k}^\mathcal{Gov}(G_2) = \bar{k}^\mathcal{Gov}(G_{1})$ remains the same.
+However, households need to adjust their consumption level.
+Otherwise, they would <em>not</em> be on the saddle path, and they would follow a diverging trajectory leading to zero consumption.
+The unique possibility that puts the economy in the new steady state is for consumption to jump directly into it.
+This is, consumption must be reduced by the amount $\Delta_{G} = G_{2} - G_{1}.$
+Thus the size of the immediate fall in consumption is equal to the full amount of the increase in government purchases, and the <strong>capital stock and the real interest rate are unaffected</strong>.</p>
+<p>A similar policy under the Solow model would have implied a smaller reduction in consumption.
+In Solow, consumption is the fraction $1-s$ of current income.
+The tax decreases current income by $G$, but consumption would only change by $(1-s)G &lt; G.$
+Hence, the remaining part of the increase in $G$ is absorbed by a reduction in investments of the size $sG$: <em>government purchases crowd out investment in the Solow model.</em></p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/ramsey_government/permanent_increase.webp" alt="permanent_increase" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h2 id="un_temp">Unexpected, temporary rise in $G$</h2>
+<p>Different from before, suppose that the increase in $G$ is only temporary, starting at $t=t_{0}$ and lasting until $t=t_{1}.$
+We still suppose that the increase in taxes is unexpected.
+One possibility is to first jump to the new steady state, remain there while taxes are high, and at time $t=t_{1}$ jump back to the original steady state.
+However, this implies two discontinuities in consumption: the first and second jumps.
+This would imply that marginal utility falls discontinuously and this is not optimal.</p>
+<p>There is a second possibility.
+First, decrease consumption by a smaller amount than before: $\Delta_{c} &lt; \Delta_{G}.$
+This implies that the economy is <em>not</em> in the new steady state $(\bar{k}^\mathcal{Gov}(G_2) , \bar{c}^{\mathcal{Gov}}(G_{2}))$, but above it.
+Thus, it is subject to the dynamics implied by the phase diagram: capital decreases and consumption increases.
+The initial jump in consumption must be carefully computed such that, at time $t=t_{1}$, the dynamics implied by $G_{2}$ put the economy on the saddle path of $G_{1}.$
+This is, the economy undergoes a transition such that, at $t=t_{1}$ when taxes and dynamics &mdash;and the phase diagram&mdash; return to the original  configuration, the economy is on its saddle path.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/ramsey_government/temp_increase.webp" alt="temporary_increase" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>The figure above depicts in black the original $k$-locus &mdash;for $G=G_{1}$&mdash; and in red the temporary one while with $G=G_{2}.$
+The economy first jumps from the initial steady state $(\bar{k}^{\mathcal{Gov}}(G_{1}), \bar{c}^{\mathcal{Gov}}(G_{1}))$ following the black arrow.
+From then onwards, the dynamics of the red $k$-locus determine the trajectory of the economy.
+In particular, it moves north-west following the orange curve.
+The initial jump is calculated in such a way that at $t=t_{1}$ the economy is on the saddle path corresponding to $G=G_{1}.$
+From there, it simply follows the saddle path towards the steady state $(\bar{k}^{\mathcal{Gov}}(G_{1}), \bar{c}^{\mathcal{Gov}}(G_{1})).$</p>
+<p>During the transition, households reduce capital to sustain a higher and increasing level of consumption that would not be possible with $G_{2} &gt; G_{1}.$
+From $t=t_{1}$, consumption continues to grow, but capital starts accumulating again.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/ramsey_government/temp_increase_2.webp" alt="temporary_increase_2" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>The change in consumption during $t=t_{0}$ is directly proportional to the length of the increase in taxes.
+The longer it is, the closer the economy jumps to the steady state $(\bar{k}^{\mathcal{Gov}}(G_{2}), \bar{c}^{\mathcal{Gov}}(G_{2})).$
+However, it never reaches it: households always decrease their savings, which allows them to later be on the saddle path when taxes go back to $G_{1}.$</p>
+<h2 id="anticipated-permanent-rise-in-g">Anticipated, permanent rise in $G$</h2>
+<p><strong>Note:</strong> when analysing an <em>anticipated</em> measure, start from the end move backwards.</p>
+<p>Suppose that at time $t=t_{0}$ the government announces that at time $t=t_{1}$ taxes will permanently increase.</p>
+<p>One possibility is to mimic the [unanticipated, permanent change](&lt;{{ ref &ldquo;#un_perm&rdquo; &gt;}}): remain at the original steady state $(\bar{k}^\mathcal{Gov}(G_{0}), \bar{c}^\mathcal{Gov}(G_{0}))$ until $t_{1}$, and then jump onto the new steady state.
+However, this represents a large cost in terms of utility: non-smooth changes penalise utility.</p>
+<p>Instead, households will slightly decrease consumption at $t_{0}$.
+The dynamics of the $(\bar{k}^\mathcal{Gov}(G_{0}), \bar{c}^\mathcal{Gov}(G_{0}))$ steady state will move the economy south-east: consumption decreases while capital increases.
+The first initial jump at $t_{0}$ must be such that, at $t_{1}$ the economy is on the saddle path corresponding to the new steady state $(\bar{k}^\mathcal{Gov}(G_{1}), \bar{c}^\mathcal{Gov}(G_{1})).$</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/ramsey_government/permanent_increase.webp" alt="perm_an" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Hence, during the transition, consumption continuously falls, but smoothly.
+Capital, instead, first accumulates and decreases from $t_{1}$ onwards.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/ramsey_government/perm_an_increase_2.webp" alt="perm_an2" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h2 id="anticipated-temporary-rise-in-g">Anticipated, temporary rise in $G$</h2>
+<p><strong>Note:</strong> when analysing an <em>anticipated</em> measure, start from the end move backwards.</p>
+<p>Finally, suppose that the increase in $G$ is temporary.
+At time $t=t_{0}$ the government announces that at time $t=t_{1}$ taxes will increase from $G_{0}$ to $G_{1}.$
+The new tax regime will apply for some time, until $t=t_{2}$ when taxes will return to their original level $G_{0}.$</p>
+<p>In that case households can decide to follow the same strategy as in an <a href="#un_temp">unanticipated, temporary increase</a>.
+However, it entails a relatively large adjustment in terms of consumption at time $t=t_{1}$, when the new policy becomes effective.
+Instead, households can take advantage of the anticipation in the announcement:
+decrease the consumption at the announcement time $t=t_{0}$ by a relatively small amount.
+This places households on the black arrow trajectory, since the economy is still governed by the $(\bar{k}^\mathcal{Gov}(G_{0}), \bar{c}^\mathcal{Gov}(G_{0}))$-locus.
+In that case, though, the change in consumption is such that, when the new tax policy becomes effective, consumption follows the orange arrow.
+Finally, timing is again crucial because at time $t=t_{2}$ the economy must be on the saddle path that corresponds to the initial steady state: $(\bar{k}^\mathcal{Gov}(G_{0}), \bar{c}^\mathcal{Gov}(G_{0})).$</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/ramsey_government/temp_an_increase.webp" alt="an_temp_inc" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>In that case, between $t_{0}$ and $t_{1}$, households decrease consumption and save.
+Between $t_{1}$ and $t_{2}$ first consumption continues to decrease and so does capital, but eventually consumption rises while capital continues to decrease.
+Finally, from $t_{2}$ onward, both capital and consumption rise along the saddle path.
+Note that, although consumption decreases, it does so continuously except for the initial jump.
+This consumption-smoothing decreases utility less than a discontinuous jumps.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/ramsey_government/temp_an_increase_2.webp" alt="an_temp_inc" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+
+          </div>
+
+          
+
+
+
+          
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/courses/macroeconomics/ramsey_government/ramsey_government_equilibrium/" rel="next">Steady state</a>
+  </div>
+  
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on 11 Jul, 2019</p>
+
+          
+
+
+
+          
+
+
+
+
+          
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+
+  
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2023 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+      
+
+    
+    <script src="/js/vendor-bundle.min.d26509351aa0ff874abbee824e982e9b.js"></script>
+
+    
+    
+    
+      
+
+      
+      
+
+      
+
+      
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/highlight.min.js" integrity="sha512-Ypjm0o7jOxAd4hpdoppSEN0TQOC19UtPAqD+4s5AlXmUvbmmS/YMxYqAqarQYyxTnB6/rqip9qcxlNB/3U9Wdg==" crossorigin="anonymous"></script>
+        
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/r.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/latex.min.js" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/gh/bryanbraun/anchorjs@4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+
+    
+    
+    
+    <script id="page-data" type="application/json">{"use_headroom":false}</script>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.43c8f7a4851160885a7d8069dfa86538.js"></script>
+
+    
+    
+    
+    
+    
+    
+      
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+
+
+
+
+
+</body>
+</html>

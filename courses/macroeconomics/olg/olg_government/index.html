@@ -1,0 +1,1418 @@
+<!DOCTYPE html><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.5.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Èric Roca Fernández" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Based on de la Croix and Michel, Chapter 4.4
+The Ricardian equivalence The Ricardian equivalence states that forward-looking agents internalise the government&rsquo;s budget constraint when deciding. Hence, whether public expenditures are financed using debt or taxes is irrelevant." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://eric-roca.github.io/courses/macroeconomics/olg/olg_government/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.1052fab8b7700a3dc49ee23683097d66.css" />
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://eric-roca.github.io/courses/macroeconomics/olg/olg_government/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="Èric Roca Fernández" />
+  <meta property="og:url" content="https://eric-roca.github.io/courses/macroeconomics/olg/olg_government/" />
+  <meta property="og:title" content="Debt and public expenditures | Èric Roca Fernández" />
+  <meta property="og:description" content="Based on de la Croix and Michel, Chapter 4.4
+The Ricardian equivalence The Ricardian equivalence states that forward-looking agents internalise the government&rsquo;s budget constraint when deciding. Hence, whether public expenditures are financed using debt or taxes is irrelevant." /><meta property="og:image" content="https://eric-roca.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="https://eric-roca.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2019-07-11T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2019-07-11T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>Debt and public expenditures | Èric Roca Fernández</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="19b26151a23fa23d77a7a633d5389926" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.2ed908358299dd7ab553faae685c746c.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="header--fixed">
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">Èric Roca Fernández</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">Èric Roca Fernández</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#publications"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#working_papers"><span>Working papers</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link  active" href="/courses/"><span>Teaching</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#talks"><span>Talks</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/files/CV.pdf"><span>CV</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    
+
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-md-3 w-100" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <div class="d-flex">
+      <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
+        
+          Overlapping generations model
+        
+      </span>
+      <span><i class="fas fa-chevron-down"></i></span>
+    </div>
+  </button>
+
+  
+  <button class="form-control sidebar-search js-search d-none d-md-flex">
+    <i class="fas fa-search pr-2"></i>
+    <span class="sidebar-search-text">Search...</span>
+    <span class="sidebar-search-shortcut">/</span>
+  </button>
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+
+    
+      
+
+      <ul class="nav docs-sidenav">
+        <li><a href="/courses/"><i class="fas fa-arrow-left pr-1"></i></a></li>
+      </ul>
+
+      
+      
+        
+          
+        
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/courses/macroeconomics/olg/">Overlapping generations model</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/courses/macroeconomics/olg/olg_preliminaries/">Preliminaries</a></li>
+
+
+
+  <li class=""><a href="/courses/macroeconomics/olg/olg_households/">Households (OLG)</a></li>
+
+
+
+  <li class=""><a href="/courses/macroeconomics/olg/olg_savings_function/">Savings function</a></li>
+
+
+
+  <li class=""><a href="/courses/macroeconomics/olg/olg_equilibrium/">Intertemporal equilibrium (OLG)</a></li>
+
+
+
+  <li class=""><a href="/courses/macroeconomics/olg/olg_multiple_intertemporal_equilibria/">Multiple intertemporal equilibria</a></li>
+
+
+
+  <li class=""><a href="/courses/macroeconomics/olg/olg_steady_state/">Steady state (OLG)</a></li>
+
+
+
+  <li class=""><a href="/courses/macroeconomics/olg/olg_optimality/">Optimality</a></li>
+
+
+
+  <li class="active"><a href="/courses/macroeconomics/olg/olg_government/">Debt and public expenditures</a></li>
+
+
+
+  <li class=""><a href="/courses/macroeconomics/olg/olg_planner/">Planner</a></li>
+
+
+
+  <li class=""><a href="/courses/macroeconomics/olg/olg_papers/">Papers</a></li>
+
+
+
+  <li class=""><a href="/courses/macroeconomics/olg/papers/de_la_croix_dottori__2008/">de la Croix and Dottori, 2008</a></li>
+
+
+
+  <li class=""><a href="/courses/macroeconomics/olg/papers/galor_moav__2006/">Galor and Moav, 2006</a></li>
+
+
+
+  <li class=""><a href="/courses/macroeconomics/olg/papers/galor_ozak__2016/">Galor and Özak, 2016</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+    
+  
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#the-ricardian-equivalence">The Ricardian equivalence</a></li>
+    <li><a href="#the-model-with-a-government">The model with a government</a>
+      <ul>
+        <li><a href="#the-government">The government</a></li>
+        <li><a href="#individuals">Individuals</a></li>
+        <li><a href="#equilibrium">Equilibrium</a></li>
+        <li><a href="#constant-deficit-policy">Constant deficit policy</a></li>
+        <li><a href="#steady-state">Steady state</a></li>
+        <li><a href="#stability">Stability</a></li>
+        <li><a href="#the-effects-of-fiscal-policy-on-bark">The effects of fiscal policy on $\bar{k}$</a></li>
+      </ul>
+    </li>
+    <li><a href="#example">Example</a>
+      <ul>
+        <li><a href="#stability-1">Stability</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          
+
+          <h1>Debt and public expenditures</h1>
+
+          <div class="article-style">
+            <p>Based on <em>de la Croix and Michel, Chapter 4.4</em></p>
+<h2 id="the-ricardian-equivalence">The Ricardian equivalence</h2>
+<p>The Ricardian equivalence states that forward-looking agents internalise the government&rsquo;s budget constraint when deciding.
+Hence, whether public expenditures are financed using debt or taxes is irrelevant.</p>
+<p>Intuitively, forward-looking agents &mdash;who shall live forever&ndash; know that, if the government increases expenditures today without raising taxes, debt will be issued and taxes eventually increased to pay it off.</p>
+<p>However, as we shall see, in the <strong>OLG model, the Ricardian equivalence does not hold.</strong>
+Clearly, the main difference between the OLG and Ramsey models is that agents live only for two periods in the former.
+Suppose that the government decides to run a deficit today to increase public expenditures.
+Young and old individuals today are not that much affected because, when the government raises the taxes to pay the debt off, they would have already died.
+Instead, if the government decides to increase taxes today, it affects present-day young and old individuals.</p>
+<h2 id="the-model-with-a-government">The model with a government</h2>
+<h3 id="the-government">The government</h3>
+<p>Suppose the government has public expenditures of $g_t$ per young individual.
+Total expenditures are then $G_t = N_t g_t.$
+These public expenditures are financed by a lump-sum tax of $\tau_t$, which is paid only by the young.
+Total revenues are $T_t = N_t \tau_t.$
+Finally, the government can have debt.
+The total outstanding debt is $B_t,$ and $b_t$ represents it per young terms.
+The government pays interest on the debt of the previous period: $R_t B_{t-1}.$</p>
+<p>We can write the government&rsquo;s budget constraint:</p>
+<p>$$G_t + R_t B_{t-1} = B_t + T_t.$$</p>
+<p>The constraint, expressed in per capita terms, is:</p>
+<p>$$\frac{G_t}{N_t} + R_t \frac{B_{t-1}}{N_t} = \frac{B_t}{N_t} + \frac{T_t}{N_t} = $$
+$$g_t + R_t \underbrace{\frac{B_{t-1}}{N_{t-1}}}_{b_{t-1}}\underbrace{\frac{N_{t-1}}{N_{t}}}_{\frac{1}{1+n}} = b_t + \tau_t = $$
+$$g_t + R_t \frac{b_{t-1}}{1+n}  = b_t + \tau_t $$</p>
+<p>As a final note, government spending is unproductive: it does not affect the production function.
+Moreover, individuals do <em>not</em> derive utility from it.
+Finally, we assume that the government <em>always</em> honors its debt.
+In that sense, government debt is a riskless asset.</p>
+<h3 id="individuals">Individuals</h3>
+<p>The budget constraint of a young individual who now pays taxes $\tau_t$ is:</p>
+<p>$$w_t = c_t + s_t + \tau_t$$
+$$R_{t+1}s_t = d_{t+1}.$$</p>
+<p>Alternatively, we can express it as an intertemporal budget constraint:</p>
+<p>$$w_t = c_t + \tau_t +\frac{d_{t+1}}{R_{t+1}}.$$</p>
+<p>We can easily obtain the savings function as we did before by substitution:</p>
+<p>$$\max_{c_t, s_t, d_{t+1}} u(c_t) + \beta u(d_{t+1})$$
+$$\mathrm{s.t.}, w_t = c_t + s_t - \tau_t$$
+$$\phantom{\mathrm{s.t.}}, d_{t+1} = R_{t+1}s_t.$$</p>
+<p>Then:</p>
+<p>$$\max_{s_t} u(w_t-s_t-\tau_t) + \beta u(R_{t+1}s_t).$$</p>
+<p>The first order condition reads:</p>
+<p>$$u^\prime(w_t - s_t-\tau_t) = \beta R_{t+1} u^\prime(R_{t+1}s_t).$$</p>
+<p>From here, we can recover the savings function:</p>
+<p>$$s_t = s(w_t-\tau_t, R_{t+1}).$$</p>
+<p>In this model, households have access to <strong>two</strong> types of savings:</p>
+<ul>
+<li>savings in capital</li>
+<li>and government bonds.</li>
+</ul>
+<p>Moreover, the risk of both types of investment is the same: none, because both assets are riskless.
+Hence, <strong>bonds and capital are perfect substitutes.</strong> in the portfolio of wealth owners.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>
+Therefore, the entire amount households decide to save is split between the two</p>
+<p>$$N_t s_t = K_{t+1} + N_t b_t.$$</p>
+<h3 id="equilibrium">Equilibrium</h3>
+<p>At the (temporal) equilibrium , the government chooses $B_t, \tau_t$ to satisfy its budget constraint: $g_t + R_t \frac{b_{t-1}}{1+n}  = b_t + \tau_t.$
+Moreover, as we have already discussed, because debt and capital are substitutes, both bear the same interest $R.$
+Also, firms operate in a perfectly competitive environment and factors are paid their marginal productivities:</p>
+<p>$$w_t = \omega(k_t)$$</p>
+<center>and</center>
+$$R\_t = f^\prime(k\_t)$$
+with $k\_t \equiv \frac{K\_t}{N\_t}.$
+<p>Introducing this into the government budget constraint we obtain:</p>
+<p>$$B_t + N_t \tau_t = G_t + f^\prime(\color{red}{k_t})B_{t-1}.$$</p>
+<p>We have implicitly assumed that investment is positive, this is,
+$$K_{t+1} = N_t s_t - B_t = N_t s(w_t - \tau_t, R_{t+1}) - B_t &gt;0.$$</p>
+<p>Capital thus evolves:</p>
+<p>$$K_{t+1} = N_t s_t - N_t b_t \implies k_{t+1} = \frac{1}{1+n} s(\omega(k_t)-\tau_t, R(k_{t+1})) - b_t.$$</p>
+<h3 id="constant-deficit-policy">Constant deficit policy</h3>
+<p>To simplify the analysis, we assume that the government faces constant expenditures $g_t = g$ and that the number of bonds is also constant: $b_t = b.$
+The government can adjust the tax rate $\tau_t$ each period.
+Therefore, the <em>deficit</em> at time $t$ is given by:</p>
+<p>$$\mathcal{d}_t \equiv g - \tau_t = b\left(1-\frac{R_t}{1+n}\right) = b\left(\frac{n+\delta - r_t}{1+n}\right),$$</p>
+<p>where we have used $R_t = 1 + r_t - \delta$ together with the budget constraint of the government evaluated when $g_{t}=g$ and $b_{t}=b:$</p>
+<p>$$g + \frac{b}{1+n}R_{t} = \tau_{t} + b \implies g - \tau_{t} = b\left(1-\frac{R_{t}}{1+n}\right).$$</p>
+<p>If $n + \delta &gt; r_t$, then the government can be perpetually indebted while running a public deficit $g-\tau_t.$
+Otherwise, if $n + \delta &lt; r_t$, the government needs to run a budget surplus: $\tau_t &gt; g.$</p>
+<p>Replacing the new government budget $g - \tau_t = b\left(\frac{n+\delta - r_t}{1+n}\right)$ in the equation for capital dynamics we obtain:</p>
+<p>$$k_{t+1} = \frac{1}{1+n}s\left(\omega(k_t)-b\frac{r(\color{red}{k_t})-\delta - n}{1+n}-g, R(\color{green}{k_{t+1}})\right)- \frac{b}{1+n}.$$</p>
+<p>In this case, the <em>policy parameters</em> $g, b$ affect the evolution of the capital stock.
+Notice also that if $b=g=0$ we recover the original version of the OLG model.</p>
+<h3 id="steady-state">Steady state</h3>
+<p>For the moment, let&rsquo;s assume that this model features, at least, one steady state.
+As usual, we denote its level of capital by $\bar{k}.$</p>
+<p>As before, we can compute how $k_{t+1}$ changes with $k_t.$</p>
+<p>$$\frac{\partial k_{t+1}}{\partial k_t} = \frac{s^\prime_{\omega}\left(w^\prime (k_t)-b\frac{r^\prime (k_t)}{1+n}\right)}{1+n-s^\prime_{R}R^\prime (k_{t+1})}.$$</p>
+<p>Since $r^\prime (k) &lt;0$ we can already see that the speed at which capital adjusts in the presence of a government is larger than without it.</p>
+<p>$$\frac{s^\prime_{\omega}\left(\omega^\prime (k_t)-b\frac{r^\prime (k_t)}{1+n}\right)}{1+n-s^\prime_{R}R^\prime (k_{t+1})} &gt; \frac{s^\prime_{\omega}\omega^\prime (k_t)}{1+n-s^\prime_{R} R^\prime(k_{t+1})}.$$</p>
+<p>Also, notice that the numerator is positive: $\omega^\prime (k) - b \frac{\overbrace{r^\prime(k)}^{&lt;0}}{1+n} &gt; 0.$
+Hence,if $1+n-s^\prime_{R}R^\prime(k) &gt; 0$ the dynamics will be monotonous.
+A sufficient condition is $s^\prime_{R} &gt; 0 \implies \sigma &gt; 1.$
+Let&rsquo;s assume this condition is verified.</p>
+<h3 id="stability">Stability</h3>
+<p>We have assumed that a steady state exists.
+We analyse its stability.
+In particular, we should evaluate the derivative $\frac{\partial k_{t+1}}{\partial k_t}$ at the steady state:</p>
+<p>$$\frac{\partial k_{t+1}}{\partial k_t} = \frac{s^\prime_{\omega}\left(w^\prime (k_t)-b\frac{\overbrace{r^\prime (k_t)}^{&lt;0}}{1+n}\right)}{1+n-s^\prime_{R}R^\prime (k_{t+1})}.$$</p>
+<p>At the steady state we have that:</p>
+<p>$$\frac{\partial k_{t+1}}{\partial k_t}\Bigg|_{k_t=k_{t+1}=\bar{k}} = \frac{s^\prime_{\omega}\left(w^\prime (\bar{k})-b\frac{\overbrace{r^\prime (\bar{k})}^{&lt;0}}{1+n}\right)}{1+n-s^\prime_{R}R^\prime (\bar{k})}.$$</p>
+<p>We then have that the steady state is stable if $\frac{\partial k_{t+1}}{\partial k_t}\Bigg|_{k_t = k_{t+1} = \bar{k}} \in (-1,1).$
+Therefore, the steady state is stable if and only if:</p>
+<p>$$\frac{s^\prime_{\omega}\left(w^\prime (\bar{k})-b\frac{\overbrace{r^\prime (\bar{k})}^{&lt;0}}{1+n}\right)}{1+n-s^\prime_{R}R^\prime (\bar{k})} &lt; 1 \implies s^\prime_\omega \omega^\prime(\bar{k})-b\frac{r^\prime(\bar{k})}{1+n} &lt; 1+n-s^\prime_R R^\prime(\bar{k}).$$</p>
+<p>We shall assume that the steady state is stable.
+Hence, we assume that:</p>
+<p>$$s^\prime_\omega \omega^\prime(\bar{k})-b\frac{r^\prime(\bar{k})}{1+n} &lt; 1+n-s^\prime_R R^\prime(\bar{k}).$$</p>
+<h3 id="the-effects-of-fiscal-policy-on-bark">The effects of fiscal policy on $\bar{k}$</h3>
+<p>We can now study how the fiscal policy variables $b$ and $g$ affect the steady-state level of capital.</p>
+<p>$$\bar{k}=\frac{1}{1+n}s\left(w(\bar{k})-b\frac{r(\bar{k})-n-\delta}{1+n}-g, R(\bar{k})\right)-\frac{b}{1+n}.$$</p>
+<p>$$\frac{\partial \bar{k}}{\partial b} = - \frac{s^\prime_{\omega}\left(\frac{r(\bar{k}) -n - \delta}{1+n}\right)+1}{\underbrace{1+n-s^\prime_\omega \left(\omega^\prime(\bar{k})-b\frac{r^\prime(\bar{k})}{1+n}\right)-s^\prime_R R^\prime(\bar{k})}_{&gt;0, \mathrm{because, of, stability}}}.
+$$</p>
+<p>Using the fact that $R(k) = 1 + r(k) - \delta$ we can rewrite the numerator as:</p>
+<p>$$s^\prime_{\omega}\left(\frac{r(\bar{k}) -n - \delta}{1+n}\right)+1=s^\prime_\omega \left(\frac{R(\bar{k})-1-n}{1+n}\right)+1 = 1 - \underbrace{s^{\prime}_\omega}_{\in (0,1)} + \underbrace{s^\prime_\omega}_{&gt;0} \frac{R(\bar{k})}{1+n} &gt; 0.$$</p>
+<p>We showed that $s^\prime_{\omega} \in (0,1)$ when we discussed <a href="https://eric-roca.github.io/courses/macroeconomics/olg/olg_savings_function/#the-effect-of-wages">the savings function.</a></p>
+<p>Then, we have that</p>
+<p>$$\frac{\partial \bar{k}}{\partial b} = - \frac{s^\prime_{\omega}\left(\overbrace{1-s^\prime_\omega+s^\prime_\omega\frac{R(\bar{k})}{1+n}}^{&gt;0}\right)}{\underbrace{1+n-s^\prime_\omega \left(\omega^\prime(\bar{k})-b\frac{r^\prime(\bar{k})}{1+n}\right)-s^\prime_R R^\prime(\bar{k})}_{&gt;0, \mathrm{because, of, stability}}}&lt; 0 .$$</p>
+<p>We proceed similarly with $g$:</p>
+<p>$$\frac{\partial \bar{k}}{\partial g}= - \frac{s^\prime_\omega}{\underbrace{1+n-s^\prime_\omega \left(\omega^\prime(\bar{k})-b\frac{r^\prime(\bar{k})}{1+n}\right)-s^\prime_R R^\prime(\bar{k})}_{&gt;0, \mathrm{because, of, stability}}}&lt; 0 .$$</p>
+<p>Therefore, as long as the steady state is stable, increasing the fiscal policies decreases the long-run value of $\bar{k}.$
+In other terms, higher expenditures or debt reduce capital.
+Thus, the fiscal policy <strong>makes over-accumulation less likely</strong> if the steady state is stable.
+The role of debt is intuitive: government bonds are perfect substitutes with capital, hence households holding them invest less in capital.
+Similarly, higher expenditures must be financed either with debt or taxes.
+The latter reduces available income, which reduces savings, impacting capital accumulation.</p>
+<h2 id="example">Example</h2>
+<p>To illustrate the findings so far we proceed with an example.
+As usual, we take a log-utility function and a Cobb-Douglas production function.
+<strong>Note:</strong> this choice of utility already implies that $s^\prime_R = 0.$</p>
+<p>Furthermore, we assume that $\delta = 1:$ capital fully depreciates in one period.
+Since here one period corresponds to roughly 30 years, this may be a good approximation.</p>
+<p>$$f(k) = k^\alpha, \alpha \in (0,1)$$
+$$u(c,d) = \log ( c ) + \beta \log(d), \beta \in (0,1).$$</p>
+<p>The budget constraint is:</p>
+<p>$$w_t = c_t + s_t + \tau_ t$$
+$$d_{t+1} = R_{t+1} s_t.$$</p>
+<p>We can readily see that the savings function satisfies:</p>
+<p>$$u^\prime(w_t - \tau_t - s_t) = R_{t+1}\beta u^\prime (R_{t+1} s) \implies s_t = \frac{\beta}{1+\beta}(w_t - \tau_t).$$</p>
+<p>With the technology we are given we also know that:</p>
+<p>$$R_t = \alpha k_t^{\alpha-1},\quad  w_t = (1-\alpha)k_t^\alpha.$$</p>
+<p>The law of motion of capital follows:</p>
+<p>$$k_{t+1} = \frac{1}{1+n}s\left(w_t - \tau_t \right) = \frac{1}{1+n}\frac{\beta}{1+\beta}(w_t - \tau_t) - \frac{b}{1+n}.$$</p>
+<p>We can already substitute into it the equilibrium values for the interest rate and the government&rsquo;s budget constraint:</p>
+<p>$$\tau_t = g + \frac{R_t - 1 -n}{1+n}.$$</p>
+<p>Hence</p>
+<p>$$k_{t+1} = \frac{\beta}{(1+n)(1+\beta)}\left((1-\alpha)k_t^\alpha - b \frac{\alpha k_t^{\alpha -1} -1 -n}{1+n}-g\right)-\frac{b}{1+n} =  \xi \left((1-\alpha)k_t^\alpha - b \frac{\alpha k_t^{\alpha -1}}{1+n}-g\right)-\frac{b}{1+n}+\xi b = \phi(b,g,k_t),$$
+where $\xi \equiv \frac{\beta}{(1+n)(1+\beta)}.$</p>
+<h3 id="stability-1">Stability</h3>
+<p>Instead of computing the value of capital at the steady state (which we cannot do), we study the function $\phi(b,g,k_t).$</p>
+<p>First, notice that changing $b$ or $g$ displaces $\phi$ downwards, but the displacement is not parallel.
+$$\phi^\prime_b = - \frac{\beta}{(1+n)(1+\beta)}\frac{\alpha k^{\alpha-1}}{1+n} - \frac{1}{1+n} + \xi &lt; 0$$
+$$\phi^\prime_g = -\frac{\beta}{(1+n)(1+\beta)} &lt; 0.$$</p>
+<p>However, increasing $g$ always reduces $k_{t+1}$ by the same amount: $g$ moves the curve vertically.
+$$\phi^{\prime \prime}_{g,k} = 0.$$
+Instead, raising $b$ has a different effect depending on the value of $k.$
+In particular, the gap widens and reaches a constant difference:
+$$\phi^{\prime \prime}_{b,k} = \frac{k^{\alpha-2}(1-\alpha)\alpha\beta}{(1+n)^2(1+\beta)} &gt; 0$$
+and
+$$\lim_{k \rightarrow +\infty}\phi^{\prime \prime}_{b,k} = 0.$$</p>
+<p>The function $\phi$ is increasing and concave in $k$:</p>
+<p>$$\phi^\prime_k = \xi \left((1-\alpha)k^{\alpha-1}-\frac{b \alpha (\alpha-1)}{1+n}k^{\alpha-2}\right) &gt; 0.$$
+$$\phi^{\prime \prime}_{k,k} = \xi \left((1-\alpha)(\alpha-1)k^{\alpha-2}-\frac{b \alpha(\alpha-1)(\alpha-2)}{1+n}k^{\alpha-3}\right) &lt; 0.$$</p>
+<p>Finally, we have the following limits:</p>
+<p>$$\lim_{k \rightarrow 0}\phi = 0 , \mathrm{if} , b=0$$
+$$\lim_{k \rightarrow 0}\phi = -\infty , \mathrm{if} b&gt;0.$$
+$$\lim_{k \rightarrow +\infty}\phi = +\infty.$$</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/olg/taxes.webp" alt="taxes" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>When $b=g=0$ we are back to the initial case without government.
+The Cobb-Douglas and log-utility specifications are characterised by two steady states:</p>
+<ul>
+<li>$\bar{k} &gt; 0$, which is stable,</li>
+<li>$\bar{k}=0$, which is unstable.</li>
+</ul>
+<p>With $b,g&gt;0$ the $k_{t+1}$ curve moves downwards and the economy displays two steady states:</p>
+<ul>
+<li>$\bar{k}$, which is unstable,</li>
+<li>$\overline{k}$, which is stable.</li>
+</ul>
+<p>There are two additional possibilities:
+in the first one, the $k_{t+1}$ curve is tangent to the 45 degree line.
+In that (unlikely) case, a unique steady state arises, but it is non-hyperbolic and we cannot infer its stability from the linearised version.
+<strong>Note:</strong> we know that the steady state is non-hyperbolic because $k_{t+1}$ evaluated at the steady state is tangent to a 45 degree line.</p>
+<p>In the second case, if $b$ or $g$ are big enough, the economy has no steady state.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>We have implicitly assumed it when we stated that bonds payed the same interest rate as capital.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+          </div>
+
+          
+
+
+
+          
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/courses/macroeconomics/olg/olg_optimality/" rel="next">Optimality</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/courses/macroeconomics/olg/olg_planner/" rel="prev">Planner</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on 11 Jul, 2019</p>
+
+          
+
+
+
+          
+
+
+
+
+          
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+
+  
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2023 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+      
+
+    
+    <script src="/js/vendor-bundle.min.d26509351aa0ff874abbee824e982e9b.js"></script>
+
+    
+    
+    
+      
+
+      
+      
+
+      
+
+      
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/highlight.min.js" integrity="sha512-Ypjm0o7jOxAd4hpdoppSEN0TQOC19UtPAqD+4s5AlXmUvbmmS/YMxYqAqarQYyxTnB6/rqip9qcxlNB/3U9Wdg==" crossorigin="anonymous"></script>
+        
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/r.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/latex.min.js" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/gh/bryanbraun/anchorjs@4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+
+    
+    
+    
+    <script id="page-data" type="application/json">{"use_headroom":false}</script>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.43c8f7a4851160885a7d8069dfa86538.js"></script>
+
+    
+    
+    
+    
+    
+    
+      
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+
+
+
+
+
+</body>
+</html>

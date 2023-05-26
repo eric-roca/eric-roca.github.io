@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Overview | Èric Roca Fernández</title>
+    <link>https://eric-roca.github.io/courses/macroeconomics/ramsey_government/</link>
+      <atom:link href="https://eric-roca.github.io/courses/macroeconomics/ramsey_government/index.xml" rel="self" type="application/rss+xml" />
+    <description>Overview</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 11 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://eric-roca.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Overview</title>
+      <link>https://eric-roca.github.io/courses/macroeconomics/ramsey_government/</link>
+    </image>
+    
+    <item>
+      <title>Households</title>
+      <link>https://eric-roca.github.io/courses/macroeconomics/ramsey_government/ramsey_government_households/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/macroeconomics/ramsey_government/ramsey_government_households/</guid>
+      <description>&lt;p&gt;We modify the household&amp;rsquo;s budget constraint to take into account the taxes they pay.
+It remains exactly the same as &lt;a href=&#34;%22../ramsey/Ramsey_Households.md%22&#34;&gt;before&lt;/a&gt;, except for the fact that less income is available for consumption:&lt;/p&gt;
+&lt;p&gt;$$k_{t+1} + c_{t} = w_{t} + r_{t}k_{t} + (1-\delta) k_{t} - \color{red}{T_{t}}. \tag{1, Budget Const.} \label{eq:budget}$$&lt;/p&gt;
+&lt;p&gt;Except for this modification, households still present the same utility formulation and maximise:&lt;/p&gt;
+&lt;p&gt;$$\max \sum_{t=0}^{\infty} \beta^{t} u(c_{t})$$
+$$\mathrm{s.t.} \quad k_{t+1} + c_{t} = w_{t} + r_{t} + (1-\delta) k_{t} - \color{red}{T_{t}}.$$&lt;/p&gt;
+&lt;p&gt;Building up the Lagrangian &lt;a href=&#34;%22../ramsey/Ramsey_Households.md#solving-the-household-s-problem%22&#34;&gt;(as in the basic case)&lt;/a&gt; leads to the following equation:&lt;/p&gt;
+&lt;p&gt;$$\mathcal{L} = \sum_{t=0}^{\infty} \beta^t u(c_{t}) + \sum_{t=0}^{\infty} \lambda_{t}(w_{t} + r_{t}k_{t} + (1-\delta)k_{t} - c_{t} - k_{t+1} - \color{red}{T_{t}}).$$&lt;/p&gt;
+&lt;p&gt;Despite the introduction of taxes $T_{t}$, the optimality conditions are exactly the same as before.
+Indeed, we introduced lump-sum taxes, and these do not affect optimality conditions, only allocations.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;Deriving and solving we obtain again the Euler equation:&lt;/p&gt;
+&lt;p&gt;$$\frac{\partial \mathcal{L}}{\partial c_{t}} = \beta^{t} u^{\prime}(c_{t}) - \lambda_{t}$$
+$$\frac{\partial \mathcal{L}}{\partial k_{t+1}} = - \lambda_{t} + \lambda_{t+1}(r_{t+1}+(1-\delta))$$&lt;/p&gt;
+&lt;p&gt;Setting both equal to zero to obtain the maximum, and combining the equations to get:&lt;/p&gt;
+&lt;p&gt;$$u^{\prime}(c_{t}) = \beta u^{\prime}(c_{t+1})(r_{t+1}+1-\delta).$$&lt;/p&gt;
+&lt;p&gt;As before, we shall also impose the Transversality condition, which remains unaltered:&lt;/p&gt;
+&lt;p&gt;$$\lim_{t \rightarrow \infty} \beta^{t}u^{\prime}(c_{t})k_{t+1} = 0.$$&lt;/p&gt;
+&lt;p&gt;It may seem that introducing government expenditures is innocuous: the Euler equation remains, market clearing will ensure that $r_{t} = f^{\prime}(k_{t})$ and $w_{t} = f(k_{t}) - f^{\prime}(k_{t}) k_{t}.$
+However, it changes the steady state equilibrium:
+households will consume less.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;From a mathematical perspective, we introduce a constant which has a nil derivative.
+Of course, the optimal allocation will be affected because less resources are available, but it &lt;em&gt;will not&lt;/em&gt; impact the optimal ratios.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Steady state</title>
+      <link>https://eric-roca.github.io/courses/macroeconomics/ramsey_government/ramsey_government_equilibrium/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/macroeconomics/ramsey_government/ramsey_government_equilibrium/</guid>
+      <description>&lt;p&gt;We close the model imposing market clearing.
+This affects the budget constraint:&lt;/p&gt;
+&lt;p&gt;$$\begin{eqnarray}
+k_{t+1}  = w_{t} + r_{t+1}k_{t} + (1-\delta)k_{t} - c_{t} - \color{red}{T_{t}}, &amp;amp; \\\
+w_{t}  = f(k_{t}) - f^{\prime}(k_{t})k_{t},&amp;amp; \\\
+r_{t}  = f^{\prime}(k_{t}). &amp;amp;
+\end{eqnarray}$$&lt;/p&gt;
+&lt;p&gt;Hence the dynamics for capital are now affected by public expenditures:&lt;/p&gt;
+&lt;p&gt;$$k_{t+1} = f(k_{t}) + (1-\delta)k_{t} - c_{t} - \color{red}{T_{t}}.$$&lt;/p&gt;
+&lt;p&gt;The inclusion of the term $T_{t}$ will impact the level of consumption &amp;mdash;and only consumption&amp;mdash; at the steady state.
+Indeed, we can compute it as we did before.
+From the Euler equation we have:&lt;/p&gt;
+&lt;p&gt;$$u^{\prime} (c_{t}) = \beta (f^{\prime}(k_{t+1}) + 1 - \delta)u^{\prime}(c_{t+1}).$$
+The budget constraint above determines the dynamics of capital.
+Setting $c_{t} = c_{t+1} = \bar{c}^\mathcal{Gov}$ and $k_{t} = k_{t+1}= \bar{k}^{\mathcal{Gov}}$ reveals the steady-state levels of capital and consumption:&lt;/p&gt;
+&lt;p&gt;$$1 = \beta( f^{\prime}(\bar{k}^{\mathcal{Gov}}) + 1 - \delta) \implies f^{\prime}(\bar{k}^\mathcal{Gov}) = \frac{1-\beta(1-\delta)}{\beta},$$
+$$\bar{c}^\mathcal{Gov} = f \left( \bar{k}^{\mathcal{Gov}} \right) - \delta \bar{k}^{\mathcal{Gov}} - \color{red}{G_{t}},$$
+where we have used $G_{t} = T_{t}.$&lt;/p&gt;
+&lt;p&gt;Two main comments are important here:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The $c$-locus is not affected, hence the steady-state level of capital remains the same,&lt;/li&gt;
+&lt;li&gt;The $k$-locus moves closer to the horizontal axis, because we subtract $G_{t} &amp;gt; 0$ from it.
+This implies that the steady-state level of consumption is reduced.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/ramsey_government/phase_diagram.webp&#34; alt=&#34;phase_diagram&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Changes in $G$</title>
+      <link>https://eric-roca.github.io/courses/macroeconomics/ramsey_government/ramsey_government_changing_g/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/macroeconomics/ramsey_government/ramsey_government_changing_g/</guid>
+      <description>&lt;p&gt;We focus now on how a change in $G_{t}$ affects the behaviour of the economy.
+We rely on the phase diagram for this analysis: it conveys the message quite efficiently.
+In what follows, we assume that the economy is at its steady-state level $(\bar{k}^{\mathcal{Gov}}, \bar{c}^{\mathcal{Gov}})$ when the government decides to change $G_t.$
+Furthermore, we assume taxes are constant at some level $G_{t} = G_{1} &amp;gt; 0.$&lt;/p&gt;
+&lt;h2 id=&#34;un_perm&#34;&gt;Unexpected, permanent rise in $G$&lt;/h2&gt;
+&lt;p&gt;Suppose that the government announces a &lt;em&gt;sudden and unexpected&lt;/em&gt; increase in $G: G_{2} &amp;gt; G_{1}.$
+The Ramsey model illustrates the consequences of such a change.&lt;/p&gt;
+&lt;p&gt;First, we assumed that the economy was at its steady state.
+The change in $G$, as we discussed before, moves the $k$-locus closer to the horizontal axis.&lt;/p&gt;
+&lt;p&gt;With the change in $G$, a new steady state emerges.
+The steady-state capital level $\bar{k}^\mathcal{Gov}(G_2) = \bar{k}^\mathcal{Gov}(G_{1})$ remains the same.
+However, households need to adjust their consumption level.
+Otherwise, they would &lt;em&gt;not&lt;/em&gt; be on the saddle path, and they would follow a diverging trajectory leading to zero consumption.
+The unique possibility that puts the economy in the new steady state is for consumption to jump directly into it.
+This is, consumption must be reduced by the amount $\Delta_{G} = G_{2} - G_{1}.$
+Thus the size of the immediate fall in consumption is equal to the full amount of the increase in government purchases, and the &lt;strong&gt;capital stock and the real interest rate are unaffected&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;A similar policy under the Solow model would have implied a smaller reduction in consumption.
+In Solow, consumption is the fraction $1-s$ of current income.
+The tax decreases current income by $G$, but consumption would only change by $(1-s)G &amp;lt; G.$
+Hence, the remaining part of the increase in $G$ is absorbed by a reduction in investments of the size $sG$: &lt;em&gt;government purchases crowd out investment in the Solow model.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/ramsey_government/permanent_increase.webp&#34; alt=&#34;permanent_increase&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;un_temp&#34;&gt;Unexpected, temporary rise in $G$&lt;/h2&gt;
+&lt;p&gt;Different from before, suppose that the increase in $G$ is only temporary, starting at $t=t_{0}$ and lasting until $t=t_{1}.$
+We still suppose that the increase in taxes is unexpected.
+One possibility is to first jump to the new steady state, remain there while taxes are high, and at time $t=t_{1}$ jump back to the original steady state.
+However, this implies two discontinuities in consumption: the first and second jumps.
+This would imply that marginal utility falls discontinuously and this is not optimal.&lt;/p&gt;
+&lt;p&gt;There is a second possibility.
+First, decrease consumption by a smaller amount than before: $\Delta_{c} &amp;lt; \Delta_{G}.$
+This implies that the economy is &lt;em&gt;not&lt;/em&gt; in the new steady state $(\bar{k}^\mathcal{Gov}(G_2) , \bar{c}^{\mathcal{Gov}}(G_{2}))$, but above it.
+Thus, it is subject to the dynamics implied by the phase diagram: capital decreases and consumption increases.
+The initial jump in consumption must be carefully computed such that, at time $t=t_{1}$, the dynamics implied by $G_{2}$ put the economy on the saddle path of $G_{1}.$
+This is, the economy undergoes a transition such that, at $t=t_{1}$ when taxes and dynamics &amp;mdash;and the phase diagram&amp;mdash; return to the original  configuration, the economy is on its saddle path.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/ramsey_government/temp_increase.webp&#34; alt=&#34;temporary_increase&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The figure above depicts in black the original $k$-locus &amp;mdash;for $G=G_{1}$&amp;mdash; and in red the temporary one while with $G=G_{2}.$
+The economy first jumps from the initial steady state $(\bar{k}^{\mathcal{Gov}}(G_{1}), \bar{c}^{\mathcal{Gov}}(G_{1}))$ following the black arrow.
+From then onwards, the dynamics of the red $k$-locus determine the trajectory of the economy.
+In particular, it moves north-west following the orange curve.
+The initial jump is calculated in such a way that at $t=t_{1}$ the economy is on the saddle path corresponding to $G=G_{1}.$
+From there, it simply follows the saddle path towards the steady state $(\bar{k}^{\mathcal{Gov}}(G_{1}), \bar{c}^{\mathcal{Gov}}(G_{1})).$&lt;/p&gt;
+&lt;p&gt;During the transition, households reduce capital to sustain a higher and increasing level of consumption that would not be possible with $G_{2} &amp;gt; G_{1}.$
+From $t=t_{1}$, consumption continues to grow, but capital starts accumulating again.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/ramsey_government/temp_increase_2.webp&#34; alt=&#34;temporary_increase_2&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;The change in consumption during $t=t_{0}$ is directly proportional to the length of the increase in taxes.
+The longer it is, the closer the economy jumps to the steady state $(\bar{k}^{\mathcal{Gov}}(G_{2}), \bar{c}^{\mathcal{Gov}}(G_{2})).$
+However, it never reaches it: households always decrease their savings, which allows them to later be on the saddle path when taxes go back to $G_{1}.$&lt;/p&gt;
+&lt;h2 id=&#34;anticipated-permanent-rise-in-g&#34;&gt;Anticipated, permanent rise in $G$&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; when analysing an &lt;em&gt;anticipated&lt;/em&gt; measure, start from the end move backwards.&lt;/p&gt;
+&lt;p&gt;Suppose that at time $t=t_{0}$ the government announces that at time $t=t_{1}$ taxes will permanently increase.&lt;/p&gt;
+&lt;p&gt;One possibility is to mimic the [unanticipated, permanent change](&amp;lt;{{ ref &amp;ldquo;#un_perm&amp;rdquo; &amp;gt;}}): remain at the original steady state $(\bar{k}^\mathcal{Gov}(G_{0}), \bar{c}^\mathcal{Gov}(G_{0}))$ until $t_{1}$, and then jump onto the new steady state.
+However, this represents a large cost in terms of utility: non-smooth changes penalise utility.&lt;/p&gt;
+&lt;p&gt;Instead, households will slightly decrease consumption at $t_{0}$.
+The dynamics of the $(\bar{k}^\mathcal{Gov}(G_{0}), \bar{c}^\mathcal{Gov}(G_{0}))$ steady state will move the economy south-east: consumption decreases while capital increases.
+The first initial jump at $t_{0}$ must be such that, at $t_{1}$ the economy is on the saddle path corresponding to the new steady state $(\bar{k}^\mathcal{Gov}(G_{1}), \bar{c}^\mathcal{Gov}(G_{1})).$&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/ramsey_government/permanent_increase.webp&#34; alt=&#34;perm_an&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Hence, during the transition, consumption continuously falls, but smoothly.
+Capital, instead, first accumulates and decreases from $t_{1}$ onwards.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/ramsey_government/perm_an_increase_2.webp&#34; alt=&#34;perm_an2&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;anticipated-temporary-rise-in-g&#34;&gt;Anticipated, temporary rise in $G$&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; when analysing an &lt;em&gt;anticipated&lt;/em&gt; measure, start from the end move backwards.&lt;/p&gt;
+&lt;p&gt;Finally, suppose that the increase in $G$ is temporary.
+At time $t=t_{0}$ the government announces that at time $t=t_{1}$ taxes will increase from $G_{0}$ to $G_{1}.$
+The new tax regime will apply for some time, until $t=t_{2}$ when taxes will return to their original level $G_{0}.$&lt;/p&gt;
+&lt;p&gt;In that case households can decide to follow the same strategy as in an &lt;a href=&#34;#un_temp&#34;&gt;unanticipated, temporary increase&lt;/a&gt;.
+However, it entails a relatively large adjustment in terms of consumption at time $t=t_{1}$, when the new policy becomes effective.
+Instead, households can take advantage of the anticipation in the announcement:
+decrease the consumption at the announcement time $t=t_{0}$ by a relatively small amount.
+This places households on the black arrow trajectory, since the economy is still governed by the $(\bar{k}^\mathcal{Gov}(G_{0}), \bar{c}^\mathcal{Gov}(G_{0}))$-locus.
+In that case, though, the change in consumption is such that, when the new tax policy becomes effective, consumption follows the orange arrow.
+Finally, timing is again crucial because at time $t=t_{2}$ the economy must be on the saddle path that corresponds to the initial steady state: $(\bar{k}^\mathcal{Gov}(G_{0}), \bar{c}^\mathcal{Gov}(G_{0})).$&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/ramsey_government/temp_an_increase.webp&#34; alt=&#34;an_temp_inc&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;In that case, between $t_{0}$ and $t_{1}$, households decrease consumption and save.
+Between $t_{1}$ and $t_{2}$ first consumption continues to decrease and so does capital, but eventually consumption rises while capital continues to decrease.
+Finally, from $t_{2}$ onward, both capital and consumption rise along the saddle path.
+Note that, although consumption decreases, it does so continuously except for the initial jump.
+This consumption-smoothing decreases utility less than a discontinuous jumps.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/ramsey_government/temp_an_increase_2.webp&#34; alt=&#34;an_temp_inc&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
