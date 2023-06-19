@@ -2172,6 +2172,361 @@ $$\frac{w}{r} = \frac{1-\alpha}{\alpha} \left(\frac{K}{L} \right)^{1-\rho}.$$&lt
     </item>
     
     <item>
+      <title>Époques dans le modèle unifié de croissance économique</title>
+      <link>https://eric-roca.github.io/courses/comparative_development/comparative_development_epochs/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/comparative_development/comparative_development_epochs/</guid>
+      <description>&lt;h2 id=&#34;la-théorie-unifiée-de-la-croissance-économique&#34;&gt;La théorie unifiée de la croissance économique&lt;/h2&gt;
+&lt;p&gt;L&amp;rsquo;évolution des variables qu&amp;rsquo;intégrent le modèle générent trois grandes époques selon sa valeur: époque Malthusienne, époque post-Malthusienne et époque moderne.
+Chacune des époque se caractérise une combinaison particulier des variables (ou des dynamiques des variables) sous-jacentes suivantes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fertilité et sa relation avec le revenu per capita (positive ou negative).&lt;/li&gt;
+&lt;li&gt;Investissement dans l&amp;rsquo;éducation (positive ou zéro).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Enfin, il faut signaler que chaque époque a une durée temporelle différente.
+Ainsi, l&amp;rsquo;époque Malthusienne est la plus longue, prenant dès l&amp;rsquo;apparition des êtres humains modernes jusqu&amp;rsquo;à le 18è siècle pour les pays développés.
+Ensuite, l&amp;rsquo;époque post-Malthusienne prend les siècles 18è et 19è, et à partir de ce point là, on entre dans l&amp;rsquo;époque moderne.
+Enfin, avant d&amp;rsquo;entrer dans le détail, il est nécessaire de décrire le rôle de l&amp;rsquo;éducation dans le modèle.&lt;/p&gt;
+&lt;h3 id=&#34;éducation-et-capital-humain-dans-le-modèle-unifié-de-croissance-économique&#34;&gt;Éducation et capital humain dans le modèle unifié de croissance économique&lt;/h3&gt;
+&lt;p&gt;Dans le modèle unifié de croissance économique, les parents investissent dans l&amp;rsquo;éducation des enfants parce qu&amp;rsquo;ils attirent de l&amp;rsquo;utilité de leur niveau de capital humain, et celui-là est fortement influencé par le niveau d&amp;rsquo;éducation.
+L&amp;rsquo;hypothèse que les parents préférent avoir des enfants éduqués est una maniẽre simple et typique de représenter des préférences plus complexes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Les parents s&amp;rsquo;intéressent au futur salaire des enfants, et le salaire augmente avec le niveau éducatif.&lt;/li&gt;
+&lt;li&gt;Les parents ont une simple préférence pour l&amp;rsquo;éducation,&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Une nouveauté de la théorie unifiée de la croisance économique est qu&amp;rsquo;elle introduit la possibilité que le capital humain se déprecie, et la vitesse de la dépréciation est une fonction du niveau technologique (voir en dessous).
+En plus, on suppose que tous les enfants sont équipés d&amp;rsquo;un certain niveau de capital humain, même si leurs parents n&amp;rsquo;investissent pas dans l&amp;rsquo;éducation.
+Ces deux hypothèses, innocentes en principe, ont des profondes consequénces sur l&amp;rsquo;évolution de l&amp;rsquo;éducation.&lt;/p&gt;
+&lt;h4 id=&#34;dépreciation-du-capital-humain&#34;&gt;Dépreciation du capital humain&lt;/h4&gt;
+&lt;p&gt;La prèmiere hypothèse peut s&amp;rsquo;expliquer de la manière suivante.
+Imaginons une société dans laquelle le niveau technologique est faible et ne change pas.
+Alors, tout ce qu&amp;rsquo;on apprend pendant la jeunesse (un métier, par exemple) va rester utile tout la vie.
+Par exemple, si on apprend à utiliser une scie ou un marteu, ces connaissances restent valides autant que les outils ne changent pas.
+Pour tant, éduquer les enfants n&amp;rsquo;apporte des avantages, car la technologie va rester la même.
+Par contre, si maintenant on suppose que la technologie change rapidement, il est possible que les outils de demain ne soient pas une scie et un marteu, mais une scie controlée par ordinateur et un marteau pnéumatique.
+Dans ce cas-là, les connaisances acquises pendant la jeunesse sont vite dépassées, et pour tant, si on fournie aux enfants de l&amp;rsquo;éducation ils seront mieux équipés pour s&amp;rsquo;adapter à la nouvelle situation.
+Ainsi, les parents doivent procurer à leurs enfants de l&amp;rsquo;éducation pour amortir la dépréciation du capital humain dû au progrès technique.&lt;/p&gt;
+&lt;h4 id=&#34;niveau-minimal-de-capital-humain&#34;&gt;Niveau minimal de capital humain&lt;/h4&gt;
+&lt;p&gt;Comment on a dit auparavent, il est raisonable que même sans un investissement exprès en capital humain, un certain niveau est toujours atteint.
+Par exemple, on apprend certaines choses, y compris des métiers, par la simple observation.&lt;/p&gt;
+&lt;h4 id=&#34;implications&#34;&gt;Implications&lt;/h4&gt;
+&lt;p&gt;Les implications de ces hypothèses sont claires:
+vu que les enfants sont équipés d&amp;rsquo;un niveau minimum de capital humain, et vu qu&amp;rsquo;avec un faible progrès technologique l&amp;rsquo;éducation n&amp;rsquo;est pas nécéssaire, les investissements en éducation ne deviendran positifs qu&amp;rsquo;avec le temps.
+Autrement dit, quand les ressources sont peu abondantes, les parents préférent les affecter à la nourriture et au nombre d&amp;rsquo;enfants plutôt qu&amp;rsquo;à l&amp;rsquo;éducation.
+Seulement à partir d&amp;rsquo;un certain niveau de richesse (l&amp;rsquo;éducation est un bien de luxe dans ce modèle) ou de progrès technologique il y aura des investissements dans l&amp;rsquo;éducation.&lt;/p&gt;
+&lt;h3 id=&#34;changement-technologique&#34;&gt;Changement technologique&lt;/h3&gt;
+&lt;p&gt;Pour finir, le modèle postule que la technologie avance grâce à deux effets:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;D&amp;rsquo;un côté, on suppose que les gens ont, de manière aléatoire, des nouvelles idées qui augmentent le niveau technologique.
+Ainsi, une population plus large aura une nouvelle idée avec une plus grande probabilité, et pour tant, l&amp;rsquo;avancement technologique sera plus important.&lt;/li&gt;
+&lt;li&gt;De l&amp;rsquo;autre côté, l&amp;rsquo;investissement dans l&amp;rsquo;éducation pousse le niveau technologique, car les gens avec plus de connaissances ont plus de probabilité d&amp;rsquo;inventer et innover.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;époque-malthusienne&#34;&gt;Époque Malthusienne&lt;/h2&gt;
+&lt;p&gt;Cette période représente la plus longue durée du modèle et comprend le temps entre l&amp;rsquo;apparition des êtres humains modernes (&lt;em&gt;homo sapiens&lt;/em&gt;) il y a environ 100 000 ans jusqu&amp;rsquo;à debout du 18è siècle.
+L&amp;rsquo;époque Malthusienne se caractérise par le nul effet des développements technologiques sur le revenu per capita.
+C&amp;rsquo;est-à-dire, les améliorations technologiques permettant de produir davantage n&amp;rsquo;ont aucun effet sur le niveau de revenu per capita.
+Or, pendant cette période, la production addionelle était dédiée à augmenter la fertilité: les familles avaient plus d&amp;rsquo;enfants.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
+Ainsi, pendant l&amp;rsquo;époque Malthusienne, les sociétés les plus technologiquement développées ne montraient pas un revenu per capita plus élevé mais une plus grande densité de population.&lt;/p&gt;
+&lt;p&gt;Ce type de dynamique qui génére une augmentation de la population avec chaque progrès technique peuvent se répresenter à l&amp;rsquo;aide des préférances inclouant un niveau de consommation minimale.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;
+Ce niveau doit toujours être atteint.
+Or, chaque fois que la technologie s&amp;rsquo;améliore (de manière aléatoire), les revenus disponibles additionnels seront utilisés pour augmenter le nombre d&amp;rsquo;enfants.
+Le graphique suivant illustre la situation:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/comparative_development/expansion_path.webp&#34; alt=&#34;expansion_path&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+Quand le revenu per capita est faible, sans la restriction de consommation minimale (ligne verte), les familles souhaiteraient consommer peu.
+Mais elles sont obligées de consommer, au moins, la consommation minimale, donc l&amp;rsquo;optimum passe à être la combinaison de consommation minimale et le nombre d&amp;rsquo;enfants qui elles peuvent se permettre considérant le coût de chaque enfant: $y = c + \rho y n \implies n = \frac{y-c}{\rho y}.$
+En tout moment, la technologie peut améliorer, grâce au fait que la population augmente.
+Ainsi, quand cela arrive, le revenu per capita augmente (la restriction budgétaire &amp;ndash;orange&amp;ndash; se déplace vers la droite).
+Or, tandis que la consommation minimale soit une contrainte contraignante, la décision optimale continue d&amp;rsquo;être: consommer le minimum et utiliser ce qui reste pour avoir des enfants.
+Le graphique montre ça avec les points rouges qui sont toujours sur la ligne de consommation minimale (verte) mais chaque fois plus en hauteur.
+Ainsi, chaque fois la population augmente plus rapidement, et cela contribue à faire avancer la technologie plus rapidement.&lt;/p&gt;
+&lt;h3 id=&#34;conclusions-de-lépoque-malthusienne&#34;&gt;Conclusions de l&amp;rsquo;époque Malthusienne&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Corrélation positive entre:
+&lt;ul&gt;
+&lt;li&gt;Technologie et densité de population&lt;/li&gt;
+&lt;li&gt;Productivité agricole et densité de population&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Pas de corrélation entre:
+&lt;ul&gt;
+&lt;li&gt;Revenu per capita et technologie&lt;/li&gt;
+&lt;li&gt;Revenu per capita et productivité agricole&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Les pays les plus avancés du point vue technologique et les plus productives:
+&lt;ul&gt;
+&lt;li&gt;Densité de population supérieure&lt;/li&gt;
+&lt;li&gt;Pas de différence en revenu per capita.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;validation&#34;&gt;Validation&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://eric-roca.github.io/papers/Ashraf_and_Galor__2011.pdf&#34;&gt;Ashraf et Galor (2011)&lt;/a&gt; vérifient la validité des conclusions pour l&amp;rsquo;époque Malthusienne.&lt;/p&gt;
+&lt;p&gt;D&amp;rsquo;abord, ils montrent comment les pays qui ont du terrain plus adapté pour l&amp;rsquo;agriculture ont atteint une plus grande densité de population vers l&amp;rsquo;année 1500 mais que les gens ne jouissaient pas de plus de revenu per capita.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/comparative_development/land_density.webp&#34; alt=&#34;land_density&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/comparative_development/land_income.webp&#34; alt=&#34;land_income&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Ensuite, ils se centrent sur le lien entre technologie, densité de population et revenu per capita.
+L&amp;rsquo;enjeu dans ce cas est le fait que la taille de la population influence la technologie, et donc il faut être attentif du point vue économétrique.
+Pour résoudre le problème, Ashraf et Galor approximent le niveau technologique par le nombre d&amp;rsquo;années qui se sont passées depuis la révolution Néolithique: c&amp;rsquo;est-à-dire, les années qui se sont passées dès qu&amp;rsquo;une société adoptait l&amp;rsquo;agriculture.
+L&amp;rsquo;idée de base (prise de &lt;a href=&#34;https://www.nationalgeographic.com/science/article/news-guns-germs-steel-jared-diamond-interview&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Jared Diamond (1997)&lt;/a&gt;) indique que les sociétés qui ont adopté l&amp;rsquo;agriculture pouvait produire d&amp;rsquo;avantage par rapport aux chasseurs cueilleurs, et donc, généraient un surplus de ressources.
+Ces ressources excédentaires permettaient qu&amp;rsquo;une partie de la population était dédiée à des taches non productrices de nourriture qui ont développé le langage écrit, la science, etc.
+En premier lieu, ils montrent que les pays et régions qui se sont passées à l&amp;rsquo;agriculture plus tôt, ont eu un avantage technologique qui se montre dans toute une série de variables qui mesurent le niveau technologique:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/comparative_development/ashraf_galor__2011_Table_1.webp&#34; alt=&#34;Table_1&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Enfin, ils montrent qu&amp;rsquo;effectivement, les pays avec plus de technologie avait plus de densité de population pendant l&amp;rsquo;année 1500 mais pas plus de revenu per capita.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/comparative_development/neolithic_density.webp&#34; alt=&#34;neolithic_density&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/comparative_development/neolithic_income.webp&#34; alt=&#34;neolithic_income&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/comparative_development/ashraf_galor__2011_Table_5.webp&#34; alt=&#34;Table_5&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;époque-post-malthusienne&#34;&gt;Époque post-Malthusienne&lt;/h2&gt;
+&lt;p&gt;Enfin, on arrive à une situation dans laquelle la contrainte de consommation minimale n&amp;rsquo;est plus contraignante: à partir de ce point-là, les familles décident d&amp;rsquo;avoir un nombre constant d&amp;rsquo;enfants et utiliser tout le revenu qui reste pour financer leur consommation.
+Cette deuxième période est caractérisée par le fait que la technologie avance plus rapidement grâce a l&amp;rsquo;augmentation de la population qui a eu lieu pendant l&amp;rsquo;époque Malthusienne.
+Par contre, le niveau de revenu per capita est encore insuffisant pour permettre les investissements en éducation.
+Enfin, le trait distinctif du la période post-Malthusienne est l&amp;rsquo;avancement du revenu per capita.
+En effet, le nombre d&amp;rsquo;enfants par parent reste constant, comme à la fin de la période Malthusienne, car les parents n&amp;rsquo;investissent encore en éducation.
+Par contre, comme la technologie ne cesse d&amp;rsquo;augmenter, la seule conclusion possible est que le revenu per capita doit augmenter aussi.&lt;/p&gt;
+&lt;p&gt;Pour tant, ce passage de l&amp;rsquo;époque Malthusienne à l&amp;rsquo;époque post-Malthusienne peut générer déjà différences de revenu per capita entre pays et régions.
+Par exemple, les pays qui, pour une raison ou une autre ont fini plus tôt leur époque Malthusienne verront leur revenu per capita augmenter, tandis que ces qui restent encore dans le système Malthusien montrent un niveau de revenu per capita qui est constant au long du temps.&lt;/p&gt;
+&lt;h3 id=&#34;validation-1&#34;&gt;Validation&lt;/h3&gt;
+&lt;p&gt;Selon la discussion au-dessous, les pays qui ont commencé leur transition démographique plus tôt, devront montrer un plus haut niveau de revenu per capita.
+Or, ce lien devrait exister, car il y a des avantages liés à une transition démographique précoce: le revenu per capita augmente depuis plus long temps.
+&lt;a href=&#34;https://eric-roca.github.io/papers/Galor__2012.pdf&#34;&gt;Galor, 2012&lt;/a&gt; montre que c&amp;rsquo;est le cas:&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/comparative_development/demographic_income.webp&#34; alt=&#34;demographic_income&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;époque-moderne&#34;&gt;Époque moderne&lt;/h2&gt;
+&lt;p&gt;Rappelons que le niveau technologique n&amp;rsquo;a pas cessé d&amp;rsquo;augmenter pendant la période post-Malthusienne.
+La technologie ait tellement avancé que les parents décident qu&amp;rsquo;il est nécessaire d&amp;rsquo;investir dans l&amp;rsquo;éducation pour éviter que le capital humain de leurs enfants se déprécie.
+Ainsi, éventuellement, le niveau technologique atteint la valeur critique à partir de laquelle les parents sont prêts à investir en éducation.
+Autrement, il serait possible que le revenu per capita soit suffisamment élevé pour que les parents décident investir en éducation (selon Galor, l&amp;rsquo;évidence empirique n&amp;rsquo;est pas d&amp;rsquo;accord avec cette idée).
+En tout cas, la conclusion est la même: en époque moderne, les parents décident d&amp;rsquo;investir en éducation.
+Cela entraine un effet direct:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Le coût de chaque enfant a augmenté, car maintenant on leur fournit de l&amp;rsquo;éducation.
+Pour tant, les familles décident d&amp;rsquo;avoir moins d&amp;rsquo;enfants mais de leur offrir plus d&amp;rsquo;éducation.
+On appelle à ce trade-off le &amp;ldquo;quality-quantity trade-off&amp;rdquo;: les familles échangent nombre d&amp;rsquo;enfants contre qualité des enfants.
+En plus, comme le coût des enfants est proportionnelle au revenu per capita, à mesure que celui augmente, les familles ont moins d&amp;rsquo;enfants.
+&lt;ul&gt;
+&lt;li&gt;On observe, pour tant, une corrélation &lt;strong&gt;négative&lt;/strong&gt; entre revenu et nombre d&amp;rsquo;enfants.&lt;/li&gt;
+&lt;li&gt;On appelle à ce procès la &amp;ldquo;transition démographique&amp;rdquo;.
+En plus, maintenant que les enfants reçoivent éducation, la technologie augmente encore plus rapidement.
+En effet, la taille de la population cesse d&amp;rsquo;être la variable principale qui détermine la vitesse à laquelle la technologie avance, et l&amp;rsquo;éducation prend le relai.
+Enfin, la combinaison d&amp;rsquo;une population qui augmente plus lentement et une technologie qui s&amp;rsquo;améliore plus rapidement implique que le revenu per capita augmente de manière soutenue.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;conclusions-de-lépoque-moderne&#34;&gt;Conclusions de l&amp;rsquo;époque moderne&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Corrélation positive entre:
+&lt;ul&gt;
+&lt;li&gt;Revenu per capita et dépense en éducation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Corrélation négative entre:
+&lt;ul&gt;
+&lt;li&gt;Revenu per capita et fertilité&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;la-théorie-unifiée-de-la-croissance-économique-unifié-et-les-inégalités-économiques&#34;&gt;La théorie unifiée de la croissance économique unifié et les inégalités économiques&lt;/h2&gt;
+&lt;p&gt;La théorie unifiée de la croissance économique propose un nouveau paradigme de croissance économique qui comprend l&amp;rsquo;entérite de l&amp;rsquo;histoire humaine.
+De manière résumée, les facteurs principaux derrière la croissance économique sont l&amp;rsquo;évolution de la technologie et la demande de capital humain.
+Ainsi, on peut penser que tout facteur qui donne un avantage en relation à ces deux éléments, est capable de générer des différences économiques entre régions.
+Voici quelques exemples que nous allons voir en cours:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Géographie:
+&lt;ul&gt;
+&lt;li&gt;Conditions bio-géographiques conduisant à la révolution Néolithique (Diamond, 1997)&lt;/li&gt;
+&lt;li&gt;Maladies, espérance de vie et investissement en capital humain (Andersen, Dalgaard et Selaya, 2012)&lt;/li&gt;
+&lt;li&gt;Culture conduisant à l&amp;rsquo;innovation (Özak, 2018)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Caractéristiques transmisses intergénérationalement:
+&lt;ul&gt;
+&lt;li&gt;Préférence vers le présent et le futur (Galor et Özak, 2016)&lt;/li&gt;
+&lt;li&gt;Diversité (Ashraf et Galor, 2013)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Colonialisme:
+&lt;ul&gt;
+&lt;li&gt;Frontières artificielles (Papaioannou et Michalopoulos, 2012)&lt;/li&gt;
+&lt;li&gt;Esclavage (Nunn, 2008)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Soit les familles avaient plus d&amp;rsquo;enfants, soit les enfants avaient une plus grande probabilité de survie.
+En tout cas, la taille de la population augmentait.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;Dans le modèle, les préférences des parents incluent le niveau de capital humain des enfants.
+Comme en époque Malthusienne les parents n&amp;rsquo;investissent pas dans l&amp;rsquo;éducation nous ignorons cette composante de l&amp;rsquo;utilité des parents.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Intertemporal equilibrium</title>
       <link>https://eric-roca.github.io/courses/macroeconomics/ramsey/ramsey_intertemporal_equilibrium/</link>
       <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
@@ -2205,6 +2560,412 @@ Finally, the transversality condition allows us to pick a non-explosive path.&lt
 \right\} \tag{8.1, Equilibrium} \label{eq:equilibrium2}$$&lt;/p&gt;
 &lt;p&gt;\ref{eq:equilibrium2} is a two-dimensional dynamic system with a unique predetermined state variable: $k_{t}.$
 To analyse it, we first compute its steady state and then check the dynamics.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>L&#39;hypothèse de Diamond</title>
+      <link>https://eric-roca.github.io/courses/comparative_development/papers/diamond__1997/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/comparative_development/papers/diamond__1997/</guid>
+      <description>&lt;h2 id=&#34;lhypothèse-de-jared-diamond-1997-guns-germs-and-steelhttpscatalogue-buucafrpermalink33clermont_bciu1eua77oalma991003631849704411&#34;&gt;L&amp;rsquo;hypothèse de Jared Diamond (1997): &lt;a href=&#34;https://catalogue-bu.uca.fr/permalink/33CLERMONT_BCIU/1eua77o/alma991003631849704411&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Guns, Germs and Steel&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Selon Jared Diamond (1997), derrière les inégalités entre pays on trouve certains facteurs qui se sont déclenchés pendant la révolution Néolithique, c&amp;rsquo;est-à-dire, à partir de l&amp;rsquo;adoption de l&amp;rsquo;agriculture.
+Or, pour comprendre pourquoi y a-t-il des régions développées et en développement, il faut connaître pourquoi l&amp;rsquo;agriculture est apparue et adoptée dans certaines régions du monde tandis qu&amp;rsquo;autres ont continué à obtenir leurs calories parmi la chasse et la récollection des fruits.&lt;/p&gt;
+&lt;h3 id=&#34;chasseurs-cueilleurs-vs-agriculture&#34;&gt;Chasseurs cueilleurs vs agriculture&lt;/h3&gt;
+&lt;p&gt;Aujourd&amp;rsquo;hui, quelques groupes ethniques continuent à vivre comme les chasseurs cueilleurs.
+Ces populations montrent très peu de différences entre habitants: ils reçoivent plus ou moins la même quantité de nourriture et ils participent aux différentes activités.
+Notamment, c&amp;rsquo;est qui est important est la &lt;strong&gt;manque&lt;/strong&gt; d&amp;rsquo;un groupe de personnes complètement détachés des activités liées à la production (de nourriture).&lt;/p&gt;
+&lt;p&gt;Opposé à cette situation, on trouve les sociétés agricoles.
+C&amp;rsquo;est que distingue les unes des autres est la productivité du travail: avec la maîtrise de l&amp;rsquo;agriculture, la productivité marginale du travail (en termes de calories) augmente, c&amp;rsquo;est qui permet qu&amp;rsquo;une partie de la population soit détachée de l&amp;rsquo;agriculture.
+Ainsi, les sociétés agricoles produissent les calories nécessaires pour la survie de toute la population avec moins de fermiers.
+La plus grande productivité leur permet de générer un surplus qu&amp;rsquo;est utilisé pour nourrir aux non fermiers: les bureaucrates, prêtres, savants, penseurs, etc.
+À noter que les activités des non-fermiers sont de nature mentale.
+L&amp;rsquo;exercice de ces activités facilite l&amp;rsquo;invention de l&amp;rsquo;écriture, la pensée scientifique (mathématique, géométrie, astronomie, etc.) et le développement technologique.
+Enfin, comme le passage vers l&amp;rsquo;agriculture a lieu en époque Malthusienne, il est possible d&amp;rsquo;argumenter que les premières sociétés à l&amp;rsquo;adopter ont un avantage car ces sociétés accumuleront technologie davantage, produiront plus et augmenteront la population, fait que renforce le développement technologique en un cercle vertueux.&lt;/p&gt;
+&lt;h3 id=&#34;lapparition-de-lagriculture&#34;&gt;L&amp;rsquo;apparition de l&amp;rsquo;agriculture&lt;/h3&gt;
+&lt;p&gt;Selon les données archéologiques, l&amp;rsquo;agriculture a apparu en multiples occasions à travers le monde avec une variation temporelle.
+Après chaque invention originale, elle s&amp;rsquo;est rependue aux alentours.
+Les premières traces d&amp;rsquo;agriculture (&lt;a href=&#34;https://eric-roca.github.io/papers/Price_and_Bar-Yousef__2011.pdf&#34;&gt;Price et Bar-Yousef (2011)&lt;/a&gt;) apparaissent au croissant fertile (10 000 BP) et en Amérique centrale (10 000 - 8 000 BP), en Chine (8 000 BP), en Amérique du Sud (8 000 BP - 6 000 BP), Nouvelle Guinée (7 000 BP), Inde, Amérique du Nord et Afrique équatoriale (4 000 BP - 2 000 BP).&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/comparative_development/origins_agriculture.webp&#34; alt=&#34;origins_agriculture&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Ensuite, l&amp;rsquo;agriculture s&amp;rsquo;est rependu aux régions limitrophes des zones originales.
+La dispersion de l&amp;rsquo;agriculture depuis les zones originales n&amp;rsquo;était pas homogène et dépendait de facteurs géographiques.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Climat favorable similaire à l&amp;rsquo;original.
+Un climat proche ã celui des zones de première agriculture assure que les plantes poussent, et donc, il est plus probable que l&amp;rsquo;agriculture soit adopté de manière préférentielle en zones qui partagent un climat similaire.
+&lt;ul&gt;
+&lt;li&gt;Le climat est similaire le long d&amp;rsquo;une même latitude.
+Pour tant, il est plus facile que l&amp;rsquo;agriculture se répand dans un continent avec orientation est ouest que dans un continent à orientation nord sud.
+Par exemple, le riz africain aurait pu se cultiver dans le climat méditerranéen de l&amp;rsquo;Afrique du Sud.
+Mais une vaste zone tropicale sépare le Nord du Sud de l&amp;rsquo;Afrique, avec un climat complètement différent et inhospitalier pour le riz.
+C&amp;rsquo;est pareil pour le tournesol, native d&amp;rsquo;Amérique du Nord et qui aurait pu être cultivé en région Andine.
+Malheureusement, entre les deux il y a toute une gamme de climats différents qui rend plus difficile son expansion.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Barrières physiques:
+Les sèment ne se répandissent pas automatiquement: il faut les transporter.
+Un facteur qui facilite l&amp;rsquo;expansion de l&amp;rsquo;agriculture sur le plan géographique est la possibilité de franchir grandes distances de manière facile.
+C&amp;rsquo;est le cas, par exemple, en Europe continentale et l&amp;rsquo;est de l&amp;rsquo;Asie, avec des grandes plaines.
+Par contre, en Californie, l&amp;rsquo;agriculture a pris du temps à se développer, ce qui peut paraitre étonnant car en même latitude mais à l&amp;rsquo;est du continent, ou moins quatre plates ont été domestiqués 4 000 BP.
+Mais, le centre les États-Unis est une région sèche, avec des déserts et grandes chaînes de montagnes, qui font plus difficile la transmission de l&amp;rsquo;agriculture.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;les-effets-dune-agriculture-précoce&#34;&gt;Les effets d&amp;rsquo;une agriculture précoce&lt;/h3&gt;
+&lt;h4 id=&#34;densité-de-population-technologie-et-revenu&#34;&gt;Densité de population, technologie et revenu&lt;/h4&gt;
+&lt;p&gt;Selon le modèle unifié de croissance économique (et selon Diamond), les régions qui ont adopté en premier l&amp;rsquo;agriculture ont eu un avantage sur les autres.
+Ainsi, la productivité additionnelle due à l&amp;rsquo;agriculture aurait permis deux choses:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Augmenter la population: on devrait observer une plus grande densité de population en zones agricoles.&lt;/li&gt;
+&lt;li&gt;Permettre l&amp;rsquo;existence d&amp;rsquo;une classe de non fermiers qui peuvent développer la technologie.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ashraf et Galor (2011) vérifient ces points, montrant qu&amp;rsquo;en effet, les régions qui développèrent avant l&amp;rsquo;agriculture présentent une plus grande densité de population pendant la période Malthusienne et, aussi, un plus grand avancement technologique.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/comparative_development/ashraf_galor__2011_Table_1.webp&#34; alt=&#34;Table_1&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Par contre, et en accord avec la théorie, les régions précoces en agriculture n&amp;rsquo;auraient pas éteint plus de revenu per capita en époque Malthusienne.
+Rappelons que, selon le modèle unifié de croissance économique, en époque Malthusienne plus de revenu se traduit par une plus grande densité de population et non par plus de revenu per capita.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/comparative_development/ashraf_galor__2011_Table_5.webp&#34; alt=&#34;Table_5&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h4 id=&#34;densité-de-population-et-maladies&#34;&gt;Densité de population et maladies&lt;/h4&gt;
+&lt;p&gt;Les effets de la révolution Néolithique touchent aussi directement la santé des hommes.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;
+Ils apparaisent de manière indirecte à cause de la densité de population.
+Ainsi, selon Diamond, une plus grande densité de population implique que les virus peuvent se transmettre plus facilement entre les gens.
+En plus, l&amp;rsquo;agriculture est typiquement relationée avec l&amp;rsquo;enlevage.
+Donc, vu qu&amp;rsquo;on habitait près des annimaux, il existe une plus grande probabilité qu&amp;rsquo;un virus animalier mute et affecte les hommes, comme c&amp;rsquo;est le cas avec la COVID-19.
+Or, on espère une plus grande incidence des maladies &lt;strong&gt;infectieuses&lt;/strong&gt; parmi les régions qu&amp;rsquo;ont adopté l&amp;rsquo;agriculture plus tôt.
+Alors, si on fassait une telle régression, on obtiendrait des résultats contraires à nos attentes.&lt;/p&gt;
+&lt;p&gt;Cette manque de résultats, apparement contradictoire avec nos expectatives, peut s&amp;rsquo;expliquer par la sélection naturelle.
+Ceci c&amp;rsquo;est l&amp;rsquo;argumentaire de Galor et Moav (2007).
+Vu qu&amp;rsquo;en société agricole le risque d&amp;rsquo;attraper une maladie infectieuse est plus important, les gens equipés avec un système immun plus réactif (dû aux mutations génétiques aléatoires) auront une plus grande probabilité de survie et, pour tant, de se réproduir.
+Ainsi, les gènes permettant ce système immun plus réactif seront plus transmis, et une génétique plus résistante vers les maladies infectiuses deviendra dominante parmi la population.
+Or, la raison pour laquelle les descendants des premiers agriculteurs ne montrent pas une plus grande incidence des maladies infectiuses est le fait qu&amp;rsquo;ils descedent de ce qui ont survecu, et donc, de ce qui avait un système immun plus efficace.&lt;/p&gt;
+&lt;p&gt;En revanche, il est possible de vérifier cette hypothèse.
+L&amp;rsquo;effet protecteur d&amp;rsquo;un système immun plus réactif est clair.
+Malheureusement, il implique qu&amp;rsquo;on est plus susceptible de souffrir des maladies auto-immunes comme la diabètes, la maladie de Chron, etc.
+Ainsi, si l&amp;rsquo;hypothèse est certe, on espère qu&amp;rsquo;il existe:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Une corrélation négative entre le moment auquel l&amp;rsquo;agriculture fut adopté et les maladies infectiuses.&lt;/li&gt;
+&lt;li&gt;Une corréation positive entre le moment auquel l&amp;rsquo;agriculture fut adopté et les maladies auto-immunes.&lt;/li&gt;
+&lt;li&gt;Aucune corrélation entre le moment auquel l&amp;rsquo;agriculture fut adopté et autre type de maladies.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://eric-roca.github.io/papers/Galor_and_Moav__2007.pdf&#34;&gt;Galor et Moav (2007)&lt;/a&gt; et Franck, Galor et Özak (2016) valident ces hypothèses.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/comparative_development/Galor_and_Moav__2007_Table_3.webp&#34; alt=&#34;Galor_and_Moav__2007_Table_3&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: en référence aux maladies auto immunes, les auteurs se focalisent sur la France et ils interpolent le temps depuis le passage à l&amp;rsquo;agriculture.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/comparative_development/Franck_Galor_Ozak__2016_Figure.webp&#34; alt=&#34;Frank_Galor_Ozak__2016_Figure&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/comparative_development/Franck_Galor_Ozak__2016_Table_1.webp&#34; alt=&#34;Frank_Galor_Ozak__2016_Table_1&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/comparative_development/Franck_Galor_Ozak__2016_Table_2.webp&#34; alt=&#34;Frank_Galor_Ozak__2016_Table_2&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Le fait que l&amp;rsquo;agriculture se soit développé en première dans ces régions est dû à l&amp;rsquo;existence d&amp;rsquo;espèces susceptibles d&amp;rsquo;être domestiqués, autant pour les plantes que pour les animaux.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;Certains aspects liées à la sante jouent un rôl important dans la détérmination de l&amp;rsquo;investissement dans l&amp;rsquo;éducation à travers de leurs effets sur l&amp;rsquo;espérance de vie.
+Voir &lt;a href=&#34;https://eric-roca.github.io/courses/comparative_development/papers/andersen_dalgaard_selaya__2016/&#34;&gt;ici&lt;/a&gt;.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Maladies et developpement</title>
+      <link>https://eric-roca.github.io/courses/comparative_development/papers/andersen_dalgaard_selaya__2016/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/comparative_development/papers/andersen_dalgaard_selaya__2016/</guid>
+      <description>&lt;h2 id=&#34;maladies-et-développement-andersen-dalgaard-et-selaya-2016&#34;&gt;Maladies et développement: Andersen, Dalgaard et Selaya (2016)&lt;/h2&gt;
+&lt;p&gt;Un des traits fondamentaux qui détermine le passage de l&amp;rsquo;époque post-Malthusienne à l&amp;rsquo;époque moderne est l&amp;rsquo;apparition du &amp;ldquo;quality-quantity trade-off&amp;rdquo;, c&amp;rsquo;est-à-dire, le fait que les familles décident d&amp;rsquo;avoir moins d&amp;rsquo;enfants mais d&amp;rsquo;investir dans leur éducation, avec des conséquences pour l&amp;rsquo;amélioration de la technologie.
+Pour tant, les pays qui, pour une raison ou une autre, sont entrés plus tôt dans l&amp;rsquo;époque moderne, jouissent d&amp;rsquo;un avantage comparatif grâce ã une plus intense accumulation de capital humain.
+Enfin, toute raison qu&amp;rsquo;incite à investir dans l&amp;rsquo;éducation générera une disparité économique.
+Et, au sens contraire, les raison retardant le trade-off génèrent un retard économique, car elles préviennent l&amp;rsquo;accéleration de la croissance technologique et, pour tant, économique.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://eric-roca.github.io/papers/Andersen_Dalgaard_Selaya__2016.pdf&#34;&gt;Andersen, Dalgaard et Selaya (2016)&lt;/a&gt; proposent d&amp;rsquo;étudier les maladies comme une raison retardante du quality-quality trade-off.&lt;/p&gt;
+&lt;h3 id=&#34;rendement-de-léducation-cataractes-et-croissance-économique&#34;&gt;Rendement de l&amp;rsquo;éducation, cataractes et croissance économique&lt;/h3&gt;
+&lt;p&gt;L&amp;rsquo;investissement dans l&amp;rsquo;éducation est, après tout, comment n&amp;rsquo;importe quel autre investissement et ce que le détermine est le rendement espéré.
+Or, le rendement depend, entre autres choses, du temps pendant lequel l&amp;rsquo;inversion est productive.
+Pour l&amp;rsquo;éducation, la dimension temporelle de l&amp;rsquo;investissement est liée à l&amp;rsquo;espérance de vie et à certaines maladies qui déprécient sa valeur.
+L&amp;rsquo;article d&amp;rsquo;Anderset et al. se porte sur les maladies oculaires, et en particulier, sur les cataractes.
+Généralement, on associe les cataractes à un âge avancé, et donc, elles sembleront ne pas influir sur le rendement de l&amp;rsquo;éducation car elles se manifestent à la fin de la vie.
+Par contre, études ophtalmologiques montrent qu&amp;rsquo;on peut perdre jusqu&amp;rsquo;à 14 ans de travail à cause des cataractes.&lt;/p&gt;
+&lt;p&gt;Finalement, les auteurs s&amp;rsquo;appuient sur le fait que l&amp;rsquo;exposition au rayonnement ultraviolet (UV) augmente la probabilité de souffrir cataractes.
+Ce type de rayonnement est beaucoup plus intense proche de l&amp;rsquo;équateur.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/comparative_development/Andersen_Dalgaard_Selaya__2016_Figure_3.webp&#34; alt=&#34;Andersen_Dalgaard_Selaya__2016_Figure_3&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/comparative_development/Andersen_Dalgaard_Selaya__2016_Table_5.webp&#34; alt=&#34;Andersen_Dalgaard_Selaya__2016_Table_5&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;prédictions-et-validation&#34;&gt;Prédictions et validation&lt;/h3&gt;
+&lt;p&gt;Andersen, Dalgaard et Selaya (2016) prédisent que l&amp;rsquo;exposition au UV affecte:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;La transition démographique:
+&lt;ul&gt;
+&lt;li&gt;Dans les régions avec plus de rayonnement UV, le rendement de l&amp;rsquo;éducation est inférieur à cause des cataractes.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;li&gt;Pour tant:
+&lt;ul&gt;
+&lt;li&gt;Le UV devrait être corrélé avec l&amp;rsquo;année de la transition de fertilité,&lt;/li&gt;
+&lt;li&gt;L&amp;rsquo;effet du UV devrait être nul en époque Malthusienne car personne n&amp;rsquo;investissait pas en éducation,&lt;/li&gt;
+&lt;li&gt;Le UV devrait être corrélé avec le niveau d&amp;rsquo;activité économique en époque moderne,&lt;/li&gt;
+&lt;li&gt;Le UV devrait être corrélé avec l&amp;rsquo;investissement en éducation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Les auteurs utilisent données de Reher (2004) pour calculer l&amp;rsquo;année de la transition de fertilité pour chaque pays.
+Rappelons que le rayonnement UV diminue le rendement de l&amp;rsquo;investissement en éducation et, pour tant, retarde la réduction de fertilité.
+Ainsi, le rayonnement UV devrait être positivement corrélé avec l&amp;rsquo;année de transition.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/comparative_development/Andersen_Dalgaard_Selaya__2016_Table_7.webp&#34; alt=&#34;Andersen_Dalgaard_Selaya__2016_Table_7&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Ensuite (Colonne 6) comment, en effet, une transition de fertilité plus tardive est associée avec moins de revenu per capita pendant l&amp;rsquo;année 2004.
+La deuxième prédiction est aussi vérifiée: en époque Malthusienne, le rayonnement ultraviolet n&amp;rsquo;avait pas d&amp;rsquo;effet sur la densité de population.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;
+Par contre, en époque moderne la relation est telle que prévue: plus de rayonnement UV est associé avec une diminution du revenu per capita.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/comparative_development/Andersen_Dalgaard_Selaya__2016_Table_6.webp&#34; alt=&#34;Andersen_Dalgaard_Selaya__2016_Table_6&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Enfin, les auteurs valident leur hypothèse à propos du lien entre le rayonnement UV et l&amp;rsquo;éducation.
+Ainsi, vu que dans les régions qui plus rayonnées la valeur du capital humain et l&amp;rsquo;éducation sont inférieurs, le niveau éducatif devrait être aussi inférieur.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/comparative_development/Andersen_Dalgaard_selaya__2016_Table_A17.webp&#34; alt=&#34;Andersen_Dalgaard_Selaya__2016_Table_A17&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;L&amp;rsquo;exposition au rayonnement UV augmente aussi la probabilité de souffrir certains types de cancer.
+Néanmoins, les auteurs considèrent que les adaptations génétiques (pigmentation de la peau, par exemple) neutralisent l&amp;rsquo;effet sur les investissements en éducation.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;Il faut se rappeler qu&amp;rsquo;en époque Malthusienne, la densité de population est la variable qui explique le niveau de développement; et non le revenu per capita.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -2308,6 +3069,321 @@ Smoothing is less important.&lt;/p&gt;
 &lt;p&gt;Conversely, when $\epsilon &amp;lt;1$, an increase in the interest rate lowers savings: $s^{\prime}_{R} &amp;lt; 0.$
 In that case, the wealth effect dominates.
 $\epsilon &amp;lt; 1$ also means that $c$ and $d$ are intertemporally complementary, and individuals want to consume them in constant proportions.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Diversité génétique et développement</title>
+      <link>https://eric-roca.github.io/courses/comparative_development/papers/ashraf_galor__2013/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/comparative_development/papers/ashraf_galor__2013/</guid>
+      <description>&lt;h2 id=&#34;diversité-génétique-et-développement-ashraf-et-galor-2013&#34;&gt;Diversité génétique et développement (Ashraf et Galor, 2013)&lt;/h2&gt;
+&lt;p&gt;Le papier d&amp;rsquo;&lt;a href=&#34;https://eric-roca.github.io/papers/Ashraf_Galor__2013.pdf&#34;&gt;Ashraf et Galor (2013)&lt;/a&gt; propose l&amp;rsquo;idée qu&amp;rsquo;au sein des sociétés, les différences entre individus peuvent être une source de richesse ou entraîner des coûts économiques.
+Ainsi, les auteurs proposent que dans une société, le fait qu&amp;rsquo;il y a plus de différences entre personnes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Augmente la probabilité que les interactions entre personnes soient complémentaires, donnant lieu à une amélioration technologique,&lt;/li&gt;
+&lt;li&gt;Augmente la probabilité que quelqu&amp;rsquo;un soit spécialement doué pour une activité, augmentant la productivité.&lt;/li&gt;
+&lt;li&gt;En général, permet plus d&amp;rsquo;innovation et pusse la frontière productive.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Par contre, une société dans laquelle les membres sont très différents pose aussi certains coûts:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;La coordination est plus difficile, car on peut avoir préférences différentes,&lt;/li&gt;
+&lt;li&gt;Le conflit est plus probable,&lt;/li&gt;
+&lt;li&gt;Le confiance vers les autres est inférieure.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ainsi, vu les coûts et les bénéfices, il est fort probable que la relation entre diversité et croissance économique aie forme de U inversé.
+C&amp;rsquo;est-à-dire, si tous les gens sont égaux, on ne profite pas des avantages liés à la diversité.
+Et au contraire, si les différences entre gens sont maximales, les coûts surpassent énormément les bénéfices.
+Alors, il semble qu&amp;rsquo;un niveau optimal de diversité peut exister.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;h3 id=&#34;une-mesure-de-diversité-entre-personnes--diversité-génétique&#34;&gt;Une mesure de diversité entre personnes : diversité génétique&lt;/h3&gt;
+&lt;p&gt;L&amp;rsquo;hypothèse de base de ce article est que la migration humain depuis l&amp;rsquo;Afrique il y a 70000-90000 ans a affecté la diversité génétique et, donc, si ce que les autors proposent est correct, aura affecté de manière indirecte le développement économique.
+Alors, Ashraf et Galor s&amp;rsquo;appuient sur des recherches en athropologie et en génétique pour avoir une mesure de la diversité génétique entre personnes au sein d&amp;rsquo;un pays.
+On part de l&amp;rsquo;&lt;a href=&#34;https://fr.wikipedia.org/wiki/Effet_fondateur&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;effet fondateur&lt;/a&gt;, c&amp;rsquo;est-à-dire, le fait que, quand on scinde un petite population, la diversité génétique du noveau groupe ainsi crée est inférieure à celle du groupe d&amp;rsquo;origine.
+On peut appliquer ce concept à la migration humaine depuis l&amp;rsquo;Afrique.
+De cette manière, à mesure que les hommes conquirent des nouvelles endroits (Europe, Asie, îlles du sud-est de l&amp;rsquo;Asie, Amérique du Nord et du Sud, etc), la diversité génétique diminuira.
+Bien compris, ce qui est important est la distance migratoire par terre.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/comparative_development/Ashraf_Galor__2013_Figure_2.webp&#34; alt=&#34;Ashraf_Galor__2013_Figure_2&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Un indice qui mésure la diversité génétique est le taux d&amp;rsquo;hétérozigosité : la probabilité que deux personnes tirées au hasard partagent certaines gens.
+Ces donnés existent pour 53 groupes humains qui ont vécu plus oi moins isolés et au même endroit pour très longue temps.
+En effet, on voit qu&amp;rsquo;il existe une corrélation négative entre la distance à Addis Ababa et quelques indicateurs de diversité, y compris l&amp;rsquo;hétérozigosité.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/comparative_development/Ashraf_Galor__2013_Figure_1.webp&#34; alt=&#34;Ashraf_Galor__2013_Figure_1&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/comparative_development/Betti_et_al__2012_Figure_2.webp&#34; alt=&#34;Betti_et_al__2012_Figure_2&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/comparative_development/Hanihara__2008_Figure_2.webp&#34; alt=&#34;Hanihara__2008_Figure_2&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;résultats&#34;&gt;Résultats&lt;/h3&gt;
+&lt;p&gt;D&amp;rsquo;abord, Ashraf et Galor utilisent un enchantillon de 21 pays pour lesquels une mesure directe du niveau d&amp;rsquo;hétérozigosité existe.
+Même avec une taille si reduite, on voit une relation en forme de U inversé entre le niveau de diversité génétique et le développement économique pendant l&amp;rsquo;année 1500.
+Il est important de rappeler que, vu que les régressions se concentrent en l&amp;rsquo;èpoque Malthusienne, la variable qui mesure correctement le niveau de développement est la densité de population et non le revenu per capita.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/comparative_development/Ashraf_Galor__2013_Table_1.webp&#34; alt=&#34;Ashraf_Galor__2013_Table_1&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+Or, on peut constater que l&amp;rsquo;hypothèse de Jared Diamond est aussi vérifiée : les pays qui ont adopté l&amp;rsquo;agriculture plus tôt se sont plus développés.&lt;/p&gt;
+&lt;p&gt;Ensuite, les auteurs enlargisent leur enchantillon utilisant le fait que la distance migratoire à Addis Ababa est éxogene et permet de predire, avec précision, le niveau de diversité génétique.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/comparative_development/Expected_Heterozygosity.webp&#34; alt=&#34;Prediction&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/comparative_development/Ashraf_Galor__2013_Table_3.webp&#34; alt=&#34;Ashraf_Galor__2013_Table_3&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+En plus, les auteurs montrent que cette relation existe aussi pour le présent, cette fois ci, utilisant le niveau de revenu per capita en l&amp;rsquo;année 2000.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/comparative_development/Ashraf_Galor__2013_Table_6.webp&#34; alt=&#34;Ashraf_Galor__2013_Table_6&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+On voit que le niveau optimal de diversité génétique change avec le temps : en 1500 il était de 0.68 et en 2000 il est de 0.71.
+Ainsi, avec le progrès technologique, une plus grand diversité entre les gens est nécéssaire pour la croissance économique : par example, le dégré d&amp;rsquo;spécialisation productive est supérieur aujourd&amp;rsquo;hui.
+Ces niveau corréspondent au Japon en 1500 et aux États-Unis en 2000.&lt;/p&gt;
+&lt;h3 id=&#34;méchanismes&#34;&gt;Méchanismes&lt;/h3&gt;
+&lt;p&gt;Enfin, plusieurs auteurs ont pris le relais et se sont concéntrés sur les méchanismes qui pourraient être derriére la relation entre diversité génétique et développement.
+En premier lieu, Ashraf et Galor montrent de l&amp;rsquo;evidence qui mets en relation la diversité génétique avec le niveau de confiance (un des coûts de la diversité) et la production scientifique.
+Ainsi, si les hypothèses étaient correctes, on s&amp;rsquo;attend à ce que les pays avec une plus grande diversité génétique montrent de niveaux moins inférieures de confiance vers les tiers personnes et qu&amp;rsquo;ils produissent davantage de recherches scientifiques.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/comparative_development/Ashraf_Galor__2013_Table_9.webp&#34; alt=&#34;Ashraf_Galor__2013_Table_9&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Une autre possibilité qu&amp;rsquo;on peut explorer c&amp;rsquo;est la relation entre la diversité génétique et le nombre de groups ethniques &lt;a href=&#34;https://doi.org/10.1257/aer.103.3.528&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ashraf et Galor (2013b).&lt;/a&gt;
+Ainsi, vu que la diversité génétique est lié à une moindre confiance envers les tiers, il est possible que les sociétés les plus affectées par cette manque de confiance il y ai des séparation dans un groupe, en créant par la suite plusieurs.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/comparative_development/Ashraf_Galor__2013b_Figure_1.webp&#34; alt=&#34;Ashraf_Galor__2013b_Figure_1&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Pour finir, une plus grand variété génétique, qui donne lieu à des personnes qui pensent différenment, devrait être lié à une plus large gamme de préférences politiques.
+En autre, les différences interpersonneles et la manque de confiance sont suceptibles d&amp;rsquo;engendrer des conflits civiles.
+Ces deux alternatives sont explorées par &lt;a href=&#34;https://doi.org/10.3982/ECTA13734&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Arbatli et al. (2020)&lt;/a&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/comparative_development/Arbatli_et_al__2020_Figure_2.webp&#34; alt=&#34;Arbatli_et_al__2020_Figure_2&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/comparative_development/Arbatli_et_al__2020_Figure_A1.webp&#34; alt=&#34;Arbatli_et_al__2020_Figure_A1&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Ce niveau optimal de diversité change avec le développement économique, c&amp;rsquo;est-à-dire, le niveau optimal pendant l&amp;rsquo;année 0 est différent du niveau optimal pendant l&amp;rsquo;année 1500.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -3439,6 +4515,238 @@ It indicates the motion of variables at different points of the $(k,c)$ space.&l
 &lt;p&gt;The arrows show the motion of each variable at different combinations of $(k,c).$
 For instance, to the left of the $c$-locus and above the $k0$-locus consumption increases and capital decreases.
 Finally, the point indicating the intersection of both curves is the steady state: all variables remain constant at their values.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Transmission de la technologie et innovation</title>
+      <link>https://eric-roca.github.io/courses/comparative_development/papers/ozak__2018/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/comparative_development/papers/ozak__2018/</guid>
+      <description>&lt;h2 id=&#34;transmission-de-la-technologie-et-innovation-özak-2018&#34;&gt;Transmission de la technologie et innovation (Özak, 2018)&lt;/h2&gt;
+&lt;p&gt;Dans le modèle de croissance unifiée, le rôle de la technologie est primordial.
+En particulier, la croissance technologique, active depuis toujours, permet le changement d&amp;rsquo;époque.
+Pour tant, comprendre les sources qui permettent l&amp;rsquo;avancement technologique aide a mieux comprendre les différences et les inégalités en termes de revenu per capita qu&amp;rsquo;on observe aujourd&amp;rsquo;hui.
+Dès nos jours, il est raisonnable de penser que la technologie se répand depuis la &amp;ldquo;frontière technologique&amp;rdquo; vers des tiers pays grâce, en part, au commerce.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
+Pour tant, en principe, les régions plus proches de cette frontière auront un avantage car il est plus facile et moins couteux d&amp;rsquo;imiter ce qui est crée en frontière.
+De même, il prends moins de temps pour qu&amp;rsquo;une technologie arrive à un endroit proche de la frontière, et donc, il on va l&amp;rsquo;adapter avant.&lt;/p&gt;
+&lt;p&gt;Le papier d&amp;rsquo;Özak (2018) remporte ces considérations à l&amp;rsquo;époque Malthusienne.
+De manière surprenante, il montre comment dans cette époque, le rôl de la distance à la frontière technologique était assez différent.
+Vu que le commerce importait moins à l&amp;rsquo;époque, Özak propose que la distance à la frontière aura un effet en forme de U sur le développement.
+Ainsi, les régions proches à la frontière reçoivent les nouvelles technologies rapidement; comme aujourd&amp;rsquo;hui.
+Par contre, il indique qu&amp;rsquo;en les régions lointaines est nécessaire un processus d&amp;rsquo;adaptation technologique: il faut du temps et de la pensée pour adapter les nouvelles technologies à un environment qui ne ressemble pas à ce d&amp;rsquo;origine.
+Ainsi, en régions lointaines, les gens se spécialisent à penser et adapter la technologie.
+Même, il est parfois possible que les nouvelles technologies n&amp;rsquo;arrivent jamais ou que les adaptations soient impossible si l&amp;rsquo;environnement est très différent ou la distance trop large.
+Dans ce cas, on espère que les régions lointaines soient inventives et créent leur propre technologie.
+Enfin, Özak considére que loin de la frontière une culture qui valorise la créativité émerge.
+Selon cette vision, les zones à une distance vers la frontière moyen seront les plus défavorisés: elles ne reçoivent pas beaucoup de technologie, mais elles ne n&amp;rsquo;adaptent ni en créent non plus.&lt;/p&gt;
+&lt;h3 id=&#34;diffusion-technologique&#34;&gt;Diffusion technologique&lt;/h3&gt;
+&lt;p&gt;Si on pense à l&amp;rsquo;époque Malthusienne, la transmission des connaissances techniques impliquait le déplacement de gens qui savaient opérer la technologie ou la produire.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;
+Par contre, le transport physique des engins et machines ne semble pas avoir eu de l&amp;rsquo;importance si on considére que le taille du commerce était inférieure.
+C&amp;rsquo;est-à-dire, quand on voulait imiter une nouvelle technologie, on cherchait quelqu&amp;rsquo;un qui avait déjà travaillé avec la technologie.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Les créateurs d&amp;rsquo;instruments de précision sont arrivés au Royaume-Uni depuis l&amp;rsquo;Allemagne.
+Humfray Cole, créateur anglais, était apprenti de Thomas Gemini, habitant à Louvain en Belgique, et lui avait étudié en Allemagne.&lt;/li&gt;
+&lt;li&gt;Fibonacci apprenait l&amp;rsquo;algèbre des Arabes pendant les voyages de son père, et ensuite l&amp;rsquo;introduisait en Europe.&lt;/li&gt;
+&lt;li&gt;La plupart d&amp;rsquo;essais pour produire de la porcelaine en Europe furent inutiles, à exception faite d&amp;rsquo;une technique développé en Saxe et gardé sécrète.
+Il fallait qu&amp;rsquo;un prêtre Jésuite français copiait la recette à l&amp;rsquo;aide des catholiques chinois.&lt;/li&gt;
+&lt;li&gt;Le monopole dans la production des miroirs de haute qualité qu&amp;rsquo;avait Murano ne finissait jusqu&amp;rsquo;à le roi français Louis XIV embauchait un producteur de Murano.
+En représailles, le syndicat des miroirs de Murano emprisonnait les familles de producteurs qui avait dévoilé leur secret.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pour tant, le plus loin qu&amp;rsquo;on était de la frontière technologique, le plus difficile il est de recevoir une nouvelle technologie de manière directe.
+En plus, quand une nouvelle technologie arrive, il est fort probable qu&amp;rsquo;elle nécessite un processus d&amp;rsquo;adaptation à l&amp;rsquo;environnement local: par exemple, avec un climat assez différent une copie directe serait inutile.
+C&amp;rsquo;est le cas avec les cathédrales gothiques: l&amp;rsquo;implémentation exacte change d&amp;rsquo;une région à l&amp;rsquo;autre.
+De plus, il est tout à fait possible qu&amp;rsquo;il soit moins couteaux de créer des innovations plutôt que d&amp;rsquo;adapter une technologie.
+Par exemple, l&amp;rsquo;agriculture, la boussole et le nombre zéro ont été inventés à plusieurs reprises.
+De manière résumée, Özak propose que ces deux effets conduisent à une plus grande créativité dans les régions qui sont loin de la frontière technologique.
+Ainsi, ces zones deviendront des clusters d&amp;rsquo;innovation et adaptation.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/comparative_development/Ozak__2018_Figure_3.webp&#34; alt=&#34;Ozak__2018_Figure_3&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;prédiction-et-validation&#34;&gt;Prédiction et validation&lt;/h3&gt;
+&lt;p&gt;En premier lieu, Özak construit une nouvelle mesure de distance à la frontière technologique basée sur l&amp;rsquo;idée de la distance géographique et la difficulté pour traverser un terrain.
+Ainsi, les régions qui sont plates sont faciles à traverser, les montagnes ajoutent de la difficulté, les terrains verglacés ou marécageux demandent plus de temps à les croiser, etc.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/comparative_development/Ozak__2018_Figure_4.webp&#34; alt=&#34;Ozak__2018_Figure_4&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+Ensuite, il faut connaître où se trouve la frontière technologique et il est important de remarquer que la frontière technologique peut:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Être multiple: si, par exemple, plusieurs régions dominent différents aspects technologiques: agriculture et mathématique.&lt;/li&gt;
+&lt;li&gt;Peut changer avec le temps.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Selon les historiens, pendant l&amp;rsquo;année 1 la frontière était en l&amp;rsquo;est méditerranéen; pendant l&amp;rsquo;année 1000 en Irak; pendant 1500 aux Pays-Bas; et en 1750 au Royaume-Uni.
+Enfin, on peut calculer le temps qu&amp;rsquo;il faut pour se rendre à la frontière depuis n&amp;rsquo;importe où, en marchant à pied et utilisant la route la moins couteuse:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/comparative_development/Ozak__2018_Figure_5.webp&#34; alt=&#34;Ozak__2018_Figure_5&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Parmi plusieurs prédictions qu&amp;rsquo;Özak fait, nous allons en voir quelques-unes.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;En 1500, on espère une relation en forme de U entre la distance au Pays Bas (NDL) et la sophistication technologique.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/comparative_development/Ozak__2018_Table_1.webp&#34; alt=&#34;Ozak__2018_Table_1&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+Les résultats peuvent s&amp;rsquo;interpréter de la manière suivante: pendant 1500, la pire situation était se localiser à 6.4 semaines à pied des Pays-Bas.
+S&amp;rsquo;approcher ou s&amp;rsquo;éloigner une déviation standard, augmente le niveau technologique de 24%.&lt;/li&gt;
+&lt;li&gt;La frontière pendant 1750 était le Royaume-Uni.
+Ainsi, on espère un résultat similaire à ce d&amp;rsquo;avant pour le présent: les pays qu&amp;rsquo;aujourd&amp;rsquo;hui sont très proches ou très loin du Royaume-Uni se sont bénéficié du point vu technologique.
+En plus, aujourd&amp;rsquo;hui on espère qu&amp;rsquo;un plus grand développement technologique se révèle en revenu per capita et, pour tant, il devrait exister une relation en forme de U entre:
+&lt;ul&gt;
+&lt;li&gt;Le niveau technologique de chaque pays et la distance à pied et par route la moins coûteuse au Royaume-Uni&lt;/li&gt;
+&lt;li&gt;Le revenu per capita de chaque pays et la distance à pied et par route la moins coûteuse au Royaume-Uni
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/comparative_development/Ozak__2018_Table_9.webp&#34; alt=&#34;Ozak__2018_Table_9&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Comment la frontière technologique change de place lors du temps, on peut comparer c&amp;rsquo;est qui se passe chaque fois qu&amp;rsquo;elle bouge.
+Comme la distance à la frontière a un effet en forme de U sur la technologie, et vue la que technologie est importante pour le développement, on devrait constater aussi un relation en forme de U entre la distance à la frontière et la densité de population.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/comparative_development/Ozak__2018_Table_5.webp&#34; alt=&#34;Ozak__2018_Table_5&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;li&gt;Si vraiment les régions loin de la frontière devaient être innovantes pour adapter et créer des nouvelles technologies, les pays qui ont passé plus de temps loin de la frontière seront plus créatifs.
+Il est possible de mesurer la créativité utilisant le nombre de brevets par personne.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/comparative_development/Ozak__2018_Table_11.webp&#34; alt=&#34;Ozak__2018_Table_11&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;L&amp;rsquo;idée de frontière technologique essai d&amp;rsquo;exprimer le fait qu&amp;rsquo;il y a toujours un ou plusieurs pays qui dominent la scène technologique.
+Par exemple, les États-Unis sont aujourd&amp;rsquo;hui la frontière technologique; pour certains domaines la Chine est aussi la frontière, etc.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;En plus, il y a des technologies qui sont immobiles: système de rotation des champs, canaux, élevage d&amp;rsquo;animaux, etc.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
 </description>
     </item>
     
