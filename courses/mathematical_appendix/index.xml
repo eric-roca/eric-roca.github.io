@@ -485,6 +485,18 @@ $$\frac{w}{r} = \frac{1-\alpha}{\alpha} \left(\frac{K}{L} \right)^{1-\rho}.$$&lt
 \frac{\alpha}{1-\alpha}\frac{1}{1-\rho}\left(\frac{w}{r}\frac{\alpha}{1-\alpha}\right)^{\frac{1}{1-\rho}-1}
 \frac{1-\alpha}{\alpha}\left(\frac{K}{L}\right)^{1-\rho}\frac{L}{K} =
 \frac{1}{1-\rho}.$$&lt;/p&gt;
+&lt;h2 id=&#34;cobb-douglas-and-constant-shares&#34;&gt;Cobb-Douglas and constant shares&lt;/h2&gt;
+&lt;p&gt;The Cobb-Douglas production is the unique neoclassical production function that exhibits constant factor shares in a competitive setup.
+From the definition of shares we have that:&lt;/p&gt;
+&lt;p&gt;$$\frac{rK}{Y} = z_{1}$$
+$$\frac{wL}{Y} = z_{2}$$
+Where $z_1$ and $z_2$ are constants.&lt;/p&gt;
+&lt;p&gt;Starting from the first, and because of competititon:
+$\frac{rK}{Y} = z_{1} \implies \frac{rk}{y} = z_1 \implies \frac{f^\prime (k) k}{f(k)} = z_1.$
+Solving this differential equation:
+$\frac{f^\prime (k) k}{f(k)} = z_{1} \implies \frac{\mathrm{d} \log (f(k))}{\mathrm{k}} = \frac{z_1}{k} \implies$
+$\implies \log (f(k)) = z_{1} \log (k)+C\implies f(k) = Ck^{z_1}.$
+Which corresponds to the intensive form of the Cobb-Douglas production function.&lt;/p&gt;
 </description>
     </item>
     

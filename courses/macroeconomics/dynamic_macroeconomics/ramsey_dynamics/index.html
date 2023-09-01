@@ -1,0 +1,1445 @@
+<!DOCTYPE html><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.5.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Èric Roca Fernández" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Dynamiques" />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://eric-roca.github.io/courses/macroeconomics/dynamic_macroeconomics/ramsey_dynamics/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.1052fab8b7700a3dc49ee23683097d66.css" />
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://eric-roca.github.io/courses/macroeconomics/dynamic_macroeconomics/ramsey_dynamics/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="Èric Roca Fernández" />
+  <meta property="og:url" content="https://eric-roca.github.io/courses/macroeconomics/dynamic_macroeconomics/ramsey_dynamics/" />
+  <meta property="og:title" content="Dynamiques | Èric Roca Fernández" />
+  <meta property="og:description" content="Dynamiques" /><meta property="og:image" content="https://eric-roca.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="https://eric-roca.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2019-07-11T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2019-07-11T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>Dynamiques | Èric Roca Fernández</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="dd261ab7b16ca251de7862f111786789" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.2ed908358299dd7ab553faae685c746c.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="header--fixed">
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">Èric Roca Fernández</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">Èric Roca Fernández</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#publications"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#working_papers"><span>Working papers</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link  active" href="/courses/"><span>Teaching</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#talks"><span>Talks</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/files/CV.pdf"><span>CV</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    
+
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-md-3 w-100" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <div class="d-flex">
+      <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
+        
+          Macroéconomie Dynamique
+        
+      </span>
+      <span><i class="fas fa-chevron-down"></i></span>
+    </div>
+  </button>
+
+  
+  <button class="form-control sidebar-search js-search d-none d-md-flex">
+    <i class="fas fa-search pr-2"></i>
+    <span class="sidebar-search-text">Search...</span>
+    <span class="sidebar-search-shortcut">/</span>
+  </button>
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+
+    
+      
+
+      <ul class="nav docs-sidenav">
+        <li><a href="/courses/"><i class="fas fa-arrow-left pr-1"></i></a></li>
+      </ul>
+
+      
+      
+        
+          
+        
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/courses/macroeconomics/dynamic_macroeconomics/">Macroéconomie Dynamique</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/courses/macroeconomics/dynamic_macroeconomics/solow_introduction/">Le modèle de Solow, introduction</a></li>
+
+
+
+  <li class=""><a href="/courses/macroeconomics/dynamic_macroeconomics/solow_assumptions/">Hypothèses</a></li>
+
+
+
+  <li class=""><a href="/courses/macroeconomics/dynamic_macroeconomics/solow_percapita/">Variables per capita</a></li>
+
+
+
+  <li class=""><a href="/courses/macroeconomics/dynamic_macroeconomics/solow_dynamics/">Dynamiques</a></li>
+
+
+
+  <li class=""><a href="/courses/macroeconomics/dynamic_macroeconomics/solow_ss/">État stationnaire</a></li>
+
+
+
+  <li class=""><a href="/courses/macroeconomics/dynamic_macroeconomics/solow_growth/">Croissance économique</a></li>
+
+
+
+  <li class=""><a href="/courses/macroeconomics/dynamic_macroeconomics/solow_a/">Progrès technologique</a></li>
+
+
+
+  <li class=""><a href="/courses/macroeconomics/dynamic_macroeconomics/solow_conclusion/">Conclusions et implications</a></li>
+
+
+
+  <li class=""><a href="/courses/macroeconomics/dynamic_macroeconomics/ramsey_introduction/">Le modèle de Ramsey</a></li>
+
+
+
+  <li class=""><a href="/courses/macroeconomics/dynamic_macroeconomics/ramsey_assumptions/">Hypothèses de Ramsey</a></li>
+
+
+
+  <li class=""><a href="/courses/macroeconomics/dynamic_macroeconomics/ramsey_households/">Ménages dans Ramsey</a></li>
+
+
+
+  <li class=""><a href="/courses/macroeconomics/dynamic_macroeconomics/ramsey_optimization/">Optimisation</a></li>
+
+
+
+  <li class="active"><a href="/courses/macroeconomics/dynamic_macroeconomics/ramsey_dynamics/">Dynamiques</a></li>
+
+
+
+  <li class=""><a href="/courses/macroeconomics/dynamic_macroeconomics/ramsey_conclusion/">Conclusion</a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+    
+  
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#dynamiques">Dynamiques</a>
+      <ul>
+        <li><a href="#état-stationnaire">État stationnaire</a></li>
+        <li><a href="#c-locus">c-locus</a></li>
+        <li><a href="#k-locus">k-locus</a></li>
+        <li><a href="#état-stationnaire-et-diagramme-de-phase">État stationnaire et diagramme de phase</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          
+
+          <h1>Dynamiques</h1>
+
+          <div class="article-style">
+            <h2 id="dynamiques">Dynamiques</h2>
+<p>Nous avons vu que le comportement de l&rsquo;économie dans le modèle de Ramsey se décrit par deux équations dynamiques:</p>
+<p>\begin{align}
+\dot{k}(t) =&amp; w(t) + r(t)k(t) - c(t) - \delta k(t) - n k(t) \\\
+\frac{\dot{c}}{c} =&amp; \frac{1}{\sigma}(r(t) - \rho - \delta)
+\end{align}</p>
+<p>La résolution de ce système d&rsquo;équations permet d&rsquo;obtenir l&rsquo;évolution optimale du capital et de la consommation intertemporels dans le modèle de Ramsey.</p>
+<p>Nous avons aussi les valeurs d&rsquo;équilibre pour le salaire et le taux d&rsquo;intérêt ($w(t),r(t)$).
+Pourtant, nous pouvons fermer le modèle et exprimer le système exclusivement en termes de $k(t)$ et $c(t)$.
+En fait:</p>
+<p>$$\color{red}{w(t) = f(k(t)) - f^\prime (k(t)) k(t)}$$
+$$\color{red}{r(t) = f^\prime (k(t))}$$</p>
+<p>Pourtant, en équilibre, $\dot{k}(t) = w(t) + r(t)k(t) - c(t) - \delta k(t) - n k(t)$ devient :</p>
+<p>$$\dot{k}(t) = f(k(t)) - c(t) - (n + \delta) k(t)$$</p>
+<p>Cela a du sens: à niveau agrégé, le capital qu&rsquo;on accumule est égal à tout ce qui est produit ($f(k)$) moins ce qu&rsquo;on consomme ($c$) et ce qu&rsquo;on perd ($\delta$).
+Le terme $n$ reflet l&rsquo;augmentation de la population, car nous travaillons en par tête.
+Ainsi, le système dynamique est:</p>
+<p>\begin{align}
+\dot{k}(t) =&amp; \textcolor{red}{f(k(t))} - c(t) - (n + \delta) k(t) \\\
+\frac{\dot{c}}{c} =&amp; \frac{1}{\sigma}(\textcolor{red}{f^\prime(k(t))} - \rho - \delta)
+\end{align}</p>
+<h3 id="état-stationnaire">État stationnaire</h3>
+<p>Comme dans le modèle de Solow, on s&rsquo;intéresse à l&rsquo;existence d&rsquo;un (ou plusieurs) état stationnaire.
+C&rsquo;est-à-dire, une situation telle que, une fois atteinte, l&rsquo;économie reste là sans plus bouger.
+Un état stationnaire est une situation où les variables économiques majeures comme le capital par tête et la consommation par tête restent constantes à long terme, reflétant un équilibre stable dans l&rsquo;économie.
+Dans le modèle de Solow, il était facile de voir qu&rsquo;un tel état existait car $\dot{k} = sf(k) - (n+\delta)k$ c&rsquo;est une seule équation dynamique.</p>
+<p>Dans le modèle de Ramsey, nous avons un système avec deux équations dynamiques.
+Cela veut dire que, dans l&rsquo;état stationnaire, $k$ <em>et</em> $c$ doivent rester inchangés.
+Autrement dit, l&rsquo;état stationnaire est caractérisé par:
+\begin{align}
+\dot{k} =&amp; 0 \\\
+\dot{c} =&amp; 0
+\end{align}</p>
+<p>On indique, comme avant, les variables stationnaires avec une étoile.
+Ainsi, $k^\star,c^\star$ sont telles que:</p>
+<p>\begin{align}
+0 =&amp; f(k^\star) - c^\star - (n + \delta) k^\star \\\
+0 =&amp; \frac{1}{\sigma}(f^\prime(k^\star) - \rho - \delta)
+\end{align}</p>
+<p>Il est possible de montrer qu&rsquo;un tel état doit exister et qu&rsquo;il a $k^\star &gt; 0,c^\star&gt;0$.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<details>
+<summary>Démonstration</summary>
+À partir de l'équation dynamique pour la consommation, si $\dot{c} = 0$, nous avons que:
+<ul>
+<li>
+<p>Soit $c^\star = 0$ qui n&rsquo;est pas optimale car $u^\prime(c) &gt; 0$.</p>
+</li>
+<li>
+<p>Soit $f^\prime(k^\star) = \rho + \delta$.
+Comme $\rho + \delta &gt; 0$, et $f^\prime$ est décroissant et prend valeurs entre $+\infty$ et $0$, une seule valeur $k^\star$ qui satisfait la condition existe.</p>
+</li>
+<li>
+<p>Comme $c^\star = f(k^\star) - (n+\delta)k^\star$, ̈́étant donée que $k^\star&gt; 0$ existe, il doit aussi exister $c^\star$.
+En principe, rien n&rsquo;empêche $c^{\star} \lt 0$, sauf une condition que nous n&rsquo;avons pas présentée: la condition de transversalité (aussi appelée condition de Pontryagin).
+En premier lieu, $\dot{k} = 0$ implique $c^\star = f(k^\star)-(n+\delta)k^\star$.
+Vu les propriétés de $f(k)$, cette fonction (et la consommation stationnaire) atteint un maximum quand $f^\prime(k) = n + \delta$.</p>
+<p>De l&rsquo;autre côté, la condition de stationnarieté pour $c$ implique $f^\prime(k) = \rho + \delta.$
+Ainsi, à priori, le maximum de consommation peut être à gauche ou à droite de la droite $\dot{c} = 0$.
+La condition de transversalité assure qu&rsquo;il soit à gauche, c&rsquo;est-à-dire, avant le maximum et, par conséquent, que $c^\star &gt; 0.$</p>
+<p>Voir <em>Barro et Sala-i-Martín, p. 101</em>.</p>
+</li>
+</ul>
+</details>
+<p>Pour analyser la stationnarité des deux variables $k$ et $c$ de manière indépendante, on commence par étudier les conditions des variables pour lesquelles $\dot{c}= 0$ et  $\dot{k} = 0.$</p>
+<h3 id="c-locus">c-locus</h3>
+<p>Tout d&rsquo;abord, débutons l&rsquo;analyse en étudiant les dynamiques de la consommation dans le modèle de Ramsey.
+L&rsquo;équation $\frac{\dot{c}}{c} = \frac{1}{\sigma}(f^\prime(k) - \rho - \delta)$ montre comment $c$ évolue en fonction de $k$ (car $k$ est la seule variable qui apparaît).
+Premièrement, intéressons-nous aux valeurs de $k$ pour lesquelles la consommation ne change pas.
+Cela nous permet d&rsquo;obtenir une partie de l&rsquo;état stationnaire, car il comprend à la fois $k$ et $c$.
+Si la consommation reste constante, alors $\dot{c} = 0$ et par conséquent:
+$$0 = \frac{1}{\sigma}\left(f^\prime(k) - \rho - \delta\right).$$
+$$0 = \left(f^\prime(k) - \rho - \delta\right).$$
+$$k = f^{{\prime}^{-1}}(\rho + \delta)$$</p>
+<p>La dernière ligne indique la valeur spécifique de $k$ pour laquelle $c$ ne change pas,
+Cependant, nous pouvons également démontrer de manière simple que lorsque $k$ prend une valeur différente de cette valeur d&rsquo;équilibre, la consommation $c$ change.
+Procédons à cette démonstration !</p>
+<p>La fonction $f^\prime(k)$ est décroissante, avec $\lim_{k\rightarrow 0}f^\prime(k) = \infty$ et $\lim_{k\rightarrow +\infty} f^\prime(k) = 0.$
+Puisque $\rho + \delta &gt; 0$, il doit exister une valeur entre $(0, +\infty)$ telle que $f^\prime(k) = \rho + \delta.$
+Ceci est une application du <a href="https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_des_valeurs_interm%C3%A9diaires" target="_blank" rel="noopener">Théorème des valeurs intermédiaires</a>
+Par exemple, si $f(k)$ est une fonction Cobb-Douglas, soit $f^\prime(k) = \alpha k^{\alpha-1}$, alors la valeur $k$ pour laquelle $\dot{c} = 0$ est $k = \left(\frac{\rho+\delta}{\alpha}\right)^{\frac{1}{\alpha-1}}.$
+Visuellement:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/dynamic_macroeconomics/finding_kcdotzero.webp" alt="kcdotzero" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Pour simplifier, dissons que quand $k = k^\spadesuit \implies \dot{c} = 0.$
+Nous avons identifié que lorsque $k=k^\spadesuit$m cela implique que $\dot{c} = 0.$
+Examinons maintenant ce qui se passe lorsque $k$ prend une valeur différente, par exemple $k &gt; k^\spadesuit.$
+Pour ce faire, nous utilisons l&rsquo;équation dynamique de $c:$
+$$\frac{\dot{c}}{c} = \frac{1}{\sigma}(f^\prime(k) - \rho - \delta).$$</p>
+<p>Lorsque $k &gt; k^\spadesuit$, cela implique que $f^\prime(k) \lt f^\prime(k^\spadesuit)$, car la fonction $f^\prime(k)$ est décroissante.
+En revenant à notre équation dynamique de $c:$
+$$\frac{\dot{c}}{c} = \frac{1}{\sigma}(f^\prime(k) - \rho - \delta) \lt \frac{1}{\sigma}(f^\prime(k^\spadesuit) - \rho - \delta) = 0.$$</p>
+<p>Nous observons que lorsque $k \gt k^\spadesuit$, l&rsquo;équation dynamique de $c$ est négative, ce qui signifie que $\dot{c} \lt 0$ et que la consommation diminue.
+Graphiquement:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/dynamic_macroeconomics/c_dynamics.webp" alt="cdynamics" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h3 id="k-locus">k-locus</h3>
+<p>Nous procédons de manière similaire pour le capital.
+Dans ce cas-là, nous cherchons les <em>combinaisons</em> de $k$ et $c$ pour lesquelles le capital reste inchangé.
+Ceci est clair en observant l&rsquo;équation dynamique du capital: $\dot{k} = f(k) - c - (n+\delta)k.$
+Ainsi, si $\dot{k} = 0$, alors
+$$c = f(k) - (n+\delta)k$$
+le capital ne change pas.</p>
+<p>Avec une fonction Cobb-Douglas, le capital reste constant si $c = k^\alpha - (n+\delta)k.$
+Il est clair qu&rsquo;il s&rsquo;agit des combinaisons de capital et consommation.
+Par exemple, si $\alpha = 0.3, n = 0.1, \delta = 0.1$, quand $k = 1$ et $c = 1^{0.3} - (0.1 + 0.1)\times 1 = 0.8$ le capital ne change pas.
+Nous pouvons le vérifier car $\dot{k} = 1^{0.3} - 0.8 - (0.1 + 0.1)\times 1 = 0.$
+En revanche, si $c = 0.5$, alors $\dot{k} = 1^{0.3} - 0.5 - (0.1 + 0.1)\times 1 = 0.3 &gt; 0$ et le capital augmente.</p>
+<p>Nous pouvons tracer toutes les combinaisons de $k$ et $c$ qui impliquent $\dot{k} = 0.$
+Étant donné les propriétés de $f(k)$ et le fait que $\dot{k} = 0 \implies c = f(k) - (n+\delta)k$, la courbe aura la forme d&rsquo;une parabole inversée.
+De manière graphique:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/dynamic_macroeconomics/k_dynamics.webp" alt="kdynamics" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h3 id="état-stationnaire-et-diagramme-de-phase">État stationnaire et diagramme de phase</h3>
+<p>L&rsquo;état stationnaire de l&rsquo;économie est défini comme la combinaison de $k$ et $c$ telle que $\dot{k} = \dot{c} = 0.$
+Ainsi, puisque nous avons deux courbes, une pour $\dot{k}= 0$ et une autre pour $\dot{c} = 0,$, l&rsquo;état stationnaire correspond au point où ces deux courbes se croisent.</p>
+<p>Enfin, nous pouvons combiner les dynamiques de $k$ et $c$ pour trouver les dynamiques de l&rsquo;économie grâce à un diagramme de phase.
+La combinaison divise l&rsquo;espace en quatre quadrants, avec des dynamiques distinctes dans chaque quadrant.</p>
+<ul>
+<li>Bas-gauche: $k$ augmente, $c$ augmente</li>
+<li>Haut-gauche: $k$ diminue, $c$ augmente</li>
+<li>Bas-droite: $k$ augmente, $c$ diminue</li>
+<li>Haut-droite: $k$ diminue, $c$ diminue</li>
+</ul>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/dynamic_macroeconomics/ramsey_phase.webp" alt="ramsye_phase" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Dans le modèle de Ramsey, la plupart de trajectoires sont indésirables, car l&rsquo;économie finit avec:</p>
+<ul>
+<li>Soit pas de capital ($k = 0$) et, par conséquent, pas de production ni de consommation</li>
+<li>Soit pas de consommation ($c = 0$).</li>
+</ul>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/dynamic_macroeconomics/ramsey_trajectories.webp" alt="ramsye_dynamics" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Néanmoins, il existe deux chemins (saddle path) qui mènent vers le point stationnaire.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>
+<strong>Note</strong>: dans le modèle de Ramsey, le niveau de consommation stationnaire est inférieur au maximum qu&rsquo;il pourrait atteindre.
+Cela est dû au fait que les ménages sont impatients et préfèrent consommer aujourd&rsquo;hui.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>La stabilité de l&rsquo;état stationnaire (c&rsquo;est-à-dire, la convergence vers lui) est liée à des conditions suffisantes sur les paramètres du modèle, telles que la concavité de la fonction de production, le taux d&rsquo;escompte subjectif et l&rsquo;élasticité de substitution intertemporelle.
+Voir le cours [Dynamic Macroeconomics]https://eric-roca.github.io/courses/macroeconomics/ramsey/&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>Le théorem de Blanchard-Khan permet de déterminer si une économie converge toujours vers l&rsquo;état stationnaire (sans importer où elle commence); si la convergence n&rsquo;est possible que pour certaines combinaisons initiales (notre cas); ou si l&rsquo;économie ne converge jamais vers l&rsquo;état stationnaire.
+Voir le cours [Dynamic Macroeconomics]https://eric-roca.github.io/courses/macroeconomics/ramsey/ (<strong>Attention</strong>: nous travaillons en temps continue, le cours dans le lien est en temps discret et les conditions changent selon comment on modélise le temps).&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+          </div>
+
+          
+
+
+
+          
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/courses/macroeconomics/dynamic_macroeconomics/ramsey_optimization/" rel="next">Optimisation</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/courses/macroeconomics/dynamic_macroeconomics/ramsey_conclusion/" rel="prev">Conclusion</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on 11 Jul, 2019</p>
+
+          
+
+
+
+          
+
+
+
+
+          
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+
+  
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2023 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+      
+
+    
+    <script src="/js/vendor-bundle.min.32ee83730ed883becad04bc5170512cc.js"></script>
+
+    
+    
+    
+      
+
+      
+      
+
+      
+
+      
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/highlight.min.js" integrity="sha512-Ypjm0o7jOxAd4hpdoppSEN0TQOC19UtPAqD+4s5AlXmUvbmmS/YMxYqAqarQYyxTnB6/rqip9qcxlNB/3U9Wdg==" crossorigin="anonymous"></script>
+        
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/r.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/latex.min.js" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/gh/bryanbraun/anchorjs@4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+
+    
+    
+    
+    <script id="page-data" type="application/json">{"use_headroom":false}</script>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.d66c8b3b4ad0f66a62428f6bc7cf477d.js"></script>
+
+    
+    
+    
+    
+    
+    
+      
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+
+
+
+
+
+</body>
+</html>

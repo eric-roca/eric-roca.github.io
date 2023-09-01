@@ -978,6 +978,42 @@ Of course, the optimal allocation will be affected because less resources are av
     </item>
     
     <item>
+      <title>Le modèle de Solow</title>
+      <link>https://eric-roca.github.io/courses/macroeconomics/dynamic_macroeconomics/solow_introduction/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/macroeconomics/dynamic_macroeconomics/solow_introduction/</guid>
+      <description>&lt;h2 id=&#34;le-modèle-de-solow&#34;&gt;Le modèle de Solow&lt;/h2&gt;
+&lt;p&gt;Selon les données, la plupart des économies montrent un taux de croissance à long terme.
+Le modèle de Solow étudie si cela est compatible avec la simple &lt;em&gt;accumulation de capital physique&lt;/em&gt;.
+Le terme &amp;ldquo;accumulation de capital physique&amp;rdquo; signifie que les agents économiques épargnent une partie de leurs revenus, et que cette épargne est investie pour devenir productive.
+Par exemple, on peut penser (ceci ne fait pas partie du modèle) que les ménages épargnent un pourcentage de leur revenu, qui est déposé auprès de la banque.
+Les entreprises empruntent cet argent pour investir dans de la machinerie, ce qui leur permet de produire davantage.
+Finalement, les ménages reçoivent un rendement sur leur épargne.&lt;/p&gt;
+&lt;p&gt;Les données suggèrent que cette approche pourrait être correcte.
+Entre 1960 et 2000, le taux de croissance moyen était de 1.8% et le taux d&amp;rsquo;investissement moyen de 16%.
+Pour les pays les plus pauvres, la croissance était seulement de 0.6% avec un investissement de 10%, tandis que les pays de l&amp;rsquo;est de l&amp;rsquo;Asie ont connu un taux de croissance de 4.9% avec un investissement de 25% &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;Les théories néoclassiques modernes (depuis Ramsey-Cass-Koopmans) commencent l&amp;rsquo;analyse par des unités décentralisées : d&amp;rsquo;un côté les ménages, de l&amp;rsquo;autre les entreprises.
+On suppose que les agents sont rationnels, que l&amp;rsquo;offre et la demande déterminent les prix des facteurs de production, et que les marchés sont concurrentiels (avec des modifications ici).
+Les ménages offrent du travail et du capital, les entreprises embauchent les travailleurs et louent le capital, les ménages épargnent, etc.&lt;/p&gt;
+&lt;p&gt;Le modèle de Solow est différent et plus simple, car il fonctionne avec des agrégats macroéconomiques.
+Il suppose une fonction de production avec des inputs et se focalise sur l&amp;rsquo;évolution agrégée de ces inputs sans modéliser le comportement individuel.
+Par conséquent, il n&amp;rsquo;y a pas de marchés.
+D&amp;rsquo;autres hypothèses simplificatrices s&amp;rsquo;ajoutent au modèle : l&amp;rsquo;économie est fermée (pas de commerce international) et le gouvernement est absent.&lt;/p&gt;
+&lt;p&gt;On étudie d&amp;rsquo;abord le modèle de Solow &lt;em&gt;sans&lt;/em&gt; croissance technologique, puis on l&amp;rsquo;ajoute par la suite.
+En effet, l&amp;rsquo;analyse mathématique est la même, et l&amp;rsquo;effet de la croissance technologique ne complexifie pas le modèle.
+Des connaissances en analyse et en calcul différentiel sont nécessaires au niveau mathématique.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Voir Barro et Sala-i-Martín (p. 23, 2004).&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Trade Policy</title>
       <link>https://eric-roca.github.io/courses/international_trade/trade_policy/</link>
       <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
@@ -1204,6 +1240,103 @@ The solution is &lt;em&gt;the savings function&lt;/em&gt;:&lt;/p&gt;
 &lt;p&gt;There plenty of alternative notations for the OLG model.
 One may write $c^{y}_{t}$ and $c^{o}_{t}$ for young and adult consumption.
 Similarly, the subindeces $t, t+1, \ldots$ denote the period of consumption, but we could have denoted the period in which the individual was born.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Le modèle de Solow</title>
+      <link>https://eric-roca.github.io/courses/macroeconomics/dynamic_macroeconomics/solow_assumptions/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/macroeconomics/dynamic_macroeconomics/solow_assumptions/</guid>
+      <description>&lt;h2 id=&#34;hypothèses&#34;&gt;Hypothèses&lt;/h2&gt;
+&lt;p&gt;Le modèle suppose une économie fermée &lt;em&gt;sans&lt;/em&gt; gouvernement.
+Un seul bien homogène existe et le taux d&amp;rsquo;épargne est constant et fixé de manière exogène.
+Le capital physique se déprécie à un taux constant et exogène.
+Le nombre de travailleurs augmente à un taux constant et exogène.
+Finalement, le modèle de Solow décrit l&amp;rsquo;économie de manière agrégée, c&amp;rsquo;est-à-dire, on ne modélise pas les agents individuels (producteurs et consommateurs).&lt;/p&gt;
+&lt;h3 id=&#34;fonction-de-production&#34;&gt;Fonction de production&lt;/h3&gt;
+&lt;p&gt;Dans le modèle de base, l&amp;rsquo;économie produit un seul bien homogène ($Y$) à l&amp;rsquo;aide d&amp;rsquo;une fonction de production.
+Dans l&amp;rsquo;économie, seuls deux facteurs de production existent : le capital physique ($K$) et le travail ($L$).
+La fonction de production combine ces deux inputs pour produire l&amp;rsquo;output.
+Le temps dans le modèle est &lt;em&gt;continu&lt;/em&gt;.
+La fonction de production est :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Homogène de premier degré (pour tous les facteurs de production rivaux)&lt;/li&gt;
+&lt;li&gt;La production est croissante pour tous les facteurs de production&lt;/li&gt;
+&lt;li&gt;Montre des rendements décroissants&lt;/li&gt;
+&lt;li&gt;Satisfait les conditions d&amp;rsquo;Inada&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ces hypothèses sur la fonction de production sont essentielles pour trouver les résultats du modèle.&lt;/p&gt;
+&lt;h4 id=&#34;homogénéité-de-premier-degré&#34;&gt;Homogénéité de premier degré&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Hypothèse cruciale&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Une fonction est homogène de premier degré si le fait de dupliquer les facteurs de production double la quantité produite.
+Cette hypothèse semble raisonnable : si une usine avec 10 machines et 50 travailleurs produit 500 unités de production, alors en créant une deuxième usine identique, on obtiendra un total de 1000 unités de production avec 20 machines et 100 travailleurs.&lt;/p&gt;
+&lt;p&gt;Mathématiquement, une fonction est homogène de degré $\lambda$ si :
+$$F\left[\lambda K, \lambda L\right] = \lambda F\left[K, L\right],, \lambda \geq 0$$&lt;/p&gt;
+&lt;h4 id=&#34;production-croissante&#34;&gt;Production croissante&lt;/h4&gt;
+&lt;p&gt;Cette hypothèse est logique : si la quantité de capital ou de travail augmente, on produit davantage.
+Mathématiquement, la production est croissante si :&lt;/p&gt;
+&lt;p&gt;$$F^{\prime}_{K}\ F[K, L] &amp;gt; 0, F^{\prime}_{L}\ F[K, L] &amp;gt; 0$$&lt;/p&gt;
+&lt;p&gt;Où $F^{\prime}_{X}$ indique la dérivée première par rapport à la variable $X$.&lt;/p&gt;
+&lt;h4 id=&#34;rendements-décroissants&#34;&gt;Rendements décroissants&lt;/h4&gt;
+&lt;p&gt;L&amp;rsquo;idée des rendements décroissants est centrale dans la théorie économique.
+Cette hypothèse indique que chaque fois que l&amp;rsquo;on augmente la quantité d&amp;rsquo;&lt;em&gt;un facteur de production&lt;/em&gt;, la production augmente, mais de moins en moins.
+Par exemple, avec 10 machines et 50 travailleurs, la production est de 500 unités.
+En passant de 10 machines à 20 machines (&lt;em&gt;sans changer le nombre de travailleurs&lt;/em&gt;), la production augmente de 100 unités, passant de 500 à 600.
+Cependant, si l&amp;rsquo;on ajoute 10 machines supplémentaires pour un total de 30, la production n&amp;rsquo;augmente que de 50 unités, passant de 600 à 650.&lt;/p&gt;
+&lt;p&gt;Mathématiquement, les rendements décroissants impliquent :&lt;/p&gt;
+&lt;p&gt;$$F^{\prime \prime}_{K}\ F[K, L] &amp;lt; 0, F^{\prime \prime}_{L}\ F[K, L] &amp;lt; 0$$&lt;/p&gt;
+&lt;p&gt;Où $F^{\prime \prime}_{X}$ indique la dérivée seconde par rapport à la variable $X$.&lt;/p&gt;
+&lt;h4 id=&#34;conditions-dinada&#34;&gt;Conditions d&amp;rsquo;Inada&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Hypothèse cruciale&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Les conditions d&amp;rsquo;Inada sont une série de conditions qui décrivent le comportement de la fonction de production lorsque les facteurs de production ($K$ et $L$) sont rares ou abondants.
+Ces conditions indiquent que la productivité marginale du travail et du capital est élevée lorsque ces facteurs sont proches de zéro, et qu&amp;rsquo;elle diminue à mesure que ces facteurs deviennent plus abondants.&lt;/p&gt;
+&lt;p&gt;Mathématiquement, les conditions d&amp;rsquo;Inada sont les suivantes :&lt;/p&gt;
+&lt;p&gt;$$\lim_{K\rightarrow 0}F^{\prime}_{K}\left[K, L\right] = \infty,\lim_{L\rightarrow 0}F^{\prime}_{L}\left[K, L\right] = \infty$$
+$$\lim_{K\rightarrow \infty}F^{\prime}_{K}\left[K, L\right] = 0,\lim_{L\rightarrow \infty}F^{\prime}_{L}\left[K, L\right] = 0$$&lt;/p&gt;
+&lt;h4 id=&#34;les-inputs-sont-essentielles-pour-la-production&#34;&gt;Les inputs sont essentielles pour la production&lt;/h4&gt;
+&lt;p&gt;Parfois, on ajoute un condtion additionelle indiquant que chaque input, capital et travail, sont essentiels pour la production.
+Cela veut dire que, si l&amp;rsquo;un de ces facteurs est zéro, la production est nulle.
+Mathématiquement:
+$$F[K,0] = F[0, L] = 0$$&lt;/p&gt;
+&lt;p&gt;Cette hypothèse peut de démontrer à partir des autres hypothèses et n&amp;rsquo;est pas essentielle (voir page 77 de &lt;em&gt;Barro et Sala-i-Martin&lt;/em&gt; ).&lt;/p&gt;
+&lt;h3 id=&#34;fonction-de-production-cobb-douglas&#34;&gt;Fonction de production Cobb-Douglas&lt;/h3&gt;
+&lt;p&gt;Dans ce qui suit, pour simplifier l&amp;rsquo;analyse, nous utiliserons la fonction de production Cobb-Douglas pour toute l&amp;rsquo;analyse :&lt;/p&gt;
+&lt;p&gt;$$Y(t) = F\left[K(t), L(t)\right] = K(t)^\alpha L(t)^{1-\alpha}, \alpha \in (0,1)$$&lt;/p&gt;
+&lt;p&gt;Cette fonction de production vérifie toutes les hypothèses nécessaires du modèle.&lt;/p&gt;
+&lt;h3 id=&#34;consommation-et-épargne&#34;&gt;Consommation et épargne&lt;/h3&gt;
+&lt;p&gt;Dans tous les modèles économiques dynamiques, l&amp;rsquo;équation d&amp;rsquo;accumulation du capital est fondamentale.
+Elle indique comment le capital (physique et humain) augmente au fil du temps.
+Dans les modèles de Solow et de Ramsey-Cass-Koopmans simples, le seul type de capital considéré est le capital physique, qui représente l&amp;rsquo;ensemble des biens utilisés dans le processus de production et qui ne sont pas consommés.&lt;/p&gt;
+&lt;p&gt;Pour mieux comprendre, imaginons que l&amp;rsquo;économie produit $Y$ unités du bien final.
+Comme il n&amp;rsquo;y a pas de gouvernement, toute la production doit être soit consommée par les agents, soit dédiée à l&amp;rsquo;investissement.
+Ainsi, une partie de cette production est destinée à la consommation des agents, notée $C(t)$, pour en tirer de l&amp;rsquo;utilité&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.
+Par conséquent (comme dans le modèle IS-LM), nous avons :&lt;/p&gt;
+&lt;p&gt;$$Y(t) = C(t) + I(t).$$&lt;/p&gt;
+&lt;p&gt;En même temps, du point de vue des ménages, nous avons $Y(t) - C(t) = S(t)$.
+C&amp;rsquo;est-à-dire que la partie qui n&amp;rsquo;est pas consommée correspond à l&amp;rsquo;épargne des ménages, notée $S(t)$, qui représente l&amp;rsquo;ensemble des biens épargnés&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.
+Cette épargne passe par le système bancaire et devient du capital productif à la période suivante.
+Cependant, comme nous ne modélisons pas le système bancaire, nous pouvons imaginer que les ménages prêtent directement des biens productifs aux entreprises.
+Par exemple, un ménage pourrait prêter une voiture à une entreprise, un autre pourrait prêter un bâtiment, etc.
+Ainsi, le niveau d&amp;rsquo;investissement est égal à l&amp;rsquo;épargne : $I(t) = S(t)$.&lt;/p&gt;
+&lt;h3 id=&#34;travailleurs&#34;&gt;Travailleurs&lt;/h3&gt;
+&lt;p&gt;Dans le modèle simple de Solow, le nombre de travailleurs augmente à chaque période de manière exogène.
+Cela reflète l&amp;rsquo;interaction entre le taux de fécondité, le taux de mortalité, les migrations, etc.
+Pour les pays développés, ces taux sont plus ou moins stables et supposer que ces variables sont exogènes simplifie l&amp;rsquo;analyse.
+D&amp;rsquo;autres modèles plus complexes cherchent à modéliser le niveau de fécondité, qui a beaucoup varié au cours de l&amp;rsquo;histoire et qui diffère également selon le niveau de revenu.
+Dans le cadre du modèle de Solow, la population augmente simplement au taux $n \geq 0$.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Le modèle de Solow ne prend pas explicitement en compte l&amp;rsquo;utilité des agents.
+Ainsi, au lieu d&amp;rsquo;utiliser une formulation telle que $U(c(t)) = u(c(t)) \stackrel{ex}{=} \log(c(t))$, on suppose que plus de consommation est toujours préférable (ce qui est en réalité vrai pour les fonctions d&amp;rsquo;utilité typiques).&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;On peut imaginer que chaque ménage épargne $s(t)$, qu&amp;rsquo;il y a $L(t)$ ménages dans l&amp;rsquo;économie et donc $S(t) = s(t)L(t)$.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
@@ -2168,6 +2301,18 @@ $$\frac{w}{r} = \frac{1-\alpha}{\alpha} \left(\frac{K}{L} \right)^{1-\rho}.$$&lt
 \frac{\alpha}{1-\alpha}\frac{1}{1-\rho}\left(\frac{w}{r}\frac{\alpha}{1-\alpha}\right)^{\frac{1}{1-\rho}-1}
 \frac{1-\alpha}{\alpha}\left(\frac{K}{L}\right)^{1-\rho}\frac{L}{K} =
 \frac{1}{1-\rho}.$$&lt;/p&gt;
+&lt;h2 id=&#34;cobb-douglas-and-constant-shares&#34;&gt;Cobb-Douglas and constant shares&lt;/h2&gt;
+&lt;p&gt;The Cobb-Douglas production is the unique neoclassical production function that exhibits constant factor shares in a competitive setup.
+From the definition of shares we have that:&lt;/p&gt;
+&lt;p&gt;$$\frac{rK}{Y} = z_{1}$$
+$$\frac{wL}{Y} = z_{2}$$
+Where $z_1$ and $z_2$ are constants.&lt;/p&gt;
+&lt;p&gt;Starting from the first, and because of competititon:
+$\frac{rK}{Y} = z_{1} \implies \frac{rk}{y} = z_1 \implies \frac{f^\prime (k) k}{f(k)} = z_1.$
+Solving this differential equation:
+$\frac{f^\prime (k) k}{f(k)} = z_{1} \implies \frac{\mathrm{d} \log (f(k))}{\mathrm{k}} = \frac{z_1}{k} \implies$
+$\implies \log (f(k)) = z_{1} \log (k)+C\implies f(k) = Ck^{z_1}.$
+Which corresponds to the intensive form of the Cobb-Douglas production function.&lt;/p&gt;
 </description>
     </item>
     
@@ -3073,6 +3218,96 @@ $\epsilon &amp;lt; 1$ also means that $c$ and $d$ are intertemporally complement
     </item>
     
     <item>
+      <title>Variables per capita</title>
+      <link>https://eric-roca.github.io/courses/macroeconomics/dynamic_macroeconomics/solow_percapita/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/macroeconomics/dynamic_macroeconomics/solow_percapita/</guid>
+      <description>&lt;p&gt;Quand on compare les différents pays pour les classer en fonction du revenu, on utilise généralement le &lt;em&gt;revenu par habitant&lt;/em&gt; ou la &lt;em&gt;production par habitant&lt;/em&gt;.
+En effet, si l&amp;rsquo;on considère $Y(t)$ comme la production totale, il est normal que les pays les plus peuplés produisent davantage.
+Par exemple, le PIB (et non le PIB par habitant) de la Chine s&amp;rsquo;élève à environ 18 000 000 000 000 USD, tandis que celui du Luxembourg est seulement de 82 000 000 000 USD.
+Cependant, le niveau de richesse individuel est beaucoup plus élevé au Luxembourg, car la Chine compte environ 1 400 000 000 d&amp;rsquo;habitants contre seulement 650 000 au Luxembourg.
+Il est donc essentiel de mesurer le niveau de production &lt;em&gt;par habitant&lt;/em&gt; afin d&amp;rsquo;établir des comparaisons appropriées et de comprendre pourquoi &lt;strong&gt;chaque individu est capable de produire davantage avec le développement&lt;/strong&gt;.
+Les hypothèses du modèle, en particulier l&amp;rsquo;homogénéité de premier degré, nous permettent d&amp;rsquo;effectuer cette mesure.&lt;/p&gt;
+&lt;h3 id=&#34;variables-par-habitant&#34;&gt;Variables par habitant&lt;/h3&gt;
+&lt;p&gt;Rappelons ce que signifie l&amp;rsquo;homogénéité de premier degré, c&amp;rsquo;est-à-dire que la fonction présente des rendements constants à l&amp;rsquo;échelle.
+une fonction est dite homogène de premier degré lorsque, si l&amp;rsquo;on multiplie les entrées par une même constante $\lambda &amp;gt; 0$, la sortie est également multipliée par cette même constante.
+Ainsi, pour une fonction $F\left[K(t), L(t)\right]$ ayant des rendements constants, cela signifie que $F\left[\lambda K(t), \lambda L(t)\right] = \lambda F\left[K(t), L(t)\right]$ pour tout $\lambda &amp;gt; 0$.&lt;/p&gt;
+&lt;p&gt;La définition est valable pour toute valeur de $\lambda$, y compris lorsque $\lambda = \frac{1}{L}.$
+Ainsi, on peut écrire :&lt;/p&gt;
+&lt;p&gt;$$Y = F[K, L] \stackrel{Hom.}{\implies} \frac{Y}{L} = F\left[\frac{K}{L}, \frac{L}{L}\right] = F\left[\frac{K}{L}, 1\right]=\frac{Y}{L}.$$
+À partir de cette équation, on peut montrer que :
+$$Y(t) = L\ F\left[\frac{K}{L}, 1\right].$$&lt;/p&gt;
+&lt;p&gt;Cette équation exprime le revenu total $Y$ en fonction du facteur travail $L$ et de la fonction de production $F\left[\frac{K}{L}, 1\right]$, où $\frac{K}{L}$ représente le capital par travailleur.&lt;/p&gt;
+&lt;p&gt;Pour simplifier la notation, on utilise les notations suivantes :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$k \equiv \frac{K}{L}$ : le niveau de capital par travailleur (ou par habitant)&lt;/li&gt;
+&lt;li&gt;$y \equiv \frac{Y}{L}$ : le niveau de production ou de revenu par travailleur (ou par habitant)&lt;/li&gt;
+&lt;li&gt;$f(k) \equiv F\left(\frac{K}{L}, 1\right)$ : la fonction de production en termes per capita, également appelée &lt;em&gt;fonction intensive&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Avec ces notations, nous pouvons réécrire l&amp;rsquo;équation précédente comme suit :&lt;/p&gt;
+&lt;p&gt;$y(t) = f(k(t))$&lt;/p&gt;
+&lt;p&gt;Cette équation exprime le niveau de production ou de revenu par travailleur $y$ en fonction du niveau de capital par travailleur $k$, en utilisant la fonction de production intensive $f(k)$.&lt;/p&gt;
+&lt;p&gt;En appliquant ces méthodes à la fonction de production Cobb-Douglas :&lt;/p&gt;
+&lt;p&gt;$$Y = F[K, L] = K^\alpha L^{1-\alpha} \implies$$
+$$\implies \frac{Y}{L} \equiv y = \frac{K^\alpha L^{1-\alpha}}{L} = K^\alpha L^{-\alpha} = \left(\frac{K}{L}\right)^\alpha = k^\alpha.$$&lt;/p&gt;
+&lt;p&gt;Cela signifie que le niveau de production ou de revenu par travailleur $y$ dans le modèle Cobb-Douglas est égal à la variable $k$ élevée à la puissance $\alpha$.&lt;/p&gt;
+&lt;h3 id=&#34;cobb-douglas-taux-dintérêt-salaire-et-_shares_-parts-de-revenus&#34;&gt;Cobb-Douglas, taux d&amp;rsquo;intérêt, salaire et &lt;em&gt;shares&lt;/em&gt; (parts de revenus)&lt;/h3&gt;
+&lt;p&gt;Les parts de revenus mesurent la partie du revenu total qui est distribuée comme paiement aux propriétaires de chaque facteur de production. Dans le modèle de Solow, il y a deux facteurs de production : le capital et le travail.&lt;/p&gt;
+&lt;p&gt;Dans une économie concurrentielle, chaque facteur est rémunéré selon son rendement marginal.&lt;/p&gt;
+&lt;p&gt;Une propriété importante et unique de la fonction de production Cobb-Douglas est que, dans une situation de concurrence parfaite, les parts de revenus des facteurs (parts de revenus des facteurs) sont constantes, comme expliqué dans l&amp;rsquo;annexe.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
+Les parts de revenus mesurent la partie du revenu total qui est distribuée comme paiement aux propriétaires de chaque facteur de production.
+Dans le modèle de Solow, il y a deux facteurs de production : le capital et le travail.&lt;/p&gt;
+&lt;p&gt;Étant donné que nous supposons une économie concurrentielle, nous savons que chaque facteur est rémunéré selon son rendement marginal :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$w = \frac{\partial F[K, L]}{\partial L}$&lt;/li&gt;
+&lt;li&gt;$R = \frac{\partial F[K, L]}{\partial K}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;taux-dintérêt&#34;&gt;Taux d&amp;rsquo;intérêt&lt;/h4&gt;
+&lt;p&gt;En général, le taux d&amp;rsquo;intérêt est donné par l&amp;rsquo;expression suivante:
+$R = \frac{\partial F[K, L]}{\partial K} = \frac{\partial L F\left[\frac{K}{L}\right]}{K} = L F^\prime \left[\frac{K}{L}\right] \frac{1}{L} = f^\prime (k).$&lt;/p&gt;
+&lt;p&gt;Dans le cas de la fonction de production Cobb-Douglas :
+$R = \frac{\partial K^\alpha L^{1-\alpha}}{\partial K} = \alpha K^{\alpha - 1}L^{1-\alpha} = \alpha k^{\alpha -1}$&lt;/p&gt;
+&lt;p&gt;Ou de manière alternative, en utilisant la règle générale :
+$R = f^\prime (k),\ f(k) = k^\alpha \implies R = f^\prime (k) = \alpha k^{\alpha -1}.$&lt;/p&gt;
+&lt;h4 id=&#34;salaire&#34;&gt;Salaire&lt;/h4&gt;
+&lt;p&gt;Le salaire peut être déterminé de manière similaire.
+De manière générale :&lt;/p&gt;
+&lt;p&gt;$w = \frac{\partial F[K,L]}{\partial L} = \frac{\partial L F\left[\frac{K}{L}\right]}{\partial L} = F\left[\frac{K}{L}\right] + F^\prime \left[\frac{K}{L}\right][-1]\frac{K}{L^2}L = f(k) - f^\prime (k) k$.&lt;/p&gt;
+&lt;p&gt;Dans le cas de la formulation Cobb-Douglas :&lt;/p&gt;
+&lt;p&gt;$w = \frac{\partial K^\alpha L^{1-\alpha}}{\partial L} = (1-\alpha) K^{\alpha}L^{-\alpha} = (1-\alpha) k^{\alpha}$&lt;/p&gt;
+&lt;p&gt;Ou de manière alternative, en utilisant la règle générale :&lt;/p&gt;
+&lt;p&gt;$w = f(k) - f^\prime (k) k ,\ f(k) = k^\alpha \implies$
+$\implies w = f(k) - f^\prime (k) k = k^\alpha - \alpha k^{\alpha -1}k = (1-\alpha) k^\alpha.$&lt;/p&gt;
+&lt;h4 id=&#34;parts-de-revenus-_shares_&#34;&gt;Parts de revenus (&lt;em&gt;Shares&lt;/em&gt;)&lt;/h4&gt;
+&lt;p&gt;Les parts de revenu de chaque facteur se définissent comme les paiements totaux que les propriétaires de chaque facteur reçoivent en pourcentage de la production totale.
+Par exemple, les propriétaires du capital reçoivent $R$ unités d&amp;rsquo;intérêt par chaque unité de capital.
+Ainsi, ils reçoivent au total $R K$.
+Il en va de même pour les travailleurs : avec un salaire de $w$, les travailleurs qui offrent $L$ unités de travail touchent au total $w L$.&lt;/p&gt;
+&lt;p&gt;Pour trouver les parts de revenus (shares), il suffit de voir à quelle proportion $w L$ et $R K$ correspondent par rapport à la production totale.
+Cela se calcule de la manière suivante :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\frac{w\ L}{Y}$&lt;/li&gt;
+&lt;li&gt;$\frac{R\ K}{Y}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Dans le cas d&amp;rsquo;une fonction de production Cobb-Douglas :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\frac{w\ L}{Y} \stackrel{\text{div. par}\ L}{=} \frac{w}{y} = \frac{w}{f(k)} = \frac{(1-\alpha) k^\alpha}{k^\alpha} = 1- \alpha.$&lt;/li&gt;
+&lt;li&gt;$\frac{R\ K}{Y} \stackrel{\text{div. par}\ L}{=} \frac{R\ k}{y} = \frac{R\ k}{f(k)} = \frac{\alpha k^{\alpha-1}k}{k^\alpha} = \alpha.$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ainsi, dans une économie avec une fonction de production Cobb-Douglas, les travailleurs reçoivent une part $(1-\alpha)$ de la production totale, tandis que les capitalistes touchent une part $\alpha$.
+Ceci, qui pour l&amp;rsquo;instant semble plus une curiosité qu&amp;rsquo;autre chose, sera important par la suite.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Veuillez vous référer à l&amp;rsquo;annexe &lt;a href=&#34;https://eric-roca.github.io/courses/mathematical_appendix/elasticity_of_substitution/#cobb-douglas-and-constant-shares&#34;&gt;ici&lt;/a&gt; pour plus d&amp;rsquo;informations.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Diversité génétique et développement</title>
       <link>https://eric-roca.github.io/courses/comparative_development/papers/ashraf_galor__2013/</link>
       <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
@@ -3381,6 +3616,150 @@ Ces deux alternatives sont explorées par &lt;a href=&#34;https://doi.org/10.398
 &lt;ol&gt;
 &lt;li id=&#34;fn:1&#34;&gt;
 &lt;p&gt;Ce niveau optimal de diversité change avec le développement économique, c&amp;rsquo;est-à-dire, le niveau optimal pendant l&amp;rsquo;année 0 est différent du niveau optimal pendant l&amp;rsquo;année 1500.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Les dynamiques dans le modèle Solow</title>
+      <link>https://eric-roca.github.io/courses/macroeconomics/dynamic_macroeconomics/solow_dynamics/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/macroeconomics/dynamic_macroeconomics/solow_dynamics/</guid>
+      <description>&lt;h2 id=&#34;dérivation-des-dynamiques&#34;&gt;Dérivation des dynamiques&lt;/h2&gt;
+&lt;h3 id=&#34;équation-daccumulation-de-capital&#34;&gt;Équation d&amp;rsquo;accumulation de capital&lt;/h3&gt;
+&lt;p&gt;Le modèle de Solow repose sur une hypothèse simplifiée : le taux d&amp;rsquo;épargne est le même pour tous les ménages à tout moment.
+En réalité, le taux d&amp;rsquo;épargne est fixé de manière exogène dans le modèle, ce qui en fait un &lt;em&gt;paramètre&lt;/em&gt;.
+Nous notons le taux d&amp;rsquo;épargne par $s$, qui représente la fraction de la production qui est épargnée&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.
+Il est important de noter que le taux d&amp;rsquo;épargne doit être compris entre 0 et 1, donc nous imposons $0 \leq s \leq 1.$&lt;/p&gt;
+&lt;p&gt;Comme nous l&amp;rsquo;avons mentionné précédemment, l&amp;rsquo;épargne et l&amp;rsquo;investissement sont convertis en capital productif pour la période suivante.
+Ainsi, l&amp;rsquo;épargne contribue à l&amp;rsquo;accumulation du capital : plus une économie épargne, plus rapidement le capital s&amp;rsquo;accumule.
+Cependant, cela entraîne également une réduction du niveau de consommation, car $C(t) = Y(t) - S(t) = (1-s)Y(t).$
+Si le taux d&amp;rsquo;épargne est élevé, le niveau de consommation doit nécessairement être réduit.&lt;/p&gt;
+&lt;p&gt;La dépréciation du capital neutralise l&amp;rsquo;accumulation réalisée grâce à l&amp;rsquo;épargne.
+Nous postulons qu&amp;rsquo;à chaque période, une fraction $\delta \in (0,1)$ du capital accumulé devient obsolète et cesse d&amp;rsquo;être productif.
+Ainsi, si le niveau de capital est $K(t), \delta K(t)$ unités deviennent non productives.&lt;/p&gt;
+&lt;h4 id=&#34;dérivées-par-rapport-au-temps&#34;&gt;Dérivées par rapport au temps&lt;/h4&gt;
+&lt;p&gt;Nous utilisons la notation &amp;ldquo;point&amp;rdquo; pour indiquer la dérivation par rapport au temps.
+Cela signifie que si nous avons une fonction $x(t)$ qui dépend du temps, sa dérivée par rapport au temps est notée comme suit :
+$$\frac{\mathrm{d} x(t)}{\mathrm{d} t} = \dot{x}.$$&lt;/p&gt;
+&lt;hr&gt;
+Tout à fait, en physique, la dérivée par rapport au temps d&#39;une fonction qui décrit la position d&#39;un objet donne sa vitesse instantanée à un instant donné.
+Par exempe, la position de l&#39;individu est décrite par la fonction $x(t) = 2t$ où $x$ représente la position et $t$ le temps.
+&lt;p&gt;Pour trouver la vitesse de cette personne, nous prenons la dérivée de la fonction $x(t)$ par rapport au temps, notée $\frac{\mathrm{d}x(x)}{\mathrm{d}t}$ ou $\dot{x}$.
+Dans ce cas, la dérivée de $x(t)$ par rapport à $t$ est simplement 2.
+Donc, la vitesse de cette personne est $\dot{x} = 2.$
+Cela signifie que la personne avance à une vitesse constante de 2 mètres par seconde.&lt;/p&gt;
+&lt;hr&gt;
+Avec les deux hypothèses précédentes, il est possible d&#39;écrire l&#39;équation d&#39;accumulation de capital pour le modèle de Solow[^1].
+La _vitesse_ du capital, c&#39;est-à-dire le _changement de son niveau_, est donnée par :
+&lt;p&gt;$$\dot{K}(t) = I(t) - \delta K(t) = s F\left[K(t), L(t)\right] - \delta K(t).$$&lt;/p&gt;
+&lt;p&gt;Nous pouvons penser de manière informelle à $\dot{K}(t)$ comme étant égal à $K(t+1) - K(t)$, où le $1$ dans $(t+1)$ représente une unité de temps supplémentaire, et donc on mesure le changement du niveau de capital à chaque instant.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;Comme on le voit, l&amp;rsquo;équation d&amp;rsquo;accumulation de capital dépend de la production totale : $\dot{K}(t) = s \underbrace{F\left[K(t), L(t)\right]}_{=Y(t)} - \delta K(t)$, et la production dépend du niveau de capital $K(t)$ et du nombre de travailleurs $L(t)$.
+Il est facile de calculer le nombre de travailleurs à un moment donné, car ils évoluent de manière exogène.
+Ainsi,&lt;/p&gt;
+&lt;p&gt;$$L(t) = L(0)e^{nt}.$$&lt;/p&gt;
+&lt;p&gt;De manière alternative :&lt;/p&gt;
+&lt;p&gt;$$\dot{L}(t) = \frac{\partial L(t)}{\partial t} = \frac{\partial L(0)e^{nt}}{\partial t} = n L(0)e^{nt}.$$&lt;/p&gt;
+&lt;p&gt;Ainsi, le taux de croissance de la population est :&lt;/p&gt;
+&lt;p&gt;$$\frac{\dot{L}(t)}{L(t)} = \frac{n L(0)e^{nt}}{L(0)e^{nt}} = n.$$&lt;/p&gt;
+&lt;h3 id=&#34;accumulation-de-capital-par-habitant&#34;&gt;Accumulation de capital par habitant&lt;/h3&gt;
+&lt;p&gt;Pour l&amp;rsquo;instant, l&amp;rsquo;équation d&amp;rsquo;accumulation de capital est indiquée en termes de capital total.
+Il serait plus pratique de l&amp;rsquo;exprimer en termes de capital par habitant, car c&amp;rsquo;est l&amp;rsquo;unité principale du modèle (on ne compare pas le PIB de la Chine avec celui du Luxembourg, on compare le PIB par habitant).
+Ainsi, au lieu de $\dot{K}$, nous voulons calculer $\dot{k}$.
+Ce changement apparemment mineur est plus complexe qu&amp;rsquo;il n&amp;rsquo;y paraît.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Attention&lt;/strong&gt;: Nous cherchons à calculer $\dot{k} = \dot{\left(\frac{K}{L}\right)}$, où l&amp;rsquo;opérateur $\cdot$ (dérivée par rapport au temps, opérateur vitesse) est appliqué &lt;strong&gt;à toute la fraction&lt;/strong&gt; $\frac{K}{L}$.&lt;/p&gt;
+&lt;p&gt;En fait, $\dot{\left(\frac{K}{L}\right)}$ est équivalent à $\frac{\mathrm{d}}{\mathrm{d}t}\left(\frac{K(t)}{L(t)}\right)$, c&amp;rsquo;est-à-dire la &lt;strong&gt;&lt;em&gt;vitesse du capital par habitant&lt;/em&gt;&lt;/strong&gt;.
+Cela diffère de :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\dot{K} \rightarrow$ vitesse du capital (sans distinction de la population)&lt;/li&gt;
+&lt;li&gt;$\dot{K}\big{/}{L} \rightarrow$ vitesse du capital, divisée par la population&lt;/li&gt;
+&lt;li&gt;$\frac{\dot{K}}{\dot{L}} \rightarrow$ division de la vitesse du capital par la vitesse de la population.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Comme $\dot{k} = \dot{\left(\frac{K}{L}\right)} = \frac{\mathrm{d}}{\mathrm{d} t}\left(\frac{K(t)}{L(t)}\right)$, il suffit d&amp;rsquo;appliquer les règles de dérivation&lt;sup id=&#34;fnref1:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.
+Ainsi :&lt;/p&gt;
+&lt;p&gt;$$\frac{\mathrm{d} \frac{K(t)}{L(t)}}{\mathrm{d} t} =
+\frac{ \overbrace{\dot{K}(t)}^{\frac{\mathrm{d} K(t)}{\mathrm{d} t}} L(t) - \overbrace{\dot{L}(t)}^{\frac{\mathrm{d} L(t)}{\mathrm{d} t}}K(t)}{L(t)^2} = $$
+$$ = \frac{\dot{K}(t)}{L(t)} - \frac{\dot{L}(t)}{L(t)}\frac{K(t)}{L(t)} = \frac{\dot{K}(t)}{L(t)} - n k(t)$$&lt;/p&gt;
+&lt;p&gt;Ici, nous avons utilisé $\frac{\dot{L}(t)}{L(t)} = \frac{n L(0)e^{nt}}{L(0)e^{nt}} = n$ et défini $k(t) \equiv \frac{K(t)}{L(t)}$.&lt;/p&gt;
+&lt;p&gt;Cependant, nous avons encore un problème : notre expression pour $\dot{k}$ inclut $\dot{K}$, ce qui la rend peu utile.
+Pour la simplifier, nous utilisons $\dot{K} = s F[K,L] - \delta K$ (il est à noter que cette expression n&amp;rsquo;est pas par habitant).
+Ainsi, à partir de :&lt;/p&gt;
+&lt;p&gt;$$\frac{\dot{K}(t)}{L(t)} - n k(t)$$&lt;/p&gt;
+&lt;p&gt;si nous remplaçons $\dot{K}(t)$ par $\dot{K} = s F\left[K(t), L(t)\right] - \delta K(t)$, nous obtenons :&lt;/p&gt;
+&lt;p&gt;$$\frac{\dot{K}(t)}{L(t)} - n k(t) = \frac{s F\left[K(t), L(t)\right] - \delta K(t)}{L(t)} - n k(t) = $$
+$$= s f(k(t)) - (n+\delta)k(t).$$&lt;/p&gt;
+&lt;p&gt;Ainsi, l&amp;rsquo;équation d&amp;rsquo;accumulation de capital par habitant est :&lt;/p&gt;
+&lt;p&gt;$$\dot{k} = s f(k) - (n + \delta) k.$$&lt;/p&gt;
+&lt;p&gt;Cette équation est l&amp;rsquo;équation fondamentale du modèle de Solow.
+Avec la fonction de production Cobb-Douglas, elle devient $\dot{k} = s k^\alpha - (n+\delta)k$.&lt;/p&gt;
+&lt;h4 id=&#34;comprendre-dotk--s-fk---ndeltak&#34;&gt;Comprendre $\dot{k} = s f(k) - (n+\delta)k$&lt;/h4&gt;
+&lt;p&gt;L&amp;rsquo;équation fondamentale du modèle de Solow nous indique comment le capital &lt;em&gt;par habitant&lt;/em&gt; change avec le temps, c&amp;rsquo;est-à-dire, c&amp;rsquo;est la vitesse du capital par habitant.
+On y voit un facteur positif qui accélère l&amp;rsquo;accumulation de capital par habitant et un autre facteur négatif qui le freine.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Facteur positif : $s f(k)$
+Il est lié à l&amp;rsquo;épargne.
+En effet, si les ménages épargnent davantage ($s$ plus grand) ou si la production par unité de capital est plus élevée ($f(k)$ plus grand), alors on accumule davantage de capital.
+&lt;strong&gt;On remarque que l&amp;rsquo;épargne est une fraction de la production totale&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Facteur négatif : $(n+\delta) k$&lt;/p&gt;
+&lt;p&gt;On peut penser à $(n+\delta)$ comme étant le taux total de dépréciation du capital par habitant.
+D&amp;rsquo;un côté, si un plus grand nombre de machines deviennent inutilisables chaque année ($\delta$ élevé), alors on perd du capital.
+D&amp;rsquo;un autre côté, ici on parle de capital &lt;em&gt;par habitant&lt;/em&gt;.
+Ainsi, si la population augmente considérablement ($n$ élevé), le nombre de machines par personne diminue ($k$ diminue).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Il est possible de représenter graphiquement les deux contributions sur un même graphique.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/dynamic_macroeconomics/solow_basic.webp&#34; alt=&#34;Solow 1&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;La courbe solide représente la fonction de production (intensive) : $f(k) = k^\alpha$.
+On peut observer qu&amp;rsquo;elle vérifie toutes nos hypothèses :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Croissante ($f^\prime (k) &amp;gt; 0$)&lt;/li&gt;
+&lt;li&gt;Concave ($f^{\prime \prime} (k) &amp;lt; 0$)&lt;/li&gt;
+&lt;li&gt;Pente forte lorsque $k$ est proche de zéro ($\lim_{k \rightarrow 0} f^\prime (k) = \infty$)&lt;/li&gt;
+&lt;li&gt;S&amp;rsquo;aplatit lorsque $k$ tend vers l&amp;rsquo;infini ($\lim_{k \rightarrow \infty} f^\prime (k) = 0$)&lt;/li&gt;
+&lt;li&gt;La courbe commence à zéro ($f(0) = 0$)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;La courbe en traits représente l&amp;rsquo;épargne-investissement.
+C&amp;rsquo;est, par définition dans le modèle, la fraction $s$ de la production totale, et donc elle présente les mêmes propriétés que la fonction $f(x)$.&lt;/p&gt;
+&lt;p&gt;Enfin, la droite en pointillés représente le taux de dépréciation total, incluant la &amp;ldquo;vraie&amp;rdquo; dépréciation du capital ($\delta$) ainsi que l&amp;rsquo;érosion du capital par habitant due à l&amp;rsquo;augmentation de la population $n$.
+La droite de dépréciation est une droite avec une pente constante égale à $n+\delta$.&lt;/p&gt;
+&lt;p&gt;Il est possible de montrer que, en raison des propriétés des courbes, un point de croisement entre $sf(k)$ et $(n+\delta)k$ existe.&lt;/p&gt;
+&lt;p&gt;Ce point de croisement est appelé état stationnaire et il constitue un élément crucial du modèle Solow et de tous les modèles dynamiques&lt;sup id=&#34;fnref1:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;En effet, c&amp;rsquo;est comme si on calculait la dérivée suivante : $\frac{\mathrm{d} \frac{x^2}{\log(x)}}{\mathrm{d} x}$.
+La seule différence, c&amp;rsquo;est qu&amp;rsquo;au lieu d&amp;rsquo;avoir deux fonctions explicites $x^2$ et $\log(x)$, nous avons $K(t)$ et $L(t)$.
+Faire apparaître la dépendance du temps $(t)$ de manière explicite aide à la dérivation.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref1:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;Comme nous le verrons, l&amp;rsquo;état stationnaire est le point où $k$ ne croît ni ne diminue, et vers lequel l&amp;rsquo;économie converge.
+Dans d&amp;rsquo;autres modèles, ce que l&amp;rsquo;on retrouve, c&amp;rsquo;est la où les variables principales augmentent à une vitesse constante.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref1:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
@@ -3925,6 +4304,276 @@ and &lt;strong&gt;the steady state is a saddle.&lt;/strong&gt;&lt;/p&gt;
     </item>
     
     <item>
+      <title>L&#39;état stationnaire dans le modèle de Solow</title>
+      <link>https://eric-roca.github.io/courses/macroeconomics/dynamic_macroeconomics/solow_ss/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/macroeconomics/dynamic_macroeconomics/solow_ss/</guid>
+      <description>&lt;h2 id=&#34;létat-stationnaire&#34;&gt;L&amp;rsquo;état stationnaire&lt;/h2&gt;
+&lt;p&gt;On définit l&amp;rsquo;état (ou les états) stationnaires d&amp;rsquo;un modèle dynamique comme une configuration des variables dans laquelle les variables deviennent constantes une fois cette configuration est atteinte.
+Voir aussi l&amp;rsquo;&lt;a href=&#34;https://eric-roca.github.io/courses/mathematical_appendix/steady_state/&#34;&gt;Appendice&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Le modèle de Solow a une seule équation dynamique : celle du capital par habitant&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.
+Cette équation montre comment le niveau de capital par habitant change avec le temps :&lt;/p&gt;
+&lt;p&gt;$$\dot{k} = s f(k) - (n+\delta)k = s k^\alpha - (n+\delta)k$$&lt;/p&gt;
+&lt;p&gt;Par exemple, avec $s=0.5$, $\alpha=0.3$, $n=0.1$ et $\delta=0.1$, lorsque le niveau de capital est de $k=2$, on trouve $\dot{k} = 0.21$.
+Cela signifie que le niveau de capital par habitant augmente de 0.21.
+Ainsi, à la période suivante, le capital est de 2.21 et il augmentera de 0.19.&lt;/p&gt;
+&lt;p&gt;Comme la pente de la courbe $f(k)$ et $sf(k)$ diminue lorsque $k$ augmente, à mesure que le capital par habitant s&amp;rsquo;accumule, la vitesse d&amp;rsquo;accumulation se réduit.
+Cela est dû au fait que $f^{\prime \prime}(k) = \alpha (\alpha-1)k^{\alpha-2} &amp;lt; 0$.&lt;/p&gt;
+&lt;p&gt;En même temps, chaque unité de capital par habitant subit un processus de dépréciation qui est constant.
+Par conséquent, si $n+\delta = 0.2$, par exemple, avec 2 unités de capital, la dépréciation est de 0.4, et avec 2.21 unités, elle est de 0.442.&lt;/p&gt;
+&lt;p&gt;Imaginons une économie qui commence avec peu de capital ($k(0) \approx 0$).
+À ce niveau, la productivité du capital est très élevée (pente de la courbe $f(k)$).
+En même temps, avec peu de capital, la dépréciation est négligeable.
+Par conséquent, $\dot{k} &amp;gt; 0$ et le capital s&amp;rsquo;accumule.
+Maintenant, le niveau de capital a augmenté, la productivité diminue et le coût de dépréciation augmente.
+Ainsi, la deuxième augmentation du capital est plus faible.
+Ce processus se poursuit et aboutit à un point où le capital cesse d&amp;rsquo;augmenter : l&amp;rsquo;état stationnaire.&lt;/p&gt;
+&lt;p&gt;Mathématiquement, si l&amp;rsquo;état stationnaire est le point où les variables du modèle ne changent plus, cela signifie que l&amp;rsquo;état stationnaire est caractérisé par $\dot{k} = 0$.
+Cela correspond à :&lt;/p&gt;
+&lt;p&gt;$$\dot{k} = 0 \implies sf(k) = (n+\delta)k \implies s k^\alpha = (n+\delta)k$$&lt;/p&gt;
+&lt;p&gt;Ainsi, le niveau de capital qui correspond à l&amp;rsquo;état stationnaire est donné par :&lt;/p&gt;
+&lt;p&gt;$$k^\star = \left(\frac{s}{n+\delta}\right)^{\frac{1}{1-\alpha}}$$&lt;/p&gt;
+&lt;details&gt;
+&lt;summary&gt;Solution&lt;/summary&gt;
+$s k^\alpha = (n+\delta) k \implies s k^{\alpha-1} = n+\delta \implies k^{\alpha-1} = \frac{n+\delta}{s}$
+$k^\star = \left(\frac{n+\delta}{s}\right)^\frac{1}{\alpha-1} = \left(\frac{s}{n+\delta}\right)^\frac{1}{1-\alpha}$
+&lt;/details&gt;
+&lt;p&gt;Exactement, une fois que l&amp;rsquo;économie atteint le niveau de capital $k^\star$, le capital cesse de changer et l&amp;rsquo;économie se stabilise à cet état stationnaire. Pour le vérifier, nous pouvons calculer le taux de variation du capital $\dot{k}$ lorsque $k=\left(\frac{s}{n+\delta}\right)^\frac{1}{1-\alpha}$.&lt;/p&gt;
+&lt;details&gt;
+&lt;summary&gt;Solution&lt;/summary&gt;
+$\dot{k}{\big{|}_{k=k^\star}} = s {k^\star}^{\alpha} - (n+\delta)k^\star = $ 
+&lt;p&gt;$ = s \left(\frac{s}{n+\delta}\right)^{\alpha}{1-\alpha} - (n+\delta)\left(\frac{s}{n+\delta}\right)^\frac{1}{1-\alpha} = $&lt;/p&gt;
+&lt;p&gt;$ = s s^\frac{\alpha}{1-\alpha}(n+\delta)^\frac{\alpha}{1-\alpha}-s^\frac{1}{1-\alpha}(n+\delta)(n+\delta)^\frac{1}{\alpha-1} = $
+$ = s^\frac{1}{1-\alpha}(n+\delta)^\frac{\alpha}{\alpha-1}-s^\frac{1}{1-\alpha}(n+\delta)^\frac{\alpha}{\alpha-1}=0.$&lt;/p&gt;
+&lt;/details&gt;
+&lt;p&gt;Par exemple, avec $s=0.5$, $\alpha=0.3$, $n=0.1$ et $\delta=0.1$, le niveau stationnaire du capital est $k^\star = 3.7$. En vérifiant l&amp;rsquo;équation $\dot{k}\big{|}_{k=3.7} = 0.5 \times 3.7^{0.3} - (0.1+0.1) \times 3.7 = 0$, nous constatons que le taux de variation du capital $\dot{k}$ est nul à ce niveau stationnaire.&lt;/p&gt;
+&lt;h3 id=&#34;diagramme-de-phase&#34;&gt;Diagramme de phase&lt;/h3&gt;
+&lt;p&gt;Nous pouvons illustrer la situation à l&amp;rsquo;aide d&amp;rsquo;un diagramme de phase qui montre $\dot{k}$ en fonction de $k$.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/dynamic_macroeconomics/solow_phase_diagram.webp&#34; alt=&#34;Phase diagram&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Dans ce diagramme, nous représentons directement la valeur de $\dot{k}$ pour chaque valeur de $k$.
+Si $\dot{k} &amp;gt; 0$, cela signifie que l&amp;rsquo;économie accumule du capital, tandis que si $\dot{k} &amp;lt; 0$, cela indique une perte de capital.
+La perte de capital résulte du fait que l&amp;rsquo;épargne n&amp;rsquo;est pas suffisante pour compenser la dépréciation.&lt;/p&gt;
+&lt;p&gt;Nous pouvons également observer que lorsque $k$ est éloigné de $k^\star$ (l&amp;rsquo;état stationnaire), $\dot{k}$ est élevé, ce qui signifie que l&amp;rsquo;économie accumule du capital à un rythme rapide.
+À mesure que nous nous approchons de $k^\star$, cette vitesse d&amp;rsquo;accumulation diminue.&lt;/p&gt;
+&lt;h3 id=&#34;changement-du-taux-dépargne&#34;&gt;Changement du taux d&amp;rsquo;épargne&lt;/h3&gt;
+&lt;p&gt;Dans le modèle de Solow, les différentes politiques mises en œuvre par les gouvernements sont plus susceptibles de modifier la valeur du taux d&amp;rsquo;épargne.
+Par exemple, pendant la période de la COVID, les ménages allemands ont épargné beaucoup plus que d&amp;rsquo;habitude.
+Il est naturel de se demander comment l&amp;rsquo;économie évolue suite à ce changement de paramètre&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;iframe src=&#39;https://d3fy651gv2fhd3.cloudfront.net/embed/?s=germanypersav&amp;v=202305251059V20230410&amp;d1=20180710&amp;d2=20220710&amp;h=300&amp;w=600&#39; height=&#39;300&#39; width=&#39;600&#39;  frameborder=&#39;0&#39; scrolling=&#39;no&#39;&gt;&lt;/iframe&gt;&lt;br /&gt;Source: &lt;a href=&#39;https://tradingeconomics.com/germany/personal-savings&#39;&gt;tradingeconomics.com&lt;/a&gt;
+&lt;p&gt;Imaginons que l&amp;rsquo;économie se trouve à son état stationnaire et que le taux d&amp;rsquo;épargne $s$ augmente.
+Cela signifie qu&amp;rsquo;un nouvel état stationnaire apparaît : $k^\star_{\text{new}} = \left(\frac{s_{\text{new}}}{n+\delta}\right)^\frac{1}{1-\alpha}$.
+Dans le graphique suivant, l&amp;rsquo;économie passe de la situation rouge à la noire. Avec un niveau de $s$ plus élevé, elle atteint un niveau stationnaire plus important.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/dynamic_macroeconomics/solow_phase_diagram_change_s.webp&#34; alt=&#34;change_s&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Par contre, la transition vers le nouvel état stationnaire n&amp;rsquo;est pas immédiate.
+Au moment où l&amp;rsquo;épargne change, l&amp;rsquo;économie se trouve avec un niveau de capital initial $k_{t=0}$, et ce niveau de capital ne peut changer qu&amp;rsquo;avec le cycle épargne-investissement.
+Cependant, lorsque le taux d&amp;rsquo;épargne passe de $s_{\text{old}}$ à $s_{\text{new}}$, le niveau de capital se trouve &lt;em&gt;à gauche du &lt;strong&gt;nouvel&lt;/strong&gt; état stationnaire&lt;/em&gt;.
+Cela signifie que l&amp;rsquo;économie suit des changements dynamiques :&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Rappel : à l&amp;rsquo;état stationnaire, l&amp;rsquo;épargne compense exactement la dépréciation, et le niveau de capital $k$ reste inchangé.&lt;/li&gt;
+&lt;li&gt;Lorsqu&amp;rsquo;il y a une augmentation de l&amp;rsquo;épargne, l&amp;rsquo;économie commence à accumuler du capital, car maintenant ce qui est ajouté à l&amp;rsquo;économie est supérieur à ce qui est perdu en raison de la dépréciation.&lt;/li&gt;
+&lt;li&gt;Par conséquent, le niveau de capital $k$ augmente.&lt;/li&gt;
+&lt;li&gt;À mesure que $k$ augmente, la productivité marginale du capital diminue, ce qui signifie que chaque unité supplémentaire de capital contribue de moins en moins à la production totale.&lt;/li&gt;
+&lt;li&gt;En même temps, à chaque augmentation de $k$, la dépréciation augmente de manière linéaire.&lt;/li&gt;
+&lt;li&gt;Finalement, l&amp;rsquo;économie atteint un nouveau état stationnaire où l&amp;rsquo;épargne compense à nouveau exactement la dépréciation, et le niveau de capital $k$ se stabilise à une valeur plus élevée qu&amp;rsquo;auparavant.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/dynamic_macroeconomics/solow_evolution.webp&#34; alt=&#34;solow_evolution&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;régle-dor&#34;&gt;Régle d&amp;rsquo;or&lt;/h2&gt;
+&lt;p&gt;Le modèle Solow montre que toute économie converge vers son état stationnaire.
+La valeur $k^\star$ dépend du niveau d&amp;rsquo;épargne (entre autres choses) car, avec une fonction de production Cobb-Douglas : $k^\star = \left(\frac{\color{red}{s}}{n+\delta}\right)^\frac{1}{1-\alpha}$.
+Il est aussi clair que, avec un taux d&amp;rsquo;épargne plus élevé ($s$), le niveau stationnaire augmente.
+&lt;strong&gt;Exercice&lt;/strong&gt;: montrez que le niveau $k^\star$ augmente avec $s$ (avec une fonction Cobb-Douglas).&lt;/p&gt;
+&lt;p&gt;Jusqu&amp;rsquo;à présent, notre analyse a porté sur l&amp;rsquo;évolution de $k$, mais un niveau plus élevé de $k$ n&amp;rsquo;implique pas plus de bien-être.
+En fait, ce qui est intéressant à regarder est le niveau de consommation.
+Rappelons que la consommation est la partie non épargnée : $c = (1-s)f(k)$.
+Imaginons que l&amp;rsquo;économie se trouve à l&amp;rsquo;état stationnaire, ainsi $c^\star = (1-s)f(k^\star)$.
+Avec un taux $s$ faible, on consomme une grande partie de la production (terme $1-s$), mais on ne produit pas beaucoup car $k^\star$ est petit (terme $f(k^\star)$).
+Et inversement, avec un taux d&amp;rsquo;épargne élevé, on produit beaucoup mais on consomme une fraction petite.
+Y a-t-il un niveau d&amp;rsquo;épargne optimal qui maximise la consommation à l&amp;rsquo;état stationnaire ?&lt;/p&gt;
+&lt;p&gt;La réponse est oui : la règle d&amp;rsquo;or ($s_{\text{gold}}$).
+À l&amp;rsquo;état stationnaire, $c^\star = (1-s)f(k^\star) = f(k^\star) - \color{red}{sf(k^\star)}$.
+La définition d&amp;rsquo;état stationnaire est $\dot{k} = sf(k^\star) - (n+\delta)k^\star = 0$.
+Par conséquent, à l&amp;rsquo;état stationnaire, nous avons que $\color{red}{sf(k^\star) = (n+\delta)k^\star}$, et nous pouvons remplacer cette expression dans l&amp;rsquo;équation de consommation.
+Ainsi, nous avons :&lt;/p&gt;
+&lt;p&gt;$$c^\star (s) = f(k^\star) - (n+\delta)k^\star.$$
+Avec la fonction de production Cobb-Douglas, nous avons :&lt;/p&gt;
+&lt;p&gt;$$c^\star (s) = {k^\star}^\alpha - (n+\delta)k^\star = \left(\frac{s}{n+\delta}\right)^\frac{\alpha}{1-\alpha} - (n+\delta)\left(\frac{s}{n+\delta}\right)^\frac{1}{1-\alpha}$$
+car $k^\star = \left(\frac{s}{n+\delta}\right)^\frac{1}{1-\alpha}.$&lt;/p&gt;
+&lt;p&gt;Par définition, la règle d&amp;rsquo;or est le taux d&amp;rsquo;épargne qui maximise la consommation à l&amp;rsquo;état stationnaire.
+Ainsi, pour le trouver, il suffit de maximiser $c^\star$ par rapport à $s$.&lt;/p&gt;
+&lt;p&gt;$$s_{gold} = \arg \max_{s} c^\star(s) = f[k^\star(s)] - (n+\delta)k^\star(s)$$
+$$\frac{\mathrm{d} f[k^\star(s)] - (n+\delta)k^\star (s)}{\mathrm{d} s} = 0 \implies f^\prime (k_{gold}) = (n+\delta)$$&lt;/p&gt;
+&lt;p&gt;Avec la fonction de Cobb-Douglas, on peut directement observer la dépendance entre $c^\star$ et $s$ :&lt;/p&gt;
+&lt;p&gt;$$c^\star (s) = \left(\frac{s}{n+\delta}\right)^\frac{\alpha}{1-\alpha}-(n+\delta)\left(\frac{s}{n+\delta}\right)^\frac{1}{1-\alpha}$$&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/dynamic_macroeconomics/c_star.webp&#34; alt=&#34;c_star&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Si ensuite on maximise $c^\star$ par rapport à $s$ :&lt;/p&gt;
+&lt;p&gt;$$\frac{\mathrm{d} \overbrace{\left(\frac{s}{n+\delta}\right)^\frac{\alpha}{1-\alpha}-(n+\delta)\left(\frac{s}{n+\delta}\right)^\frac{1}{1-\alpha}}^{c^\star}}{\mathrm{d} s} = 0 \implies$$
+$$\frac{\alpha}{1-\alpha}\left(\frac{s}{n+\delta}\right)^\frac{2\alpha-1}{1-\alpha}-(n+\delta)\frac{1}{1-\alpha}\left(\frac{s}{n+\delta}\right)^\frac{\alpha}{1-\alpha} = 0 \implies s_{gold} = \alpha$$&lt;/p&gt;
+&lt;details&gt;
+&lt;summary&gt;Vérification&lt;/summary&gt;
+Pour rappel, le niveau $s_{\text{gold}}$ est celui pour lequel $f^\prime(k(s_{\text{gold}})) = n+\delta$.
+Vérifions que, pour la fonction de production Cobb-Douglas, $s_{\text{gold}} = \alpha$ implique $f^\prime(k(s|\_{s=\alpha})) = n+\delta$.
+&lt;p&gt;Avec une fonction Cobb-Douglas $f^\prime [k] = \alpha k^{\alpha-1}$.
+Le niveau stationnaire du capital est $k^\star = \left(\frac{s}{n+\delta}\right)^\frac{1}{1-\alpha}$,  et lorsque $s = \alpha$ $k^\star$ devient
+$\left(\frac{\alpha}{n+\delta}\right)^\frac{1}{1-\alpha}.$
+Ainsi $f^\prime \left[k^\star\right] = \alpha \left(\frac{\alpha}{n+\delta}\right)^{-1} = n+\delta$.
+On voit donc bien qu&amp;rsquo;avec $s_{gold} = \alpha$, $f^\prime \left[k^\star (s_{gold})\right] = n + \delta$, comme la théorie le prédit.&lt;/p&gt;
+&lt;/details&gt;
+&lt;p&gt;Comme nous l&amp;rsquo;avons mentionné, deux effets jouent leur rôle lorsque la valeur de $s$ change : lorsque $s$ augmente, le capital stationnaire $k^\star$ augmente, ce qui entraîne une augmentation de la production ($f(k^\star) \uparrow$).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Comme la production a augmenté, il est possible de consommer plus ($c^\star = f(k^\star) - (n+\delta)k^\star$).&lt;/li&gt;
+&lt;li&gt;En même temps, plus de capital implique une plus grande dépréciation ($ (n+\delta)k^\star \uparrow $).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Graphiquement, on peut observer l&amp;rsquo;effet d&amp;rsquo;un changement dans $s$ comme suit :&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/dynamic_macroeconomics/changing_s.webp&#34; alt=&#34;Changement de s&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;inefficacité-dynamique&#34;&gt;Inefficacité dynamique&lt;/h3&gt;
+&lt;p&gt;Le taux d&amp;rsquo;épargne $s_{\text{gold}}$ est celui qui maximise le niveau de consommation à l&amp;rsquo;état stationnaire.
+Avec une fonction de production Cobb-Douglas, $s_{\text{gold}} = \alpha$.
+On peut imaginer que, pour la plupart des économies, le taux d&amp;rsquo;épargne ne coïncide pas avec l&amp;rsquo;optimal.
+Cependant, il est possible de déterminer les cas où l&amp;rsquo;économie pourrait faire mieux.&lt;/p&gt;
+&lt;p&gt;Imaginons que l&amp;rsquo;économie soit à son état stationnaire, et supposons que le taux d&amp;rsquo;épargne soit $s_1 &amp;gt; s_{\text{gold}}$.
+Comme $s_1 \neq s_{\text{gold}}$, la consommation stationnaire est susceptible d&amp;rsquo;être augmentée en &lt;em&gt;réduisant&lt;/em&gt; le niveau d&amp;rsquo;épargne jusqu&amp;rsquo;à $s_{\text{gold}}$.
+Cela constitue une stratégie gagnante :&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Tout d&amp;rsquo;abord, on diminue le taux d&amp;rsquo;épargne de $s_1$ à $s_{\text{gold}}$.&lt;/li&gt;
+&lt;li&gt;L&amp;rsquo;économie avait accumulé un niveau de capital $k^\star(s_1) &amp;gt; k^\star(s_{\text{gold}})$.
+En réduisant l&amp;rsquo;épargne, la dépréciation fait diminuer le niveau de capital, et celui-ci converge vers $k^\star(s_{\text{gold}})$.&lt;/li&gt;
+&lt;li&gt;Pendant la transition, le niveau de consommation est supérieur à ce qu&amp;rsquo;on avait ($c^\star(s_1)$).&lt;/li&gt;
+&lt;li&gt;Lorsque l&amp;rsquo;économie atteint le nouvel état stationnaire $k^\star(s_{\text{gold}})$, le niveau de consommation est maximal.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Ainsi, avec la diminution du taux d&amp;rsquo;épargne, tout le monde gagne pendant la transition et à l&amp;rsquo;état stationnaire.
+Ce type de situation est connu comme une situation d&amp;rsquo;&lt;em&gt;inefficacité dynamique&lt;/em&gt; et, dans le modèle de Solow, apparaît lorsque $s &amp;gt; s_{\text{gold}}$.&lt;/p&gt;
+&lt;p&gt;En revanche, si $s_1 &amp;lt; s_{\text{gold}}$, il est &lt;em&gt;impossible&lt;/em&gt; d&amp;rsquo;améliorer la consommation pour tous à tout moment.
+Il est certain que, en augmentant le niveau d&amp;rsquo;épargne, l&amp;rsquo;économie converge vers un meilleur état stationnaire.
+Cependant, pendant la transition, la consommation diminue : il est nécessaire d&amp;rsquo;épargner davantage, ce qui implique une réduction de la consommation.&lt;/p&gt;
+&lt;h2 id=&#34;questions&#34;&gt;Questions&lt;/h2&gt;
+&lt;p&gt;Imaginez qu&amp;rsquo;une économie soit à son état stationnaire $k^\star$ et que $f^\prime(k^\star) &amp;gt; n + \delta$.
+Supposons qu&amp;rsquo;une politique augmente le taux d&amp;rsquo;épargne : le nouveau niveau de consommation stationnaire serait-il supérieur ou inférieur à celui d&amp;rsquo;aujourd&amp;rsquo;hui ?&lt;/p&gt;
+&lt;details&gt;
+&lt;summary&gt;Solution&lt;/summary&gt;
+Inférieur.
+&lt;p&gt;Si $f^\prime(k^\star) &amp;gt; n + \delta$, l&amp;rsquo;économie se trouve en région d&amp;rsquo;inefficacité dynamique.
+En effet, la consommation est maximale lorsque $f^\prime(k) = n + \delta$, et si $k$ est supérieur à ce niveau, la consommation diminue.
+Pour le voir, nous savons que $c^\star = f(k^\star) - (n+\delta)k^\star$.
+Ainsi, $\frac{\partial^2 c}{\partial k^2} = f^{\prime \prime}(k) &amp;lt; 0$, et la courbe a une forme de U inversé.
+Par conséquent, si $k$ est supérieur à $k_{\text{gold}}$ et on augmente le capital, la consommation diminue.
+C&amp;rsquo;est bien notre cas : l&amp;rsquo;augmentation de $s$ augmente le niveau de $k^\star$, plongeant l&amp;rsquo;économie davantage dans la région inefficace.&lt;/p&gt;
+&lt;/details&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;En partie, on convertit le modèle à deux variables $K$ et $L$ en un modèle à une variable ($k$) pour en faciliter l&amp;rsquo;analyse.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;Le cas allemand était temporaire et sert seulement à motiver la description.
+Notre analyse porte sur des changements &lt;em&gt;permanents&lt;/em&gt; de $s$.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Liaison mechanism</title>
       <link>https://eric-roca.github.io/courses/international_trade/liaison_mechanism/</link>
       <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
@@ -4461,7 +5110,7 @@ We can rearrange the previous equation to obtain the following:&lt;/p&gt;
 Setting $k_{t+1} = k_{t} \implies k_{t+1} - k_{t} = 0$ so capital is constant yields:&lt;/p&gt;
 &lt;p&gt;$$ 0 = f(k_{t}) - \delta k_{t} - c_{t} \implies c_{t} = f(k_{t}) - \delta k_{t}.$$&lt;/p&gt;
 &lt;p&gt;In the $(k,c)$ space, the equation takes a form similar to a parabola: it combines production &amp;mdash;with decreasing marginal returns&amp;mdash; with a linear depreciation rate.
-In fact, f(k_t)-\delta k_t$ admits one maximum $(f^\prime (k_t) = \delta)$ the &lt;a href=&#34;https://eric-roca.github.io/courses/macroeconomics/ramsey/ramsey_golden_rule/&#34;&gt;Golden rule&lt;/a&gt; we discuss later.
+In fact, $f(k_t)-\delta k_t$ admits one maximum $(f^\prime (k_t) = \delta)$ the &lt;a href=&#34;https://eric-roca.github.io/courses/macroeconomics/ramsey/ramsey_golden_rule/&#34;&gt;Golden rule&lt;/a&gt; we discuss later.
 Since $f^{\prime \prime}(k_t)&amp;lt;0,$ the stationary point is a maximum.&lt;/p&gt;
 &lt;p&gt;Let&amp;rsquo;s now analyse how capital evolves when consumption is above and below the level that makes it constant.
 From $k_{t+1} - k_{t} = f(k_{t}) - \delta k_{t} - c_{t}$, if consumption is above the level we have that $k_{t+1} - k_{t} &amp;lt; 0,$ meaning that capital decreases over time.
@@ -4745,6 +5394,152 @@ Par exemple, les États-Unis sont aujourd&amp;rsquo;hui la frontière technologi
 &lt;li id=&#34;fn:2&#34;&gt;
 &lt;p&gt;En plus, il y a des technologies qui sont immobiles: système de rotation des champs, canaux, élevage d&amp;rsquo;animaux, etc.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Croissance économique</title>
+      <link>https://eric-roca.github.io/courses/macroeconomics/dynamic_macroeconomics/solow_growth/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/macroeconomics/dynamic_macroeconomics/solow_growth/</guid>
+      <description>&lt;h2 id=&#34;croissance-économique&#34;&gt;Croissance économique&lt;/h2&gt;
+&lt;p&gt;Le modèle de Solow prédit que toute économie converge vers son état stationnaire.
+Ainsi, une économie qui débute avec un niveau de capital &lt;em&gt;par habitant&lt;/em&gt; faible ($k_0$) verra celui-ci augmenter jusqu&amp;rsquo;à ce qu&amp;rsquo;il atteigne l&amp;rsquo;état stationnaire.
+Une fois que l&amp;rsquo;économie a atteint son état stationnaire, elle y reste.
+Qu&amp;rsquo;est-ce que cela signifie ?&lt;/p&gt;
+&lt;h3 id=&#34;croissance-à-létat-stationnaire&#34;&gt;Croissance à l&amp;rsquo;état stationnaire&lt;/h3&gt;
+&lt;p&gt;Commençons par analyser l&amp;rsquo;état stationnaire.
+Comme $k^\star$ est constant, la production &lt;em&gt;par habitant&lt;/em&gt; $f(k^\star)$ est également constante.
+Étant donné que $y^\star = f(k^\star)$ représente le PIB &lt;em&gt;par habitant&lt;/em&gt;, la conclusion est que, &lt;em&gt;à long terme, le PIB par habitant est constant&lt;/em&gt;.
+Si l&amp;rsquo;on préfère mesurer le bien-être avec la consommation &lt;em&gt;par habitant&lt;/em&gt;, la conclusion est la même car $c^\star = (1-s)f(k^\star)$.&lt;/p&gt;
+&lt;p&gt;D&amp;rsquo;autres indicateurs, tels que le &lt;em&gt;PIB total&lt;/em&gt;, sont également importants, et nous pouvons montrer qu&amp;rsquo;à l&amp;rsquo;état stationnaire, la consommation totale, la quantité totale de capital et le PIB total augmentent au rythme de $n$.
+Pour cela, il suffit de reprendre les définitions et de calculer le taux de croissance de chaque variable.
+On indique le taux de croissance de la variable $x$ par $g_{x}$.
+Lorsque le temps est continu, il se calcule comme suit: &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;$$g_{x} = \frac{\dot{x}}{g}.$$&lt;/p&gt;
+&lt;p&gt;Ainsi:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Capital total : $k \equiv \frac{K}{L} \implies K = kL \implies g_{K} = \frac{\dot{kL}}{kL} = \frac{\dot{k}L}{kL} + \frac{k\dot{L}}{kL} = \frac{\dot{k}}{k} + \frac{\dot{L}}{L} = $
+$\quad \quad g_{K} = g_{k} + g_{L} = 0 + n = n.$
+Ici, $g_{k} = 0$ car nous sommes à l&amp;rsquo;état stationnaire et, par définition, $k$ est constant.&lt;/li&gt;
+&lt;li&gt;Production totale : $y \equiv \frac{Y}{L} \implies Y = yL \implies g_{Y} = \frac{\dot{yL}}{yL} = g_{y} + g_{L} = n$
+Cela est dû au fait que $y$ à l&amp;rsquo;état stationnaire est constante.
+Une autre manière de voir le même : $Y = K^\alpha L^{1-\alpha} \implies g_{Y} = \frac{\dot{K^\alpha L^{1-\alpha}}}{K^\alpha L^{1-\alpha}} =
+\frac{\alpha K^{\alpha-1}\dot{K}L^{1-\alpha} + (1-\alpha)K^\alpha L^{-\alpha}\dot{L}}{K^\alpha L^{1-\alpha}}$
+$g_{Y} = \alpha \dot{K} + (1-\alpha)\dot{L} = \alpha n + (1-\alpha) n = n.$&lt;/li&gt;
+&lt;li&gt;Consommation : $c \equiv \frac{C}{L} \implies C = cL \implies g_{C} = g_{c} + g_{L} = 0 + n.$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div style=&#34;padding: 10px; border: 3px solid #000&#34;&gt;
+Pourtant, dans le modèle de Solow, &lt;em&gt;à l&#39;état stationnaire&lt;/em&gt;, les variables agrégées augmentent à la même vitesse que les facteurs exogènes, ce qui conduit à une conclusion insatisfaisante.
+Cependant, selon les données, les économies développées, supposées être proches ou à leur état stationnaire, connaissent une croissance économique par habitant : le revenu par habitant augmente, la production par habitant augmente, etc.
+Il convient donc de proposer des changements dans le modèle pour mieux l&#39;aligner avec les données.
+&lt;/div&gt;
+&lt;h3 id=&#34;croissance-pendant-la-transition-et-convergence-entre-pays&#34;&gt;Croissance pendant la transition et convergence entre pays&lt;/h3&gt;
+&lt;p&gt;Un pays avec un niveau de capital inférieur à son état stationnaire, c&amp;rsquo;est-à-dire $k &amp;lt; k^\star$, observe un processus de croissance économique vers cet état stationnaire.
+Pendant cette transition, le taux de variation du capital, noté $\dot{k}$, est positif et le capital s&amp;rsquo;accumule.
+De plus, à mesure que l&amp;rsquo;on se rapproche de l&amp;rsquo;état stationnaire, le taux de croissance du capital diminue jusqu&amp;rsquo;à atteindre zéro.
+Il est donc clair que pendant cette transition, on observe une croissance économique à la fois en termes de revenu par habitant et en termes de revenu total.&lt;/p&gt;
+&lt;p&gt;En effet, avec $\dot{k} &amp;gt; 0$, le taux de croissance du capital &lt;em&gt;par habitant&lt;/em&gt; est positif : $g_{k} = \frac{\dot{k}}{k} &amp;gt; 0$.
+Par conséquent, la production par habitant et la consommation par habitant augmentent également : $g_{y} = g_{k^\alpha} = \alpha g_{k} &amp;gt; 0$ et $g_{c} = g_{(1-s)y} = g_{y} &amp;gt; 0$.&lt;/p&gt;
+&lt;p&gt;Les variables en termes de revenu total augmentent également plus rapidement qu&amp;rsquo;auparavant.
+Par exemple, le taux de croissance du capital total est donné par $g_{K} = g_{Lk} = g_{k} + g_{L} = \frac{\dot{k}}{k} + n &amp;gt; n$.&lt;/p&gt;
+&lt;h4 id=&#34;convergence&#34;&gt;Convergence&lt;/h4&gt;
+&lt;h5 id=&#34;convergence-absolue&#34;&gt;Convergence absolue&lt;/h5&gt;
+&lt;p&gt;Nous avons précédemment mentionné que le taux de croissance du capital par habitant est plus élevé lorsque l&amp;rsquo;économie est éloignée de son état stationnaire.
+En effet, le taux de croissance du capital par habitant est donné par l&amp;rsquo;équation:&lt;/p&gt;
+&lt;p&gt;$$g_{k} = \frac{\dot{k}}{k} = \frac{s f(k) - (n+\delta)k}{k} = s\frac{f(k)}{k} - (n + \delta).$$&lt;/p&gt;
+&lt;p&gt;Ainsi,&lt;/p&gt;
+&lt;p&gt;$$\frac{\partial g_{k}}{\partial k} = s \frac{\overbrace{f^\prime (k) k - f(k)}^{=(-1)w}}{k^2} \stackrel{Cobb-Douglas}{=} s (-1)  \frac{\overbrace{(1-\alpha)k^\alpha}^{=w}}{k^2} &amp;lt; 0.$$&lt;/p&gt;
+&lt;p&gt;En conclusion, lorsque le capital par habitant s&amp;rsquo;accumule, son taux de croissance devient plus faible.&lt;/p&gt;
+&lt;p&gt;Si cela est vrai, cela signifie que les pays les plus pauvres devraient afficher un taux de croissance plus élevé.
+Par conséquent, nous devrions observer un rattrapage, c&amp;rsquo;est-à-dire que les pays les plus pauvres connaîtraient un taux de croissance plus élevé que les pays les plus riches, ce qui entraînerait une réduction de l&amp;rsquo;écart entre eux.
+Cette hypothèse selon laquelle les économies les plus pauvres ont une croissance plus forte que celle des économies les plus riches sans tenir compte de leurs caractéristiques est appelée &lt;strong&gt;convergence absolue&lt;/strong&gt;.
+Cependant, les données rejettent clairement cette prédiction.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/dynamic_macroeconomics/absolute_convergence.webp&#34; alt=&#34;convergence_absolue&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+&lt;em&gt;Source&lt;/em&gt;: Barro and Sala-i-Martín, 2004&lt;/p&gt;
+&lt;h5 id=&#34;convergence-conditionelle&#34;&gt;Convergence conditionelle&lt;/h5&gt;
+&lt;p&gt;Une hypothèse sous-jacente à l&amp;rsquo;idée de la convergence absolue est que les &lt;strong&gt;paramètres&lt;/strong&gt; de toutes les économies sont les mêmes.
+Dans le modèle de Solow, les paramètres du modèle incluent le taux d&amp;rsquo;épargne ($s$), le taux de croissance de la population ($n$), le taux de dépréciation ($\delta$), et la part du capital ($\alpha$).
+Nous avons déjà vu comment un taux d&amp;rsquo;épargne différent implique un état stationnaire différent.&lt;/p&gt;
+&lt;p&gt;S&amp;rsquo;il est vrai que des &lt;strong&gt;groupes&lt;/strong&gt; de pays similaires convergent vers un même état stationnaire, alors dans ces groupes, les pays les moins riches devraient connaître un taux de croissance plus élevé que les pays les plus riches (au sein du groupe de pays).
+Cette idée selon laquelle des pays similaires convergent vers un même état stationnaire est appelée &lt;strong&gt;convergence conditionnelle&lt;/strong&gt;, car elle dépend des caractéristiques propres aux pays.
+Dans ce cas, les données confirment l&amp;rsquo;idée de la convergence conditionnelle.&lt;/p&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/dynamic_macroeconomics/conditional_convergence_ocde.webp&#34; alt=&#34;convergence_conditionnelle_ocde&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/dynamic_macroeconomics/conditional_convergence_usa.webp&#34; alt=&#34;convergence_conditionnelle_usa&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+&lt;em&gt;Source&lt;/em&gt;: Barro and Sala-i-Martín, 2004&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Quelques régles pour calculer le taux de croissance:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$g_{XY} = g_{X} + g_{Y}$&lt;/li&gt;
+&lt;li&gt;$g_{\frac{X}{Y}} = g_{X} - g_{Y}$&lt;/li&gt;
+&lt;li&gt;$g_{X^\alpha} = \alpha g_{X}$&lt;/li&gt;
+&lt;/ul&gt;
+&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
 </description>
@@ -5395,6 +6190,130 @@ Using the resource constraint:&lt;/p&gt;
     </item>
     
     <item>
+      <title>Progrès technologique</title>
+      <link>https://eric-roca.github.io/courses/macroeconomics/dynamic_macroeconomics/solow_a/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/macroeconomics/dynamic_macroeconomics/solow_a/</guid>
+      <description>&lt;h2 id=&#34;progrès-technologique&#34;&gt;Progrès technologique&lt;/h2&gt;
+&lt;p&gt;L&amp;rsquo;équation la plus importante du modèle de Solow est la caractérisation de l&amp;rsquo;état stationnaire :&lt;/p&gt;
+&lt;p&gt;$$\dot{k} = s f(k) - (n+\delta) k = 0.$$&lt;/p&gt;
+&lt;p&gt;Une conséquence de la manière dont nous avons modélisé l&amp;rsquo;économie est que, à l&amp;rsquo;état stationnaire, la croissance du PIB par habitant est nulle.
+Cependant, cette prédiction contredit les données observées.&lt;/p&gt;
+&lt;p&gt;Une façon d&amp;rsquo;aligner le modèle de Solow avec l&amp;rsquo;observation selon laquelle les variables par habitant augmentent est d&amp;rsquo;ajouter le progrès technologique.
+Cela implique de modifier les hypothèses du modèle de la manière suivante :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;La fonction de production intègre le progrès technologique :
+$Y(t) = F\left[K(t), A(t)L(t)\right] = K(t)^\alpha (A(t)L(t))^{1-\alpha}$
+où $A(t)$ représente le niveau de technologie.&lt;/li&gt;
+&lt;li&gt;Le taux de croissance de la technologie est exogène et constant : $g_{A} = x &amp;gt; 0$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;La formulation de la fonction de production inclut le terme $A(t)$ en multipliant le nombre de travailleurs ($L$).
+Lorsque cela se produit, on dit que la technologie est &amp;ldquo;labour-augmenting&amp;rdquo;, c&amp;rsquo;est-à-dire qu&amp;rsquo;une amélioration technologique nous permet de produire autant avec moins de travailleurs.
+Dans le cas général du modèle de Solow, l&amp;rsquo;introduction de la technologie de cette manière est nécessaire pour obtenir un état stationnaire avec des variables constantes.
+Cependant, avec la formulation Cobb-Douglas, cela n&amp;rsquo;est pas nécessaire.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;Normalement, avec l&amp;rsquo;introduction de la technologie, on parle de &amp;ldquo;travailleurs effectifs&amp;rdquo;, de &amp;ldquo;capital par travailleur effectif&amp;rdquo;, de production &amp;ldquo;par travailleur effectif&amp;rdquo;, etc.
+En effet, nous devons redéfinir les anciennes variables par habitant pour les exprimer en termes de &amp;ldquo;travailleurs effectifs&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;$$\hat{k} \equiv \frac{K}{AL},\ \hat{y} \equiv \frac{Y}{AL},\ \hat{c} \equiv \frac{C}{AL}$$&lt;/p&gt;
+&lt;p&gt;La fonction de production reste homogène de premier degré :&lt;/p&gt;
+&lt;p&gt;$$f(\hat{k}) \equiv F\left[\frac{K}{AL}, 1\right] = \frac{K^\alpha(AL)^{1-\alpha}}{AL} = \hat{k}^\alpha$$&lt;/p&gt;
+&lt;h3 id=&#34;accumulation-de-capital&#34;&gt;Accumulation de capital&lt;/h3&gt;
+&lt;p&gt;Le capital continue de s&amp;rsquo;accumuler comme avant : les ménages épargnent une fraction constante $s$ de la production.
+L&amp;rsquo;épargne est transformée en investissement et s&amp;rsquo;ajoute au stock de capital, tandis que la dépréciation le diminue.
+Ainsi, en termes agrégés, rien ne change :&lt;/p&gt;
+&lt;p&gt;$$\dot{K} = s F[K, AL] - \delta K = s K^\alpha (AL)^{1-\alpha} - \delta K.$$&lt;/p&gt;
+&lt;p&gt;Comme toujours, pour éviter de suivre 3 variables ($K, L, A$), on se focalise uniquement sur l&amp;rsquo;évolution de $\hat{k}$.
+Ainsi:&lt;/p&gt;
+&lt;p&gt;$$\dot{\hat{k}} = \dot{\frac{K}{AL}} = \frac{\dot{K}AL - \dot{A}KL - \dot{L}AK}{A^2L^2} = \frac{\dot{K}}{AL} - \frac{\dot{A}}{A}\hat{k} - \frac{\dot{L}}{L}\hat{K} =$$
+$$= \frac{sF[K,AL]-\delta K}{AL} - x \hat{k} - n \hat{k} = s f(\hat{k}) - (x + n + \delta)\hat{k} = $$
+$$ = s\hat{k}^\alpha - (x+n+\delta)\hat{k}.$$&lt;/p&gt;
+&lt;h3 id=&#34;état-stationnaire&#34;&gt;État stationnaire&lt;/h3&gt;
+&lt;p&gt;À partir de l&amp;rsquo;équation d&amp;rsquo;accumulation de capital, on peut caractériser l&amp;rsquo;état stationnaire de l&amp;rsquo;économie comme la valeur de $\hat{k}$ telle que $\dot{\hat{k}} = 0$.
+Cette fois, avec le progrès technologique, on trouve :&lt;/p&gt;
+&lt;p&gt;$$\hat{k}^\star = \left(\frac{s}{n+d+x}\right)^\frac{1}{1-\alpha}$$&lt;/p&gt;
+&lt;p&gt;Si on le compare avec l&amp;rsquo;état stationnaire de l&amp;rsquo;économie &lt;em&gt;sans&lt;/em&gt; progrès technologique $k^\star = \left(\frac{s}{n+d}\right)^\frac{1}{1-\alpha}$, il est inférieur.
+Comment est-ce possible ?
+&amp;rsquo;est parce que nous ne comparons pas la même chose : avec le progrès technologique, $\hat{k}$ mesure le capital &lt;em&gt;par unité effective de travail&lt;/em&gt;.
+Si $\hat{k} \equiv \frac{K}{AL}$, on a $k = \hat{k}A$.&lt;/p&gt;
+&lt;h3 id=&#34;progrès-technologique-et-croissance-économique&#34;&gt;Progrès technologique et croissance économique&lt;/h3&gt;
+&lt;p&gt;Enfin, nous pouvons observer l&amp;rsquo;effet du progrès technologique sur la croissance économique.&lt;/p&gt;
+&lt;p&gt;Tout d&amp;rsquo;abord, dans une économie sans progrès technologique, le niveau de capital par travailleur ne change pas ($\dot{k} = 0$) une fois atteint l&amp;rsquo;état stationnaire.
+Cependant, cela est en contradiction avec les données.&lt;/p&gt;
+&lt;p&gt;Avec le progrès technologique, l&amp;rsquo;état stationnaire est défini par $\dot{\hat{k}} = 0$.
+Par conséquent, puisque $\hat{k} = \frac{K}{AL}$, cela implique que $k = \hat{k}A$ et si $A$ augmente, le niveau de capital par habitant ($k$) augmente également.
+Il est possible de calculer son taux de croissance: $\g_{k} = g_{\hat{k}} + g_{A} = 0 + x = x &amp;gt; 0$.&lt;/p&gt;
+&lt;p&gt;Le fait d&amp;rsquo;avoir incorporé le progrès technologique dans le modèle permet une croissance soutenue de l&amp;rsquo;économie, même à l&amp;rsquo;état stationnaire.
+Les autres variables par habitant augmentent également: $g_{y} = g_{\hat{y}} + g_{A} = 0 + x$ et $g_{c} = g_{\hat{c}} + g_{A} = 0 + x$.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Avec la fonction de production Cobb-Douglas, il n&amp;rsquo;est pas important de savoir si la technologie affecte le travail, le capital ou la production totale, car on peut toujours réécrire la fonction de production de manière à ce que la technologie ne multiplie que le travail.
+Ainsi, si $A K^\alpha L^{1-\alpha} \rightarrow K^\alpha (A^\frac{1}{1-\alpha} L)^{1-\alpha}$, et si $(AK)^\alpha L^{1-\alpha} \rightarrow K^\alpha (A^\frac{1}{\alpha} L)^{1-\alpha}$.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Conclusions et implications</title>
+      <link>https://eric-roca.github.io/courses/macroeconomics/dynamic_macroeconomics/solow_conclusion/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/macroeconomics/dynamic_macroeconomics/solow_conclusion/</guid>
+      <description>&lt;h2 id=&#34;conclusions-et-implications&#34;&gt;Conclusions et implications&lt;/h2&gt;
+&lt;h3 id=&#34;croissance-économique&#34;&gt;Croissance économique&lt;/h3&gt;
+&lt;p&gt;Dans le modèle de Solow, si toutes les conditions des fonctions de production néoclassiques sont respectées, la croissance économique de long terme necessite d&amp;rsquo;un taux de croissance (exogène) de la technologie.
+Pour rappel, le modèle atteint toujours un état stationnaire auquel le taux de croissance (de la variable $k$) devient zéro.
+Ainsi, si $k$ mesure le capital par tête, elle cesse d&amp;rsquo;augmenter; même si $K$ augmente au taux $n$.
+Au contraire, si $k$ se définit comme $\frac{K}{AL}$, la croissace du capital par tête est $g_A &amp;gt; 0$.&lt;/p&gt;
+&lt;p&gt;L&amp;rsquo;hypothèse du modèle responsable de ce resultat est la condition d&amp;rsquo;Inada qui force la productivité marginal vers zéro quand le capital devient abondant.&lt;/p&gt;
+&lt;h3 id=&#34;vraisemblance-du-modèle-de-solow&#34;&gt;Vraisemblance du modèle de Solow&lt;/h3&gt;
+&lt;p&gt;Si l&amp;rsquo;on souhaite comprendre les écarts de revenu par habitant dans le monde, le modèle de Solow nous offre deux alternatives.
+En effet, nous avons l&amp;rsquo;équation $y = Af(\hat{k}) = A^{1-\alpha}f(k) = A^{1-\alpha}k^\alpha$, ce qui signifie que nous avons soit :&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Des écarts dans le niveau de capital par habitant, soit&lt;/li&gt;
+&lt;li&gt;Des écarts dans le niveau de technologie.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;D&amp;rsquo;un côté, seule la croissance de la technologie $A$ est capable de générer une croissance économique dans l&amp;rsquo;état stationnaire.
+Si l&amp;rsquo;on se concentre en dehors de l&amp;rsquo;état stationnaire, il est facile de voir que la variable $k$ ne peut pas expliquer les écarts de richesse.
+Les estimations typiques pour la valeur de $\alpha$ donnent $\alpha = \frac{1}{3}.$&lt;/p&gt;
+&lt;p&gt;Prenons l&amp;rsquo;exemple de deux pays, $J$ et $K$, ayant le même niveau de $A$, où $J$ est dix fois plus riche que $K$ en termes de revenu par habitant, c&amp;rsquo;est-à-dire que $y_{J} = 10 y_{K}$.
+Selon la fonction de production Cobb-Douglas, $y_{J} = A^{1-\alpha}k_{J}^\alpha$ et $y_{K} = A^{1-\alpha}k_{K}^\alpha$.
+Par conséquent, $\frac{y_{J}}{y_{K}} = 10$ implique $\frac{A^{1-\alpha}k_{J}^\alpha}{A^{1-\alpha}k_{K}^\alpha} = 10$.
+En développant cette équation, on obtient $\left(\frac{k_{J}}{K_{k}}\right)^\alpha = 10 \implies k_{J}^\alpha = 10 k_{K}^\alpha $.
+Si $\alpha = \frac{1}{3}$, alors $k_{J} = 1000 k_{K}$.
+Ainsi, pour expliquer un écart de 10 en termes de revenu par habitant, il faudrait que l&amp;rsquo;écart de capital par habitant soit de 1000.
+Or, nous ne voyons pas ce type d&amp;rsquo;écart dans le monde réel.&lt;/p&gt;
+&lt;p&gt;Par exemple, le PIB par habitant en Allemagne est de 66132 (2023) tandis qu&amp;rsquo;en France il est de 58828, soit un écart de 1.1241.
+Pour expliquer cet écart uniquement par une différence de capital par habitant, il faudrait que l&amp;rsquo;Allemagne ait un niveau de capital par habitant $1.1241 = \left(\frac{k_{\text{GER}}}{k_{\text{FRA}}}\right)^\frac{1}{3} \implies k_\text{GER} = 1.42 k_{\text{FRA}}$, soit environ 42% plus élevé que celui de la France.
+Cela n&amp;rsquo;est pas crédible.&lt;/p&gt;
+&lt;p&gt;Par conséquent, si l&amp;rsquo;on prend le modèle de Solow au sérieux, les différences de PIB par habitant devraient provenir des différences de technologie, plus précisément des &lt;strong&gt;différences d&amp;rsquo;efficacité du travail&lt;/strong&gt;.
+Malheureusement, le modèle de Solow ne nous dit rien sur la façon dont $A$ est créé, les raisons pour lesquelles $A$ croît plus rapidement dans un pays que dans un autre, etc.
+De plus, le terme &lt;strong&gt;efficacité du travail&lt;/strong&gt; est un terme vague qui englobe tout ce qui n&amp;rsquo;est pas mesurable.
+Il englobe nos connaissances, notre éducation, notre manière d&amp;rsquo;organiser le travail, nos infrastructures, notre acceptation du risque, nos droits de propriété, etc.&lt;/p&gt;
+&lt;h4 id=&#34;note-pour-calculer-la-valeur-alpha-approx-frac13&#34;&gt;Note pour calculer la valeur $\alpha \approx \frac{1}{3}$&lt;/h4&gt;
+&lt;p&gt;La valeur $\alpha$ prend généralement des valeurs proches de $\frac{1}{3}$.
+Cela correspond à la rémunération totale du capital dans le modèle lorsque les marchés sont concurrentiels.
+Pour le voir, il suffit de calculer la fraction de la production totale reçue par les détenteurs de capital :&lt;/p&gt;
+&lt;p&gt;$$\frac{RK}{Y} = \frac{R \frac{K}{L}}{\frac{Y}{L}} = \frac{Rk}{y} = $$
+$$=\frac{f^\prime(k) k}{f(k)} = \frac{\alpha k^{\alpha-1}k}{k^\alpha} = \alpha.$$&lt;/p&gt;
+&lt;p&gt;Ainsi, en ayant une approximation du total versé en intérêts par rapport à la production, il est possible d&amp;rsquo;estimer $\alpha$.&lt;/p&gt;
+&lt;h3 id=&#34;a-comme-la-mésure-de-nos-non-connaisances--comptabilité-de-la-croissance&#34;&gt;$A$ comme la mésure de nos non-connaisances : comptabilité de la croissance&lt;/h3&gt;
+&lt;p&gt;Il est relativement simple de montrer que $A$ mesure tout ce qui n&amp;rsquo;est pas mesurable.
+À partir du modèle de Solow, nous avons que le taux de croissance du PIB par habitant est donné par :&lt;/p&gt;
+&lt;p&gt;$$y = \frac{Y}{L} = \frac{K^\alpha (AL)^{1-\alpha}}{L} = K^\alpha L^{-\alpha} A^{1-\alpha} \implies $$
+$$\implies g_{y} = \alpha(g_{K} - g_{L})+(1-\alpha)g_{A}.$$&lt;/p&gt;
+&lt;p&gt;Les taux de croissance du PIB par habitant ($g_{y}$), du capital total ($g_{K}$) et de la population ($g_{L}$) sont faciles à estimer.
+En outre, si les marchés sont concurrentiels et si le capital reçoit son produit marginal, $\alpha$ correspond au pourcentage reçu par les détenteurs de capital comme fraction de la production ($\alpha \approx \frac{1}{3}$).
+Ainsi, le dernier terme $(1-\alpha) g_{A}$ représente en fait la part de la croissance économique que nous ne pouvons pas expliquer avec les facteurs observables.
+Ce terme est connu sous le nom de &amp;ldquo;résidu de Solow&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;Souvent, on pense au résidu de Solow comme étant la croissance technologique, mais en réalité, il englobe tout ce qui n&amp;rsquo;est ni capital ni travail.
+Comme nous l&amp;rsquo;avons dit, cela comprend la technologie, mais aussi l&amp;rsquo;éducation, l&amp;rsquo;organisation industrielle, les infrastructures, etc.
+C&amp;rsquo;est en fait une mesure de notre ignorance des facteurs qui contribuent à la croissance économique.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Debt and public expenditures</title>
       <link>https://eric-roca.github.io/courses/macroeconomics/olg/olg_government/</link>
       <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
@@ -5694,6 +6613,33 @@ This implies that present and future consumption are valued the same, which comp
     </item>
     
     <item>
+      <title>Le modèle de Ramsey</title>
+      <link>https://eric-roca.github.io/courses/macroeconomics/dynamic_macroeconomics/ramsey_introduction/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/macroeconomics/dynamic_macroeconomics/ramsey_introduction/</guid>
+      <description>&lt;h2 id=&#34;introduction-au-modèle-de-ramsey&#34;&gt;Introduction au modèle de Ramsey&lt;/h2&gt;
+&lt;p&gt;Le modèle de Ramsey, un modèle de croissance néoclassique, a été élaboré par Frank Ramsey en 1928.
+Bien qu&amp;rsquo;il partage des similitudes avec le modèle de Solow, il présente plusieurs différences majeures.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dans le modèle de Ramsey, l&amp;rsquo;épargne est &lt;strong&gt;endogénéisée&lt;/strong&gt;.
+En d&amp;rsquo;autres termes, il explique comment les agents économiques déterminent leur taux d&amp;rsquo;épargne.
+Par opposition, le modèle de Solow considère l&amp;rsquo;épargne comme exogène, c&amp;rsquo;est-à-dire qu&amp;rsquo;elle est définie par les équations du modèle.
+Le modèle de Ramsey démontre que le taux d&amp;rsquo;épargne optimal est influencé par divers facteurs, tels que le taux de croissance de la population, le taux de rendement du capital et le coefficient d&amp;rsquo;aversion au risque des agents économiques.&lt;/li&gt;
+&lt;li&gt;Le modèle de Ramsey intègre l&amp;rsquo;&lt;strong&gt;intertemporalité&lt;/strong&gt;, signifiant que les agents économiques prennent en compte les conséquences futures de leurs décisions actuelles.
+À l&amp;rsquo;inverse, le modèle de Solow suppose que les agents économiques ne considèrent pas ces implications futures.&lt;/li&gt;
+&lt;li&gt;Enfin, le modèle de Ramsey est axé sur l&amp;rsquo;&lt;strong&gt;optimisation&lt;/strong&gt;, cherchant à maximiser le bien-être des agents économiques sur toute la période.
+Le modèle de Solow, en revanche, ne s&amp;rsquo;engage pas dans cette maximisation du bien-être.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Le modèle de Ramsey montre que le taux d&amp;rsquo;épargne optimal est déterminé par un certain nombre de facteurs, tels que le taux de croissance de la population, le taux de rendement du capital et le coefficient d&amp;rsquo;aversion au risque des agents économiques.
+Cependant, le modèle de Solow ne prend pas en compte ces facteurs.
+L&amp;rsquo;endogénéisation de l&amp;rsquo;épargne dans le modèle de Ramsey le rend plus réaliste que le modèle de Solow.
+En effet, dans la réalité, le taux d&amp;rsquo;épargne est déterminé par les décisions des agents économiques et non pas imposé par le modèle lui-même.&lt;/p&gt;
+&lt;p&gt;Le modèle de Ramsey a été employé pour analyser un vaste ensemble de problématiques économiques, telles que la croissance économique, l&amp;rsquo;épargne, l&amp;rsquo;investissement, l&amp;rsquo;éducation et l&amp;rsquo;environnement.
+Il représente un outil crucial pour les économistes cherchant à comprendre les mécanismes sous-jacents à la croissance économique et à élaborer des politiques économiques susceptibles d&amp;rsquo;améliorer le bien-être économique.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Planner</title>
       <link>https://eric-roca.github.io/courses/macroeconomics/olg/olg_planner/</link>
       <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
@@ -5739,6 +6685,71 @@ we can easily characterise the steady state knowing that $d_t = d_{t+1} = \bar{d
 &lt;p&gt;This equation provides us with the modified golden rule: the level of capital that maximises the planner&amp;rsquo;s utility.
 Clearly, if $\gamma=1$, the planner attributes the same weight to all generations and we recover the golden rule: $f^\prime(k) = n + \delta.$
 As we discussed &lt;a href=&#34;https://eric-roca.github.io/courses/macroeconomics/olg/olg_optimality/&#34;&gt;before&lt;/a&gt;, it is quite &lt;em&gt;unlikely&lt;/em&gt; the decentralised equilibrium converges towards the golden rule (modified or not).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hypothèses de Ramsey</title>
+      <link>https://eric-roca.github.io/courses/macroeconomics/dynamic_macroeconomics/ramsey_assumptions/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/macroeconomics/dynamic_macroeconomics/ramsey_assumptions/</guid>
+      <description>&lt;h2 id=&#34;hypothèses&#34;&gt;Hypothèses&lt;/h2&gt;
+&lt;p&gt;Dans le modèle de Ramsey, les agents cherchent à optimiser leur comportement pour maximiser leur utilité.
+La version simplifiée du modèle inclut deux catégories d&amp;rsquo;agents :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Producteurs&lt;/li&gt;
+&lt;li&gt;Consommateurs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Les agents de chaque catégorie présentent des caractéristiques similaires:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Nombreux et identiques, un seul agent représentatif est modélisé pour chaque catégorie.&lt;/li&gt;
+&lt;li&gt;La concurrence est pure et parfaite sur l&amp;rsquo;ensemble des marchés :
+&lt;ul&gt;
+&lt;li&gt;Marchés du travail&lt;/li&gt;
+&lt;li&gt;Marché de capital&lt;/li&gt;
+&lt;li&gt;Marché des biens&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Les agents ont une capacité de prévision parfaite du futur, ce qui implique qu&amp;rsquo;ils disposent d&amp;rsquo;une clairvoyance parfaite.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;producteurs&#34;&gt;Producteurs&lt;/h3&gt;
+&lt;p&gt;Dans le modèle de Ramsey, un grand nombre d&amp;rsquo;entreprises identiques produisent un bien homogène à l&amp;rsquo;aide de la même technologie.
+Pour produire, les entreprises louent du capital et recrutent des travailleurs.&lt;/p&gt;
+&lt;p&gt;La production utilise une fonction de production identique à celle du modèle de Solow:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Elle est homogène de degré un (pour tous les facteurs de production rivaux)&lt;/li&gt;
+&lt;li&gt;La production est croissante pour chaque facteur de production&lt;/li&gt;
+&lt;li&gt;Elle présente des rendements décroissants&lt;/li&gt;
+&lt;li&gt;Elle respecte les conditions d&amp;rsquo;Inada&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Dans le modèle de Ramsey, les fonctions de production intensives ou par travailleur sont utilisées:
+$y(t) = f(k(t))$&lt;/p&gt;
+&lt;h4 id=&#34;fonction-de-production-cobb-douglas&#34;&gt;Fonction de production Cobb-Douglas&lt;/h4&gt;
+&lt;p&gt;Dans ce qui suit, pour simplifier l&amp;rsquo;analyse, on utilisera la fonction de production Cobb-Douglas comme suit:&lt;/p&gt;
+&lt;p&gt;$$Y(t) = F\left[K(t), L(t)\right] = K(t)^\alpha L(t)^{1-\alpha}, \alpha \in (0,1)$$&lt;/p&gt;
+&lt;p&gt;Cette fonction de production respecte toutes les hypothèses requises du modèle.&lt;/p&gt;
+&lt;p&gt;$$Y = F[K, L] = K^\alpha L^{1-\alpha} \implies$$
+$$\implies \frac{Y}{L} \equiv y = \frac{K^\alpha L^{1-\alpha}}{L} = K^\alpha L^{-\alpha} = \left(\frac{K}{L}\right)^\alpha = k^\alpha.$$&lt;/p&gt;
+&lt;h4 id=&#34;salaire-et-taux-dintérêt&#34;&gt;Salaire et taux d&amp;rsquo;intérêt&lt;/h4&gt;
+&lt;p&gt;Les facteurs de production, tels que le travail et le capital, sont rémunérés en fonction de leur productivité marginale.
+Il faut noter que le modèle de Ramsey partage certaines caractéristiques avec le modèle de Solow, par exemple, le salaire et le taux d&amp;rsquo;intérêt sont déterminés de la même manière.&lt;/p&gt;
+&lt;p&gt;Le taux d&amp;rsquo;intérêt, dans le modèle de Ramsey, est donné par l&amp;rsquo;expression suivante :
+$R = \frac{\partial F[K, L]}{\partial K} = \frac{\partial L F\left[\frac{K}{L}\right]}{K} = L F^\prime \left[\frac{K}{L}\right] \frac{1}{L} = f^\prime (k).$&lt;/p&gt;
+&lt;p&gt;Pour la fonction de production Cobb-Douglas, le taux d&amp;rsquo;intérêt est:
+$R = \frac{\partial K^\alpha L^{1-\alpha}}{\partial K} = \alpha K^{\alpha - 1}L^{1-\alpha} = \alpha k^{\alpha -1}$&lt;/p&gt;
+&lt;p&gt;Le salaire, tout comme le taux d&amp;rsquo;intérêt, est déterminé en calculant la productivité marginale du travail ($L$):
+$w = \frac{\partial F[K,L]}{\partial L} = \frac{\partial L F\left[\frac{K}{L}\right]}{\partial L} = F\left[\frac{K}{L}\right] + F^\prime \left[\frac{K}{L}\right][-1]\frac{K}{L^2}L = f(k) - f^\prime (k) k$.&lt;/p&gt;
+&lt;p&gt;Avec la fonction de production Cobb-Douglas, le salaire est calculé comme suit:
+$w = \frac{\partial K^\alpha L^{1-\alpha}}{\partial L} = (1-\alpha) K^{\alpha}L^{-\alpha} = (1-\alpha) k^{\alpha}$
+Dans ce cas, le salaire augmente à mesure que la quantité de capital par travailleur, $k$, augmente.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;La prévision parfaite du futur est une hypothèse simplificatrice qui élimine l&amp;rsquo;incertitude et permet de se concentrer sur les décisions optimales.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
 </description>
     </item>
     
@@ -6182,6 +7193,81 @@ Instead of detailing the exact process (check the reference), we will simulate t
     </item>
     
     <item>
+      <title>Ménages dans Ramsey</title>
+      <link>https://eric-roca.github.io/courses/macroeconomics/dynamic_macroeconomics/ramsey_households/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/macroeconomics/dynamic_macroeconomics/ramsey_households/</guid>
+      <description>&lt;h2 id=&#34;ménages&#34;&gt;Ménages&lt;/h2&gt;
+&lt;p&gt;Contrairement aux entreprises, le traitement des ménages dans le modèle de Ramsey est très différent de celui dans le modèle de Solow.
+En fait, dans le modèle de Solow, les ménages étaient presque absents: ils épargnaient à un taux constant et exogène, sans se soucier du niveau de consommation.
+Cela est radicalement différent dans le modèle de Ramsey: les décisions sont micro-fondées, ce qui signifie qu&amp;rsquo;ils optimisent pour maximiser leur utilité.&lt;/p&gt;
+&lt;p&gt;Les ménages tirent leur utilité de la consommation, ce qui est au cœur de leurs décisions d&amp;rsquo;épargne et d&amp;rsquo;investissement.
+Ils comprennent que la valeur d&amp;rsquo;une même consommation varie à travers le temps; consommer aujourd&amp;rsquo;hui ne procure pas le même niveau de satisfaction que consommer dans un an, par exemple.
+Mais, en réduisant la consommation aujourd&amp;rsquo;hui, il est possible d&amp;rsquo;épargner et ainsi gagner de l&amp;rsquo;intérêt et consommer plus dans le futur.
+Pour maximiser leur utilité, les ménages doivent &lt;em&gt;arbitrer&lt;/em&gt; entre la consommation présente et la consommation future.
+Le modèle de Ramsey suppose que les ménages ont une durée de vie infinie, ce qui simplifie l&amp;rsquo;analyse de leurs choix intertemporels.&lt;/p&gt;
+&lt;p&gt;Finalement, de manière similaire au modèle de Solow, on postule que la population croît à un taux constant.
+Ainsi, la taille de la population à un moment donné est décrite par l&amp;rsquo;équation, $L(t) = L(0)e^{nt}.$
+Pour simplifier, nous posons $L(0) = 1$ où $n&amp;gt;0$ est le taux de croissance de la population.
+Pour tant,&lt;/p&gt;
+&lt;p&gt;$$L(t) = e^{nt}.$$&lt;/p&gt;
+&lt;p&gt;Si $C(t)$ est la consommation totale de l&amp;rsquo;économie à l&amp;rsquo;instant $t$, la consommation par habitant est donnée par $c(t) \equiv \frac{C(t)}{L(t)}.$&lt;/p&gt;
+&lt;h3 id=&#34;utilité-des-ménages&#34;&gt;Utilité des ménages&lt;/h3&gt;
+&lt;p&gt;Pour &lt;em&gt;chaque ménage&lt;/em&gt;, nous exprimons l&amp;rsquo;utilité comme suit:
+$$U = \int_{0}^{\infty} e^{-\rho t} e^{nt} u\left(c(t)\right) \mathrm{d}t = \int_{0}^{\infty} e^{-(\rho-n) t} u\left(c(t)\right) \mathrm{d}t$$&lt;/p&gt;
+&lt;p&gt;Dans cette équation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\rho &amp;gt; 0$ représente le taux de préférence temporel, illustrant la priorité accordée à la consommation présente par rapport à la consommation future.&lt;/li&gt;
+&lt;li&gt;$t$ symbolise le temps, considéré comme continu.&lt;/li&gt;
+&lt;li&gt;$c(t)$ désigne le niveau de consommation à l&amp;rsquo;instant $t$.&lt;/li&gt;
+&lt;li&gt;$e^{nt}$ reflète le nombre de membres du ménage, prenant en compte la croissance démographique.&lt;/li&gt;
+&lt;li&gt;$u(\cdot)$ est la fonction d&amp;rsquo;utilité instantanée, qui mesure la satisfaction retirée de la consommation à un moment précis.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;La fonction d&amp;rsquo;utilité instantanée $u(\cdot)$ permet de convertir un niveau de consommation en un niveau d&amp;rsquo;utilité correspondant.
+Cette fonction est à la fois croissante et concave, indiquant que les ménages apprécient la consommation et que leur utilité s&amp;rsquo;accroît avec celle-ci, mais de manière décroissante.
+L&amp;rsquo;utilité instantanée met ainsi en évidence l&amp;rsquo;effet de la satiété.
+La fonction d&amp;rsquo;utilité CRRA (Constant Relative Risk Aversion) est fréquemment employée et se présente comme suit :
+$$u(c(t)) = \frac{c(t)^{1-\theta}-1}{1-\theta}.$$
+où $\theta$ est un paramètre exprimant l&amp;rsquo;aversion au risque.
+Ce paramètre détermine dans quelle mesure un ménage est disposé à troquer de la consommation actuelle contre de la consommation future.&lt;/p&gt;
+&lt;p&gt;Le taux de préférence temporel (noté ici par $\rho$) est un indicateur illustrant l&amp;rsquo;importance que les ménages accordent à la consommation présente par rapport à la consommation future.
+Un taux de préférence temporel élevé implique que les ménages privilégient une consommation accrue aujourd&amp;rsquo;hui plutôt que dans le futur.
+Inversement, un taux de préférence temporel faible suggère que les ménages sont plus enclins à consommer davantage dans le futur et moins aujourd&amp;rsquo;hui.
+Le terme $e^{nt}$, qui apparaît comme un multiplicateur dans l&amp;rsquo;expression, représente la taille totale du ménage.&lt;/p&gt;
+&lt;p&gt;En effet, l&amp;rsquo;utilité totale est la somme des flux d&amp;rsquo;utilité instantanée (ici réprésentée par une intégrale).
+Pour illustrer ce point, imaginons un instant qu&amp;rsquo;un individu ne vivait que pour deux périodes.
+On pourrait exprimer son utilité totale pendant sa vie comme la somme des utilités pendant la première période et celle de la deuxième période, $U = u(c(1)) + u(c(2)) = \sum_{t=0}^{2} u(c(t)).$
+Cependant, puisque les individus sont supposés vivre indéfiniment et que le temps est considéré comme continu, nous utilisons l&amp;rsquo;expression précédente sous forme d&amp;rsquo;intégrale:
+$$U=\int_0^\infty e^{-(\rho-n)t}u(c(t))\mathrm{d}t.$$&lt;/p&gt;
+&lt;h3 id=&#34;contrainte-budgétaire-et-capital&#34;&gt;Contrainte budgétaire et capital&lt;/h3&gt;
+&lt;p&gt;Dans le modèle de Ramsey, les ménages détiennent le capital qui est créé à travers l&amp;rsquo;épargne et que les entreprises empruntent.
+En outre, les ménages offrent leur travail aux entreprises.
+Pour chaque ressource, ils obtiennent le taux d&amp;rsquo;intérêt $r(t)$ et le salaire $w(t)$.
+Finalement, les ressources sont utilisées pour:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Financer la consommation&lt;/li&gt;
+&lt;li&gt;Épargner&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Comme dans le modèle de Solow, le capital est créé à travers de l&amp;rsquo;épargne, mettant l&amp;rsquo;accent sur l&amp;rsquo;accumulation du capital comme moteur de la croissance économique.
+La totalité du capital $K(t)$ est détenue par les ménages.
+À chaque période, l&amp;rsquo;économie ajoute la quantité de capital $\dot{K}(t)$ au stock existant.
+Ceci correspond à la part du revenu non consommée.
+De plus, une partie du capital se déprécie à un taux $\delta$.
+Par conséquent, le changement dans le niveau agrégé du capital est donné par:&lt;/p&gt;
+&lt;p&gt;$$\dot{K}(t) = \overbrace{w(t)L(t) + r(t)K(t)}^{revenu} - C(t) - \delta K(t)$$&lt;/p&gt;
+&lt;p&gt;Si l&amp;rsquo;on souhaite obtenir l&amp;rsquo;évolution du capital par ménage, il faut diviser par $L(t)$.&lt;/p&gt;
+&lt;p&gt;$$\dot{k}(t) = \dot{\frac{K(t)}{L(t)}} = \frac{\dot{K}(t)L(t) - \dot(L)(t)K(t)}{L(t)^2}$$
+$$\dot{k}(t) = \frac{\left[w(t)L(t) + r(t)K(t) - C(t) - \delta K(t)\right]L(t) - \dot{L}(t)K(t)}{L(t)^2}$$
+$$\dot{k}(t) = w(t) + r(t)k(t) - c(t) - \delta k(t) - n k(t)$$&lt;/p&gt;
+&lt;p&gt;On constate que:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Un salaire ou un taux d&amp;rsquo;intérêt plus élevé permet d&amp;rsquo;épargner davantage.&lt;/li&gt;
+&lt;li&gt;Une consommation plus élevée réduit l&amp;rsquo;épargne.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Galor and Özak, 2016</title>
       <link>https://eric-roca.github.io/courses/macroeconomics/olg/papers/galor_ozak__2016/</link>
       <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
@@ -6353,6 +7439,405 @@ This process reflects their lower reproductive success.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Optimisation</title>
+      <link>https://eric-roca.github.io/courses/macroeconomics/dynamic_macroeconomics/ramsey_optimization/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/macroeconomics/dynamic_macroeconomics/ramsey_optimization/</guid>
+      <description>&lt;h2 id=&#34;optimisation&#34;&gt;Optimisation&lt;/h2&gt;
+&lt;p&gt;Dans le modèle de Ramsey, les ménages choisissent leur niveau de consommation de manière optimale pour maximiser leur utilité.
+Nous avons tous les ingrédients nécessaires pour écrire et résoudre le problème d&amp;rsquo;optimisation.&lt;/p&gt;
+&lt;p&gt;La &lt;em&gt;fonction objective&lt;/em&gt; est la valeur de l&amp;rsquo;utilité totale:&lt;/p&gt;
+&lt;p&gt;$$U = \int_{0}^{\infty} e^{-\rho t} e^{nt} u\left(c(t)\right) \mathrm{d}t$$
+Les ménages peuvent décider librement combien consommer, et cela détermine le niveau de capital futur.&lt;/p&gt;
+&lt;p&gt;$$\dot{k}(t) = w(t) + r(t)k(t) - c(t) - \delta k(t) - n k(t).$$&lt;/p&gt;
+&lt;p&gt;Le problème d&amp;rsquo;optimisation consiste donc à déterminer la trajectoire optimale de la consommation, $c(t)$, qui maximise l&amp;rsquo;utilité intertemporelle des ménages, tout en respectant les contraintes liées à l&amp;rsquo;évolution du capital par travailleur, $k(t)$.&lt;/p&gt;
+&lt;h3 id=&#34;hamiltonien&#34;&gt;Hamiltonien&lt;/h3&gt;
+&lt;p&gt;Le problème des ménages est de nature dynamique, et les décisions prises à l&amp;rsquo;instant $t$ ont des conséquences sur toutes les périodes futures.
+Si, par exemple, un ménage choisit d&amp;rsquo;augmenter sa consommation aujourd&amp;rsquo;hui, le niveau d&amp;rsquo;épargne se réduit, entrainant une baisse de la création de capital.
+De ce fait, il y aura moins de capital demain, réduisant la production, diminuant les salaires tout en élevant le taux d&amp;rsquo;intérêt, ce qui a un impact sur le revenu des ménages.&lt;/p&gt;
+&lt;p&gt;Pour résoudre ce genre de problématiques, on applique le concept d&amp;rsquo;&lt;em&gt;Hamiltonien&lt;/em&gt;.
+C&amp;rsquo;est une méthode mathématique permettant de déterminer la trajectoire optimale de la consommation en tenant compte de tous les effets en chaîne.&lt;/p&gt;
+&lt;p&gt;On écrit le Hamiltonien comme suit:&lt;/p&gt;
+&lt;p&gt;$$\mathcal{H} =  e^{-(\rho-n) t} u\left(c(t)\right) +$$
+$$ + \lambda(t) \left[ w(t) + r(t)k(t) - c(t) - \delta k(t) - n k(t)\right]$$&lt;/p&gt;
+&lt;p&gt;Pour résoudre le problème, on doit effectivement calculer les deux dérivées suivantes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\frac{\partial \mathcal{H}}{\partial c} = 0$&lt;/li&gt;
+&lt;li&gt;$\frac{\partial \mathcal{H}}{\partial k} + \dot{\lambda} = 0$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pour notre cas, ces dérivées sont les suivantes:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$\frac{\partial \mathcal{H}}{\partial c} \implies e^{-(\rho - n)t} u^\prime(c(t)) - \lambda(t) = 0$&lt;/li&gt;
+&lt;li&gt;$\frac{\partial \mathcal{H}}{\partial k} + \dot{\lambda} \implies \lambda(t)\left[r(t) - \delta - n \right] + \dot{\lambda}(t) = 0$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Effectivement, nous avons maintenant un système comprenant deux équations dynamiques (en gardant à l&amp;rsquo;esprit que $c$ est une fonction de $t: c(t)$, ainsi que $\lambda$ et $r$):&lt;/p&gt;
+&lt;p&gt;\begin{align}
+0 =&amp;amp; e^{-(\rho - n)t} u^\prime(c) - \lambda \\\
+0 =&amp;amp; \lambda\left[r - \delta - n \right] + \dot{\lambda}
+\end{align}&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Objectif&lt;/strong&gt;: Jusqu&amp;rsquo;à présent, le modèle nous a fourni une équation dynamique pour le capital:
+$$\dot{k} =  w(t) + r(t)k(t) - c(t) - \delta k(t) - n k(t).$$&lt;/p&gt;
+&lt;p&gt;Cette équation montre comment le capital évolue (change) selon le niveau de capital existant ($k(t)$) et selon le niveau de consommation ($c(t)$).
+Nous cherchons une équation pareille pour la consommation.&lt;/p&gt;
+&lt;p&gt;On voit bien que la deuxième équation inclut $\lambda$ et $\dot{\lambda}$.
+La première équation nous donne directement la valeur de $\lambda$.
+Enfin, sachant que $\dot{\lambda}$ n&amp;rsquo;est autre que la dérivée de $\lambda$ par rapport aux temps, nous avons que:&lt;/p&gt;
+&lt;p&gt;\begin{align}
+\lambda =&amp;amp; e^{-(\rho - n)t} u^\prime(c) \implies \\\
+\dot{\lambda} =&amp;amp; e^{-(\rho - n)t} u^\prime(c)(-(\rho-n)) + e^{-(\rho-n)t}u^{\prime \prime}(c)\dot{c} \\\
+\end{align}&lt;/p&gt;
+&lt;p&gt;Pourtant, si nous introduisons ces conditions dans la deuxième équation elle devient :
+\begin{align}
+0 =&amp;amp; \lambda\left[r - \delta - n \right] + \dot{\lambda} \\\
+-\dot{\lambda} =&amp;amp; \lambda\left[r - \delta - n \right]  \\\
+\end{align}
+\begin{align}
+-\left[\overbrace{e^{-(\rho - n)t} u^\prime(c)(-(\rho-n)) + e^{-(\rho-n)t}u^{\prime \prime}(c)\dot{c}}^{\dot{\lambda}}\right] =&amp;amp; \\\
+=\overbrace{e^{-(\rho - n)t} u^\prime(c)}^{\lambda}\left[r - \delta - n \right]  \\\
+\end{align}&lt;/p&gt;
+&lt;p&gt;Divisant les deux côtés par $e^{-(\rho-n)t} &amp;gt; 0$ :&lt;/p&gt;
+&lt;p&gt;\begin{align}
+-\left[u^\prime(c)(-(\rho-n)) + u^{\prime \prime}(c)\dot{c}\right] =&amp;amp; u^\prime(c)\left[r - \delta - n \right]  \\\
+u^\prime(c)(\rho-n) - u^{\prime \prime}(c)\dot{c} =&amp;amp; u^\prime(c)\left[r - \delta - n \right]  \\\
+\rho-n - \frac{u^{\prime \prime}(c)}{u^\prime(c)}\dot{c} =&amp;amp; r - \delta - n   \\\
+\end{align}&lt;/p&gt;
+&lt;p&gt;Comme $u^\prime(c) &amp;gt; 0$, on peut aussi diviser par cette valeur :
+\begin{align}
+\rho - \frac{u^{\prime \prime}(c)}{u^\prime(c)}\dot{c} =&amp;amp; r - \delta   \\\
+\end{align}&lt;/p&gt;
+&lt;p&gt;Finalement, on sait que la valeur du coefficient d&amp;rsquo;aversion au risque ($\sigma$) est :&lt;/p&gt;
+&lt;p&gt;$$\sigma = -\frac{u^{\prime\prime}(c)}{u^{\prime} (c)}c$$&lt;/p&gt;
+&lt;p&gt;Pourtant
+$$\sigma = -\frac{u^{\prime\prime}(c)}{u^\prime (c)}c \implies -\frac{u^{\prime\prime}(c)}{u^\prime(c)} = \frac{\sigma}{c}$$&lt;/p&gt;
+&lt;p&gt;Ainsi :
+\begin{align}
+\rho - \frac{u^{\prime \prime}(c)}{u^\prime (c)}\dot{c} =&amp;amp; r - \delta   \\\
+\rho + \frac{\sigma}{c}\dot{c} =&amp;amp; r - \delta   \\\
+\frac{\dot{c}}{c} =&amp;amp; \frac{1}{\sigma}(r - \delta - \rho)
+\end{align}&lt;/p&gt;
+&lt;p&gt;Cette dernière équation s&amp;rsquo;appelle &lt;strong&gt;Équation d&amp;rsquo;Euler&lt;/strong&gt; et elle est fondamentale dans les modèles dynamiques.&lt;/p&gt;
+&lt;h4 id=&#34;sigma-et-lélasticité-de-substitution-intertemporelle&#34;&gt;$\sigma$ et l&amp;rsquo;élasticité de substitution intertemporelle&lt;/h4&gt;
+&lt;p&gt;Lors de l&amp;rsquo;optimisation, la valeur $\sigma$ apparait de manière (plus ou moins) naturelle.
+Or, dans le modèle, le risque n&amp;rsquo;existe pas, et il est donc difficile de comprendre la raison pour laquelle $\sigma$ apparait.&lt;/p&gt;
+&lt;p&gt;Néanmoins, $\sigma$ mésure aussi le taux d&amp;rsquo;élastion de substitution intertemporelle: le niveau auquel les ménages sont prêts à accepter des écarts de consommation entre les différentes périodes quand
+C&amp;rsquo;est-à-dire, s&amp;rsquo;ils veulent que la consommation soit toujours pareille ou s&amp;rsquo;ils acceptent des une consommation moins élevé pendant certains périodes pour béneficier, par exemple, d&amp;rsquo;un taux d&amp;rsquo;intérêt plus élevé.
+La définition de l&amp;rsquo;élasticité de substitution intertemporelle est la suivante, où $t$ et $s$ indiquent deux périodes de temps proches:
+$$\sigma(c_t, c_s) = \frac{\frac{u^\prime (c_t)}{u^\prime (c_s)}}{\frac{c_s}{c_t}}\frac{\mathrm{d}\frac{c_s}{c_t}}{\mathrm{d}\frac{u^\prime (c_t)}{u^\prime (c_s)}}$$&lt;/p&gt;
+&lt;p&gt;Si on développe les différentiels $\mathrm{d}$ rappelant que si $y = f(x)$ le différentiel $\mathrm{d}y$ est $\mathrm{d}y = f^\prime (x) \mathrm{d}x.$
+Ainsi, avec la régle du quotient:&lt;/p&gt;
+&lt;p&gt;$$\frac{\frac{u^\prime (c_t)}{u^\prime (c_s)}}{\frac{c_s}{c_t}} \frac{\mathrm{d}\frac{c_s}{c_t}}{\mathrm{d}\frac{u^\prime (c_t)}{u^\prime (c_s)}}$$
+$$\frac{\frac{u^\prime (c_t)}{u^\prime (c_s)}}{\frac{c_s}{c_t}} \frac{\frac{c_t \mathrm{d}c_s - c_s \mathrm{d}c_t}{c_t^2}}{\frac{u^\prime (c_s) u^{\prime \prime} (c_t) \mathrm{d}c_t - u^\prime (c_t) u^{\prime \prime}(c_s)\mathrm{d}c_s }{{u^\prime(c_s)}^2}} $$&lt;/p&gt;
+&lt;p&gt;Comme on travail en temps continu, on peut laisser $s$ s&amp;rsquo;approcher de $t$, $s\rightarrow t$ et, donc $c_s\rightarrow c_t$.
+Ainsi:
+$$\sigma(c_t, c_s) = \overbrace{\frac{\frac{u^\prime (c_t)}{u^\prime (c_s)}}{\frac{c_s}{c_t}}}^{=1} \frac{\frac{c_t \mathrm{d}c_s - c_s \mathrm{d}c_t}{c_t^2}}{\frac{u^\prime (c_s) u^{\prime \prime} (c_t) \mathrm{d}c_t - u^\prime (c_t) u^{\prime \prime}(c_s)\mathrm{d}c_s }{{u^\prime(c_s)}^2}} $$
+$$\sigma(c_t, c_s) = \frac{\frac{c_t \mathrm{d}c_s - c_t \mathrm{d}c_t}{c_t^2}}{\frac{u^\prime (c_t) u^{\prime \prime} (c_t) \mathrm{d}c_t - u^\prime (c_t) u^{\prime \prime}(c_t)\mathrm{d}c_s }{{u^\prime(c_t)}^2}} $$
+$$\sigma(c_t, c_s) = \frac{\frac{\mathrm{d}c_s - \mathrm{d}c_t}{c_t}}{\frac{u^\prime (c_t) u^{\prime \prime} (c_t) (\mathrm{d}c_t - \mathrm{d}c_s)}{{u^\prime(c_t)}^2}} $$
+$$\sigma(c_t, c_s) = \frac{\frac{\mathrm{d}c_s - \mathrm{d}c_t}{c_t}}{\frac{u^{\prime \prime} (c_t) (\mathrm{d}c_t - \mathrm{d}c_s)}{{u^\prime(c_t)}}} $$
+$$\sigma(c_t, c_s) = - \frac{\frac{\mathrm{d}c_s - \mathrm{d}c_t}{c_t}}{\frac{u^{\prime \prime} (c_t) (\mathrm{d}c_s - \mathrm{d}c_t)}{{u^\prime(c_t)}}} $$
+$$\sigma(c_t, c_s) = - \frac{\frac{1}{c_t}}{\frac{u^{\prime \prime} (c_t) }{{u^\prime(c_t)}}} $$
+$$\sigma(c_t) = - \frac{u^{\prime} (c_t) }{u^{\prime \prime}(c_t)}\frac{1}{c_t} $$&lt;/p&gt;
+&lt;h3 id=&#34;léquation-deuler&#34;&gt;L&amp;rsquo;équation d&amp;rsquo;Euler&lt;/h3&gt;
+&lt;p&gt;Dans le modèle de Ramsey, l&amp;rsquo;équation d&amp;rsquo;Euler s&amp;rsquo;écrit (faisant explicite le fait que $r$ change avec le temps) :&lt;/p&gt;
+&lt;p&gt;$$\frac{\dot{c}}{c} = \frac{1}{\sigma}\left(r(t) - \delta - \rho\right)$$&lt;/p&gt;
+&lt;p&gt;Elle indique l&amp;rsquo;évolution de la consommation $\dot{c}$.
+Au fait, comme nous avons $\frac{\dot{c}}{c}$, ce qui nous montre c&amp;rsquo;est le taux de croissance de la consommation.
+Rappelons que si $\dot{c} &amp;gt; 0$, la consommation augmente.
+Elle reflète que :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;La consommation par tête augmente (ou diminue) selon l&amp;rsquo;écart entre le taux d&amp;rsquo;intérêt ($r(t)$) et l&amp;rsquo;importance que les ménages donnent au futur ($\rho$).
+Ceci correspond au trade-off entre consommer aujourd&amp;rsquo;hui ou attendre:
+&lt;ul&gt;
+&lt;li&gt;D&amp;rsquo;un côté, les ménages sont impatients et préfèrent consommer aujourd&amp;rsquo;hui&lt;/li&gt;
+&lt;li&gt;De l&amp;rsquo;autre, attendre à consommer permet d&amp;rsquo;épargner plus et consommer plus pendant le futur.&lt;/li&gt;
+&lt;li&gt;Un taux d&amp;rsquo;intérêt plus important implique qu&amp;rsquo;il est plus intéressant d&amp;rsquo;épargner, par conséquent, la consommation augmente avec le temps ($\dot{c} &amp;gt; 0$).&lt;/li&gt;
+&lt;li&gt;Si les deux forces sont en équilibre ($r(t) = \rho$), la consommation ne change pas ($\dot{c} = 0$).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Le rôle de $\sigma$ est aussi important.
+$\sigma$ est le niveau d&amp;rsquo;aversion au risque et $\frac{1}{\sigma}$ mesure l&amp;rsquo;&lt;em&gt;élasticité de substitution intertemporel&lt;/em&gt;.
+Ainsi, quand $\sigma$ est grande, l&amp;rsquo;élasticité est basse.
+Cette élasticité mesure la disposition à accepter des niveaux de consommation différents au cours du temps.
+Pourtant, avec un niveau $\frac{1}{\sigma}$ faible, les ménages préfèrent ne pas avoir d&amp;rsquo;écarts de consommation entre les différentes périodes.
+On le voit bien : si $\frac{1}{\sigma}$ est faible, $\dot{c}$ est faible aussi, et par conséquent, la consommation à peine augmente.
+Voir aussi l&amp;rsquo;&lt;a href=&#34;https://eric-roca.github.io/courses/mathematical_appendix/elasticity_of_substitution/&#34;&gt;Appendice&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Dynamiques</title>
+      <link>https://eric-roca.github.io/courses/macroeconomics/dynamic_macroeconomics/ramsey_dynamics/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/macroeconomics/dynamic_macroeconomics/ramsey_dynamics/</guid>
+      <description>&lt;h2 id=&#34;dynamiques&#34;&gt;Dynamiques&lt;/h2&gt;
+&lt;p&gt;Nous avons vu que le comportement de l&amp;rsquo;économie dans le modèle de Ramsey se décrit par deux équations dynamiques:&lt;/p&gt;
+&lt;p&gt;\begin{align}
+\dot{k}(t) =&amp;amp; w(t) + r(t)k(t) - c(t) - \delta k(t) - n k(t) \\\
+\frac{\dot{c}}{c} =&amp;amp; \frac{1}{\sigma}(r(t) - \rho - \delta)
+\end{align}&lt;/p&gt;
+&lt;p&gt;La résolution de ce système d&amp;rsquo;équations permet d&amp;rsquo;obtenir l&amp;rsquo;évolution optimale du capital et de la consommation intertemporels dans le modèle de Ramsey.&lt;/p&gt;
+&lt;p&gt;Nous avons aussi les valeurs d&amp;rsquo;équilibre pour le salaire et le taux d&amp;rsquo;intérêt ($w(t),r(t)$).
+Pourtant, nous pouvons fermer le modèle et exprimer le système exclusivement en termes de $k(t)$ et $c(t)$.
+En fait:&lt;/p&gt;
+&lt;p&gt;$$\color{red}{w(t) = f(k(t)) - f^\prime (k(t)) k(t)}$$
+$$\color{red}{r(t) = f^\prime (k(t))}$$&lt;/p&gt;
+&lt;p&gt;Pourtant, en équilibre, $\dot{k}(t) = w(t) + r(t)k(t) - c(t) - \delta k(t) - n k(t)$ devient :&lt;/p&gt;
+&lt;p&gt;$$\dot{k}(t) = f(k(t)) - c(t) - (n + \delta) k(t)$$&lt;/p&gt;
+&lt;p&gt;Cela a du sens: à niveau agrégé, le capital qu&amp;rsquo;on accumule est égal à tout ce qui est produit ($f(k)$) moins ce qu&amp;rsquo;on consomme ($c$) et ce qu&amp;rsquo;on perd ($\delta$).
+Le terme $n$ reflet l&amp;rsquo;augmentation de la population, car nous travaillons en par tête.
+Ainsi, le système dynamique est:&lt;/p&gt;
+&lt;p&gt;\begin{align}
+\dot{k}(t) =&amp;amp; \textcolor{red}{f(k(t))} - c(t) - (n + \delta) k(t) \\\
+\frac{\dot{c}}{c} =&amp;amp; \frac{1}{\sigma}(\textcolor{red}{f^\prime(k(t))} - \rho - \delta)
+\end{align}&lt;/p&gt;
+&lt;h3 id=&#34;état-stationnaire&#34;&gt;État stationnaire&lt;/h3&gt;
+&lt;p&gt;Comme dans le modèle de Solow, on s&amp;rsquo;intéresse à l&amp;rsquo;existence d&amp;rsquo;un (ou plusieurs) état stationnaire.
+C&amp;rsquo;est-à-dire, une situation telle que, une fois atteinte, l&amp;rsquo;économie reste là sans plus bouger.
+Un état stationnaire est une situation où les variables économiques majeures comme le capital par tête et la consommation par tête restent constantes à long terme, reflétant un équilibre stable dans l&amp;rsquo;économie.
+Dans le modèle de Solow, il était facile de voir qu&amp;rsquo;un tel état existait car $\dot{k} = sf(k) - (n+\delta)k$ c&amp;rsquo;est une seule équation dynamique.&lt;/p&gt;
+&lt;p&gt;Dans le modèle de Ramsey, nous avons un système avec deux équations dynamiques.
+Cela veut dire que, dans l&amp;rsquo;état stationnaire, $k$ &lt;em&gt;et&lt;/em&gt; $c$ doivent rester inchangés.
+Autrement dit, l&amp;rsquo;état stationnaire est caractérisé par:
+\begin{align}
+\dot{k} =&amp;amp; 0 \\\
+\dot{c} =&amp;amp; 0
+\end{align}&lt;/p&gt;
+&lt;p&gt;On indique, comme avant, les variables stationnaires avec une étoile.
+Ainsi, $k^\star,c^\star$ sont telles que:&lt;/p&gt;
+&lt;p&gt;\begin{align}
+0 =&amp;amp; f(k^\star) - c^\star - (n + \delta) k^\star \\\
+0 =&amp;amp; \frac{1}{\sigma}(f^\prime(k^\star) - \rho - \delta)
+\end{align}&lt;/p&gt;
+&lt;p&gt;Il est possible de montrer qu&amp;rsquo;un tel état doit exister et qu&amp;rsquo;il a $k^\star &amp;gt; 0,c^\star&amp;gt;0$.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;details&gt;
+&lt;summary&gt;Démonstration&lt;/summary&gt;
+À partir de l&#39;équation dynamique pour la consommation, si $\dot{c} = 0$, nous avons que:
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Soit $c^\star = 0$ qui n&amp;rsquo;est pas optimale car $u^\prime(c) &amp;gt; 0$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Soit $f^\prime(k^\star) = \rho + \delta$.
+Comme $\rho + \delta &amp;gt; 0$, et $f^\prime$ est décroissant et prend valeurs entre $+\infty$ et $0$, une seule valeur $k^\star$ qui satisfait la condition existe.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Comme $c^\star = f(k^\star) - (n+\delta)k^\star$, ̈́étant donée que $k^\star&amp;gt; 0$ existe, il doit aussi exister $c^\star$.
+En principe, rien n&amp;rsquo;empêche $c^{\star} \lt 0$, sauf une condition que nous n&amp;rsquo;avons pas présentée: la condition de transversalité (aussi appelée condition de Pontryagin).
+En premier lieu, $\dot{k} = 0$ implique $c^\star = f(k^\star)-(n+\delta)k^\star$.
+Vu les propriétés de $f(k)$, cette fonction (et la consommation stationnaire) atteint un maximum quand $f^\prime(k) = n + \delta$.&lt;/p&gt;
+&lt;p&gt;De l&amp;rsquo;autre côté, la condition de stationnarieté pour $c$ implique $f^\prime(k) = \rho + \delta.$
+Ainsi, à priori, le maximum de consommation peut être à gauche ou à droite de la droite $\dot{c} = 0$.
+La condition de transversalité assure qu&amp;rsquo;il soit à gauche, c&amp;rsquo;est-à-dire, avant le maximum et, par conséquent, que $c^\star &amp;gt; 0.$&lt;/p&gt;
+&lt;p&gt;Voir &lt;em&gt;Barro et Sala-i-Martín, p. 101&lt;/em&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;
+&lt;p&gt;Pour analyser la stationnarité des deux variables $k$ et $c$ de manière indépendante, on commence par étudier les conditions des variables pour lesquelles $\dot{c}= 0$ et  $\dot{k} = 0.$&lt;/p&gt;
+&lt;h3 id=&#34;c-locus&#34;&gt;c-locus&lt;/h3&gt;
+&lt;p&gt;Tout d&amp;rsquo;abord, débutons l&amp;rsquo;analyse en étudiant les dynamiques de la consommation dans le modèle de Ramsey.
+L&amp;rsquo;équation $\frac{\dot{c}}{c} = \frac{1}{\sigma}(f^\prime(k) - \rho - \delta)$ montre comment $c$ évolue en fonction de $k$ (car $k$ est la seule variable qui apparaît).
+Premièrement, intéressons-nous aux valeurs de $k$ pour lesquelles la consommation ne change pas.
+Cela nous permet d&amp;rsquo;obtenir une partie de l&amp;rsquo;état stationnaire, car il comprend à la fois $k$ et $c$.
+Si la consommation reste constante, alors $\dot{c} = 0$ et par conséquent:
+$$0 = \frac{1}{\sigma}\left(f^\prime(k) - \rho - \delta\right).$$
+$$0 = \left(f^\prime(k) - \rho - \delta\right).$$
+$$k = f^{{\prime}^{-1}}(\rho + \delta)$$&lt;/p&gt;
+&lt;p&gt;La dernière ligne indique la valeur spécifique de $k$ pour laquelle $c$ ne change pas,
+Cependant, nous pouvons également démontrer de manière simple que lorsque $k$ prend une valeur différente de cette valeur d&amp;rsquo;équilibre, la consommation $c$ change.
+Procédons à cette démonstration !&lt;/p&gt;
+&lt;p&gt;La fonction $f^\prime(k)$ est décroissante, avec $\lim_{k\rightarrow 0}f^\prime(k) = \infty$ et $\lim_{k\rightarrow +\infty} f^\prime(k) = 0.$
+Puisque $\rho + \delta &amp;gt; 0$, il doit exister une valeur entre $(0, +\infty)$ telle que $f^\prime(k) = \rho + \delta.$
+Ceci est une application du &lt;a href=&#34;https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_des_valeurs_interm%C3%A9diaires&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Théorème des valeurs intermédiaires&lt;/a&gt;
+Par exemple, si $f(k)$ est une fonction Cobb-Douglas, soit $f^\prime(k) = \alpha k^{\alpha-1}$, alors la valeur $k$ pour laquelle $\dot{c} = 0$ est $k = \left(\frac{\rho+\delta}{\alpha}\right)^{\frac{1}{\alpha-1}}.$
+Visuellement:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/dynamic_macroeconomics/finding_kcdotzero.webp&#34; alt=&#34;kcdotzero&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Pour simplifier, dissons que quand $k = k^\spadesuit \implies \dot{c} = 0.$
+Nous avons identifié que lorsque $k=k^\spadesuit$m cela implique que $\dot{c} = 0.$
+Examinons maintenant ce qui se passe lorsque $k$ prend une valeur différente, par exemple $k &amp;gt; k^\spadesuit.$
+Pour ce faire, nous utilisons l&amp;rsquo;équation dynamique de $c:$
+$$\frac{\dot{c}}{c} = \frac{1}{\sigma}(f^\prime(k) - \rho - \delta).$$&lt;/p&gt;
+&lt;p&gt;Lorsque $k &amp;gt; k^\spadesuit$, cela implique que $f^\prime(k) \lt f^\prime(k^\spadesuit)$, car la fonction $f^\prime(k)$ est décroissante.
+En revenant à notre équation dynamique de $c:$
+$$\frac{\dot{c}}{c} = \frac{1}{\sigma}(f^\prime(k) - \rho - \delta) \lt \frac{1}{\sigma}(f^\prime(k^\spadesuit) - \rho - \delta) = 0.$$&lt;/p&gt;
+&lt;p&gt;Nous observons que lorsque $k \gt k^\spadesuit$, l&amp;rsquo;équation dynamique de $c$ est négative, ce qui signifie que $\dot{c} \lt 0$ et que la consommation diminue.
+Graphiquement:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/dynamic_macroeconomics/c_dynamics.webp&#34; alt=&#34;cdynamics&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;k-locus&#34;&gt;k-locus&lt;/h3&gt;
+&lt;p&gt;Nous procédons de manière similaire pour le capital.
+Dans ce cas-là, nous cherchons les &lt;em&gt;combinaisons&lt;/em&gt; de $k$ et $c$ pour lesquelles le capital reste inchangé.
+Ceci est clair en observant l&amp;rsquo;équation dynamique du capital: $\dot{k} = f(k) - c - (n+\delta)k.$
+Ainsi, si $\dot{k} = 0$, alors
+$$c = f(k) - (n+\delta)k$$
+le capital ne change pas.&lt;/p&gt;
+&lt;p&gt;Avec une fonction Cobb-Douglas, le capital reste constant si $c = k^\alpha - (n+\delta)k.$
+Il est clair qu&amp;rsquo;il s&amp;rsquo;agit des combinaisons de capital et consommation.
+Par exemple, si $\alpha = 0.3, n = 0.1, \delta = 0.1$, quand $k = 1$ et $c = 1^{0.3} - (0.1 + 0.1)\times 1 = 0.8$ le capital ne change pas.
+Nous pouvons le vérifier car $\dot{k} = 1^{0.3} - 0.8 - (0.1 + 0.1)\times 1 = 0.$
+En revanche, si $c = 0.5$, alors $\dot{k} = 1^{0.3} - 0.5 - (0.1 + 0.1)\times 1 = 0.3 &amp;gt; 0$ et le capital augmente.&lt;/p&gt;
+&lt;p&gt;Nous pouvons tracer toutes les combinaisons de $k$ et $c$ qui impliquent $\dot{k} = 0.$
+Étant donné les propriétés de $f(k)$ et le fait que $\dot{k} = 0 \implies c = f(k) - (n+\delta)k$, la courbe aura la forme d&amp;rsquo;une parabole inversée.
+De manière graphique:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/dynamic_macroeconomics/k_dynamics.webp&#34; alt=&#34;kdynamics&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;état-stationnaire-et-diagramme-de-phase&#34;&gt;État stationnaire et diagramme de phase&lt;/h3&gt;
+&lt;p&gt;L&amp;rsquo;état stationnaire de l&amp;rsquo;économie est défini comme la combinaison de $k$ et $c$ telle que $\dot{k} = \dot{c} = 0.$
+Ainsi, puisque nous avons deux courbes, une pour $\dot{k}= 0$ et une autre pour $\dot{c} = 0,$, l&amp;rsquo;état stationnaire correspond au point où ces deux courbes se croisent.&lt;/p&gt;
+&lt;p&gt;Enfin, nous pouvons combiner les dynamiques de $k$ et $c$ pour trouver les dynamiques de l&amp;rsquo;économie grâce à un diagramme de phase.
+La combinaison divise l&amp;rsquo;espace en quatre quadrants, avec des dynamiques distinctes dans chaque quadrant.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bas-gauche: $k$ augmente, $c$ augmente&lt;/li&gt;
+&lt;li&gt;Haut-gauche: $k$ diminue, $c$ augmente&lt;/li&gt;
+&lt;li&gt;Bas-droite: $k$ augmente, $c$ diminue&lt;/li&gt;
+&lt;li&gt;Haut-droite: $k$ diminue, $c$ diminue&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/dynamic_macroeconomics/ramsey_phase.webp&#34; alt=&#34;ramsye_phase&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Dans le modèle de Ramsey, la plupart de trajectoires sont indésirables, car l&amp;rsquo;économie finit avec:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Soit pas de capital ($k = 0$) et, par conséquent, pas de production ni de consommation&lt;/li&gt;
+&lt;li&gt;Soit pas de consommation ($c = 0$).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/dynamic_macroeconomics/ramsey_trajectories.webp&#34; alt=&#34;ramsye_dynamics&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;p&gt;Néanmoins, il existe deux chemins (saddle path) qui mènent vers le point stationnaire.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;
+&lt;strong&gt;Note&lt;/strong&gt;: dans le modèle de Ramsey, le niveau de consommation stationnaire est inférieur au maximum qu&amp;rsquo;il pourrait atteindre.
+Cela est dû au fait que les ménages sont impatients et préfèrent consommer aujourd&amp;rsquo;hui.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;La stabilité de l&amp;rsquo;état stationnaire (c&amp;rsquo;est-à-dire, la convergence vers lui) est liée à des conditions suffisantes sur les paramètres du modèle, telles que la concavité de la fonction de production, le taux d&amp;rsquo;escompte subjectif et l&amp;rsquo;élasticité de substitution intertemporelle.
+Voir le cours [Dynamic Macroeconomics]https://eric-roca.github.io/courses/macroeconomics/ramsey/&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34;&gt;
+&lt;p&gt;Le théorem de Blanchard-Khan permet de déterminer si une économie converge toujours vers l&amp;rsquo;état stationnaire (sans importer où elle commence); si la convergence n&amp;rsquo;est possible que pour certaines combinaisons initiales (notre cas); ou si l&amp;rsquo;économie ne converge jamais vers l&amp;rsquo;état stationnaire.
+Voir le cours [Dynamic Macroeconomics]https://eric-roca.github.io/courses/macroeconomics/ramsey/ (&lt;strong&gt;Attention&lt;/strong&gt;: nous travaillons en temps continue, le cours dans le lien est en temps discret et les conditions changent selon comment on modélise le temps).&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Conclusion</title>
+      <link>https://eric-roca.github.io/courses/macroeconomics/dynamic_macroeconomics/ramsey_conclusion/</link>
+      <pubDate>Thu, 11 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/courses/macroeconomics/dynamic_macroeconomics/ramsey_conclusion/</guid>
+      <description>&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Le modèle Ramsey prédit également que l&amp;rsquo;économie converge vers un état stationnaire.
+Il se distingue du modèle de Solow parce que les ménages choisissent de manière optimale leur épargne.
+En effet, dans le modèle de Ramsey, le taux d&amp;rsquo;épargne est donné par:
+$$s(t) = 1 - \frac{c(t)}{f(k(t))}.$$
+Comme l&amp;rsquo;évolution de $c$ ne suit pas l&amp;rsquo;évolution de $f(k)$, le taux d&amp;rsquo;épargne n&amp;rsquo;est plus constant.&lt;/p&gt;
+&lt;p&gt;Contrairement au modèle de Solow, les ménages du modèle de Ramsey doivent bien choisir le niveau de consommation initiale pour éviter de se retrouver dans une trajectoire non-optimale.
+Même en supposant que cela est possible, les conclusions tirées des dynamiques plus riches ne sont pas très différentes de celles du modèle de Solow.
+Effectivement, une fois atteint l&amp;rsquo;état stationnaire, $\dot{c} = \dot{k} = 0$, le capital par tête n&amp;rsquo;augmente ni diminue, et il en va de même pour le niveau de consommation par tête.
+En même temps, la consommation agrégée et le capital agrégé augmentent au taux $n &amp;gt; 0$.
+Comme dans le modèle de Solow, un niveau de croissance constant du capital par tête, et donc de la production et consommation par tête, à l&amp;rsquo;état stationnaire nécessite un taux exogène de croissance économique.
+Ainsi, on aboutit à la même conclusion : si l&amp;rsquo;on veut comprendre la croissance économique, il est nécessaire de comprendre comment la technologie (au sens large du résidu de Solow) évolue.&lt;/p&gt;
+&lt;p&gt;Comme le modèle de Ramsey repose sur l&amp;rsquo;hypothèse que les ménages sont capables d&amp;rsquo;optimiser parfaitement leur consommation et leur épargne, il offre un outil pour étudier la réponse de l&amp;rsquo;économie à divers chocs, comme les chocs technologiques, les chocs de demande ou les chocs de l&amp;rsquo;offre.
+Il permet d&amp;rsquo;analyser la dynamique de l&amp;rsquo;économie suite à ces chocs et comment les ménages ajustent leur comportement en conséquence.&lt;/p&gt;
 </description>
     </item>
     
