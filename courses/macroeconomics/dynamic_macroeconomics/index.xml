@@ -76,8 +76,8 @@ La fonction de production est :&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Hypothèse cruciale&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Une fonction est homogène de premier degré si le fait de dupliquer les facteurs de production double la quantité produite.
 Cette hypothèse semble raisonnable : si une usine avec 10 machines et 50 travailleurs produit 500 unités de production, alors en créant une deuxième usine identique, on obtiendra un total de 1000 unités de production avec 20 machines et 100 travailleurs.&lt;/p&gt;
-&lt;p&gt;Mathématiquement, une fonction est homogène de degré $\lambda$ si :
-$$F\left[\lambda K, \lambda L\right] = \lambda F\left[K, L\right],, \lambda \geq 0$$&lt;/p&gt;
+&lt;p&gt;Mathématiquement, une fonction est homogène de premier degré si :
+$$F\left[\lambda K, \lambda L\right] = \lambda F\left[K, L\right], \lambda \geq 0$$&lt;/p&gt;
 &lt;h4 id=&#34;production-croissante&#34;&gt;Production croissante&lt;/h4&gt;
 &lt;p&gt;Cette hypothèse est logique : si la quantité de capital ou de travail augmente, on produit davantage.
 Mathématiquement, la production est croissante si :&lt;/p&gt;
