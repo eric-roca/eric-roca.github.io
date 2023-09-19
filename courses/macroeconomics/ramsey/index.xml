@@ -404,7 +404,7 @@ $$\lim_{\lambda \rightarrow +\infty} G(\lambda) = + \infty$$
 $$G(-1) = 2 + \frac{2}{\beta} - \beta f^{\prime \prime}(\bar{k})\frac{\bar{c}}{\epsilon_{\bar{c}}} &amp;gt; 0$$
 $$G(0) = \frac{1}{\beta} &amp;gt; 0 $$
 $$G(1) =  \beta f^{\prime \prime}(\bar{k})\frac{\bar{c}}{\epsilon_{\bar{c}}} &amp;lt; 0.$$&lt;/p&gt;
-&lt;p&gt;Hence, $\exists \lambda_{2} \in (-1,0)$ such that $G(\lambda_{2}) = 0$.
+&lt;p&gt;Hence, $\exists \lambda_{2} \in (0,1)$ such that $G(\lambda_{2}) = 0$.
 The second root lies beyond $1.$
 Therefore, $\lambda_{1} &amp;gt; 1, \lambda_{2}\in(0,1)$ and the &lt;strong&gt;steady state is a saddle.&lt;/strong&gt;&lt;/p&gt;
 &lt;h4 id=&#34;use-eigenvalues-properties&#34;&gt;Use eigenvalues&amp;rsquo; properties&lt;/h4&gt;
