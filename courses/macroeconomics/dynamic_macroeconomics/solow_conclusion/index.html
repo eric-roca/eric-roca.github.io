@@ -955,10 +955,26 @@ Il englobe nos connaissances, notre éducation, notre manière d&rsquo;organiser
 <h4 id="note-pour-calculer-la-valeur-alpha-approx-frac13">Note pour calculer la valeur $\alpha \approx \frac{1}{3}$</h4>
 <p>La valeur $\alpha$ prend généralement des valeurs proches de $\frac{1}{3}$.
 Cela correspond à la rémunération totale du capital dans le modèle lorsque les marchés sont concurrentiels.
-Pour le voir, il suffit de calculer la fraction de la production totale reçue par les détenteurs de capital :</p>
+Pour le voir, il suffit de calculer la fraction de la production totale reçue par les détenteurs de capital.</p>
+<div style="padding: 10px; border: 3px solid #000">
+<b>Note</b>: ceci n'est valable qu'avec une fonction de production Cobb-Douglas.
+Autres formes fonctionelles <b>n'impliquent pas</b> que les détenteurs de capital reçoivent une fraction constante de la production.
+</div>
 <p>$$\frac{RK}{Y} = \frac{R \frac{K}{L}}{\frac{Y}{L}} = \frac{Rk}{y} = $$
 $$=\frac{f^\prime(k) k}{f(k)} = \frac{\alpha k^{\alpha-1}k}{k^\alpha} = \alpha.$$</p>
 <p>Ainsi, en ayant une approximation du total versé en intérêts par rapport à la production, il est possible d&rsquo;estimer $\alpha$.</p>
+<details>
+<summary>Démonstration</summary>
+On cherche une forme fonctionnelle telle que:
+$\frac{f^\prime (k) k}{f(k)} = z$ où $z$ c'est une constante.
+Il s'agit donc de résoudre une équation différentielle:
+<p>$$\frac{f^\prime(k)}{f(k)} = z \frac{1}{k} \implies \int \frac{f^\prime(k)}{f(k)} \mathrm{d}k = z \int \frac{1}{k} \mathrm{d}k$$
+Pour tant:
+$$\log(f(k)) = z \log(k) + \log(C) $$
+$$\log(f(k)) = \log(Ck^z) $$
+$$ f(k) = Ck^z$$<br>
+Ainsi, la seule forme fonctionnelle impliquant que le capital reçoive une fraction constante de la production est la fonction de type Cobb-Douglas: $f(k)=k^\alpha.$</p>
+</details>
 <h3 id="a-comme-la-mésure-de-nos-non-connaisances--comptabilité-de-la-croissance">$A$ comme la mésure de nos non-connaisances : comptabilité de la croissance</h3>
 <p>Il est relativement simple de montrer que $A$ mesure tout ce qui n&rsquo;est pas mesurable.
 À partir du modèle de Solow, nous avons que le taux de croissance du PIB par habitant est donné par :</p>

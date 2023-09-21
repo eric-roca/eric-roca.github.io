@@ -668,7 +668,7 @@ Si l&amp;rsquo;on préfère mesurer le bien-être avec la consommation &lt;em&gt
 Pour cela, il suffit de reprendre les définitions et de calculer le taux de croissance de chaque variable.
 On indique le taux de croissance de la variable $x$ par $g_{x}$.
 Lorsque le temps est continu, il se calcule comme suit: &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;p&gt;$$g_{x} = \frac{\dot{x}}{g}.$$&lt;/p&gt;
+&lt;p&gt;$$g_{x} = \frac{\dot{x}}{x}.$$&lt;/p&gt;
 &lt;p&gt;Ainsi:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Capital total : $k \equiv \frac{K}{L} \implies K = kL \implies g_{K} = \frac{\dot{kL}}{kL} = \frac{\dot{k}L}{kL} + \frac{k\dot{L}}{kL} = \frac{\dot{k}}{k} + \frac{\dot{L}}{L} = $
@@ -692,7 +692,8 @@ Pendant cette transition, le taux de variation du capital, noté $\dot{k}$, est 
 De plus, à mesure que l&amp;rsquo;on se rapproche de l&amp;rsquo;état stationnaire, le taux de croissance du capital diminue jusqu&amp;rsquo;à atteindre zéro.
 Il est donc clair que pendant cette transition, on observe une croissance économique à la fois en termes de revenu par habitant et en termes de revenu total.&lt;/p&gt;
 &lt;p&gt;En effet, avec $\dot{k} &amp;gt; 0$, le taux de croissance du capital &lt;em&gt;par habitant&lt;/em&gt; est positif : $g_{k} = \frac{\dot{k}}{k} &amp;gt; 0$.
-Par conséquent, la production par habitant et la consommation par habitant augmentent également : $g_{y} = g_{k^\alpha} = \alpha g_{k} &amp;gt; 0$ et $g_{c} = g_{(1-s)y} = g_{y} &amp;gt; 0$.&lt;/p&gt;
+Par conséquent, la production par habitant et la consommation par habitant augmentent également.
+Avec une fonction de type Cobb-Douglas, nous avons: $g_{y} = g_{k^\alpha} = \alpha g_{k} &amp;gt; 0$ et $g_{c} = g_{(1-s)y} = g_{y} &amp;gt; 0$.&lt;/p&gt;
 &lt;p&gt;Les variables en termes de revenu total augmentent également plus rapidement qu&amp;rsquo;auparavant.
 Par exemple, le taux de croissance du capital total est donné par $g_{K} = g_{Lk} = g_{k} + g_{L} = \frac{\dot{k}}{k} + n &amp;gt; n$.&lt;/p&gt;
 &lt;h4 id=&#34;convergence&#34;&gt;Convergence&lt;/h4&gt;
@@ -900,10 +901,26 @@ Il englobe nos connaissances, notre éducation, notre manière d&amp;rsquo;organ
 &lt;h4 id=&#34;note-pour-calculer-la-valeur-alpha-approx-frac13&#34;&gt;Note pour calculer la valeur $\alpha \approx \frac{1}{3}$&lt;/h4&gt;
 &lt;p&gt;La valeur $\alpha$ prend généralement des valeurs proches de $\frac{1}{3}$.
 Cela correspond à la rémunération totale du capital dans le modèle lorsque les marchés sont concurrentiels.
-Pour le voir, il suffit de calculer la fraction de la production totale reçue par les détenteurs de capital :&lt;/p&gt;
+Pour le voir, il suffit de calculer la fraction de la production totale reçue par les détenteurs de capital.&lt;/p&gt;
+&lt;div style=&#34;padding: 10px; border: 3px solid #000&#34;&gt;
+&lt;b&gt;Note&lt;/b&gt;: ceci n&#39;est valable qu&#39;avec une fonction de production Cobb-Douglas.
+Autres formes fonctionelles &lt;b&gt;n&#39;impliquent pas&lt;/b&gt; que les détenteurs de capital reçoivent une fraction constante de la production.
+&lt;/div&gt;
 &lt;p&gt;$$\frac{RK}{Y} = \frac{R \frac{K}{L}}{\frac{Y}{L}} = \frac{Rk}{y} = $$
 $$=\frac{f^\prime(k) k}{f(k)} = \frac{\alpha k^{\alpha-1}k}{k^\alpha} = \alpha.$$&lt;/p&gt;
 &lt;p&gt;Ainsi, en ayant une approximation du total versé en intérêts par rapport à la production, il est possible d&amp;rsquo;estimer $\alpha$.&lt;/p&gt;
+&lt;details&gt;
+&lt;summary&gt;Démonstration&lt;/summary&gt;
+On cherche une forme fonctionnelle telle que:
+$\frac{f^\prime (k) k}{f(k)} = z$ où $z$ c&#39;est une constante.
+Il s&#39;agit donc de résoudre une équation différentielle:
+&lt;p&gt;$$\frac{f^\prime(k)}{f(k)} = z \frac{1}{k} \implies \int \frac{f^\prime(k)}{f(k)} \mathrm{d}k = z \int \frac{1}{k} \mathrm{d}k$$
+Pour tant:
+$$\log(f(k)) = z \log(k) + \log(C) $$
+$$\log(f(k)) = \log(Ck^z) $$
+$$ f(k) = Ck^z$$&lt;br&gt;
+Ainsi, la seule forme fonctionnelle impliquant que le capital reçoive une fraction constante de la production est la fonction de type Cobb-Douglas: $f(k)=k^\alpha.$&lt;/p&gt;
+&lt;/details&gt;
 &lt;h3 id=&#34;a-comme-la-mésure-de-nos-non-connaisances--comptabilité-de-la-croissance&#34;&gt;$A$ comme la mésure de nos non-connaisances : comptabilité de la croissance&lt;/h3&gt;
 &lt;p&gt;Il est relativement simple de montrer que $A$ mesure tout ce qui n&amp;rsquo;est pas mesurable.
 À partir du modèle de Solow, nous avons que le taux de croissance du PIB par habitant est donné par :&lt;/p&gt;
