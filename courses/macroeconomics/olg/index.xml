@@ -735,7 +735,8 @@ Ultimately, what matters is the concavity of the function $g(k_{t}).$&lt;/p&gt;
 &lt;h4 id=&#34;unique-steady-state-bark--0&#34;&gt;Unique steady state, $\bar{k} &amp;gt; 0$&lt;/h4&gt;
 &lt;p&gt;If $\rho \in (0,1)$, the second derivative is clearly negative, and $g$ is concave.
 Moreover, $g(0)&amp;gt;0$, so $\bar{k} = 0$ cannot be a steady state:&lt;/p&gt;
-&lt;p&gt;$$g(k_{t}) = \frac{\beta A(1-\alpha)}{(1+n)(1+\beta)}(\alpha k^\rho + 1 - \alpha)^\frac{1-\rho}{\rho} \implies g(0)=\frac{\beta A(1-\alpha)^\frac{1}{\rho}}{(1+n)(1+\beta)}&amp;gt; 0.$$
+&lt;p&gt;$$g(k_{t}) = \frac{\beta A(1-\alpha)}{(1+n)(1+\beta)}(\alpha k^\rho + 1 - \alpha)^\frac{1-\rho}{\rho} \implies $$
+$$ \implies g(0)=\frac{\beta A(1-\alpha)^\frac{1}{\rho}}{(1+n)(1+\beta)}&amp;gt; 0.$$
 In that case, the economy displays a unique steady state, and it is globally stable.&lt;/p&gt;
 &lt;p&gt;
 
