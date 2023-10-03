@@ -4948,7 +4948,8 @@ The curve $g(k)$ is increasing:&lt;/p&gt;
 &lt;p&gt;$$g^\prime (k) = \frac{\beta A (1-\alpha)}{(1+n)(1+\beta )}(1-\rho)\left[ \alpha k^\rho + 1 - \alpha \right]^\frac{1-2 \rho}{\rho}k^{\rho -1} &amp;gt; 0.$$&lt;/p&gt;
 &lt;p&gt;Depending on the value of $\rho$ we can have different configurations regarding the steady states.
 Ultimately, what matters is the concavity of the function $g(k_{t}).$&lt;/p&gt;
-&lt;p&gt;$$g^{\prime \prime}(k_t) = -\frac{1}{1+n}\frac{\beta}{1+\beta}A(1-\rho)\alpha\left[\alpha k^\rho+1-\alpha\right]^\frac{1-3\rho}{\rho}k^{\rho-2}\left(\rho \alpha k^\rho +(1-\alpha)(1-\rho)\right).$$&lt;/p&gt;
+&lt;p&gt;$$g^{\prime \prime}(k_t) = $$
+$$-\frac{1}{1+n}\frac{\beta}{1+\beta}A(1-\rho)\alpha\left[\alpha k^\rho+1-\alpha\right]^\frac{1-3\rho}{\rho}k^{\rho-2}\left(\rho \alpha k^\rho +(1-\alpha)(1-\rho)\right).$$&lt;/p&gt;
 &lt;h4 id=&#34;unique-steady-state-bark--0&#34;&gt;Unique steady state, $\bar{k} &amp;gt; 0$&lt;/h4&gt;
 &lt;p&gt;If $\rho \in (0,1)$, the second derivative is clearly negative, and $g$ is concave.
 Moreover, $g(0)&amp;gt;0$, so $\bar{k} = 0$ cannot be a steady state:&lt;/p&gt;
