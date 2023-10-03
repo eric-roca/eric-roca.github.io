@@ -4707,7 +4707,7 @@ So, the problem is that the subsidy miss-allocated ressources towards relatively
       <description>&lt;p&gt;In the OLG model, a unique intertemporal equilibrium arises if, for a given $k_t$, the equation&lt;/p&gt;
 &lt;p&gt;$$H(k_{t+1}) = k_{t+1} - \frac{1}{1+n}s\left(\omega(k_t), f^\prime(k_{t+1})\right) = 0$$&lt;/p&gt;
 &lt;p&gt;has a unique solution.
-We know that $\lim_{k\rightarrow 0}H(k) &amp;lt; 0$ and $\lim_{k\ rightarrow +\infty}H(k) &amp;gt; 0,$
+We know that $\lim_{k \rightarrow 0}H(k) &amp;lt; 0$ and $\lim_{k \rightarrow +\infty}H(k) &amp;gt; 0,$
 which guarantees the existence of at least one solution.&lt;/p&gt;
 &lt;p&gt;Hence, if the function $H$ is monotonously increasing, the solution is unique.
 This condition depends on the sign of:&lt;/p&gt;
