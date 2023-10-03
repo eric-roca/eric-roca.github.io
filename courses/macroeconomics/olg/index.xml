@@ -653,7 +653,7 @@ We do so by showing that $\lim_{k \rightarrow +\infty} \color{green}{\frac{\omeg
 &lt;details&gt;
 &lt;summary&gt;Detailed explanation&lt;/summary&gt;
 We start by noting that:
-&lt;p&gt;$$\color{green}{\frac{\omega(k)}{k}} = \color{red}{\frac{f(k)}{k}} - \color{blue}{f^\prime (k)} \leftarrow \omega(k) = f(k) - f^\prime (k) k.$$&lt;/p&gt;
+&lt;p&gt;$$\color{green}{\frac{\omega(k)}{k}} = \color{red}{\frac{f(k)}{k}} - \color{blue}{f^\prime (k)} \color{black}{\leftarrow \omega(k) = f(k) - f^\prime (k) k.}$$&lt;/p&gt;
 &lt;p&gt;When $k \rightarrow +\infty$, &lt;strong&gt;the first term $\color{red}{\frac{f(k)}{k}}$&lt;/strong&gt; admits a positive limit, let&amp;rsquo;s call it $\mathcal{l}_{1}.$
 This is because:&lt;/p&gt;
 &lt;ol&gt;
