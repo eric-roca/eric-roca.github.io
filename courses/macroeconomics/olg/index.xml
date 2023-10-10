@@ -844,7 +844,8 @@ First, let $\mathfrak{C}_t$ represent total consumption: $$\mathfrak{C}_t \equiv
 The economy-wide resource constraint dictates that total production is either consumed or invested:&lt;/p&gt;
 &lt;p&gt;$$\mathfrak{C}_t  + K_{t+1} = F(K_t, N_t)+ (1-\delta)K_t.$$&lt;/p&gt;
 &lt;p&gt;Alternatively, aggregate consumption per unit of labour is:&lt;/p&gt;
-&lt;p&gt;$$\mathfrak{c}_t \equiv \frac{\mathfrak{C}_t}{N_t} = \frac{F(K_t, N_t) +(1-\delta)K_t - K_{t+1}}{N_t} = f(k_t) + (1-\delta)k_t - (1+n)k_{t+1}.$$&lt;/p&gt;
+&lt;p&gt;$$\mathfrak{c}_t \equiv \frac{\mathfrak{C}_t}{N_t} = \frac{F(K_t, N_t) +(1-\delta)K_t - K_{t+1}}{N_t} = $$
+$$ = f(k_t) + (1-\delta)k_t - (1+n)k_{t+1}.$$&lt;/p&gt;
 &lt;p&gt;The &lt;em&gt;golden-rule level of the capital-labour ratio&lt;/em&gt; $k^\mathcal{GR}$ is the value of the capital-labour ratio $k$ that results in the highest possible &lt;em&gt;sustainable&lt;/em&gt; level of consumption per unit of labour.
 The fact that it is sustainable requires that it is replicable forever.
 For this reason, we consider the steady state with $k_{t+1} = k_t = \bar{k}$.
