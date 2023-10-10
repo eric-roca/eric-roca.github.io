@@ -6175,7 +6175,7 @@ Our policy of improving utility for all individuals fails in this case.&lt;/p&gt
 &lt;p&gt;We call such situations &lt;strong&gt;dynamically efficient&lt;/strong&gt;: it is impossible to increase the utility of all generations.&lt;/p&gt;
 &lt;h3 id=&#34;example&#34;&gt;Example&lt;/h3&gt;
 &lt;p&gt;We use a log-utility and Cobb-Douglas case to illustrate over- and under-accumulation of capital.&lt;/p&gt;
-&lt;p&gt;$U(c,d) = \log( c ) + \beta \log (d)$$
+&lt;p&gt;$$U(c,d) = \log( c ) + \beta \log (d)$$
 $$f(k)= Ak^\alpha.$$&lt;/p&gt;
 &lt;p&gt;The golden-rule level of capital dictates that total consumption per worker should be maximised.
 Using the resource constraint:&lt;/p&gt;
