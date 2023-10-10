@@ -685,7 +685,8 @@ $$u^\prime(w_{t} - s_{t}) = \beta R_{t+1} u^\prime (R_{t+1}s_{t}).$$&lt;/p&gt;
 &lt;p&gt;$$k_{t+1} = \frac{1}{1+n}s_{t} = \frac{1}{1+n}\frac{\beta}{1+\beta}w_{t} = \frac{1}{1+n}\frac{\beta}{1+\beta}(1-\alpha)Ak_{t}^\alpha.$$&lt;/p&gt;
 &lt;p&gt;The model with log-utility and Cobb-Douglas production functions has two steady states: zero and a unique positive steady state.
 We can solve for them:&lt;/p&gt;
-&lt;p&gt;$$\bar{k} = \frac{1}{1+n}\frac{\beta}{1+\beta}(1-\alpha)A\bar{k}^\alpha \implies \bar{k} = \begin{cases} 0 \\\ \left(\frac{1}{1+n}\frac{\beta}{1+\beta}(1-\alpha)A\right)^{\frac{1}{1-\alpha}} \equiv \phi^\frac{1}{1-\alpha}\end{cases}.$$&lt;/p&gt;
+&lt;p&gt;$$\bar{k} = \frac{1}{1+n}\frac{\beta}{1+\beta}(1-\alpha)A\bar{k}^\alpha \implies $$
+$$\implies \bar{k} = \begin{cases} 0 \\\ \left(\frac{1}{1+n}\frac{\beta}{1+\beta}(1-\alpha)A\right)^{\frac{1}{1-\alpha}} \equiv \phi^\frac{1}{1-\alpha}\end{cases}.$$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Local dynamics: stability&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;We check the stability of the two steady states using the first derivative evaluated at the steady state.
 &lt;strong&gt;Note:&lt;/strong&gt; in general we would use the Jacobian matrix, but the OLG model has only one equation in one variable.&lt;/p&gt;
