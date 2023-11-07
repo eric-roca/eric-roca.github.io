@@ -2325,7 +2325,7 @@ Which corresponds to the intensive form of the Cobb-Douglas production function.
 &lt;p&gt;L&amp;rsquo;évolution des variables qu&amp;rsquo;intégrent le modèle générent trois grandes époques selon sa valeur: époque Malthusienne, époque post-Malthusienne et époque moderne.
 Chacune des époque se caractérise une combinaison particulier des variables (ou des dynamiques des variables) sous-jacentes suivantes:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Fertilité et sa relation avec le revenu per capita (positive ou negative).&lt;/li&gt;
+&lt;li&gt;Fertilité et sa relation avec le revenu par tête (positive ou negative).&lt;/li&gt;
 &lt;li&gt;Investissement dans l&amp;rsquo;éducation (positive ou zéro).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Enfin, il faut signaler que chaque époque a une durée temporelle différente.
@@ -2368,10 +2368,10 @@ Ainsi, une population plus large aura une nouvelle idée avec une plus grande pr
 &lt;/ul&gt;
 &lt;h2 id=&#34;époque-malthusienne&#34;&gt;Époque Malthusienne&lt;/h2&gt;
 &lt;p&gt;Cette période représente la plus longue durée du modèle et comprend le temps entre l&amp;rsquo;apparition des êtres humains modernes (&lt;em&gt;homo sapiens&lt;/em&gt;) il y a environ 100 000 ans jusqu&amp;rsquo;à debout du 18è siècle.
-L&amp;rsquo;époque Malthusienne se caractérise par le nul effet des développements technologiques sur le revenu per capita.
-C&amp;rsquo;est-à-dire, les améliorations technologiques permettant de produir davantage n&amp;rsquo;ont aucun effet sur le niveau de revenu per capita.
+L&amp;rsquo;époque Malthusienne se caractérise par le nul effet des développements technologiques sur le revenu par tête.
+C&amp;rsquo;est-à-dire, les améliorations technologiques permettant de produir davantage n&amp;rsquo;ont aucun effet sur le niveau de revenu par tête.
 Or, pendant cette période, la production addionelle était dédiée à augmenter la fertilité: les familles avaient plus d&amp;rsquo;enfants.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;
-Ainsi, pendant l&amp;rsquo;époque Malthusienne, les sociétés les plus technologiquement développées ne montraient pas un revenu per capita plus élevé mais une plus grande densité de population.&lt;/p&gt;
+Ainsi, pendant l&amp;rsquo;époque Malthusienne, les sociétés les plus technologiquement développées ne montraient pas un revenu par tête plus élevé mais une plus grande densité de population.&lt;/p&gt;
 &lt;p&gt;Ce type de dynamique qui génére une augmentation de la population avec chaque progrès technique peuvent se répresenter à l&amp;rsquo;aide des préférances inclouant un niveau de consommation minimale.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;
 Ce niveau doit toujours être atteint.
 Or, chaque fois que la technologie s&amp;rsquo;améliore (de manière aléatoire), les revenus disponibles additionnels seront utilisés pour augmenter le nombre d&amp;rsquo;enfants.
@@ -2397,10 +2397,10 @@ Le graphique suivant illustre la situation:
     &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/comparative_development/expansion_path.webp&#34; alt=&#34;expansion_path&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 
-Quand le revenu per capita est faible, sans la restriction de consommation minimale (ligne verte), les familles souhaiteraient consommer peu.
+Quand le revenu par tête est faible, sans la restriction de consommation minimale (ligne verte), les familles souhaiteraient consommer peu.
 Mais elles sont obligées de consommer, au moins, la consommation minimale, donc l&amp;rsquo;optimum passe à être la combinaison de consommation minimale et le nombre d&amp;rsquo;enfants qui elles peuvent se permettre considérant le coût de chaque enfant: $y = c + \rho y n \implies n = \frac{y-c}{\rho y}.$
 En tout moment, la technologie peut améliorer, grâce au fait que la population augmente.
-Ainsi, quand cela arrive, le revenu per capita augmente (la restriction budgétaire &amp;ndash;orange&amp;ndash; se déplace vers la droite).
+Ainsi, quand cela arrive, le revenu par tête augmente (la restriction budgétaire &amp;ndash;orange&amp;ndash; se déplace vers la droite).
 Or, tandis que la consommation minimale soit une contrainte contraignante, la décision optimale continue d&amp;rsquo;être: consommer le minimum et utiliser ce qui reste pour avoir des enfants.
 Le graphique montre ça avec les points rouges qui sont toujours sur la ligne de consommation minimale (verte) mais chaque fois plus en hauteur.
 Ainsi, chaque fois la population augmente plus rapidement, et cela contribue à faire avancer la technologie plus rapidement.&lt;/p&gt;
@@ -2414,20 +2414,20 @@ Ainsi, chaque fois la population augmente plus rapidement, et cela contribue à 
 &lt;/li&gt;
 &lt;li&gt;Pas de corrélation entre:
 &lt;ul&gt;
-&lt;li&gt;Revenu per capita et technologie&lt;/li&gt;
-&lt;li&gt;Revenu per capita et productivité agricole&lt;/li&gt;
+&lt;li&gt;Revenu par tête et technologie&lt;/li&gt;
+&lt;li&gt;Revenu par tête et productivité agricole&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Les pays les plus avancés du point vue technologique et les plus productives:
 &lt;ul&gt;
 &lt;li&gt;Densité de population supérieure&lt;/li&gt;
-&lt;li&gt;Pas de différence en revenu per capita.&lt;/li&gt;
+&lt;li&gt;Pas de différence en revenu par tête.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;validation&#34;&gt;Validation&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&#34;https://eric-roca.github.io/papers/Ashraf_and_Galor__2011.pdf&#34;&gt;Ashraf et Galor (2011)&lt;/a&gt; vérifient la validité des conclusions pour l&amp;rsquo;époque Malthusienne.&lt;/p&gt;
-&lt;p&gt;D&amp;rsquo;abord, ils montrent comment les pays qui ont du terrain plus adapté pour l&amp;rsquo;agriculture ont atteint une plus grande densité de population vers l&amp;rsquo;année 1500 mais que les gens ne jouissaient pas de plus de revenu per capita.&lt;/p&gt;
+&lt;p&gt;D&amp;rsquo;abord, ils montrent comment les pays qui ont du terrain plus adapté pour l&amp;rsquo;agriculture ont atteint une plus grande densité de population vers l&amp;rsquo;année 1500 mais que les gens ne jouissaient pas de plus de revenu par tête.&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -2470,7 +2470,7 @@ Ainsi, chaque fois la population augmente plus rapidement, et cela contribue à 
     &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/comparative_development/land_income.webp&#34; alt=&#34;land_income&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
-&lt;p&gt;Ensuite, ils se centrent sur le lien entre technologie, densité de population et revenu per capita.
+&lt;p&gt;Ensuite, ils se centrent sur le lien entre technologie, densité de population et revenu par tête.
 L&amp;rsquo;enjeu dans ce cas est le fait que la taille de la population influence la technologie, et donc il faut être attentif du point vue économétrique.
 Pour résoudre le problème, Ashraf et Galor approximent le niveau technologique par le nombre d&amp;rsquo;années qui se sont passées depuis la révolution Néolithique: c&amp;rsquo;est-à-dire, les années qui se sont passées dès qu&amp;rsquo;une société adoptait l&amp;rsquo;agriculture.
 L&amp;rsquo;idée de base (prise de &lt;a href=&#34;https://www.nationalgeographic.com/science/article/news-guns-germs-steel-jared-diamond-interview&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Jared Diamond (1997)&lt;/a&gt;) indique que les sociétés qui ont adopté l&amp;rsquo;agriculture pouvait produire d&amp;rsquo;avantage par rapport aux chasseurs cueilleurs, et donc, généraient un surplus de ressources.
@@ -2497,7 +2497,7 @@ En premier lieu, ils montrent que les pays et régions qui se sont passées à l
     &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/comparative_development/ashraf_galor__2011_Table_1.webp&#34; alt=&#34;Table_1&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
-&lt;p&gt;Enfin, ils montrent qu&amp;rsquo;effectivement, les pays avec plus de technologie avait plus de densité de population pendant l&amp;rsquo;année 1500 mais pas plus de revenu per capita.&lt;/p&gt;
+&lt;p&gt;Enfin, ils montrent qu&amp;rsquo;effectivement, les pays avec plus de technologie avait plus de densité de population pendant l&amp;rsquo;année 1500 mais pas plus de revenu par tête.&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -2564,15 +2564,15 @@ En premier lieu, ils montrent que les pays et régions qui se sont passées à l
 &lt;h2 id=&#34;époque-post-malthusienne&#34;&gt;Époque post-Malthusienne&lt;/h2&gt;
 &lt;p&gt;Enfin, on arrive à une situation dans laquelle la contrainte de consommation minimale n&amp;rsquo;est plus contraignante: à partir de ce point-là, les familles décident d&amp;rsquo;avoir un nombre constant d&amp;rsquo;enfants et utiliser tout le revenu qui reste pour financer leur consommation.
 Cette deuxième période est caractérisée par le fait que la technologie avance plus rapidement grâce a l&amp;rsquo;augmentation de la population qui a eu lieu pendant l&amp;rsquo;époque Malthusienne.
-Par contre, le niveau de revenu per capita est encore insuffisant pour permettre les investissements en éducation.
-Enfin, le trait distinctif du la période post-Malthusienne est l&amp;rsquo;avancement du revenu per capita.
+Par contre, le niveau de revenu par tête est encore insuffisant pour permettre les investissements en éducation.
+Enfin, le trait distinctif du la période post-Malthusienne est l&amp;rsquo;avancement du revenu par tête.
 En effet, le nombre d&amp;rsquo;enfants par parent reste constant, comme à la fin de la période Malthusienne, car les parents n&amp;rsquo;investissent encore en éducation.
-Par contre, comme la technologie ne cesse d&amp;rsquo;augmenter, la seule conclusion possible est que le revenu per capita doit augmenter aussi.&lt;/p&gt;
-&lt;p&gt;Pour tant, ce passage de l&amp;rsquo;époque Malthusienne à l&amp;rsquo;époque post-Malthusienne peut générer déjà différences de revenu per capita entre pays et régions.
-Par exemple, les pays qui, pour une raison ou une autre ont fini plus tôt leur époque Malthusienne verront leur revenu per capita augmenter, tandis que ces qui restent encore dans le système Malthusien montrent un niveau de revenu per capita qui est constant au long du temps.&lt;/p&gt;
+Par contre, comme la technologie ne cesse d&amp;rsquo;augmenter, la seule conclusion possible est que le revenu par tête doit augmenter aussi.&lt;/p&gt;
+&lt;p&gt;Pour tant, ce passage de l&amp;rsquo;époque Malthusienne à l&amp;rsquo;époque post-Malthusienne peut générer déjà différences de revenu par tête entre pays et régions.
+Par exemple, les pays qui, pour une raison ou une autre ont fini plus tôt leur époque Malthusienne verront leur revenu par tête augmenter, tandis que ces qui restent encore dans le système Malthusien montrent un niveau de revenu par tête qui est constant au long du temps.&lt;/p&gt;
 &lt;h3 id=&#34;validation-1&#34;&gt;Validation&lt;/h3&gt;
-&lt;p&gt;Selon la discussion au-dessous, les pays qui ont commencé leur transition démographique plus tôt, devront montrer un plus haut niveau de revenu per capita.
-Or, ce lien devrait exister, car il y a des avantages liés à une transition démographique précoce: le revenu per capita augmente depuis plus long temps.
+&lt;p&gt;Selon la discussion au-dessous, les pays qui ont commencé leur transition démographique plus tôt, devront montrer un plus haut niveau de revenu par tête.
+Or, ce lien devrait exister, car il y a des avantages liés à une transition démographique précoce: le revenu par tête augmente depuis plus long temps.
 &lt;a href=&#34;https://eric-roca.github.io/papers/Galor__2012.pdf&#34;&gt;Galor, 2012&lt;/a&gt; montre que c&amp;rsquo;est le cas:&lt;/p&gt;
 &lt;p&gt;
 
@@ -2599,20 +2599,20 @@ Or, ce lien devrait exister, car il y a des avantages liés à une transition d�
 &lt;p&gt;Rappelons que le niveau technologique n&amp;rsquo;a pas cessé d&amp;rsquo;augmenter pendant la période post-Malthusienne.
 La technologie ait tellement avancé que les parents décident qu&amp;rsquo;il est nécessaire d&amp;rsquo;investir dans l&amp;rsquo;éducation pour éviter que le capital humain de leurs enfants se déprécie.
 Ainsi, éventuellement, le niveau technologique atteint la valeur critique à partir de laquelle les parents sont prêts à investir en éducation.
-Autrement, il serait possible que le revenu per capita soit suffisamment élevé pour que les parents décident investir en éducation (selon Galor, l&amp;rsquo;évidence empirique n&amp;rsquo;est pas d&amp;rsquo;accord avec cette idée).
+Autrement, il serait possible que le revenu par tête soit suffisamment élevé pour que les parents décident investir en éducation (selon Galor, l&amp;rsquo;évidence empirique n&amp;rsquo;est pas d&amp;rsquo;accord avec cette idée).
 En tout cas, la conclusion est la même: en époque moderne, les parents décident d&amp;rsquo;investir en éducation.
 Cela entraine un effet direct:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Le coût de chaque enfant a augmenté, car maintenant on leur fournit de l&amp;rsquo;éducation.
 Pour tant, les familles décident d&amp;rsquo;avoir moins d&amp;rsquo;enfants mais de leur offrir plus d&amp;rsquo;éducation.
 On appelle à ce trade-off le &amp;ldquo;quality-quantity trade-off&amp;rdquo;: les familles échangent nombre d&amp;rsquo;enfants contre qualité des enfants.
-En plus, comme le coût des enfants est proportionnelle au revenu per capita, à mesure que celui augmente, les familles ont moins d&amp;rsquo;enfants.
+En plus, comme le coût des enfants est proportionnelle au revenu par tête, à mesure que celui augmente, les familles ont moins d&amp;rsquo;enfants.
 &lt;ul&gt;
 &lt;li&gt;On observe, pour tant, une corrélation &lt;strong&gt;négative&lt;/strong&gt; entre revenu et nombre d&amp;rsquo;enfants.&lt;/li&gt;
 &lt;li&gt;On appelle à ce procès la &amp;ldquo;transition démographique&amp;rdquo;.
 En plus, maintenant que les enfants reçoivent éducation, la technologie augmente encore plus rapidement.
 En effet, la taille de la population cesse d&amp;rsquo;être la variable principale qui détermine la vitesse à laquelle la technologie avance, et l&amp;rsquo;éducation prend le relai.
-Enfin, la combinaison d&amp;rsquo;une population qui augmente plus lentement et une technologie qui s&amp;rsquo;améliore plus rapidement implique que le revenu per capita augmente de manière soutenue.&lt;/li&gt;
+Enfin, la combinaison d&amp;rsquo;une population qui augmente plus lentement et une technologie qui s&amp;rsquo;améliore plus rapidement implique que le revenu par tête augmente de manière soutenue.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
@@ -2620,12 +2620,12 @@ Enfin, la combinaison d&amp;rsquo;une population qui augmente plus lentement et 
 &lt;ul&gt;
 &lt;li&gt;Corrélation positive entre:
 &lt;ul&gt;
-&lt;li&gt;Revenu per capita et dépense en éducation&lt;/li&gt;
+&lt;li&gt;Revenu par tête et dépense en éducation&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Corrélation négative entre:
 &lt;ul&gt;
-&lt;li&gt;Revenu per capita et fertilité&lt;/li&gt;
+&lt;li&gt;Revenu par tête et fertilité&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
