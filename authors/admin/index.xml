@@ -5,12 +5,20 @@
     <link>https://eric-roca.github.io/authors/admin/</link>
       <atom:link href="https://eric-roca.github.io/authors/admin/index.xml" rel="self" type="application/rss+xml" />
     <description>Èric Roca Fernández</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 05 Jul 2022 15:45:00 +0200</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 26 Dec 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://eric-roca.github.io/authors/admin/avatar_huccc3fdf4ada0c5c97aef412c0f48ca36_353531_270x270_fill_q75_lanczos_center.jpg</url>
       <title>Èric Roca Fernández</title>
       <link>https://eric-roca.github.io/authors/admin/</link>
     </image>
+    
+    <item>
+      <title>Solar Eclipses and the Origins of Critical Thinking and Complexity</title>
+      <link>https://eric-roca.github.io/publication/eclipses/</link>
+      <pubDate>Tue, 26 Dec 2023 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/publication/eclipses/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Celestial Enlightenment : Eclipses, curiosity and economic</title>
@@ -33,14 +41,6 @@
       <link>https://eric-roca.github.io/publication/beguines/</link>
       <pubDate>Fri, 29 Oct 2021 00:00:00 +0000</pubDate>
       <guid>https://eric-roca.github.io/publication/beguines/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Solar Eclipses and the Origins of Critical Thinking and Complexity</title>
-      <link>https://eric-roca.github.io/publication/eclipses/</link>
-      <pubDate>Sat, 14 Nov 2020 00:00:00 +0000</pubDate>
-      <guid>https://eric-roca.github.io/publication/eclipses/</guid>
       <description></description>
     </item>
     
