@@ -1,0 +1,34 @@
+
+    c. (Diffile)
+        Si 
+        \begin{align}
+            Y &= c_0 + c_1(Y-T)+I(r)+ G \\
+            \frac{M^s}{p} &= L((Y-T),r)
+        \end{align}
+        calculez le multiplicateur des impôts $\frac{\mathrm{d}Y}{\mathrm{d}T}$.
+
+        **RE**: On va le calculer de manière générale, pour cela il faut analyser l'équilibre car un changement de $T$ modifie $Y$ et $r$.
+
+
+        \begin{align}
+            Y &= c_0 + c_1 (Y-T) + I(r) + G \\
+            \frac{M^s}{p} &= L((Y-T),r)
+        \end{align}
+        \begin{align}
+            \mathrm{d}Y &= c_1 \mathrm{d}Y - c_1 \mathrm{d}T + I^\prime \mathrm{d} r \\
+            0 &= L^\prime_Y \mathrm{d}Y - L^\prime_Y \mathrm{d}T + L^\prime_r \mathrm{d}r
+        \end{align}
+        Nous pouvons isoler $\mathrm{d}r$ de la deuxième équation.
+        \begin{align}
+            0 &= L^\prime_Y \mathrm{d}Y - L^\prime_Y \mathrm{d}T + L^\prime_r \mathrm{d}r \\
+            \frac{L^\prime_Y (\mathrm{d}T-\mathrm{d}Y)}{L^\prime_r} &= \mathrm{d}r
+        \end{align}
+        Si maintenant nous introduissons ceci dans la première équation:
+
+        \begin{align}
+            \mathrm{d}Y &= c_1 \mathrm{d}Y - c_1 \mathrm{d}T + I^\prime \mathrm{d} r \\
+            (1-c_1)\mathrm{d}Y &= -c_1 \mathrm{d}T + I^\prime \frac{L^\prime_Y (\mathrm{d}T-\mathrm{d}Y)}{L^\prime_r} \\
+            (1-c_1+I^\prime \frac{L^\prime_Y}{L^\prime_r})\mathrm{d}Y &= I^\prime \frac{L^\prime_Y}{L^\prime_r}\mathrm{d}T \\
+        \end{align}
+    
+Exercice sur le deficit: deficit 0.03PIB => (T-G)/Y=0.03

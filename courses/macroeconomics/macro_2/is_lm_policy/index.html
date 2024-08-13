@@ -1,0 +1,1641 @@
+<!DOCTYPE html><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.5.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Èric Roca Fernández" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Applications du modèle IS-LM" />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://eric-roca.github.io/courses/macroeconomics/macro_2/is_lm_policy/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.1052fab8b7700a3dc49ee23683097d66.css" />
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://eric-roca.github.io/courses/macroeconomics/macro_2/is_lm_policy/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="Èric Roca Fernández" />
+  <meta property="og:url" content="https://eric-roca.github.io/courses/macroeconomics/macro_2/is_lm_policy/" />
+  <meta property="og:title" content="Politique budgétaire et monétaire | Èric Roca Fernández" />
+  <meta property="og:description" content="Applications du modèle IS-LM" /><meta property="og:image" content="https://eric-roca.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="https://eric-roca.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2019-07-11T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2019-07-11T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>Politique budgétaire et monétaire | Èric Roca Fernández</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="fef72e5aa7e0e54804b604c2f1173ab9" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.2ed908358299dd7ab553faae685c746c.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="header--fixed">
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">Èric Roca Fernández</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">Èric Roca Fernández</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#publications"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#working_papers"><span>Working papers</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link  active" href="/courses/"><span>Teaching</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#talks"><span>Talks</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/files/CV.pdf"><span>CV</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    
+
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-md-3 w-100" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <div class="d-flex">
+      <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
+        
+          Macroéconomie 2
+        
+      </span>
+      <span><i class="fas fa-chevron-down"></i></span>
+    </div>
+  </button>
+
+  
+  <button class="form-control sidebar-search js-search d-none d-md-flex">
+    <i class="fas fa-search pr-2"></i>
+    <span class="sidebar-search-text">Search...</span>
+    <span class="sidebar-search-shortcut">/</span>
+  </button>
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+
+    
+      
+
+      <ul class="nav docs-sidenav">
+        <li><a href="/courses/"><i class="fas fa-arrow-left pr-1"></i></a></li>
+      </ul>
+
+      
+      
+        
+          
+        
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/courses/macroeconomics/macro_2/">Macroéconomie 2</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/courses/macroeconomics/macro_2/classic/">Économie classique</a></li>
+
+
+
+  <li class=""><a href="/courses/macroeconomics/macro_2/is_lm/">IS-LM</a></li>
+
+
+
+  <li class="active"><a href="/courses/macroeconomics/macro_2/is_lm_policy/">Politique budgétaire et monétaire</a></li>
+
+
+
+  <li class=""><a href="/courses/macroeconomics/macro_2/mundell-fleming/">Le modèle Mundell-Fleming</a></li>
+
+
+
+  <li class=""><a href="/courses/macroeconomics/macro_2/exercises_classics/"></a></li>
+
+
+
+  <li class=""><a href="/courses/macroeconomics/macro_2/exercises_is_lm_policy/"></a></li>
+
+
+
+  <li class=""><a href="/courses/macroeconomics/macro_2/exercises_islm/"></a></li>
+
+
+
+  <li class=""><a href="/courses/macroeconomics/macro_2/exercises_mundell-fleming/"></a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+    
+  
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#politique-budgétaire">Politique budgétaire</a>
+      <ul>
+        <li><a href="#changement-de-g">Changement de $G$</a></li>
+        <li><a href="#changement-de-t">Changement de $T$</a></li>
+      </ul>
+    </li>
+    <li><a href="#politique-monétaire">Politique monétaire</a>
+      <ul>
+        <li><a href="#trappe-de-liquidité">Trappe de liquidité</a></li>
+      </ul>
+    </li>
+    <li><a href="#le-modèle-is-lm-dans-le-monde">Le modèle IS-LM dans le monde</a>
+      <ul>
+        <li><a href="#la-grande-dépression-1929-1939">La Grande Dépression (1929-1939)</a></li>
+        <li><a href="#crise-en-espagne-2008-2014">Crise en Espagne (2008-2014)</a></li>
+        <li><a href="#contrôle-de-déficit">Contrôle de déficit</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          
+
+          <h1>Politique budgétaire et monétaire</h1>
+
+          <div class="article-style">
+            <h1 id="introduction">Introduction</h1>
+<p>L&rsquo;intersection de la courbe IS et de la courbe LM détermine le niveau du revenu national. Lorsque l&rsquo;une de ces courbes se déplace, l&rsquo;équilibre à court terme de l&rsquo;économie change, et le revenu national fluctue.
+Dans cette section, nous examinerons comment les changements de politique et les chocs économiques peuvent provoquer le déplacement de ces courbes.</p>
+<h2 id="politique-budgétaire">Politique budgétaire</h2>
+<h3 id="changement-de-g">Changement de $G$</h3>
+<p>Imaginons que le gouvernement augmente ses dépenses publiques de $\Delta G$.
+Cette augmentation aura un effet immédiat et <strong>pour un niveau de taux d&rsquo;intérêt donnée</strong> augmente le revenu de $\frac{\mathrm{dY}}{\mathrm{d}G} = \frac{1}{1-_c1} \Delta G$ (le multiplicateur des dépenses).
+Autrement dit, la courbe IS se déplace vers la droite de $\frac{1}{1-c_1}\Delta G$.
+Le schéma suivant le montre pour le cas $c_1 = 0.6 \implies \frac{\mathrm{d}Y}{\mathrm{d}G} = \frac{1}{1-0.6}=2.5$ et un niveau $\Delta G = 10$.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/macro_2/is_g_change_10.webp" alt="g_increases_10" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Comme on le voit, pour le taux d&rsquo;intérêt $r \approx 0.031$, le niveau de revenu passe de $Y=120$ à $Y=145$, soit une augmentation de $25$ qui correspond à $\frac{1}{1-c_1} \Delta G= 2.5 \times 10 = 25$.</p>
+<p>Or, en équilibre, le revenu <strong>n&rsquo;augmentera pas autant</strong> car une partie de cette hausse se transforme en une augmentation du taux d&rsquo;intérêt d&rsquo;équilibre.
+On peu le voir sur le schéma suivant où nous indiquons le niveau $Y = 145$ comme référence.
+Il est évident que l&rsquo;augmentation de $G$ augmente $Y$ et $r$.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/macro_2/is-lm_g_change_10.webp" alt="g_increases_10" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Pour quoi on ne voit pas une augmentation de $Y$ égale à $\frac{\mathrm{d}Y}{\mathrm{d}G} \Delta G= \frac{1}{1-c_1}\Delta G$?</p>
+<p>La réponse se trouve dans la courbe LM.
+Imaginons le cas suivant: quand le gouvernement augmente $G$, cela implique une hausse de $Y = \frac{1}{1-c_1}\Delta G$.
+Mais, la banque centrale n&rsquo;a pas modifié sa politique monétaire et les encaisses réels en circulation sont constants.
+Ainsi, au marché de la monnaie, la demande de monnaie augmente (car $L(Y,r)$ augmente avec $Y$) mais l&rsquo;offre n&rsquo;a pas changé.
+Pour se ré-équilibrer, il est nécessaire que la demande diminue, et cela implique une hausse de $r$.
+Or, l&rsquo;augmentation de $r$ a ses répercussions sur le marché des biens car elle rend l&rsquo;investissement plus couteaux et les entreprises décident d&rsquo;investir moins car $I(r)$ diminue avec $r$.
+En conséquence, le niveau de revenu diminue, réduissant en partie l&rsquo;effet expansionniste des dépenses publiques.</p>
+<p>En résumé, le déplacement horizontal de la courbe IS est égal à l&rsquo;effet multiplicateur.
+Ceci est plus grand que la hausse total du revenu en équilibre car l&rsquo;augmentation des dépenses publiques ont un <strong>effet d&rsquo;éviction</strong> sur l&rsquo;investissement qui augmente le taux d&rsquo;intérêt.</p>
+<h4 id="le-multiplicateur-total-de-g">Le multiplicateur total de $G$</h4>
+<p>Nous pouvons nous demander s&rsquo;il est possible de calculer l&rsquo;effet total d&rsquo;une augmentation de $G$ sur $Y$ en considérant l&rsquo;effet d&rsquo;éviction.
+Ceci est possible avec quelques dérivées:
+Le point de départ est l&rsquo;équilibre définit par le modèle IS-LM:
+\begin{align}
+Y &amp;= c_0 + c_1 (Y-T) + I(r) + G \\
+\frac{M^s}{p} &amp;= L(Y,r)
+\end{align}</p>
+<p>Quand $G$ change, cela provoque des changements dans $Y$ et $r$ qu&rsquo;il faut considérer.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>
+\begin{align}
+\mathrm{d} Y &amp;= c_1 \mathrm{d} Y + I^\prime \mathrm{d} r + \mathrm{d}G \\
+0 &amp;= L^\prime_Y \mathrm{d}Y + L^\prime_r \mathrm{d}r
+\end{align}</p>
+<p>Ainsi $0 = L^\prime_Y \mathrm{d}Y + L^\prime_r \mathrm{d}r \implies \mathrm{d}r = - \frac{\overbrace{L^\prime_Y}^{&gt;0} \mathrm{d}Y}{\underbrace{L^\prime_r}_{&lt;0}}$.
+On peu le remplacer dans la première équation:
+\begin{align}
+\mathrm{d} Y &amp;= c_1 \mathrm{d} Y + I^\prime \textcolor{red}{\mathrm{d} r} + \mathrm{d}G \\
+\mathrm{d} Y &amp;= c_1 \mathrm{d} Y + I^\prime \textcolor{red}{(-1)\frac{L^\prime_Y \mathrm{d}Y}{L^\prime_r}} + \mathrm{d} G \\
+(1-c_1+I^\prime \frac{L^\prime_Y}{L^\prime_r})\mathrm{d}Y &amp;= \mathrm{d}G \\
+\frac{\mathrm{d}Y}{\mathrm{d}G} &amp;= \frac{1}{1-c_1+\textcolor{green}{I^\prime \frac{L^\prime_Y}{L^\prime_r}}}
+\end{align}</p>
+<p>Le terme en vert représente l&rsquo;effet d&rsquo;éviction.</p>
+<p>Cette analyse nous permet d&rsquo;examiner les conditions sous lesquelles l&rsquo;effet multiplicateur d&rsquo;une augmentation des dépenses publiques ($G$) sur le revenu national ($Y$) sera plus important.
+En tenant compte de l&rsquo;effet d&rsquo;éviction calculé précédemment, nous pouvons identifier les facteurs qui influencent l&rsquo;ampleur de la transmission de la hausse de $G$ à $Y$.
+Quelques points à considérer pour approfondir cette réflexion :</p>
+<ol>
+<li>La sensibilité de l&rsquo;investissement au taux d&rsquo;intérêt:
+L&rsquo;effet d&rsquo;éviction est dû au fait que l&rsquo;augmentation de la demande d&rsquo;encaisses implique une hausse de $r$.
+Si l&rsquo;investissement se réduit beaucoup quand $r$ augmente, l&rsquo;effet d&rsquo;éviction sera plus important ($I^\prime \rightarrow 0$)
+Ceci est représenté par le terme $I^\prime$ qui mesure la sensibilité de $I$ aux changements de $r$.
+Dans la cas extrême où l&rsquo;investissement est constante, $I^\prime = 0$ et l&rsquo;effet d&rsquo;éviction est zéro.
+Dans ce dernier cas, la courbe IS est verticale.</li>
+</ol>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/macro_2/is-vertical_change_g.webp" alt="is_vertical_change_g" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<ol start="2">
+<li>La demande d&rsquo;encaisses réels ne dépend pas du niveau de revenu:
+La hausse du type d&rsquo;intérêt vient du fait qu&rsquo;avec l&rsquo;augmentation du revenu induite par $\Delta G$, la demande d&rsquo;encaisses réels augmente.
+Si la demande d&rsquo;encaisses réels ne change pas avec le revenu, l&rsquo;effet d&rsquo;éviction devient zéro. ($L^\prime_Y \rightarrow 0$).
+Ceci est, néanmoins, très improbable car les encaisses servent à financer les transactions.
+Dans ce cas-là, la courbe LM serait horizontale.</li>
+</ol>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/macro_2/lm-horizontal_change_g.webp" alt="lm_vertical_change_g" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<ol start="3">
+<li>La demande d&rsquo;encaisses réels est très sensible aux changements de $r$:
+De manière similaire au cas dernier, si la demande d&rsquo;encaisses est très sensible aux changements du taux d&rsquo;intérêt, l&rsquo;effet d&rsquo;éviction se minimise.
+Dans ce cas, une petite augmentation en $r$ entraînerait une réduction très importante des encaisses réels. ($L^\prime_r \rightarrow \infty$).
+Par conséquent, il serait possible de compenser l&rsquo;augmentation de la demande de monnaie induite par $\Delta G$ avec une augmentation infinitésimale de $r$ qui ne ferait varier pas l&rsquo;investissement.
+Si la demande d&rsquo;encaisses réels est très réactive par rapport à $r$, la courbe LM devient horizontale.</li>
+</ol>
+<h3 id="changement-de-t">Changement de $T$</h3>
+<p>Un deuxième outil à disposition du gouvernement est le niveau des impôts.
+Les implications d&rsquo;un changement dans $T$ sont les mêmes que pour les changements de $G$, exception faite que les impôts affectent le revenu disponible et, par conséquence, la consommation.
+En plus, comme nous le savons déjà, un changement en $T$ implique un multiplicateur ($-\frac{c_1}{1-c_1}$) moins important qu&rsquo;un changement en $G$ de la même ampleur.
+Ainsi, une réduction des impôts déplace la courbe IS vers la droite et, en équilibre, augmente le niveau de revenu et le taux d&rsquo;intérêt.
+Le schéma suivant le montre pour le cas $c_1 = 0.6 \implies \frac{\mathrm{d}Y}{\mathrm{d}T} = \frac{0.6}{1-0.6}=1.5$ et un niveau $\Delta T = -10$.
+Note: pour comparaison, le schéma est tracez avec une réduction de $T$ de 10, égale à $\Delta G$ auparavant pour faciliter la comparaison.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/macro_2/is-change-t.webp" alt="is_change_t" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>On voit que, pour un même changement (10), le déplacement que la courbe IS connaît est inférieur.
+Néanmoins, de manière analogue au cas d&rsquo;une augmentation de $G$, l&rsquo;effet total sur $Y$ n&rsquo;est pas égal à $\frac{c_1}{1-c_1}$ car l&rsquo;augmentation du revenu causée par $-\Delta T$ a comme effet une hausse de la demande d&rsquo;encaisses réels, qui augmente le taux d&rsquo;intérêt et réduit ensuite l&rsquo;investissement.</p>
+<h4 id="le-multiplicateur-total-de-t">Le multiplicateur total de $T$</h4>
+<p>Il est possible de montrer que le multiplicateur total de $T$, une fois considéré l&rsquo;augmentation du taux d&rsquo;intérêt est:</p>
+<p>$$\frac{\mathrm{d}Y}{\mathrm{d}T} = -1 \times \frac{c_1}{1-c_1+I^\prime \frac{L^\prime_Y}{L^\prime_r}}$$</p>
+<h2 id="politique-monétaire">Politique monétaire</h2>
+<p>Imaginons que la banque centrale augmente la masse monétaire de $\Delta M$.
+Cette augmentation aura un effet immédiat sur le marché monétaire: maintenant, il y a plus de monnaie en circulation que la quantité souhaité par les individus.
+Une correction se met en place immédiatement: et pour un niveau de revenu donné, le taux d&rsquo;intérêt diminue pour décourager les individus de placer leur argent auprès de la banque.
+La réduction de $r$ implique ainsi que les individus voudront détenir plus de monnaie, car l&rsquo;usage alternatif (le placer à la banque) est moins attractive.
+En conséquence, quand $\frac{M^s}{p}$ augmente $r$ diminue pour un niveau $Y$ donné.
+Sur le plan $(Y,r)$ cela est équivalent à dire que la courbe LM se déplace vers la droite.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/macro_2/lm-change-m.webp" alt="lm_change_m" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<div style="border: 2px solid #3498db; padding: 10px; margin: 20px;">
+    <h2 style="color: #3498db; margin: 0 0 10px 0;">Le multiplicateur de $\frac{M^s}{p}$ (Mathématiques avancées)</h2>
+<p>Nous pouvons calculer le multiplicateur (simple) d&rsquo;une augmentation de $\frac{M^s}{p}$, il est donné par:
+<br>
+\begin{align}
+\frac{M^s}{p} &amp;= L(Y,r) \\
+\mathrm{d} \frac{M^s}{p} &amp;= L^\prime_r \mathrm{d}r \implies \\
+\frac{\mathrm{d}r}{\mathrm{d} \frac{M^s}{p}} &amp;= \frac{1}{L^\prime_r} &lt; 0
+\end{align}
+<br>
+car la demande d&rsquo;encaisses réels diminue avec $r$, c&rsquo;est-à-dire, $\left(\frac{\partial L(Y,r)}{\partial r} &lt; 0\right).$</p>
+  <p>
+  Sur le schéma on utilisait $\frac{M^s}{p} = \frac{Y^{1.2}}{r}$.
+  Ainsi,
+  $$\frac{\mathrm{d}r}{\mathrm{d} \frac{M^s}{p}} = \frac{1}{L^\prime_r} = - \frac{r^2}{Y^{1.2}}$$
+  Dans le point initial $Y=20, r=0.3641$, le multiplicateur est de $0.0035$
+  <br>
+  Pour une augmentation de $\Delta \frac{M^s}{p} = 100$, le multiplicateur implique une réduction de $r$ de $0.0035 \times 100 = 0.356$
+  <br>
+  Or, sur le schéma, on voit que $r$ diminue seulement de $0.3641-0.1821 = 0.1820$
+  <br>
+  La différence s'explique par le fait que le multiplicateur est une approximation linéaire qui n'est valable que pour les changements de infinitésimales.
+  Si, par contre on refait les calculs avec $\Delta \frac{M^s}{p} = 1$, le taux d'intérêt qui correspond à $Y=20$ quand $\overbrace{101}^{\frac{M^s}{p}} = \frac{Y^{1.2}}{r}$ est $r = 0.3605$
+  Pour ce cas, $0.3641-0.3605 = 0.0036$ qui correspond mieux au multiplicateur.
+</div>
+Cette diminution du taux d'intérêt encourage l'investissement, ce qui augmente le revenu car $Y = C(Y-T) + I(r) + G$.
+Enfin, cette hausse de $Y$ fait augmenter la demande d'encaisses réels, ce qui fait réduire le taux d'intérêt; et le cycle continue jusqu'à atteindre l'équilibre.
+<p>Par conséquence, comme dans le cas de la politique budgétaire, la réduction du taux d&rsquo;intérêt n&rsquo;est pas celui impliqué par le multiplicateur et une partie se retrouve comme augmentation du revenu $Y$.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/macro_2/is-lm-change-m.webp" alt="is-lm-change_m" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h3 id="trappe-de-liquidité">Trappe de liquidité</h3>
+<p>Le potentiel de la politique monétaire pour redresser une situation de crise économique se basse essentiellement sur sa capacité de réduire le taux d&rsquo;intérêt pour augmenter le niveau d&rsquo;investissement.
+Mais, que se passe-t-il quand le taux d&rsquo;intérêt est déjà zéro?</p>
+<p>Par exemple, aux USA pendant la Grande Récession le taux d&rsquo;intérêt était bien dessous de 1%, et pendant la crise de 2008 la Réserve Fédérale diminuait le taux d&rsquo;intérêt entre 0 et 0.25%.</p>
+<p>Cette situation se connaît comme <strong>trappe de liquidité</strong>.
+Dans ces cas, une politique monétaire expansionniste est incapable de faire diminuer les intérêt.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/macro_2/liquidity-trap.webp" alt="liquidity_trap" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Dans le schéma, les différentes courbes $M^d$ montrent la demande d&rsquo;encaisses réels pour différents valeurs de $Y$.
+À mesure que $Y$ diminue (lors d&rsquo;une crise, par exemple) le taux d&rsquo;intérêt d&rsquo;équilibre devient zéro.
+Alors, une augmentation de la masse monétaire n&rsquo;aurait aucun effet sur $r$.
+Imaginez que $Y=6$, si l&rsquo;on déplace la courbe LM vers la droit suivant une augmentation de $\frac{M^s}{p}$, le taux d&rsquo;intérêt continuerait à 0.</p>
+<p>En d&rsquo;autres termes : lorsque le taux d&rsquo;intérêt est égal à zéro, l&rsquo;économie tombe dans une trappe à liquidité.
+La banque centrale peut augmenter la liquidité – c&rsquo;est-à-dire, accroître la masse monétaire.
+Mais cette liquidité tombe dans une trappe : l&rsquo;argent supplémentaire est volontiers détenu par les investisseurs financiers à un taux d&rsquo;intérêt inchangé, à savoir zéro.
+Si, à ce taux d&rsquo;intérêt nul, la demande de biens est encore trop faible, alors la politique monétaire ne peut plus rien faire pour augmenter la production.</p>
+<h2 id="le-modèle-is-lm-dans-le-monde">Le modèle IS-LM dans le monde</h2>
+<h3 id="la-grande-dépression-1929-1939">La Grande Dépression (1929-1939)</h3>
+<p>Pendant la Grande Dépression la demande aux USA était très faible à cause de la chute de la bourse (donc, une moindre consommation minimale) et le faible taux d&rsquo;investissement.
+Pour y faire face, le président Franklin D. Roosevelt a introduit le New Deal, un ensemble de programmes et de réformes économiques destinés à relancer l&rsquo;économie américaine.
+Le New Deal comprenait des projets de <em>travaux publics</em>, des aides sociales, et des réformes financières.
+Selon le modèle IS-LM, une augmentation des dépenses publiques déplace la courbe IS vers la droite.
+Cette augmentation des dépenses stimule la demande globale, augmentant ainsi le revenu national et réduisant le chômage.</p>
+<blockquote>
+"The country needs and, unless I mistake its temper, the country demands bold, persistent experimentation. It is common sense to take a method and try it: If it fails, admit it frankly and try another. But above all, try something."
+</blockquote>
+<p>On peut analyser la situation à l&rsquo;aide du modèle IS-LM.
+Imaginons que la demande originale, avant la crise, était:
+$Y = 2 + 0.6(Y-T) + \frac{1}{r} + G$
+Avec la crise, les ménages décident de consommer moins et les entreprises investissent aussi moins, ansi la demande devient:
+$Y = 0.5 + 0.6(Y-T) + \frac{0.5}{r} + G$
+Enfin, on imagine que le New Deal augmente les dépenses de $G=4$ à $G_1 = 8$ tout en maintenant le reste de l&rsquo;économie inchangée.
+Pour simplifier l&rsquo;analyse, on pose que ni la l&rsquo;offre ni la demande d&rsquo;encaisses réels ne changeaient pas.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/macro_2/great_depression.webp" alt="great_depression" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h3 id="crise-en-espagne-2008-2014">Crise en Espagne (2008-2014)</h3>
+<p>Pendant la crise économique en Espagne de 2008 à 2014, la demande intérieure était très faible en raison de l&rsquo;éclatement de la bulle immobilière et de la crise financière mondiale, ce qui a entraîné une réduction de la consommation et des investissements.</p>
+<p>Pour faire face à cette crise, le président José Luis Rodríguez Zapatero a introduit le Plan-E, un ensemble de mesures économiques destinées à relancer l&rsquo;économie espagnole.
+Ce plan visait à stimuler la demande globale par des projets de travaux publics et une augmentation des dépenses publiques.
+En termes du modèle IS-LM, cette augmentation des dépenses publiques aurait déplacé la courbe IS vers la droite, augmentant ainsi le revenu national et réduisant temporairement le chômage.</p>
+<p><a href="https://elpais.com/diario/2009/08/30/economia/1251583202_850215.html" target="_blank" rel="noopener">El País</a></p>
+<blockquote>
+Los más de 30.000 proyectos del fondo -conocido simplemente como Plan Zapatero- han traído un chaparrón de dinero a los ayuntamientos: 8.000 millones de euros, cifra que duplica la inversión de todos los municipios de España al año. Y han permitido el nada desdeñable logro de ocupar a más de 410.000 personas y hacer que el desempleo lleve tres meses de caídas en un momento en el que el paro se ha convertido en un drama nacional.
+</blockquote>
+<p>Cependant, lorsque les économies d&rsquo;Europe ont commencé à se redresser, l&rsquo;Espagne a dû mettre en place des mesures de contrôle du déficit, ce qui a réduit les dépenses publiques (G) et augmenté les impôts (T). Ces mesures d&rsquo;austérité ont aggravé la crise en réduisant encore plus la demande globale.</p>
+<p>Une autre dimension de la crise espagnole est l&rsquo;importance du secteur informel, qui s&rsquo;est accru en raison de la crise. L&rsquo;augmentation de la demande de monnaie due à l&rsquo;expansion du secteur informel a déplacé la courbe LM vers le haut, ce qui a empiré la crise en augmentant les taux d&rsquo;intérêt et en réduisant encore plus l&rsquo;investissement.</p>
+<h3 id="contrôle-de-déficit">Contrôle de déficit</h3>
+<p>Pour finir, une situation classique est le contrôle du déficit public.
+Par exemple, en 2024 la France dépassait le niveau fixé par l&rsquo;UE en termes de déficit maximal
+<a href="https://www.publicsenat.fr/actualites/economie/procedure-de-deficit-excessif-quelles-consequences-pour-la-france" target="_blank" rel="noopener">Public Senat</a></p>
+<blockquote>
+Ce vendredi 26 juillet [2024], la Commission européenne a annoncé placer la France en procédure de déficit excessif, compte tenu du dévissage de la trajectoire des finances publiques. 
+En effet avec une dette publique qui atteint 110 % du PIB et un déficit public réévalué à 5,5 % du PIB à cause d’une surestimation de la croissance, la France ne respecte pas les critères posés par le Pacte de stabilité et de croissance qui demande aux Etats membres de l’Union européenne de ne pas avoir un niveau d’endettement supérieur à 60 % du PIB et de ne pas dépasser un déficit de 3 % du PIB.
+</blockquote>
+<p>Pour rétablir l&rsquo;équilibre budgétaire, il est nécessaire de réduire $G$ ou augmenter $T$ (ou utiliser les deux simultanément).
+On peut se demander quel est le meilleur moyen pour attendre l&rsquo;équilibre de manière à affecter le PIB le moins possible.</p>
+<p>Imaginons qu&rsquo;on peut décrire l&rsquo;économie française avec les fonctions suivantes et que, initialement, $\frac{M^s}{p}=0.4, T=0.445, G=0.5$.
+\begin{align}
+Y &amp;= 0.1 +0.4(Y-T) + 0.1 + \frac{1}{r} + G \\
+\frac{M^s}{p} &amp;= \frac{Y}{r}
+\end{align}</p>
+<p>Nous pouvons calculer les valeurs d&rsquo;équilibre.
+D&rsquo;après l&rsquo;équation pour LM:
+$$\frac{0.078}{Y} = \frac{1}{r}$$
+Ainsi,
+\begin{align}
+Y &amp;= 0.1 + 0.4(Y-0.445) + 0.1 + \frac{0.078}{Y} + 0.5 \\
+Y^2 &amp;= 0.1 Y + 0.4(Y^2-0.445 Y) + 0.1 Y + 0.078 + 0.5 Y \\
+0 &amp;= -(1-0.4)Y^2 + 0.522 Y + 0.078 \\
+Y &amp;= \frac{-0.522-\sqrt{0.522^2+4 \times 0.6 \times 0.078}}{-2(1-0.4)} \\
+Y &amp;= 1
+\end{align}
+Par conséquence, le déficit est de $\frac{T-G}{Y} = \frac{0.055}{1} = 0.055$</p>
+<p>Comme le multiplicateur total associé aux dépenses publiques $\left(\frac{\mathrm{d}Y}{\mathrm{d}G} = \frac{1}{1-c_1+I^\prime\frac{L^\prime_Y}{L^\prime_r}}\right)$ est plus important que celui associé aux impôts $\left(\frac{\mathrm{d}Y}{\mathrm{d}T} = \frac{c_1}{1-c_1+I^\prime\frac{L^\prime_Y}{L^\prime_r}}\right)$ une réduction d&rsquo;un euro dans les dépenses publiques pénalise le revenu plus qu&rsquo;une augmentation des impôts d&rsquo;une unité.
+Ainsi, le meilleur que le gouvernement pourrait faire est d&rsquo;augmenter les impôts jusqu&rsquo;à ce que le déficit soit de 3%.</p>
+<p>Attention, si l&rsquo;on essaie de dire que $T=0.47$ et que, donc $\frac{G-T}{Y} = \frac{0.5-0.47}{1} = 0.03$ on aurait tort, car avec une augmentation de $T$ le revenu ($Y$) diminue.</p>
+<p>Calculons le niveau de revenu comme une fonction des paramétres du modèle:</p>
+<p>\begin{align}
+Y &amp;= c_0 + c_1(Y-T) + i_0 + \frac{1}{r} + G \quad\text{et} \quad \frac{M^s}{p} = \frac{Y}{r} \implies \\
+Y &amp;= c_0 + c_1(Y-T)+i_0 + \frac{\frac{M^s}{p}}{Y} + G \\
+Y^2 &amp;= c_0 Y + c_1(Y^2-T Y) + \frac{M^s}{p} Y + G Y \\
+0 &amp;= -(1-c_1)Y^2 + (c_0 + c_1 T - G)Y + \frac{M^s}{p} \\
+Y^{eq} &amp;= \frac{c_0+G+i_0-c_1 T + \sqrt{4(1-c_1)\frac{M^s}{p}+(c_0+G+i_0+c_1 T)^2}}{2(1-c_1)} \\
+Y^{eq} &amp;= \frac{5}{6}\left(0.7+\sqrt{1.872+\left(\frac{2T}{5}-0.7\right)^2}-\frac{2 T}{5}\right)
+\end{align}</p>
+<p>Ainsi, on cherche le niveau $T$ tel que $\frac{0.5-T}{Y^{eq}} = 0.03$</p>
+<p>\begin{align}
+0.03 &amp;= \frac{0.5-T}{\frac{5}{6}\left(0.7+\sqrt{1.872+\left(\frac{2T}{5}-0.7\right)^2}-\frac{2 T}{5}\right)} \\
+T &amp;= 0.478744 \\
+Y^{eq} &amp;= 0.980138
+\end{align}</p>
+<p>Si, par contre on cherchait à réduire les dépenses (parce que les présidentielles approchent), cela impliquerait que le revenu diminue davantage.</p>
+<p>Ainsi,
+\begin{align}
+Y^{eq} &amp;= \frac{c_0+G+i_0-c_1 T + \sqrt{4(1-c_1)\frac{M^s}{p}+(c_0+G+i_0+c_1 T)^2}}{2(1-c_1)} \\
+Y^{eq} &amp;= \frac{5}{6}\left(0.022+\sqrt{0.1872+(G+0.022)^2}+G\right)
+\end{align}</p>
+<p>De manière similaire à avant, on cherche le niveau $G$ tel que $\frac{G-0.445}{Y^{eq}} = 0.03$</p>
+<p>\begin{align}
+0.03 &amp;= \frac{G-0.445}{\frac{5}{6}\left(0.022+\sqrt{0.1872+(G+0.022)^2}+G\right)
+} \\
+G &amp;= 0.466896 \\
+Y^{eq} &amp;= 0.951459
+\end{align}</p>
+<div style="border: 2px solid #3498db; padding: 10px; margin: 20px;">
+    <h2 style="color: #3498db; margin: 0 0 10px 0;">Approximation au même calcul avec le multiplicateur</h2>
+    <p>
+    On aurait pu utiliser le multiplicateur pour obtenir l'augmentation des impôts ou à la réduction des dépenses publiques nécessaire pour ré-équilibrer le budget.
+    Le multiplicateur des impôts est de:
+    \begin{equation}
+      \frac{\mathrm{d}Y}{\mathrm{d}T}=-\frac{c_1}{1-c_1+I^\prime\frac{L^\prime_Y}{L^\prime_r}} = -\frac{0.4}{1-0.4+\frac{1}{Y r}}
+    \end{equation}
+    car
+    <br>
+    $I(r) = 0.1+\frac{1}{r}\implies I^\prime=-\frac{1}{r^2}$, 
+    <br>
+    $L(Y,r)=\frac{Y}{r} \implies L^\prime_Y = \frac{1}{r}$ et $L^\prime_r = -\frac{Y}{r^2}$.
+    <p>
+    Le valeur du multiplicateur au point initial $(Y=1,r=12.8205)$ est $\frac{\mathrm{d}Y}{\mathrm{d}T} = -0.078$
+    <br>
+    Ceci implique $\mathrm{d}Y = -0.078 \mathrm{d}T$, autrement dit, pour chaque euro que les impôts augmentent, le revenu <i>diminue</i> de 0.078.
+    Ainsi, on cherche à résoudre:
+    <p>
+    \begin{align}
+      \frac{0.5-0.445-\Delta T}{1- 0.078 \times \Delta T} &= 0.03 \\\\
+      \Delta T &= 0.0250586
+    \end{align}
+    <p>
+    Cela implique que le niveau d'impôt qui équilibre le budget est $T + \Delta T = 0.445 + 0.0250586 = 0.470059$ qui est proche de la chiffre trouvée avant.
+    Le niveau de revenu sera, de manière approximé, $1-0.078 \times 0.0250586 = 0.998045$
+    <p>
+    Si l'on s'intéresse aux dépenses, le multiplicateur est de $\frac{\mathrm{d}Y}{\mathrm{d}G} = \frac{1}{1-c_1+I^\prime\frac{L^\prime_Y}{L^\prime_r}} = \frac{1}{1-0.4 \frac{1}{Y r}}$
+    Au point initial, sa valeur est de $1.0322$
+    <p>
+    Nos cherchons à résoudre:
+    <p>
+    \begin{equation}
+      \frac{0.5-\Delta G - 0.445}{1-1.0322 \Delta G} = 0.03 \\\\
+      \Delta G = 0.0258
+    \end{equation}
+    Le nouveau niveau de dépenses publiques devrait être de $0.5-\Delta G = 0.4742$ et le revenu de $1-1.0322 \times \Delta G = 0.97337$
+</div>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>La première ligne indique que tout le changement à gauche (dans $Y$) doit être égal à touts les changements à droite.
+La deuxième ligne indique que tout le changement à gauche (0, car $\frac{M^s}{p}$ ne change pas) doit être égal à touts les changements à droite.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+          </div>
+
+          
+
+
+
+          
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/courses/macroeconomics/macro_2/is_lm/" rel="next">Le modèle IS-LM</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/courses/macroeconomics/macro_2/mundell-fleming/" rel="prev">Le modèle Mundell-Fleming</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on 11 Jul, 2019</p>
+
+          
+
+
+
+          
+
+
+
+
+          
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+
+  
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2024 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+      
+
+    
+    <script src="/js/vendor-bundle.min.32ee83730ed883becad04bc5170512cc.js"></script>
+
+    
+    
+    
+      
+
+      
+      
+
+      
+
+      
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/highlight.min.js" integrity="sha512-Ypjm0o7jOxAd4hpdoppSEN0TQOC19UtPAqD+4s5AlXmUvbmmS/YMxYqAqarQYyxTnB6/rqip9qcxlNB/3U9Wdg==" crossorigin="anonymous"></script>
+        
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/r.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/latex.min.js" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/gh/bryanbraun/anchorjs@4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+
+    
+    
+    
+    <script id="page-data" type="application/json">{"use_headroom":false}</script>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.d66c8b3b4ad0f66a62428f6bc7cf477d.js"></script>
+
+    
+    
+    
+    
+    
+    
+      
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+
+
+
+
+
+</body>
+</html>
