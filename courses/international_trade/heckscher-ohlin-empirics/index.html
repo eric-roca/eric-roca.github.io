@@ -64,10 +64,10 @@
   
     
   
-  <meta name="description" content="International economics" />
+  <meta name="description" content="Empirics around Heckscher-Ohlin" />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://eric-roca.github.io/courses/international_trade/" />
+  <link rel="alternate" hreflang="en-us" href="https://eric-roca.github.io/courses/international_trade/heckscher-ohlin-empirics/" />
 
   
   
@@ -277,8 +277,6 @@
   
 
   
-    <link rel="alternate" href="/courses/international_trade/index.xml" type="application/rss+xml" title="Èric Roca Fernández" />
-  
 
   
     <link rel="manifest" href="/manifest.webmanifest" />
@@ -287,7 +285,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
 
-  <link rel="canonical" href="https://eric-roca.github.io/courses/international_trade/" />
+  <link rel="canonical" href="https://eric-roca.github.io/courses/international_trade/heckscher-ohlin-empirics/" />
 
   
   
@@ -310,14 +308,18 @@
   <meta property="twitter:card" content="summary" />
   
   <meta property="og:site_name" content="Èric Roca Fernández" />
-  <meta property="og:url" content="https://eric-roca.github.io/courses/international_trade/" />
-  <meta property="og:title" content="International economics | Èric Roca Fernández" />
-  <meta property="og:description" content="International economics" /><meta property="og:image" content="https://eric-roca.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
+  <meta property="og:url" content="https://eric-roca.github.io/courses/international_trade/heckscher-ohlin-empirics/" />
+  <meta property="og:title" content="Empirics around Heckscher-Ohlin | Èric Roca Fernández" />
+  <meta property="og:description" content="Empirics around Heckscher-Ohlin" /><meta property="og:image" content="https://eric-roca.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
     <meta property="twitter:image" content="https://eric-roca.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
   
     
-      <meta property="og:updated_time" content="2019-07-11T00:00:00&#43;00:00" />
+      <meta
+        property="article:published_time"
+        content="2019-07-11T00:00:00&#43;00:00"
+      />
     
+    <meta property="article:modified_time" content="2019-07-11T00:00:00&#43;00:00">
   
 
   
@@ -328,15 +330,17 @@
 
   
 
+  
 
 
 
 
-  <title>International economics | Èric Roca Fernández</title>
+
+  <title>Empirics around Heckscher-Ohlin | Èric Roca Fernández</title>
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="ce4591da94e720a3d22876e4c9c5ac2e" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="c90ebd7c2743ae75549787f2760d4db7" >
 
   
   
@@ -752,7 +756,7 @@
     <div class="d-flex">
       <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
         
-          
+          International economics
         
       </span>
       <span><i class="fas fa-chevron-down"></i></span>
@@ -789,6 +793,10 @@
 
       
       
+        
+          
+        
+      
 
 
   
@@ -802,7 +810,7 @@
 
     
       <div class="docs-toc-item">
-        <a class="docs-toc-link  active" href="/courses/international_trade/">International economics</a>
+        <a class="docs-toc-link " href="/courses/international_trade/">International economics</a>
     
       
         <ul class="nav docs-sidenav">
@@ -821,7 +829,7 @@
 
 
 
-  <li class=""><a href="/courses/international_trade/heckscher-ohlin-empirics/">Empirics around Heckscher-Ohlin</a></li>
+  <li class="active"><a href="/courses/international_trade/heckscher-ohlin-empirics/">Empirics around Heckscher-Ohlin</a></li>
 
 
 
@@ -883,7 +891,12 @@
         <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
       </ul>
 
-      <nav id="TableOfContents"></nav>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#the-leontief-paradox">The Leontief paradox</a></li>
+    <li><a href="#winners-and-losers">Winners and losers</a></li>
+  </ul>
+</nav>
 
       
     </div>
@@ -896,31 +909,141 @@
         <div class="docs-article-container">
           
 
-          <h1>International economics</h1>
+          <h1>Empirics around Heckscher-Ohlin</h1>
 
           <div class="article-style">
             <h1 id="introduction">Introduction</h1>
-<p>The most fundamental question about international trade is: why do people (and countries) trade?
-There are a few options:</p>
+<p>The Heckscher-Ohlin offers some bold predictions but, at the same time, relies on some heavy assumptions.
+Some interestig predictions that may be brought to the data are:</p>
 <ul>
-<li>Comparative advantgage:
-Countries trade to exploit their comparative advantages, which means they specialize in producing goods and services where they have a lower opportunity cost compared to other countries.
-The <strong>Ricardian Model</strong> of trade, developed by David Ricardo, illustrates how countries can benefit from specialization and trade even if one country is more efficient in producing all goods.</li>
-<li>Resource Endowments:
-Countries trade to leverage their unique resource endowments, such as natural resources, labor, and capital.
-The <strong>Heckscher-Ohlin Model</strong> posits that countries will export goods that use their abundant factors of production intensively and import goods that use their scarce factors intensively.</li>
-<li>Economies of Scale:
-Trade allows countries to benefit from economies of scale, where the cost per unit of production decreases as the scale of production increases.
-The <strong>New Trade Theory</strong>, pioneered by economists like Paul Krugman, explains how economies of scale and imperfect competition drive trade.
-Countries can produce more efficiently by expanding their markets through trade, leading to lower prices and increased variety for consumers.
-Not in this course.</li>
+<li>Countries with higher capital endowments should specialize in capital-intensive industries and export capital-intensive goods</li>
+<li>Wages and rental prices should converge across countries</li>
 </ul>
-<p>In all cases, a relevant underlying conclusion is that <em>by trading, countries can increase the welfare of their citizens</em> by increasing their consumption possibilities beyond what they could produce without trade.
-<strong>NOTE</strong>: A country that is closed and does not trade is said to be in <strong>autarky</strong>.
-In this course, we will explain trade using three different models: the Ricardian Model, the Heckscher-Ohlin Model, and the Standard Trade Model.
-However, despite the fact that trade is Pareto-improving, we see that countries put on tariffs and other trade barriers.
-The second part of the course will analyze how these barriers affect countries and try to make sense of them.</p>
-<p>The course closely follows <a href="https://catalogue-bu.uca.fr/permalink/33CLERMONT_BCIU/1eua77o/alma991005521309704411" target="_blank" rel="noopener">&ldquo;International Economics, Theory and Policy&rdquo; by Krugman, Obstfeld and Melitz</a>.</p>
+<p>On perhaps unrealistic assumptions we can list:</p>
+<ul>
+<li>Perfect factor mobility between industries
+Can we really re-allocate a desertic land area to the production of timber?</li>
+<li>One sector is always capital intensive, and the other labour intensive
+Formally, this means that capital intensities do not switch at any given price level.
+This restricts the possible set of production functions</li>
+<li>Identical production technologies exist in both countries</li>
+<li>Identical preferences exist in both countries</li>
+</ul>
+<h2 id="the-leontief-paradox">The Leontief paradox</h2>
+<p>One of the most well-known tests on the Heckscher-Ohlin model was performed by Wassily Leontief in 1953. His analysis aimed to test the model&rsquo;s prediction that countries should export goods that intensively use the country&rsquo;s abundant factors of production.
+In the case of the United States, a country with a high capital endowment relative to labor, the Heckscher-Ohlin theory predicted that the U.S. would predominantly export capital-intensive goods and import labor-intensive goods.</p>
+<p>Leontief used input-output tables to analyze the factor content of U.S. exports and imports. Surprisingly, his findings contradicted the predictions of the Heckscher-Ohlin model.
+He discovered that U.S. exports were less capital-intensive and more labor-intensive than its imports.
+This unexpected result became known as the &ldquo;Leontief Paradox.&rdquo;
+It challenged the validity of the Heckscher-Ohlin model and sparked significant debate in the field of international economics.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/international_trade/leontief.png" alt="leontief" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Other tests have nuanced the positions.
+Robert Baldwin re-examined the data for 1961 and revealed again that capital-intensive goods are more likely to be exported than imported.
+However, exports used more educated labor than imports, and also employed more engineers.
+In that sense, export were more skill-intensive, and the US is abundant in skilled labor.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/international_trade/baldwin.png" alt="baldwin" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Another study (Bowen, Leamer, Sveikauskas) focused on 27 countries and considered 12 production factors.
+They compared the factor intensities of exports and imports to factor intensities of the countries, and classified those that followed the pattern predicted by the model.
+For instance, a country that exports a capital-intensive good when the country is capital-intense confirms the Hecksher-Ohlin predictions.
+However, the success was only 61%.
+These results confirmed that the Leontief paradox was not an isolated case.</p>
+<p>These set of tests really casted doubt on one of the main hypothesis of the model: production functions are identical across countries.
+Removing restrictive assumptions increases the performance of the model, as shown by Davis and Weinstein:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/international_trade/davis_weinstein.png" alt="davis_weinstein" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h2 id="winners-and-losers">Winners and losers</h2>
+<p>The Hecksher-Ohlin model (in fact, the Stolper-Samuelson theorem) predicts that countries that specialize in capital-intensive industries will experience a rise in the relative price of capital, and a fall in the relative price of labor.
+The prediction also holds for other factors, in particular, high-skilled and low-skilled workers.
+In economics, we call high-skilled workers those who have accumulated multiple years of education, typically obtaining a college degree.</p>
+<p>According to the Stolper-Samuelson theorem, a country that has a relative abundance of high-skilled workers (like the USA) should export high-skilled labor-intensive and, thus, the <strong>the wage of high-skilled workers should rise</strong>.
+This means that high-skilled workers in the USA should benefit from trade and globaization.
+Moreover, because low-skilled workers see their wages decrease, they should <strong>oppose</strong> to trade and ask the government to put in place tariffs and other protectionist measures.</p>
+<p>The data shows that this seems to be the case.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/international_trade/mayda_rodrik.png" alt="mayda_rodrik" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>In this graph, the average GDP per capita approximates the relative abundance of high-skilled workers: countries with high GDP per capita have more high-skilled workers.
+For each country, the authors study the relationship between the education of an individual and whether he is pro-trade.
+For instance, a highly-skilled person in Bangladesh should <em>not</em> be pro-trade, because Bangladesh has abundance of low-skilled workers.
+In contrast, a Norweigian with a college degree should be pro-trade, because Norway has abundance of high-skilled workers.
+The plot confirms the prediction of the model.</p>
 
           </div>
 
@@ -934,6 +1057,19 @@ The second part of the course will analyze how these barriers affect countries a
             
 <div class="post-nav">
   
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/courses/international_trade/heckscher-ohlin/" rel="next">Heckscher-Ohlin model</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/courses/international_trade/standard_trade_model/" rel="prev">The Standard Trade Model</a>
+  </div>
   
 </div>
 

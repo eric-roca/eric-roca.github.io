@@ -64,10 +64,10 @@
   
     
   
-  <meta name="description" content="International economics" />
+  <meta name="description" content="Empirics around Ricardo" />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://eric-roca.github.io/courses/international_trade/" />
+  <link rel="alternate" hreflang="en-us" href="https://eric-roca.github.io/courses/international_trade/ricardo-empirics/" />
 
   
   
@@ -277,8 +277,6 @@
   
 
   
-    <link rel="alternate" href="/courses/international_trade/index.xml" type="application/rss+xml" title="Èric Roca Fernández" />
-  
 
   
     <link rel="manifest" href="/manifest.webmanifest" />
@@ -287,7 +285,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
 
-  <link rel="canonical" href="https://eric-roca.github.io/courses/international_trade/" />
+  <link rel="canonical" href="https://eric-roca.github.io/courses/international_trade/ricardo-empirics/" />
 
   
   
@@ -310,14 +308,18 @@
   <meta property="twitter:card" content="summary" />
   
   <meta property="og:site_name" content="Èric Roca Fernández" />
-  <meta property="og:url" content="https://eric-roca.github.io/courses/international_trade/" />
-  <meta property="og:title" content="International economics | Èric Roca Fernández" />
-  <meta property="og:description" content="International economics" /><meta property="og:image" content="https://eric-roca.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
+  <meta property="og:url" content="https://eric-roca.github.io/courses/international_trade/ricardo-empirics/" />
+  <meta property="og:title" content="Empirics around Ricardo | Èric Roca Fernández" />
+  <meta property="og:description" content="Empirics around Ricardo" /><meta property="og:image" content="https://eric-roca.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
     <meta property="twitter:image" content="https://eric-roca.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
   
     
-      <meta property="og:updated_time" content="2019-07-11T00:00:00&#43;00:00" />
+      <meta
+        property="article:published_time"
+        content="2019-07-11T00:00:00&#43;00:00"
+      />
     
+    <meta property="article:modified_time" content="2019-07-11T00:00:00&#43;00:00">
   
 
   
@@ -328,15 +330,17 @@
 
   
 
+  
 
 
 
 
-  <title>International economics | Èric Roca Fernández</title>
+
+  <title>Empirics around Ricardo | Èric Roca Fernández</title>
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="ce4591da94e720a3d22876e4c9c5ac2e" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="a739a9471c8c69555cd50c2e15ddab09" >
 
   
   
@@ -752,7 +756,7 @@
     <div class="d-flex">
       <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
         
-          
+          International economics
         
       </span>
       <span><i class="fas fa-chevron-down"></i></span>
@@ -789,6 +793,10 @@
 
       
       
+        
+          
+        
+      
 
 
   
@@ -802,7 +810,7 @@
 
     
       <div class="docs-toc-item">
-        <a class="docs-toc-link  active" href="/courses/international_trade/">International economics</a>
+        <a class="docs-toc-link " href="/courses/international_trade/">International economics</a>
     
       
         <ul class="nav docs-sidenav">
@@ -813,7 +821,7 @@
 
 
 
-  <li class=""><a href="/courses/international_trade/ricardo-empirics/">Empirics around Ricardo</a></li>
+  <li class="active"><a href="/courses/international_trade/ricardo-empirics/">Empirics around Ricardo</a></li>
 
 
 
@@ -883,7 +891,17 @@
         <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
       </ul>
 
-      <nav id="TableOfContents"></nav>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#costinot-and-donaldson-2012">Costinot and Donaldson (2012)</a>
+      <ul>
+        <li><a href="#detour">Detour</a></li>
+      </ul>
+    </li>
+    <li><a href="#bernhofen-and-brown-2004">Bernhofen and Brown (2004)</a></li>
+  </ul>
+</nav>
 
       
     </div>
@@ -896,31 +914,266 @@
         <div class="docs-article-container">
           
 
-          <h1>International economics</h1>
+          <h1>Empirics around Ricardo</h1>
 
           <div class="article-style">
-            <h1 id="introduction">Introduction</h1>
-<p>The most fundamental question about international trade is: why do people (and countries) trade?
-There are a few options:</p>
+            <h2 id="introduction">Introduction</h2>
+<p>The Ricardian model of international trade is simple and provides a clear prediction about the pattern of trade between countries.</p>
+<ol>
+<li>Countries should specialize in the good in which they have a comparative advantage.</li>
+<li>With free trade, a country that exports a good does so at a (relative) price level higher than under autarky.
+Otherwise, it would not export it!</li>
+</ol>
+<p>For instance, if we have two countries with:
+\begin{equation}
+\frac{z_x}{z_y} &gt; \frac{z_x^\star}{z_y^\star}
+\end{equation}
+Then the opportunity cost of producing good $x$ is higher at Home than in Foreign.
+Consequently, Home should specialize in good $y$, Foreign in good $x$ and trade.</p>
+<p>How can we test the specialization patterns using data?
+The takeaway of the Ricardian model &ldquo;a country will specialize (and export) the goods for which it has a relative  <strong>high productivity</strong>, and import the goods for which it has a relative <strong>low productivity</strong>&rdquo;
+Notice the change from opportunity cost and labor requirements to productivity!</p>
+<p>If we had data on productivity for all goods and production (or trade data), the exercise would be simple: just correlate the two.
+The main problem with this approach is that the data we have does not provide all we need:</p>
 <ul>
-<li>Comparative advantgage:
-Countries trade to exploit their comparative advantages, which means they specialize in producing goods and services where they have a lower opportunity cost compared to other countries.
-The <strong>Ricardian Model</strong> of trade, developed by David Ricardo, illustrates how countries can benefit from specialization and trade even if one country is more efficient in producing all goods.</li>
-<li>Resource Endowments:
-Countries trade to leverage their unique resource endowments, such as natural resources, labor, and capital.
-The <strong>Heckscher-Ohlin Model</strong> posits that countries will export goods that use their abundant factors of production intensively and import goods that use their scarce factors intensively.</li>
-<li>Economies of Scale:
-Trade allows countries to benefit from economies of scale, where the cost per unit of production decreases as the scale of production increases.
-The <strong>New Trade Theory</strong>, pioneered by economists like Paul Krugman, explains how economies of scale and imperfect competition drive trade.
-Countries can produce more efficiently by expanding their markets through trade, leading to lower prices and increased variety for consumers.
-Not in this course.</li>
+<li>Prices: yes</li>
+<li>Who produces what and quantities: yes</li>
+<li>Unitary labor costs (or labor requirements) for the produced good: maybe</li>
 </ul>
-<p>In all cases, a relevant underlying conclusion is that <em>by trading, countries can increase the welfare of their citizens</em> by increasing their consumption possibilities beyond what they could produce without trade.
-<strong>NOTE</strong>: A country that is closed and does not trade is said to be in <strong>autarky</strong>.
-In this course, we will explain trade using three different models: the Ricardian Model, the Heckscher-Ohlin Model, and the Standard Trade Model.
-However, despite the fact that trade is Pareto-improving, we see that countries put on tariffs and other trade barriers.
-The second part of the course will analyze how these barriers affect countries and try to make sense of them.</p>
-<p>The course closely follows <a href="https://catalogue-bu.uca.fr/permalink/33CLERMONT_BCIU/1eua77o/alma991005521309704411" target="_blank" rel="noopener">&ldquo;International Economics, Theory and Policy&rdquo; by Krugman, Obstfeld and Melitz</a>.</p>
+<p>The issue is that we <strong>do not observe</strong> the productivity (or labor costs, or labor requirements) of the goods that <strong>are <em>not</em> produced</strong>.
+“The difference in labor requirements cannot be observed, since imported goods will almost never be produced in the importing country.” (Deardorff, 1984)</p>
+<h2 id="costinot-and-donaldson-2012">Costinot and Donaldson (2012)</h2>
+<p>Costinot and Donaldson (2012) proposed to use the agricultural sector because the productivity of a given crop under different circumstances is very well studied.
+Indeed, GAEZ (Global Agro-Ecological Zones) project by the FAO predicts the productivity of land for the entire planet and for several crops.
+With these data, we can very easily get a sense of how many kg of tomaotes can be produced per hectare in a given region.
+To do this, the GAEZ relates soil characteristics, elevation, water availability, insolation, temperatures, etc. to the growing cycle of each plant using agricultural models.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/international_trade/GAEZ_wheat.png" alt="wheat" loading="lazy" data-zoomable /></div>
+  </div></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/international_trade/GAEZ_banana.png" alt="banana" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Suppose France has 10 fields $f$ on which three crops can be grown: wheat, bananas and grapes.
+The productivity of each crop in each field is known thanks to GAEZ.
+The problem then boils down to selecting the crops that yield the largest value in each field.
+It is important to note here that the yield value depends both on the prices and the productivity of each field in each crop.
+A simple GDP maximization problem can be written as:
+\begin{align}
+\max_{K^i_{f=j}} &amp; \sum_{f=1}^{10} \sum_{i=1}^{3} p_i K^i_{f=j} y_{f=j}^i \\
+\text{s.t} &amp; \sum_{i=1}^{3} K^i_{f=j} = 1, \forall f=1, \dots, 10 \\
+&amp; K^i_{f=j} \in \{0,1\}, \forall f=1, \dots, 10, \forall i=1, \dots, 3
+\end{align}
+where $p_i$ is the price of crop $i$, $y_{f=j}^i$ is the productivity of crop $i$ in field $f$ and $K^i_{f=j}$ indicates whether crop $i$ produced in field $f$ or not.
+The restrictions simply state obvious constraints:
+$\sum_{i=1}^{3} K^i_{f=j} = 1$ indicates that a field must be fully used, while $K^i_{f=j} \in \{0,1\}$ indicates that a field can only produce one crop, so each field has to be used with one and only one crop.
+Without entering into the details, this is a linear progamming problem that can be solved using the simplex method.
+But a more intuitive way to solve this problem is to sort the crops by the yield value (productivity time price) in each field and then select the crops with the highest value.</p>
+<h3 id="detour">Detour</h3>
+<p>If we go back to Ricardo&rsquo;s model, we can show that what we just described corresponds to the production decision, even though we are not limited to producing only one unit of a good.
+Assume that we are given prices, then a country will specialize as follows:
+\begin{align}
+\max_{x,y} &amp; p_x x + p_y y \\
+\text{s.t.} &amp; z_x x + z_y y = L \\
+&amp; x, y \geq 0 \\
+\end{align}</p>
+<p>The solution to the above problem is: $\{x = \frac{L}{z_x}, y = 0\} \ \text{if}\ \frac{p_x}{p_y} &gt; \frac{z_x}{z_y}$ and $\{x = 0, y = \frac{L}{z_y} \} \ \text{if}\ \frac{p_x}{p_y} &lt; \frac{z_x}{z_y}$.
+This is, when the relative price of $x$ is higher than the relative productivity of $x$, then the country will specialize in $x$ and vice versa.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/international_trade/ricardo-empirics-maximization.webp" alt="graphical_maximization" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<hr>
+<p>Using the method we described, Costinot and Donaldson can compute the crop that maximizes yields for each field in each country.
+Then, by aggregating predicted production (using the GAEZ data) over all the fields in a country, they can compute the production of each crop in each country.
+Finally, they compare the prediction based on comparative advantage from Ricardo&rsquo;s model to the actual production data.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/international_trade/costinot_donaldson_t1.png" alt="restuls" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>They find a positive correlation between the predicted production (in logaithms) and the actual production (in logarithms).
+The coefficient is not 1 (as it should if the model were perfect) because the only land uses they considered are for farming, yet land is also used for other purposes: urban areas, industrrial areas, infastructure, etc.
+Another problem is that the data from GAEZ divides the world in squares of approximilately 10km by 10km.
+The best crop can vary within that area, so the model might not be able to capture that.</p>
+<p>All-in-all, the model does a good job at predicting the production of each country, but it is not perfect:</p>
+<blockquote>
+We have asked a simple question: How do output levels predicted by Ricardo’s theory compare to those that are observed in the data? 
+Despite all of the  real-world considerations from which Ricardo’s
+theory abstracts, we find that a regression of log output on log predicted output has a (precisely estimated) slope of 0.21. 
+Ricardo’s theory of comparative advantage, is not just mathematically correct and nontrivial; it also has significant explanatory power in the data, at least within the scope of our analysis.
+</blockquote>
+<h2 id="bernhofen-and-brown-2004">Bernhofen and Brown (2004)</h2>
+<p>Costinot and Donaldson (2012) show that, given prices, producitivities are quite good at predicting patterns of specialization.
+This is, we have empirically validated that countries tend to specialize in the good that they are more productive in (lower unitary requirements).
+However, the Ricardian model is <em>mostly</em> about trade.
+The main prediction in that sense is that free trade causes a country to <em>export</em> the good in which it has a comparative advantage.</p>
+<p>Extending this result, a natural corollary arises: because a country tends to specialize in the good for which it has a comparative advantage, it means it can produce this good more cheaply than other countries.
+Put it in other terms: to sell that good, the international price must be higher than the domestic opportunity cost.
+Since prices in autarky reflect the domestic opportunity cost, it follows that the international price must be higher than the autarky price.</p>
+<p>The problem is that, in general, one does not observe the same country in autarky and under free trade.
+Bernofen and Brown (2004) lookd at Japan, which opened itself to trade in 1853.
+From 1639, Japan forbid all contact with outsiders, isolating itself from international markets and operating under autarky.
+In 1853, Commodore Matthew Perry, an American naval officer, led a fleet of four warships to Japan in an attempt to force the country to open its ports to foreign trade. Japan had been under a strict policy of isolation for over 200 years, known as &ldquo;sakoku,&rdquo; which had prevented any contact with outsiders.
+By 1860, after several military interventions and treaties, Japan had opened its ports to foreign trade and began to modernize its economy.</p>
+<p>Let&rsquo;s have a look at the results from a comparison of price increases to pre-1853 trade levels:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/international_trade/bernhofen_brown_f4.png" alt="bernhofen_brown_f4" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>As the authors say:</p>
+<blockquote>
+The prices of major exports such as products of the silk industry (silk and silkworm eggs) and minor exports such as copper manufactures, sake, and vegetable wax all increased; in some cases they almost doubled. 
+The relative price of key imports such as sugar, cotton cloth, cotton yarn, and iron products displayed substantial declines.
+The increase in the price of rice and legumes may reflect poor weather conditions, and the increase in the price of cotton may stem from the disruption of cotton markets in the wake of the American Civil War.
+</blockquote>
+<p>This corroborates the Ricardian model: Japan specializes in the good for which it has a comparative advantage, and because the international price is higher than the autarky price, once trade begins the price of the good increases.</p>
+<p>A second test the authors implement is based on the same idea.
+Let&rsquo;s work it out with an example:<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>
+Suppose that, under autarky with autarky prices ($p_x = 4, p_y = 8$), the
+country decides to consume (and produce!) at the levels $x = 50, y = 25$.
+Assume that international prices, one the country opens up to trade, are $p_x = 5, p_y = 5$.
+Because the country has a comparative advantage in $x$, it will export $x$ and import $y$.
+At this new price level, consumption is $x = 50, y = 50$, with the country using all its labor force to produce $x$.</p>
+<p>When trade begins, the good we export becomes more expensive and the imported good cheaper.
+It is possible to show that the value of net exports (exports minus imports) evaluated <em>at autarky prices</em> is negative.
+In our example, the net export of $x$ is $50 - 0 = 50$ and the net export of $y$ is $0 - 50 = -50$.
+Thus, the value of net exports is $50 \times 4 + (-50) \times 8 = -200 &lt; 0$.</p>
+<p>We can show this more generally.
+When the economy opens up to international trade, in the Ricardian model trade is balanced, meaning that the value of exports equals the value of imports.
+Suppose that $\frac{p_x^f}{p_y^f} &gt; \frac{p_x^a}{p_y^a}$, so that $x$ is the good with comparative advantage.
+Using $x$ and $y$ for production and $c_x$ and $c_y$ for consumption, we have:
+$p_x^{f} (x^f-c_x^f) = p_y^{f} (c_y^f-y^f)$, where $x^f - c_x^f &gt; 0$ because the country exports $x$ and  $c_y^f - y^f$ &gt; 0, because the country imports $y$.
+The superscript $f$ denotes the free trade equilibrium.
+From here:
+\begin{align}
+p_x^{f} (x^f-c_x^f) &amp;= p_y^{f} (c_y^f-y^f) \implies \\
+\frac{p_x^{f}}{p_y^f} (x^f-c_x^f) = (c_y^f-y^f) \implies \\
+\frac{p_x^{f}}{p_y^f} (x^f-c_x^f) - (c_y^f-y^f) &amp;= 0 \\
+\frac{p_x^{f}}{p_y^f} (x^f-c_x^f) - (c_y^f-y^f) &amp;&lt; \frac{p_x^a}{p_y^a}(x^f-c_x^f) - (c_y^f-y^f) \implies \\
+\frac{p_x^a}{p_y^a}(x^f-c_x^f) - (c_y^f-y^f) &lt; 0
+\end{align}
+Where $\frac{p_x^{f}}{p_y^f} (x^f-c_x^f) - (c_y^f-y^f) &lt; \frac{p_x^a}{p_y^a}(x^f-c_x^f) - (c_y^f-y^f)$ is true because $\frac{p_x^{f}}{p_y^f} &gt; \frac{p_x^a}{p_y^a}$.</p>
+<p>The setup in Bernhofen and Brown is a bit more complex because they have more goods and trade may not be balanced.
+In any case, the general conclusion holds: if we evaluate net exports at autarky prices, we should observe a negative value.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/international_trade/bernhofen_brown_t2.png" alt="t2" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>This is exactly the result, confirming again the validity of the Ricardian trade model.
+In this case, they have shown that trade patterns are in accordance with the theoretical predictions.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>For this example, I am assuming that $u(x,y) = x^{0.5}y^{0.5}$ and $L=100$.
+Moreover, in general we do not have prices but relative prices.
+In any case, the relative price ratio in autarky $\frac{p_x}{p_y} = \frac{4}{8} = \frac{1}{2}$ corresponds to labor requirements $z_x = 1,\ z_y = 2$, for instance.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
 
           </div>
 
@@ -934,6 +1187,19 @@ The second part of the course will analyze how these barriers affect countries a
             
 <div class="post-nav">
   
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/courses/international_trade/ricardian/" rel="next">The Ricardian Model</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/courses/international_trade/heckscher-ohlin/" rel="prev">Heckscher-Ohlin model</a>
+  </div>
   
 </div>
 

@@ -20,8 +20,6 @@
   <url>
     <loc>https://eric-roca.github.io/courses/macroeconomics/olg/olg_preliminaries/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://eric-roca.github.io/courses/international_trade/standard_trade_model/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
     <loc>https://eric-roca.github.io/courses/macroeconomics/ramsey/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://eric-roca.github.io/courses/mathematical_appendix/steady_state/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
@@ -34,7 +32,9 @@
   <url>
     <loc>https://eric-roca.github.io/courses/macroeconomics/dynamic_macroeconomics/solow_introduction/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://eric-roca.github.io/courses/international_trade/trade_policy/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+    <loc>https://eric-roca.github.io/courses/international_trade/ricardian/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://eric-roca.github.io/courses/international_trade/ricardo-empirics/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://eric-roca.github.io/courses/macroeconomics/ramsey/ramsey_households/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
@@ -48,8 +48,6 @@
   <url>
     <loc>https://eric-roca.github.io/courses/macroeconomics/ramsey_government/ramsey_government_equilibrium/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://eric-roca.github.io/courses/international_trade/tariffs/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
     <loc>https://eric-roca.github.io/courses/mathematical_appendix/transversality_condition/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://eric-roca.github.io/courses/macroeconomics/ramsey_government/ramsey_government_changing_g/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
@@ -57,6 +55,8 @@
     <loc>https://eric-roca.github.io/courses/mathematical_appendix/elasticity_of_substitution/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://eric-roca.github.io/courses/comparative_development/comparative_development_epochs/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://eric-roca.github.io/courses/international_trade/heckscher-ohlin/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://eric-roca.github.io/courses/international_trade/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
@@ -76,7 +76,7 @@
   <url>
     <loc>https://eric-roca.github.io/courses/macroeconomics/dynamic_macroeconomics/solow_dynamics/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://eric-roca.github.io/courses/international_trade/export_subsidies/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+    <loc>https://eric-roca.github.io/courses/international_trade/heckscher-ohlin-empirics/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://eric-roca.github.io/courses/macroeconomics/olg/olg_equilibrium/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
@@ -86,9 +86,9 @@
   <url>
     <loc>https://eric-roca.github.io/courses/macroeconomics/dynamic_macroeconomics/solow_ss/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://eric-roca.github.io/courses/international_trade/liaison_mechanism/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
     <loc>https://eric-roca.github.io/courses/macroeconomics/olg/olg_multiple_intertemporal_equilibria/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://eric-roca.github.io/courses/international_trade/standard_trade_model/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://eric-roca.github.io/courses/macroeconomics/olg/olg_steady_state/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
@@ -98,17 +98,17 @@
   <url>
     <loc>https://eric-roca.github.io/courses/macroeconomics/dynamic_macroeconomics/solow_growth/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://eric-roca.github.io/courses/international_trade/export_tax/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+    <loc>https://eric-roca.github.io/courses/international_trade/trade_policy/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://eric-roca.github.io/courses/macroeconomics/ramsey/ramsey_trajectory/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://eric-roca.github.io/courses/macroeconomics/ramsey/ramsey_example/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
-    <loc>https://eric-roca.github.io/courses/international_trade/non-tariff_barriers/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
-  <url>
     <loc>https://eric-roca.github.io/courses/macroeconomics/olg/olg_optimality/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://eric-roca.github.io/courses/macroeconomics/dynamic_macroeconomics/solow_a/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://eric-roca.github.io/courses/international_trade/tariffs/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://eric-roca.github.io/courses/macroeconomics/dynamic_macroeconomics/solow_conclusion/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
@@ -116,11 +116,17 @@
   <url>
     <loc>https://eric-roca.github.io/courses/macroeconomics/ramsey/ramsey_golden_rule/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
+    <loc>https://eric-roca.github.io/courses/international_trade/liaison_mechanism/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://eric-roca.github.io/courses/international_trade/export_subsidies/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
     <loc>https://eric-roca.github.io/courses/macroeconomics/ramsey/ramsey_remarks/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://eric-roca.github.io/courses/macroeconomics/dynamic_macroeconomics/ramsey_introduction/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://eric-roca.github.io/courses/macroeconomics/olg/olg_planner/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://eric-roca.github.io/courses/international_trade/export_tax/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://eric-roca.github.io/courses/macroeconomics/dynamic_macroeconomics/ramsey_assumptions/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
@@ -131,6 +137,8 @@
     <loc>https://eric-roca.github.io/courses/macroeconomics/olg/papers/galor_moav__2006/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://eric-roca.github.io/courses/macroeconomics/dynamic_macroeconomics/ramsey_households/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://eric-roca.github.io/courses/international_trade/non-tariff_barriers/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://eric-roca.github.io/courses/macroeconomics/olg/papers/galor_ozak__2016/</loc><lastmod>2019-07-11T00:00:00+00:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
@@ -233,6 +241,10 @@
     <loc>https://eric-roca.github.io/talk/2016-12_luxembourg/</loc><lastmod>2016-12-12T14:40:00+01:00</lastmod><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://eric-roca.github.io/talk/2016-12_new-delhi/</loc><lastmod>2016-11-21T11:15:00+05:30</lastmod><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://eric-roca.github.io/courses/international_trade/exercises/</loc><changefreq>weekly</changefreq></url>
+  <url>
+    <loc>https://eric-roca.github.io/courses/international_trade/exercises_trade_policy/</loc><changefreq>weekly</changefreq></url>
   <url>
     <loc>https://eric-roca.github.io/categories/</loc><changefreq>weekly</changefreq></url>
   <url>

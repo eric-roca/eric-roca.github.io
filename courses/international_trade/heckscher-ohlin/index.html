@@ -1,0 +1,1950 @@
+<!DOCTYPE html><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.5.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Èric Roca Fernández" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Heckscher-Ohlin model" />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://eric-roca.github.io/courses/international_trade/heckscher-ohlin/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.c7b8d9abd591ba2253ea42747e3ac3f5.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.1052fab8b7700a3dc49ee23683097d66.css" />
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://eric-roca.github.io/courses/international_trade/heckscher-ohlin/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary" />
+  
+  <meta property="og:site_name" content="Èric Roca Fernández" />
+  <meta property="og:url" content="https://eric-roca.github.io/courses/international_trade/heckscher-ohlin/" />
+  <meta property="og:title" content="Heckscher-Ohlin model | Èric Roca Fernández" />
+  <meta property="og:description" content="Heckscher-Ohlin model" /><meta property="og:image" content="https://eric-roca.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
+    <meta property="twitter:image" content="https://eric-roca.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2019-07-11T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2019-07-11T00:00:00&#43;00:00">
+  
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>Heckscher-Ohlin model | Èric Roca Fernández</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="96a4c9aeb1955f9b3470d1eca41f845d" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.2ed908358299dd7ab553faae685c746c.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="header--fixed">
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/">Èric Roca Fernández</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/">Èric Roca Fernández</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#publications"><span>Publications</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#working_papers"><span>Working papers</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link  active" href="/courses/"><span>Teaching</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#talks"><span>Talks</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/files/CV.pdf"><span>CV</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    
+    
+    
+
+    
+
+
+
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      <form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-md-3 w-100" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <div class="d-flex">
+      <span class="d-md-none pl-1 flex-grow-1 text-left overflow-hidden">
+        
+          International economics
+        
+      </span>
+      <span><i class="fas fa-chevron-down"></i></span>
+    </div>
+  </button>
+
+  
+  <button class="form-control sidebar-search js-search d-none d-md-flex">
+    <i class="fas fa-search pr-2"></i>
+    <span class="sidebar-search-text">Search...</span>
+    <span class="sidebar-search-shortcut">/</span>
+  </button>
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+  
+  
+  
+  
+  
+
+  
+  
+    
+
+    
+      
+
+      <ul class="nav docs-sidenav">
+        <li><a href="/courses/"><i class="fas fa-arrow-left pr-1"></i></a></li>
+      </ul>
+
+      
+      
+        
+          
+        
+      
+
+
+  
+    
+    
+    
+    
+      
+    
+    
+
+    
+      <div class="docs-toc-item">
+        <a class="docs-toc-link " href="/courses/international_trade/">International economics</a>
+    
+      
+        <ul class="nav docs-sidenav">
+      
+
+
+  <li class=""><a href="/courses/international_trade/ricardian/">The Ricardian Model</a></li>
+
+
+
+  <li class=""><a href="/courses/international_trade/ricardo-empirics/">Empirics around Ricardo</a></li>
+
+
+
+  <li class="active"><a href="/courses/international_trade/heckscher-ohlin/">Heckscher-Ohlin model</a></li>
+
+
+
+  <li class=""><a href="/courses/international_trade/heckscher-ohlin-empirics/">Empirics around Heckscher-Ohlin</a></li>
+
+
+
+  <li class=""><a href="/courses/international_trade/standard_trade_model/">Standard Trade Model</a></li>
+
+
+
+  <li class=""><a href="/courses/international_trade/trade_policy/">Trade Policy</a></li>
+
+
+
+  <li class=""><a href="/courses/international_trade/tariffs/">Tariffs</a></li>
+
+
+
+  <li class=""><a href="/courses/international_trade/liaison_mechanism/">Liaison mechanism</a></li>
+
+
+
+  <li class=""><a href="/courses/international_trade/export_subsidies/">Export subsidies</a></li>
+
+
+
+  <li class=""><a href="/courses/international_trade/export_tax/">Export taxes</a></li>
+
+
+
+  <li class=""><a href="/courses/international_trade/non-tariff_barriers/">Non-tariff barriers</a></li>
+
+
+
+  <li class=""><a href="/courses/international_trade/exercises/"></a></li>
+
+
+
+  <li class=""><a href="/courses/international_trade/exercises_trade_policy/"></a></li>
+
+      
+        </ul>
+      
+    
+
+    
+      </div>
+    
+
+    
+  
+</nav>
+
+    </div>
+
+    
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      
+
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#factor-intensities-and-an-example">Factor intensities, and an example</a></li>
+    <li><a href="#2-goods-2-factors-2-countries">2 Goods, 2 Factors, 2 Countries</a>
+      <ul>
+        <li><a href="#autarky">Autarky</a></li>
+        <li><a href="#the-stolper-samuelson-theorem">The Stolper-Samuelson Theorem</a></li>
+        <li><a href="#the-rybczynski-theorem">The Rybczynski Theorem</a></li>
+        <li><a href="#the-hecksher-ohlin-theorem">The Hecksher-Ohlin Theorem</a></li>
+        <li><a href="#solving-the-model">Solving the model</a></li>
+      </ul>
+    </li>
+    <li><a href="#factor-prize-equalization">Factor prize equalization</a></li>
+    <li><a href="#todo">TODO:</a></li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          
+
+          <h1>Heckscher-Ohlin model</h1>
+
+          <div class="article-style">
+            <h1 id="introduction">Introduction</h1>
+<p>Ricardo&rsquo;s model of international trade is based on the idea of <strong>comparative advantage</strong> and predicts that countries gain from trade because they have <strong>different productivities</strong>.
+Yet, the reason for productivity differentials comes from different technology: $z_x,z_y$ are different from $z_x^\star,z_y^\star$ (actually, what matters is $\frac{z_x}{z_y} \neq \frac{z_x^\star}{z_y^\star}$).</p>
+<p>However, countries also have different endowements so that, even if they have the same technology, they may have different productivities because they will use the inputs in different proportions.</p>
+<p>For example, a country endowed with plenty of capital and little labor has a comparative advantage in goods that require lots of capital, but little labor — such as grains.
+If capital abounds, its price is low.
+Also, because capital is the main production factor in capital intesive industries, the price of capital-intensive goods will be low.
+Labor-intensive goods, on the other hand, are very expensive to produce since labor is scarce and its price is high. Therefore, the country is better off importing those goods.</p>
+<p>Therefore, according to the Hecskcher-Ohlin model, the comparative advantage is due to the fact that nations have various factors of production with varying endowments.</p>
+<h2 id="factor-intensities-and-an-example">Factor intensities, and an example</h2>
+<p>Factor intensity measures the relationship between capital and labor in the production of a good.
+This is, the capital intensity is the ratio:</p>
+<p>\begin{equation}
+\frac{K}{L}
+\end{equation}</p>
+<p>We will see later how to compute it.
+A key element of the Heckscher-Ohlin model is that one sector is capital intensive while the other is labor intensive.
+An important remark is that, in the model, the capital intensive industry is capital intensive <em>for each level of production</em>.
+This is, there are no reversals.</p>
+<hr>
+<p>Suppose we have an industry producing one good with capital and labor.
+We assume that this good is capital intensive, which means that the capital-labor ratio used in this industry is large.
+Let $Y = K^{0.8}L^{0.2}$ be the production function of this good.
+We can compute, for instance, how much dost it cost to produce 100 units of this good.
+\begin{align}
+\min_{L,K} &amp; w L + r K \\
+\text{s.t.} &amp; Y = K^{0.8}L^{0.2} = 100
+\end{align}</p>
+<!--
+ToRadicals@
+ RootReduce@
+  MinValue[{w L + r K, 100 == K^(0.8) L^(0.2), r > 0, w > 0}, {K, L}, 
+   Reals]
+
+  Solution: 125 (-2)^(2/5) r^(4/5) w^(1/5)
+  Note that (-2)^(2/5) = 4^(1/5)
+!-->
+<p>The minimum cost (difficult to solve) is: $125 \times 4^\frac{1}{5}  w^{1/5} r^\frac{4}{5}$.
+Suppose we had prices $w=a$ and $r=b$ with $a&gt;b$ because labor is scarce.
+The cost of producing is $125 \times 4^\frac{1}{5} a^\frac{1}{5} b^{4/5}$.
+Would the cost decrease if the the prices were reversed, $w=b$ and $r=a$?
+The answer is no:
+\begin{align}
+125 \times 4^\frac{1}{5} b^\frac{1}{5} a^{4/5} &amp;&lt; 125 \times 4^\frac{1}{5} a^\frac{1}{5} b^{4/5} \\
+b^\frac{1}{5} a^{4/5} &amp; &lt;  a^\frac{1}{5} b^{4/5} \\
+a^\frac{3}{5} &amp; &lt; b^\frac{3}{5} \\
+a &lt; b
+\end{align}
+Which is a contradiction because we assumed $a &gt; b$.</p>
+<p>This hints to the general idea that, because the industry is capital intensive, it benefits from having aboundant capital.</p>
+<h2 id="2-goods-2-factors-2-countries">2 Goods, 2 Factors, 2 Countries</h2>
+<p>Despite the model focusing on trade, which necessitates two countries, we begin the analysis with one country only to understand how production decisions are made.</p>
+<p>As stated before, we will consider that production functions (this is, technology) are the same across countries.
+However, each sector has a specific production function involving two factors of production: capital and labor.
+The total labor force in the country is $L$ and the total amount of capital is $K$.
+The economy produces two goods, as before: xboxes and yogurt.</p>
+<p>Because each sector uses capital and labor for production, let $L_x$ and $L_y$ be the amount of labor used in the production of xboxes and yogurt, respectively.
+Similarlly, let $K_x$ and $K_y$ be the amount of capital used in the production of xboxes and yogurt, respectively.
+Mirroring the Ricardian model, production factors are <strong>perfectly</strong> mobile across sectors, but <strong>not</strong> across countries.</p>
+<p>The production functions are:
+\begin{align}
+Q_x &amp;= \mathcal{X}(K_x, L_x) \\
+Q_y &amp;= \mathcal{Y}(K_y, L_y)
+\end{align}</p>
+<p>Some standard assumptions apply to $\mathcal{X}$ and $\mathcal{Y}$:</p>
+<ul>
+<li>Production is increasing in both factors of production.
+<ul>
+<li>$\frac{\partial \mathcal{X}}{\partial j_x} &gt; 0, j \in {K, L}$</li>
+<li>$\frac{\partial \mathcal{Y}}{\partial j_y} &gt; 0, j \in {K, L}$</li>
+</ul>
+</li>
+<li>The marginal product of each factor is decreasing in the amount of that factor used.
+<ul>
+<li>$\frac{\partial^2 \mathcal{X}}{\partial j_x^2} &lt; 0, j \in {K, L}$</li>
+<li>$\frac{\partial^2 \mathcal{Y}}{\partial j_y^2} &lt; 0, j \in {K, L}$</li>
+</ul>
+</li>
+<li>The production functions are <strong>homogenous of degree one</strong>
+<ul>
+<li>$\mathcal{X}(tK_x, tL_x) = t\mathcal{X}(K_x, L_x)$</li>
+<li>$\mathcal{Y}(tK_y, tL_y) = t\mathcal{Y}(K_y, L_y)$</li>
+<li>More on that on <a href="https://eric-roca.github.io/courses/mathematical_appendix/homogenous_functions/">Homogenous Functions</a>.</li>
+</ul>
+</li>
+</ul>
+<p>Consumers have preferences (as in Ricardo) over the consumption of both goods.
+Moreover, preferences are also the same in both countries, so this cannot drive trade.
+With preferences being represented by
+\begin{align}
+U(Q_x, Q_y)
+\end{align}
+we impose utility to be increasing in both arguments:</p>
+<ul>
+<li>$\frac{\partial U}{\partial Q_j} &gt; 0, j \in {x, y}$</li>
+</ul>
+<h3 id="autarky">Autarky</h3>
+<p>In autarky, consumption equals production because there is no trade.
+Let&rsquo;s find out how the country determines the amout of xboxes and yogurt to produce.</p>
+<h4 id="production-and-factor-allocation">Production and Factor Allocation</h4>
+<p>First, production.
+The country has a total amount of capital $K$ and a total amount of labor $L$, and we assume perfect competition.
+A representative firm in the xbox sector maximizes profits:
+\begin{align}
+\max_{K_x, L_x} \pi_x &amp;= P_x Q_x - w_x L_x - r_x K_x \\
+\text{s.t.} &amp; Q_x =  \mathcal{X}(K_x, L_x)
+\end{align}</p>
+<p>The maximization problem can be solved using by substituting $Q_x =  \mathcal{X}(K_x, L_x)$ into the objective function and maximizing with respect to $K_x$ and $L_x$.
+\begin{align}
+\frac{\partial \mathcal{L}}{\partial K_x} &amp;= P_x \frac{\partial \mathcal{X}}{\partial K_x} - r_x  = 0 \\
+\frac{\partial \mathcal{L}}{\partial L_x} &amp;= P_x \frac{\partial \mathcal{X}}{\partial L_x} - w_x  = 0 \\
+\\
+p_x \frac{d \mathcal{X}}{d K_x} &amp;= r_x \\
+p_y \frac{d \mathcal{X}}{d L_x} &amp;= w_x
+\end{align}</p>
+<details>
+  <summary>Question: how can we be sure that these equations have a solution?</summary>
+  Answer: because we have decreasing marginal returns. 
+</details>
+<p>If we compute the wage-rental ratio for the xbox sector, we get an optimality condition:
+\begin{align}
+\frac{w}{r} &amp;= \frac{\mathcal{X}_L}{\mathcal{X}_K} = \frac{MPL_x}{MPK_x}
+\end{align}</p>
+<p>Where the term $MPL_x$ is the marginal product of labor in the xbox sector and $MPK_x$ is the marginal product of capital in the xbox sector and the ratio $\frac{MPL_x}{MPK_x}$ is called the <strong>marginal rate of technical substitution</strong>.
+The marginal rate of technical substitution is the rate at which the country can substitute capital for labor in the xbox sector so that the level of output remains constant.
+We can easily check this by differentiating the production function:
+$0 = \mathcal{X}_K \mathrm{d}K_x + \mathcal{X}_L \mathrm{d}L_x \implies \frac{\mathcal{d}K_x}{\mathcal{d}L_x} = -\frac{\mathcal{X}_L}{\mathcal{X}_K} = \frac{MPL_x}{MPK_x}$</p>
+<p>To see why it represents optimality, suppose $\frac{w_x}{r_x} &lt; \frac{MPL_x}{MPK_x}$.
+If we use one less unit of capital (K) and substitute it with labor (L) according to the MRTS, we can maintain the same level of output.
+The cost saving from using one less unit of labor is $w_x$.
+If we decrease labor by one unit, we must increase capital by $\frac{MPL_x}{MPK_x}$ units.
+This costs $r_x \frac{MPL_x}{MPK_x}$.
+Since $w_x &lt; r_x \frac{MPL_x}{MPK_x}$, we can save more by substituting capital with labor.
+So any situtation where $\frac{w_x}{r_x} \neq \frac{MPL_x}{MPK_x}$ is not optimal.</p>
+<p>Graphically, when $\frac{w_x}{r_x}$ increases, the labor to capital ratio decreases.
+Intuitively, when $\frac{w_x}{r_x}$ increases, hiring workers becomes more expensive relative to hiring capital.
+Consequently, firms will hire less labor and more capital.
+By decreasing the number of workers $MPL_x$ increases, and by having more capital $MPK_x$ decreases.
+Therefore, $\frac{MPL_x}{MPK_x}$ increases, too.
+But $\frac{L}{K}$ rises!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/international_trade/ho_labor_capital.webp" alt="rental-wage-ratio" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h5 id="example">Example</h5>
+<p>Suppose a Cobb-Douglas production function for xboxes such as
+\begin{equation}
+\mathcal{X} = K_x^\xi L_x^{1-\xi},\quad \xi \in (0,1)
+\end{equation}
+$\xi$ is the Greek letter xi, for xbox.</p>
+<p>The marginal products of labor and capital are:
+\begin{align}
+\mathcal{X}_L &amp;= (1-\xi) K_x^\xi L_x^{-\xi} \\
+\mathcal{X}_K &amp;= \xi K_x^{\xi-1} L_x^{1-\xi}
+\end{align}</p>
+<p>Hence, profit maximization implies:
+\begin{align}
+\frac{w_x}{r_x} &amp;= \frac{\mathcal{X}_L}{\mathcal{X}_K} = \frac{(1-\xi) K_x^\xi L_x^{-\xi}}{\xi K_x^{\xi-1} L_x^{1-\xi}} = \frac{1-\xi}{\xi} \frac{K_x}{L_x}
+\end{align}</p>
+<p>As we showed before, when $\frac{w_x}{r_x}$ increases, the labor to capital ratio decreases.
+This is because $\frac{w_x}{r_x}$ increases, hiring workers becomes more expensive relative to hiring capital.</p>
+<hr>
+<p>Because we have two sectors, we can write the same equation for the yogurt sector:
+\begin{align}
+w_y &amp;= p_y \frac{\partial \mathcal{Y}}{\partial L_y} \\
+r_y &amp;= p_y \frac{\partial \mathcal{Y}}{\partial K_y} \\
+\\
+\frac{w_y}{r_y} &amp;= \frac{\mathcal{Y}_L}{\mathcal{Y}_K} = \frac{MPL_y}{MPK_y}
+\end{align}</p>
+<p>Now, workers and capital can move freely between the two sectors.
+If the wage in the xbox sector were higher than the wage in the yogurt sector, workers would move from the yogurt sector to the xbox sector.
+Consequently, no yogurt would be produced.
+In general, this is sub-optimal because typically one imposes the Inada conditions in the utility function.
+The Inada conditions indicate that marginal utilities are infinite when consumption of a good is zero, so that utility can be massively increased by moving from zero to some positive consumption.
+Since in autarky consumption must be equal to production, this means that if consumers want to always consume some good, production of that good must be positive.
+In general, to be able to produce something both production factors must be present, meaning that wages must be the same in both sectors so that workers work in both.</p>
+<p>Using the same reasoning, we conclude that rental rates must be equal in both sectors because capital can move freely between the two sectors.
+Hence $w_x = w_y = w$ and $r_x = r_y = r$.</p>
+<p>This implies that $\frac{w_x}{r_x} = \frac{w_y}{r_y}$ and therefore the marginal rates of technical substitution are equal in both sectors.
+\begin{align}
+\frac{w_x}{r_x} &amp;= \frac{w_y}{r_y} \implies \\
+\frac{MPL_x}{MPK_x} &amp;= \frac{MPL_y}{MPK_y}
+\end{align}</p>
+<p>As we will see in more detail when talking about <a href="https://eric-roca.github.io/courses/international_trade/standard_trade_model/">the Standard Trade Model</a>, this condition already implies that we can write labor in one sector as a function of capital in that same sector (or write capital as a function of labor).
+Moving from here to a PPF is a simple step, but often mathematically involved and impossible to solve analytically.</p>
+<h4 id="factor-intensity">Factor intensity</h4>
+<p>Let&rsquo;s go back to our example where $\mathcal{X} = K_x^\xi L_x^{1-\xi}$, which lead to $\frac{w_x}{r_x} = \frac{1-\xi}{\xi} \frac{K_x}{L_x}$.
+Assume that yogurts also have a Cobb-Douglas production function, but exponent, $\mathcal{Y} = K_y^\upsilon L_y^{1-\upsilon}$, where $\upsilon$ is the Greek letter &ldquo;upsilon&rdquo;.</p>
+<p>In the yogurt sector, we will have
+\begin{align}
+\frac{w_y}{r_y} &amp;= \frac{1-\upsilon}{\upsilon} \frac{K_y}{L_y}
+\end{align}</p>
+<p>Since $\frac{w_x}{r_x} = \frac{w_y}{r_y}$, we thus have
+\begin{align}
+\frac{1-\xi}{\xi} \frac{K_x}{L_x} &amp;= \frac{1-\upsilon}{\upsilon} \frac{K_y}{L_y} \implies
+\end{align}</p>
+<p>Let&rsquo;s suppose that $\xi &gt; \upsilon$, meaning the capital is more producive in the xbox sector than in the yogurt sector.
+How does it affect the ratio of capital to labor?</p>
+<p>\begin{align}
+\frac{1-\xi}{\xi} \frac{K_x}{L_x} &amp;= \frac{1-\upsilon}{\upsilon} \frac{K_y}{L_y} \implies \\
+\frac{\frac{K_x}{L_x}}{\frac{K_y}{L_y}} &amp;= \frac{1-\upsilon}{\upsilon} \frac{\xi}{1-\xi} \\
+\end{align}</p>
+<p>Because $\xi &gt; \upsilon$, the right-hand side is larger than one.</p>
+<details>
+<summary>Proof</summary>
+  Suppose $\xi > \upsilon$.
+  We will show that, assuming $\frac{1-\upsilon}{\upsilon} \frac{\xi}{1-\xi} < 1$, leads to a contradiction.
+  \begin{align}
+    \frac{1-\upsilon}{\upsilon} \frac{\xi}{1-\xi} &< 1 \implies \text{because}\ \xi \in (0,1) \\\\
+    \frac{1-\upsilon}{\upsilon} &< \frac{1-\xi}{\xi} \implies \\\\
+    (1-\upsilon)\xi &< (1-\xi)\upsilon \implies \\\\
+    \xi - \upsilon\xi &< \upsilon - \upsilon\xi \implies \\\\
+    \xi &< \upsilon
+  \end{align}
+  This is a contradiction, so we must have $\frac{1-\upsilon}{\upsilon} \frac{\xi}{1-\xi} > 1$.
+</details>
+<p>This implies that capital intensity is higher in the xbox sector than in the yogurt sector.
+This is $\frac{K_x}{L_x} &gt; \frac{K_y}{L_y}$.
+Note that, in the plot, we have $\frac{L}{K}$.
+Because the yogurt sector is more labor intense, its curve lies to the right of the xbox sector.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/international_trade/ho_capital_intensity.webp" alt="intensity" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Finally, we know that the total amount of labor and capital must be divided between the two industries.
+\begin{align}
+L_x + L_y &amp;= L \\
+K_x + K_y &amp;= K
+\end{align}</p>
+<p>This means that the conutry-wide labor-capital ratio is:
+\begin{align}
+\frac{L}{K} &amp;= \frac{L_x + L_y}{K} \\
+&amp;= \frac{L_x}{K_x} \frac{K_x}{K} + \frac{L_y}{K_y} \frac{K_y}{K} \\
+\end{align}
+This expression indicates that, at the country level, the capital-labor ratio is a weighted average of the capital-labor ratios in the two sectors.
+The weights are the shares of capital in each sector.
+Here the term $\frac{L}{K}$ is the relative supply of labour, while the term $\frac{L_x}{K_x} \frac{K_x}{K} + \frac{L_y}{K_y} \frac{K_y}{K}$ is the relative demand.
+Note that, supply is given and fixed.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/international_trade/ho_capital_intensity_weighted.webp" alt="intensity_economy" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Therefore, given the relative wage-to-rental-rate ratio, the capital-labor ratio in each sector, and the total amount of labor and capital, we can determine the country-wide capital-labor ratio.</p>
+<hr>
+<h3 id="the-stolper-samuelson-theorem">The Stolper-Samuelson Theorem</h3>
+<p>The Stolper-Samuelson theorem studies the effect of a <strong>change in the relative price of a good</strong> on the <strong>relative remuneration of the two factors of production</strong> and the real remuneration of each factor.</p>
+<p>The theorem states that:</p>
+<ul>
+<li>If the relative price of the good produced by the labor-intensive sector increases, then the relative wage increases ($\frac{w}{r} \uparrow$), the real wage increases and the real rental rate decreases.</li>
+<li>Or, alternatively, if the relative price of the good produced by the capital-intensive sector increases, then the relative wage decreases ($\frac{w}{r}  \downarrow$), the real wage decreases and the real rental rate increases.</li>
+</ul>
+<p>This is, the Stolper-Samuelson Theorem indicates that, when prices change, there are winners and losers.
+Therefore, when a country opens up to trade, we know that the good it exports will increase in price, and the good it imports will decrease in price.
+Consequently, and differently from the Ricardian model, under Hecksher-Ohlin, opposition to trade from the importing sector is (partily) rational.
+Nevertheless, the gains from trade as suffficiently large to outweigh the losses, allowing the winners to fully compensate the losers and still be better off.
+Hence, trade remains Pareto-improving.</p>
+<p>Let&rsquo;s prove the Stolepr-Samuelson theorem.
+First, let&rsquo;s go back to the first-order conditions in both sectors:
+\begin{align}
+w_x &amp;= p_x PML_x \\
+w_y &amp;= p_y PML_y \\
+r_x &amp;= p_x PMP_x \\
+r_y &amp;= p_y PMP_y
+\end{align}
+and recalling that to have production in both sectors we must have $w_x = w_y$ and $r_x = r_y$, then we can also re-arrange the expressions to get:
+\begin{align}
+w &amp;= p_x MPL_x = p_y MPL_y \implies \frac{p_x}{p_y} = \frac{MPL_y}{MPL_x} \\
+r &amp;= p_x MPK_x = p_y MPK_y \implies \frac{p_x}{p_y} = \frac{MPK_y}{MPK_x}
+\end{align}</p>
+<p>Now, we are in a good position to analyze what happens when $\frac{p_x}{p_y}$ changes.
+Assume that $\frac{p_x}{p_y}$ increases, so xboxes become more expensive relative to yogurt.
+Then, because $\frac{p_x}{p_y} = \frac{MPL_y}{MPL_x}$, it must be that $\frac{MPL_y}{MPL_x}$ increases.
+If $MPL_y$ increases, this indicates that $L_y$ has decreased.
+Alternatively, it can also be the case that $PML_x$ decreases, meaning that $L_x$ has increased.
+So, the first thing we notice is that, when the price of xboxes increases, labor moves from the yogurt sector to the xbox sector.</p>
+<p>Using the second equation we can see the effects on capital.
+Indeed, when $\frac{p_x}{p_y}$ increases, then $\frac{MPK_y}{MPK_x}$ increases.
+As before, this can be due to $MPK_y$ increasing, which means that $K_y$ has decreased, or $MPK_x$ decreasing, which means that $K_x$ has increased.</p>
+<p>Overall, it is clear that when the price of xboxes increases, capital and labor move from the yogurt sector to the xbox sector.
+Therefore, the production of xboxes increases and the production of yogurt decreases.</p>
+<p>How does this affect the wage-to-rental-rate ratio?
+We know that the economy-wide labor-capital ratio follows:
+\begin{align}
+\frac{L}{K} &amp;= \frac{L_x}{K_x} \frac{K_x}{K} + \frac{L_y}{K_y}\frac{K_y}{K}
+\end{align}</p>
+<p>When $\frac{p_x}{p_y}$ increases, capital moves to the xbox sector ($K_x \uparrow$) which increases the <em>weight</em> of the xbox sector in the labor demand.
+Moreover, xbox production is capital-intensive, meaning that for any wage-to-rental-rate ratio, $\frac{L_x}{K_x} &lt; \frac{L_y}{K_y}$.
+Then, the economy-wide labor-capital ratio $\frac{L}{K}$ becomes closer to the xbox sector&rsquo;s labor-capital ratio $\frac{L_x}{K_x}$.
+As a consequence, $\frac{w}{r}$ falls for all levels $\frac{L}{K}$.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/international_trade/ho_capital_intensity_equilibrium_2.webp" alt="ho_capital_intensity_equilibrium_2" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>Intuitively, when $\frac{p_x}{p_y}$ increases, forms want to produce more xboxes because they are more profitable.
+To do so, capital and labor in the xbox industry must increase.
+Now, let&rsquo;s suppose we move one unit of capital from the yogurt sector to the xbox sector.
+Because the capital intensity in the xbox sector is higher than in the yogurt sector ($\frac{K_x}{L_x} &gt; \frac{K_y}{L_y}$), for each unit of capital in the xbox sector, we need less workers than those that will be freed in the yogurt sector.
+So, workers are in excess supply and the wage rate must adjust downwards to clear the market.</p>
+<p>Lastly, at the new equilibrium, both sectors deepened their labor-capital intensity, this is, the ratio $\frac{L}{K}$ increases, as indicated by the graph (and because $\frac{w}{r}$ is inversely related to $\frac{L}{K}$ in all sectors).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/international_trade/ho_capital_intensity_equilibrium_3.webp" alt="ho_capital_intensity_equilibrium_3" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<p>For instance, if $\frac{K_x}{L_x} = 2 \implies K_x = 2 L_x$ and $\frac{K_y}{L_y} = 1 \implies K_y = 1 L_y$, then moving 10 units of capital from the yogurt sector to the xbox sector requires adding 5 workers to the xbox sector.
+Yet, because we moved 10 units of capital from the yogurt sector, we have to decrease employment by 10 workers in the yogurt sector.
+So, we have an excess of 5 workers that will push the wage down.</p>
+<div style="border: 2px  solid #3498db; padding: 10px; margin: 20px;">
+  <h2 style="color: #3498db; margin: 0 0 10px 0;">Result 1</h2>
+  An increase in the relative price of a good will increase the relative factor price of the factor that it uses intensively.
+</div>
+<p>Finally, we can study who wins and who looses from an increase in $\frac{p_x}{p_y}$.
+We do so by analyzing the <em>real wage</em> and the <em>real capital return</em>, this is, $\frac{w}{p_x}$, $\frac{w}{p_y}$ and $\frac{r}{p_x}$, $\frac{r}{p_y}$.</p>
+<p>Production factors are paid their marginal productivity:
+\begin{align}
+r &amp;= p_x MPK_x \quad \text{and} \quad r = p_y MPK_y \\
+\frac{r}{p_x} &amp;= MPK_x \quad \text{and} \quad \frac{r}{p_y} = MPK_y
+\end{align}</p>
+<p>We also had:
+\begin{align}
+\frac{w}{s} &amp;= \frac{MPL_x}{MPK_x} \\
+\frac{w}{s} &amp;= \frac{MPL_y}{MPK_y}
+\end{align}</p>
+<p>Because $\frac{w}{s}$ decreases, the marginal product of labor must decrease and the marginal product of capital increases.
+Importantly, this happens in <strong>both</strong> sectors.</p>
+<p>The real wage expressed in terms of xboxes is $\frac{w}{p_x}$.
+From the first-order conditions $w = p_x MPL_x$ we thus have $\frac{w}{p_x} = MPL_x$.
+Since $MPL_x$ decreases, the real wage decreases.
+The same is true if we express the real wage in terms of yogurts.
+From the first-order condition $w = p_y MPL_y$ we have $\frac{w}{p_y} = MPL_y$.
+Since $MPL_y$ decreases, the real wage decreases.</p>
+<p>By the same token, we can see that real capital return increases in both sectors.
+Starting from the first order conditions $r = p_x MPK_x$ and $r = p_y MPK_y$, we have $\frac{r}{p_x} = MPK_x$ and $\frac{r}{p_y} = MPK_y$.
+So, the real capital return increases when we express it in terms of xboxes or yogurts.</p>
+<div style="border: 2px  solid #3498db; padding: 10px; margin: 20px;">
+  <h2 style="color: #3498db; margin: 0 0 10px 0;">The Stolper-Samuelson Theorem</h2>
+  <b>Winners and losers from a price change</b>
+  A rise in the relative price of a good will make the owner of the factor that the good uses intensively better off and make the owner of the factor of that the good does not use intensively worse of.
+</div>
+<h4 id="example-1">Example</h4>
+<p>Suppose that $\mathcal{X} = K_x^\frac{2}{3} L_x^\frac{1}{3}$ and $\mathcal{Y} = K_y^\frac{1}{3} L_y^\frac{2}{3}$.
+From the optimality conditions (and equality of wages and returns) we have:
+\begin{align}
+\frac{w}{r} &amp;= \frac{\frac{1}{3} K_x^\frac{2}{3} L_x^\frac{-2}{3}}{\frac{2}{3} K_x^\frac{-1}{3} L_x^\frac{1}{3}} = \frac{1}{2} \frac{K_x}{L_x} \\
+\frac{w}{r} &amp;= \frac{\frac{2}{3} K_x^\frac{1}{3} L_x^\frac{-1}{3}}{\frac{1}{3} K_x^\frac{-2}{3} L_x^\frac{2}{3}} = 2 \frac{K_x}{L_x} \\
+\end{align}
+From here, we can derive the labour-capital ratios as functions of $\frac{w}{p}$:
+\begin{align}
+\frac{L_x}{K_x} &amp;= \frac{1}{2} \left(\frac{w}{r}\right)^{-1} \\
+\frac{L_y}{K_y} &amp;= 2 \left(\frac{w}{r}\right)^{-1} \\
+\end{align}</p>
+<p>Hence, in equilibrium we must have:
+\begin{equation}
+\frac{L}{K} = \frac{L_x}{K_x} \frac{K_x}{K} + \frac{L_y}{K_y}\frac{K_y}{K}
+\end{equation}</p>
+<p>Substituting the labour-capital ratios from above, we get:
+\begin{align}
+\frac{L}{K} &amp;= \frac{1}{2} \left(\frac{w}{r}\right)^{-1} \frac{K_x}{K} + 2 \left(\frac{w}{r}\right)^{-1} \frac{K_y}{K} \implies \\
+\frac{w}{r} &amp;= \frac{K}{L}\left(\frac{1}{2}\frac{K_x}{K} + 2\frac{K_y}{K}\right)
+\end{align}
+Finally, because $K = K_x + K_y$
+\begin{equation}
+\frac{w}{r} = \frac{K}{L}\left(\frac{1}{2}\frac{K_x}{K} + 2\frac{(K-K_x)}{K}\right)
+\end{equation}
+Therefore, when $K_x$ increases, $\frac{w}{r}$ decreases because $\frac{\partial \frac{w}{r}}{\partial K_x} = \frac{K}{L}\left(\frac{1}{2}\frac{1}{K} - 2\frac{1}{K}\right) = -\frac{K}{L}\frac{1}{2} &lt; 0$.</p>
+<p>We also have the following relationship:
+\begin{align}
+\frac{p_x}{p_y} &amp;= \frac{\frac{2}{3}K_y^\frac{1}{3} L_y^\frac{-1}{3}}{\frac{1}{3}K_x^\frac{2}{3}L_x^\frac{-2}{3}} = 2 \frac{K_y^\frac{1}{3} L_x^\frac{2}{3}}{K_x^\frac{2}{3} L_y^\frac{1}{3}} \\
+\frac{p_x}{p_y} &amp;= \frac{\frac{1}{3}K_y^\frac{-2}{3}L_y^\frac{2}{3}}{\frac{2}{3}K_x^\frac{-1}{3}L_x^\frac{1}{3}} =  \frac{1}{2}\frac{K_x^\frac{1}{3}L_y^\frac{2}{3}}{K_y^\frac{2}{3}L_x^\frac{1}{3}} \\
+\end{align}</p>
+<p>Again, because $K = K_x + K_y$, and $L = L_x + L_y$, we can write:
+\begin{align}
+\frac{p_x}{p_y} &amp;= 2 \frac{(K-K_x)^\frac{1}{3} L_x^\frac{2}{3}}{K_x^\frac{2}{3} (L - L_x)^\frac{1}{3}} \\
+\frac{p_x}{p_y} &amp;= \frac{1}{2}\frac{K_x^\frac{1}{3}(L-L_x)^\frac{2}{3}}{(K-K_x)^\frac{2}{3}L_x^\frac{1}{3}}
+\end{align}</p>
+<p>Suppose that $\frac{p_x}{p_y} = 0.75$ and that $L = 10 , K = 20$.
+Then:</p>
+<p>\begin{align}
+0.75 &amp;= 2 \frac{(20-K_x)^\frac{1}{3} L_x^\frac{2}{3}}{K_x^\frac{2}{3} (10 - L_x)^\frac{1}{3}} \\
+0.75 &amp;= \frac{1}{2}\frac{K_x^\frac{1}{3}(10-L_y)^\frac{2}{3}}{(20-K_x)^\frac{2}{3}L_x^\frac{1}{3}} \\
+\\ \\
+K_x &amp;= 10.8642,, L_x = 2.2917,, K_y = 9.1358,, L_y = 7.7083
+\end{align}</p>
+<p>Then, from,
+\begin{equation}
+\frac{w}{r} = \frac{K}{L}\left(\frac{1}{2}\frac{K_x}{K} + 2\frac{(K-K_x)}{K}\right)
+\end{equation}
+we can retrieve the wage-rental ratio $\frac{w}{r} = 2.37$
+The real wage in terms of $x$ is $\frac{w}{p_x} = MPL_x = 0.94$, in terms of $y$ is 0.70 and the real rental rate is $\frac{r}{p_x} = 0.39$ and $\frac{r}{p_y} = 0.2976$</p>
+<p>If $\frac{p_x}{p_y}$ increases to $0.8$, then:
+\begin{align}
+0.8 &amp;= 2 \frac{(20-K_x)^\frac{1}{3} L_x^\frac{2}{3}}{K_x^\frac{2}{3} (10 - L_x)^\frac{1}{3}} \\
+0.8 &amp;= \frac{1}{2}\frac{K_x^\frac{1}{3}(10-L_y)^\frac{2}{3}}{(20-K_x)^\frac{2}{3}L_x^\frac{1}{3}} \\
+\\ \\
+K_x &amp;= 13.6458,, L_x = 3.493, K_y = 6.3541,, L_y = 6.506
+\end{align}</p>
+<p>And the wage-rental ratio decreases to $\frac{w}{r} = 1.9531$
+The real wage in terms of $x$ is $\frac{w}{p_x} = MPL_x = 0.826$, in terms of $y$ is 0.661 and the real rental rate is $\frac{r}{p_x} = 0.423$ and $\frac{r}{p_y} = 0.3386$</p>
+<p>Consequently, as predicted, when the relative price of the capital-intensive good increases, the wage-rental ratio decreases, the real wage decreases, and the real rental rate increases.</p>
+<h3 id="the-rybczynski-theorem">The Rybczynski Theorem</h3>
+<p>The Rybczynski theorem states that at constant relative goods prices, a rise in the endowment of one factor will lead to a more than proportional expansion of the output in the sector which uses that factor intensively, and an absolute decline of the output of the other good.
+This is, in general, an increase in a country&rsquo;s endowment of a factor will cause an increase in output of the good which uses that factor intensively, and a decrease in the output of the other good.</p>
+<p>Let&rsquo;s suppose that our country experiences a population increase.
+According to the theorem, the yogurt sector (intensive in labor) will increase its production more than proportionally, and the xbox sector (intensive in capital) will decrease its production.</p>
+<p>We can easily verify this.
+From
+\begin{equation}
+\frac{L}{K} = \frac{L_x}{K_x} \frac{K_x}{K} + \frac{L_y}{K_y}\frac{K_y}{K}
+\end{equation}
+an increase in $L$ means that the left-hand side increases in value.
+Because yogurts are labor-intensive $\left(\frac{K_x}{L_x} &gt; \frac{K_y}{L_y} \implies \frac{L_y}{K_y} &gt; \frac{L_x}{K_x} \right)$, to increase the right-hand side of the equation we need to increase $\frac{K_y}{K}$, and thus decrease $\frac{K_x}{K}$.
+Moving capital to the yogurt sector increases its production.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/international_trade/ho_rybczynski.webp" alt="rybczynski" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h3 id="the-hecksher-ohlin-theorem">The Hecksher-Ohlin Theorem</h3>
+<p>Let&rsquo;s suppose now that we finally have two countries: Home and Foreign.
+Each country is endowed with labor $L, L^\star$ and capital $K, k^\star$.
+There are two sectors in each country: xbox and yogurt.
+Production technology is the same in both countries, this is, $x = \mathcal{X}(K, L)$ and $y = \mathcal{Y}(K, L)$.
+Consumers also have the same preferences over xboxes and yogurts in both countries indicated by $u(x,y)$.</p>
+<p>The Hecksher-Ohlin theorem states that in the long run, the country that is relatively more abundant in a factor will specialize in the production of the good that uses that factor intensively.
+Let&rsquo;s derive it!</p>
+<p>To begin with, we suppose that Home and Foreign have exactly the same endowments.
+$L = L^\star$ and $K = K^\star$.
+Becuase they also have the same technology and preferences, trade does <strong>not occur</strong>.
+Their internal prices are identical, and thus the international price will also coincide with the two autarky prices.
+The relative supply of labor with respect to capital at the world level is:
+\begin{equation}
+\frac{L + L^\star}{K + K^\star}
+\end{equation}</p>
+<p>Now, let&rsquo;s shift some capital from Foreign to Home, such that Home is capital abundant and Foreign labor abundant.
+\begin{equation}
+\frac{L}{K} &lt; \frac{L + L^\star}{K + K^\star} &lt; \frac{L^\star}{K^\star}
+\end{equation}</p>
+<p>The Rybczynski theorem tells us that Home will increase its production of xboxes and decrease its production of yogurts, because xboxes are capital-intensive.
+With exactly the same preferences, Home will have an excess supply of xboxes (alternatively, the price of xboxes at Home will be lower than in Foreign), so it will export xboxes and import yogurts.</p>
+<p>The implication is clear:</p>
+<ul>
+<li>When a country opens up to international trade, it will specialize in the production of the good that uses the factor that it is relatively more abundant in.</li>
+</ul>
+<p>Moreover, from the Stolper-Samuelson theorem we also know that capital owners will benefit from trade in Home, and workers will benefit from trade in Foreign.</p>
+<h3 id="solving-the-model">Solving the model</h3>
+<p>We need to find the allocations $K_x, L_x, K_y, L_y, x, y, w, r, K_x^\star, L_x^\star, K_y^\star, L_y^\star, x^\star, y^\star, \frac{p_x}{p_y}$ given endowments $K, L, K^\star, L^\star$, production functions and preferences.</p>
+<p>First, from the maximization of profits, we can derive:
+\begin{align}
+w &amp;= p_x \frac{\partial \mathcal{X}(K_x,L_x)}{\partial L_x} =   p_y \frac{\partial \mathcal{Y}(K_y,L_y)}{\partial L_y} \\
+r = p_x  \frac{\partial \mathcal{X}(K_x,L_x)}{\partial K_x} &amp;= p_y \frac{\partial \mathcal{Y}(K_y,L_y)}{\partial K_y} \\
+\\
+w^\star &amp;= p_x \frac{\partial \mathcal{X}(K_x^\star,L_x^\star)}{\partial L_x^\star} =   p_y \frac{\partial \mathcal{Y}(K_y^\star,L_y^\star)}{\partial L_y^\star} \\
+r^\star = p_x  \frac{\partial \mathcal{X}(K_x^\star,L_x^\star)}{\partial K_x^\star} &amp;= p_y \frac{\partial \mathcal{Y}(K_y^\star,L_y^\star)}{\partial K_y^\star}
+\end{align}</p>
+<p>From the maximization of utility, we get the labor-capital ratio in each sector as a function of prices by solving:
+\begin{align}
+\frac{MPL_x}{MPK_x} &amp;= \frac{MPL_y}{MPK_y} \\
+\frac{MPL_x^\star}{MPK_x^\star} &amp;= \frac{MPL_y^\star}{MPK_y^\star}
+\end{align}</p>
+<p>Once we have $\frac{L}{K}$ as a function of prices we can get the wage-to-rental rate also as a function of prices.
+It is important to note that wages and rental rates depend only on labor-capital ratios and the prices, <strong>not</strong> on the endowment.
+At this stage, we have
+\begin{align}
+\frac{L_x}{K_x} &amp;= f\left(\frac{p_x}{p_y}\right) \\
+\frac{L_y}{K_y} &amp;= g\left(\frac{p_x}{p_y}\right) \\
+\frac{L_x^\star}{K_x^\star} &amp;= f^\star\left(\frac{p_x}{p_y}\right) \\
+\frac{L_y^\star}{K_y^\star} &amp;= g^\star\left(\frac{p_x}{p_y}\right) \\
+\frac{w}{r} = h\left(\frac{p_x}{p_y}\right) \\
+\frac{w^\star}{r^\star} = h^\star\left(\frac{p_x}{p_y}\right)
+\end{align}</p>
+<p>From here, we can use $\frac{L}{K} = \frac{L_x}{K_x} \frac{K_x}{K} + \frac{L_y}{K_y} \frac{K_y}{K}$ to get the allocations in each sector as a function of prices.
+Because $\frac{L}{K}$ is given (the country endowment) we can solve:
+\begin{align}
+\frac{L}{K} &amp;= f\left(\frac{p_x}{p_y}\right) \frac{K_x}{K} + g\left(\frac{p_x}{p_y}\right) \frac{K-K_x}{K}
+\end{align}</p>
+<p>And thus, retrieve $K_x$ and $K_y = K - K_x$ as a function of prices.
+Finally, we can use $K_x$ and $L_x$ to find the amount produced in the xbox sector as a function of prices, and the same applies to yogurts.
+This can of course done for both countries.</p>
+<p>To obtain the equilibrium price level with trade, we use the utility function to derive the demand for each good as a function of prices.
+This is quite involved (specially if non-homothetic function are used) but the idea is to get the demand for each good as a function of prices.
+From it, we can compute the supply of exports of xboxes from one country and the demand o imports of xboxes from the other country.
+Equating supply of exports to demand of imports yields the equilibrium price.</p>
+<h4 id="example-2">Example</h4>
+<p>Let $\mathcal{X} = K_x^\frac{1}{2} L_x^\frac{1}{2}$ and $\mathcal{Y} = K_y^\frac{1}{3} L_y^\frac{2}{3}$.
+Hence, the xbox sector is capital intensive while the yogurt sector is labor intensive.</p>
+<p>Let&rsquo;s solve for the model.
+First, we need to find the labor-capital ratio in each sector as a function of prices.
+Maximizing profits at home:
+\begin{align}
+max_{K_x,L_x} &amp;\ \pi = p_x \mathcal{X} - w L_x - r K_x \\
+0 &amp;= \frac{\partial \pi}{\partial K_x} \implies r = p_x \frac{1}{2} K_x^{-\frac{1}{2}} L_x^\frac{1}{2} \\
+0 &amp;= \frac{\partial \pi}{\partial L_x} \implies w = p_x \frac{1}{2} K_x^\frac{1}{2} L_x^{-\frac{1}{2}}
+\\
+\max_{K_y,L_y} &amp;\ \pi^\star = p_y \mathcal{Y} - w^\star L_y - r^\star K_y \\
+0 &amp;= \frac{\partial \pi^\star}{\partial K_y} \implies r = p_y \frac{1}{3} K_y^{-\frac{2}{3}} L_y^\frac{2}{3} \\
+0 &amp;= \frac{\partial \pi^\star}{\partial L_y} \implies w = p_y \frac{2}{3} K_y^\frac{1}{3} L_y^{-\frac{1}{3}}
+\end{align}</p>
+<p>Because $w$ and $r$ are the same in both sectors:
+\begin{align}
+p_x \frac{1}{2} K_x^{-\frac{1}{2}} L_x^\frac{1}{2} &amp;= p_y \frac{1}{3} K_y^{-\frac{2}{3}} L_y^\frac{2}{3} \\
+p_x \frac{1}{2} K_x^\frac{1}{2} L_x^{-\frac{1}{2}} &amp;= p_y \frac{2}{3} K_y^\frac{1}{3} L_y^{-\frac{1}{3}} \\
+\\
+\frac{p_x}{p_y} &amp;= \frac{\frac{1}{3} K_y^{-\frac{2}{3}} L_y^\frac{2}{3}}{\frac{1}{2} K_x^{-\frac{1}{2}} L_x^\frac{1}{2}} = \frac{2}{3}\frac{K_x^\frac{1}{2}L_y^\frac{2}{3}}{K_y^\frac{2}{3}L_x^\frac{1}{2}} = \frac{2}{3} \left(\frac{L_x}{K_x}\right)^\frac{-1}{2} \left(\frac{L_y}{K_y}\right)^\frac{2}{3} \\<br>
+\frac{p_x}{p_y} &amp;= \frac{\frac{2}{3} K_y^\frac{1}{3} L_y^{-\frac{1}{3}}}{\frac{1}{2} K_x^\frac{1}{2} L_x^{-\frac{1}{2}}} = \frac{4}{3} \frac{K_y^\frac{1}{3}L_x^\frac{1}{2}}{K_x^\frac{1}{2}L_y^\frac{1}{3}} = \frac{4}{3} \left(\frac{L_x}{K_x}\right)^\frac{1}{2} \left(\frac{L_y}{K_y}\right)^\frac{-1}{3}
+\end{align}</p>
+<p>From the second we can write:
+\begin{equation}
+\left(\frac{L_x}{K_x}\right)^\frac{1}{2} = \frac{3}{4} \frac{p_x}{p_y} \left(\frac{L_y}{K_y}\right)^\frac{1}{3}
+\end{equation}</p>
+<p>Re-arranging the first equation gives:
+\begin{equation}
+\left(\frac{L_x}{K_x}\right)^\frac{1}{2} = \frac{2}{3} \left(\frac{p_x}{p_y}\right)^{-1} \left(\frac{L_y}{K_y}\right)^\frac{2}{3}
+\end{equation}</p>
+<p>Thus, replacing:
+\begin{align}
+\frac{3}{4} \frac{p_x}{p_y} \left(\frac{L_y}{K_y}\right)^\frac{1}{3} &amp;= \frac{2}{3} \left(\frac{p_x}{p_y}\right)^{-1} \left(\frac{L_y}{K_y}\right)^\frac{2}{3} \\
+\frac{9}{8} \left(\frac{p_x}{p_y}\right)^2 &amp;= \left(\frac{L_y}{K_y}\right)^\frac{1}{3} \\
+\frac{L_y}{K_y} &amp;= \left(\frac{9}{8}\right)^3 \left(\frac{p_x}{p_y}\right)^6
+\end{align}</p>
+<p>We have found the labor-capital ratio in the yogurt industry as a function of prices.
+Then, we can use $  \left(\frac{L_x}{K_x}\right)^\frac{1}{2} = \frac{3}{4} \frac{p_x}{p_y} \left(\frac{L_y}{K_y}\right)^\frac{1}{3} \implies \frac{L_x}{K_x} = \left(\frac{3}{4}\right)^2 \left(\frac{p_x}{p_y}\right)^{2} \left(\frac{L_y}{K_y}\right)^\frac{2}{3}$ to retrieve $\frac{L_x}{K_x}$:
+\begin{equation}
+\frac{L_x}{K_x} = \left(\frac{3}{4}\right)^2 \left(\frac{p_x}{p_y}\right)^{2} \left(\frac{9}{8}\right)^2 \left(\frac{p_x}{p_y}\right)^4 = \left(\frac{27}{32}\right) ^2\left(\frac{p_x}{p_y}\right)^6
+\end{equation}</p>
+<p>The next step is to find use the country endowments to derive $K_x$, $L_x$ and $K_y$, $L_y$ as a function of prices.
+\begin{align}
+\frac{L}{K} &amp;= \frac{L_x}{K_x}\frac{K_x}{K} + \frac{L_y}{K_y}\frac{K_y}{K} \\
+\frac{L}{K} &amp;= \left(\frac{27}{32}\right)^2 \left(\frac{p_x}{p_y}\right)^6 \frac{K_x}{K} + \left(\frac{9}{8}\right)^3 \left(\frac{p_x}{p_y}\right)^6 \frac{K-K_x}{K} \\
+K_x &amp;= \frac{2\left(729 K \left(\frac{p_x}{p_y}\right)^6 - 512 L\right)}{729 \left(\frac{p_x}{p_y}\right)^6} = 2K - \frac{1024}{729}L \left(\frac{p_x}{p_y}\right)^{-6}
+\end{align}
+Therefore, we also have $K_y = K - K_x = \frac{1024}{729}L\left(\frac{p_x}{p_y}\right)^{-6}-K$.</p>
+<p>We can corroborate already that, when $\frac{p_x}{p_y}$ increases, $K_x$ increases and $K_y$ decreases.
+Next, let&rsquo;s find the levels $L_x$ and $L_y$:
+\begin{align}
+\frac{L_y}{K_y} &amp;= \left(\frac{9}{8}\right)^3 \left(\frac{p_x}{p_y}\right)^6 \implies L_y = 2L - \frac{729}{512}K \left(\frac{p_x}{p_y}\right)^6 \\
+\frac{L_x}{K_x} &amp;= \left(\frac{27}{32}\right)^2 \left(\frac{p_x}{p_y}\right)^6 \implies L_x = \frac{729}{512}K \left(\frac{p_x}{p_y}\right)^6 - L
+\end{align}
+Here we can also confirm that when $\frac{p_x}{p_y}$ increases, $L_x$ increases and $L_y$ decreases.
+So, when $\frac{p_x}{p_y}$ increases, the production of $x$ increases and the production of $y$ decreases.</p>
+<p>We can indeed find the production as a function of prices:
+\begin{align}
+x = \mathcal{X}(K_x,L_x) = \left(2K - \frac{1024}{729}L \left(\frac{p_x}{p_y}\right)^{-6}\right)^\frac{1}{2} \left(\frac{729}{512}K \left(\frac{p_x}{p_y}\right)^6 - L\right)^\frac{1}{2} \\
+y = \mathcal{Y}(K_y,L_y) = \left(\frac{1024}{729}L\left(\frac{p_x}{p_y}\right)^{-6}-K\right)^\frac{1}{3} \left(2L - \frac{729}{512}K \left(\frac{p_x}{p_y}\right)^6\right)^\frac{2}{3}
+\end{align}</p>
+<p>This closes the supply part of the Hecksher-Ohlin model.
+The next step is to derive the demand for $x$ and $y$ as a function of prices so that we can compute exports and imports.
+We use here a simple utility formulation: $u(x,y) = \log(x) + \log(y)$.</p>
+<p>With the country producing the previously derived quantities, this means that utility has to be maximized on an isovalue line passing through that point and with slope equal to the relative prices.
+This is:
+\begin{align}
+\max_{x,y} &amp;= \log(x) + \log(y) \\
+\text{s.t.} &amp; p_x x + p_y y = \\
+&amp;= p_x \left(2K - \frac{1024}{729}L \left(\frac{p_x}{p_y}\right)^{-6}\right)^\frac{1}{2} \left(\frac{729}{512}K \left(\frac{p_x}{p_y}\right)^6 - L\right)^\frac{1}{2} + \\
+&amp;+ p_y \left(\frac{1024}{729}L\left(\frac{p_x}{p_y}\right)^{-6}-K\right)^\frac{1}{3} \left(2L - \frac{729}{512}K \left(\frac{p_x}{p_y}\right)^6\right)^\frac{2}{3}
+\end{align}</p>
+<p>From here, the maths become very messy (even more than what we have now)!
+Once we maximize, we can obtain the demand for $x$ as a function of prices.
+From here, determining the supply of exports is simple: production ($\mathcal{X}$) minus consumption.
+Because we have the same production and utility function for both countries, demand for imports will be consumption minus production.
+Note that we wrote the function without replacing values for $K$ and $L$, which will differ between countries and give rise to trade.
+Finally, equating yields the equilibrium price level.</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/international_trade/ho_graphically.webp" alt="ho_graphically" loading="lazy" data-zoomable /></div>
+  </div></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/international_trade/ho_graphically_2.webp" alt="ho_graphically" loading="lazy" data-zoomable /></div>
+  </div></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/international_trade/ho_eq.webp" alt="eq" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h2 id="factor-prize-equalization">Factor prize equalization</h2>
+<p>Without trade, capital earns less at Home than in Foreign because Home is capital-abundant, and labor earns more because Home is labor-abundant.
+Similarly, the relative price of xboxes will be lower in Home before trade.</p>
+<p>When coutries open up to trade, the price of goods converges and becomes unique.
+This price convergence also implies that factors earn the same in both countries: <strong>trade equalizes factor prices</strong>.
+Indeed, as we saw before, wages and rents do <em>not</em> depend on the endowment of each country.</p>
+<p>From the set of conditions:
+\begin{align}
+\frac{p_x}{p_y} &amp;= \frac{MPK_y}{MPK_x} = \frac{MPL_y}{MPL_x} \\
+\frac{p_x}{p_y} &amp;= \frac{MPK_y^\star}{MPK_x^\star} = \frac{MPL_y^\star}{MPL_x^\star} \\
+\end{align}</p>
+<p>We can find that equal labor-capital ratios must prevail for each sector across countries.
+This is:
+\begin{align}
+\left(\frac{L_x}{K_x}\right) &amp;= \left(\frac{L_x^}{K_x}\right)^\star \\
+\left(\frac{L_y}{K_y}\right) &amp;= \left(\frac{L_y^}{K_y}\right)^\star \\
+\end{align}</p>
+<p>Then, because $\frac{w}{r} = \frac{MPL_x}{MPK_x} = \frac{MPL_y}{MPK_y}$, and $\frac{w^\star}{r^\star} = \frac{MPL_x^\star}{MPK_x^\star} = \frac{MPL_y^\star}{MPK_y^\star}$, we have that $\frac{w}{r} = \frac{w^\star}{r^\star}$, using the previous condition we arrive at $w = w^\star$ and $r = r^\star$.
+This is, factor prices equalize.</p>
+<h2 id="todo">TODO:</h2>
+<h1 id="empirics-on-ho">Empirics on HO</h1>
+<p><a href="https://en.wikipedia.org/wiki/Heckscher%E2%80%93Ohlin_model#Features_of_the_model" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Heckscher%E2%80%93Ohlin_model#Features_of_the_model</a></p>
+<h1 id="empirics-on-stolper-samuelson">Empirics on Stolper-Samuelson</h1>
+<p><a href="https://en.wikipedia.org/wiki/Stolper%E2%80%93Samuelson_theorem" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Stolper%E2%80%93Samuelson_theorem</a></p>
+
+          </div>
+
+          
+
+
+
+          
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/courses/international_trade/ricardo-empirics/" rel="next">Empirics around Ricardo</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/courses/international_trade/heckscher-ohlin-empirics/" rel="prev">Empirics around Heckscher-Ohlin</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on 11 Jul, 2019</p>
+
+          
+
+
+
+          
+
+
+
+
+          
+
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+
+  
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+    
+  
+  
+    
+  
+
+  
+
+  
+  <p class="powered-by copyright-license-text">
+    © 2024 Me. This work is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank">CC BY NC ND 4.0</a>
+  </p>
+  
+
+  <p class="powered-by footer-license-icons">
+    <a href="https://creativecommons.org/licenses/by-nc-nd/4.0" rel="noopener noreferrer" target="_blank" aria-label="Creative Commons">
+      <i class="fab fa-creative-commons fa-2x" aria-hidden="true"></i>
+      <i class="fab fa-creative-commons-by fa-2x" aria-hidden="true"></i>
+      
+        <i class="fab fa-creative-commons-nc fa-2x" aria-hidden="true"></i>
+      
+      
+        <i class="fab fa-creative-commons-nd fa-2x" aria-hidden="true"></i>
+      
+    </a>
+  </p>
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    
+    
+  </div>
+
+      
+
+    
+    <script src="/js/vendor-bundle.min.32ee83730ed883becad04bc5170512cc.js"></script>
+
+    
+    
+    
+      
+
+      
+      
+
+      
+
+      
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/highlight.min.js" integrity="sha512-Ypjm0o7jOxAd4hpdoppSEN0TQOC19UtPAqD+4s5AlXmUvbmmS/YMxYqAqarQYyxTnB6/rqip9qcxlNB/3U9Wdg==" crossorigin="anonymous"></script>
+        
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/r.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/latex.min.js" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+    <script src="https://cdn.jsdelivr.net/gh/bryanbraun/anchorjs@4.2.2/anchor.min.js" integrity="sha512-I7w3ZdSFzw5j3jU3ZkNikBNeIrl3i+hEuEdwNmqUJvwNcaBUNcijnP2gd9DtGlgVYDplfjGoD8vTNsID+lCjqg==" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+
+    
+    
+    
+    <script id="page-data" type="application/json">{"use_headroom":false}</script>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.d66c8b3b4ad0f66a62428f6bc7cf477d.js"></script>
+
+    
+    
+    
+    
+    
+    
+      
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <script src="/js/wowchemy-publication.68f8d7090562ca65fc6d3cb3f8f2d2cb.js" type="module"></script>
+
+
+
+
+
+
+</body>
+</html>
