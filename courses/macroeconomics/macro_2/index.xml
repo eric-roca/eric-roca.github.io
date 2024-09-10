@@ -30,7 +30,7 @@ L&amp;rsquo;incapacité du modèle classique à fournir des solutions efficaces 
 &lt;h2 id=&#34;le-modèle-classique&#34;&gt;Le modèle classique&lt;/h2&gt;
 &lt;p&gt;Le modèle classique s&amp;rsquo;articule autour de trois équations fondamentales :&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Équilibre dans le marché de travail&lt;/li&gt;
+&lt;li&gt;Équilibre dans le marché du travail&lt;/li&gt;
 &lt;li&gt;Équilibre dans le marché de la monnaie&lt;/li&gt;
 &lt;li&gt;Équilibre dans le marché de l&amp;rsquo;emprunt&lt;/li&gt;
 &lt;/ul&gt;
@@ -99,7 +99,7 @@ Nous la notons, de manière générale avec, $N^d = f\left(\frac{w}{p}\right)$&l
     &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/macro_2/labour_demand_function.webp&#34; alt=&#34;Demande de travail&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 
-En plus, avec un certain nombre de travailleurs $N$, on retrouve le salaire d&amp;rsquo;équilibre $\left(\frac{w}{p}\right)^\star$
+De plus, avec un certain nombre de travailleurs $N$, on retrouve le salaire d&amp;rsquo;équilibre $\left(\frac{w}{p}\right)^\star$
 Ainsi, si le nombre de travailleurs augmente, le salaire diminue.&lt;/p&gt;
 &lt;h5 id=&#34;exemple&#34;&gt;Exemple&lt;/h5&gt;
 &lt;p&gt;Imaginons que l&amp;rsquo;économie dispose de 4 unités de capital ($\bar{K} = 4$), et que la fonction de production est $F(\bar{K}, N) = \bar{K}^{0.5} N^{0.5} = 2 N^{0.5}$
@@ -168,8 +168,8 @@ Pour un économiste classique, seule une option était possible pour expliquer c
 &lt;p&gt;On s&amp;rsquo;appuie sur la &lt;strong&gt;théorie quantitative de la monnaie&lt;/strong&gt; d&amp;rsquo;Alfred Marshall pour expliquer pourquoi les gens détiennent des encaisses réelles.&lt;/p&gt;
 &lt;p&gt;Selon Marshall, les agents économiques ont besoin d&amp;rsquo;encaisses réelles pour financer leurs achats.
 Ainsi, la demande de monnaie est &lt;strong&gt;proportionnelle&lt;/strong&gt; au PIB.
-En plus, on peut utiliser un même billet en multiples occasions: la monnaie a une vitesse $v$
-Plus la monnaie est rapide, moins de besoin d&amp;rsquo;encaisses car le même billet peut être utilisé pour financer plusieurs transactions.
+De plus, on peut utiliser un même billet de multiples occasions: la monnaie a une vitesse $v.$
+Plus la monnaie est rapide, moins le besoin d&amp;rsquo;encaisses est nécessaire car le même billet peut être utilisé pour financer plusieurs transactions.
 Enfin, si le niveau de prix $p$ est plus important, il est nécessaire de détenir plus de monnaie.&lt;/p&gt;
 &lt;p&gt;$$M^d = v p Y$$&lt;/p&gt;
 &lt;h4 id=&#34;offre-de-monnaie&#34;&gt;Offre de monnaie&lt;/h4&gt;
@@ -179,8 +179,8 @@ Enfin, si le niveau de prix $p$ est plus important, il est nécessaire de déten
 &lt;p&gt;L&amp;rsquo;équilibre est atteint lorsque $M^d = M^s$.
 Autrement dit:&lt;/p&gt;
 &lt;p&gt;$$p = \frac{1}{v \bar{Y}} \bar{M}$$&lt;/p&gt;
-&lt;p&gt;Ici, nous avons mis $\bar{Y}$ car le niveau de production vient déterminé par la fonction de production et le nombre de travailleurs et donc, est exogène au marché de la monnaie.
-On retrouve la pensée classique : le niveau de prix s&amp;rsquo;ajuste de manière que l&amp;rsquo;offre de monnaie soit égale à la demande de monnaie.&lt;/p&gt;
+&lt;p&gt;Ici, nous avons mis $\bar{Y}$ car le niveau de production est déterminé par la fonction de production et le nombre de travailleurs et donc, est exogène au marché de la monnaie.
+On retrouve la pensée classique : le niveau de prix s&amp;rsquo;ajuste de manière à ce que l&amp;rsquo;offre de monnaie soit égale à la demande de monnaie.&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -238,13 +238,13 @@ On retrouve la pensée classique : le niveau de prix s&amp;rsquo;ajuste de mani�
 &lt;/p&gt;
 &lt;h5 id=&#34;implications&#34;&gt;Implications&lt;/h5&gt;
 &lt;p&gt;L&amp;rsquo;implication principale qu&amp;rsquo;on peut tirer du marché de la monnaie est que toute augmentation de l&amp;rsquo;offre monétaire engendre de l&amp;rsquo;inflation.
-En effet, depuis l&amp;rsquo;équation nous avons:&lt;/p&gt;
+En effet, à partir de l&amp;rsquo;équation nous avons:&lt;/p&gt;
 &lt;p&gt;$$p = \frac{1}{\bar{v}\bar{Y}} \bar{M} \implies
 \gamma_p = \gamma_M - \gamma_Y$$
 où $\gamma$ indique le &lt;em&gt;taux de croissance&lt;/em&gt;.
 Ainsi, le taux de croissance des prix ($\gamma_p$, l&amp;rsquo;inflation) est égal au taux de croissance de la masse monétaire ($\gamma_M$) moins le taux de croissance du PIB ($\gamma_Y$).&lt;/p&gt;
 &lt;p&gt;Les économistes Pedro Teles, Harald Uhlig et João Valle e Azevedo se sont intéressés à vérifier si, en effet, les augmentations d&amp;rsquo;offre monétaire généraient de l&amp;rsquo;inflation (une fois escompté la croissance du PIB).
-Selon le schéma ci-dessous, notre théorie quantitative de la monnaie est assez acceptable (voir &lt;a href=&#34;https://doi.org/10.1111/ecoj.12336%29&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://doi.org/10.1111/ecoj.12336)&lt;/a&gt;:&lt;/p&gt;
+Selon le schéma ci-dessous, notre théorie quantitative de la monnaie est assez acceptable (voir &lt;a href=&#34;https://doi.org/10.1111/ecoj.12336&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;https://doi.org/10.1111/ecoj.12336&lt;/a&gt;)&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -271,14 +271,15 @@ Une &lt;strong&gt;idée centrale de la pensée classique&lt;/strong&gt; est que 
 Autrement dit, une hausse de l&amp;rsquo;offre monétaire n&amp;rsquo;a pas d&amp;rsquo;effet sur le PIB ($\bar{Y}$) car celui-ci est déterminé par le marché du travail et la courbe de production.
 Bien sûr, avoir plus de monnaie ne change aucune de ces deux courbes!
 Donc, si le PIB est incapable de réagir, et si nous imaginons que la vitesse de la monnaie reste constante, la seule chose qui se passe est que les gens détiennent plus de monnaie dans leurs poches.
-En conséquence, ils sont prêts à l&amp;rsquo;utiliser pour faire des achats, donc il existe une augmentation de la demande des biens.
+Par conséquent, ils sont prêts à l&amp;rsquo;utiliser pour faire des achats, ce qui produit il existe une augmentation de la demande des biens.
 Mais, comme nous avons dit, la production ne change pas.
 Ainsi, cette demande accrue se traduit par une augmentation des prix.&lt;/p&gt;
 &lt;p&gt;Note: le modèle IS-LM (et l&amp;rsquo;économie Keynésienne) s&amp;rsquo;opposent à l&amp;rsquo;hypothèse que la quantité produite ne peut pas s&amp;rsquo;ajuster.&lt;/p&gt;
 &lt;h3 id=&#34;marché-de-lemprunt&#34;&gt;Marché de l&amp;rsquo;emprunt&lt;/h3&gt;
 &lt;p&gt;La dernière composante du modèle classique est le marché de l&amp;rsquo;emprunt.
 Ce marché détermine le taux d&amp;rsquo;intérêt d&amp;rsquo;équilibre.
-Comme on verra, ce marché n&amp;rsquo;a pas d&amp;rsquo;impact sur les autres variables : il opère en isolation et le taux d&amp;rsquo;intérêt se détermine entièrement à partir des autres variables que nous connaissons déjà.&lt;/p&gt;
+Comme nous le verrons, ce marché n&amp;rsquo;a pas d&amp;rsquo;impact sur les autres variables.
+Le taux d&amp;rsquo;intérêt se détermine entièrement à partir des autres variables que nous connaissons déjà.&lt;/p&gt;
 &lt;p&gt;Le point de départ est l&amp;rsquo;identité comptable indiquant que, tout ce qui est produit dans une économie, doit être:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Acheté par les ménages&lt;/li&gt;
@@ -287,20 +288,20 @@ Comme on verra, ce marché n&amp;rsquo;a pas d&amp;rsquo;impact sur les autres v
 &lt;/ul&gt;
 &lt;p&gt;Ainsi :&lt;/p&gt;
 &lt;p&gt;$$Y = c(Y-\bar{T}) + I(r) + \bar{G}$$&lt;/p&gt;
-&lt;p&gt;On voit que la consommation est une fonction du revenu disponible, c&amp;rsquo;est-à-dire, le revenu total moins les impôts : $c(Y-\bar{T})$.
+&lt;p&gt;Nous voyons que la consommation est une fonction du revenu disponible, c&amp;rsquo;est-à-dire, le revenu total moins les impôts : $c(Y-\bar{T})$.
 L&amp;rsquo;investissement est une fonction du taux d&amp;rsquo;intérêt, et les dépenses du gouvernement sont exogènes, comme le niveau d&amp;rsquo;imposition.&lt;/p&gt;
 &lt;h4 id=&#34;offre-de-fonds-prêtables&#34;&gt;Offre de fonds prêtables&lt;/h4&gt;
-&lt;p&gt;Une autre manière de présenter la même équation est en la regardant comme que l&amp;rsquo;investissement doit être égal à l&amp;rsquo;épargne totale.
-Ceci fait beaucoup de sens : tout ce qui est produit mais non-consommé est l&amp;rsquo;épargne.
+&lt;p&gt;Une autre manière de présenter la même équation est de considérer que que l’investissement doit être égal à l’épargne totale.
+En effet, tout ce qui est produit mais non-consommé est épargné.
 Ce sont les fonds prêtables.
-Si pour n&amp;rsquo;importe quelle raison ils augmentent, les épargneurs se concurrencent pour les placer auprès des entreprises, faisant diminuer le taux d&amp;rsquo;intérêt.
-Et à l&amp;rsquo;inverse, si les entreprises ont besoin d&amp;rsquo;investir davantage (pour un même niveau d&amp;rsquo;épargne), elles offriront un taux d&amp;rsquo;intérêt pour important pour attirer l&amp;rsquo;épargne des ménages.&lt;/p&gt;
+Si pour n&amp;rsquo;importe quelle raison ils augmentent, les épargnants se concurrencent pour les placer auprès des entreprises, faisant diminuer le taux d&amp;rsquo;intérêt.
+Et à l&amp;rsquo;inverse, si les entreprises ont besoin d&amp;rsquo;investir davantage (pour un même niveau d&amp;rsquo;épargne), elles offriront un taux d&amp;rsquo;intérêt plus important pour attirer l&amp;rsquo;épargne des ménages.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Note: on peu imaginer que la consommation des ménages dépende aussi du taux d&amp;rsquo;intérêt, mais ceci n&amp;rsquo;est pas essentiel.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;De manière mathématique, l&amp;rsquo;épargne totale est la somme de l&amp;rsquo;épargne des ménages plus l&amp;rsquo;épargne du gouvernement&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Le gouvernement normalement a un épargne négative car il est en déficit.&lt;/li&gt;
+&lt;li&gt;Le gouvernement normalement a une épargne négative car il est en déficit.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Si l&amp;rsquo;on dénote l&amp;rsquo;épargne privé par $S^P$ et l&amp;rsquo;épargne publique par $S^G$&lt;/p&gt;
 &lt;p&gt;$$S^P = Y - \bar{T} - c(Y - \bar{T})$$
@@ -321,7 +322,7 @@ En effet, les entreprises doivent rembourser leurs emprunts et, si le taux augme
 En effet, si nous partons de $Y = c(Y-\bar{T}) + I(r) + \bar{G}$, nous avons :&lt;/p&gt;
 &lt;p&gt;\begin{align}
 Y &amp;amp;= c(Y-\bar{T}) + I(r) + \bar{G} = \\
-&amp;amp;= \bar{T} - \bar{T} +c(Y-\bar{T}) + I(r) + \bar{T} - \bar{G}
+&amp;amp;= \bar{T} - \bar{T} +c(Y-\bar{T}) + I(r) - \bar{G}
 \end{align}
 \begin{align}
 Y - \bar{T} + \bar{T} - c(Y-\bar{T}) - \bar{G} &amp;amp;= I(r) \\
@@ -379,7 +380,7 @@ Ainsi, avec moins de fonds disponibles, leur prix d&amp;rsquo;équilibre (le tau
 &lt;p&gt;Ainsi, le marché de travail détermine le &lt;strong&gt;salaire réel&lt;/strong&gt; $\frac{w}{p}$ et le nombre de travailleurs $N^\star$.
 Une fois le nombre de travailleurs connu, la fonction de production indique l&amp;rsquo;offre global de biens: $\bar{Y} = F(\bar{K}, N^\star)$.
 Enfin, le marché de la monnaie ajuste le prix $p$ pour que l&amp;rsquo;offre de monnaie coïncide avec le niveau de production (en considérant la vitesse).
-Avec $p$, le salaire nominal est aussi établi : $w = \frac{w}{p} p$.
+Avec $p$, le salaire nominal est aussi établi : $w = \frac{w}{p} \times p.$
 De l&amp;rsquo;autre côté, avec $\bar{Y}, \bar{T}$ et $\bar{G}$, et la fonction de demande d&amp;rsquo;épargne, nous pouvons calculer le taux d&amp;rsquo;intérêt.&lt;/p&gt;
 &lt;p&gt;
 
@@ -402,12 +403,12 @@ De l&amp;rsquo;autre côté, avec $\bar{Y}, \bar{T}$ et $\bar{G}$, et la fonctio
     &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/macro_2/all_markets.webp&#34; alt=&#34;all_markets&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
-&lt;h2 id=&#34;politique-fiscale-et-monétaire&#34;&gt;Politique fiscale et monétaire&lt;/h2&gt;
-&lt;p&gt;Dans le modèle classique, les politiques fiscale et monétaire ne permettent pas d&amp;rsquo;augmenter la production ou réduire le taux de chômage.
+&lt;h2 id=&#34;politique-budgétaire-et-monétaire&#34;&gt;Politique budgétaire et monétaire&lt;/h2&gt;
+&lt;p&gt;Dans le modèle classique, les politiques budgétaire et monétaire ne permettent pas d&amp;rsquo;augmenter la production ou de réduire le taux de chômage.
 Le seul effet est de changer le taux d&amp;rsquo;intérêt ou le niveau de prix.&lt;/p&gt;
 &lt;h3 id=&#34;augmentation-des-dépenses-publiques&#34;&gt;Augmentation des dépenses publiques&lt;/h3&gt;
-&lt;p&gt;Imaginons que le gouvernement souhaitait augmenter les dépenses publiques pour stimuler la demande et permettre une sortie plus rapide d&amp;rsquo;une crise.
-Selon le paradigme classique, cette hausse de dépenses n&amp;rsquo;a aucun impacte sur le PIB (ni sur les autres variables réelles).&lt;/p&gt;
+&lt;p&gt;Imaginons que le gouvernement souhaite augmenter les dépenses publiques pour stimuler la demande et permettre une sortie plus rapide d&amp;rsquo;une crise.
+Selon le paradigme classique, cette hausse de dépenses n&amp;rsquo;a aucun impact sur le PIB (ni sur les autres variables réelles).&lt;/p&gt;
 &lt;p&gt;En effet, $G$ apparaît seulement dans l&amp;rsquo;équation d&amp;rsquo;équilibre du marché de l&amp;rsquo;emprunt.
 Plus en détail, elle fait partie de l&amp;rsquo;offre de fonds prêtables:&lt;/p&gt;
 &lt;p&gt;$$S = S^P + S^G = \bar{Y} - c(\bar{Y}-\bar{T}) - \bar{G}$$
@@ -420,11 +421,12 @@ Ainsi, si $G$ augmente, immédiatement:&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;On appelle à ce phénomène &lt;strong&gt;effet d&amp;rsquo;éviction&lt;/strong&gt; (crowding out).
 En augmentant ses dépenses, le gouvernement &amp;ldquo;prend&amp;rdquo; de l&amp;rsquo;argent aux individus, ce qui se traduit par une moindre consommation ou une réduction de l&amp;rsquo;investissement.
-L&amp;rsquo;effet d&amp;rsquo;éviction est dérière la forte opposition des économistes classiques envers un gouvernement grand:&lt;/p&gt;
+L&amp;rsquo;effet d&amp;rsquo;éviction est l&amp;rsquo;un des arguments justifiant la forte opposition des économistes classiques à l&amp;rsquo;État providence:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Une réduction de l&amp;rsquo;investissement implique moins de capital demain, donc moins de croissance économique.
 Pour rappel: $Y=F(K,N)$&lt;/li&gt;
-&lt;li&gt;Si la consommation se réduit, on dit que les individus connaissent mieux leurs préférences et comment dépenser l&amp;rsquo;argent de manière optimale pour eux que le gouvernement.&lt;/li&gt;
+&lt;li&gt;La consommation peut baisser.
+En effet, les agents économiques sont considérés comme plus à même de dépenser de manière optimal leur revenu que ce que l’État pourrait le dépenser.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;
 
@@ -476,11 +478,11 @@ Pour rappel: $Y=F(K,N)$&lt;/li&gt;
 &lt;p&gt;Selon un économiste classique, rien!
 Il dirait:
 &amp;ldquo;Regardez, je vois que beaucoup de personnes ne travaillent pas.
-Cela veut dire soit que la fonction de production a changé, soit que les préférences des individus ont changé.
+Cela signifie que soit la fonction de production a changé, soit que les préférences des individus ont changé.
 Si c&amp;rsquo;était un changement technologique, le salaire réel aurait baissé, et nous n&amp;rsquo;observons pas ça.
 Ce qu&amp;rsquo;on observe, c&amp;rsquo;est une hausse du salaire réel : l&amp;rsquo;offre de travail a diminué!
-Cela explique aussi que la production diminue, et que les prix tombent, comme on le voit.&lt;/p&gt;
-&lt;p&gt;Comme tout ce qu&amp;rsquo;on observe est le résultat d&amp;rsquo;un processus d&amp;rsquo;optimisation individuelle qui conduit les gens à préférer travailler moins, on ne doit rien faire.
+Cela explique aussi que la production diminue, et que les prix chutent, comme on le voit.&lt;/p&gt;
+&lt;p&gt;Comme tout ce qu&amp;rsquo;on observe est le résultat d&amp;rsquo;un processus d&amp;rsquo;optimisation individuelle qui conduit les individus à préférer travailler moins, on ne doit rien faire.
 Et en plus, si on augmentait les dépenses publiques ou l&amp;rsquo;offre de monnaie, le seul effet serait sur des variables nominales.&amp;rdquo;&lt;/p&gt;
 &lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
