@@ -372,16 +372,15 @@ For instance, one could claim that Home xbox producers suffer because Home speci
     There is only one high-volume producer of the high-purity aluminum needed for defense aerospace applications.
     [...]
     &lt;p&gt;
-    JOB LOSSES FOR HARDWORKING AMERICANS: 
+    JOB LOSSES FOR HARDWORKING AMERICANS:
     The decline of American steel and aluminum production has resulted in extensive job losses for hardworking Americans in industries critical to our national security and economic well-being.
     &lt;a href=&#34;https://trumpwhitehouse.archives.gov/briefings-statements/president-donald-j-trump-will-protect-american-national-security-effects-unfair-trade-practices/&#34;&gt;Source&lt;/a&gt;
 &lt;/div&gt;
-&lt;pre&gt;&lt;code&gt;Even with trade, firms are still working under perfect competition.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Therefore, the wage in each sector and country still corresponds to the marginal product of labor.
+&lt;p&gt;Even with trade, firms are still working under perfect competition.
+Therefore, the wage in each sector and country still corresponds to the marginal product of labor.
 Because Home produces yogurts and Foreign xboxes:
 \begin{align}
-w_y &amp;amp;= p_y MPL_y \
+w_y &amp;amp;= p_y MPL_y \\
 w_x^\star &amp;amp;= p_x MPL_x^\star
 \end{align}
 Note that prices are common due to trade.&lt;/p&gt;
@@ -441,7 +440,7 @@ Finally, when $\left(\frac{p_x}{p_y}\right)^w &amp;gt; \frac{z_x}{z_y}$, Home sp
 The production of yogurts is then $y = \frac{L}{z_y}$.
 Out of the amount produced, some will consumed internally and some exported.
 Internal consumption can be retrieved from the utility maximization.&lt;/p&gt;
-&lt;p&gt;\begin{align}&lt;br&gt;
+&lt;p&gt;\begin{align}
 \max_{x,y} &amp;amp; \ u(x,y) \\
 \text{s.t.} &amp;amp; \ p_x x + p_y y = p_y \frac{L}{z_y} \\
 \\
@@ -682,73 +681,83 @@ Graphically:
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Home is characterized by $L = 50, z_x = 4, z_y = 1$, where $z_{i}$ indicates number of workers required to produce one unit. Consumer preferences are given by $u(x,y) = \log(x) + y$ (log-linear preferences, non-homothetic).&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;What is the autarky wage?
+Because labor is mobile across sectors, the wage must be equal in both.
+A firm maximizes profits $\pi_x = p_x x - w_x z_x x \implies w_z = w = \frac{p_x}{z_x}$.
+Similarly, $w_y = w = \frac{p_y}{z_y}$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What is the autarky price ratio?
+From the condition above, $w = \frac{p_x}{z_x} = \frac{p_y}{z_y} \implies \frac{p_x}{p_y} = \frac{z_x}{z_y} = 4$.
+We will come back to this later.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;What is the autarky production and consumption?
+In autarky, production equals consumption all while maximizing utility.
+\begin{align}
+\max_{x,y} \log(x) + y \\
+\text{s.t.} &amp;amp; 50 = 4 x + y \\
+\\
+x = 0.25, y = 49
+\end{align}&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Suppose that Foreign has $L^\star = 60$ workers, technology $z_x^\star = 6$ and $z_y^\star = 2$. Utility is $u(x,y) = \log(x) + \log(y)$. According to the Ricardian model, which good will Home export?
+The opportunity cost of $x$ in Home is $\frac{z_x}{z_y} = 4$ and in Foreign is $\frac{z_x^\star}{z_y^\star} = 3$.
+Hence, Home has a comparative advantage in $y$ and will export $y$ and import $x$.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;For which price range both countries will specialize in only one good?
+As long as $3 &amp;lt; \frac{p_x}{p_y} &amp;lt; 4$, both countries will specialize in only one good.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Determine the equilibrium relative price and the exports and imports.
+Because Home exports $y$, we construct the international supply of $y$ as a function of $\frac{p_x}{p_y}$
+Assuming a full specialization, Home will produce $\frac{L}{z_y} = 50$ units of $y$.
+The internal demand is:
+\begin{align}
+\max_{x,y} u= &amp;amp; \log(x) + y \\
+\text{s.t.} &amp;amp; 50 p_y = p_x x + p_y y \implies 50 = \frac{p_x}{p_y} + y \\
+\\
+\max_{y} &amp;amp; \log\left(\frac{50-y}{p_x}\right) + y \\
+y &amp;amp;= 49
+\end{align}
+Hence, the international supply of $y$ is 1 unit, regardless of prices.&lt;/p&gt;
+&lt;p&gt;We assume that foreign specializes in $x$, producing $\frac{L^\star}{z_x^\star} = 10$ units of $x$.
+The demand function for $y$ from Foreign comes from:
+\begin{align}
+\max_{x,y} u &amp;amp;= \log(x) + \log(y) \\
+\text{s.t.} &amp;amp;  10 p_x = p_x x + p_y y \implies 10 \frac{p_x}{p_y} = x \frac{p_x}{p_y} + y \\
+\\
+\max_{y} &amp;amp; \log\left(\frac{10\frac{p_x}{p_y}-y}{\frac{p_x}{p_y}}\right) + \log(y) \\
+y &amp;amp;= 5\frac{p_x}{p_y}
+\end{align}&lt;/p&gt;
+&lt;p&gt;Hence, the international demand for $y$ is $5\frac{p_x}{p_y}$ and the equilibrium price is $1 = 5 \frac{p_x}{p_y} \implies \frac{p_x}{p_y} = \frac{1}{5}$.&lt;/p&gt;
+&lt;p&gt;Such a price cannot be an international equilibrium because Foreign, which has a comparative advantage in $x$, displays an opportunity cost for that good equal to 3.
+Consequently, Foreign will produce both $x$ and $y$ while Home will specialize in $y$, with an international price $\frac{p_x}{p_y} = 3$.
+Home has a demand of $y$ equal to 49 (independent of the price).
+Because Home specializes, all the 50 workers are employed in $y$ production, generating $\frac{L}{z_y} = 50$ units of $y$.
+Hence, Home will export 1 unit of $y$.
+At the ongoing price $\frac{p_x}{p_y} = 3$, Home will exchange this 1 unit of $y$ for 0.33 units of $x$, thus Home is better off than under autarky.
+Meanwhile, Foreign consume 15 units of $y$ ($5 \frac{p_x}{p_y} = 15$), of which 14 are locally produced requiring 28 workers. The remaining 32 are employed in the $x$ sector, generating 5.33 units.
+Hence, total consumption of $x$ in Foreign is $5.33-0.33=5$ units.
+We can check that this coincides with the autarky consumption levels in Foreign:
+\begin{align}
+\max_{x,y} u &amp;amp;= \log(x) + \log(y) \\
+\text{s.t.} &amp;amp; 60 = 6x + 2y \\
+\\
+\max_{x} &amp;amp; \log(x) + \log\left(\frac{60-6x}{2}\right) \\
+x &amp;amp;= 5, y = 15
+\end{align}&lt;/p&gt;
+&lt;p&gt;Note: in this exercise, the equilibrium price of $0.2$ mostly came from the fact that Home had a very large demand for $y$.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;N. Home is characterized by $L = 50, z_x = 4, z_y = 1$, where $z_{i}$ indicates number of workers required to produce one unit. Consumer preferences are given by $u(x,y) = \log(x) + y$ (log-linear preferences, non-homothetic).&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;1. What is the autarky wage?
-    Because labor is mobile across sectors, the wage must be equal in both.
-    A firm maximizes profits $\pi_x = p_x x - w_x z_x x \implies w_z = w = \frac{p_x}{z_x}$.
-    Similarly, $w_y = w = \frac{p_y}{z_y}$.
-2. What is the autarky price ratio?
-    From the condition above, $w = \frac{p_x}{z_x} = \frac{p_y}{z_y} \implies \frac{p_x}{p_y} = \frac{z_x}{z_y} = 4$.
-    We will come back to this later.
-3. What is the autarky production and consumption?
-    In autarky, production equals consumption all while maximizing utility.
-    \begin{align}
-        \max_{x,y} \log(x) + y \\\\
-        \text{s.t.} &amp;amp; 50 = 4 x + y \\\\
-        \\\\
-        x = 0.25, y = 49
-    \end{align}
-
-4. Suppose that Foreign has $L^\star = 60$ workers, technology $z_x^\star = 6$ and $z_y^\star = 2$. Utility is $u(x,y) = \log(x) + \log(y)$. According to the Ricardian model, which good will Home export?
-    The opportunity cost of $x$ in Home is $\frac{z_x}{z_y} = 4$ and in Foreign is $\frac{z_x^\star}{z_y^\star} = 3$.
-    Hence, Home has a comparative advantage in $y$ and will export $y$ and import $x$.
-5. For which price range both countries will specialize in only one good?
-    As long as $3 &amp;lt; \frac{p_x}{p_y} &amp;lt; 4$, both countries will specialize in only one good.
-6. Determine the equilibrium relative price and the exports and imports.
-    Because Home exports $y$, we construct the international supply of $y$ as a function of $\frac{p_x}{p_y}$
-    Assuming a full specialization, Home will produce $\frac{L}{z_y} = 50$ units of $y$.
-    The internal demand is:
-    \begin{align}
-        \max_{x,y} u= &amp;amp; \log(x) + y \\\\
-        \text{s.t.} &amp;amp; 50 p_y = p_x x + p_y y \implies 50 = \frac{p_x}{p_y} + y \\\\
-        \\\\
-        \max_{y} &amp;amp; \log\left(\frac{50-y}{p_x}\right) + y \\\\
-        y &amp;amp;= 49
-    \end{align}
-    Hence, the international supply of $y$ is 1 unit, regardless of prices.
-
-    We assume that foreign specializes in $x$, producing $\frac{L^\star}{z_x^\star} = 10$ units of $x$.
-    The demand function for $y$ from Foreign comes from:
-    \begin{align}
-        \max_{x,y} u &amp;amp;= \log(x) + \log(y) \\\\
-        \text{s.t.} &amp;amp;  10 p_x = p_x x + p_y y \implies 10 \frac{p_x}{p_y} = x \frac{p_x}{p_y} + y \\\\
-        \\\\
-        \max_{y} &amp;amp; \log\left(\frac{10\frac{p_x}{p_y}-y}{\frac{p_x}{p_y}}\right) + \log(y) \\\\
-        y &amp;amp;= 5\frac{p_x}{p_y}
-    \end{align}
-
-    Hence, the international demand for $y$ is $5\frac{p_x}{p_y}$ and the equilibrium price is $1 = 5 \frac{p_x}{p_y} \implies \frac{p_x}{p_y} = \frac{1}{5}$.
-
-    Such a price cannot be an international equilibrium because Foreign, which has a comparative advantage in $x$, displays an opportunity cost for that good equal to 3.
-    Consequently, Foreign will produce both $x$ and $y$ while Home will specialize in $y$, with an international price $\frac{p_x}{p_y} = 3$.
-    Home has a demand of $y$ equal to 49 (independent of the price).
-    Because Home specializes, all the 50 workers are employed in $y$ production, generating $\frac{L}{z_y} = 50$ units of $y$.
-    Hence, Home will export 1 unit of $y$.
-    At the ongoing price $\frac{p_x}{p_y} = 3$, Home will exchange this 1 unit of $y$ for 0.33 units of $x$, thus Home is better off than under autarky.
-    Meanwhile, Foreign consume 15 units of $y$ ($5 \frac{p_x}{p_y} = 15$), of which 14 are locally produced requiring 28 workers. The remaining 32 are employed in the $x$ sector, generating 5.33 units.
-    Hence, total consumption of $x$ in Foreign is $5.33-0.33=5$ units.
-    We can check that this coincides with the autarky consumption levels in Foreign:
-    \begin{align}
-        \max_{x,y} u &amp;amp;= \log(x) + \log(y) \\\\
-        \text{s.t.} &amp;amp; 60 = 6x + 2y \\\\
-        \\\\
-        \max_{x} &amp;amp; \log(x) + \log\left(\frac{60-6x}{2}\right) \\\\
-        x &amp;amp;= 5, y = 15
-    \end{align}
-
-    Note: in this exercise, the equilibrium price of $0.2$ mostly came from the fact that Home had a very large demand for $y$.
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 &lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
