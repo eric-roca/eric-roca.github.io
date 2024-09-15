@@ -484,6 +484,8 @@ Ce qu&amp;rsquo;on observe, c&amp;rsquo;est une hausse du salaire réel : l&amp;
 Cela explique aussi que la production diminue, et que les prix chutent, comme on le voit.&lt;/p&gt;
 &lt;p&gt;Comme tout ce qu&amp;rsquo;on observe est le résultat d&amp;rsquo;un processus d&amp;rsquo;optimisation individuelle qui conduit les individus à préférer travailler moins, on ne doit rien faire.
 Et en plus, si on augmentait les dépenses publiques ou l&amp;rsquo;offre de monnaie, le seul effet serait sur des variables nominales.&amp;rdquo;&lt;/p&gt;
+&lt;h2 id=&#34;exercises&#34;&gt;Exercises&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://eric-roca.github.io/exercises/Macro_2/PS_Classics.pdf&#34;&gt;Problem Set 1: Classiques&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
@@ -1294,7 +1296,7 @@ Bien que les dépenses publiques aient un effet multiplicateur plus important à
 &lt;div style=&#34;border: 2px solid #3498db; padding: 10px; margin: 20px;&#34;&gt;
     &lt;h2 style=&#34;color: #3498db; margin: 0 0 10px 0;&#34;&gt;Cas d&#39;étude: Les multiplicateurs dans le débat économique (Mankiw, p.322)&lt;/h2&gt;
     &lt;p&gt;
-    Lorsque Barack Obama est devenu président en janvier 2009, l&#39;économie américaine était en récession. 
+    Lorsque Barack Obama est devenu président en janvier 2009, l&#39;économie américaine était en récession.
     Son administration proposa un important plan de relance d&#39;environ 800 milliards de dollars, soit environ 5% du PIB annuel, pour stimuler la demande globale.
     &lt;br&gt;
     Le plan comprenait des réductions d&#39;impôts et une augmentation des transferts, mais surtout une augmentation des achats de biens et services par le gouvernement.
@@ -1303,10 +1305,10 @@ Bien que les dépenses publiques aient un effet multiplicateur plus important à
     Les partisans du plan Obama arguaient que l&#39;augmentation des dépenses était plus efficace que la réduction des impôts, car selon la théorie keynésienne standard, le multiplicateur des dépenses publiques est supérieur au multiplicateur fiscal.
     Selon les économistes de l&#39;administration Obama, le multiplicateur des dépenses publiques était de 1,57, tandis que le multiplicateur fiscal n&#39;était que de 0,99.
     D&#39;autres économistes soutenaient que, malgré les prédictions des modèles keynésiens conventionnels, les stimuli fiscaux basés sur les dépenses ne sont pas aussi efficaces que les initiatives basées sur les impôts.
-    Certains économistes, comme Gary Becker, s&#39;inquiétaient que l&#39;utilisation des dépenses d&#39;infrastructure pour promouvoir l&#39;emploi puisse entrer en conflit avec l&#39;objectif d&#39;obtenir les infrastructures les plus nécessaires. 
+    Certains économistes, comme Gary Becker, s&#39;inquiétaient que l&#39;utilisation des dépenses d&#39;infrastructure pour promouvoir l&#39;emploi puisse entrer en conflit avec l&#39;objectif d&#39;obtenir les infrastructures les plus nécessaires.
     &lt;blockquote&gt;
         Des nouvelles dépenses d&#39;infrastructure dans des régions déprimées comme Detroit pourrait avoir un effet stimulant important parce que ces projets de construction peuvent utiliser des travailleurs qui, aujourd&#39;hui sont au chômage.
-        Toutefois, beaucoup de ces zones &lt;b&gt;sont en déclin parce qu&#39;elles produisaient des biens et services qui ne sont pas très demandés et qui ne le seront pas à l&#39;avenir&lt;/b&gt;. 
+        Toutefois, beaucoup de ces zones &lt;b&gt;sont en déclin parce qu&#39;elles produisaient des biens et services qui ne sont pas très demandés et qui ne le seront pas à l&#39;avenir&lt;/b&gt;.
         Par conséquent, la valeur ajoutée globale en améliorant leurs routes et autres infrastructures sera probablement beaucoup moins importante que si la nouvelle infrastructure était située dans des régions en croissance qui pourraient avoir relativement peu de chômage, mais qui ont une grande demande de routes, d&#39;écoles et d&#39;autres types d&#39;infrastructures à long terme.
     &lt;/blockquote&gt;
     &lt;/p&gt;
@@ -1426,7 +1428,7 @@ Ainsi, si l&amp;rsquo;offre d&amp;rsquo;encaisses réels augmente, la courbe LM 
     Nous pouvons le faire car:
     $\frac{M^s}{p} = \frac{2 Y}{\sqrt{r}} \implies r = \left(\frac{2 Y}{M}\right)^2.$
     &lt;p&gt;
-    Si l&#39;on introduit cette expression dans $\frac{\mathrm{d}Y}{\mathrm{d} \frac{M^s}{p}} = \frac{1}{L^\prime_Y}= \frac{\sqrt{r}}{2},$ on obtient 
+    Si l&#39;on introduit cette expression dans $\frac{\mathrm{d}Y}{\mathrm{d} \frac{M^s}{p}} = \frac{1}{L^\prime_Y}= \frac{\sqrt{r}}{2},$ on obtient
     \begin{equation}
         \frac{\mathrm{d}Y}{\mathrm{d} \frac{M^s}{p}} = \frac{\sqrt{\left(\frac{2 Y}{\frac{M^s}{p}}\right)^2}}{2}=\frac{Y}{\frac{M^s}{p}}
     \end{equation}
@@ -1471,6 +1473,8 @@ Ce point donne le taux d&amp;rsquo;intérêt $r$ et le niveau de revenu $Y$ qui 
 Vu qu&amp;rsquo;avec $G,, T$ et $\frac{M^s}{p}$ le niveau de revenu (et donc, de production) est fixé, nous pouvons trouver le nombre de travailleurs à l&amp;rsquo;aide de la fonction de production: $Y=F(\bar{K},N)$ où $Y$ et $\bar{K}$ sont connus.
 Il est donc claire que le nombre de travailleurs $N$ ne dépend plus des choix des ménages mais seulement du niveau d&amp;rsquo;activité économique.
 Enfin, le salaire d&amp;rsquo;équilibre assure que le nombre de travailleurs soit celui qui correspond au niveau d&amp;rsquo;activité d&amp;rsquo;équilibre.&lt;/p&gt;
+&lt;h2 id=&#34;exercises&#34;&gt;Exercises&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://eric-roca.github.io/exercises/Macro_2/PS_ISLM.pdf&#34;&gt;Problem Set 2: IS-LM&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
@@ -3207,7 +3211,7 @@ Los más de 30.000 proyectos del fondo -conocido simplemente como Plan Zapatero-
 Par exemple, en 2024 la France dépassait le niveau fixé par l&amp;rsquo;UE en termes de déficit maximal
 &lt;a href=&#34;https://www.publicsenat.fr/actualites/economie/procedure-de-deficit-excessif-quelles-consequences-pour-la-france&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Public Senat&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-Ce vendredi 26 juillet [2024], la Commission européenne a annoncé placer la France en procédure de déficit excessif, compte tenu du dévissage de la trajectoire des finances publiques. 
+Ce vendredi 26 juillet [2024], la Commission européenne a annoncé placer la France en procédure de déficit excessif, compte tenu du dévissage de la trajectoire des finances publiques.
 En effet avec une dette publique qui atteint 110 % du PIB et un déficit public réévalué à 5,5 % du PIB à cause d’une surestimation de la croissance, la France ne respecte pas les critères posés par le Pacte de stabilité et de croissance qui demande aux Etats membres de l’Union européenne de ne pas avoir un niveau d’endettement supérieur à 60 % du PIB et de ne pas dépasser un déficit de 3 % du PIB.
 &lt;/blockquote&gt;
 &lt;p&gt;Pour rétablir l&amp;rsquo;équilibre budgétaire, il est nécessaire de réduire $G$ ou augmenter $T$ (ou utiliser les deux simultanément).
@@ -3270,7 +3274,7 @@ Y^{eq} &amp;amp;= 0.951459
     \end{equation}
     car
     &lt;br&gt;
-    $I(r) = 0.1+\frac{1}{r}\implies I^\prime=-\frac{1}{r^2}$, 
+    $I(r) = 0.1+\frac{1}{r}\implies I^\prime=-\frac{1}{r^2}$,
     &lt;br&gt;
     $L(Y,r)=\frac{Y}{r} \implies L^\prime_Y = \frac{1}{r}$ et $L^\prime_r = -\frac{Y}{r^2}$.
     &lt;p&gt;
@@ -3298,6 +3302,8 @@ Y^{eq} &amp;amp;= 0.951459
     \end{equation}
     Le nouveau niveau de dépenses publiques devrait être de $0.5-\Delta G = 0.4742$ et le revenu de $1-1.0322 \times \Delta G = 0.97337$
 &lt;/div&gt;
+&lt;h2 id=&#34;exercises&#34;&gt;Exercises&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://eric-roca.github.io/exercises/Macro_2/PS_ISLM_2.pdf&#34;&gt;Problem Set 3: IS-LM, part 2&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
@@ -5502,19 +5508,19 @@ Quand la BCE vent les yuans contre les euros, l&amp;rsquo;offre monétaire se r�
 &lt;div style=&#34;border: 2px solid #3498db; padding: 10px; margin: 20px;&#34;&gt;
     &lt;h2 style=&#34;color: #3498db; margin: 0 0 10px 0;&#34;&gt;La étalon-or&lt;/h2&gt;
     Pendant la fin du XIXe et le début du XXe siècle, la plupart des grandes économies mondiales fonctionnaient sous l’étalon-or.
-    Chaque pays maintenait une réserve d’or et s’engageait à échanger une unité de sa monnaie contre une quantité d’or spécifiée. 
+    Chaque pays maintenait une réserve d’or et s’engageait à échanger une unité de sa monnaie contre une quantité d’or spécifiée.
     Grâce à l’étalon-or, les économies mondiales maintenaient un système de taux de change fixes.
     &lt;br&gt;
     Pour comprendre comment un étalon-or international fixe les taux de change, supposons que le Trésor américain soit prêt à acheter ou vendre 1 once d’or pour 100 dollars, et que la Banque d’Angleterre soit prête à acheter ou vendre 1 once d’or pour 100 livres.
-    Ensemble, ces politiques fixent le taux de change entre le dollar et la livre : 1 dollar doit s’échanger contre 1 livre. 
+    Ensemble, ces politiques fixent le taux de change entre le dollar et la livre : 1 dollar doit s’échanger contre 1 livre.
     Sinon, la loi du prix unique serait violée, et il serait profitable d’acheter de l’or dans un pays et de le vendre dans l’autre.
     &lt;br&gt;
-    Par exemple, supposons que le taux de change du marché soit de 2 livres par dollar. 
+    Par exemple, supposons que le taux de change du marché soit de 2 livres par dollar.
     Dans ce cas, un arbitragiste pourrait acheter 200 livres pour 100 dollars, utiliser les livres pour acheter 2 onces d’or à la Banque d’Angleterre, apporter l’or aux États-Unis et le vendre au Trésor pour 200 dollars, réalisant ainsi un profit de 100 dollars.
     De plus, en apportant l’or des États-Unis vers l’Angleterre, l’arbitragiste augmenterait la masse monétaire aux États-Unis et diminuerait la masse monétaire en Angleterre.
     &lt;br&gt;
-    Ainsi, pendant l’ère de l’étalon-or, le transport international de l’or par les arbitragistes était un mécanisme automatique ajustant la masse monétaire et stabilisant les taux de change. 
-    Ce système ne fixait pas complètement les taux de change, car le transport de l’or à travers l’Atlantique était coûteux. 
+    Ainsi, pendant l’ère de l’étalon-or, le transport international de l’or par les arbitragistes était un mécanisme automatique ajustant la masse monétaire et stabilisant les taux de change.
+    Ce système ne fixait pas complètement les taux de change, car le transport de l’or à travers l’Atlantique était coûteux.
     Pourtant, l’étalon-or international maintenait le taux de change dans une fourchette dictée par les coûts de transport.
     Il empêchait ainsi de grands mouvements persistants des taux de change.
 &lt;/div&gt;
@@ -5610,7 +5616,7 @@ Cependant, il agit sur les exportations nettes: avec un taux de change plus bas,
     &lt;h2 style=&#34;color: #3498db; margin: 0 0 10px 0;&#34;&gt;Sortie de la crise de 1930 par la dévaluation&lt;/h2&gt;
     La Grande Dépression des années 1930 était un problème mondial.
     Une différence clé entre les gouvernements était leur engagement envers le taux de change fixe établi par l&#39;étalon-or international.
-    Certains pays, comme la France, l&#39;Allemagne, l&#39;Italie et les Pays-Bas, ont maintenu l&#39;ancien taux de change entre l&#39;or et la monnaie. 
+    Certains pays, comme la France, l&#39;Allemagne, l&#39;Italie et les Pays-Bas, ont maintenu l&#39;ancien taux de change entre l&#39;or et la monnaie.
     D&#39;autres pays, comme le Danemark, la Finlande, la Norvège, la Suède et le Royaume-Uni, ont réduit la quantité d&#39;or qu&#39;ils paieraient pour chaque unité de monnaie d&#39;environ 50 %.
     En réduisant la teneur en or de leurs monnaies, ces gouvernements ont dévalué leurs monnaies par rapport à celles des autres pays.
     &lt;p&gt;
@@ -5672,8 +5678,8 @@ Toutefois, il existe d&amp;rsquo;autres règles de politique monétaire qui peuv
     Or, pendant la crise de 2008-2013, la situation différente entre les pays du nord et du sud de l&#39;Europe a mis en évidence les limites de la politique monétaire unique.
     Avec un taux de chômage de 12.2% en Italie, 16.5% au Portugal, 26.1% en Espagne et 27.3% en Grèce, un pays avec le contrôle de sa monnaie aurait pu utiliser augmenter la masse monétaire et déprécié leurs monnaies pour rendre leurs exportations plus compétitives et amortir la récession.
     &lt;p&gt;
-    La raison pour laquelle la BCE n&#39;a pas déprécié l&#39;euro pour aider ces économies en difficulté tient à la nature même de l&#39;Union économique et monétaire. 
-    La BCE doit concilier les intérêts de tous les pays membres de la zone euro, et non ceux d&#39;un seul pays en particulier. 
+    La raison pour laquelle la BCE n&#39;a pas déprécié l&#39;euro pour aider ces économies en difficulté tient à la nature même de l&#39;Union économique et monétaire.
+    La BCE doit concilier les intérêts de tous les pays membres de la zone euro, et non ceux d&#39;un seul pays en particulier.
     Le conseil des gouverneurs de la BCE est composé de représentants de chacun des États membres de la zone euro, ce qui signifie que chaque décision doit être prise en tenant compte des différentes situations économiques des pays membres.
     Dans ce contexte, la BCE a souvent privilégié une politique monétaire équilibrée visant à maintenir la stabilité des prix dans l&#39;ensemble de la zone euro, même si cela signifiait ne pas répondre pleinement aux besoins spécifiques des pays les plus touchés par la crise.
 &lt;/div&gt;
@@ -5708,6 +5714,8 @@ Ainsi, le choix du se faire entre deux options parmi trois possibilités:&lt;/p&
 Ainsi, il ne peut pas avoir de politique monétaire indépendante.
 Si, au contraire, ce pays choisit une politique monétaire indépendante, il ne peut pas avoir un taux de change fixe.&lt;/p&gt;
 &lt;p&gt;Finalement, pour avoir un taux de change fixe &lt;em&gt;et&lt;/em&gt; une politique monétaire indépendante, il faut que les capitaux ne soient restreints pour permettre un taux d&amp;rsquo;intérêt différent entre le pays et le reste du monde.&lt;/p&gt;
+&lt;h2 id=&#34;exercises&#34;&gt;Exercises&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://eric-roca.github.io/exercises/Macro_2/PS_MF.pdf&#34;&gt;Problem Set 4: Mundell-Fleming&lt;/a&gt;&lt;/p&gt;
 &lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
 &lt;hr&gt;
 &lt;ol&gt;
