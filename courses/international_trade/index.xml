@@ -923,13 +923,13 @@ Another problem is that the data from GAEZ divides the world in squares of appro
 The best crop can vary within that area, so the model might not be able to capture that.&lt;/p&gt;
 &lt;p&gt;All-in-all, the model does a good job at predicting the production of each country, but it is not perfect:&lt;/p&gt;
 &lt;blockquote&gt;
-We have asked a simple question: How do output levels predicted by Ricardo’s theory compare to those that are observed in the data? 
+We have asked a simple question: How do output levels predicted by Ricardo’s theory compare to those that are observed in the data?
 Despite all of the  real-world considerations from which Ricardo’s
-theory abstracts, we find that a regression of log output on log predicted output has a (precisely estimated) slope of 0.21. 
+theory abstracts, we find that a regression of log output on log predicted output has a (precisely estimated) slope of 0.21.
 Ricardo’s theory of comparative advantage, is not just mathematically correct and nontrivial; it also has significant explanatory power in the data, at least within the scope of our analysis.
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;bernhofen-and-brown-2004&#34;&gt;Bernhofen and Brown (2004)&lt;/h2&gt;
-&lt;p&gt;Costinot and Donaldson (2012) show that, given prices, producitivities are quite good at predicting patterns of specialization.
+&lt;p&gt;Costinot and Donaldson (2012) show that, given prices, productivities are quite good at predicting patterns of specialization.
 This is, we have empirically validated that countries tend to specialize in the good that they are more productive in (lower unitary requirements).
 However, the Ricardian model is &lt;em&gt;mostly&lt;/em&gt; about trade.
 The main prediction in that sense is that free trade causes a country to &lt;em&gt;export&lt;/em&gt; the good in which it has a comparative advantage.&lt;/p&gt;
@@ -965,7 +965,7 @@ By 1860, after several military interventions and treaties, Japan had opened its
 &lt;/p&gt;
 &lt;p&gt;As the authors say:&lt;/p&gt;
 &lt;blockquote&gt;
-The prices of major exports such as products of the silk industry (silk and silkworm eggs) and minor exports such as copper manufactures, sake, and vegetable wax all increased; in some cases they almost doubled. 
+The prices of major exports such as products of the silk industry (silk and silkworm eggs) and minor exports such as copper manufactures, sake, and vegetable wax all increased; in some cases they almost doubled.
 The relative price of key imports such as sugar, cotton cloth, cotton yarn, and iron products displayed substantial declines.
 The increase in the price of rice and legumes may reflect poor weather conditions, and the increase in the price of cotton may stem from the disruption of cotton markets in the wake of the American Civil War.
 &lt;/blockquote&gt;
@@ -990,12 +990,12 @@ The superscript $f$ denotes the free trade equilibrium.
 From here:
 \begin{align}
 p_x^{f} (x^f-c_x^f) &amp;amp;= p_y^{f} (c_y^f-y^f) \implies \\
-\frac{p_x^{f}}{p_y^f} (x^f-c_x^f) = (c_y^f-y^f) \implies \\
+\frac{p_x^{f}}{p_y^f} (x^f-c_x^f) &amp;amp;= (c_y^f-y^f) \implies \\
 \frac{p_x^{f}}{p_y^f} (x^f-c_x^f) - (c_y^f-y^f) &amp;amp;= 0 \\
-\frac{p_x^{f}}{p_y^f} (x^f-c_x^f) - (c_y^f-y^f) &amp;amp;&amp;lt; \frac{p_x^a}{p_y^a}(x^f-c_x^f) - (c_y^f-y^f) \implies \\
+\frac{p_x^{f}}{p_y^f} (x^f-c_x^f) - (c_y^f-y^f) &amp;amp;&amp;gt; \frac{p_x^a}{p_y^a}(x^f-c_x^f) - (c_y^f-y^f) \implies \\
 \frac{p_x^a}{p_y^a}(x^f-c_x^f) - (c_y^f-y^f) &amp;lt; 0
 \end{align}
-Where $\frac{p_x^{f}}{p_y^f} (x^f-c_x^f) - (c_y^f-y^f) &amp;lt; \frac{p_x^a}{p_y^a}(x^f-c_x^f) - (c_y^f-y^f)$ is true because $\frac{p_x^{f}}{p_y^f} &amp;gt; \frac{p_x^a}{p_y^a}$.&lt;/p&gt;
+Where $\frac{p_x^{f}}{p_y^f} (x^f-c_x^f) - (c_y^f-y^f) &amp;gt; \frac{p_x^a}{p_y^a}(x^f-c_x^f) - (c_y^f-y^f)$ is true because $\frac{p_x^{f}}{p_y^f} &amp;gt; \frac{p_x^a}{p_y^a}$.&lt;/p&gt;
 &lt;p&gt;The setup in Bernhofen and Brown is a bit more complex because they have more goods and trade may not be balanced.
 In any case, the general conclusion holds: if we evaluate net exports at autarky prices, we should observe a negative value.
 
