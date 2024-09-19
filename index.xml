@@ -1187,7 +1187,7 @@ r &amp;amp;= \frac{1}{0.4Y - 0.2} = \frac{5}{2Y - 1}
 Y &amp;amp;= \overbrace{C(Y,T)}^{c_0 + c_1(Y-T)} + I(r) + \bar{G} \implies \\
 \mathrm{d}Y &amp;amp;= c_1 \mathrm{d}Y + I^\prime \mathrm{d}r \\
 (1-c_1) \mathrm{d}Y &amp;amp;= I^\prime \mathrm{d}r \\
-\frac{\mathrm{d}r}{\mathrm{d}Y} &amp;amp;= \frac{I^\prime}{(1-c_1)} &amp;lt; 0
+\frac{\mathrm{d}r}{\mathrm{d}Y} &amp;amp;= \frac{1-c_1}{I^\prime} &amp;lt; 0
 \end{align}&lt;/p&gt;
 &lt;p&gt;Ainsi, quand $Y$ augmente, $r$ diminue.&lt;/p&gt;
 &lt;h3 id=&#34;déplacements-de-la-courbe-is&#34;&gt;Déplacements de la courbe IS&lt;/h3&gt;
