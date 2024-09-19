@@ -950,21 +950,26 @@ Ce processus se poursuit et aboutit à un point où le capital cesse d&rsquo;aug
 Cela correspond à :</p>
 <p>$$\dot{k} = 0 \implies sf(k) = (n+\delta)k \implies s k^\alpha = (n+\delta)k$$</p>
 <p>Ainsi, le niveau de capital qui correspond à l&rsquo;état stationnaire est donné par :</p>
-<p>$$k^\star = \left(\frac{s}{n+\delta}\right)^{\frac{1}{1-\alpha}}$$</p>
+<p>$$k^\star = \left(\frac{s}{n+\delta}\right)^{\frac{1}{1-\alpha}},\text{ou},k^\star=0$$</p>
 <details>
 <summary>Solution</summary>
 $s k^\alpha = (n+\delta) k \implies s k^{\alpha-1} = n+\delta \implies k^{\alpha-1} = \frac{n+\delta}{s}$
 $k^\star = \left(\frac{n+\delta}{s}\right)^\frac{1}{\alpha-1} = \left(\frac{s}{n+\delta}\right)^\frac{1}{1-\alpha}$
+En plus
+$s 0^\alpha = (n+\delta)0$
 </details>
 <p>Exactement, une fois que l&rsquo;économie atteint le niveau de capital $k^\star$, le capital cesse de changer et l&rsquo;économie se stabilise à cet état stationnaire. Pour le vérifier, nous pouvons calculer le taux de variation du capital $\dot{k}$ lorsque $k=\left(\frac{s}{n+\delta}\right)^\frac{1}{1-\alpha}$.</p>
 <details>
 <summary>Solution</summary>
-$\dot{k}{\big{|}_{k=k^\star}} = s {k^\star}^{\alpha} - (n+\delta)k^\star = $ 
+$\dot{k}{\big{|}_{k=k^\star}} = s {k^\star}^{\alpha} - (n+\delta)k^\star = $
 <p>$ = s \left(\frac{s}{n+\delta}\right)^{\alpha}{1-\alpha} - (n+\delta)\left(\frac{s}{n+\delta}\right)^\frac{1}{1-\alpha} = $</p>
 <p>$ = s s^\frac{\alpha}{1-\alpha}(n+\delta)^\frac{\alpha}{1-\alpha}-s^\frac{1}{1-\alpha}(n+\delta)(n+\delta)^\frac{1}{\alpha-1} = $
-$ = s^\frac{1}{1-\alpha}(n+\delta)^\frac{\alpha}{\alpha-1}-s^\frac{1}{1-\alpha}(n+\delta)^\frac{\alpha}{\alpha-1}=0.$</p>
+$ = s^\frac{1}{1-\alpha}(n+\delta)^\frac{\alpha}{\alpha-1}-s^\frac{1}{1-\alpha}(n+\delta)^\frac{\alpha}{\alpha-1}=0.$
+L&rsquo;autre état stationnaire:
+$ \dot{k} = s 0^\alpha -(n+\delta)0 = 0$</p>
 </details>
-<p>Par exemple, avec $s=0.5$, $\alpha=0.3$, $n=0.1$ et $\delta=0.1$, le niveau stationnaire du capital est $k^\star = 3.7$. En vérifiant l&rsquo;équation $\dot{k}\big{|}_{k=3.7} = 0.5 \times 3.7^{0.3} - (0.1+0.1) \times 3.7 = 0$, nous constatons que le taux de variation du capital $\dot{k}$ est nul à ce niveau stationnaire.</p>
+<p>Par exemple, avec $s=0.5$, $\alpha=0.3$, $n=0.1$ et $\delta=0.1$, le niveau stationnaire du capital est $k^\star = 3.7$. En vérifiant l&rsquo;équation $\dot{k}\big{|}_{k=3.7} = 0.5 \times 3.7^{0.3} - (0.1+0.1) \times 3.7 = 0$, nous constatons que le taux de variation du capital $\dot{k}$ est nul à ce niveau stationnaire.
+Il est simple de vérifier que si $k=0$, l&rsquo;éparge est 0 et aussi la dépréciation.</p>
 <h3 id="diagramme-de-phase">Diagramme de phase</h3>
 <p>Nous pouvons illustrer la situation à l&rsquo;aide d&rsquo;un diagramme de phase qui montre $\dot{k}$ en fonction de $k$.</p>
 <p>
