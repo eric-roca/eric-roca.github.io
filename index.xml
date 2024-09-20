@@ -973,17 +973,17 @@ De plus, les caractéristiques du cas particulier supposé par la théorie class
 &amp;ndash; John Maynard Keynes&lt;/p&gt;
 &lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
 &lt;p&gt;À différence du modèle classique, le modèle IS-LM proposé par John Maynard Keynes indique qu&amp;rsquo;une faible demande agrégée peu être la cause derrière la crise de 1929, y compris le taux de chômage.
-Au fait, pour Keynes le problème principal du modèle classique était l&amp;rsquo;ajustement presque qu&amp;rsquo;immédiat de touts les prix pour égaliser offre et demande.
-Pour lui, l&amp;rsquo;offre totale ne déterminait pas elle tout seule la production nationale.
+En effet, pour Keynes le problème principal du modèle classique était l&amp;rsquo;ajustement presque que immédiat de tous les prix pour égaliser l&amp;rsquo;offre et la demande.
+Pour lui, l&amp;rsquo;offre totale ne suffit pas à elle tout seule à déterminer la production nationale.
 La théorie Keynésienne explique les fluctuations économiques par les changements de la &lt;strong&gt;demande agrégée&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Le modèle IS-LM donc, change une hypothèse basiques dans le modèle classique: les prix sont flexibles.
 Selon Keynes, au moins à court terme, les prix sont fixes.
 Cette modification mineure aura des profondes répercutions: les modifications de $M$, $G$ et $T$ engendrent des &lt;strong&gt;changements d&amp;rsquo;output&lt;/strong&gt;.
-Ceci ouvre la porte à les interventions publiques pour assouplir les crises.
-En plus, le taux de chômage devient &lt;strong&gt;involontaire&lt;/strong&gt;
+Ceci ouvre la porte à des interventions publiques pour limiter les effets des crises.
+De plus, le taux de chômage devient &lt;strong&gt;involontaire&lt;/strong&gt;
 Pour rappel, pour les classiques tout chômage est volontaire car les individus offrent leur travail de manière optimale.&lt;/p&gt;
 &lt;p&gt;Le modèle IS-LM s&amp;rsquo;appuie sur deux équations: IS (équilibre dans le marché de l&amp;rsquo;emprunt) et LM (équilibre dans le marché de la monnaie).
-On les verra l&amp;rsquo;une après l&amp;rsquo;autre.&lt;/p&gt;
+Nous les aborderons l&amp;rsquo;une après l&amp;rsquo;autre.&lt;/p&gt;
 &lt;h2 id=&#34;la-courbe-is&#34;&gt;La courbe IS&lt;/h2&gt;
 &lt;p&gt;Le point de départ pour concevoir la courbe IS est l&amp;rsquo;équilibre dans le marché de l&amp;rsquo;emprunt (ou le marché des biens, c&amp;rsquo;est le même).
 L&amp;rsquo;équation initiale est la même que les classiques utilisaient:&lt;/p&gt;
@@ -991,16 +991,17 @@ L&amp;rsquo;équation initiale est la même que les classiques utilisaient:&lt;/
 &lt;h3 id=&#34;remarques&#34;&gt;Remarques&lt;/h3&gt;
 &lt;p&gt;Même si l&amp;rsquo;équation paraît identique, certaines différences majeurs s&amp;rsquo;y cachent.&lt;/p&gt;
 &lt;p&gt;En premier lieu, selon Keynes la &lt;strong&gt;demande&lt;/strong&gt; détermine le niveau de production.
-Cela veut dire que le niveau $Y$ &lt;em&gt;s&amp;rsquo;ajuste&lt;/em&gt; à la demande pour ce que production et demande s&amp;rsquo;égalisent.
+Cela veut dire que le niveau $Y$ &lt;em&gt;s&amp;rsquo;ajuste&lt;/em&gt; à la demande de manière à ce que production et demande s&amp;rsquo;égalisent.
 Ainsi, si $\bar{G}$ change, $Y$ change; si $T$ change, la consommation change et, donc, $Y$ change, etc.
 Ceci est en opposition aux classiques: pour eux, $Y$ est déterminé par la production: $Y = F(\bar{K},N)$.
 Ce niveau est immodifiable sauf si $\bar{K}$, $N$ ou $F$ changent.&lt;/p&gt;
-&lt;p&gt;Le fait que dans le système économique Keynésienne les changements de $G$ et $T$ aient des effets sur le niveau de production ouvre la porte aux interventions de l&amp;rsquo;état et nous invite à penser à l&amp;rsquo;effet multiplicateur des dépenses publiques et des réductions d&amp;rsquo;impôts.&lt;/p&gt;
-&lt;p&gt;Dans le modèle classique, certains auteurs introduisent le taux d&amp;rsquo;intérêt dans la consommation, disant qu&amp;rsquo;un taux plus élevé favorise l&amp;rsquo;épargne au dépit de la consommation.
-Pour simplifier l&amp;rsquo;exposition, nous avions ignoré $r$ dans la fonction de consommation.&lt;/p&gt;
-&lt;p&gt;Selon Keynes, la demande ne changeait pas avec le taux d&amp;rsquo;intérêt et il décida de ne pas modeler la consommation comme une fonction du taux d&amp;rsquo;intérêt.&lt;/p&gt;
-&lt;p&gt;Finalement, Keynes pensait que les fluctuations économiques venaient des changements dans la fonction d&amp;rsquo;investissement: des fois, les investisseurs (entreprises) pensent que les rendements vont diminuer et leur demande de fonds prêtables diminue (pour un taux $r$ donné).
-En effet, il n&amp;rsquo;avait pas tort: l&amp;rsquo;investissement est beaucoup plus volatile comparé à la consommation.&lt;/p&gt;
+&lt;p&gt;Le fait que dans le système économique Keynésienne les changements de $G$ et $T$ aient des effets sur le niveau de production ouvre la porte aux interventions de l&amp;rsquo;état et nous invite à penser aux impacts de l&amp;rsquo;effet multiplicateur des dépenses publiques et des réductions d&amp;rsquo;impôts.&lt;/p&gt;
+&lt;p&gt;Dans le modèle classique, certains auteurs introduisent le taux d&amp;rsquo;intérêt dans la consommation, disant qu&amp;rsquo;un taux plus élevé favorise l&amp;rsquo;épargne au détriment de la consommation.
+Pour simplifier, nous avions ignoré $r$ dans la fonction de consommation.&lt;/p&gt;
+&lt;p&gt;Selon Keynes, la demande de biens et services ne changeait pas avec le taux d&amp;rsquo;intérêt et il décida de ne pas modéliser la consommation comme une fonction du taux d&amp;rsquo;intérêt.&lt;/p&gt;
+&lt;p&gt;Finalement, Keynes pensait que les fluctuations économiques venaient des changements dans la fonction d&amp;rsquo;investissement:
+les investisseurs (entreprises) pensant que les rendements allaient diminuer ajustent leur demande de fonds prêtables à la baisse (pour un taux $r$ donné).
+En effet, il n’avait pas tort : l’investissement est beaucoup plus volatil comparé à la consommation.&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -1038,28 +1039,28 @@ En effet, il n&amp;rsquo;avait pas tort: l&amp;rsquo;investissement est beaucoup
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;Pour revenir à la Grande Dépression, en 1929 le niveau d&amp;rsquo;investissement par rapport au PIB aux USA était 15.7%, tandis qu&amp;rsquo;en 1933 il chuta à 2.5%.
-Cela montre que les investisseurs n&amp;rsquo;avaient pas beaucoup de confiance dans la démarche de l&amp;rsquo;économie en 1933.&lt;/p&gt;
+Cela reflète bien le manque de confiance des investisseurs dans la trajectoire de l&amp;rsquo;économie en 1933.&lt;/p&gt;
 &lt;h3 id=&#34;la-fonction-de-consommation&#34;&gt;La fonction de consommation&lt;/h3&gt;
 &lt;p&gt;La fonction de consommation Keynésienne se base sur deux idées:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Il existe un niveau de &lt;strong&gt;consommation incompressible&lt;/strong&gt; $c_0$ qui est le niveau minimal nécessaire pour la survie.
 Ce concept souligne que, même si le revenu des ménages diminue, il existe un niveau de consommation en dessous duquel les ménages ne peuvent pas descendre sans compromettre leur bien-être de base.
 Par exemple, les dépenses pour la nourriture, le logement et les soins de santé sont souvent considérées comme incompressibles.&lt;/li&gt;
-&lt;li&gt;La &lt;strong&gt;propension marginal à consommer (PMC)&lt;/strong&gt; est entre 0 et 1.
+&lt;li&gt;La &lt;strong&gt;propension marginale à consommer (PMC)&lt;/strong&gt; comprise entre 0 et 1.
 Ce concept est crucial pour comprendre comment les variations du revenu affectent la consommation.
 Si la PMC est élevée (proche de 1), cela signifie que les ménages consomment une grande partie de leur revenu supplémentaire.
 Si la PMC est faible (proche de 0), cela signifie que les ménages épargnent une grande partie de leur revenu supplémentaire.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Enfin, Keynes indique le niveau de revenu de référence pour les décisions des ménages est le revenu &lt;strong&gt;net d&amp;rsquo;impôts&lt;/strong&gt;.
-Ceci fait beaucoup de sens car, si le niveau d&amp;rsquo;imposition est très élevé, une augmentation du revenu revient à presque pas d&amp;rsquo;augmentation des ressources disponibles et, donc, les ménages ne peuvent pas consommer davantage.&lt;/p&gt;
+Ceci est logique car, si le niveau d&amp;rsquo;imposition est très élevé, une augmentation du revenu reviendrait à une augmentation quasi nulle des ressources disponibles et, donc, les ménages ne pourraient pas consommer davantage.&lt;/p&gt;
 &lt;p&gt;Ainsi, la fonction de consommation Keynésienne peut être représentée mathématiquement par l&amp;rsquo;équation suivante :&lt;/p&gt;
 &lt;p&gt;$$C = c_o + c_1 (Y-T)$$&lt;/p&gt;
 &lt;p&gt;où $c_0 &amp;gt; 0$ est la consommation incompressible et $c_1 \in (0,1)$ est la PMC.&lt;/p&gt;
 &lt;h3 id=&#34;leffet-multiplicateur&#34;&gt;L&amp;rsquo;effet multiplicateur&lt;/h3&gt;
-&lt;p&gt;Une caractéristique importante de la pensée de Keynes est que le gouvernement peux stimuler l&amp;rsquo;économie en menant des interventions publiques.
+&lt;p&gt;Une caractéristique importante de la pensée de Keynes est que le gouvernement peut stimuler l&amp;rsquo;économie en menant des interventions publiques.
 Cette idée donne lieu au concept de &lt;strong&gt;multiplicateur Keynésienne&lt;/strong&gt; qui indique de combien le PIB augmente quand le gouvernement augmente $G$ d&amp;rsquo;une unité ou réduit $T$ d&amp;rsquo;une unité.&lt;/p&gt;
-&lt;p&gt;Comme dans l&amp;rsquo;économie Keynésienne la production totale est définie par la demande, on peux s&amp;rsquo;intéresser au changement induit sur le PIB par une augmentation de $G$ ou réduction de $T$.&lt;/p&gt;
-&lt;p&gt;mathématiquement, l&amp;rsquo;effet multiplicateur est des dépenses publiques est:&lt;/p&gt;
+&lt;p&gt;Comme dans l&amp;rsquo;économie Keynésienne la production totale est définie par la demande, nous pouvons nous intéresser au changement du PIB suite à une augmentation de $G$ ou une réduction de $T$.&lt;/p&gt;
+&lt;p&gt;Mathématiquement, l&amp;rsquo;effet multiplicateur des dépenses publiques est:&lt;/p&gt;
 &lt;p&gt;$$\frac{d Y}{d G}$$&lt;/p&gt;
 &lt;p&gt;tandis que celui lié aux impôts est&lt;/p&gt;
 &lt;p&gt;$$\frac{d Y}{d T}$$&lt;/p&gt;
@@ -1093,31 +1094,31 @@ Ainsi, le multiplicateur des dépenses publiques est:&lt;sup id=&#34;fnref:1&#34
 &lt;p&gt;Dans notre exemple, une augmentation de $G$ de 1 euro augmente le revenu (PIB) d&amp;rsquo;équilibre de 2.5 euros.&lt;/p&gt;
 &lt;h4 id=&#34;multiplicateur-des-impôts&#34;&gt;Multiplicateur des impôts&lt;/h4&gt;
 &lt;p&gt;De manière analogue au multiplicateur des dépenses publiques, l&amp;rsquo;effet multiplicateur des impôts vient du fait qu&amp;rsquo;une baisse d&amp;rsquo;impôts augmente le revenu disponible $Y-T$.
-Cette augmentation augmente la consommation, qui augmente le revenu $Y$, qui augmente le revenu disponible, etc.&lt;/p&gt;
-&lt;p&gt;Pour le voir, on va faire le calcul d&amp;rsquo;une augmentation de $T$ de $\Delta T$ et parler des réductions que cela implique pour le PIB.
+Cette augmentation impactera positivement la consommation, qui augmentera à son tour le revenu $Y$, qui augmentera le revenu disponible, etc.&lt;/p&gt;
+&lt;p&gt;Pour le voir, nous allons calculer l&amp;rsquo;effet d&amp;rsquo;une augmentation de $T$ de $\Delta T$ et constater la réduction que cela implique pour le PIB.
 Bien sûr, une réduction d&amp;rsquo;impôts aura l&amp;rsquo;effet inverse.
 D&amp;rsquo;abord, augmenter les impôts de $\Delta T$ réduit $Y$ de $PMC \Delta T$.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;
-Cette diminution de $Y$ implique revenu disponible se réduit de $PMC \Delta T$ et, ainsi, la consommation chute de $PMC PMC \Delta T = PMC^2 \Delta T$.
+Cette diminution de $Y$ implique que le revenu disponible se réduit de $PMC \Delta T$ et, ainsi, la consommation chute de $PMC PMC \Delta T = PMC^2 \Delta T$.
 L&amp;rsquo;effet total est:&lt;/p&gt;
 &lt;p&gt;\begin{align}
 \frac{\Delta Y}{\Delta T} &amp;amp;= - PMC - PMC^2 - PMC^3 - \ldots = \\
 &amp;amp;= -\frac{PMC}{1-PMC} = \\
 &amp;amp;= -\frac{c_1}{1-c_1} &amp;lt; 0
 \end{align}&lt;/p&gt;
-&lt;p&gt;De manière pareille, si $Y = c_0 + c_1 (Y-T) + I(r) + G$, et on dérive par rapport à $Y$ et $T$:&lt;/p&gt;
+&lt;p&gt;De manière similaire, si $Y = c_0 + c_1 (Y-T) + I(r) + G$, et que nous dérivons par rapport à $Y$ et $T$:&lt;/p&gt;
 &lt;p&gt;\begin{align}
 \mathrm{d}Y &amp;amp;= c_1 \mathrm{d} Y - c_1 \mathrm{d} T \\
 (1-c_1) \mathrm{d} Y &amp;amp;= - c_1 \mathrm{d} T \\
 \frac{\mathrm{d}Y}{\mathrm{d}T} &amp;amp;= - \frac{c_1}{1-c_1}
 \end{align}&lt;/p&gt;
-&lt;p&gt;Si, en lieu d&amp;rsquo;augmenter les impôts on les diminue, le PIB augmentera de $\frac{c_1}{1-c_1}.$&lt;/p&gt;
+&lt;p&gt;Si, au lieu d&amp;rsquo;augmenter les impôts nous les diminuons, le PIB augmentera de $\frac{c_1}{1-c_1}.$&lt;/p&gt;
 &lt;h4 id=&#34;exemple-1&#34;&gt;Exemple&lt;/h4&gt;
 &lt;p&gt;Si l&amp;rsquo;on suppose une propension marginal à consommer $c_1 = 0.6$, l&amp;rsquo;effet multiplicateur des impôts est:&lt;/p&gt;
 &lt;p&gt;$$\frac{\Delta Y}{\Delta T} = - \frac{0.6}{1-0.6} = - 1.5$$&lt;/p&gt;
 &lt;div style=&#34;border: 2px solid #3498db; padding: 10px; margin: 20px;&#34;&gt;
-    &lt;h2 style=&#34;color: #3498db; margin: 0 0 10px 0;&#34;&gt;Cas d&#39;étude: réduction des impôts de Kennedy et Bush (Mankiw, p.320)&lt;/h2&gt;
+    &lt;h2 style=&#34;color: #3498db; margin: 0 0 10px 0;&#34;&gt;Étude de cas: réduction des impôts de Kennedy et Bush (Mankiw, p.320)&lt;/h2&gt;
     &lt;p&gt;
-    Lorsque John F. Kennedy est devenu président des États-Unis en 1961, il a amené à Washington certains des jeunes économistes les plus brillants de l&#39;époque pour travailler au sein de son Conseil des conseillers économiques.
+    Lorsque John F. Kennedy est devenu président des États-Unis en 1961, il a amené à Washington certains des jeunes économistes les plus brillants de l&#39;époque pour travailler au sein de son Conseil Économique.
     Ces économistes, formés à l&#39;économie de Keynes, ont apporté des idées keynésiennes aux discussions sur la politique économique au plus haut niveau.
     &lt;br&gt;
     L&#39;une des premières propositions du conseil a été d&#39;augmenter le revenu national en réduisant les impôts.
@@ -1142,11 +1143,11 @@ Le taux de chômage est passé de 5,6 % en 1963 à 5,2 % en 1964, puis à 4,5 % 
 &lt;hr&gt;
 &lt;p&gt;La courbe IS relie le niveau de production d&amp;rsquo;équilibre et le taux d&amp;rsquo;intérêt.
 Parce que le taux d&amp;rsquo;intérêt représente le coût de l&amp;rsquo;emprunt pour financer des projets d&amp;rsquo;investissement, une augmentation du taux d&amp;rsquo;intérêt réduit l&amp;rsquo;investissement.
-En conséquence, la fonction d&amp;rsquo;investissement est &lt;strong&gt;décroissante&lt;/strong&gt; avec $r$:&lt;/p&gt;
+Par conséquent, la fonction d&amp;rsquo;investissement est &lt;strong&gt;décroissante&lt;/strong&gt; avec $r$:&lt;/p&gt;
 &lt;p&gt;$$I = I(r)$$&lt;/p&gt;
 &lt;p&gt;La courbe IS représente l&amp;rsquo;équilibre dans le marché de l&amp;rsquo;emprunt.
 L&amp;rsquo;épargne (offre de fonds prêtables) est la somme de l&amp;rsquo;épargne publique et privé.
-L&amp;rsquo;épargne publique est la différence entre $T$ et $G$, tandis que l&amp;rsquo;épargne privé est la différence entre production totale $Y$ et consommation net d&amp;rsquo;impôts $C - T$&lt;/p&gt;
+L&amp;rsquo;épargne publique est la différence entre $T$ et $G$, tandis que l&amp;rsquo;épargne privé est la différence le revenu net d&amp;rsquo;impôts $Y-T$ moins la consommation $C.$&lt;/p&gt;
 &lt;p&gt;$$S = S^G + S^P = \overbrace{\bar{T} - \bar{G}}^{S^G} + \overbrace{Y - \bar{T} - C(Y-\bar{T})}^{S^P} = Y - C(Y-T) - \bar{G}$$&lt;/p&gt;
 &lt;p&gt;L&amp;rsquo;équilibre dans ce marché implique:&lt;/p&gt;
 &lt;p&gt;$$I(r) = S = Y - C(Y-T) - \bar{G}$$&lt;/p&gt;
@@ -1191,9 +1192,9 @@ Y &amp;amp;= \overbrace{C(Y,T)}^{c_0 + c_1(Y-T)} + I(r) + \bar{G} \implies \\
 \end{align}&lt;/p&gt;
 &lt;p&gt;Ainsi, quand $Y$ augmente, $r$ diminue.&lt;/p&gt;
 &lt;h3 id=&#34;déplacements-de-la-courbe-is&#34;&gt;Déplacements de la courbe IS&lt;/h3&gt;
-&lt;p&gt;La courbe IS est une relation entre $Y$ et $r$ qu&amp;rsquo;on trace pour certains valeurs de $T$ et $G$.
+&lt;p&gt;La courbe IS est une relation entre $Y$ et $r$ que l&amp;rsquo;on trace pour certaines valeurs de $T$ et $G$.
 Autrement dit, la partie IS est en réalité une relation à quatre dimensions: $Y, r, T, G$ et nous en fixons deux pour pouvoir le tracer sur un plan.
-En conséquence, si les variables hors nos axes ($T$ et $G$ ici) varient, cela veut dire que nous sommes dans une autre zone de la courbe à quatre dimensions.
+Par conséquent, si les variables hors de nos axes ($T$ et $G$ ici) varient, cela veut dire que nous sommes dans une autre zone de la courbe à quatre dimensions.
 Comment cela se manifeste sur notre plan à deux dimensions $(Y,r)$?&lt;/p&gt;
 &lt;h4 id=&#34;augmentation-de-g&#34;&gt;Augmentation de $G$&lt;/h4&gt;
 &lt;p&gt;Imaginons que $G$ augmente.
@@ -1201,14 +1202,14 @@ Notre relation de départ est:&lt;/p&gt;
 &lt;p&gt;$$Y = C(Y,T) + I(r) + \bar{G}$$&lt;/p&gt;
 &lt;p&gt;Si $G$ augmente, l&amp;rsquo;équation n&amp;rsquo;est plus vérifiée et quelque chose doit changer pour restaurer l&amp;rsquo;égalité.&lt;/p&gt;
 &lt;p&gt;Pour nous faciliter le travail, on pense de la manière suivante: pour une valeur de $Y$, est-ce que $r$ doit augmenter ou diminuer pour restaurer l&amp;rsquo;équilibre?
-Cela, graphiquement, est équivalent à penser: est-ce que la courbe IS se déplace vers le haut ou vers le bas?
-Analysons cette première possibilité: pour un niveau de $Y$ donnée, la côté droit à augmenté car $G$ à augmenté.
+Graphiquement, cela revient à se demander : est-ce que la courbe IS se déplace vers le haut ou vers le bas?
+Analysons cette première possibilité: pour un niveau de $Y$ donné, la côté droit de l&amp;rsquo;équation a augmenté car $G$ a augmenté.
 $Y = C(Y,T) + I(r) + \uparrow\bar{G}$&lt;/p&gt;
 &lt;p&gt;Ainsi, le côté gauche ne peut pas changer, car nous analysons le changement pour un niveau $Y$ donné, et donc, constant.
 Pour rétablir l&amp;rsquo;équilibre, la seule possibilité est que $I(r)$ diminue.&lt;/p&gt;
 &lt;p&gt;$Y = C(Y,T) + \downarrow I(r) + \uparrow\bar{G}$&lt;/p&gt;
 &lt;p&gt;Et, pour réduire $I(r)$, $r$ doit augmenter.&lt;/p&gt;
-&lt;p&gt;En conclusion, si $G$ augmente, la courbe IS se déplace vers le haut, car pour chaque niveau $Y$, $r$ doit augmenter.&lt;/p&gt;
+&lt;p&gt;En conclusion, si $G$ augmente, pour un niveau donné de $Y$,$r$ doit augmenter afin de rétablir l’équilibre, déplaçant la courbe IS vers le haut.&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -1230,8 +1231,8 @@ Pour rétablir l&amp;rsquo;équilibre, la seule possibilité est que $I(r)$ dimi
     &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/macro_2/is-curve-change_g.webp&#34; alt=&#34;is_change_g&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
-&lt;p&gt;De manière équivalente, nous pouvons analyser comme $Y$ change quand $G$ augmente pour un niveau $r$ fixe.
-Dans ce cas, la partie gauche $Y$ doit augmenter mais, en faisant ça, la partie droit augmente aussi (car $Y$ apparaît dans la fonction de consommation).&lt;/p&gt;
+&lt;p&gt;De manière équivalente, nous pouvons analyser comment $Y$ change quand $G$ augmente pour un niveau $r$ fixe.
+Dans ce cas, la partie gauche $Y$ doit augmenter mais, en faisant ça, la partie droite augmente aussi (car $Y$ apparaît dans la fonction de consommation).&lt;/p&gt;
 &lt;p&gt;$\uparrow Y = \uparrow C(Y,T) + I(r) + \uparrow\bar{G}$&lt;/p&gt;
 &lt;p&gt;La conclusion est la même: si $G$ augmente, la courbe IS se déplace vers la droite, c&amp;rsquo;est-à-dire, pour chaque niveau $r$ la valeur $Y$ augmente.&lt;/p&gt;
 &lt;p&gt;Finalement, nous pouvons calculer exactement l&amp;rsquo;augmentation nécessaire grâce au multiplicateur.
@@ -1239,28 +1240,28 @@ En effet, $\frac{\mathrm{d}Y}{\mathrm{d}G}$ indique de combien $Y$ change quand 
 Nous avons déjà vu que $\frac{\mathrm{d}Y}{\mathrm{d}G} = \frac{1}{1-c_1} &amp;gt; 1$&lt;/p&gt;
 &lt;p&gt;Par exemple, imaginons que $r=0.4,T=3$ et $G$ passe de $G_0 = 8$ à $G_1 = 9$ et que $C(Y-T) = 4 + 0.6(Y-T)$, donc $c_0 = 4$ et $c_1 = 0.6$.
 Le multiplicateur des dépenses publiques est $\frac{1}{1-0.6}=2.5$.
-Le valeur d&amp;rsquo;équilibre de $Y_0$ est $Y_0 = 47.75$ à $Y_1 = 48.25$, une augmentation de $2.5$, qui correspond bien à $2.5 \times \Delta G = 2.5 \times 1$.&lt;/p&gt;
+La valeur d&amp;rsquo;équilibre de $Y_0$ est $Y_0 = 47.75$ à $Y_1 = 48.25$, une augmentation de $2.5$, qui correspond bien à $2.5 \times \Delta G = 2.5 \times 1$.&lt;/p&gt;
 &lt;h4 id=&#34;augmentation-de-t&#34;&gt;Augmentation de $T$&lt;/h4&gt;
 &lt;p&gt;Si, au contraire, le gouvernement augmente les impôts $T$, la courbe IS se déplace aussi.
 Pour le voir, admettons que nous fixons un taux d&amp;rsquo;intérêt $r$ et analysons comment la courbe doit changer pour garder l&amp;rsquo;identité $Y = C(Y-T) + I(r) + \bar{G}.$&lt;/p&gt;
 &lt;p&gt;Si les impôts augmentent, cela veut dire que la consommation diminue, car $C(Y-T) = c_0 + c_1(Y-T)$.
-Ainsi, suit au changement nous avons que:
+Ainsi, suit au changement nous avons:
 $Y = \downarrow C(Y-\uparrow T) + I(r) + \bar{G}.$&lt;/p&gt;
-&lt;p&gt;Pour rétablir l&amp;rsquo;égalité, le côte gauche doit diminuer (ce qui va provoquer une effet en chaîne, car la réduction à gauche induit une nouvelle réduction à droite.)
+&lt;p&gt;Pour rétablir l&amp;rsquo;égalité, le côte gauche doit diminuer (ce qui va provoquer un effet en chaîne, car la réduction à gauche induit une nouvelle réduction à droite.)
 $\downarrow Y = \downarrow C(\downarrow Y-\uparrow T) + I(r) + \bar{G}.$&lt;/p&gt;
-&lt;p&gt;En conséquence, quand les impôts augmentent, la courbe IS se déplace vers la gauche.
-Cela fait sens d&amp;rsquo;un point de vue économique: avec plus d&amp;rsquo;impôts, la consommation est plus faible et, donc, pour n&amp;rsquo;importe quel taux d&amp;rsquo;intérêt, le PIB doit être aussi plus faible.&lt;/p&gt;
-&lt;p&gt;De manière alternative, nous pouvons fixé $Y$ et analyser comment $r$ doit s&amp;rsquo;ajuster pour rétablir l&amp;rsquo;équilibre.
+&lt;p&gt;Par conséquent, quand les impôts augmentent, la courbe IS se déplace vers la gauche.
+Ce résultat a du sense du point de vue économique: avec plus d&amp;rsquo;impôts, la consommation est plus faible et, donc, pour n&amp;rsquo;importe quel taux d&amp;rsquo;intérêt, le PIB doit être aussi plus faible.&lt;/p&gt;
+&lt;p&gt;De manière alternative, nous pouvons fixer $Y$ et analyser comment $r$ doit s&amp;rsquo;ajuster pour rétablir l&amp;rsquo;équilibre.
 $Y = \downarrow C(Y-\uparrow T) + I(r) + \bar{G}.$&lt;/p&gt;
-&lt;p&gt;Comme la partie droit vient de diminuer, il faut que $I(r)$ augmente et, pour cela, $r$ doit diminuer.
+&lt;p&gt;Comme la partie droite vient de diminuer, il faut que $I(r)$ augmente et, pour cela, $r$ doit diminuer.
 $Y = \downarrow C(Y-\uparrow T) + \uparrow I(\downarrow r) + \bar{G}.$
 Conséquence: la courbe IS se déplace vers le bas.&lt;/p&gt;
 &lt;p&gt;Enfin, nous pouvons aussi utiliser le multiplicateur pour étuder l&amp;rsquo;effet.
 Nous aurons que $\frac{\mathrm{d}Y}{\mathrm{d}T} = -\frac{c_1}{1-c_1}$
-En conséquence, une augmentation de $T$ fait bouger la courbe IS vers la gauche de $\frac{c_1}{1-c_1}.$&lt;/p&gt;
+Par conséquent, une augmentation de $T$ fait bouger la courbe IS vers la gauche de $\frac{c_1}{1-c_1}.$&lt;/p&gt;
 &lt;p&gt;Par exemple, imaginons que $r=0.4,G=8$ et $T$ passe de $T_0 = 3$ à $T_1 = 4$ et que $C(Y-T) = 4 + 0.6(Y-T)$, donc $c_0 = 4$ et $c_1 = 0.6$.
 Le multiplicateur des impôts est $-\frac{0.6}{1-0.6}=1.5$.
-Le valeur d&amp;rsquo;équilibre de $Y_0$ est $Y_0 = 47.75$ à $Y_1 = 45.25$, une diminution de $1.5$, qui correspond bien à $- 1.5 \times \Delta T = - 1.5 \times 1$.&lt;/p&gt;
+La valeur d&amp;rsquo;équilibre de $Y_0$ est $Y_0 = 47.75$ à $Y_1 = 45.25$, une diminution de $1.5$, qui correspond bien à $- 1.5 \times \Delta T = - 1.5 \times 1$.&lt;/p&gt;
 &lt;h3 id=&#34;comparaison-des-multiplicateurs&#34;&gt;Comparaison des multiplicateurs&lt;/h3&gt;
 &lt;p&gt;Nous avons vu précédemment que le multiplicateur des dépenses publiques est $\frac{1}{1-c_1}$, tandis que le multiplicateur des impôts est $-\frac{c_1}{1-c1}$.
 Il est important de comparer ces deux multiplicateurs pour comprendre leurs implications économiques.&lt;/p&gt;
@@ -1290,11 +1291,11 @@ Pour $-\Delta T$, seule une partie ($c_1$) de la réduction d&amp;rsquo;impôts 
 L&amp;rsquo;effet des dépenses publiques se fait sentir plus rapidement car il n&amp;rsquo;y a pas de délai lié à la décision des ménages de dépenser ou d&amp;rsquo;épargner.&lt;/li&gt;
 &lt;li&gt;Ciblage :
 Les dépenses publiques peuvent être plus facilement ciblées vers des secteurs ou des projets spécifiques, tandis que l&amp;rsquo;effet d&amp;rsquo;une réduction d&amp;rsquo;impôts dépend des décisions de consommation des ménages.&lt;/li&gt;
-&lt;li&gt;Considérations à long terme :
+&lt;li&gt;Considérations de long terme :
 Bien que les dépenses publiques aient un effet multiplicateur plus important à court terme, les réductions d&amp;rsquo;impôts peuvent avoir des effets bénéfiques à long terme sur l&amp;rsquo;incitation au travail et à l&amp;rsquo;investissement.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div style=&#34;border: 2px solid #3498db; padding: 10px; margin: 20px;&#34;&gt;
-    &lt;h2 style=&#34;color: #3498db; margin: 0 0 10px 0;&#34;&gt;Cas d&#39;étude: Les multiplicateurs dans le débat économique (Mankiw, p.322)&lt;/h2&gt;
+    &lt;h2 style=&#34;color: #3498db; margin: 0 0 10px 0;&#34;&gt;Étude de cas: Les multiplicateurs dans le débat économique (Mankiw, p.322)&lt;/h2&gt;
     &lt;p&gt;
     Lorsque Barack Obama est devenu président en janvier 2009, l&#39;économie américaine était en récession.
     Son administration proposa un important plan de relance d&#39;environ 800 milliards de dollars, soit environ 5% du PIB annuel, pour stimuler la demande globale.
@@ -1307,30 +1308,31 @@ Bien que les dépenses publiques aient un effet multiplicateur plus important à
     D&#39;autres économistes soutenaient que, malgré les prédictions des modèles keynésiens conventionnels, les stimuli fiscaux basés sur les dépenses ne sont pas aussi efficaces que les initiatives basées sur les impôts.
     Certains économistes, comme Gary Becker, s&#39;inquiétaient que l&#39;utilisation des dépenses d&#39;infrastructure pour promouvoir l&#39;emploi puisse entrer en conflit avec l&#39;objectif d&#39;obtenir les infrastructures les plus nécessaires.
     &lt;blockquote&gt;
-        Des nouvelles dépenses d&#39;infrastructure dans des régions déprimées comme Detroit pourrait avoir un effet stimulant important parce que ces projets de construction peuvent utiliser des travailleurs qui, aujourd&#39;hui sont au chômage.
+        Des nouvelles dépenses d&#39;infrastructure dans des régions en déclin économique comme Detroit pourrait avoir un effet stimulant important parce que ces projets de construction peuvent utiliser des travailleurs qui, aujourd&#39;hui sont au chômage.
         Toutefois, beaucoup de ces zones &lt;b&gt;sont en déclin parce qu&#39;elles produisaient des biens et services qui ne sont pas très demandés et qui ne le seront pas à l&#39;avenir&lt;/b&gt;.
-        Par conséquent, la valeur ajoutée globale en améliorant leurs routes et autres infrastructures sera probablement beaucoup moins importante que si la nouvelle infrastructure était située dans des régions en croissance qui pourraient avoir relativement peu de chômage, mais qui ont une grande demande de routes, d&#39;écoles et d&#39;autres types d&#39;infrastructures à long terme.
+        Par conséquent, la valeur ajoutée globale en améliorant leurs routes et autres infrastructures sera probablement beaucoup moins importante que si la nouvelle infrastructure était située dans des régions avec une forte croissance qui pourraient avoir relativement peu de chômage, mais qui ont une grande demande de routes, d&#39;écoles et d&#39;autres types d&#39;infrastructures à long terme.
     &lt;/blockquote&gt;
     &lt;/p&gt;
 &lt;/div&gt;
 &lt;h2 id=&#34;la-courbe-lm&#34;&gt;La courbe LM&lt;/h2&gt;
 &lt;p&gt;La deuxième courbe qu&amp;rsquo;intervient dans le modèle IS-LM est la courbe LM.
 Cette courbe représente l&amp;rsquo;équilibre dans le marché de la monnaie, comme dans le modèle classique.
-Au fait, l&amp;rsquo;économie Keynésienne modifie à peine la demande de monnaie classique.&lt;/p&gt;
-&lt;p&gt;Le point de départ est le même: on constate que l&amp;rsquo;offre d&amp;rsquo;encaisses réels est éfectuée de manière exogène par la banque centrale.
-Ainsi, $\frac{M^s}{p}$ représente la quantité d&amp;rsquo;encaisses réels offerts par la banque centrale.&lt;/p&gt;
-&lt;p&gt;Keynes modèle la demande d&amp;rsquo;encaisses réels à partir de la &lt;em&gt;préférence pour la liquidité&lt;/em&gt;.
-Selon lui, le &lt;strong&gt;taux d&amp;rsquo;intérêt s&amp;rsquo;ajuste pour balancer offre et demande d&amp;rsquo;encaisses réels.&lt;/strong&gt;
-Il est important de noter que, dans le modèle classique, le taux d&amp;rsquo;intérêt n&amp;rsquo;apparaissait pas dans le marché de la monnaie, il se déterminait en isolation dans le marché de l&amp;rsquo;emprunt.&lt;/p&gt;
+En effet, l&amp;rsquo;économie Keynésienne modifie à peine la demande de monnaie classique.&lt;/p&gt;
+&lt;p&gt;Le point de départ est le même: on constate que l&amp;rsquo;offre d&amp;rsquo;encaisses réeles est éffectuée de manière exogène par la banque centrale.
+Ainsi, $\frac{M^s}{p}$ représente la quantité d&amp;rsquo;encaisses réelles offertes par la banque centrale.&lt;/p&gt;
+&lt;p&gt;Keynes modélise la demande d&amp;rsquo;encaisses réeles à partir de la &lt;em&gt;préférence pour la liquidité&lt;/em&gt;.
+Selon lui, le &lt;strong&gt;taux d&amp;rsquo;intérêt s&amp;rsquo;ajuste pour égaliser l&amp;rsquo;offre et la demande d&amp;rsquo;encaisses réelles.&lt;/strong&gt;
+Il est important de noter que, dans le modèle classique, le taux d&amp;rsquo;intérêt n&amp;rsquo;apparaissait pas dans le marché de la monnaie, il se déterminait uniquement sur le marché de l&amp;rsquo;emprunt.&lt;/p&gt;
 &lt;p&gt;La demande de monnaie dépend de:&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;Le nombre de transactions à financer (pareil au modèle classique)
-L&amp;rsquo;argent sert comme moyen de transaction, et à un plus grand nombre de transactions, la demande d&amp;rsquo;encaisses réels augmente.
-Comme le nombre total de transaction est liée au PIB, la demande d&amp;rsquo;encaisses réels augmente avec $Y$.&lt;/li&gt;
+&lt;li&gt;Le nombre de transactions à financer (comme dans le modèle classique)
+L&amp;rsquo;argent sert comme moyen de transaction.
+Pour un plus grand nombre de transactions, la demande d&amp;rsquo;encaisses réelles augmente.
+Comme le nombre total de transaction est liée au PIB, la demande d&amp;rsquo;encaisses réelles augmente avec $Y$.&lt;/li&gt;
 &lt;li&gt;Le taux d&amp;rsquo;intérêt&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;.
-En lieu de détenir de l&amp;rsquo;argent, les individus peuvent le placer dans un compte pour en obtenir un rendement.
-Au fait, le rendement est le &lt;em&gt;coût d&amp;rsquo;opportunité&lt;/em&gt; de détenir de l&amp;rsquo;argent.
-Ainsi, si le taux d&amp;rsquo;intérêt augmente, les individus préfèrent placer l&amp;rsquo;argent pour obtenir un intérêt plus élevé et, donc, la demande d&amp;rsquo;encaisses réels &lt;strong&gt;diminue&lt;/strong&gt; avec le taux d&amp;rsquo;intérêt.&lt;/li&gt;
+Au lieu de détenir de l&amp;rsquo;argent, les individus peuvent le placer dans un compte pour en obtenir un rendement.
+En effet, le rendement est le &lt;em&gt;coût d&amp;rsquo;opportunité&lt;/em&gt; de détenir de l&amp;rsquo;argent.
+Ainsi, si le taux d&amp;rsquo;intérêt augmente, les individus préfèrent placer l&amp;rsquo;argent pour obtenir un revenu issu des taux d&amp;rsquo;intérêt plus élevé et, donc, la demande d&amp;rsquo;encaisses réelles &lt;strong&gt;diminue&lt;/strong&gt; avec le taux d&amp;rsquo;intérêt.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;Si nous notons la demande d&amp;rsquo;encaisses réels par une fonction $L(Y,r)$, nous avons que:
 \begin{align}
@@ -1341,10 +1343,10 @@ Ainsi, si le taux d&amp;rsquo;intérêt augmente, les individus préfèrent plac
 &lt;p&gt;Enfin, comme l&amp;rsquo;offre d&amp;rsquo;encaisses doit être égale à la demande, la courbe LM est donnée par:&lt;/p&gt;
 &lt;p&gt;$$\frac{M^s}{p} = L(Y,r)$$&lt;/p&gt;
 &lt;p&gt;Sur le plan $(Y,r)$, la courbe LM est croissante.
-Imaginons que $Y$ augmente, ce qui fait que la partie droite augmente.&lt;/p&gt;
+Imaginons que $Y$ augmente, ce qui fait que la partie droite de l&amp;rsquo;équation augmente.&lt;/p&gt;
 &lt;p&gt;$$\frac{M^s}{p} = \uparrow L(\uparrow Y,r)$$&lt;/p&gt;
-&lt;p&gt;Pour rétablir l&amp;rsquo;égalité, il faut diminuer la partie droite (car ni l&amp;rsquo;offre de monnaie ni le niveau de prix changent).
-En conséquence, il est nécessaire que $r$ augmente pour faire diminuer la demande.
+&lt;p&gt;Pour rétablir l&amp;rsquo;égalité, il faut diminuer la partie droite (car ni l&amp;rsquo;offre de monnaie ni le niveau de prix ne changent).
+Par conséquent, il est nécessaire que $r$ augmente pour faire diminuer la demande.
 Ainsi, si $Y$ augmente $r$ augmente.
 Graphiquement:&lt;/p&gt;
 &lt;p&gt;
@@ -1369,17 +1371,17 @@ Graphiquement:&lt;/p&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;déplacement-de-la-courbe-lm&#34;&gt;Déplacement de la courbe LM&lt;/h3&gt;
-&lt;p&gt;De manière similaire à la courbe IS, la courbe LM montre la relation entre $Y$ et $r$ pour un valeur concret de $\frac{M^s}{p}.$&lt;/p&gt;
-&lt;p&gt;Si l&amp;rsquo;offre d&amp;rsquo;encaisses réels se modifie, la courbe LM se déplace.
-Imaginons que la banque centrale augmente l&amp;rsquo;offre d&amp;rsquo;encaisses réels.
-Comme avant, nous pouvons analyser l&amp;rsquo;effet de ce changement en gardant soir $Y$ soit $r$ fixe.
+&lt;p&gt;De manière similaire à la courbe IS, la courbe LM décrit la relation entre $Y$ et $r$ pour une valeur donnée de $\frac{M^s}{p}.$&lt;/p&gt;
+&lt;p&gt;Si l&amp;rsquo;offre d&amp;rsquo;encaisses réelles varie, la courbe LM se déplace.
+Imaginons que la banque centrale augmente l&amp;rsquo;offre d&amp;rsquo;encaisses réelles.
+Comme précédemment, nous pouvons analyser l&amp;rsquo;effet de ce changement en gardant soit $Y$ soit $r$ fixe.
 Commençons par maintenir $r$ fixe.
-Avec une augmentation de l&amp;rsquo;offre d&amp;rsquo;encaisses réels, il existe plus d&amp;rsquo;argent en circulation que ce qu&amp;rsquo;il faut pour financer le nombre de transactions.
-Comme le niveau de prix ne peux pas se modifier, la seul possibilité est que le nombre de transactions augmente et, ainsi, que $Y$ augmente.
+Avec une augmentation de l&amp;rsquo;offre d&amp;rsquo;encaisses réelles, il existe plus d&amp;rsquo;argent en circulation que ce qu&amp;rsquo;il faut pour financer le nombre de transactions.
+Comme le niveau de prix ne peux pas se modifier, la seule possibilité est que le nombre de transactions augmente et, ainsi, que $Y$ augmente.
 Autrement dit, d&amp;rsquo;un jour à l&amp;rsquo;autre, les individus se retrouvent avec plus d&amp;rsquo;argent dans leurs poches.
 Ils augmentent leur demande de biens et services, ce qui fait augmenter le PIB.&lt;/p&gt;
 &lt;p&gt;À l&amp;rsquo;inverse, si nous fixons maintenant $r$, avec une expansion de l&amp;rsquo;offre monétaire les agents disposent de plus d&amp;rsquo;argent que nécessaire.
-Ainsi, ils vont essayer de le placer dans la banque pour en obtenir un intérêt, ce qui fait diminuer le taux d&amp;rsquo;intérêt.&lt;/p&gt;
+Ainsi, ils vont essayer de le placer dans la banque pour en obtenir des revenus avec le taux d&amp;rsquo;intérêt, ce qui fait diminuer le taux d&amp;rsquo;intérêt.&lt;/p&gt;
 &lt;p&gt;Enfin, mathématiquement:
 \begin{align}
 \frac{M^s}{p} &amp;amp;= L(Y,r) \implies \\
@@ -1387,7 +1389,7 @@ Ainsi, ils vont essayer de le placer dans la banque pour en obtenir un intérêt
 \frac{\mathrm{d}Y}{\mathrm{d} \frac{M^s}{p}} &amp;amp;= \frac{1}{L^\prime_Y} &amp;gt; 0
 \end{align}&lt;/p&gt;
 &lt;p&gt;La dernière ligne vient du fait que nous avions montré que $\frac{\partial L(Y,r)}{\partial Y} &amp;gt; 0.$
-Ainsi, si l&amp;rsquo;offre d&amp;rsquo;encaisses réels augmente, la courbe LM se déplace vers la droite.&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+Ainsi, si l&amp;rsquo;offre d&amp;rsquo;encaisses réelles augmente, la courbe LM se déplace vers la droite.&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -1415,15 +1417,15 @@ Ainsi, si l&amp;rsquo;offre d&amp;rsquo;encaisses réels augmente, la courbe LM 
     Dans l&#39;exemple précédent, le multiplicateur est de 0.625.
     Les courbes sous-jacentes étaient:
     $\left(\frac{M^s}{p}\right)_0 = 4$ et $L(Y,r) = \frac{2 Y}{\sqrt{r}}$.
-    En conséquence, le multiplicateur est:
+    Par conśequent, le multiplicateur est:
     $\frac{\mathrm{d}Y}{\mathrm{d} \frac{M^s}{p}} = \frac{1}{L^\prime_Y}= \frac{\sqrt{r}}{2},$ car $L^\prime_Y = \frac{2}{\sqrt{r}}.$
     &lt;br&gt;
     Si l&#39;on évalue le multiplicateur à $r = 1.56$, notre point initial, on obtient $\frac{\mathrm{d}Y}{\mathrm{d} \frac{M^s}{p}} = \frac{1}{L^\prime_Y}= \frac{\sqrt{r}}{2} = \frac{\sqrt{1.56}}{2} = 0.625.$
     Ainsi, pour une augmentation de $\frac{M^s}{p}$ d&#39;une unité, la courbe LM se déplace vers la droite de 0.625 unités quand $r=1.56$
     &lt;p  &gt;
     On voit bien que cela correspond au graphique.
-    Veuilliez noter que, avec les fonctions que j&#39;ai choisi, le multiplicateur change avec la valeur de $r$ et, par conséquent, de $Y$.
-    Au fait, il serait plus pratique de relier le multiplicateur au niveau de $Y$ que au niveau de $r$.
+    Veuillez noter qu&#39;avec les fonctions que j&#39;ai choisies, le multiplicateur change avec la valeur de $r$ et, par conséquent, de $Y$.
+    En effet, il serait plus pratique de relier le multiplicateur au niveau de $Y$ qu&#39;au niveau de $r$.
     &lt;p&gt;
     Nous pouvons le faire car:
     $\frac{M^s}{p} = \frac{2 Y}{\sqrt{r}} \implies r = \left(\frac{2 Y}{M}\right)^2.$
@@ -1443,7 +1445,7 @@ Y &amp;amp;= C(Y-T) + I(r) + G \tag*{IS} \\
 \frac{M^s}{p} &amp;amp;= L(Y,r) \tag*{LM}
 \end{align}&lt;/p&gt;
 &lt;p&gt;Le modèle prends les variables $T,, G$ et $\frac{M^s}{p}$ comme exogènes.
-Chaque fois qu&amp;rsquo;une de ces variables change, un des deux courbes &lt;em&gt;de déplace&lt;/em&gt;.
+Chaque fois qu&amp;rsquo;une de ces variables change, un des deux courbes &lt;em&gt;se déplace&lt;/em&gt;.
 Étant donné ces variables exogènes, la courbe IS montre les combinaisons de $r$ (taux d&amp;rsquo;intérêt) et $Y$ (revenu) qui satisfont l&amp;rsquo;équation représentant le marché des biens, tandis que la courbe LM fournit les combinaisons de $r$ et $Y$ qui satisfont l&amp;rsquo;équation représentant le marché monétaire.&lt;/p&gt;
 &lt;p&gt;L&amp;rsquo;équilibre de l&amp;rsquo;économie se situe au point d&amp;rsquo;intersection des courbes IS et LM.
 Ce point donne le taux d&amp;rsquo;intérêt $r$ et le niveau de revenu $Y$ qui satisfont simultanément les conditions d&amp;rsquo;équilibre sur le marché des biens et sur le marché monétaire.&lt;/p&gt;
@@ -1469,9 +1471,9 @@ Ce point donne le taux d&amp;rsquo;intérêt $r$ et le niveau de revenu $Y$ qui 
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;le-chômage&#34;&gt;Le chômage&lt;/h3&gt;
-&lt;p&gt;Pour finir, dans le modèle IS-LM nous pouvons voir le chômage comme une variable qui vient déterminée par l&amp;rsquo;équilibre IS-LM.
-Vu qu&amp;rsquo;avec $G,, T$ et $\frac{M^s}{p}$ le niveau de revenu (et donc, de production) est fixé, nous pouvons trouver le nombre de travailleurs à l&amp;rsquo;aide de la fonction de production: $Y=F(\bar{K},N)$ où $Y$ et $\bar{K}$ sont connus.
-Il est donc claire que le nombre de travailleurs $N$ ne dépend plus des choix des ménages mais seulement du niveau d&amp;rsquo;activité économique.
+&lt;p&gt;Pour finir, dans le modèle IS-LM nous pouvons voir le chômage comme une variable qui est déterminée par l&amp;rsquo;équilibre IS-LM.
+Vu que $G,, T$ et $\frac{M^s}{p}$ le niveau de revenu (et donc, de production) est fixée, nous pouvons trouver le nombre de travailleurs à l&amp;rsquo;aide de la fonction de production: $Y=F(\bar{K},N)$ où $Y$ et $\bar{K}$ sont connus.
+Il est donc clair que le nombre de travailleurs $N$ ne dépend plus des choix des ménages (entre travail et loisir) mais seulement du niveau d&amp;rsquo;activité économique.
 Enfin, le salaire d&amp;rsquo;équilibre assure que le nombre de travailleurs soit celui qui correspond au niveau d&amp;rsquo;activité d&amp;rsquo;équilibre.&lt;/p&gt;
 &lt;h2 id=&#34;exercises&#34;&gt;Exercises&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;https://eric-roca.github.io/exercises/Macro_2/PS_ISLM.pdf&#34;&gt;Problem Set 2: IS-LM&lt;/a&gt;&lt;/p&gt;
