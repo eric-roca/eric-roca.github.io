@@ -517,15 +517,15 @@ When Home is much larger than Foreign, it can be the case that even when all For
 In this case, Home will produce some of the good it imports (xboxes) and export the other (yogurts).&lt;/p&gt;
 &lt;h4 id=&#34;example&#34;&gt;Example&lt;/h4&gt;
 &lt;p&gt;Let $L=1000$ instead of 100 as before, while keeping $z_x = 10$ and $z_y = 2$.
-With the utility we had before, the supply yogurts for export is $\frac{L}{z_y} - 30 = 990$ under full specialization.
-With a demand from Foreign equal to $5 \frac{p_x}{p_y}$, the equilibrium price would be $\frac{p_x}{p_y} = 198$.
+With the utility we had before, the supply of yogurts for export is $\frac{L}{z_y} - 30 = 470$ under full specialization.
+With a demand from Foreign equal to $5 \frac{p_x}{p_y}$, the equilibrium price would be $\frac{p_x}{p_y} = 94$.
 Clearly, the &amp;ldquo;equilibrium&amp;rdquo; price is above the autarky price, and Home would prefer not to trade at this price level.&lt;/p&gt;
 &lt;p&gt;Instead, Home will produce both goods and trade at the &lt;strong&gt;least&lt;/strong&gt; favorable price level: $\frac{p_x}{p_y} = \frac{z_x}{z_y} = 5$.
 At this price point, Foreign demand of yogurts is $5 \frac{p_x}{p_y} = 25$.
 For the 25 yogurts, Home will receive 5 xboxes.
 At this price ratio, Home will consume:
 \begin{align}
-max_{x,y} &amp;amp; u(x,y) = x^{0.4}y^{0.6} \\
+\max_{x,y} &amp;amp; u(x,y) = x^{0.4}y^{0.6} \\
 \text{s.t.} &amp;amp; 1000 = 10 x + 2 y \\
 \\
 x = 40, y = 300
