@@ -778,8 +778,8 @@ En effet, $\frac{\mathrm{d}Y}{\mathrm{d}G}$ indique de combien $Y$ change quand 
 Nous avons déjà vu que $\frac{\mathrm{d}Y}{\mathrm{d}G} = \frac{1}{1-c_1} &amp;gt; 1$&lt;/p&gt;
 &lt;p&gt;Par exemple, imaginons que l&amp;rsquo;économie soit décrite avec les fonctions:
 \begin{align}
-C(Y-T) = c_0 + c_1(Y-T) = 4 + 0.6(Y-3) \\\
-I(r) = \frac{4} \\\
+C(Y-T) = c_0 + c_1(Y-T) = 4 + 0.6(Y-2) \\\
+I(r) = \frac{4}{r} \\\
 Y = C(Y-T) + I(r) + G
 \end{align}&lt;/p&gt;
 &lt;p&gt;Ainsi, supposons que l&amp;rsquo;on fixe le taux d&amp;rsquo;intérêt $r=0.4$ et que les dépenses initiales du gouvernement soient $G=8$ avec un niveau d&amp;rsquo;imposition $T=2.$
