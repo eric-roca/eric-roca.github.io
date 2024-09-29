@@ -1238,9 +1238,17 @@ Dans ce cas, la partie gauche $Y$ doit augmenter mais, en faisant ça, la partie
 &lt;p&gt;Finalement, nous pouvons calculer exactement l&amp;rsquo;augmentation nécessaire grâce au multiplicateur.
 En effet, $\frac{\mathrm{d}Y}{\mathrm{d}G}$ indique de combien $Y$ change quand $G$ change.
 Nous avons déjà vu que $\frac{\mathrm{d}Y}{\mathrm{d}G} = \frac{1}{1-c_1} &amp;gt; 1$&lt;/p&gt;
-&lt;p&gt;Par exemple, imaginons que $r=0.4,T=3$ et $G$ passe de $G_0 = 8$ à $G_1 = 9$ et que $C(Y-T) = 4 + 0.6(Y-T)$, donc $c_0 = 4$ et $c_1 = 0.6$.
-Le multiplicateur des dépenses publiques est $\frac{1}{1-0.6}=2.5$.
-La valeur d&amp;rsquo;équilibre de $Y_0$ est $Y_0 = 47.75$ à $Y_1 = 48.25$, une augmentation de $2.5$, qui correspond bien à $2.5 \times \Delta G = 2.5 \times 1$.&lt;/p&gt;
+&lt;p&gt;Par exemple, imaginons que l&amp;rsquo;économie soit décrite avec les fonctions:
+\begin{align}
+C(Y-T) = c_0 + c_1(Y-T) = 4 + 0.6(Y-3) \\\
+I(r) = \frac{4} \\\
+Y = C(Y-T) + I(r) + G
+\end{align}&lt;/p&gt;
+&lt;p&gt;Ainsi, supposons que l&amp;rsquo;on fixe le taux d&amp;rsquo;intérêt $r=0.4$ et que les dépenses initiales du gouvernement soient $G=8$ avec un niveau d&amp;rsquo;imposition $T=2.$
+À ce niveau, la valeur de $Y$ est $Y = 52$.
+Le multiplicateur de $G$ est $\frac{1}{1-c_1}=\frac{1}{1-0.6}=2.5$
+Ainsi, si les dépenses publiques augmentent de 1 (donc $\Delta G=1$), le niveau de revenu augmente de $2.5$.
+Dans notre cas, il passe de $Y=52$ à $Y=54.5$ (faites le calcul!), soit une augmentation de $2.5 \Delta G.$&lt;/p&gt;
 &lt;h4 id=&#34;augmentation-de-t&#34;&gt;Augmentation de $T$&lt;/h4&gt;
 &lt;p&gt;Si, au contraire, le gouvernement augmente les impôts $T$, la courbe IS se déplace aussi.
 Pour le voir, admettons que nous fixons un taux d&amp;rsquo;intérêt $r$ et analysons comment la courbe doit changer pour garder l&amp;rsquo;identité $Y = C(Y-T) + I(r) + \bar{G}.$&lt;/p&gt;
