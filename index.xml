@@ -1267,6 +1267,17 @@ Conséquence: la courbe IS se déplace vers le bas.&lt;/p&gt;
 &lt;p&gt;Enfin, nous pouvons aussi utiliser le multiplicateur pour étuder l&amp;rsquo;effet.
 Nous aurons que $\frac{\mathrm{d}Y}{\mathrm{d}T} = -\frac{c_1}{1-c_1}$
 Par conséquent, une augmentation de $T$ fait bouger la courbe IS vers la gauche de $\frac{c_1}{1-c_1}.$&lt;/p&gt;
+&lt;p&gt;Par exemple, imaginons que l&amp;rsquo;économie soit décrite avec les mêmes fonctions qu&amp;rsquo;avant:
+\begin{align}
+C(Y-T) = c_0 + c_1(Y-T) = 4 + 0.6(Y-2) \\\
+I(r) = \frac{4}{r} \\\
+Y = C(Y-T) + I(r) + G
+\end{align}&lt;/p&gt;
+&lt;p&gt;Ainsi, supposons que l&amp;rsquo;on fixe le taux d&amp;rsquo;intérêt $r=0.4$ et que les dépenses initiales du gouvernement soient $G=8$ avec un niveau d&amp;rsquo;imposition $T=2.$
+À ce niveau, la valeur de $Y$ est $Y = 52$.
+Le multiplicateur de $T$ est $-\frac{c_1}{1-c_1}=-\frac{c_1}{1-0.6}=-1.5$
+Ainsi, si les impôts augmentent de 1 (donc $\Delta T=1$), le niveau de revenu &lt;em&gt;diminue&lt;/em&gt; de $1.5$.
+Dans notre cas, il passe de $Y=52$ à $Y=50.5$ (faites le calcul!), soit une réduction de $1.5 \Delta T.$&lt;/p&gt;
 &lt;p&gt;Par exemple, imaginons que $r=0.4,G=8$ et $T$ passe de $T_0 = 3$ à $T_1 = 4$ et que $C(Y-T) = 4 + 0.6(Y-T)$, donc $c_0 = 4$ et $c_1 = 0.6$.
 Le multiplicateur des impôts est $-\frac{0.6}{1-0.6}=1.5$.
 La valeur d&amp;rsquo;équilibre de $Y_0$ est $Y_0 = 47.75$ à $Y_1 = 45.25$, une diminution de $1.5$, qui correspond bien à $- 1.5 \times \Delta T = - 1.5 \times 1$.&lt;/p&gt;
