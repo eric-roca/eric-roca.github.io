@@ -944,10 +944,10 @@ This is, there are no reversals.</p>
 <p>Suppose we have an industry producing one good with capital and labor.
 We assume that this good is capital intensive, which means that the capital-labor ratio used in this industry is large.
 Let $Y = K^{0.8}L^{0.2}$ be the production function of this good.
-We can compute, for instance, how much dost it cost to produce 100 units of this good.
+We can compute, for instance, how much does it cost to produce 100 units of this good.
 \begin{align}
-\min_{L,K} &amp; w L + r K \\
-\text{s.t.} &amp; Y = K^{0.8}L^{0.2} = 100
+\min_{L,K}, &amp; w L + r K \\
+\text{s.t.}, &amp; Y = K^{0.8}L^{0.2} = 100
 \end{align}</p>
 <!--
 ToRadicals@
@@ -958,9 +958,9 @@ ToRadicals@
   Solution: 125 (-2)^(2/5) r^(4/5) w^(1/5)
   Note that (-2)^(2/5) = 4^(1/5)
 !-->
-<p>The minimum cost (difficult to solve) is: $125 \times 4^\frac{1}{5}  w^{1/5} r^\frac{4}{5}$.
+<p>The minimum cost (difficult to solve) is: $125 \times 4^\frac{1}{5}  w^\frac{1}{5} r^\frac{4}{5}$.
 Suppose we had prices $w=a$ and $r=b$ with $a&gt;b$ because labor is scarce.
-The cost of producing is $125 \times 4^\frac{1}{5} a^\frac{1}{5} b^{4/5}$.
+The cost of producing is $125 \times 4^\frac{1}{5} a^\frac{1}{5} b^\frac{4}{5}$.
 Would the cost decrease if the the prices were reversed, $w=b$ and $r=a$?
 The answer is no:
 \begin{align}
@@ -1034,7 +1034,7 @@ A representative firm in the xbox sector maximizes profits:
 \frac{\partial \mathcal{L}}{\partial L_x} &amp;= P_x \frac{\partial \mathcal{X}}{\partial L_x} - w_x  = 0 \\
 \\
 p_x \frac{d \mathcal{X}}{d K_x} &amp;= r_x \\
-p_y \frac{d \mathcal{X}}{d L_x} &amp;= w_x
+p_x \frac{d \mathcal{X}}{d L_x} &amp;= w_x
 \end{align}</p>
 <details>
   <summary>Question: how can we be sure that these equations have a solution?</summary>
@@ -1047,7 +1047,7 @@ p_y \frac{d \mathcal{X}}{d L_x} &amp;= w_x
 <p>Where the term $MPL_x$ is the marginal product of labor in the xbox sector and $MPK_x$ is the marginal product of capital in the xbox sector and the ratio $\frac{MPL_x}{MPK_x}$ is called the <strong>marginal rate of technical substitution</strong>.
 The marginal rate of technical substitution is the rate at which the country can substitute capital for labor in the xbox sector so that the level of output remains constant.
 We can easily check this by differentiating the production function:
-$0 = \mathcal{X}_K \mathrm{d}K_x + \mathcal{X}_L \mathrm{d}L_x \implies \frac{\mathcal{d}K_x}{\mathcal{d}L_x} = -\frac{\mathcal{X}_L}{\mathcal{X}_K} = \frac{MPL_x}{MPK_x}$</p>
+$0 = \mathcal{X}_K \mathrm{d}K_x + \mathcal{X}_L \mathrm{d}L_x \implies \frac{\mathcal{d}K_x}{\mathcal{d}L_x} = -\frac{\mathcal{X}_L}{\mathcal{X}_K} = -\frac{MPL_x}{MPK_x}$</p>
 <p>To see why it represents optimality, suppose $\frac{w_x}{r_x} &lt; \frac{MPL_x}{MPK_x}$.
 If we use one less unit of capital (K) and substitute it with labor (L) according to the MRTS, we can maintain the same level of output.
 The cost saving from using one less unit of labor is $w_x$.
@@ -1282,7 +1282,7 @@ As a consequence, $\frac{w}{r}$ falls for all levels $\frac{L}{K}$.
     <div class="w-100" ><img src="/img/international_trade/ho_capital_intensity_equilibrium_2.webp" alt="ho_capital_intensity_equilibrium_2" loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
-<p>Intuitively, when $\frac{p_x}{p_y}$ increases, forms want to produce more xboxes because they are more profitable.
+<p>Intuitively, when $\frac{p_x}{p_y}$ increases, firms want to produce more xboxes because they are more profitable.
 To do so, capital and labor in the xbox industry must increase.
 Now, let&rsquo;s suppose we move one unit of capital from the yogurt sector to the xbox sector.
 Because the capital intensity in the xbox sector is higher than in the yogurt sector ($\frac{K_x}{L_x} &gt; \frac{K_y}{L_y}$), for each unit of capital in the xbox sector, we need less workers than those that will be freed in the yogurt sector.
@@ -1325,10 +1325,10 @@ r &amp;= p_x MPK_x \quad \text{and} \quad r = p_y MPK_y \\
 \end{align}</p>
 <p>We also had:
 \begin{align}
-\frac{w}{s} &amp;= \frac{MPL_x}{MPK_x} \\
-\frac{w}{s} &amp;= \frac{MPL_y}{MPK_y}
+\frac{w}{r} &amp;= \frac{MPL_x}{MPK_x} \\
+\frac{w}{r} &amp;= \frac{MPL_y}{MPK_y}
 \end{align}</p>
-<p>Because $\frac{w}{s}$ decreases, the marginal product of labor must decrease and the marginal product of capital increases.
+<p>Because $\frac{w}{r}$ decreases, the marginal product of labor must decrease and the marginal product of capital increases.
 Importantly, this happens in <strong>both</strong> sectors.</p>
 <p>The real wage expressed in terms of xboxes is $\frac{w}{p_x}$.
 From the first-order conditions $w = p_x MPL_x$ we thus have $\frac{w}{p_x} = MPL_x$.
@@ -1349,9 +1349,9 @@ So, the real capital return increases when we express it in terms of xboxes or y
 From the optimality conditions (and equality of wages and returns) we have:
 \begin{align}
 \frac{w}{r} &amp;= \frac{\frac{1}{3} K_x^\frac{2}{3} L_x^\frac{-2}{3}}{\frac{2}{3} K_x^\frac{-1}{3} L_x^\frac{1}{3}} = \frac{1}{2} \frac{K_x}{L_x} \\
-\frac{w}{r} &amp;= \frac{\frac{2}{3} K_x^\frac{1}{3} L_x^\frac{-1}{3}}{\frac{1}{3} K_x^\frac{-2}{3} L_x^\frac{2}{3}} = 2 \frac{K_x}{L_x} \\
+\frac{w}{r} &amp;= \frac{\frac{2}{3} K_y^\frac{1}{3} L_y^\frac{-1}{3}}{\frac{1}{3} K_y^\frac{-2}{3} L_y^\frac{2}{3}} = 2 \frac{K_y}{L_y} \\
 \end{align}
-From here, we can derive the labour-capital ratios as functions of $\frac{w}{p}$:
+From here, we can derive the labour-capital ratios as functions of $\frac{w}{r}$:
 \begin{align}
 \frac{L_x}{K_x} &amp;= \frac{1}{2} \left(\frac{w}{r}\right)^{-1} \\
 \frac{L_y}{K_y} &amp;= 2 \left(\frac{w}{r}\right)^{-1} \\
@@ -1386,7 +1386,7 @@ Then:</p>
 0.75 &amp;= 2 \frac{(20-K_x)^\frac{1}{3} L_x^\frac{2}{3}}{K_x^\frac{2}{3} (10 - L_x)^\frac{1}{3}} \\
 0.75 &amp;= \frac{1}{2}\frac{K_x^\frac{1}{3}(10-L_y)^\frac{2}{3}}{(20-K_x)^\frac{2}{3}L_x^\frac{1}{3}} \\
 \\ \\
-K_x &amp;= 10.8642,, L_x = 2.2917,, K_y = 9.1358,, L_y = 7.7083
+K_x &amp;= 10.8642, L_x = 2.2917, K_y = 9.1358, L_y = 7.7083
 \end{align}</p>
 <p>Then, from,
 \begin{equation}
@@ -1399,7 +1399,7 @@ The real wage in terms of $x$ is $\frac{w}{p_x} = MPL_x = 0.94$, in terms of $y$
 0.8 &amp;= 2 \frac{(20-K_x)^\frac{1}{3} L_x^\frac{2}{3}}{K_x^\frac{2}{3} (10 - L_x)^\frac{1}{3}} \\
 0.8 &amp;= \frac{1}{2}\frac{K_x^\frac{1}{3}(10-L_y)^\frac{2}{3}}{(20-K_x)^\frac{2}{3}L_x^\frac{1}{3}} \\
 \\ \\
-K_x &amp;= 13.6458,, L_x = 3.493, K_y = 6.3541,, L_y = 6.506
+K_x &amp;= 13.6458, L_x = 3.493, K_y = 6.3541, L_y = 6.506
 \end{align}</p>
 <p>And the wage-rental ratio decreases to $\frac{w}{r} = 1.9531$
 The real wage in terms of $x$ is $\frac{w}{p_x} = MPL_x = 0.826$, in terms of $y$ is 0.661 and the real rental rate is $\frac{r}{p_x} = 0.423$ and $\frac{r}{p_y} = 0.3386$</p>
