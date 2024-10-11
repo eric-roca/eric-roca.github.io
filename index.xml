@@ -3237,7 +3237,7 @@ En effet avec une dette publique qui atteint 110 % du PIB et un déficit public 
 &lt;/blockquote&gt;
 &lt;p&gt;Pour rétablir l&amp;rsquo;équilibre budgétaire, il est nécessaire de réduire $G$ ou augmenter $T$ (ou utiliser les deux simultanément).
 On peut se demander quel est le meilleur moyen pour attendre l&amp;rsquo;équilibre de manière à affecter le PIB le moins possible.&lt;/p&gt;
-&lt;p&gt;Imaginons qu&amp;rsquo;on peut décrire l&amp;rsquo;économie française avec les fonctions suivantes et que, initialement, $\frac{M^s}{p}=0.4, T=0.445, G=0.5$.
+&lt;p&gt;Imaginons qu&amp;rsquo;on peut décrire l&amp;rsquo;économie française avec les fonctions suivantes et que, initialement, $\frac{M^s}{p}=0.078, T=0.445, G=0.5$.
 \begin{align}
 Y &amp;amp;= 0.1 +0.4(Y-T) + 0.1 + \frac{1}{r} + G \\
 \frac{M^s}{p} &amp;amp;= \frac{Y}{r}
