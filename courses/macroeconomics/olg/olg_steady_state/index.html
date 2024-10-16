@@ -910,6 +910,7 @@
         <li><a href="#log-utility-and-ces-technology">Log-utility and CES technology</a></li>
       </ul>
     </li>
+    <li><a href="#solved-example">Solved example</a></li>
   </ul>
 </nav>
 
@@ -973,7 +974,7 @@ There can be two additional, positive steady states depending on the curvature o
 
 <figure  >
   <div class="d-flex justify-content-center">
-    <div class="w-100" ><img src="/img/olg/example_1.webp" alt="steady states" loading="lazy" data-zoomable /></div>
+    <div class="w-100" ><img src="/img/olg/example_1.png" alt="steady states" loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
 <p>Similarly, the Cobb-Douglas case $\rho \rightarrow 0$ also has zero as a steady state.
@@ -1000,7 +1001,7 @@ Moreover, the configuration varies depending on the production and utility funct
 
 <figure  >
   <div class="d-flex justify-content-center">
-    <div class="w-100" ><img src="/img/olg/example_2.webp" alt="behaviour" loading="lazy" data-zoomable /></div>
+    <div class="w-100" ><img src="/img/olg/example_2.png" alt="behaviour" loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
 <h2 id="stability-of-the-steady-state">Stability of the steady state</h2>
@@ -1027,7 +1028,7 @@ We do so by showing that $\lim_{k \rightarrow +\infty} \color{green}{\frac{\omeg
 <details>
 <summary>Detailed explanation</summary>
 We start by noting that:
-<p>$$\color{green}{\frac{\omega(k)}{k}} = \color{red}{\frac{f(k)}{k}} - \color{blue}{f^\prime (k)} \color{black}{\leftarrow \omega(k) = f(k) - f^\prime (k) k.}$$</p>
+<p>$$\color{green}{\frac{\omega(k)}{k}} = \color{red}{\frac{f(k)}{k}} - \color{blue}{f^\prime (k)} \leftarrow \omega(k) = f(k) - f^\prime (k) k.$$</p>
 <p>When $k \rightarrow +\infty$, <strong>the first term $\color{red}{\frac{f(k)}{k}}$</strong> admits a positive limit, let&rsquo;s call it $\mathcal{l}_{1}.$
 This is because:</p>
 <ol>
@@ -1059,8 +1060,7 @@ $$u^\prime(w_{t} - s_{t}) = \beta R_{t+1} u^\prime (R_{t+1}s_{t}).$$</p>
 <p>$$k_{t+1} = \frac{1}{1+n}s_{t} = \frac{1}{1+n}\frac{\beta}{1+\beta}w_{t} = \frac{1}{1+n}\frac{\beta}{1+\beta}(1-\alpha)Ak_{t}^\alpha.$$</p>
 <p>The model with log-utility and Cobb-Douglas production functions has two steady states: zero and a unique positive steady state.
 We can solve for them:</p>
-<p>$$\bar{k} = \frac{1}{1+n}\frac{\beta}{1+\beta}(1-\alpha)A\bar{k}^\alpha \implies $$
-$$\implies \bar{k} = \begin{cases} 0 \\\ \left(\frac{1}{1+n}\frac{\beta}{1+\beta}(1-\alpha)A\right)^{\frac{1}{1-\alpha}} \equiv \phi^\frac{1}{1-\alpha}\end{cases}.$$</p>
+<p>$$\bar{k} = \frac{1}{1+n}\frac{\beta}{1+\beta}(1-\alpha)A\bar{k}^\alpha \implies \bar{k} = \begin{cases} 0 \\\ \left(\frac{1}{1+n}\frac{\beta}{1+\beta}(1-\alpha)A\right)^{\frac{1}{1-\alpha}} \equiv \phi^\frac{1}{1-\alpha}\end{cases}.$$</p>
 <p><strong>Local dynamics: stability</strong></p>
 <p>We check the stability of the two steady states using the first derivative evaluated at the steady state.
 <strong>Note:</strong> in general we would use the Jacobian matrix, but the OLG model has only one equation in one variable.</p>
@@ -1093,7 +1093,7 @@ We show that the dynamics are bounded above by the steady state $\bar{k} = \phi^
 
 <figure  >
   <div class="d-flex justify-content-center">
-    <div class="w-100" ><img src="/img/olg/Log_CD.webp" alt="log_cd" loading="lazy" data-zoomable /></div>
+    <div class="w-100" ><img src="/img/olg/Log_CD.png" alt="log_cd" loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
 <h3 id="log-utility-and-ces-technology">Log-utility and CES technology</h3>
@@ -1106,13 +1106,11 @@ The curve $g(k)$ is increasing:</p>
 <p>$$g^\prime (k) = \frac{\beta A (1-\alpha)}{(1+n)(1+\beta )}(1-\rho)\left[ \alpha k^\rho + 1 - \alpha \right]^\frac{1-2 \rho}{\rho}k^{\rho -1} &gt; 0.$$</p>
 <p>Depending on the value of $\rho$ we can have different configurations regarding the steady states.
 Ultimately, what matters is the concavity of the function $g(k_{t}).$</p>
-<p>$$g^{\prime \prime}(k_t) = $$
-$$-\frac{1}{1+n}\frac{\beta}{1+\beta}A(1-\rho)\alpha\left[\alpha k^\rho+1-\alpha\right]^\frac{1-3\rho}{\rho}k^{\rho-2}\left(\rho \alpha k^\rho +(1-\alpha)(1-\rho)\right).$$</p>
+<p>$$g^{\prime \prime}(k_t) = -\frac{1}{1+n}\frac{\beta}{1+\beta}A(1-\rho)\alpha\left[\alpha k^\rho+1-\alpha\right]^\frac{1-3\rho}{\rho}k^{\rho-2}\left(\rho \alpha k^\rho +(1-\alpha)(1-\rho)\right).$$</p>
 <h4 id="unique-steady-state-bark--0">Unique steady state, $\bar{k} &gt; 0$</h4>
 <p>If $\rho \in (0,1)$, the second derivative is clearly negative, and $g$ is concave.
 Moreover, $g(0)&gt;0$, so $\bar{k} = 0$ cannot be a steady state:</p>
-<p>$$g(k_{t}) = \frac{\beta A(1-\alpha)}{(1+n)(1+\beta)}(\alpha k^\rho + 1 - \alpha)^\frac{1-\rho}{\rho} \implies $$
-$$ \implies g(0)=\frac{\beta A(1-\alpha)^\frac{1}{\rho}}{(1+n)(1+\beta)}&gt; 0.$$
+<p>$$g(k_{t}) = \frac{\beta A(1-\alpha)}{(1+n)(1+\beta)}(\alpha k^\rho + 1 - \alpha)^\frac{1-\rho}{\rho} \implies g(0)=\frac{\beta A(1-\alpha)^\frac{1}{\rho}}{(1+n)(1+\beta)}&gt; 0.$$
 In that case, the economy displays a unique steady state, and it is globally stable.</p>
 <p>
 
@@ -1132,7 +1130,7 @@ In that case, the economy displays a unique steady state, and it is globally sta
 
 <figure  >
   <div class="d-flex justify-content-center">
-    <div class="w-100" ><img src="/img/olg/ces0.webp" alt="ces0" loading="lazy" data-zoomable /></div>
+    <div class="w-100" ><img src="/img/olg/ces0.png" alt="ces0" loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
 <h4 id="unique-bark0-or-multiple-steady-states">Unique $\bar{k}=0$ or multiple steady states</h4>
@@ -1183,7 +1181,84 @@ The steady state with $\bar{k}=0$ is a <strong>poverty trap</strong>: whenever t
 
 <figure  >
   <div class="d-flex justify-content-center">
-    <div class="w-100" ><img src="/img/olg/ces1.webp" alt="ces1" loading="lazy" data-zoomable /></div>
+    <div class="w-100" ><img src="/img/olg/ces1.png" alt="ces1" loading="lazy" data-zoomable /></div>
+  </div></figure>
+</p>
+<h2 id="solved-example">Solved example</h2>
+<p>Suppose that production can be parametrized using the following Cobb-Douglas specification:
+\begin{equation}
+Y = F\left(K_t, L_t\right) = K_t^\frac{1}{2}L_t^\frac{1}{2}.
+\end{equation}</p>
+<p>Furthermore, assume the following utility function:
+\begin{equation}
+u(c_t) = \frac{c_t^{1-\frac{1}{3}}-1}{1-\frac{1}{3}}
+\end{equation}
+where the intertemporal elasticity of substitution is $-3.$</p>
+<p>We can compute production function, the wage and the interest in intensive form as:
+\begin{align}
+f(k_t) &amp;= k_t^\alpha \\\
+w_t &amp;= f(k_t) - f^\prime(k_t) k_t = (1-\alpha) k_t^\alpha \\\
+r_t &amp;= f^\prime(k_t) = \alpha k_t^\frac{-1}{2}
+\end{align}</p>
+<p>Similarly, the savings function can be derived from the Euler equation as follows:
+\begin{align}
+u^\prime(w_t - s_t) &amp;= \beta R_{t+1} u^\prime(s_t R_{t+1}) \implies \\\
+\implies (w_t -s_t)^\frac{-1}{3} &amp;= \beta R_{t+1} (R_{t+1} s_t)^\frac{-1}{3} \implies \\\
+\implies (w_t - s_t) &amp;= \beta^{-3} R_{t+1}^{-2} s_t \implies \\\
+s_t &amp;= \frac{w_t}{1+\beta^{-3}R_{t+1}^{-2}}
+\end{align}</p>
+<p>Therefore, the capital accumulation equation is:
+\begin{align}
+k_{t+1} &amp;= \frac{1}{1+n} \frac{w_t}{1+\beta^{-3} R_{t+1}^{-2}} = \frac{1}{1+n} \frac{\frac{1}{2} k_t^\frac{1}{2}}{1+\beta{-3}\left(\frac{1}{2}k_{t+1}^\frac{-1}{2}\right)^{-2}} \implies \\\
+k_{t+1} &amp;= \frac{1}{1+n} \frac{\frac{1}{2} k_t^\frac{1}{2}}{1+4\beta^{-3} k_{t+1}} \implies \\\
+\frac{1}{2} k_t^\frac{1}{2} &amp;= (1+n)k_{t+1}\left(1+4 \beta^{-3} k_{t+1}\right)  \implies \\\
+k_{t+1} &amp;= \frac{-(1+n) + \sqrt{(1+n)^2+8(1+n)\beta^{-3}k_t^\frac{1}{2}}}{8(1+n)\beta^{-3}}
+\end{align}</p>
+<p>We can then show that the autarky steady state exists.
+Indeed, because we have $f(0) = 0$, then $\bar{k} = 0$ is a steady state.
+The economy has a second steady state, but solving for it explicitly is challenging becuase it involves a third degree polynomial.
+Nevertheless, let&rsquo;s sketch the process, knowing that a steady state solves $k_t = k_{t+1} = \bar{k}.$
+To simplify the notation, in what follows I will write $k$ instead of $\bar{k}.$
+\begin{align}
+k = \frac{-(1+n) + \sqrt{(1+n)^2+8(1+n)\beta^{-3}k^\frac{1}{2}}}{8(1+n)\beta^{-3}} &amp;\implies \\\
+1 + 8(1+n)\beta^{-3}k = \sqrt{1+8^{-3}k^\frac{1}{2}} &amp;\implies \\\
+16 \beta^{-3}k + 64 \beta^{-6} k^2 = 8 \beta^{-3} k^\frac{1}{2} &amp;\implies \\
+k^\frac{1}{2}\left(8 \beta^{-3}k^\frac{3}{2} + k^\frac{1}{2} - 1\right) &amp;=0
+\end{align}</p>
+<p>From here, it is obvious that $k = 0$ is a steady state, as we already knew.
+In principle, the part in brackes may have up to three solutions, but as said, these are hard to get.
+Instead, we can show that one and only one (real) solution can exist by studying the stability of the steady states.
+Moreover, the functional form we have is similar to a square root: we have the square root of something to the power $\frac{1}{2}$, so this means that the function will behave similar to $x^\frac{1}{4}.$
+Thus, we can expect only a second steady state to exist.</p>
+<p>The derivative of the dynamic function with respect to $k_t$ is:</p>
+<p>\begin{equation}
+\frac{\partial k_{t+1}}{\partial k_t} = \frac{1}{4\sqrt{k_t}\sqrt{(1+n)\left(1+n+\frac{8\sqrt{k_t}}{\beta^{3}}\right)}}
+\end{equation}</p>
+<p>When $k_t = k_{t+1} = 0$, the value of the derivative is $+\infty$, and thus, that steady state is non-stable.
+Moreover, for any value $k&gt;0$, the derivative is between $0$ and $1$.
+Therefore, any other possible steady state is stable.
+Because the economy cannot converge to $k\rightarrow \infty$, and because all the potential steady states with positive capital are stable, this implies that only can exist.
+Otherwise, all of the would attract the dynamics, but this is impossible in this model: we must converge somewhere.
+In fact, the plot of the dynamics is as follows:</p>
+<p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img src="/img/olg/dynamics_full_example.jpg" alt="Dynamics" loading="lazy" data-zoomable /></div>
   </div></figure>
 </p>
 <div class="footnotes" role="doc-endnotes">
