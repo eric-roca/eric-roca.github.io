@@ -5,7 +5,7 @@
     <link>https://eric-roca.github.io/</link>
       <atom:link href="https://eric-roca.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Èric Roca Fernández</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 28 Apr 2024 14:35:00 -0500</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 18 Jul 2024 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://eric-roca.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Èric Roca Fernández</title>
@@ -5293,7 +5293,7 @@ En conséquence, si $Y$ augmente, $e$ doit diminuer.&lt;/p&gt;
 \begin{align}
 Y &amp;amp;= C(Y-T) + \bar{I} + G + NX(e) \implies \\
 \mathrm{d} Y &amp;amp;= c_1 \mathrm{d}Y + NX&amp;rsquo;(e) \mathrm{d} e \implies \\
-\frac{\mathrm{d} e}{\mathrm{d} Y} &amp;amp;= \frac{1-c_1}{NX^(e)\frac{NX^\prime}{1-c_1}} &amp;lt; 0
+\frac{\mathrm{d} e}{\mathrm{d} Y} &amp;amp;= \frac{1-c_1}{NX^\prime} &amp;lt; 0
 \end{align}&lt;/p&gt;
 &lt;p&gt;
 
@@ -11905,6 +11905,14 @@ Ainsi, on aboutit à la même conclusion : si l&amp;rsquo;on veut comprendre la 
 &lt;p&gt;Comme le modèle de Ramsey repose sur l&amp;rsquo;hypothèse que les ménages sont capables d&amp;rsquo;optimiser parfaitement leur consommation et leur épargne, il offre un outil pour étudier la réponse de l&amp;rsquo;économie à divers chocs, comme les chocs technologiques, les chocs de demande ou les chocs de l&amp;rsquo;offre.
 Il permet d&amp;rsquo;analyser la dynamique de l&amp;rsquo;économie suite à ces chocs et comment les ménages ajustent leur comportement en conséquence.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Understanding cultural persistence and change: a replication of Giuliano and Nunn (2021)</title>
+      <link>https://eric-roca.github.io/publication/replication_gn/</link>
+      <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://eric-roca.github.io/publication/replication_gn/</guid>
+      <description></description>
     </item>
     
     <item>
