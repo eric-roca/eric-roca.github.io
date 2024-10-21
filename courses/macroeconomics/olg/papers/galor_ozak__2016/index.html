@@ -1024,7 +1024,7 @@ This is, because farmers have more children than hunters, if we assume that pref
 The paper assumes almost that, although modifies slightly the transmission of preferences for individuals engaging in farming.
 In particular:</p>
 <ul>
-<li>$\beta^i_t$ is perfectly transmitted if an individual is a farmer.</li>
+<li>$\beta^i_t$ is perfectly transmitted if an individual is a hunter.</li>
 <li>Farmers transmit a larger value of $\beta^i_t$ to their children, reflecting an acquired tolerance to waiting and delaying reward.
 This is:
 $$\beta^i_{i,t+1} = \begin{cases}
@@ -1035,7 +1035,7 @@ with</li>
 <li>$\beta^i_t \leq \phi(\beta^i_t) &lt; 1$: the transmitted $\beta$ is always more than the one the parent had,</li>
 <li>$\phi(\hat{\beta},R^1) &gt; \beta^i_t$,</li>
 <li>$\phi_\beta(\beta^i_t,R^1)&gt;0$: the higher the value of $\beta^i_{t+1}$, the more it increases,</li>
-<li>$\phi_{\beta\beta}(\beta^i_t,R^1)&gt;0$: but at a decreasing rate,</li>
+<li>$\phi_{\beta\beta}(\beta^i_t,R^1)&lt;0$: but at a decreasing rate,</li>
 <li>$\phi_R(\beta^i_t,R^1)&gt;0$: the higher the value of $R$, the more $\beta^i_{t+1}$ increases.</li>
 </ul>
 <p>Suppose an individual at the beginning of time who has $\beta^i_0 &lt; \hat{\beta}.$
@@ -1046,10 +1046,10 @@ Hence, if $\beta^i_0 \leq \hat{\beta} \implies \lim_{t\rightarrow \infty} \beta^
 The individual will become a farmer and transmit $\phi(\beta^i_0,R^1) &gt; \beta^i_0.$
 Accordingly, all his sons will also be farmers and keep transmitting an ever-increasing value of $\beta^i_{t+1}.$
 However, because $\phi_{\beta \beta}(\beta^i_t,R^1) &lt; 0$, the transmission process has a steady-state, this is, $\lim_{t \rightarrow \infty} \beta^i_t = \bar{\beta^I}.$
-Notice that $\hat{\beta^I}$ is the maximum level $\beta^i_t$ can reach.</p>
+Notice that $\bar{\beta^I}$ is the maximum level $\beta^i_t$ can reach.</p>
 <h3 id="proof-not-in-the-paper">Proof (not in the paper)</h3>
 <p>We want to show that $\beta^i_{t+1} = \phi(\beta^i_t,R^1)$ has a unique steady-state.
-This amount to showing that $\bar{\beta^I} = \phi(\bar{\beta^I},R^1)$ for a unique value $\bar{\beta^I}.$
+This amounts to showing that $\bar{\beta^I} = \phi(\bar{\beta^I},R^1)$ for a unique value $\bar{\beta^I}.$
 Define $G(\beta) = \phi(\beta,R) - \beta.$
 Since we focus on farmers, we know that the very initial one in the dynasty had $\beta^i_0 &gt; \hat{\beta}$.
 So, for our purposes, the function $G$ has as domain $\beta \in [\hat{\beta},\infty).$
@@ -1072,7 +1072,7 @@ $$L_t^I = L_0^I {n^I}^t = (\frac{\gamma}{\tau}R^1)^tL_0^I$$
 and total population is $L_t = L_t^E + L_t^I.$</p>
 <p>Finally, notice that the distribution of $\beta^i_t$ does not change for those individuals with $\beta^i_t \leq \bar{\beta}$: in fact, they all have the same number of children, and each child inherits the trait of his parent.
 Therefore, the average value $\bar{\beta^E}$ is constant over time.
-In contrast, the average value $\bar{\beta^E_t}$ increases.
+In contrast, the average value $\bar{\beta^I_t}$ increases.
 In any case, at any given period $t$, the overall average value for time preference is given by:
 $$\bar{\beta_t} = \theta^E_t \bar{\beta^E_t} + (1-\theta^E_t)\bar{\beta_t^I},$$
 where $\theta^E_t$ is the fraction of individuals who engage in the endowment production process, and $\bar{\beta_t}$ is just the weighted average.
