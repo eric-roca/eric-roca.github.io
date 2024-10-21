@@ -11397,7 +11397,7 @@ Notice that $\beta^i_t$ changes over time and also by individual.&lt;/p&gt;
 Hence, $c_{i,t} = y_{i,t}$.
 However, during the last period individuals can trade-off utility from consumption and utility from children.
 The paper assumes that each child costs $\tau$ units of consumption, which gives rise the last-period budget constraint:
-$$y_{i,t+1} = c_{i,t+1} + \tau n_{i,t+1}.$$&lt;br&gt;
+$$y_{i,t+1} = c_{i,t+1} + \tau n_{i,t+1}.$$
 Considering the preferences, utility maximisation implies:
 $$c_{i,t+1} = (1-\gamma) y_{i,t+1},$$
 $$n_{i,t+1} = \frac{\gamma}{\tau} y_{i,t+1}.$$&lt;/p&gt;
@@ -11408,12 +11408,12 @@ $$v_{i,t} = \ln y_{i,t} + \beta^i_t [\ln y_{i,t+1} + \xi],\quad \xi \equiv \gamm
 This is, each individual will decide the mode of production (endowment or investment) that maximises lifetime utility.
 Hence,:
 $$v_{i,t} = \begin{cases}
-\ln R^0 + \beta^i_t (R^0 + \xi) &amp;amp; \mathrm{if\, endowment} \\\
-\ln 1 + \beta^i_t ( R^1 + \xi)   &amp;amp; \mathrm{if\, investment}
+\ln R^0 + \beta^i_t (\ln(R^0) + \xi) &amp;amp; \mathrm{if\, endowment} \\\
+\ln 1 + \beta^i_t (\ln(R^1) + \xi)   &amp;amp; \mathrm{if\, investment}
 \end{cases}.$$&lt;/p&gt;
 &lt;p&gt;An individual is indifferent between modes of production if he obtains the same utility from both.
 This is, the individual with $\beta^i_t = \hat{\beta}$ is indifferent between becoming a hunter or a farmer if and only if:
-$$\ln R^0 + \hat{\beta} (R^0 + \xi) = \ln 1 + \hat{\beta} \ln (R^1+\xi).$$
+$$\ln R^0 + \hat{\beta} (\ln(R^0) + \xi) = \ln 1 + \hat{\beta} (\ln (R^1)+\xi).$$
 Solving for $\hat{\beta}$ allows us to identify such individual:&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;
 $$\hat{\beta} = \frac{\ln R^0}{\ln R^1 - \ln R^0} \in (0,1).$$&lt;/p&gt;
 &lt;p&gt;Lastly, all individuals with $\beta^i_t &amp;lt; \hat{\beta}$ will optimally choose the endowment technology while those with $\beta^i_t &amp;gt; \hat{\beta}$ find the investment technology optimal.
