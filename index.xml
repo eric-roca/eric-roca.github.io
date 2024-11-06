@@ -4914,8 +4914,13 @@ This is:
 \left(\frac{L_x}{K_x}\right) &amp;amp;= \left(\frac{L_x}{K_x}\right)^\star \\
 \left(\frac{L_y}{K_y}\right) &amp;amp;= \left(\frac{L_y}{K_y}\right)^\star \\
 \end{align}&lt;/p&gt;
-&lt;p&gt;Then, because $\frac{w}{r} = \frac{MPL_x}{MPK_x} = \frac{MPL_y}{MPK_y}$, and $\frac{w^\star}{r^\star} = \frac{MPL_x^\star}{MPK_x^\star} = \frac{MPL_y^\star}{MPK_y^\star}$, we have that $\frac{w}{r} = \frac{w^\star}{r^\star}$, using the previous condition we arrive at $w = w^\star$ and $r = r^\star$.
+&lt;p&gt;Then, because $\frac{w}{r} = \frac{MPL_x}{MPK_x} = \frac{MPL_y}{MPK_y}$, and $\frac{w^\star}{r^\star} = \frac{MPL_x^\star}{MPK_x^\star} = \frac{MPL_y^\star}{MPK_y^\star}$, we have that $\frac{w}{r} = \frac{w^\star}{r^\star}$.
+This is, the relative factor costs are the same across countries.
+Finally, it is possible to show that the price of each factor is also the same between countries: $w = w^\star$ and $r=r^\star.$
 This is, factor prices equalize.&lt;/p&gt;
+&lt;p&gt;In essence, when two countries trade, they are effectively trading factors of production.
+If Home is labor abundant, for instance, it lets Foreign use some of its workers, not by selling labor but by exporting goods that were produced with a high labor-to-capital ratio.
+Indeed, the goods that Home sells use much more labour that what it receives, so more labor is &lt;em&gt;embodied&lt;/em&gt; in Home&amp;rsquo;s exports.&lt;/p&gt;
 </description>
     </item>
     
