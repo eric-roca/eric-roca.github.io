@@ -5988,7 +5988,7 @@ When the inter-temporal elasticity of substitution is equal to 1 (log-utility), 
 &lt;p&gt;$$s(w,R) = \frac{1}{1+\beta^{-\sigma}R^{1-\sigma}}w,$$&lt;/p&gt;
 &lt;p&gt;and
 $$s^{\prime}_w  =\frac{1}{1+\beta^{-\sigma}R^{1-\sigma}} &amp;gt; 0.$$&lt;/p&gt;
-&lt;p&gt;However, $s^{\prime}_{R} = - \frac{w R^{-\sigma}}{\left(1+\beta^{-\sigma}R^{1-\sigma}\right)^{2}}(1-\sigma)\gtreqqless 0$ depending on $\sigma \lesseqqgtr 1.$&lt;/p&gt;
+&lt;p&gt;However, $s^{\prime}_{R} = - \frac{w \beta^{-\sigma} R^{-\sigma}}{\left(1+\beta^{-\sigma}R^{1-\sigma}\right)^{2}}(1-\sigma)\gtreqqless 0$ depending on $\sigma \lesseqqgtr 1.$&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Log-utility:&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;In the case of logarithmic utility, savings are independent of the interest rate $R$ and are linear in wages.
 Log-utility is a special case of the CIES function when $\sigma=1.$
@@ -8066,7 +8066,7 @@ There can be two additional, positive steady states depending on the curvature o
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/olg/example_1.png&#34; alt=&#34;steady states&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/olg/example_1.webp&#34; alt=&#34;steady states&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Similarly, the Cobb-Douglas case $\rho \rightarrow 0$ also has zero as a steady state.
@@ -8093,7 +8093,7 @@ Moreover, the configuration varies depending on the production and utility funct
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/olg/example_2.png&#34; alt=&#34;behaviour&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/olg/example_2.webp&#34; alt=&#34;behaviour&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;stability-of-the-steady-state&#34;&gt;Stability of the steady state&lt;/h2&gt;
@@ -8185,7 +8185,7 @@ We show that the dynamics are bounded above by the steady state $\bar{k} = \phi^
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/olg/Log_CD.png&#34; alt=&#34;log_cd&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/olg/Log_CD.webp&#34; alt=&#34;log_cd&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;log-utility-and-ces-technology&#34;&gt;Log-utility and CES technology&lt;/h3&gt;
@@ -8222,7 +8222,7 @@ In that case, the economy displays a unique steady state, and it is globally sta
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/olg/ces0.png&#34; alt=&#34;ces0&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/olg/ces0.webp&#34; alt=&#34;ces0&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h4 id=&#34;unique-bark0-or-multiple-steady-states&#34;&gt;Unique $\bar{k}=0$ or multiple steady states&lt;/h4&gt;
@@ -8273,7 +8273,7 @@ The steady state with $\bar{k}=0$ is a &lt;strong&gt;poverty trap&lt;/strong&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/olg/ces1.png&#34; alt=&#34;ces1&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/olg/ces1.webp&#34; alt=&#34;ces1&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;solved-example&#34;&gt;Solved example&lt;/h2&gt;
