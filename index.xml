@@ -7589,7 +7589,7 @@ Finally, we can substitute everything in the production functions to obtain the 
 &amp;amp;=\left(K_C^\frac{1}{2} \left(\frac{L K_C}{2K - K_C}\right)^\frac{1}{2},\, (K-K_C)^\frac{1}{3} \left(L-\frac{L K_C}{2K - K_C}\right)^\frac{2}{3}\right).
 \end{align}.$$&lt;/p&gt;
 &lt;p&gt;Last, we can isolate $K_C$ from the equation for $C$ and obtain
-$$K_C = \frac{Q_C \sqrt{Q_C^2+4LK}-Q_C^2}{2L}.$$
+$$K_C = \frac{Q_C \sqrt{Q_C^2+8LK}-Q_C^2}{2L}.$$
 Finally, we can plug this expression for $K_C$ into the parametric equation of $F$ and obtain the quantity of food that the economy can produce as a function of the number of clothing:
 $$\begin{align}
 &amp;amp; Q_F = \\\
