@@ -2032,7 +2032,7 @@ If we assume, for a second, that the economy counts with $10$ units of labour $(
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/international_trade/PPF.png&#34; alt=&#34;PPF&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/international_trade/PPF.webp&#34; alt=&#34;PPF&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h3 id=&#34;deciding-how-much-to-produce&#34;&gt;Deciding how much to produce&lt;/h3&gt;
@@ -2062,7 +2062,7 @@ The next figure draws isovalue lines for values $V = {20,40,60}.$&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/international_trade/Isovalues.png&#34; alt=&#34;Isovalue_lines&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/international_trade/Isovalues.webp&#34; alt=&#34;Isovalue_lines&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;To draw one isovalue line for a given $V$, we isolate the variable in the vertical axis, this is, $Q_F$ in our case:
@@ -2102,7 +2102,7 @@ Thus, it is optimal to lie on the point that is the farthest away which still to
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/international_trade/PPF_optimal.png&#34; alt=&#34;PPF_Optimal&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/international_trade/PPF_optimal.webp&#34; alt=&#34;PPF_Optimal&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;When the relative price changes, the slope of the isovalue lines change.
@@ -2140,7 +2140,7 @@ As $Q_C$ increases and $Q_F$ decreases following the rise if $P_C$, it is easy t
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/international_trade/Change_in_relative_price.png&#34; alt=&#34;Change_in_relative_price&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/international_trade/Change_in_relative_price.webp&#34; alt=&#34;Change_in_relative_price&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;individuals-preferences-and-the-relative-demand-curve&#34;&gt;Individuals&amp;rsquo; preferences and the relative demand curve&lt;/h2&gt;
@@ -2171,7 +2171,7 @@ The next Figure plots several indifference curves, with values $\bar{U} = {1, 1.
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/international_trade/Indifference_curves.png&#34; alt=&#34;Indifference&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/international_trade/Indifference_curves.webp&#34; alt=&#34;Indifference&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Considering that the economy can trade at the prices $P_C,\, P_F$, individuals will optimize according to them.
@@ -2202,7 +2202,7 @@ Such equilibrium is represented in the Figure below:&lt;/p&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/international_trade/Equilibrium.png&#34; alt=&#34;Equilibrium&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/international_trade/Equilibrium.webp&#34; alt=&#34;Equilibrium&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;As we did before, we can consider the effect of an increase in $\frac{P_C}{P_F}$.
@@ -2236,7 +2236,7 @@ Therefore, consumers tend to consume less of $C$ and more of $F$.&lt;/li&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/international_trade/Change_Equilibrium.png&#34; alt=&#34;Change_Equilibrium&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/international_trade/Change_Equilibrium.webp&#34; alt=&#34;Change_Equilibrium&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;p&gt;Similar to the relative supply curve, we can draw a relative demand curve which represents the relative demand $\frac{Q_C}{Q_F}$ with respect to the relative price $\frac{P_Q}{P_F}.$&lt;/p&gt;
@@ -2258,7 +2258,7 @@ Therefore, consumers tend to consume less of $C$ and more of $F$.&lt;/li&gt;
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/international_trade/Relative_supply_and_demand.png&#34; alt=&#34;Relative_supply_and_demand&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/international_trade/Relative_supply_and_demand.webp&#34; alt=&#34;Relative_supply_and_demand&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;the-terms-of-trade&#34;&gt;The terms of trade&lt;/h2&gt;
@@ -2294,7 +2294,7 @@ As usual, equilibrium points are found by equalizing the slope of the PPF in eac
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/international_trade/Production_in_each_country.png&#34; alt=&#34;Production_in_each_country&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/international_trade/Production_in_each_country.webp&#34; alt=&#34;Production_in_each_country&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 
 The world-level relative supply of clothing and food can be computed by aggregating from the country level:
@@ -2322,7 +2322,7 @@ The Figure below illustrates the case:
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/international_trade/World_relative_supply_and_demand.png&#34; alt=&#34;World_relative_supply_and_demand&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/international_trade/World_relative_supply_and_demand.webp&#34; alt=&#34;World_relative_supply_and_demand&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 &lt;/p&gt;
 &lt;h2 id=&#34;growth-the-terms-of-trade-and-welfare&#34;&gt;Growth, the terms of trade and welfare&lt;/h2&gt;
@@ -2379,7 +2379,7 @@ So, with more capital in the clothing sector, the economy clearly produces more 
 
 &lt;figure  &gt;
   &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/international_trade/Biased_growth.png&#34; alt=&#34;Biased_growth&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://eric-roca.github.io/img/international_trade/Biased_growth.webp&#34; alt=&#34;Biased_growth&#34; loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
 
 Of course, biased growth towards clothing implies an increase in the relative supply (of clothing), while an biased growth towards food implies a decrease in the relative supply (of clothing).
