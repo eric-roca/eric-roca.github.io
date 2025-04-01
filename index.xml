@@ -9763,7 +9763,7 @@ But, after the tariff is introduced, he will be charged $3.1 &amp;gt; 3$, which 
 Consequently, once the tariff is implemented, his willingness to pay becomes
 $$P^{I}(q) = 5 - \frac{2}{3} q - 0.1.$$&lt;/p&gt;
 &lt;p&gt;If we solve for the new international equilibrium.
-Supply of exports can be rewritten as $P^{E}(q) = 4 + \frac{4}{3} q$ so that, equalizing
+Supply of exports can be rewritten as $P^{E}(q) = 4 + \frac{3}{4} q$ so that, equalizing
 $P^{E}(q) = P^{I}(q) \implies q = 0.635\quad p = 4.47.$&lt;/p&gt;
 &lt;p&gt;In that case, the equilibrium price indicates the amount that exporters will receive (which coincides with the one above).
 However, consumers pay $4.47 + 0.1 = 4.57$.&lt;/p&gt;
@@ -9771,7 +9771,7 @@ However, consumers pay $4.47 + 0.1 = 4.57$.&lt;/p&gt;
 &lt;p&gt;Lastly, we can also solve for the new equilibrium by using the fact that there is a gap between the price payed by consumers and the amount of money received by producers.
 Moreover, we know that this difference is equal to the tariff.
 Therefore, we can solve (these are the original functions, also make sure that you are comparing &lt;em&gt;prices&lt;/em&gt;).
-$$P^{I}(q) - P^{E}(q) = 0.1, \implies 5 - \frac{2}{3} q - \left(4 + \frac{4}{3} q\right) = 0.1 \implies q = 0.635$$
+$$P^{I}(q) - P^{E}(q) = 0.1, \implies 5 - \frac{2}{3} q - \left(4 + \frac{3}{4} q\right) = 0.1 \implies q = 0.635$$
 The price that consumers pay is given by $P^{I}(0.635) = 4.57$ and the amount received by producers is $P^{E}(0.635) = 4.47.$
 &lt;strong&gt;Note&lt;/strong&gt;: a detailed analysis of the equations, once expressed in prices, reveals that we are just moving things around.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: how the burden of the tariff is shared between producers and consumers depends on the elasticity of the supply of exports and the demand for imports.
