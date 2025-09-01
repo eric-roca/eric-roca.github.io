@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.34">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>3&nbsp; Folder Organization and Data Management – Replication in Economics: A Practical Guide</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./stata-replication.html" rel="next">
+<link href="./preparing_readme_file.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-3ce0956f7babb2a12842f6225a6cff9b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Èric Roca Fernández</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../../index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../teaching.html"> 
+<span class="menu-text">Teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../contact.html"> 
+<span class="menu-text">Contact</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./folder_organization.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Folder Organization and Data Management</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Replication in Economics: A Practical Guide</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./preparing_readme_file.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Preparing the README</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./folder_organization.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Folder Organization and Data Management</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./stata-replication.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Replication with Stata: Best Practices</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./python-replication.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Replication with Python and Quarto: Best Practices</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./git-collaboration.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Version Control with Git for Reproducible Research</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#why-project-organization-matters" id="toc-why-project-organization-matters" class="nav-link active" data-scroll-target="#why-project-organization-matters"><span class="header-section-number">3.1</span> Why Project Organization Matters</a></li>
+  <li><a href="#recommended-folder-structure" id="toc-recommended-folder-structure" class="nav-link" data-scroll-target="#recommended-folder-structure"><span class="header-section-number">3.2</span> Recommended Folder Structure</a></li>
+  <li><a href="#golden-rules-for-data-management" id="toc-golden-rules-for-data-management" class="nav-link" data-scroll-target="#golden-rules-for-data-management"><span class="header-section-number">3.3</span> Golden Rules for Data Management</a></li>
+  <li><a href="#intermediate-outputs-when-and-how" id="toc-intermediate-outputs-when-and-how" class="nav-link" data-scroll-target="#intermediate-outputs-when-and-how"><span class="header-section-number">3.4</span> Intermediate Outputs: When and How</a></li>
+  <li><a href="#practical-data-issues" id="toc-practical-data-issues" class="nav-link" data-scroll-target="#practical-data-issues"><span class="header-section-number">3.5</span> Practical Data Issues</a></li>
+  <li><a href="#issues-with-the-data" id="toc-issues-with-the-data" class="nav-link" data-scroll-target="#issues-with-the-data"><span class="header-section-number">3.6</span> Issues with the Data</a></li>
+  <li><a href="#example-downloading-and-organizing-world-bank-data" id="toc-example-downloading-and-organizing-world-bank-data" class="nav-link" data-scroll-target="#example-downloading-and-organizing-world-bank-data"><span class="header-section-number">3.7</span> Example: Downloading and Organizing World Bank Data</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Folder Organization and Data Management</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="why-project-organization-matters" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="why-project-organization-matters"><span class="header-section-number">3.1</span> Why Project Organization Matters</h2>
+<p>A well-organized project is the foundation of reproducible research. Good structure makes your life easier, helps collaborators, and is now required by top journals. It also prevents disasters—like losing track of which file is which, or accidentally overwriting your raw data.</p>
+</section>
+<section id="recommended-folder-structure" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="recommended-folder-structure"><span class="header-section-number">3.2</span> Recommended Folder Structure</h2>
+<p>Here’s a robust structure for economic replication projects:</p>
+<pre><code>├── README.md
+├── data
+│   ├── original      # Raw, immutable data (never edit!)
+│   └── temporary     # Cleaned or processed data (can be regenerated)
+├── code
+│   ├── analysis      # Scripts for data cleaning, analysis, etc.
+│   └── figures       # Scripts for generating plots
+├── paper
+│   ├── figures       # Auto-generated figures
+│   ├── tables        # Auto-generated tables
+│   └── paper.tex     # Manuscript</code></pre>
+<ul>
+<li><strong>README.md</strong>: The project’s roadmap. Document everything here—see <a href="./preparing_readme_file.html">Preparing the README</a>.</li>
+<li><strong>data/original</strong>: Sacred ground. Store only raw, downloaded data here. <strong>Never modify these files.</strong> Make them read-only if possible.</li>
+<li><strong>data/temporary</strong>: For cleaned, merged, or processed data. These files can always be recreated from code.</li>
+<li><strong>code/</strong>: All scripts, organized by purpose or language.</li>
+<li><strong>paper/</strong>: Manuscript and all outputs (figures, tables) generated by code.</li>
+</ul>
+</section>
+<section id="golden-rules-for-data-management" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="golden-rules-for-data-management"><span class="header-section-number">3.3</span> Golden Rules for Data Management</h2>
+<ol type="1">
+<li><p><strong>Never modify original data.</strong><br>
+All cleaning and processing must be done in code, with outputs saved to <code>data/temporary</code>. This guarantees you can always start from scratch. Give each dataset a meaningful name that reflects its content and purpose.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./images/naming_conventions_to_avoid.png" class="img-fluid figure-img"></p>
+<figcaption>Naming conventions to avoid</figcaption>
+</figure>
+</div></li>
+<li><p><strong>Document everything.</strong><br>
+For every dataset, record the source, download date, license, access conditions, and any modifications in the README. This is required by journals—see <a href="./preparing_readme_file.html">Preparing the README</a>.</p></li>
+<li><p><strong>Use open formats.</strong><br>
+Prefer CSV, TXT, or other open formats. Avoid proprietary formats (e.g., Stata <code>.dta</code>, Excel <code>.xlsx</code>) when possible:</p>
+<ul>
+<li>Open formats are readable by anyone, anywhere, at any time.</li>
+<li>Proprietary formats change (e.g., Stata <code>.dta</code> files are not always backward compatible).</li>
+<li>Excel can mangle data (see the <a href="https://www.bbc.co.uk/news/technology-54423988">UK COVID case undercount</a> or <a href="https://www.abajournal.com/news/article/excel_error_by_a_cleary_gottlieb_associate_alters_lehman_asset_deal1">Lehman Brothers asset deal error</a>).</li>
+</ul>
+<p>Some journals now <strong>require</strong> open formats for replication packages.</p></li>
+<li><p><strong>Back up your work.</strong><br>
+Never rely on a single device. Use external drives or institutional remote storage for data and code.</p></li>
+</ol>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>One common mistake is to believe that working with a Dropbox or Google Drive folder is already a backup solution. The problem with these services is that they <em>sync</em> the data. If you accidentally delete a file or it gets corrupted, it may be lost forever, even in online copy. It is best to use backup solutions that offer snapshotting or versioning, so you can recover previous versions of files: e.g.&nbsp;Back-in-Time, Borg, Duplicati.</p>
+</div>
+</div>
+<ol start="5" type="1">
+<li><p><strong>Version control for code, not data.</strong><br>
+Use Git for code, scripts, and text files. Don’t put large data files in Git—it’s not designed for them. Use <code>.gitignore</code> to exclude data and outputs. For very large files, tools like Git LFS exist, but keep it simple unless necessary. We will cover Git usage in detail in a later section.</p></li>
+<li><p><strong>Avoid multiple versions of the same file.</strong><br>
+Don’t create <code>final_v2</code>, <code>final_v3</code>, etc. as this leads to confusion and makes it hard to track changes. Use Git to track changes and revert if needed. <img src="https://phdcomics.com/comics/archive/phd101212s.gif" class="img-fluid"></p></li>
+</ol>
+</section>
+<section id="intermediate-outputs-when-and-how" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="intermediate-outputs-when-and-how"><span class="header-section-number">3.4</span> Intermediate Outputs: When and How</h2>
+<p>Sometimes, processing data is slow (e.g., merging huge files, running simulations). In these cases, it’s practical to save intermediate results in <code>data/temporary</code>.</p>
+<p><strong>However:</strong></p>
+<ul>
+<li>Intermediate files should not be distributed in the replication package unless absolutely necessary (e.g., if processing takes hours/days).</li>
+<li>If you do include them, explain in the README why, and provide code to regenerate them if possible.</li>
+<li>If the original data or processing code changes, you <strong>must</strong> update all intermediate files.</li>
+<li>Advanced: Consider using a <code>Makefile</code> to automate dependencies. This ensures that if a source file changes, all downstream files are rebuilt. (A <code>Makefile</code> is a script that specifies how to build outputs from inputs, and only reruns steps when needed. This is advanced but powerful.)</li>
+</ul>
+</section>
+<section id="practical-data-issues" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="practical-data-issues"><span class="header-section-number">3.5</span> Practical Data Issues</h2>
+<ul>
+<li><strong>Non-data entries:</strong> Some sources (e.g., World Bank) may include images, notes, or metadata in their downloads. Always inspect files and write code to remove non-data content.</li>
+<li><strong>Merging difficulties:</strong> Merging datasets can be tricky due to inconsistent IDs, typos, or missing values.</li>
+<li><strong>Datetime formats:</strong> Dates are a common source of errors (e.g., Excel’s date handling). Always check and standardize date formats.</li>
+<li><strong>Encoding issues:</strong> Files may use different character encodings (UTF-8, Latin-1, etc.), leading to errors or garbled text. Always specify encoding when reading files (e.g., <code>encoding='utf-8'</code> in Python or R).</li>
+</ul>
+</section>
+<section id="issues-with-the-data" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="issues-with-the-data"><span class="header-section-number">3.6</span> Issues with the Data</h2>
+<p>Working with standalone data is rare. In general, researchers must combine different datasets to create a comprehensive analysis. Every time you merge datasets, problems can arise. In fact, it is quite common to spend more time on harmonizing datasets than on the actual analysis.</p>
+<ul>
+<li>Merging on country identifiers:
+<ul>
+<li>Countries appear (e.g.&nbsp;South Sudan, Eritrea) and disappear (e.g., Yugoslavia, Czechoslovakia) over time.
+<ul>
+<li>Different datasets may use different country names or codes (e.g., “USA” vs “United States”).</li>
+</ul></li>
+</ul></li>
+<li>Datetime issues: Dates may be recorded in different formats (e.g., “YYYY-MM-DD” vs “MM/DD/YYYY”), be recorded as strings (text) instead of dates, use different languages for months, etc.</li>
+<li>Encoding issues: Files may use different character encodings leading to errors or garbled text. This is specially common when names include accents or special characters.
+<ul>
+<li>Example from my own research: harmonize more than 2000 town names for Belgium because, French,</li>
+</ul></li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>After each merge, check which IDs are present in the merged dataset and which are not. This can help identify any issues with the merge process.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>When merging in Stata, if the master dataset already has a variable with the same name as one in the using dataset, Stata will <em>not</em> update the observations for which there is match, see <a href="https://www.stata.com/manuals/dmerge.pdf">the Stata manual</a>.</p>
+<pre><code>Original Data               Updated Data               Merge Result
++---------+------------+   +---------+------------+    +---------+------------+
+| Country | Population |   | Country | Population |    | Country | Population |
++---------+------------+   +---------+------------+    +---------+------------+
+| France  |         60 |   | France  |         65 |    | France  |         60 |
+| UK      |         70 |   | UK      |         80 |    | UK      |         70 |
+| Italy   |            |   | Italy   |         65 |    | Italy   |         65 |
++---------+------------+   +---------+------------+    +---------+------------+</code></pre>
+</div>
+</div>
+</section>
+<section id="example-downloading-and-organizing-world-bank-data" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="example-downloading-and-organizing-world-bank-data"><span class="header-section-number">3.7</span> Example: Downloading and Organizing World Bank Data</h2>
+<p>Suppose you’re replicating a paper using World Bank data:</p>
+<ol type="1">
+<li>Download the CSV from the World Bank site.</li>
+<li>Save it as <code>data/original/world_bank_data.csv</code>.</li>
+<li>Immediately record the download date, source URL, and license in your README.</li>
+<li>Write a script to clean the data and save the result as <code>data/temporary/cleaned_data.csv</code>.</li>
+<li>If the cleaning takes a long time, you may save an intermediate file, but document this and provide code to regenerate it.</li>
+</ol>
+<p><strong>Key:</strong> Anyone should be able to delete <code>data/temporary</code>, rerun your code, and get identical results.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./preparing_readme_file.html" class="pagination-link" aria-label="Preparing the README">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Preparing the README</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./stata-replication.html" class="pagination-link" aria-label="Replication with Stata: Best Practices">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Replication with Stata: Best Practices</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.34">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>7&nbsp; Le modèle Offre Agrégée - Demande Agrégée – Macroéconomie (L2)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./references.html" rel="next">
+<link href="./mundell_fleming.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-3ce0956f7babb2a12842f6225a6cff9b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Èric Roca Fernández</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../../index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../teaching.html"> 
+<span class="menu-text">Teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../contact.html"> 
+<span class="menu-text">Contact</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <a href="./Macroéconomie--L2-.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./oa_da.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Le modèle Offre Agrégée - Demande Agrégée</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./classical_economics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Le modèle classique</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./is_lm_model.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Le modèle IS-LM</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./is_lm_model_part_2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Politique budgétaire et monétaire dans le modèle IS-LM</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./mundell_fleming.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Le modèle Mundell-Fleming</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./oa_da.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Le modèle Offre Agrégée - Demande Agrégée</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#la-courbe-de-demande-agrégée-da" id="toc-la-courbe-de-demande-agrégée-da" class="nav-link active" data-scroll-target="#la-courbe-de-demande-agrégée-da"><span class="header-section-number">7.1</span> La Courbe de Demande Agrégée (DA)</a>
+  <ul class="collapse">
+  <li><a href="#dérivation-de-la-courbe-da-à-partir-du-modèle-is-lm" id="toc-dérivation-de-la-courbe-da-à-partir-du-modèle-is-lm" class="nav-link" data-scroll-target="#dérivation-de-la-courbe-da-à-partir-du-modèle-is-lm"><span class="header-section-number">7.1.1</span> Dérivation de la courbe DA à partir du modèle IS-LM</a></li>
+  <li><a href="#pourquoi-la-courbe-de-demande-agrégée-est-elle-décroissante" id="toc-pourquoi-la-courbe-de-demande-agrégée-est-elle-décroissante" class="nav-link" data-scroll-target="#pourquoi-la-courbe-de-demande-agrégée-est-elle-décroissante"><span class="header-section-number">7.1.2</span> Pourquoi la courbe de Demande Agrégée est-elle décroissante ?</a></li>
+  <li><a href="#déplacements-de-la-courbe-de-demande-agrégée" id="toc-déplacements-de-la-courbe-de-demande-agrégée" class="nav-link" data-scroll-target="#déplacements-de-la-courbe-de-demande-agrégée"><span class="header-section-number">7.1.3</span> Déplacements de la courbe de Demande Agrégée</a></li>
+  </ul></li>
+  <li><a href="#la-courbe-doffre-agrégée-oa" id="toc-la-courbe-doffre-agrégée-oa" class="nav-link" data-scroll-target="#la-courbe-doffre-agrégée-oa"><span class="header-section-number">7.2</span> La Courbe d’Offre Agrégée (OA)</a>
+  <ul class="collapse">
+  <li><a href="#loffre-agrégée-de-long-terme-oalt" id="toc-loffre-agrégée-de-long-terme-oalt" class="nav-link" data-scroll-target="#loffre-agrégée-de-long-terme-oalt"><span class="header-section-number">7.2.1</span> L’Offre Agrégée de Long Terme (OALT)</a></li>
+  <li><a href="#loffre-agrégée-de-court-terme-oact" id="toc-loffre-agrégée-de-court-terme-oact" class="nav-link" data-scroll-target="#loffre-agrégée-de-court-terme-oact"><span class="header-section-number">7.2.2</span> L’Offre Agrégée de Court Terme (OACT)</a></li>
+  </ul></li>
+  <li><a href="#léquilibre-macroéconomique" id="toc-léquilibre-macroéconomique" class="nav-link" data-scroll-target="#léquilibre-macroéconomique"><span class="header-section-number">7.3</span> L’Équilibre Macroéconomique</a>
+  <ul class="collapse">
+  <li><a href="#équilibre-de-long-terme" id="toc-équilibre-de-long-terme" class="nav-link" data-scroll-target="#équilibre-de-long-terme"><span class="header-section-number">7.3.1</span> Équilibre de long terme</a></li>
+  <li><a href="#équilibre-de-court-terme" id="toc-équilibre-de-court-terme" class="nav-link" data-scroll-target="#équilibre-de-court-terme"><span class="header-section-number">7.3.2</span> Équilibre de court terme</a></li>
+  <li><a href="#le-mécanisme-dajustement-vers-le-long-terme" id="toc-le-mécanisme-dajustement-vers-le-long-terme" class="nav-link" data-scroll-target="#le-mécanisme-dajustement-vers-le-long-terme"><span class="header-section-number">7.3.3</span> Le mécanisme d’ajustement vers le long terme</a></li>
+  </ul></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">7.4</span> Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Le modèle Offre Agrégée - Demande Agrégée</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<blockquote class="blockquote">
+<p>L’inflation est toujours et partout un phénomène monétaire en ce sens qu’elle est et ne peut être générée que par une augmentation plus rapide de la quantité de monnaie que de la production.</p>
+<p>– Milton Friedman</p>
+</blockquote>
+<p>Jusqu’à présent, notre analyse avec le modèle IS-LM reposait sur une hypothèse cruciale : la rigidité des prix à court terme. Cette hypothèse nous a permis de comprendre comment les chocs de demande et les politiques économiques pouvaient faire fluctuer la production et l’emploi. Cependant, pour analyser des phénomènes comme l’inflation et pour comprendre comment l’économie retourne à son potentiel de long terme, nous devons relâcher cette hypothèse.</p>
+<p>Le modèle Offre Agrégée - Demande Agrégée (OA-DA), ou AS-AD en anglais, est l’outil macroéconomique standard pour étudier les fluctuations de l’économie dans son ensemble. Il permet de déterminer simultanément le niveau de production (le PIB réel) et le niveau général des prix.</p>
+<p>Ce modèle se construit autour de deux courbes principales :</p>
+<ol type="1">
+<li><strong>La courbe de Demande Agrégée (DA)</strong> : Elle décrit la relation entre le niveau général des prix et la quantité de biens et services que les ménages, les entreprises, le gouvernement et les clients étrangers souhaitent acheter. Elle est dérivée de l’équilibre du modèle IS-LM.</li>
+<li><strong>La courbe d’Offre Agrégée (OA)</strong> : Elle décrit la relation entre le niveau général des prix et la quantité de biens et services que les entreprises choisissent de produire et de vendre. Il est crucial de distinguer l’offre de court terme (OACT) de l’offre de long terme (OALT).</li>
+</ol>
+<p>Ensemble, ces deux courbes nous permettent d’analyser comment les politiques budgétaires et monétaires, ainsi que d’autres chocs, affectent l’économie, non seulement en termes de production mais aussi en termes d’inflation.</p>
+<section id="la-courbe-de-demande-agrégée-da" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="la-courbe-de-demande-agrégée-da"><span class="header-section-number">7.1</span> La Courbe de Demande Agrégée (DA)</h2>
+<p>La courbe de Demande Agrégée représente l’ensemble des combinaisons du niveau de production <span class="math inline">\((Y)\)</span> et du niveau général des prix <span class="math inline">\((P)\)</span> pour lesquelles le marché des biens et services (IS) et le marché de la monnaie (LM) sont simultanément en équilibre.</p>
+<section id="dérivation-de-la-courbe-da-à-partir-du-modèle-is-lm" class="level3" data-number="7.1.1">
+<h3 data-number="7.1.1" class="anchored" data-anchor-id="dérivation-de-la-courbe-da-à-partir-du-modèle-is-lm"><span class="header-section-number">7.1.1</span> Dérivation de la courbe DA à partir du modèle IS-LM</h3>
+<p>Rappelons les équations du modèle IS-LM :</p>
+<ul>
+<li><strong>Courbe IS</strong> : <span class="math inline">\(Y = C(Y-T) + I(r) + G\)</span></li>
+<li><strong>Courbe LM</strong> : <span class="math inline">\(\frac{M}{P} = L(r, Y)\)</span></li>
+</ul>
+<p>La variable clé qui relie le modèle IS-LM à la courbe de demande agrégée est le <strong>niveau des prix (P)</strong>. Dans le modèle IS-LM, nous le supposions fixe. Maintenant, nous allons analyser comment une variation de <span class="math inline">\(P\)</span> affecte l’équilibre IS-LM, et donc le niveau de production <span class="math inline">\(Y\)</span>.</p>
+<p>Imaginez une baisse du niveau général des prix, de <span class="math inline">\(P_1\)</span> à <span class="math inline">\(P_2\)</span>. 1. <strong>Effet sur le marché de la monnaie</strong> : La baisse de <span class="math inline">\(P\)</span> augmente l’offre d’encaisses monétaires réelles <span class="math inline">\((\frac{M}{P})\)</span>. Pour un niveau de production donné, l’offre de monnaie réelle devient supérieure à la demande. 2. <strong>Ajustement de la courbe LM</strong> : Pour rétablir l’équilibre sur le marché monétaire, le taux d’intérêt <span class="math inline">\((r)\)</span> doit baisser, ce qui augmente la demande de monnaie. Graphiquement, cette augmentation de l’offre de monnaie réelle déplace la courbe LM vers la droite (ou vers le bas). 3. <strong>Nouvel équilibre</strong> : Le nouvel équilibre IS-LM se situe à un point où le taux d’intérêt est plus bas et le niveau de production est plus élevé.</p>
+<p>Ainsi, une baisse du niveau des prix conduit à une augmentation de la production d’équilibre. Cette relation négative entre le niveau des prix <span class="math inline">\((P)\)</span> et la production <span class="math inline">\((Y)\)</span> définit la courbe de Demande Agrégée.</p>
+<div id="cell-fig-da_derivation" class="cell" data-execution_count="3">
+<div class="cell-output cell-output-display">
+<div id="fig-da_derivation" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-da_derivation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="oa_da_files/figure-html/fig-da_derivation-output-1.png" width="592" height="452" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-da_derivation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.1: Dérivation de la courbe de Demande Agrégée à partir du modèle IS-LM
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="pourquoi-la-courbe-de-demande-agrégée-est-elle-décroissante" class="level3" data-number="7.1.2">
+<h3 data-number="7.1.2" class="anchored" data-anchor-id="pourquoi-la-courbe-de-demande-agrégée-est-elle-décroissante"><span class="header-section-number">7.1.2</span> Pourquoi la courbe de Demande Agrégée est-elle décroissante ?</h3>
+<p>La relation inverse entre <span class="math inline">\(P\)</span> et <span class="math inline">\(Y\)</span> s’explique principalement par l’<strong>effet d’encaisses réelles de Keynes</strong> que nous venons de décrire : 1. Une baisse de <span class="math inline">\(P\)</span> augmente <span class="math inline">\(\frac{M}{P}\)</span>. 2. La courbe LM se déplace vers la droite. 3. Le taux d’intérêt <span class="math inline">\(r\)</span> diminue. 4. La baisse de <span class="math inline">\(r\)</span> stimule l’investissement <span class="math inline">\(I(r)\)</span>. 5. La production d’équilibre <span class="math inline">\(Y\)</span> augmente.</p>
+</section>
+<section id="déplacements-de-la-courbe-de-demande-agrégée" class="level3" data-number="7.1.3">
+<h3 data-number="7.1.3" class="anchored" data-anchor-id="déplacements-de-la-courbe-de-demande-agrégée"><span class="header-section-number">7.1.3</span> Déplacements de la courbe de Demande Agrégée</h3>
+<p>Tout facteur autre que le niveau des prix <span class="math inline">\((P)\)</span> qui déplace la courbe IS ou la courbe LM entraînera un déplacement de la courbe DA.</p>
+<ul>
+<li><strong>Politique budgétaire expansionniste</strong> : Une augmentation des dépenses publiques <span class="math inline">\((G)\)</span> ou une baisse des impôts <span class="math inline">\((T)\)</span> déplace la courbe IS vers la droite. Pour un niveau de prix donné, cela conduit à une production plus élevée. La courbe DA se déplace donc vers la droite.</li>
+<li><strong>Politique monétaire expansionniste</strong> : Une augmentation de la masse monétaire nominale <span class="math inline">\((M)\)</span> déplace la courbe LM vers la droite. Pour un niveau de prix donné, cela conduit à une production plus élevée. La courbe DA se déplace donc également vers la droite.</li>
+</ul>
+<p>Inversement, des politiques restrictives (baisse de <span class="math inline">\(G\)</span>, hausse de <span class="math inline">\(T\)</span>, baisse de <span class="math inline">\(M\)</span>) déplaceront la courbe DA vers la gauche.</p>
+<div id="cell-fig-da_shift" class="cell" data-execution_count="4">
+<div class="cell-output cell-output-display">
+<div id="fig-da_shift" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-da_shift-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="oa_da_files/figure-html/fig-da_shift-output-1.png" width="593" height="429" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-da_shift-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.2: Déplacement de la courbe DA suite à une politique expansionniste
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="la-courbe-doffre-agrégée-oa" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="la-courbe-doffre-agrégée-oa"><span class="header-section-number">7.2</span> La Courbe d’Offre Agrégée (OA)</h2>
+<p>La courbe d’Offre Agrégée (OA) décrit la relation entre le niveau général des prix et la quantité de biens et services que les entreprises sont prêtes à produire. Ici, la distinction entre le court terme et le long terme est fondamentale.</p>
+<section id="loffre-agrégée-de-long-terme-oalt" class="level3" data-number="7.2.1">
+<h3 data-number="7.2.1" class="anchored" data-anchor-id="loffre-agrégée-de-long-terme-oalt"><span class="header-section-number">7.2.1</span> L’Offre Agrégée de Long Terme (OALT)</h3>
+<p>À long terme, la capacité de production d’une économie dépend de ses facteurs de production (capital <span class="math inline">\(K\)</span>, travail <span class="math inline">\(L\)</span>) et de la technologie disponible, représentée par la fonction de production <span class="math inline">\(F\)</span>. Le niveau de production de long terme, appelé <strong>production potentielle</strong> ou <strong>niveau de production naturel</strong> <span class="math inline">\((\bar{Y})\)</span>, est le niveau de production atteint lorsque le chômage est à son taux naturel.</p>
+<p><span class="math display">\[
+Y = \bar{Y} = F(\bar{K}, \bar{L})
+\]</span></p>
+<p>À long terme, le niveau des prix n’affecte pas la capacité de production. Si tous les prix (y compris les salaires) doublent, les incitations à produire restent les mêmes. Par conséquent, la courbe d’offre agrégée de long terme (OALT) est <strong>verticale</strong> au niveau de <span class="math inline">\(\bar{Y}\)</span>.</p>
+<div id="cell-fig-lras" class="cell" data-execution_count="5">
+<div class="cell-output cell-output-display">
+<div id="fig-lras" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-lras-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="oa_da_files/figure-html/fig-lras-output-1.png" width="593" height="450" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lras-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.3: Courbe d’Offre Agrégée de Long Terme (OALT)
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Tout ce qui modifie le potentiel de production de l’économie déplacera la courbe OALT. Cela inclut les changements dans le stock de capital, la taille de la population active, les découvertes technologiques, ou les politiques structurelles qui affectent l’efficacité du marché du travail.</p>
+</section>
+<section id="loffre-agrégée-de-court-terme-oact" class="level3" data-number="7.2.2">
+<h3 data-number="7.2.2" class="anchored" data-anchor-id="loffre-agrégée-de-court-terme-oact"><span class="header-section-number">7.2.2</span> L’Offre Agrégée de Court Terme (OACT)</h3>
+<p>À court terme, de nombreux prix sont “rigides” ou “collants” (sticky). L’hypothèse la plus courante est celle de la <strong>rigidité des salaires nominaux</strong> ou des prix. Si le niveau général des prix augmente de manière inattendue, mais que les salaires ou les prix de certains biens ne s’ajustent pas immédiatement, les entreprises ont une incitation à augmenter leur production.</p>
+<p><strong>Le modèle des prix rigides (Sticky-Price Model)</strong> : * Certaines entreprises ajustent leurs prix rapidement, d’autres non (à cause des “coûts de menu”). * Si le niveau général des prix <span class="math inline">\((P)\)</span> augmente, les entreprises à prix flexibles augmentent leurs prix. * Les entreprises à prix rigides se retrouvent avec des prix relatifs plus bas, ce qui stimule la demande pour leurs produits. Elles répondent en augmentant leur production. * Résultat : une augmentation de <span class="math inline">\(P\)</span> conduit à une augmentation de <span class="math inline">\(Y\)</span>.</p>
+<p>La courbe d’offre agrégée de court terme (OACT) est donc <strong>croissante</strong>. L’équation de l’OACT est souvent représentée comme :</p>
+<p><span class="math display">\[
+Y = \bar{Y} + \alpha (P - P^e)
+\]</span></p>
+<p>où :</p>
+<ul>
+<li><span class="math inline">\(Y\)</span> est la production.</li>
+<li><span class="math inline">\(\bar{Y}\)</span> est la production potentielle.</li>
+<li><span class="math inline">\(P\)</span> est le niveau des prix effectif.</li>
+<li><span class="math inline">\(P^e\)</span> est le niveau des prix anticipé.</li>
+<li><span class="math inline">\(\alpha &gt; 0\)</span> mesure la sensibilité de la production aux surprises de prix.</li>
+</ul>
+<p>Cette équation montre que la production dévie de son niveau naturel lorsque le niveau des prix observé diffère du niveau des prix anticipé. La courbe OACT est tracée pour un niveau de prix anticipé <span class="math inline">\((P^e)\)</span> donné. Si les anticipations de prix <span class="math inline">\((P^e)\)</span> augmentent, la courbe OACT se déplace vers le haut (vers la gauche).</p>
+<div id="cell-fig-sras" class="cell" data-execution_count="6">
+<div class="cell-output cell-output-display">
+<div id="fig-sras" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-sras-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="oa_da_files/figure-html/fig-sras-output-1.png" width="585" height="429" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sras-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.4: Courbe d’Offre Agrégée de Court Terme (OACT)
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="léquilibre-macroéconomique" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="léquilibre-macroéconomique"><span class="header-section-number">7.3</span> L’Équilibre Macroéconomique</h2>
+<p>L’équilibre de l’économie se trouve à l’intersection des courbes d’offre et de demande agrégées.</p>
+<section id="équilibre-de-long-terme" class="level3" data-number="7.3.1">
+<h3 data-number="7.3.1" class="anchored" data-anchor-id="équilibre-de-long-terme"><span class="header-section-number">7.3.1</span> Équilibre de long terme</h3>
+<p>L’équilibre de long terme est atteint lorsque la courbe de demande agrégée (DA) croise la courbe d’offre agrégée de long terme (OALT). À ce point, la production est à son niveau naturel <span class="math inline">\((\bar{Y})\)</span>, et le chômage est à son taux naturel. La courbe d’offre de court terme (OACT) passe également par ce point, car à long terme, les anticipations de prix se sont ajustées au niveau des prix effectif <span class="math inline">\((P = P^e)\)</span>.</p>
+</section>
+<section id="équilibre-de-court-terme" class="level3" data-number="7.3.2">
+<h3 data-number="7.3.2" class="anchored" data-anchor-id="équilibre-de-court-terme"><span class="header-section-number">7.3.2</span> Équilibre de court terme</h3>
+<p>L’équilibre de court terme se situe à l’intersection de la courbe de demande agrégée (DA) et de la courbe d’offre agrégée de court terme (OACT). À ce point, l’économie peut se trouver en dehors de son potentiel de long terme. * Si <span class="math inline">\(Y &gt; \bar{Y}\)</span>, l’économie est en <strong>surchauffe</strong> (boom économique). * Si <span class="math inline">\(Y &lt; \bar{Y}\)</span>, l’économie est en <strong>récession</strong>.</p>
+<div id="cell-fig-equilibrium" class="cell" data-execution_count="7">
+<div class="cell-output cell-output-display">
+<div id="fig-equilibrium" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-equilibrium-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="oa_da_files/figure-html/fig-equilibrium-output-1.png" width="586" height="431" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-equilibrium-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.5: Équilibres de court et long terme
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="le-mécanisme-dajustement-vers-le-long-terme" class="level3" data-number="7.3.3">
+<h3 data-number="7.3.3" class="anchored" data-anchor-id="le-mécanisme-dajustement-vers-le-long-terme"><span class="header-section-number">7.3.3</span> Le mécanisme d’ajustement vers le long terme</h3>
+<p>Supposons que l’économie parte d’un équilibre de long terme (point A) et qu’une politique monétaire expansionniste déplace la courbe DA vers la droite (DA’). 1. <strong>Court terme</strong> : L’économie se déplace le long de la courbe OACT initiale vers un nouvel équilibre de court terme (point B). La production augmente <span class="math inline">\((Y &gt; \bar{Y})\)</span> et le niveau des prix augmente. L’économie est en surchauffe. 2. <strong>Ajustement</strong> : Comme la production est supérieure à son niveau potentiel, le marché du travail est tendu et les salaires commencent à augmenter. Les entreprises font face à des coûts de production plus élevés. Cela conduit à une révision à la hausse des anticipations de prix <span class="math inline">\((P^e)\)</span>. 3. <strong>Retour au long terme</strong> : L’augmentation de <span class="math inline">\(P^e\)</span> déplace la courbe OACT vers le haut (vers la gauche). Ce processus continue tant que <span class="math inline">\(Y &gt; \bar{Y}\)</span>. La courbe OACT se déplace jusqu’à ce que l’économie atteigne un nouvel équilibre de long terme (point C), où la nouvelle courbe DA’ croise la courbe OALT.</p>
+<p>Au final, la production retourne à son niveau naturel <span class="math inline">\(\bar{Y}\)</span>, mais le niveau général des prix est durablement plus élevé. Cela illustre la <strong>neutralité de la monnaie à long terme</strong> : les changements dans la masse monétaire n’affectent pas les variables réelles (comme la production) à long terme, mais seulement les variables nominales (comme le niveau des prix).</p>
+<div id="cell-fig-adjustment" class="cell" data-execution_count="8">
+<div class="cell-output cell-output-display">
+<div id="fig-adjustment" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-adjustment-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="oa_da_files/figure-html/fig-adjustment-output-1.png" width="593" height="432" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-adjustment-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7.6: Ajustement suite à un choc de demande positif
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="conclusion" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">7.4</span> Conclusion</h2>
+<p>Le modèle OA-DA est une synthèse puissante de la macroéconomie. Il intègre les idées keynésiennes sur l’importance de la demande agrégée à court terme avec la vision classique de la primauté de l’offre à long terme. Il nous permet de comprendre comment l’économie réagit aux chocs et aux politiques, en distinguant les effets immédiats sur la production et l’emploi des effets à long terme sur le niveau des prix et l’inflation. C’est un outil essentiel pour analyser les grands débats de politique économique, de la lutte contre les récessions à la maîtrise de l’inflation.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./mundell_fleming.html" class="pagination-link" aria-label="Le modèle Mundell-Fleming">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Le modèle Mundell-Fleming</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./references.html" class="pagination-link" aria-label="References">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

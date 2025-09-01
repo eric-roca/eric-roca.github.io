@@ -1,0 +1,1518 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.34">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>4&nbsp; Le modèle IS-LM – Macroéconomie (L2)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./is_lm_model_part_2.html" rel="next">
+<link href="./classical_economics.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-3ce0956f7babb2a12842f6225a6cff9b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Èric Roca Fernández</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../../index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../teaching.html"> 
+<span class="menu-text">Teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../contact.html"> 
+<span class="menu-text">Contact</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <a href="./Macroéconomie--L2-.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./is_lm_model.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Le modèle IS-LM</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./classical_economics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Le modèle classique</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./is_lm_model.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Le modèle IS-LM</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./is_lm_model_part_2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Politique budgétaire et monétaire dans le modèle IS-LM</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./mundell_fleming.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Le modèle Mundell-Fleming</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./oa_da.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Le modèle Offre Agrégée - Demande Agrégée</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#la-courbe-is" id="toc-la-courbe-is" class="nav-link active" data-scroll-target="#la-courbe-is"><span class="header-section-number">4.1</span> La courbe IS</a>
+  <ul class="collapse">
+  <li><a href="#la-fonction-de-consommation" id="toc-la-fonction-de-consommation" class="nav-link" data-scroll-target="#la-fonction-de-consommation"><span class="header-section-number">4.1.1</span> La fonction de consommation</a></li>
+  <li><a href="#leffet-multiplicateur-simple" id="toc-leffet-multiplicateur-simple" class="nav-link" data-scroll-target="#leffet-multiplicateur-simple"><span class="header-section-number">4.1.2</span> L’effet multiplicateur simple</a></li>
+  <li><a href="#la-courbe-is-sur-le-plan-y-r" id="toc-la-courbe-is-sur-le-plan-y-r" class="nav-link" data-scroll-target="#la-courbe-is-sur-le-plan-y-r"><span class="header-section-number">4.1.3</span> La courbe IS sur le plan <span class="math inline">\((Y-r)\)</span></a></li>
+  </ul></li>
+  <li><a href="#la-courbe-lm" id="toc-la-courbe-lm" class="nav-link" data-scroll-target="#la-courbe-lm"><span class="header-section-number">4.2</span> La courbe LM</a>
+  <ul class="collapse">
+  <li><a href="#la-courbe-lm-sur-le-plan-yr" id="toc-la-courbe-lm-sur-le-plan-yr" class="nav-link" data-scroll-target="#la-courbe-lm-sur-le-plan-yr"><span class="header-section-number">4.2.1</span> La courbe LM sur le plan <span class="math inline">\((Y,r)\)</span></a></li>
+  </ul></li>
+  <li><a href="#is-et-lm-ensemble" id="toc-is-et-lm-ensemble" class="nav-link" data-scroll-target="#is-et-lm-ensemble"><span class="header-section-number">4.3</span> IS et LM ensemble</a></li>
+  <li><a href="#le-chômage-dans-le-modèle-is-lm" id="toc-le-chômage-dans-le-modèle-is-lm" class="nav-link" data-scroll-target="#le-chômage-dans-le-modèle-is-lm"><span class="header-section-number">4.4</span> Le chômage dans le modèle IS-LM</a></li>
+  <li><a href="#td" id="toc-td" class="nav-link" data-scroll-target="#td"><span class="header-section-number">4.5</span> TD</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Le modèle IS-LM</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<blockquote class="blockquote">
+<p>Je soutiendrai que les postulats de la théorie classique ne sont applicables qu’à un cas particulier et non au cas général. […] De plus, les caractéristiques du cas particulier supposé par la théorie classique ne sont pas celles de la société économique dans laquelle nous vivons réellement, ce qui fait que son enseignement est trompeur et désastreux si nous tentons de l’appliquer aux faits de l’expérience.” – John Maynard Keynes</p>
+</blockquote>
+<p>La crise de 1929 a été un tournant majeur dans l’histoire économique. Elle a mis en évidence les limites du modèle économique classique, qui supposait que les marchés s’ajustent rapidement pour atteindre l’équilibre. Le modèle IS-LM, développé par John Maynard Keynes, a été conçu pour expliquer les fluctuations économiques et le chômage involontaire, en mettant l’accent sur le rôle de la demande agrégée.</p>
+<p>Le modèle IS-LM est un modèle macroéconomique qui relie le marché des biens et services (IS) et le marché de la monnaie (LM). Il a été développé par John Maynard Keynes dans son ouvrage “La Théorie générale de l’emploi, de l’intérêt et de la monnaie” publié en 1936. Il s’agit d’une extension du modèle classique qui intègre les idées keynésiennes sur la demande agrégée et le rôle de l’État dans l’économie et montre que les fluctuations économiques peuvent être causées par des variations de la demande agrégée, plutôt que par des variations de l’offre. Les principales différences entre le modèle IS-LM et le modèle classique sont:</p>
+<ol type="1">
+<li>Le modèle IS-LM considère que les prix sont rigides à court terme, contrairement au modèle classique où les prix sont flexibles.</li>
+<li>Le modèle classique suppose que la production est déterminée par l’offre (et fixe), tandis que le modèle IS-LM met l’accent sur la demande agrégée comme moteur de l’économie.</li>
+<li>Le modèle IS-LM introduit le concept de chômage involontaire, contrairement au modèle classique qui considère que tout chômage est volontaire.</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Note">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Le modèle IS-LM modifie l’hypothèse de base du modèle classique selon laquelle les prix sont flexibles. Il suppose que les prix sont rigides à court terme, ce qui permet aux variations de la demande agrégée d’affecter le niveau de production et d’emploi.</p>
+</div>
+</div>
+<p>Une autre différence majeure est que la théorie keynésienne permet au gouvernement d’intervenir dans l’économie pour stabiliser les fluctuations économiques. Par exemple, le gouvernement peut augmenter les dépenses publiques ou réduire les impôts pour stimuler la demande agrégée, augmentant ainsi le niveau de production et réduisant le chômage. Les modifications de l’offre monétaire, telles que les variations de la masse monétaire, peuvent également influencer le niveau de production et d’emploi. Le modèle IS-LM est donc un outil puissant pour comprendre les fluctuations économiques et les politiques économiques qui peuvent être mises en œuvre pour stabiliser l’économie.</p>
+<p>Les éléments clés du modèle IS-LM sont les mêmes que ceux du modèle classique, avec quelques modifications importantes, notamment le fait que les prix sont fixes à court terme.</p>
+<ul>
+<li><strong>Lien entre épargne et investissement</strong> : Le modèle IS-LM repose sur l’idée que l’épargne et l’investissement sont égaux dans une économie fermée. L’équilibre sur le marché des biens et services est atteint lorsque la demande agrégée (consommation, investissement et dépenses publiques) est égale à l’offre agrégée (production). Ce équilibre implique que l’offre de fonds prêtables (épargne) est égale à la demande de fonds prêtables (investissement). L’équilibre sur le marché des biens et services est représenté par la courbe IS, qui montre la relation entre le niveau de production (PIB) et le taux d’intérêt.</li>
+<li><strong>Offre et demande de monnaie</strong> : Le modèle IS-LM considère que l’offre de monnaie est déterminée par la banque centrale, tandis que la demande de monnaie dépend du niveau de production et du taux d’intérêt, de manière très similaire au modèle classique. L’équilibre dans le marché de la monnaie est représenté par la courbe LM, qui montre la relation entre le niveau de production (PIB) et le taux d’intérêt.</li>
+</ul>
+<section id="la-courbe-is" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="la-courbe-is"><span class="header-section-number">4.1</span> La courbe IS</h2>
+<p>La courbe IS représente l’équilibre dans le marché des biens et services, où la demande agrégée <span class="math inline">\((C(Y-T) + I(r) + \bar{G})\)</span> est égale à l’offre agrégée <span class="math inline">\((Y)\)</span>. La courbe IS est dérivée de l’identité fondamentale de la comptabilité nationale, qui stipule que le produit intérieur brut (PIB) est égal à la somme de la consommation, de l’investissement et des dépenses publiques, moins les impôts.</p>
+<p><span id="eq-is_equation"><span class="math display">\[
+Y = C(Y-T) + I(r) + \bar{G} \implies S \equiv \overbrace{Y - C(Y-T) -T}^{S^P} + \overbrace{T - \bar{G}}^{S^G} = I(r)
+\tag{4.1}\]</span></span></p>
+<p>Si, dans le modèle classique, la courbe IS ne servait qu’à détermine le taux d’intérêt d’équilibre, car la production dépendait du marché de travail; <em>dans le modèle IS-LM</em>, elle est utilisée pour déterminer le niveau de production d’équilibre <span class="math inline">\((Y)\)</span> et le taux d’intérêt <span class="math inline">\((r)\)</span> dans l’économie. Ainsi, quand le gouvernement modifie les dépenses publiques <span class="math inline">\((G)\)</span>, la demande agrégée change et, donc, le niveau de production d’équilibre <span class="math inline">\((Y)\)</span> change aussi. Par exemple, pendant une situation de récession, il est possible d’imaginer que le capital <span class="math inline">\(K\)</span> n’est pas utilisé à son plein potentiel, ce qui signifie que l’économie peut produire plus de biens et services. Dans ce cas, une augmentation des dépenses publiques <span class="math inline">\((G)\)</span> peut stimuler la demande agrégée et augmenter le niveau de production d’équilibre <span class="math inline">\((Y)\)</span>.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Note">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Le modèle classique ne permet des ajustements du niveau de production <span class="math inline">\((Y)\)</span> que par le biais de variations du capital <span class="math inline">\((K)\)</span> ou du travail <span class="math inline">\((N)\)</span>. Une fois que le capital et le travail sont fixés, le niveau de production est déterminé par la fonction de production <span class="math inline">\(Y = F(K,N)\)</span> et le niveau de prix <span class="math inline">\(p\)</span> et taux d’intérêt <span class="math inline">\(r\)</span> sont déterminés par l’équilibre sur le marché des biens et services par la suite.</p>
+<p>Dans le modèle IS-LM, on détermine d’abord le niveau de production d’équilibre <span class="math inline">\((Y)\)</span> et le taux d’intérêt <span class="math inline">\((r)\)</span> en fonction de la demande agrégée et du marché de la monnaie. En connaissant <span class="math inline">\(Y\)</span>, il est possible de calculer le niveau d’emploi <span class="math inline">\((N)\)</span> car le capital <span class="math inline">\((K)\)</span> est supposé fixe à court terme. Enfin, le niveau de prix <span class="math inline">\((p)\)</span> est fixe.</p>
+</div>
+</div>
+<p>Comme pour le modèle classique, nous faisons l’hypothèse que la consommation <span class="math inline">\(C\)</span> est une fonction croissante du revenu net d’impôts <span class="math inline">\(Y-T\)</span> et qu’elle ne dépend pas du taux d’intérêt <span class="math inline">\(r\)</span>. Selon Keynes, le taux d’intérêt n’affecte pas la consommation, car les ménages ne modifient pas leur consommation en fonction du coût de l’emprunt. Il est possible de modifier cette hypothèse, mais pour simplifier, nous allons supposer que la consommation ne dépend pas du taux d’intérêt.</p>
+<p>Enfin, pour expliquer les fluctuations économiques, Keynes a mis l’accent sur le rôle de l’investissement, qui est une fonction décroissante du taux d’intérêt <span class="math inline">\(r\)</span>. Dans certains cas, les investisseurs peuvent être pessimistes quant à l’avenir de l’économie et réduire leur demande de fonds prêtables, ce qui peut entraîner une baisse de l’investissement et, par conséquent, une baisse du niveau de production d’équilibre <span class="math inline">\((Y)\)</span>. Keynes a qualifié ces facteurs psychologiques et émotionnels d’“animal spirits”. En effet, il n’avait pas tort: l’investissement est beaucoup plus volatil comparé à la consommation.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Année</th>
+<th><span class="math inline">\(\frac{I}{Y}\)</span>(%)</th>
+<th><span class="math inline">\(\frac{C}{Y}\)</span>(%)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1955</td>
+<td>17.1</td>
+<td>63.5</td>
+</tr>
+<tr class="even">
+<td>1958</td>
+<td>13.8</td>
+<td>64.5</td>
+</tr>
+<tr class="odd">
+<td>1973</td>
+<td>16.1</td>
+<td>62.6</td>
+</tr>
+<tr class="even">
+<td>1975</td>
+<td>12.5</td>
+<td>64.0</td>
+</tr>
+<tr class="odd">
+<td>1979</td>
+<td>16.0</td>
+<td>62.7</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-simple callout-note callout-titled" title="Animal spirits">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Animal spirits
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Outre la cause due à la spéculation, l’instabilité économique trouve une autre cause, inhérente celle-ci à la nature humaine, dans le fait qu’une grande partie de nos initiatives dans l’ordre du bien, de l’agréable ou de l’utile procèdent plus d’un optimisme spontané que d’une prévision mathématique. Lorsqu’il faut un long délai pour qu’elles produisent leur plein effet, nos décisions de faire quelque chose de positif doivent être considérées pour la plupart comme une manifestation de notre enthousiasme naturel (as the result of animal spirits) - comme l’effet d’un besoin instinctif d’agir plutôt que de ne rien faire -, et non comme le résultat d’une moyenne pondérée de bénéfices numériques multipliés par des probabilités numériques.</p>
+<p>–John Maynard Keynes, <em>Théorie générale de l’emploi, de l’intérêt et de la monnaie</em>, Livre IV (L’incitation à investir), Chapitre XII (L’état de la prévision à long terme), partie VII, Paris, Payot, 1969, p.&nbsp;175-176</p>
+</div>
+</div>
+<hr>
+<section id="la-fonction-de-consommation" class="level3" data-number="4.1.1">
+<h3 data-number="4.1.1" class="anchored" data-anchor-id="la-fonction-de-consommation"><span class="header-section-number">4.1.1</span> La fonction de consommation</h3>
+<p>Keynes a proposé une modélisation spécifique du comportement de consommation des ménages, qui est un élément central pour analyser la demande agrégée. Cette fonction de consommation repose sur deux concepts principaux:</p>
+<ul>
+<li>Il existe un niveau de <strong>consommation incompressible</strong> <span class="math inline">\(c_0\)</span> qui est le niveau minimal nécessaire pour la survie. Ce niveau de consommation représente les dépenses essentielles que les ménages doivent engager, indépendamment de leur niveau de revenu.</li>
+<li>La <strong>propension marginale à consommer (PMC)</strong>, notée <span class="math inline">\(c_1\)</span>, qui est le pourcentage du revenu supplémentaire que les ménages choisissent de consommer, et qui est comprise entre 0 et 1. La PMC est un concept clé pour comprendre comment les variations du revenu affectent la consommation. Quand la PMC est élevée (proche de 1), cela signifie que les ménages consomment une grande partie de leur revenu supplémentaire, et, au contraire, si la PMC est faible (proche de 0), cela signifie que les ménages épargnent une grande partie de leur revenu supplémentaire.</li>
+</ul>
+<p>Keynes a également souligné que le niveau de revenu de référence pour les décisions des ménages est le revenu <strong>net d’impôts</strong>. Ce lien est logique car, si le niveau d’imposition est très élevé, une augmentation du revenu reviendrait à une augmentation quasi nulle des ressources disponibles, et donc les ménages ne pourraient pas consommer davantage. Enfin, la représentation des impôts comme étant une constante est une simplification, car en réalité les impôts varient en fonction du revenu. Un exercice est dédié à cette forme alternative de la fonction de consommation.</p>
+<p>La fonction de consommation Keynésienne peut être représentée mathématiquement par l’équation suivante :</p>
+<p><span id="eq-consumption_function"><span class="math display">\[
+C = c_0 + c_1(Y-T)
+\tag{4.2}\]</span></span></p>
+<p>où <span class="math inline">\(c_0 &gt; 0\)</span> est la consommation incompressible et <span class="math inline">\(c_1 \in (0,1)\)</span> est la propension marginale à consommer.</p>
+</section>
+<section id="leffet-multiplicateur-simple" class="level3" data-number="4.1.2">
+<h3 data-number="4.1.2" class="anchored" data-anchor-id="leffet-multiplicateur-simple"><span class="header-section-number">4.1.2</span> L’effet multiplicateur simple</h3>
+<p>L’effet multiplicateur est un concept clé de la théorie keynésienne qui explique comment les variations de la demande agrégée peuvent avoir des effets amplifiés sur le niveau de production d’équilibre <span class="math inline">\((Y)\)</span> dans une économie. Ainsi, une augmentation des dépenses publiques <span class="math inline">\((G)\)</span> ou une réduction des impôts <span class="math inline">\((T)\)</span> peut entraîner une augmentation plus que proportionnelle du niveau de production d’équilibre <span class="math inline">\((Y)\)</span>, aidant à stimuler l’économie à court terme.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Note">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Normalement, l’effet multiplicateur est introduit avec l’analyse de la croix keynésienne, qui est une représentation graphique de l’interaction entre la demande agrégée et le niveau de production d’équilibre. Nous allons cependant l’introduire mathématiquement, car il est plus simple de le comprendre ainsi.</p>
+</div>
+</div>
+<p>L’idée de l’effet multiplicateur est que les variations de la demande agrégée ont un effet en chaîne sur le niveau de production d’équilibre <span class="math inline">\((Y)\)</span>. Dans le modèle IS-LM, l’effet multiplicateur simple est lié à la propension marginale à consommer <span class="math inline">\((c_1)\)</span>.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>L’effet multiplicateur simple peut être compris comme suit: lorsqu’il y a une augmentation des dépenses publiques <span class="math inline">\((G)\)</span> ou une réduction des impôts <span class="math inline">\((T)\)</span>, cela entraîne une augmentation du revenu disponible des ménages, ce qui à son tour stimule la consommation. Cette augmentation de la consommation génère une nouvelle augmentation de la production, ce qui crée un effet en chaîne. L’effet multiplicateur simple est défini comme le rapport entre la variation du niveau de production d’équilibre <span class="math inline">\((Y)\)</span> et la variation des dépenses publiques <span class="math inline">\((G)\)</span> ou des impôts <span class="math inline">\((T)\)</span>.</p>
+<p>Mathématiquement, l’effet multiplicateur simple est donné par les équations suivantes que nous calculerons plus en détail ci-dessous. En primer lieu, le multiplicateur des dépenses publiques est:</p>
+<p><span id="eq-multiplier_g_definition"><span class="math display">\[
+\frac{\mathrm{d} Y}{\mathrm{d} G}
+\tag{4.3}\]</span></span></p>
+<p>et le multiplicateur des impôts est:</p>
+<p><span id="eq-multiplier_t_definition"><span class="math display">\[
+\frac{\mathrm{d} Y}{\mathrm{d} T}
+\tag{4.4}\]</span></span></p>
+<p>Ces éxpressions représentent la variation du niveau de production d’équilibre <span class="math inline">\((\mathrm{d} Y)\)</span> en réponse à une variation des dépenses publiques <span class="math inline">\((\mathrm{d} G)\)</span> ou des impôts <span class="math inline">\((\mathrm{d} T)\)</span>. La notation <span class="math inline">\(\mathrm{d}\)</span> indique une variation infinitésimale, ce qui est courant en analyse économique pour représenter des changements très petits, mais vous pouvez le voir comme une variation finie si vous préférez.</p>
+<div id="wrn-multiplier" class="callout callout-style-default callout-warning callout-titled" title="Important">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning&nbsp;4.1: Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Nous dissons, pour simplifier, que l’effet multiplicateur simple indique qu’une variation des dépenses publiques <span class="math inline">\((G)\)</span> ou des impôts <span class="math inline">\((T)\)</span> augmente le revenu d’équilibre <span class="math inline">\((Y)\)</span> d’une certaine quantité. Cependant, il serait plus correct de dire que <em>la courbe IS se déplace</em> d’une certaine quantité, car le multiplicateur total dépend aussi de la courbe IS.</p>
+</div>
+</div>
+<section id="multiplicateur-des-dépenses-publiques" class="level4" data-number="4.1.2.1">
+<h4 data-number="4.1.2.1" class="anchored" data-anchor-id="multiplicateur-des-dépenses-publiques"><span class="header-section-number">4.1.2.1</span> Multiplicateur des dépenses publiques</h4>
+<p>Imaginons que le gouvernement augmente les dépenses publiques de <span class="math inline">\(\Delta G\)</span>. On peut se demander comment cette augmentation des dépenses publiques affecte le niveau de production d’équilibre <span class="math inline">\((Y)\)</span>.</p>
+<p>Pour répondre à cette question, nous allons suivre les étapes suivantes:</p>
+<ol type="1">
+<li><strong>Changement initial des dépenses</strong> : L’augmentation initiale des dépenses publiques est <span class="math inline">\(\Delta G\)</span>.</li>
+<li><strong>Augmentation du PIB</strong> : Cette augmentation des dépenses publiques entraîne une augmentation immédiate du PIB de <span class="math inline">\(\Delta G\)</span>.</li>
+<li><strong>Augmentation du revenu disponible</strong> : L’augmentation du PIB implique que le revenu disponible des ménages augmente de <span class="math inline">\(\Delta G\)</span>, ce qui à son tour augmente leur consommation de <span class="math inline">\(c_1 \Delta G\)</span> (où <span class="math inline">\(c_1\)</span> est la propension marginale à consommer).</li>
+<li><strong>Changement de la consommation</strong> : L’augmentation de la consommation entraîne une nouvelle augmentation du PIB de <span class="math inline">\(c_1 \Delta G\)</span>.</li>
+<li><strong>Nouvelle augmentation du revenu disponible</strong> : Cette nouvelle augmentation du PIB augmente à nouveau le revenu disponible des ménages, ce qui entraîne une nouvelle augmentation de la consommation de <span class="math inline">\(c_1^2 \Delta G\)</span>.</li>
+<li><strong>Effet en chaîne</strong> : Ce processus se répète indéfiniment, créant un effet en chaîne.</li>
+</ol>
+<p>Mis ensemble, l’effet total de l’augmentation des dépenses publiques de <span class="math inline">\(\Delta G\)</span> sur le PIB est donné par la série infinie suivante:</p>
+<p><span class="math display">\[
+\Delta Y = \Delta G + c_1 \Delta G + c_1^2 \Delta G + c_1^3 \Delta G + \ldots
+\]</span></p>
+<p>En factorisant <span class="math inline">\(\Delta G\)</span>, on obtient:</p>
+<p><span class="math display">\[
+\Delta Y = \Delta G (1 + c_1 + c_1^2 + c_1^3 + \ldots)
+\]</span></p>
+<p>La somme <span class="math inline">\(1 + c_1 + c_1^2 + c_1^3 + \ldots\)</span> est une série géométrique infinie qui converge vers <span class="math inline">\(\frac{1}{1-c_1}\)</span>, à condition que <span class="math inline">\(c_1 &lt; 1\)</span>. Ainsi, l’effet total de l’augmentation des dépenses publiques sur le PIB est donné par:</p>
+<p><span class="math display">\[
+\Delta Y = \Delta G \cdot \frac{1}{1-c_1}
+\]</span></p>
+<p>Et le multiplicateur des dépenses publiques est:</p>
+<p><span id="eq-multiplier_g"><span class="math display">\[
+\frac{\mathrm{d} Y}{\mathrm{d} G} = \frac{\Delta Y}{\Delta G} = \frac{1}{1-c_1} &gt; 1
+\tag{4.5}\]</span></span></p>
+<p>Cette équation montre que le multiplicateur des dépenses publiques est toujours supérieur à 1, car <span class="math inline">\(1 - c_1 \in (0, 1)\)</span>, ce qui signifie qu’une augmentation des dépenses publiques entraîne une augmentation plus que proportionnelle du PIB.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Exemple">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Exemple
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Si l’on suppose une propension marginale à consommer <span class="math inline">\(c_1 = 0.6\)</span>, le multiplicateur des dépenses publiques est égal à</p>
+<p><span class="math display">\[
+\frac{\Delta Y}{\Delta G} = \frac{1}{1-0.6} = 2.5
+\]</span></p>
+<p>Ceci signifie qu’une augmentation de <span class="math inline">\(G\)</span> de 1 euro augmente le revenu (PIB) d’équilibre de 2.5 euros (voir la note <a href="#wrn-multiplier" class="quarto-xref">Warning&nbsp;<span>4.1</span></a>).</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Le multiplicateur des dépenses publiques calculé de manière alternative">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Le multiplicateur des dépenses publiques calculé de manière alternative
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Il est possible de calculer le multiplicateur des dépenses publiques de manière alternative, en prennant la dérivée totale de l’équation d’équilibre du marché des biens et services par rapport à <span class="math inline">\(G\)</span> et <span class="math inline">\(Y\)</span>:</p>
+<p><span class="math display">\[
+\frac{\partial Y}{\partial Y} \mathrm{d}Y = c_1 \frac{\partial Y}{\partial Y} \mathrm{d}Y + \frac{\partial G}{\partial G} \mathrm{d}G
+\]</span></p>
+<p>Où <span class="math inline">\(\frac{\partial G}{\partial G} = 1\)</span> et <span class="math inline">\(\frac{\partial Y}{\partial Y} = 1\)</span>. En simplifiant, nous avons:</p>
+<p><span class="math display">\[
+\mathrm{d}Y = c_1 \mathrm{d}Y + \mathrm{d}G
+\]</span></p>
+<p>En isolant <span class="math inline">\(\frac{\mathrm{d}Y}{\mathrm{d}G}\)</span>, nous obtenons:</p>
+<p><span class="math display">\[
+\frac{\mathrm{d}Y}{\mathrm{d}G} = \frac{1}{1-c_1} &gt; 1
+\]</span></p>
+</div>
+</div>
+</section>
+<section id="multiplicateur-des-impôts" class="level4" data-number="4.1.2.2">
+<h4 data-number="4.1.2.2" class="anchored" data-anchor-id="multiplicateur-des-impôts"><span class="header-section-number">4.1.2.2</span> Multiplicateur des impôts</h4>
+<p>De manière similaire au multiplicateur des dépenses publiques, l’effet multiplicateur des impôts montre qu’une variation des impôts <span class="math inline">\((T)\)</span> affecte le niveau de production d’équilibre <span class="math inline">\((Y)\)</span>. Si l’on reduit les impôts de <span class="math inline">\(\Delta T\)</span>, cela augmente le revenu disponible des ménages <span class="math inline">\((Y-T)\)</span>, ce qui stimule la consommation de <span class="math inline">\(c_1 (Y-T)\)</span> et, par conséquent, le PIB.</p>
+<p>Ainsi, une réduction des impôts de <span class="math inline">\(\Delta T\)</span> entraîne une augmentation initiale du PIB de <span class="math inline">\(c_1 \Delta T\)</span>. Ensuite, cette augmentation du PIB augmente le revenu disponible des ménages de <span class="math inline">\(c_1 \Delta T\)</span>, ce qui entraîne une nouvelle augmentation de la consommation de <span class="math inline">\(c_1^2 \Delta T\)</span>. Si on continue ce processus, on obtient une série infinie similaire à celle du multiplicateur des dépenses publiques:</p>
+<p><span class="math display">\[
+\Delta Y =  - c_1 \Delta T - c_1^2 \Delta T - c_1^3 \Delta T - \ldots
+\]</span></p>
+<p>Le signe négatif vient du fait que nous parlons d’une réduction des impôts, et donc <span class="math inline">\(\Delta T\)</span> est négatif. En factorisant <span class="math inline">\(- \Delta T\)</span>, on obtient:</p>
+<p><span class="math display">\[
+\Delta Y =  - \Delta T (c_1 + c_1^2 + c_1^3 + \ldots)
+\]</span></p>
+<p>La somme <span class="math inline">\(c_1 + c_1^2 + c_1^3 + \ldots\)</span> est une série géométrique infinie qui converge vers <span class="math inline">\(\frac{c_1}{1-c_1}\)</span>, à condition que <span class="math inline">\(c_1 &lt; 1\)</span>.</p>
+<p>Ainsi, l’effet total de la réduction des impôts sur le PIB est donné par:</p>
+<p><span class="math display">\[
+\Delta Y = - \Delta T \cdot \frac{c_1}{1-c_1}
+\]</span></p>
+<p>Et le multiplicateur des impôts est:</p>
+<p><span id="eq-multiplier_t"><span class="math display">\[
+\frac{\mathrm{d} Y}{\mathrm{d} T} = \frac{\Delta Y}{\Delta T} =  - \frac{c_1}{1-c_1} &lt; 0
+\tag{4.6}\]</span></span></p>
+<p>Deux remarques importantes sont à faire à propos de cette équation:</p>
+<ol type="1">
+<li>Le multiplicateur des impôts est négatif, ce qui signifie qu’une <strong>augmentation des impôts entraîne une diminution du PIB</strong> et qu’une <strong>réduction des impôts entraîne une augmentation du PIB</strong>.</li>
+<li>Le multiplicateur des impôts est toujours inférieur au multiplicateur des dépenses publiques, car <span class="math inline">\(c_1 &lt; 1\)</span>.</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Exemple">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Exemple
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Si l’on suppose une propension marginale à consommer <span class="math inline">\(c_1 = 0.6\)</span>, le multiplicateur des impôts est:</p>
+<p><span class="math display">\[
+\frac{\Delta Y}{\Delta T} = - \frac{0.6}{1-0.6} = - 1.5
+\]</span></p>
+<p>Cela signifie qu’une augmentation des impôts de 1 euro réduit le revenu (PIB) d’équilibre de 1.5 euros (voir la note <a href="#wrn-multiplier" class="quarto-xref">Warning&nbsp;<span>4.1</span></a>).</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Le multiplicateur des impôts calculé de manière alternative">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Le multiplicateur des impôts calculé de manière alternative
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Il est possible de calculer le multiplicateur des impôts de manière alternative, en prenant la dérivée totale de l’équation d’équilibre du marché des biens et services par rapport à <span class="math inline">\(T\)</span> et <span class="math inline">\(Y\)</span>:</p>
+<p><span class="math display">\[
+\frac{\partial Y}{\partial Y} \mathrm{d}Y = c_1 \frac{\partial Y}{\partial Y} \mathrm{d}Y - c_1 \frac{\partial T}{\partial T} \mathrm{d}T
+\]</span></p>
+<p>Où <span class="math inline">\(\frac{\partial T}{\partial T} = 1\)</span> et <span class="math inline">\(\frac{\partial Y}{\partial Y} = 1\)</span>.</p>
+<p>En simplifiant, nous avons:</p>
+<p><span class="math display">\[
+\mathrm{d}Y = c_1 \mathrm{d}Y - c_1 \mathrm{d}T \implies (1-c_1) \mathrm{d}Y = - c_1 \mathrm{d}T
+\]</span></p>
+<p>En isolant <span class="math inline">\(\frac{\mathrm{d}Y}{\mathrm{d}T}\)</span>, nous obtenons:</p>
+<p><span class="math display">\[
+\frac{\mathrm{d}Y}{\mathrm{d}T} = - \frac{c_1}{1-c_1} &lt; 0
+\]</span></p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Cas d'étude: réduction des impôts de Kennedy et Bush">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Cas d’étude: réduction des impôts de Kennedy et Bush
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>L’expérience Kennedy (1961-1965)</strong></p>
+<p>Lorsque John F. Kennedy est devenu président des États-Unis en 1961, il s’entoura d’économistes de renom comme Walter Heller (président du Council of Economic Advisers), James Tobin (prix Nobel d’économie) et Paul Samuelson (conseiller informel). Ces économistes, influencés par la théorie keynésienne, proposèrent une politique fiscale expansionniste pour stimuler la croissance économique.</p>
+<p>L’une des mesures phares fut la <em>Revenue Act of 1964</em>, adoptée après l’assassinat de Kennedy par son successeur Lyndon Johnson. Cette loi réduisit significativement les taux d’imposition: - Le taux marginal supérieur passa de 91% à 70% - Le taux d’imposition des entreprises fut réduit de 52% à 48%</p>
+<p>Dans son discours du 14 décembre 1962 au “Economic Club”, <a href="https://www.presidency.ucsb.edu/documents/address-and-question-and-answer-period-the-economic-club-new-york">Kennedy déclara</a>: &gt; Il est paradoxal qu’aujourd’hui les taux d’imposition soient trop élevés et les revenus fiscaux trop faibles, et que le moyen le plus sûr d’augmenter les revenus à long terme soit de réduire les taux maintenant. […] &gt; et la raison est que seul le plein emploi peut balancer le budget, et la réductions des impôts peut nous y conduire. &gt; L’objectif de la réduction des impôts n’est pas d’augmenter le déficit budgétaire, mais d’achever une plus prospère et croissante économie qui pourra nous permettre de réduire le déficit budgétaire.</p>
+<p>Résultats économiques: - Croissance du PIB réel : 5,8% en 1964 et 6,5% en 1965 - Taux de chômage : 5,6% (1963) → 5,2% (1964) → 4,5% (1965) - Les recettes fiscales augmentèrent malgré la baisse des taux</p>
+<p><strong>L’expérience Bush (2001-2003)</strong></p>
+<p>George W. Bush fit campagne en 2000 sur un programme de réductions d’impôts substantielles. Deux lois majeures furent adoptées : - Economic Growth and Tax Relief Reconciliation Act of 2001 - Jobs and Growth Tax Relief Reconciliation Act of 2003</p>
+<p>En 2002, <a href="https://georgewbush-whitehouse.archives.gov/news/releases/2002/06/20020607-6.html">Bush expliqua</a> la logique keynésienne derrière cette mesure : &gt; Je crois que quand on permet aux gens de garder plus de leur argent, ils le dépensent. &gt; Et quand ils dépensent, cela augmente la demande de biens et services. &gt; Et quand la demande de biens et services augmente, quelqu’un va produire ce bien ou service. &gt; Et quand quelqu’un produit ce bien ou service, cela signifie que quelqu’un est plus susceptible de trouver un emploi.</p>
+<p>Mesures adoptées: - Réduction des taux marginaux d’imposition sur le revenu - Réduction de l’impôt sur les dividendes et les plus-values - Augmentation des déductions pour amortissement des investissements</p>
+</div>
+</div>
+</section>
+</section>
+<section id="la-courbe-is-sur-le-plan-y-r" class="level3" data-number="4.1.3">
+<h3 data-number="4.1.3" class="anchored" data-anchor-id="la-courbe-is-sur-le-plan-y-r"><span class="header-section-number">4.1.3</span> La courbe IS sur le plan <span class="math inline">\((Y-r)\)</span></h3>
+<p>La courbe IS est tracée sur le plan <span class="math inline">\((Y-r)\)</span>, où <span class="math inline">\(Y\)</span> est le niveau de production d’équilibre, tracé sur l’axe des abscisses et <span class="math inline">\(r\)</span> est le taux d’intérêt, tracé sur l’axe des ordonnées.</p>
+<p>Pour rappeler, la courbe IS est dérivée de l’identité fondamentale de la comptabilité nationale, qui stipule que le produit intérieur brut (PIB) est égal à la somme de la consommation, de l’investissement et des dépenses publiques, moins les impôts. La courbe IS montre, donc, <strong>toutes les combinaisons de <span class="math inline">\(Y\)</span> et <span class="math inline">\(r\)</span> pour lesquelles l’offre agrégée est égale à la demande agrégée</strong>. Autrement dit, la courbe IS représente toute combinaison de niveau de production d’équilibre <span class="math inline">\((Y)\)</span> et de taux d’intérêt <span class="math inline">\((r)\)</span> pour laquelle l’économie est en équilibre sur le marché des biens et services.</p>
+<p>Sur le plan <span class="math inline">\((Y-r)\)</span>, la courbe IS est décroissante, ce qui signifie que lorsque le taux d’intérêt augmente, le niveau de production d’équilibre diminue. La raison de cette relation décroissante est que le taux d’intérêt <span class="math inline">\((r)\)</span> affecte l’investissement <span class="math inline">\((I)\)</span>, qui est une composante clé de la demande agrégée. Quand le taux d’intérêt augmente, le coût de l’emprunt pour financer des projets d’investissement augmente, ce qui réduit l’investissement. Comme <span class="math inline">\(I(r)\)</span> diminue, la demande agrégée diminue, ce qui entraîne une diminution du niveau de production d’équilibre <span class="math inline">\((Y)\)</span>.</p>
+<p>Mathématiquement, la courbe IS est dérivée de l’équation d’équilibre du marché des biens et services.</p>
+<p><span class="math display">\[
+Y = c_0 + c_1(Y-T) + I(r) + \bar{G}
+\]</span></p>
+<p>Nous pouvons vérifier que, lors que <span class="math inline">\(Y\)</span> augmente, <span class="math inline">\(r\)</span> diminue, c’est-à-dire, que la courbe IS est décroissante. Pour cela, nous allons calculer la dérivée totale de l’équation d’équilibre du marché des biens et services par rapport à <span class="math inline">\(Y\)</span> et <span class="math inline">\(r\)</span>:</p>
+<p><span class="math display">\[
+\frac{\partial Y}{\partial Y} \mathrm{d}Y = c_1 \frac{\partial Y}{\partial Y} \mathrm{d}Y + \frac{\partial I(r)}{\partial r} \mathrm{d}r
+\]</span></p>
+<p>où <span class="math inline">\(\frac{\partial I(r)}{\partial r}\)</span> est la dérivée de la fonction d’investissement par rapport au taux d’intérêt, qui est négative car l’investissement diminue lorsque le taux d’intérêt augmente. En simplifiant <span class="math inline">\((\frac{\partial Y}{\partial Y} = 1)\)</span>, nous avons:</p>
+<p><span class="math display">\[
+\mathrm{d}Y = c_1 \mathrm{d}Y + I^\prime \mathrm{d}r
+\]</span></p>
+<p>Et en isolant <span class="math inline">\(\frac{\mathrm{d}r}{\mathrm{d}Y}\)</span>, nous obtenons:</p>
+<p><span class="math display">\[
+\frac{\mathrm{d}r}{\mathrm{d}Y} = \frac{1-c_1}{I^\prime} &lt; 0
+\]</span></p>
+<p>car <span class="math inline">\(I^\prime &lt; 0\)</span> (la fonction d’investissement est décroissante) et <span class="math inline">\(c_1 \in (0,1)\)</span>.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Exemple">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Exemple
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Si nous supposons que la fonction d’investissement est <span class="math inline">\(I(r) = \frac{1}{r}\)</span>, la consommation est <span class="math inline">\(C(Y-T) = c_0 + c_1(Y-T)\)</span> avec <span class="math inline">\(c_0 = 10\)</span> et <span class="math inline">\(c_1 = 0.6\)</span>, et les dépenses publiques sont <span class="math inline">\(\bar{G} = 8\)</span>, nous pouvons écrire l’équation d’équilibre du marché des biens et services comme suit:</p>
+<p><span class="math display">\[
+Y = 10 + 0.6(Y-3) + \frac{1}{r} + 8
+\]</span></p>
+<p>Ensuite, nous pouvons réarranger cette équation pour exprimer <span class="math inline">\(r\)</span> en fonction de <span class="math inline">\(Y\)</span> calculer la pente de la courbe IS:</p>
+<p><span class="math display">\[
+Y = 16.2 + 0.6 Y + \frac{1}{r} \implies 0.4 Y = 16.2 + \frac{1}{r} \implies r = \frac{1}{0.4Y - 16.2} = \frac{5}{2Y - 81}
+\]</span></p>
+<p>et la dérivée de <span class="math inline">\(r\)</span> par rapport à <span class="math inline">\(Y\)</span> est:</p>
+<p><span class="math display">\[
+\frac{\mathrm{d}r}{\mathrm{d}Y} = \frac{-10}{(2Y - 81)^2} &lt; 0
+\]</span></p>
+</div>
+</div>
+<div id="cell-fig-is_curve" class="cell" data-execution_count="3">
+<div class="cell-output cell-output-display">
+<div id="fig-is_curve" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-is_curve-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="is_lm_model_files/figure-html/fig-is_curve-output-1.png" width="597" height="429" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-is_curve-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.1: Courbe IS
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<section id="déplacements-de-la-courbe-is" class="level4" data-number="4.1.3.1">
+<h4 data-number="4.1.3.1" class="anchored" data-anchor-id="déplacements-de-la-courbe-is"><span class="header-section-number">4.1.3.1</span> Déplacements de la courbe IS</h4>
+<p>La courbe IS montre l’ensemble des combinaisons de niveau de production d’équilibre <span class="math inline">\((Y)\)</span> et de taux d’intérêt <span class="math inline">\((r)\)</span> pour lesquelles l’offre agrégée est égale à la demande agrégée. Pour tracer la courbe IS, nous devons choisir des valeurs pour les variables exogènes, telles que les dépenses publiques <span class="math inline">\((G)\)</span> et les impôts <span class="math inline">\((T)\)</span>. Comment la courbe IS change-t-elle lorsque ces variables exogènes varient?</p>
+<p>En partant de l’équation d’équilibre du marché des biens et services, nous avons:</p>
+<p><span class="math display">\[
+Y = C(Y-T) + I(r) + \bar{G}
+\]</span></p>
+<section id="augmentation-des-dépenses-publiques" class="level5" data-number="4.1.3.1.1">
+<h5 data-number="4.1.3.1.1" class="anchored" data-anchor-id="augmentation-des-dépenses-publiques"><span class="header-section-number">4.1.3.1.1</span> Augmentation des dépenses publiques</h5>
+<p>Imaginons que les depenses publiques augmentent. Le terme <span class="math inline">\(\bar{G}\)</span> augmente, et donc l’équation n’est plus vérifiée car la partie droite augmente <span class="math inline">\((Y = C(Y-T) + I(r) + \bar{G})\)</span> et la partie gauche <span class="math inline">\((Y)\)</span> reste constante. Pour penser comment la courbe IS doit changer, nous pouvons:</p>
+<ol type="1">
+<li>Fixer un niveau de production d’équilibre <span class="math inline">\((Y)\)</span> et analyser comment le taux d’intérêt <span class="math inline">\((r)\)</span> doit changer pour rétablir l’équilibre.</li>
+<li>Fixer un taux d’intérêt <span class="math inline">\((r)\)</span> et analyser comment le niveau de production d’équilibre <span class="math inline">\((Y)\)</span> doit changer pour rétablir l’équilibre.</li>
+</ol>
+<p>Si nous fixons un niveau de production d’équilibre <span class="math inline">\((Y)\)</span>, l’augmentation des dépenses publiques <span class="math inline">\((\bar{G})\)</span> augmente la partie droite de l’équation, et donc, pour rétablir l’équilibre, cette même partie doit diminuer. Comme nous avons fixé <span class="math inline">\(Y\)</span> et <span class="math inline">\(T\)</span> est exogène la seule possibilité est que la partie <span class="math inline">\(I(r)\)</span> diminue. En rappelant que <span class="math inline">\(I(r)\)</span> est une fonction décroissante du taux d’intérêt <span class="math inline">\((r)\)</span>, cela signifie que le taux d’intérêt doit augmenter pour rétablir l’équilibre. Ainsi, si les dépenses publiques <span class="math inline">\((G)\)</span> augmentent, la courbe IS se déplace vers le haut, c’est-à-dire que <em>pour chaque niveau de production</em> <span class="math inline">\((Y)\)</span>, le taux d’intérêt <span class="math inline">\((r)\)</span> augmente.</p>
+<p>De manière équivalente, si nous fixons le taux d’intérêt <span class="math inline">\((r)\)</span> et analysons comment le niveau de production d’équilibre <span class="math inline">\((Y)\)</span> doit changer pour rétablir l’équilibre, nous avons que l’augmentation des dépenses publiques <span class="math inline">\((\bar{G})\)</span> augmente la partie droite de l’équation, et donc, pour rétablir l’équilibre, la partie gauche doit augmenter. L’augmentation de <span class="math inline">\(Y\)</span> entraîne une augmentation de la consommation <span class="math inline">\((C(Y-T))\)</span> car <span class="math inline">\(Y\)</span> apparaît dans la fonction de consommation, mais il est possible de calculer exactement l’augmentation nécessaire. Enfin, pour chaque niveau de taux d’intérêt <span class="math inline">\((r)\)</span>, le niveau de production d’équilibre <span class="math inline">\((Y)\)</span> augmente, et donc la courbe IS se déplace vers la droite.</p>
+<p>La manière mathématique de calculer le premier déplacement de la courbe IS est de calculer les dérivées partielles de l’équation d’équilibre du marché des biens et services par rapport à <span class="math inline">\(G\)</span> et <span class="math inline">\(r\)</span> pour trouver <span class="math inline">\(\frac{\mathrm{d}Y}{\mathrm{d}G}\)</span>.</p>
+<p><span class="math display">\[
+0 = \frac{\partial I(r)}{\partial r} \mathrm{d}r + \frac{\partial G}{\partial G} \mathrm{d}G
+\]</span></p>
+<p>En isolant <span class="math inline">\(\frac{\mathrm{d}Y}{\mathrm{d}G}\)</span>, nous avons:</p>
+<p><span class="math display">\[
+\frac{\mathrm{d}Y}{\mathrm{d}G} = - \frac{\partial I(r)}{\partial r} \cdot \frac{1}{\frac{\partial Y}{\partial Y}} = - \frac{\partial I(r)}{\partial r} &gt; 0
+\]</span></p>
+<p>Cela indique que, pour un niveau de production <span class="math inline">\((Y)\)</span> donné, si les dépenses publiques <span class="math inline">\((G)\)</span> augmentent, le taux d’intérêt <span class="math inline">\((r)\)</span> doit augmenter pour rétablir l’équilibre, déplaçant la courbe IS vers le haut.</p>
+<p>Par rapport à la deuxième possibilité, si nous fixons le taux d’intérêt <span class="math inline">\((r)\)</span> et analysons comment le niveau de production d’équilibre <span class="math inline">\((Y)\)</span> doit changer pour rétablir l’équilibre, nous devons calculer les dérivées partielles de l’équation d’équilibre du marché des biens et services par rapport à <span class="math inline">\(G\)</span> et <span class="math inline">\(Y\)</span> pour trouver <span class="math inline">\(\frac{\mathrm{d}Y}{\mathrm{d}G}\)</span>: comment <span class="math inline">\(Y\)</span> change quand <span class="math inline">\(G\)</span> change pour un niveau de taux d’intérêt <span class="math inline">\((r)\)</span> fixe tel que l’équation d’équilibre est vérifiée.</p>
+<p><span class="math display">\[
+\frac{\partial Y}{\partial Y} \mathrm{d}Y = c_1 \frac{\partial Y}{\partial Y} \mathrm{d}Y + \frac{\partial G}{\partial G} \mathrm{d}G
+\]</span></p>
+<p>En isolant <span class="math inline">\(\frac{\mathrm{d}Y}{\mathrm{d}G}\)</span>, nous avons:</p>
+<p><span class="math display">\[
+\frac{\mathrm{d}Y}{\mathrm{d}G} = \frac{1}{1-c_1} &gt; 0
+\]</span></p>
+<p>Cette équation indique que, pour un niveau de taux d’intérêt <span class="math inline">\((r)\)</span> donné, si les dépenses publiques <span class="math inline">\((G)\)</span> augmentent, le niveau de production d’équilibre <span class="math inline">\((Y)\)</span> doit augmenter pour rétablir l’équilibre, déplaçant la courbe IS vers la droite.</p>
+<div class="callout callout-style-default callout-important callout-titled" title="Note">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>La resultat quand nous utilisons la deuxième possibilité est le multiplicateur des dépenses publiques, qui est défini comme le rapport entre la variation du niveau de production d’équilibre <span class="math inline">\((Y)\)</span> et la variation des dépenses publiques <span class="math inline">\((G)\)</span>.</p>
+<p>En effet, lors du calcul du multiplicateur on se demandait comment le niveau de production d’équilibre <span class="math inline">\((Y)\)</span> change quand les dépenses publiques <span class="math inline">\((G)\)</span> changent, gardant le taux d’intérêt <span class="math inline">\((r)\)</span> constant de manière implicite.</p>
+</div>
+</div>
+<div id="cell-fig-is_curve_change_g" class="cell" data-execution_count="4">
+<div class="cell-output cell-output-display">
+<div id="fig-is_curve_change_g" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-is_curve_change_g-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="is_lm_model_files/figure-html/fig-is_curve_change_g-output-1.png" width="579" height="451" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-is_curve_change_g-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.2: Augmentation de G et déplacement de la courbe IS
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Vérification">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vérification
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-13" class="callout-13-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Imaginons que la courbe IS initiale est donnée par la fonction <span class="math inline">\(Y = 10 + 0.6(Y-3) + \frac{1}{r} + 8\)</span> et que <span class="math inline">\(G\)</span> augmente de 10, passant de <span class="math inline">\(\bar{G} = 8\)</span> à <span class="math inline">\(\bar{G} = 18\)</span>. Nous pouvons calculer le déplacement horizontal de la courbe IS pour n’importe quel niveau de taux d’intérêt <span class="math inline">\(r\)</span>, prennons par exemple <span class="math inline">\(r = 0.4\)</span>. Nous avons: <span class="math display">\[
+Y = 10 + 0.6(Y-3) + \frac{1}{0.4} + 8
+\]</span></p>
+<p>Le niveau de production d’équilibre est <span class="math inline">\(Y = 46.75\)</span>.</p>
+<p>Quand <span class="math inline">\(G\)</span> augmente de 10, nous avons: <span class="math display">\[
+Y = 10 + 0.6(Y-3) + \frac{1}{0.4} + 18 \implies Y = 71.75
+\]</span></p>
+<p>L’augmentation de <span class="math inline">\(Y\)</span> est de <span class="math inline">\(20\)</span>, ce qui correspond à l’augmentation de <span class="math inline">\(G\)</span> multipliée par le multiplicateur des dépenses publiques, qui est <span class="math inline">\(\frac{1}{1-c_1} = \frac{1}{1-0.6} = 2.5\)</span>. Dans ce cas, l’augmentation de <span class="math inline">\(Y\)</span> est de <span class="math inline">\(10 \cdot 2.5 = 25\)</span>, ce qui correspond à l’augmentation de <span class="math inline">\(G\)</span> multipliée par le multiplicateur des dépenses publiques.</p>
+<p>Nous obtenon le même résultat pour toute valeur de <span class="math inline">\(r\)</span>. Par exemple, si nous prenons <span class="math inline">\(r = 1\)</span>, nous avons: <span class="math display">\[
+Y = 10 + 0.6(Y-3) + \frac{1}{1} + 8 \implies Y = 43
+\]</span></p>
+<p>Et, quand <span class="math inline">\(G\)</span> augmente de 10, nous avons:</p>
+<p><span class="math display">\[
+Y = 10 + 0.6(Y-3) + \frac{1}{1} + 18 \implies Y = 68
+\]</span></p>
+<p>La variation de <span class="math inline">\(Y\)</span> est, à nouveau, de <span class="math inline">\(25\)</span>, ce qui correspond à l’augmentation de <span class="math inline">\(G\)</span> multipliée par le multiplicateur des dépenses publiques.</p>
+<p>Mathématiquement, le résultat est toujours le même, car si <span class="math inline">\(Y_0\)</span> est le niveau de production d’équilibre initial, <span class="math inline">\(Y_1\)</span> le niveau de production d’équilibre après l’augmentation de <span class="math inline">\(G\)</span>, et <span class="math inline">\(G_0\)</span> et <span class="math inline">\(G_1\)</span> les niveaux de dépenses publiques avant et après l’augmentation, nous avons:</p>
+<p><span class="math display">\[
+\begin{aligned}
+Y_1 &amp;= c_0 + c_1(Y_1-T) + I(r) + G_1 \\
+Y_0 &amp;= c_0 + c_1(Y_0-T) + I(r) + G_0 \\
+\\
+Y_1 - Y_0 &amp;= c_1(Y_1 - Y_0) + (G_1 - G_0) \\
+\Delta Y &amp;= c_1(\Delta Y) + \Delta G \\
+\Delta Y &amp;= \frac{\Delta G}{1 - c_1} \\
+\Delta Y &amp;= \frac{1}{1 - c_1} \Delta G
+\end{aligned}
+\]</span></p>
+</div>
+</div>
+</div>
+</section>
+<section id="réduction-des-impôts" class="level5" data-number="4.1.3.1.2">
+<h5 data-number="4.1.3.1.2" class="anchored" data-anchor-id="réduction-des-impôts"><span class="header-section-number">4.1.3.1.2</span> Réduction des impôts</h5>
+<p>De manière similaire, si les impôts diminuent, la courbe IS se déplace aussi. Pour le voir, admettons que nous fixons un taux d’intérêt <span class="math inline">\(r\)</span> et analysons comment la courbe doit changer pour garder l’identité <span class="math inline">\(Y = C(Y-T) + I(r) + \bar{G}.\)</span> Si les impôts diminuent, cela veut dire que la consommation augmente, car <span class="math inline">\(C(Y-T) = c_0 + c_1(Y-T)\)</span>. Ainsi, suit au changement nous avons: <span class="math inline">\(Y = \uparrow C(Y-\downarrow T) + I(r) + \bar{G}.\)</span> Pour rétablir l’égalité, le côté gauche doit augmenter (ce qui va provoquer un effet en chaîne, car l’augmentation à gauche induit une nouvelle augmentation à droite.) <span class="math inline">\(\uparrow Y = \uparrow C(\uparrow Y-\downarrow T) + I(r) + \bar{G}.\)</span> Par conséquent, quand les impôts diminuent, la courbe IS se déplace vers la droite. Ce résultat a du sens du point de vue économique: avec moins d’impôts, la consommation est plus forte et, donc, pour n’importe quel taux d’intérêt, le PIB doit être aussi plus élevé.</p>
+<p>De manière alternative, nous pouvons fixer <span class="math inline">\(Y\)</span> et analyser comment <span class="math inline">\(r\)</span> doit s’ajuster pour rétablir l’équilibre. <span class="math inline">\(Y = \uparrow C(Y-\downarrow T) + I(r) + \bar{G}.\)</span> Comme la partie droite vient d’augmenter, il faut que <span class="math inline">\(I(r)\)</span> diminue et, pour cela, <span class="math inline">\(r\)</span> doit augmenter. <span class="math inline">\(Y = \uparrow C(Y-\downarrow T) + \downarrow I(\uparrow r) + \bar{G}.\)</span> Conséquence: la courbe IS se déplace vers le haut.</p>
+<p>Mathématiquement, nous pouvons calculer le multiplicateur pour étudier l’effet. Dans le premier cas où nous fixons <span class="math inline">\(Y\)</span>, nous aurons que:</p>
+<p><span class="math display">\[
+0 = - c_1 \frac{\partial T}{\partial T} \mathrm{d}T + \frac{\partial I(r)}{\partial r} \mathrm{d}r
+\]</span></p>
+<p>En isolant <span class="math inline">\(\frac{\mathrm{d}r}{\mathrm{d}T}\)</span>, nous obtenons:</p>
+<p><span class="math display">\[
+\frac{\mathrm{d}r}{\mathrm{d}T} = \frac{c_1}{I^\prime (r)} &lt; 0
+\]</span></p>
+<p>où <span class="math inline">\(I^\prime (r) \equiv \frac{\partial I(r)}{\partial r} &lt; 0\)</span> est la dérivée de la fonction d’investissement par rapport au taux d’intérêt, qui est négative car l’investissement diminue lorsque le taux d’intérêt augmente. Ainsi, la relation entre la variation des impôts <span class="math inline">\((T)\)</span> et la variation du taux d’intérêt <span class="math inline">\((r)\)</span> est négative, ce qui signifie que lorsque les impôts diminuent, le taux d’intérêt augmente pour rétablir l’équilibre; et vice versa, lorsque les impôts augmentent, le taux d’intérêt diminue pour rétablir l’équilibre.</p>
+<p>Si, par contre, nous fixons <span class="math inline">\(r\)</span> et analysons comment <span class="math inline">\(Y\)</span> doit changer pour rétablir l’équilibre, nous avons:</p>
+<p><span class="math display">\[
+\frac{\partial Y}{\partial Y} \mathrm{d}Y = c_1 \frac{\partial Y}{\partial Y} \mathrm{d}Y - c_1 \frac{\partial T}{\partial T} \mathrm{d}T
+\]</span></p>
+<p>En isolant <span class="math inline">\(\frac{\mathrm{d}Y}{\mathrm{d}T}\)</span>, nous avons:</p>
+<p><span class="math display">\[
+\frac{\mathrm{d}Y}{\mathrm{d}T} = - \frac{c_1}{1-c_1} &lt; 0
+\]</span></p>
+<p>Cela indique que, pour un niveau de taux d’intérêt <span class="math inline">\((r)\)</span> donné, si les impôts <span class="math inline">\((T)\)</span> diminuent, le niveau de production d’équilibre <span class="math inline">\((Y)\)</span> doit augmenter pour rétablir l’équilibre, déplaçant la courbe IS vers la droite. En plus, de nouveau, nous retrouvons le multiplicateur des impôts, qui est défini comme le rapport entre la variation du niveau de production d’équilibre <span class="math inline">\((Y)\)</span> et la variation des impôts <span class="math inline">\((T)\)</span>, pour une valeur de taux d’intérêt <span class="math inline">\((r)\)</span> fixe.</p>
+<div id="cell-fig-is_curve_change_t" class="cell" data-execution_count="5">
+<div class="cell-output cell-output-display">
+<div id="fig-is_curve_change_t" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-is_curve_change_t-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="is_lm_model_files/figure-html/fig-is_curve_change_t-output-1.png" width="579" height="451" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-is_curve_change_t-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.3: Réduction des impôts et déplacement de la courbe IS
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Vérification">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vérification
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-14" class="callout-14-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Imaginons que la courbe IS initiale est donnée par la fonction <span class="math inline">\(Y = 10 + 0.6(Y-3) + \frac{1}{r} + 8\)</span> et que <span class="math inline">\(T\)</span> diminue de 1, passant de <span class="math inline">\(T = 3\)</span> à <span class="math inline">\(T = 2\)</span>. Nous pouvons calculer le déplacement horizontal de la courbe IS pour n’importe quel niveau de taux d’intérêt <span class="math inline">\(r\)</span>, prenons par exemple <span class="math inline">\(r = 0.4\)</span>.</p>
+<p>Nous avons:</p>
+<p><span class="math display">\[
+Y = 10 + 0.6(Y-3) + \frac{1}{0.4} + 8
+\]</span></p>
+<p>Le niveau de production d’équilibre est <span class="math inline">\(Y = 46.75\)</span>. Quand <span class="math inline">\(T\)</span> diminue de 1, nous avons:</p>
+<p><span class="math display">\[
+Y = 10 + 0.6(Y-2) + \frac{1}{0.4} + 8 \implies Y = 48.25
+\]</span></p>
+<p>La variation de <span class="math inline">\(Y\)</span> est de <span class="math inline">\(-1.5\)</span>, ce qui correspond à la diminution de <span class="math inline">\(T\)</span> multipliée par le multiplicateur des impôts, qui est <span class="math inline">\(-\frac{c_1}{1-c_1} = -\frac{0.6}{1-0.6} = -1.5\)</span>.</p>
+<p>Utilisant la même procédure qu’auparavant, nous pouvons vérifier que le résultat est toujours le même pour toute valeur de <span class="math inline">\(r\)</span>.</p>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="pourquoi-le-multiplicateur-des-impôts-est-il-inférieur-au-multiplicateur-des-dépenses-publiques" class="level4" data-number="4.1.3.2">
+<h4 data-number="4.1.3.2" class="anchored" data-anchor-id="pourquoi-le-multiplicateur-des-impôts-est-il-inférieur-au-multiplicateur-des-dépenses-publiques"><span class="header-section-number">4.1.3.2</span> Pourquoi le multiplicateur des impôts est-il inférieur au multiplicateur des dépenses publiques?</h4>
+<p>Mathématiquement, le multiplicateur des impôts est inférieur au multiplicateur des dépenses publiques car <span class="math inline">\(\frac{c_1}{1-c_1} &lt; \frac{1}{1-c_1}\)</span>.</p>
+<p>D’un point de vue économique, cela signifie que l’effet d’une variation des impôts sur le PIB est moins important que l’effet d’une variation des dépenses publiques. Ceci s’explique par le fait que les dépenses publiques ont un effet direct sur la demande agrégée, tandis que les impôts ont un effet indirect en modifiant le revenu disponible des ménages. En effet, quand le gouvernement augmente les dépenses publiques de <span class="math inline">\(\Delta G\)</span>, cela augmente <em>directement</em> la demande agrégée de <span class="math inline">\(\Delta G\)</span>: il est nécessaire de construire ou acheter ces biens et services qui n’existaient pas auparavant. De plus, cette augmentation de la demande agrégée entraîne une augmentation du PIB, qui à son tour augmente le revenu disponible des ménages et stimule la consommation.</p>
+<p>Cependant, quand le gouvernement diminue les impôts de <span class="math inline">\(\Delta T\)</span>, cela augmente <em>indirectement</em> la demande agrégée de <span class="math inline">\(c_1 \Delta T\)</span>: les ménages ont plus d’argent à dépenser, ce qui augmente leur consommation. De manière critique, dans ce cas, <em>seul une partie</em> de cette augmentation de la consommation se traduira par une augmentation du PIB car une partie de l’argent supplémentaire sera épargnée.</p>
+<p>En résumé, la différence entre les multiplicateurs des dépenses publiques et des impôts peut être expliquée par deux facteurs principaux :</p>
+<ol type="1">
+<li>Effet direct vs indirect : Une augmentation des dépenses publiques <span class="math inline">\((\Delta G)\)</span> a un effet direct sur le PIB. Chaque euro dépensé par le gouvernement augmente directement le PIB d’un euro. En revanche, une réduction d’impôts <span class="math inline">\((-\Delta T)\)</span> n’a qu’un effet indirect. Elle augmente le revenu disponible, mais seule une fraction de ce revenu supplémentaire, déterminée par <span class="math inline">\(c_1\)</span> (la propension marginale à consommer), est effectivement dépensée.</li>
+<li>Processus multiplicateur : Pour <span class="math inline">\(\Delta G\)</span>, le processus multiplicateur commence immédiatement avec l’intégralité de la dépense. Tout l’argent injecté entre directement dans le circuit économique. Pour <span class="math inline">\(-\Delta T\)</span>, seule une partie <span class="math inline">\((c_1)\)</span> de la réduction d’impôts entre dans le circuit économique au début du processus multiplicateur.</li>
+</ol>
+<p>La différence entre les deux multiplicateurs est donc due à la nature directe des dépenses publiques par rapport à la nature indirecte des réductions d’impôts et elle a des implications importantes pour la politique économique.</p>
+<ul>
+<li>Efficacité: À court terme, une augmentation des dépenses publiques est plus efficace pour stimuler l’économie qu’une réduction d’impôts du même montant.</li>
+<li>Rapidité: L’effet des dépenses publiques se fait sentir plus rapidement car il n’y a pas de délai lié à la décision des ménages de dépenser ou d’épargner.</li>
+<li>Ciblage: Les dépenses publiques peuvent être plus facilement ciblées vers des secteurs ou des projets spécifiques, tandis que l’effet d’une réduction d’impôts dépend des décisions de consommation des ménages.</li>
+<li>Considérations de long terme: Bien que les dépenses publiques aient un effet multiplicateur plus important à court terme, les réductions d’impôts peuvent avoir des effets bénéfiques à long terme sur l’incitation au travail et à l’investissement.</li>
+</ul>
+<div class="callout callout-style-default callout-important callout-titled" title="Cas d'étude: Les multiplicateurs dans le débat économique (Mankiw, p.322)">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Cas d’étude: Les multiplicateurs dans le débat économique (Mankiw, p.322)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Lorsque Barack Obama est devenu président en janvier 2009, l’économie américaine était en récession. Son administration proposa un important plan de relance d’environ 800 milliards de dollars, soit environ 5% du PIB annuel, pour stimuler la demande globale.</p>
+<p>Le plan comprenait des réductions d’impôts et une augmentation des transferts, mais surtout une augmentation des achats de biens et services par le gouvernement. Les économistes ont débattu des mérites du plan: Les partisans du plan Obama arguaient que l’augmentation des dépenses était plus efficace que la réduction des impôts, car selon la théorie keynésienne standard, le multiplicateur des dépenses publiques est supérieur au multiplicateur fiscal. Selon les économistes de l’administration Obama, le multiplicateur des dépenses publiques était de 1,57, tandis que le multiplicateur fiscal n’était que de 0,99. D’autres économistes soutenaient que, malgré les prédictions des modèles keynésiens conventionnels, les stimuli fiscaux basés sur les dépenses ne sont pas aussi efficaces que les initiatives basées sur les impôts. Certains économistes, comme Gary Becker, s’inquiétaient que l’utilisation des dépenses d’infrastructure pour promouvoir l’emploi puisse entrer en conflit avec l’objectif d’obtenir les infrastructures les plus nécessaires.</p>
+<blockquote class="blockquote">
+<p>Des nouvelles dépenses d’infrastructure dans des régions en déclin économique comme Detroit pourrait avoir un effet stimulant important parce que ces projets de construction peuvent utiliser des travailleurs qui, aujourd’hui sont au chômage. Toutefois, beaucoup de ces zones <strong>sont en déclin parce qu’elles produisaient des biens et services qui ne sont pas très demandés et qui ne le seront pas à l’avenir</strong>. Par conséquent, la valeur ajoutée globale en améliorant leurs routes et autres infrastructures sera probablement beaucoup moins importante que si la nouvelle infrastructure était située dans des régions avec une forte croissance qui pourraient avoir relativement peu de chômage, mais qui ont une grande demande de routes, d’écoles et d’autres types d’infrastructures à long terme.</p>
+</blockquote>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="la-courbe-lm" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="la-courbe-lm"><span class="header-section-number">4.2</span> La courbe LM</h2>
+<p>La deuxième courbe qui intervient dans le modèle IS-LM est la courbe LM, et elle représente l’équilibre dans le marché de la monnaie, comme dans le modèle classique.</p>
+<p>Comme pour le modèle classique, l’économie keynésienne suppose que l’offre d’encaisses réelles est exogène et déterminée par la banque centrale. Nous pouvons donc noter l’offre d’encaisses réelles par <span class="math inline">\(\frac{M^s}{p}\)</span>, où <span class="math inline">\(M^s\)</span> est la quantité nominale de monnaie et <span class="math inline">\(p\)</span> est le niveau des prix.</p>
+<p>La demande d’encaisses réelles est modélisée par la <em>préférence pour la liquidité</em> de Keynes. Cette préférence indique que les individus préfèrent détenir de la monnaie plutôt que d’autres actifs financiers, car la monnaie est plus liquide et peut être utilisée immédiatement pour des transactions. Ainsi, les individus doivent arbitrer entre deux choix: détenir de la monnaie ou investir dans des actifs financiers qui rapportent un intérêt.</p>
+<p>Si les individus choisissent de détenir de la monnaie, ils renoncent à un rendement potentiel, ce qui est le coût d’opportunité de détenir de la monnaie. Par conséquent, la demande d’encaisses réelles diminue lorsque le taux d’intérêt augmente, car les individus préfèrent investir leur argent pour obtenir un rendement plutôt que de le détenir sous forme de monnaie.</p>
+<p>Par contre, détenir de la monnaie facilite les transactions, et donc la demande d’encaisses réelles augmente avec le niveau de production <span class="math inline">\((Y)\)</span>, car plus il y a de transactions, plus les individus ont besoin de liquidités pour les financer. Par exemple, si tout le revenu était placé dans des actifs financiers, les individus ne pourraient pas acheter de biens et services, ils devraient attendre de vendre leurs actifs pour obtenir de la monnaie et effectuer des transactions.</p>
+<p>Selon Keynes, la demande d’encaisses réelles dépend de deux facteurs: 1. Le niveau de production <span class="math inline">\((Y)\)</span>: plus le niveau de production est élevé, plus il y a de transactions à financer, et donc la demande d’encaisses réelles augmente. 2. Le taux d’intérêt <span class="math inline">\((r)\)</span>: plus le taux d’intérêt est élevé, plus le coût d’opportunité de détenir de la monnaie est élevé, et donc la demande d’encaisses réelles diminue.</p>
+<p>Le deuxième point est une nouveauté par rapport au modèle classique, où le taux d’intérêt n’apparaissait pas dans la demande de monnaie. Ainsi, en lieu d’agir sur le niveau des prix (qui sont supposés fixes dans le modèle IS-LM), le taux d’intérêt équilibre l’offre et la demande d’encaisses réelles.</p>
+<p>Keynes modélise la demande d’encaisses réelles à partir de la <em>préférence pour la liquidité</em>. Selon lui, le <strong>taux d’intérêt s’ajuste pour égaliser l’offre et la demande d’encaisses réelles.</strong> Il est important de noter que, dans le modèle classique, le taux d’intérêt n’apparaissait pas dans le marché de la monnaie, il se déterminait uniquement sur le marché de l’emprunt.</p>
+<p>Si nous notons la demande d’encaisses réelles par une fonction générique <span class="math inline">\(L(Y,r)\)</span>, où <span class="math inline">\(Y\)</span> est le niveau de production, <span class="math inline">\(r\)</span> est le taux d’intérêt et <span class="math inline">\(L(Y,r)\)</span> est la quantité d’encaisses réelles demandées, les hpothèses de Keynes nous amènent à écrire:</p>
+<p><span class="math display">\[
+\frac{\partial L(Y,r)}{\partial Y} &gt; 0 \quad \text{et} \quad \frac{\partial L(Y,r)}{\partial r} &lt; 0
+\]</span></p>
+<p>L’équilibre du marché de la monnaie (ce que la courbe LM réprésente) est atteint lorsque l’offre d’encaisses réelles est égale à la demande d’encaisses réelles. C’est-à-dire, lorsque:</p>
+<p><span class="math display">\[
+\frac{M^s}{p} = L(Y,r)
+\]</span></p>
+<section id="la-courbe-lm-sur-le-plan-yr" class="level3" data-number="4.2.1">
+<h3 data-number="4.2.1" class="anchored" data-anchor-id="la-courbe-lm-sur-le-plan-yr"><span class="header-section-number">4.2.1</span> La courbe LM sur le plan <span class="math inline">\((Y,r)\)</span></h3>
+<p>La courbe LM est donc l’ensemble des points <span class="math inline">\((Y,r)\)</span> tels que l’offre d’encaisses réelles est égale à la demande d’encaisses réelles, pour une valeur donnée de <span class="math inline">\(\frac{M^s}{p}\)</span>. Sur le plan <span class="math inline">\((Y,r)\)</span>, la courbe LM est croissante. Imaginons que le niveau de production <span class="math inline">\((Y)\)</span> augmente, ce qui fait que la partie droite de l’équation augmente car la demande d’encaisses réelles augmente avec le niveau de production.</p>
+<p><span class="math display">\[
+\frac{M^s}{p} = \uparrow L(\uparrow Y,r)
+\]</span></p>
+<p>Pour rétablir l’égalité, il faut diminuer la partie droite (car ni l’offre de monnaie ni le niveau de prix ne changent).</p>
+<p>À ce moment, le marché de la monnaie est en déséquilibre, car l’offre d’encaisses réelles est inférieure à la demande d’encaisses réelles. Pour rétablir l’équilibre, il est nécessaire que le taux d’intérêt <span class="math inline">\((r)\)</span> augmente pour faire diminuer la demande d’encaisses réelles. En effet, si le taux d’intérêt augmente, les individus seront incités à investir leur argent plutôt que de le détenir sous forme de monnaie, ce qui fera diminuer la demande d’encaisses réelles. Par conséquent, quand le niveau de production <span class="math inline">\((Y)\)</span> augmente, le taux d’intérêt <span class="math inline">\((r)\)</span> doit aussi augmenter pour rétablir l’équilibre du marché de la monnaie.</p>
+<p>Nous pouvons raisoner aussi en supposant qu’initialement le taux d’intérêt augmente. Avec un taux d’intérêt plus élevé, la demande d’encaisses réelles diminue, car les individus préfèrent investir leur argent pour obtenir un rendement plutôt que de le détenir sous forme de monnaie. Pour rétablir l’équilibre, le niveau de production <span class="math inline">\((Y)\)</span> doit augmenter, car plus il y a de transactions à financer, plus les individus ont besoin de liquidités pour les financer. Cette deuxième approche nous amène à la même conclusion: si le niveau de production <span class="math inline">\((Y)\)</span> augmente, le taux d’intérêt <span class="math inline">\((r)\)</span> doit aussi augmenter pour rétablir l’équilibre du marché de la monnaie; même s’il parait moins intuitif.</p>
+<p>De manière mathématique, en prenant la dérivée de l’équation d’équilibre du marché de la monnaie par rapport à <span class="math inline">\(Y\)</span> et <span class="math inline">\(r\)</span>, nous avons:</p>
+<p><span class="math display">\[
+0 = L^\prime_Y \mathrm{d}Y + L^\prime_r \mathrm{d}r
+\]</span></p>
+<p>En isolant <span class="math inline">\(\frac{\mathrm{d}r}{\mathrm{d}Y}\)</span> (car nous sommes sur le plan <span class="math inline">\((Y-r)\)</span>), nous avons:</p>
+<p><span class="math display">\[
+\frac{\mathrm{d}r}{\mathrm{d}Y} = - \frac{L^\prime_Y}{L^\prime_r} &gt; 0
+\]</span></p>
+<p>parce que <span class="math inline">\(L^\prime_Y &gt; 0\)</span> et <span class="math inline">\(L^\prime_r &lt; 0\)</span>. Ainsi, quand le niveau de production <span class="math inline">\((Y)\)</span> augmente, le taux d’intérêt <span class="math inline">\((r)\)</span> doit aussi augmenter pour rétablir l’équilibre du marché de la monnaie.</p>
+<div class="callout callout-style-default callout-important callout-titled" title="Exemple">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Exemple
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Imaginons que la demande d’encaisses réelles est donnée par la fonction <span class="math inline">\(L(Y,r) = \frac{2 Y}{\sqrt{r}}\)</span>. Nous pouvons tracer la courbe LM pour une valeur donnée de <span class="math inline">\(\frac{M^s}{p}\)</span>, par exemple <span class="math inline">\(\frac{M^s}{p} = 4\)</span>. Comme nous cherchons les points <span class="math inline">\((Y,r)\)</span> tels que <span class="math inline">\(\frac{M^s}{p} = L(Y,r)\)</span>, nous avons:</p>
+<p><span class="math display">\[
+\frac{M^s}{p} = L(Y,r) \implies 4 = \frac{2 Y}{\sqrt{r}}
+\]</span></p>
+<p>Et la courbe LM est:</p>
+<p><span class="math display">\[
+r = \left(\frac{2 Y}{4}\right)^2 = \frac{Y^2}{4}
+\]</span></p>
+</div>
+</div>
+<div id="cell-fig-lm_curve" class="cell" data-execution_count="6">
+<div class="cell-output cell-output-display">
+<div id="fig-lm_curve" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-lm_curve-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="is_lm_model_files/figure-html/fig-lm_curve-output-1.png" width="575" height="449" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lm_curve-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.4: Courbe LM
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<section id="déplacement-de-la-courbe-lm" class="level4" data-number="4.2.1.1">
+<h4 data-number="4.2.1.1" class="anchored" data-anchor-id="déplacement-de-la-courbe-lm"><span class="header-section-number">4.2.1.1</span> Déplacement de la courbe LM</h4>
+<p>Si l’offre d’encaisses réelles varie ou la demande d’encaisses réelles change, la courbe LM se déplace, car la courbe LM est l’ensemble des points <span class="math inline">\((Y,r)\)</span> tels que l’offre d’encaisses réelles est égale à la demande d’encaisses réelles pour une valeur donnée de <span class="math inline">\(\frac{M^s}{p}\)</span>.</p>
+<p>Imaginons que l’offre d’encaisses réelles augmenté, par exemple parce que la banque centrale a augmenté la quantité de monnaie en circulation. De manière similaire à la courbe IS, nous pouvons analyser l’effet de ce changement en gardant soit <span class="math inline">\(Y\)</span> soit <span class="math inline">\(r\)</span> fixe.</p>
+<p>Commençons par maintenir <span class="math inline">\(r\)</span> fixe. L’augmentation de l’offre d’encaisses réelles signifie qu’il y a plus d’argent en circulation que ce qu’il faut pour financer le nombre de transactions. Comme le niveau de prix <span class="math inline">\(p\)</span> ne peut pas se modifier immédiatement par hypothèse, la seule possibilité est que la demande d’encaisses réelles augmente. Comme nous avons fixé <span class="math inline">\(r\)</span>, la seule possibilité est que le niveau de production <span class="math inline">\((Y)\)</span> augmente pour augmenter la demande d’encaisses réelles et rétablir l’équilibre du marché de la monnaie. Ainsi, quand l’offre d’encaisses réelles augmente, la courbe LM se déplace vers la droite.</p>
+<p>Si maintenant nous fixons <span class="math inline">\(Y\)</span>, avec une augmentation de l’offre d’encaisses réelles, les individus disposent de plus d’argent que nécessaire. Pour rétablir l’équilibre, il est nécessaire que la demande d’encaisses réelles augmente. Ceci se produit lorsque le taux d’intérêt <span class="math inline">\((r)\)</span> diminue, ce qui rend les actifs financiers moins attractifs par rapport à la monnaie et encourage les individus à détenir plus de liquidités. De manière resumée, si l’offre d’encaisses réelles augmente, la courbe LM se déplace vers le bas.</p>
+<p>De manière mathématique, nous cherchons à calculer soit <span class="math inline">\(\frac{\mathrm{d}Y}{\mathrm{d} \frac{M^s}{p}}\)</span> (notre premier cas) soit <span class="math inline">\(\frac{\mathrm{d}r}{\mathrm{d} \frac{M^s}{p}}\)</span> (notre second cas). Ainsi:</p>
+<p><span class="math display">\[
+\frac{\partial \frac{M^s}{p}}{\partial \frac{M^s}{p}} \mathrm{d}\frac{M^s}{p} = L^\prime_Y \mathrm{d}Y
+\]</span></p>
+<p>En isolant <span class="math inline">\(\frac{\mathrm{d}Y}{\mathrm{d} \frac{M^s}{p}}\)</span>, nous avons: <span class="math display">\[
+\frac{\mathrm{d}Y}{\mathrm{d} \frac{M^s}{p}} = \frac{1}{L^\prime_Y} &gt; 0
+\]</span></p>
+<p>Et, donc, quand l’offre d’encaisses réelles augmente, la courbe LM se déplace vers la droite <span class="math inline">\((Y\)</span> augmente pour un même niveau <span class="math inline">\(r)\)</span>. De manière alternative, si nous fixons <span class="math inline">\(Y\)</span>, nous avons:</p>
+<p><span class="math display">\[
+\frac{\partial \frac{M^s}{p}}{\partial \frac{M^s}{p}} \mathrm{d}\frac{M^s}{p} = L^\prime_r \mathrm{d}r
+\]</span></p>
+<p>En isolant <span class="math inline">\(\frac{\mathrm{d}r}{\mathrm{d} \frac{M^s}{p}}\)</span>, nous avons:</p>
+<p><span class="math display">\[
+\frac{\mathrm{d}r}{\mathrm{d} \frac{M^s}{p}} = \frac{1}{L^\prime_r} &lt; 0
+\]</span></p>
+<p>Cette dernière expression indique que, si l’offre d’encaisses réelles augmente, le taux d’intérêt doit diminuer pour rétablir l’équilibre du marché de la monnaie, c’est-à-dire que la courbe LM se déplace vers le bas.</p>
+<p>Notez que le terme <span class="math inline">\(\frac{\mathrm{d}Y}{\mathrm{d} \frac{M^s}{p}}\)</span> est le <em>multiplicateur de la monnaie</em>. Nous savons qu’il est positif, car une augmentation de l’offre d’encaisses réelles augmente le niveau de production d’équilibre mais le valeur exacte dépend de la fonction de demande d’encaisses réelles <span class="math inline">\(L(Y,r)\)</span>.</p>
+<div id="cell-fig-lm_curve_change_m" class="cell" data-execution_count="7">
+<div class="cell-output cell-output-display">
+<div id="fig-lm_curve_change_m" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-lm_curve_change_m-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="is_lm_model_files/figure-html/fig-lm_curve_change_m-output-1.png" width="579" height="451" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lm_curve_change_m-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.5: Déplacement de la courbe LM
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-important callout-titled" title="Le multiplicateur de la monnaie">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Le multiplicateur de la monnaie
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Quand on analysait le déplacement de la courbe IS, nous avons vu que le multiplicateur des dépenses publiques coincidait avec toujours le déplacement horizontal de la courbe IS. Ceci n’est pas le cas pour le multiplicateur de la monnaie, car il dépend de la fonction de demande d’encaisses réelles <span class="math inline">\(L(Y,r)\)</span>.</p>
+<p>Imaginons que la demande d’encaisses réelles est donnée par la fonction <span class="math inline">\(L(Y,r) = \frac{Y^2}{\sqrt{r}}\)</span> et que l’offre d’encaisses réelles passe de <span class="math inline">\(\frac{M^s}{p} = 4\)</span> à <span class="math inline">\(\frac{M^s}{p} = 6\)</span>. Nous pouvons calculer le déplacement horizontal de la courbe LM pour n’importe quel niveau de production <span class="math inline">\(r\)</span>, prenons par exemple <span class="math inline">\(r = 1\)</span>.</p>
+<p>Nous avons: <span class="math display">\[
+\frac{M^s}{p} = L(Y,r) \implies 4 = \frac{Y^2}{\sqrt{1}} \implies Y = 2
+\]</span></p>
+<p>Quand l’offre d’encaisses réelles augmente à <span class="math inline">\(\frac{M^s}{p} = 6\)</span>, nous avons:</p>
+<p><span class="math display">\[
+6 = \frac{2 Y}{\sqrt{1}} \implies Y = \sqrt{6} \approx 2.45
+\]</span></p>
+<p>Pour une augmentation de l’offre d’encaisses réelles de 2 unités, le niveau de production d’équilibre augmente de 0.45 unités, ce qui correspond à un déplacement horizontal de la courbe LM de <span class="math inline">\(0.45/2 = 0.225\)</span> unités. Est-ce que cela correspond à l’effet calculé avec le multiplicateur de la monnaie?</p>
+<p>Le multiplicateur de la monnaie est défini comme le rapport entre la variation du niveau de production d’équilibre <span class="math inline">\((Y)\)</span> et la variation de l’offre d’encaisses réelles <span class="math inline">\((\frac{M^s}{p})\)</span>, pour une valeur de taux d’intérêt <span class="math inline">\((r)\)</span> fixe.</p>
+<p><span class="math display">\[
+\frac{\mathrm{d}Y}{\mathrm{d} \frac{M^s}{p}} = \frac{1}{L^\prime_Y}
+\]</span></p>
+<p>Avec <span class="math inline">\(L(Y,r) = \frac{Y^2}{\sqrt{r}}\)</span>, nous avons <span class="math inline">\(L^\prime_Y = \frac{2Y}{\sqrt{r}}\)</span>. Ainsi, pour <span class="math inline">\(r = 1\)</span>, nous avons:</p>
+<p><span class="math display">\[
+\frac{\mathrm{d}Y}{\mathrm{d} \frac{M^s}{p}} = \frac{1}{L^\prime_Y} = \frac{\sqrt{1}}{2Y} = \frac{1}{2 \cdot Y} = \frac{1}{2 \cdot 2} = 0.25
+\]</span></p>
+<p>Ainsi, pour une augmentation de l’offre d’encaisses réelles de 2 unités, le niveau de production d’équilibre augmente de <span class="math inline">\(0.25 \cdot 2 = 0.5\)</span> unités. Même si proche de la valeur que nous avons calculée précédemment (0.45), ce n’est pas exactement la même chose.</p>
+<p><strong>Pourqoi le multiplicateur de la monnaie ne coincide pas avec le déplacement horizontal de la courbe LM?</strong></p>
+<p>La raison est que le multiplicateur est une approximation linéaire locale (basée sur la tangente à la courbe en un point), tandis que le déplacement horizontal réel suit la courbe elle-même, dont la “sensibilité” (la valeur de <span class="math inline">\(L^\prime_Y\)</span>) change. Si <span class="math inline">\(L(Y,r)\)</span> était une fonction linéaire de <span class="math inline">\(Y\)</span> (par exemple, <span class="math inline">\(L(Y,r) = kY + h(r)\)</span>), alors <span class="math inline">\(L^\prime_Y = k\)</span> serait constant, et le multiplicateur coïnciderait exactement avec le déplacement horizontal.</p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="is-et-lm-ensemble" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="is-et-lm-ensemble"><span class="header-section-number">4.3</span> IS et LM ensemble</h2>
+<p>Dans le modèle IS-LM, nous avons deux courbes: la courbe IS, qui représente l’équilibre sur le marché des biens, et la courbe LM, qui représente l’équilibre sur le marché de la monnaie. Les deux courbes sont tracées sur le même plan <span class="math inline">\((Y,r)\)</span>, où <span class="math inline">\(Y\)</span> est le niveau de production et <span class="math inline">\(r\)</span> est le taux d’intérêt. Comme la courbe IS est décroissante et la courbe LM est croissante, elles se croisent en un point unique, qui représente l’équilibre de l’économie: <span class="math inline">\((Y^*, r^*)\)</span>. Ce point d’équilibre indique le niveau de production et le taux d’intérêt qui satisfont <strong>simultanément</strong> les conditions d’équilibre sur le marché des biens et sur le marché de la monnaie. Cela signifie que, à ce point, la demande globale de biens et services est égale à l’offre globale, et que la demande d’encaisses réelles est égale à l’offre d’encaisses réelles.</p>
+<div id="cell-fig-is_lm" class="cell" data-execution_count="8">
+<div class="cell-output cell-output-display">
+<div id="fig-is_lm" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-is_lm-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="is_lm_model_files/figure-html/fig-is_lm-output-1.png" width="581" height="451" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-is_lm-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.6: IS-LM
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Dans le chapitre suivant, nous allons voir comment le modèle IS-LM peut être utilisé pour analyser les effets de la politique budgétaire et monétaire sur l’économie. En effet, quand le gouvernement modifie les dépenses publiques <span class="math inline">\((G)\)</span> ou les impôts <span class="math inline">\((T)\)</span>, cela affecte la courbe IS, tandis que les changements dans l’offre de monnaie <span class="math inline">\((M^s)\)</span> affectent la courbe LM. Les déplacements de ces courbes nous permettent de comprendre comment les politiques budgétaires et monétaires influencent le niveau de production et le taux d’intérêt dans l’économie.</p>
+</section>
+<section id="le-chômage-dans-le-modèle-is-lm" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="le-chômage-dans-le-modèle-is-lm"><span class="header-section-number">4.4</span> Le chômage dans le modèle IS-LM</h2>
+<p>Dans le modèle IS-LM, le chômage est une variable qui est déterminée par l’équilibre IS-LM. Étant donné que les dépenses publiques <span class="math inline">\((G)\)</span>, les impôts <span class="math inline">\((T)\)</span> et l’offre d’encaisses réelles <span class="math inline">\((\frac{M^s}{p})\)</span>, le modèle IS-LM nous permet de déterminer le niveau de production d’équilibre <span class="math inline">\((Y^*)\)</span> et le taux d’intérêt d’équilibre <span class="math inline">\((r^*)\)</span>.</p>
+<p>Le niveau d’emploi est donc déterminé par le niveau de production d’équilibre <span class="math inline">\((Y^*)\)</span>. Nous pouvons utiliser la fonction de production pour relier le niveau de production <span class="math inline">\((Y^*)\)</span> au nombre de travailleurs <span class="math inline">\((N)\)</span>. La fonction de production est généralement écrite sous la forme <span class="math inline">\(Y = F(K,N)\)</span>, où <span class="math inline">\(K\)</span> est le capital et <span class="math inline">\(N\)</span> est le nombre de travailleurs. Dans le modèle IS-LM, nous supposons que le capital <span class="math inline">\((K)\)</span> est fixe à court terme, donc nous pouvons écrire la fonction de production comme <span class="math inline">\(Y = F(\bar{K},N)\)</span>, où <span class="math inline">\(\bar{K}\)</span> est le niveau de capital fixe.</p>
+</section>
+<section id="td" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="td"><span class="header-section-number">4.5</span> TD</h2>
+<ol type="1">
+<li><p>Une réduction des impôts pour les pauvres plutôt que pour les riches est non seulement plus juste, mais aussi elle sert à stimuler l’économie plus. Vraie ou fausse ? Astuce: pensez à la propension marginale à la consommation (et à l’épargne) des pauvres et des riches</p></li>
+<li><p>On décrit une économie avec les courbes IS-LM suivantes:</p></li>
+</ol>
+<p><span class="math display">\[
+\begin{aligned}
+    Y &amp;= \overbrace{3 + 0.7(Y-2)}^{C(Y-T)} + \overbrace{2 - 0.4r}^{I} + \overbrace{4}^{T} \\
+    30 &amp;= 3 Y - 2 r
+\end{aligned}
+\]</span></p>
+<pre><code>1. Tracez les courbes IS-LM sur le même plan.
+
+2. Calculez le niveau de production et le taux d'intérêt d'équilibre.</code></pre>
+<ol start="2" type="1">
+<li>Supposez qu’on peut décrire une économie avec les courbes IS et LM suivantes:</li>
+</ol>
+<p><span class="math display">\[
+\begin{aligned}
+    Y &amp;= 120 + 0.8(Y-T) + 1/r + G \\
+    \frac{M^s}{p} = \frac{Y}{r}
+\end{aligned}
+\]</span></p>
+<pre><code>Si $G = 50,\, T = 25$ et $\frac{M^s}{p} = 100$, calculez le niveau de revenu ($Y^\star$) et le taux d'intérêt ($r^\star$) d'équilibre.</code></pre>
+<ol start="3" type="1">
+<li><p>Imaginons une économie qui se décrit avec la courbe IS suivante: <span class="math inline">\(Y = \overbrace{5 + 0.8(Y-4)}^{C}+\overbrace{3-0.2r}^{I(r)}+4\)</span> Pour cette économie, la demande d’encaisses réels est <span class="math inline">\(L(Y,r) = 2Y-3r\)</span>. Si la banque centrale veux que le taux d’intérêt soit <span class="math inline">\(r^\star = 1\)</span>, quelle offre monétaire est nécessaire?</p></li>
+<li><p>On suppose une économie qui se décrit avec les courbes IS-LM suivantes:</p></li>
+</ol>
+<p><span class="math display">\[
+\begin{aligned}
+    Y &amp;= c_0 + c_1(Y-2) + \frac{1}{r} + 5 \\
+    30 &amp;= \frac{3Y}{r} \\
+\end{aligned}
+\]</span></p>
+<pre><code>1. Calculez le niveau de revenu et le taux d'intérêt d'équilibre quand $c_0 = 50$ et $c_1 = 0.5$.
+
+2. Imaginez que les consommateurs font plus de confiance dans l'économie et qu'ils augmentent le niveau de consommation autonome $c_0$ de $c_0 = 50$ à $c_0 = 51$
+Quel est ne nouveau équilibre?
+
+3. (Difficile) Calculez l'effet multiplicateur (en équilibre) du niveau de consommation autonome pour $Y$ et $r$
+
+4. Si l'on calcule un multiplicateur simple sans considérer que $r$ s'ajuste, on obtient:
+$Y = c_0 + c_1(Y-T) + I(r) + G \implies \mathrm{d}Y = \mathrm{d} c_0 + c_1 \mathrm{d}Y \implies \frac{\mathrm{d}Y}{\mathrm{d}c_0} = \frac{1}{1-c_1}$
+D'où vient la différence?</code></pre>
+<ol start="5" type="1">
+<li><p>Le gouvernement d’une économie souhaite maintenir toujours l’équilibre budgétaire de manière à ce que <span class="math inline">\(T=G.\)</span> Dans ce cas, quel est l’effet d’une hausse dans les dépenses publiques sur le niveau de revenu d’équilibre?</p></li>
+<li><p>Normalement, le taux d’imposition <span class="math inline">\(T\)</span> n’est une quantité plafonnée mais une fonction du niveau de revenu. Si <span class="math inline">\(T = \bar{T} + \tau Y\)</span>, avec <span class="math inline">\(\tau \in (0,1)\)</span> et <span class="math inline">\(C = c_0 + c_1 (Y-T)\)</span>:</p>
+<ol type="1">
+<li><p>Comment ce changement modifie la manière dont la consommation change avec le revenu?</p></li>
+<li><p>Comment l’introduction de ce système d’imposition modifie la position de la courbe IS?</p></li>
+</ol></li>
+<li><p>Dans le modèle IS-LM nous avons supposé que la demande d’encaisses réels dépendait du revenu. Une hypothèse plus réaliste serait de supposer que la demande de monnaie répond non pas au revenu mais plutôt au revenu disponible (<span class="math inline">\(Y-T\)</span>).</p>
+<ol type="1">
+<li><p>Si on suppose <span class="math inline">\(Y=\overbrace{5+0.6(Y-T)}^{C}+\frac{4}{r}+\overbrace{4}^{G}\)</span> et <span class="math inline">\(\overbrace{50}^{\frac{M^s}{p}}=2(Y-T)-\frac{0.2}{r}\)</span> calculez le niveau de revenu et le taux d’intérêt d’équilibre quand <span class="math inline">\(T=1.05\)</span></p></li>
+<li><p>Dans un même schéma, tracez la courbe LM et montrez comment elle change quand <span class="math inline">\(T\)</span> change.</p></li>
+</ol></li>
+</ol>
+
+
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>L’effet multiplicateur que nous calculons ici ne tient pas en compte l’effet d’éviction. Nous verrons comment calculer l’effet total de l’augmentation des dépenses publiques en tenant compte de l’effet d’éviction dans la <span class="quarto-unresolved-ref">?sec-multiplicateur_total</span>.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./classical_economics.html" class="pagination-link" aria-label="Le modèle classique">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Le modèle classique</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./is_lm_model_part_2.html" class="pagination-link" aria-label="Politique budgétaire et monétaire dans le modèle IS-LM">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Politique budgétaire et monétaire dans le modèle IS-LM</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

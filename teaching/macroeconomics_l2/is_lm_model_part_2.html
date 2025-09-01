@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.34">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>5&nbsp; Politique budgétaire et monétaire dans le modèle IS-LM – Macroéconomie (L2)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./mundell_fleming.html" rel="next">
+<link href="./is_lm_model.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-3ce0956f7babb2a12842f6225a6cff9b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Èric Roca Fernández</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../../index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../teaching.html"> 
+<span class="menu-text">Teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../contact.html"> 
+<span class="menu-text">Contact</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <a href="./Macroéconomie--L2-.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./is_lm_model_part_2.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Politique budgétaire et monétaire dans le modèle IS-LM</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./classical_economics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Le modèle classique</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./is_lm_model.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Le modèle IS-LM</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./is_lm_model_part_2.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Politique budgétaire et monétaire dans le modèle IS-LM</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./mundell_fleming.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Le modèle Mundell-Fleming</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./oa_da.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Le modèle Offre Agrégée - Demande Agrégée</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#politique-budgétaire" id="toc-politique-budgétaire" class="nav-link active" data-scroll-target="#politique-budgétaire"><span class="header-section-number">5.1</span> Politique budgétaire</a>
+  <ul class="collapse">
+  <li><a href="#changement-de-g" id="toc-changement-de-g" class="nav-link" data-scroll-target="#changement-de-g"><span class="header-section-number">5.1.1</span> Changement de <span class="math inline">\(G\)</span></a></li>
+  <li><a href="#changement-de-t" id="toc-changement-de-t" class="nav-link" data-scroll-target="#changement-de-t"><span class="header-section-number">5.1.2</span> Changement de <span class="math inline">\(T\)</span></a></li>
+  </ul></li>
+  <li><a href="#politique-monétaire" id="toc-politique-monétaire" class="nav-link" data-scroll-target="#politique-monétaire"><span class="header-section-number">5.2</span> Politique monétaire</a>
+  <ul class="collapse">
+  <li><a href="#trappe-de-liquidité" id="toc-trappe-de-liquidité" class="nav-link" data-scroll-target="#trappe-de-liquidité"><span class="header-section-number">5.2.1</span> Trappe de liquidité</a></li>
+  </ul></li>
+  <li><a href="#le-modèle-is-lm-dans-le-monde" id="toc-le-modèle-is-lm-dans-le-monde" class="nav-link" data-scroll-target="#le-modèle-is-lm-dans-le-monde"><span class="header-section-number">5.3</span> Le modèle IS-LM dans le monde</a>
+  <ul class="collapse">
+  <li><a href="#la-grande-dépression-1929-1939" id="toc-la-grande-dépression-1929-1939" class="nav-link" data-scroll-target="#la-grande-dépression-1929-1939"><span class="header-section-number">5.3.1</span> La Grande Dépression (1929-1939)</a></li>
+  <li><a href="#crise-en-espagne-2008-2014" id="toc-crise-en-espagne-2008-2014" class="nav-link" data-scroll-target="#crise-en-espagne-2008-2014"><span class="header-section-number">5.3.2</span> Crise en Espagne (2008-2014)</a></li>
+  <li><a href="#exercise-en-classe-gestion-du-déficit-public-en-france-2024" id="toc-exercise-en-classe-gestion-du-déficit-public-en-france-2024" class="nav-link" data-scroll-target="#exercise-en-classe-gestion-du-déficit-public-en-france-2024"><span class="header-section-number">5.3.3</span> Exercise en classe: Gestion du déficit public en France, 2024</a></li>
+  </ul></li>
+  <li><a href="#td" id="toc-td" class="nav-link" data-scroll-target="#td"><span class="header-section-number">5.4</span> TD</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Politique budgétaire et monétaire dans le modèle IS-LM</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Le modèle IS-LM est fondé sur l’idée que le revenu et le taux d’intérêt sont déterminés par l’interaction entre le marché des biens (représenté par la courbe IS) et le marché de la monnaie (représenté par la courbe LM). Dans cette section, nous allons examiner comment les politiques budgétaires et monétaires peuvent influencer l’équilibre de l’économie en déplaçant ces courbes. Normalement, les modifications de ces politiques répondent à des chocs économiques, qui peuvent aussi être représentés par des déplacements des courbes IS et LM.</p>
+<p>L’analyse commencera par la politique budgétaire, qui est l’ensemble des mesures prises par le gouvernement pour influencer l’économie en modifiant les dépenses publiques et les impôts. Ensuite, nous examinerons la politique monétaire, qui est l’ensemble des mesures prises par la banque centrale pour influencer l’économie en modifiant la masse monétaire et les taux d’intérêt.</p>
+<section id="politique-budgétaire" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="politique-budgétaire"><span class="header-section-number">5.1</span> Politique budgétaire</h2>
+<p>La politique budgétaire est l’ensemble des mesures prises par le gouvernement pour influencer l’économie en modifiant les dépenses publiques (<span class="math inline">\(G\)</span>) et les impôts (<span class="math inline">\(T\)</span>). Comme nous l’avons vu dans la première partie, quand le gouvernement augmente les dépenses publiques, cela déplace la courbe IS vers la droite, augmentant ainsi le revenu national et réduisant le chômage. De même, une augmentation des impôts réduit le revenu national et déplace la courbe IS vers la gauche.</p>
+<section id="changement-de-g" class="level3" data-number="5.1.1">
+<h3 data-number="5.1.1" class="anchored" data-anchor-id="changement-de-g"><span class="header-section-number">5.1.1</span> Changement de <span class="math inline">\(G\)</span></h3>
+<p>Imaginons que le gouvernement décide d’augmenter ses dépenses publiques de <span class="math inline">\(\Delta G\)</span>. Nous pouvons représenter cette situation dans le modèle IS-LM: la courbe IS se déplace vers la droite de <span class="math inline">\(\frac{1}{1-c_1}\Delta G\)</span> (le multiplicateur simple des dépenses publiques), où <span class="math inline">\(c_1\)</span> est la propension marginale à consommer.</p>
+<div id="cell-fig-is_g_change_g" class="cell" data-execution_count="3">
+<div class="cell-output cell-output-display">
+<div id="fig-is_g_change_g" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-is_g_change_g-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="is_lm_model_part_2_files/figure-html/fig-is_g_change_g-output-1.png" width="704" height="527" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-is_g_change_g-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5.1: Augmentation de <span class="math inline">\(G\)</span>
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Dans la <a href="#fig-is_g_change_g" class="quarto-xref">Figure&nbsp;<span>5.1</span></a>, nous avons tracé la courbe IS initiale <span class="math inline">\(IS_0\)</span> et la courbe IS après l’augmentation de <span class="math inline">\(G\)</span>, <span class="math inline">\(IS_1\)</span>. La valeur du multiplicateur est donnée par <span class="math inline">\(\frac{1}{1-c_1}\)</span>, où <span class="math inline">\(c_1\)</span> est la propension marginale à consommer et, avec les paramètres choisis, <span class="math inline">\(c_1 = 0.6\)</span>, le multiplicateur est <span class="math inline">\(\frac{1}{1-0.6} = 2.5\)</span>. Ainsi, quand <span class="math inline">\(G\)</span> augmente de 2 à 2.5 (une augmentation de <span class="math inline">\(\Delta G = 0.5\)</span>), la courbe IS se déplace vers la droite de <span class="math inline">\(2.5 \times 0.5 = 1.25\)</span>. On voit le déplacement de la courbe IS de <span class="math inline">\(IS_0\)</span> à <span class="math inline">\(IS_{mult}\)</span>, avec les valeurs <span class="math inline">\(8.46\)</span> et <span class="math inline">\(9.71\)</span>, soit une augmentation de <span class="math inline">\(1.25\)</span>.</p>
+<p>Cependant, l’augmentation de <span class="math inline">\(G\)</span> n’entraîne pas une augmentation du revenu de <span class="math inline">\(1.25\)</span>. Si nous la calculons, nous avons:</p>
+<p><span class="math display">\[
+\Delta Y = Y_1^\star - Y_0^\star = 9.39 - 8.46 = 0.93
+\]</span></p>
+<p>Ceci reviendrait à un multiplicateur de <span class="math inline">\(\frac{\Delta Y}{\Delta G} = \frac{0.93}{0.5} = 1.86\)</span>. Pourquoi le multiplicateur est-il plus petit que celui calculé précédemment?</p>
+<p>La réponse se trouve dans l’augmentation du taux d’intérêt: l’effet d’éviction. Une manière (simplifiée mais incorrecte) de comprendre ce phénomène est de considérer que l’augmentation des dépenses publiques augmente le revenu de <span class="math inline">\(Y_0^\star\)</span> à <span class="math inline">\(Y_1^\star\)</span>. Mais la courbe IS ne suffit pas toute seule à expliquer l’équilibre. Avec l’augmentation hypothétique de <span class="math inline">\(Y\)</span>, la demande d’encaisses réels augmente, ce qui provoque un déséquilibre sur le marché de la monnaie. Pour rétablir l’équilibre, le taux d’intérêt doit augmenter, ce qui réduit l’investissement et, par conséquent, le revenu. Or, l’augmentation du taux d’intérêt diminue l’investissement et, donc, le revenu. Ceci provoque à nouveau un déséquilibre sur le marché de la monnaie, ce qui entraîne une diminution du taux d’intérêt, qui augmente à nouveau le revenu, et ainsi de suite jusqu’à atteindre un nouvel équilibre. La <a href="#fig-is_g_change_g_pingpong" class="quarto-xref">Figure&nbsp;<span>5.2</span></a> montre la dynamique de ping-pong entre les courbes IS et LM, illustrant comment l’augmentation de <span class="math inline">\(G\)</span> entraîne une série d’ajustements jusqu’à atteindre un nouvel équilibre.</p>
+<div id="cell-fig-is_g_change_g_pingpong" class="cell" data-execution_count="4">
+<div class="cell-output cell-output-display">
+<div id="fig-is_g_change_g_pingpong" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-is_g_change_g_pingpong-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="is_lm_model_part_2_files/figure-html/fig-is_g_change_g_pingpong-output-1.png" width="704" height="527" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-is_g_change_g_pingpong-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5.2: D’un équilibre à l’autre
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>En résumé, le <em>déplacement horizontal</em> de la courbe IS est égal à l’effet multiplicateur. Ceci est plus grand que la hausse total du revenu en équilibre car l’augmentation des dépenses publiques ont un <strong>effet d’éviction</strong> sur l’investissement qui augmente le taux d’intérêt.</p>
+<section id="le-multiplicateur-total-de-g" class="level4" data-number="5.1.1.1">
+<h4 data-number="5.1.1.1" class="anchored" data-anchor-id="le-multiplicateur-total-de-g"><span class="header-section-number">5.1.1.1</span> Le multiplicateur total de <span class="math inline">\(G\)</span></h4>
+<p>Vû que le multiplicateur simple de <span class="math inline">\(G\)</span> ne représente pas l’effet total de l’augmentation de <span class="math inline">\(G\)</span> sur le revenu, il est intéressant de calculer le multiplicateur total. Ce <em>multiplicateur total</em> est le rapport entre la variation du revenu et la variation des dépenses publiques, en tenant compte de l’effet d’éviction et doit considérer aussi le marché de la monnaie.</p>
+<p>Pour le calculer, il est important de rappeler que les deux marchés (biens et monnaie) sont en équilibre.</p>
+<p><span class="math display">\[
+\begin{aligned}
+  Y &amp;= c_0 + c_1 (Y-T) + I(r) + G \\\\
+  \frac{M^s}{p} &amp;= L(Y,r)
+\end{aligned}
+\]</span></p>
+<p>Le changement de <span class="math inline">\(G\)</span> provoque une chaine de changements dans <span class="math inline">\(Y\)</span> et <span class="math inline">\(r\)</span> qu’il faut considérer. Avant, nous avions <em>ignoré</em> les changements dans <span class="math inline">\(r\)</span>, raison pour laquelle le multiplicateur simple de <span class="math inline">\(G\)</span> était plus grand que l’effet total. Ainsi, nous devons permettre que <span class="math inline">\(Y\)</span>, <span class="math inline">\(r\)</span> et <span class="math inline">\(G\)</span> varient.</p>
+<p><span class="math display">\[
+\begin{aligned}
+  \mathrm{d} Y &amp;= c_1 \mathrm{d} Y + I^\prime \mathrm{d} r + \mathrm{d}G \\
+  0 &amp;= L^\prime_Y \mathrm{d}Y + L^\prime_r \mathrm{d}r \\
+\end{aligned}
+\]</span></p>
+<p>La deuxième équation <span class="math inline">\(0 = L^\prime_Y \mathrm{d}Y + L^\prime_r \mathrm{d}r\)</span> nous montre comment le taux d’intérêt change en fonction de la variation du revenu de manière à maintenir l’équilibre sur le marché de la monnaie (en sachant que l’offre de monnaie est constante). Ainsi, on peut réécrire la première équation en remplaçant <span class="math inline">\(\mathrm{d}r\)</span> par <span class="math inline">\(-\frac{L^\prime_Y \mathrm{d}Y}{L^\prime_r}\)</span>:</p>
+<p><span class="math display">\[
+\begin{aligned}
+  \mathrm{d} Y &amp;= c_1 \mathrm{d} Y + I^\prime \textcolor{red}{\mathrm{d} r} + \mathrm{d}G \\
+  \mathrm{d} Y &amp;= c_1 \mathrm{d} Y + I^\prime \textcolor{red}{(-1)\frac{L^\prime_Y}{L^\prime_r}\mathrm{d}Y} + \mathrm{d} G \\
+  (1-c_1+I^\prime \frac{L^\prime_Y}{L^\prime_r})\mathrm{d}Y &amp;= \mathrm{d}G \\
+  \frac{\mathrm{d}Y}{\mathrm{d}G} &amp;= \frac{1}{1-c_1+\textcolor{green}{I^\prime \frac{L^\prime_Y}{L^\prime_r}}}
+\end{aligned}
+\]</span></p>
+<p>Le nouveau terme <span class="math inline">\(\textcolor{green}{I^\prime \frac{L^\prime_Y}{L^\prime_r}}\)</span> représente l’effet d’éviction. Celui-ci n’était pas pris en compte dans le multiplicateur simple de <span class="math inline">\(G\)</span>. Comme <span class="math inline">\(I^\prime\)</span> est négatif, <span class="math inline">\(L^\prime_Y\)</span> est positif et <span class="math inline">\(L^\prime_r\)</span> est négatif, le terme en vert est positif, ce qui augmente le dénominateur et, par conséquent, réduit le multiplicateur total de <span class="math inline">\(G\)</span>. Il est logique ensuite de se demander dans quelles conditions l’effet d’éviction est plus ou moins important, chose que nous pouvons analyser en considérant l’effet des trois éléments constituant le terme en vert.</p>
+<ol type="1">
+<li>La sensibilité de l’investissement au taux d’intérêt (<span class="math inline">\(I^\prime\)</span>): Si l’investissement est très sensible aux variations du taux d’intérêt, l’effet d’éviction sera plus important. Si c’est le cas, une petite augmentation du taux d’intérêt entraînera une réduction importante de l’investissement, ce qui réduira le revenu national. Et, au contraire, si l’investissement est peu sensible aux variations du taux d’intérêt, l’effet d’éviction sera moins important. Dans le cas extrême où l’investissement est constant, <span class="math inline">\(I^\prime = 0\)</span>, l’effet d’éviction est nul et le multiplicateur total de <span class="math inline">\(G\)</span> coincide avec le multiplicateur simple de <span class="math inline">\(G\)</span>. Dans ce cas, la courbe IS devient verticale, car l’augmentation de <span class="math inline">\(G\)</span> n’affecte pas le taux d’intérêt. Dans la <a href="#fig-is_vertical_change_g" class="quarto-xref">Figure&nbsp;<span>5.3</span></a>, nous avons tracé la courbe IS verticale pour le cas où <span class="math inline">\(I^\prime = 0\)</span>, car <span class="math inline">\(+1\)</span> représente la fonction d’investissement. Avec <span class="math inline">\(c_1 = 0.6\)</span>, le multiplicateur simple de <span class="math inline">\(G\)</span> est <span class="math inline">\(2.5\)</span>, et le multiplicateur total de <span class="math inline">\(G\)</span> est également <span class="math inline">\(2.5\)</span>. Appliquées à une augmentation de <span class="math inline">\(G\)</span> de 0.5, le revenu d’équilibre passe de <span class="math inline">\(Y_0^\star = 9.25\)</span> à <span class="math inline">\(Y_1^\star = 10.5\)</span>, ce qui correspond à un déplacement de la courbe IS de <span class="math inline">\(2.5 \times 0.5 = 1.25\)</span>.</li>
+</ol>
+<div id="cell-fig-is_vertical_change_g" class="cell" data-execution_count="5">
+<div class="cell-output cell-output-display">
+<div id="fig-is_vertical_change_g" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-is_vertical_change_g-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="is_lm_model_part_2_files/figure-html/fig-is_vertical_change_g-output-1.png" width="703" height="526" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-is_vertical_change_g-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5.3: Courbe IS verticale
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ol start="2" type="1">
+<li>La sensibilité de la demande d’encaisses réels au revenu (<span class="math inline">\(L^\prime_Y\)</span>): Si la demande d’encaisses réels ne dépend pas du niveau de revenu, l’effet d’éviction devient nul. En effet, si la demande d’encaisses réels ne change pas avec le revenu, l’augmentation de <span class="math inline">\(Y\)</span> n’entraîne pas une augmentation de la demande d’encaisses réels, ce qui signifie que le taux d’intérêt ne doit pas augmenter pour rétablir l’équilibre sur le marché de la monnaie. Dans ce cas, la courbe LM devient horizontale, car l’offre de monnaie est constante et ne dépend pas du revenu. Dans la <a href="#fig-lm_horizontal_change_g" class="quarto-xref">Figure&nbsp;<span>5.4</span></a>, nous avons tracé la courbe LM horizontale pour le cas où <span class="math inline">\(L^\prime_Y = 0\)</span>. Comme <span class="math inline">\(c_1 = 0.6\)</span>, le multiplicateur simple de <span class="math inline">\(G\)</span> est <span class="math inline">\(2.5\)</span>, et le multiplicateur total de <span class="math inline">\(G\)</span> est également <span class="math inline">\(2.5\)</span>. Appliquées à une augmentation de <span class="math inline">\(G\)</span> de 0.5, le revenu d’équilibre passe de <span class="math inline">\(Y_0^\star = 9.25\)</span> à <span class="math inline">\(Y_1^\star = 10.5\)</span>, ce qui correspond à un déplacement de la courbe IS de <span class="math inline">\(2.5 \times 0.5 = 1.25\)</span>.</li>
+</ol>
+<div id="cell-fig-lm_horizontal_change_g" class="cell" data-execution_count="6">
+<div class="cell-output cell-output-display">
+<div id="fig-lm_horizontal_change_g" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-lm_horizontal_change_g-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="is_lm_model_part_2_files/figure-html/fig-lm_horizontal_change_g-output-1.png" width="704" height="526" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lm_horizontal_change_g-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5.4: Courbe LM horizontale
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ol start="3" type="1">
+<li>La sensibilité de la demande d’encaisses réels au taux d’intérêt (<span class="math inline">\(L^\prime_r\)</span>): Si la demande d’encaisses réels est très sensible aux variations du taux d’intérêt, l’effet d’éviction se minimise. En effet, si la demande d’encaisses réels est très réactive aux variations du taux d’intérêt, une petite augmentation du taux d’intérêt entraînera une réduction très importante de la demande d’encaisses réels. Dans ce cas, il serait possible de compenser l’augmentation de la demande de monnaie induite par <span class="math inline">\(\Delta G\)</span> avec une augmentation infinitésimale du taux d’intérêt qui ne ferait pas varier l’investissement. Si la demande d’encaisses réels est très réactive par rapport au taux d’intérêt, la courbe LM devient horizontale. La <a href="#fig-lm_horizontal_2_change_g" class="quarto-xref">Figure&nbsp;<span>5.5</span></a> montre une courbe LM presqu’horizontale pour le cas où <span class="math inline">\(L^\prime_r \rightarrow \infty\)</span>. Si nous considérons <span class="math inline">\(c_1 = 0.6\)</span>, le multiplicateur simple de <span class="math inline">\(G\)</span> est <span class="math inline">\(2.5\)</span>, et le multiplicateur total de <span class="math inline">\(G\)</span> est <span class="math inline">\(\frac{1}{1-0.6+ (-\frac{1}{r}) \frac{1}{\exp(5 r)} \frac{-\exp{5r}}{5Y}} = \frac{1}{1-0.6+\frac{1}{5 r Y}}\)</span> qui, évalué à l’équilibre initial, de <span class="math inline">\(Y_0^\star = 19.15\)</span> et <span class="math inline">\(r_0^\star = 0.2\)</span> est de <span class="math inline">\(2.21\)</span>, assez proche de <span class="math inline">\(2.5\)</span>.</li>
+</ol>
+<div id="cell-fig-lm_horizontal_2_change_g" class="cell" data-execution_count="7">
+<div class="cell-output cell-output-display">
+<div id="fig-lm_horizontal_2_change_g" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-lm_horizontal_2_change_g-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="is_lm_model_part_2_files/figure-html/fig-lm_horizontal_2_change_g-output-1.png" width="703" height="526" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lm_horizontal_2_change_g-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5.5: Courbe LM horizontale (très sensible)
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="changement-de-t" class="level3" data-number="5.1.2">
+<h3 data-number="5.1.2" class="anchored" data-anchor-id="changement-de-t"><span class="header-section-number">5.1.2</span> Changement de <span class="math inline">\(T\)</span></h3>
+<p>Un autre outil à disposition du gouvernement est le niveau des impôts, <span class="math inline">\(T\)</span>. Trois différences importantes existent entre les changements de <span class="math inline">\(G\)</span> et de <span class="math inline">\(T\)</span>. En premier lieu, les effets sont en sense inverse: une augmentation de <span class="math inline">\(T\)</span> réduit le PIB d’équilibre, tandis qu’une augmentation de <span class="math inline">\(G\)</span> l’augmente. En second lieu, les changements de <span class="math inline">\(T\)</span> affectent le revenu disponible et, par conséquent, la consommation. Cela implique, comme nous avons indiqué, que l’efficacité du multiplicateur est plus faible pour les changements de <span class="math inline">\(T\)</span> que pour les changements de <span class="math inline">\(G\)</span>. En troisième lieu, le multiplicateur de <span class="math inline">\(T\)</span> est moins important que celui de <span class="math inline">\(G\)</span> pour une même ampleur de changement. Le multiplicateur total de <span class="math inline">\(T\)</span> sera aussi plus faible que celui de <span class="math inline">\(G\)</span>.</p>
+<p>De manière graphique, une augmentation de <span class="math inline">\(T\)</span> déplace la courbe IS vers la gauche et, en équilibre, réduit le niveau de revenu et le taux d’intérêt.</p>
+<div id="cell-fig-is_change_t" class="cell" data-execution_count="8">
+<div class="cell-output cell-output-display">
+<div id="fig-is_change_t" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-is_change_t-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="is_lm_model_part_2_files/figure-html/fig-is_change_t-output-1.png" width="704" height="528" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-is_change_t-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5.6: Changement de <span class="math inline">\(T\)</span>
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>On voit que, pour une augmenation des impôts de 0.5, le déplacement de la courbe IS est de <span class="math inline">\(-0.78\)</span>. Par exemple, quand None, le revenu d’équilibre passe de None à None. Ceci coincide avec le multiplicateur simple de <span class="math inline">\(T\)</span>, qui est de <span class="math inline">\(\Delta Y = -\frac{c_1}{1-c_1} \cdot \Delta T = -\frac{0.6}{1-0.6} \cdot 0.5 = -0.75\)</span>. Cependant, le revenu d’équilibre ne diminue pas de <span class="math inline">\(-0.75\)</span>. De manière analogue au cas d’une augmentation de <span class="math inline">\(G\)</span>, l’effet total sur <span class="math inline">\(Y\)</span> n’est pas égal à <span class="math inline">\(\frac{c_1}{1-c_1}\)</span> car la réduction du revenu provoque une diminution de la demande d’encaisses réels, qui réduit le taux d’intérêt et augmente ensuite l’investissement.</p>
+<section id="le-multiplicateur-total-de-t" class="level4" data-number="5.1.2.1">
+<h4 data-number="5.1.2.1" class="anchored" data-anchor-id="le-multiplicateur-total-de-t"><span class="header-section-number">5.1.2.1</span> Le multiplicateur total de <span class="math inline">\(T\)</span></h4>
+<p>Nous pouvons calculer le multiplicateur total de <span class="math inline">\(T\)</span> de manière analogue à celui de <span class="math inline">\(G\)</span>. En sachant que les deux marchés (biens et monnaie) sont en équilibre, nous avons:</p>
+<p><span class="math display">\[
+\begin{aligned}
+  Y &amp;= c_0 + c_1 (Y-T) + I(r) + G \\\\
+  \frac{M^s}{p} &amp;= L(Y,r)
+\end{aligned}
+\]</span> Un changement de <span class="math inline">\(T\)</span> provoque une chaine de changements dans <span class="math inline">\(Y\)</span> et <span class="math inline">\(r\)</span> qu’il faut considérer. Ainsi, nous devons permettre que <span class="math inline">\(Y\)</span>, <span class="math inline">\(r\)</span> et <span class="math inline">\(T\)</span> varient. <span class="math display">\[
+\begin{aligned}
+  \mathrm{d} Y &amp;= c_1 \mathrm{d} Y - c_1 \mathrm{d} T + I^\prime \mathrm{d} r \\
+  0 &amp;= L^\prime_Y \mathrm{d}Y + L^\prime_r \mathrm{d}r
+\end{aligned}
+\]</span></p>
+<p>Si l’on remplace <span class="math inline">\(\mathrm{d}r\)</span> par <span class="math inline">\(-\frac{L^\prime_Y \mathrm{d}Y}{L^\prime_r}\)</span> dans la première équation, on obtient: <span class="math display">\[
+\begin{aligned}
+  \mathrm{d} Y &amp;= c_1 \mathrm{d} Y - c_1 \mathrm{d} T + I^\prime \textcolor{red}{\mathrm{d} r} \\
+  \mathrm{d} Y &amp;= c_1 \mathrm{d} Y - c_1 \textcolor{red}{\mathrm{d} T} + I^\prime \textcolor{red}{(-1)\frac{L^\prime_Y}{L^\prime_r}\mathrm{d}Y} \\
+  (1-c_1+I^\prime \frac{L^\prime_Y}{L^\prime_r})\mathrm{d}Y &amp;= -c_1 \mathrm{d}T
+\end{aligned}
+\]</span></p>
+<p>Le multiplicateur total de <span class="math inline">\(T\)</span> est donc:</p>
+<p><span id="eq-multiplicateur_total_T"><span class="math display">\[
+\frac{\mathrm{d}Y}{\mathrm{d}T} = -\frac{c_1}{1-c_1+I^\prime \frac{L^\prime_Y}{L^\prime_r}}
+\tag{5.1}\]</span></span></p>
+<p>Les mêmes considérations que pour le multiplicateur total de <span class="math inline">\(G\)</span> s’appliquent ici à propos de l’effet d’éviction s’appliquent ici.</p>
+</section>
+</section>
+</section>
+<section id="politique-monétaire" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="politique-monétaire"><span class="header-section-number">5.2</span> Politique monétaire</h2>
+<p>Au delà de la politique budgétaire, la banque centrale peut influencer l’économie en modifiant la quantité de monnaie en circulation. Quand la banque centrale augmente la masse monétaire, elle le fait en augmentant la quantité de monnaie réelle disponible, <span class="math inline">\(\frac{M^s}{p}\)</span>, car notre analyse est sur le court terme et nous supposons que le niveau des prix est constant.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>Si le marché de la monnaie est en équilibre, una augmentation de l’offre de monnaie réelle implique que les individus se trouvent avec plus de monnaie que ce qu’ils souhaitent détenir. Nous pouvons analyser les effets tout en gardant soit <span class="math inline">\(Y\)</span> constant, soit <span class="math inline">\(r\)</span> constant. Dans le premier cas, l’augmentation de <span class="math inline">\(\frac{M^s}{p}\)</span> implique que la demande d’encaisses réels doit augmenter pour que l’équilibre soit rétabli. Pour un niveau de revenu constant, cela implique que le taux d’intérêt doit diminuer, car les individus sont moins incités à placer leur argent à la banque et préféreront le détenir sous forme de monnaie. Sur le plan <span class="math inline">\((Y,r)\)</span>, cela est équivalent à dire que la courbe LM se déplace vers le haut. Dans le second cas, si nous gardons <span class="math inline">\(r\)</span> constant, l’augmentation de <span class="math inline">\(\frac{M^s}{p}\)</span> implique que le revenu doit augmenter pour que l’équilibre soit rétabli. Dans ce cas, les individus souhaitent détenir plus de monnaie pour financer plus de transactions, ce qui implique que le revenu doit augmenter pour que la demande d’encaisses réels augmente. Dans ce cas, la courbe LM se déplace vers la droite sur le plan <span class="math inline">\((Y,r)\)</span>.</p>
+<div id="cell-fig-lm_change_m" class="cell" data-execution_count="9">
+<div class="cell-output cell-output-display">
+<div id="fig-lm_change_m" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-lm_change_m-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="is_lm_model_part_2_files/figure-html/fig-lm_change_m-output-1.png" width="704" height="531" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lm_change_m-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5.7: Changement de $rac{M^s}{p}$
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Dans la <a href="#fig-lm_change_m" class="quarto-xref">Figure&nbsp;<span>5.7</span></a>, nous avons tracé la courbe LM initiale et la courbe LM après une augmentation de <span class="math inline">\(\frac{M^s}{p}\)</span> de 7 à 8. Dans ce cas, le revenu d’équilibre passe de None à None. Cependant, le multiplicateur de <span class="math inline">\(\frac{M^s}{p}\)</span>, quand <span class="math inline">\(L(Y,r) = \frac{Y}{\sqrt{r}}\)</span>, est <span class="math display">\[
+\frac{\mathrm{d}Y}{\mathrm{d} \frac{M^s}{p}} = \frac{1}{L^\prime_Y} = \sqrt{r}.
+\]</span></p>
+<p>Quand None, et None, le multiplicateur de <span class="math inline">\(\frac{M^s}{p}\)</span> est de None. Le niveau de revenu qui correspond à <span class="math inline">\(r_0\)</span> avec la nouvelle courbe LM est proche de notre approximation. Cependant, une fois que le taux d’intérêt s’ajuste et devient <span class="math inline">\(r_1\)</span>, la valeur d’équilibre de <span class="math inline">\(Y\)</span> est moins importante que celle que nous avons calculée avec le multiplicateur de <span class="math inline">\(\frac{M^s}{p}\)</span>. En effet, quand le taux d’intérêt diminue pour rétablir l’équilibre sur le marché de la monnaie, l’investissement augmente, ce qui augmente le revenu d’équilibre. Cependant, cette augmentation du revenu augmente la demande d’encaisses réels, ce qui augmente le taux d’intérêt et réduit l’investissement.</p>
+<div id="cell-fig-lm_m_change_m_pingpong" class="cell" data-execution_count="10">
+<div class="cell-output cell-output-display">
+<div id="fig-lm_m_change_m_pingpong" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-lm_m_change_m_pingpong-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="is_lm_model_part_2_files/figure-html/fig-lm_m_change_m_pingpong-output-1.png" width="704" height="528" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lm_m_change_m_pingpong-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5.8: D’un équilibre à l’autre
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>La <a href="#fig-lm_m_change_m_pingpong" class="quarto-xref">Figure&nbsp;<span>5.8</span></a> montre comment l’économie oscille entre les deux équilibres, tout en supposant que les ajustements sont faits de manière sequentielle: premier dans un marché, puis dans l’autre.</p>
+<section id="le-multiplicateur-total-de-fracmsp" class="level4" data-number="5.2.0.1">
+<h4 data-number="5.2.0.1" class="anchored" data-anchor-id="le-multiplicateur-total-de-fracmsp"><span class="header-section-number">5.2.0.1</span> Le multiplicateur total de <span class="math inline">\(\frac{M^s}{p}\)</span></h4>
+<p>Le multiplicateur total de <span class="math inline">\(\frac{M^s}{p}\)</span> est calculé de manière analogue à celui de <span class="math inline">\(G\)</span> et de <span class="math inline">\(T\)</span>. Cependant, il faut prendre en compte qu’à nouveau, ce calcul est une approximation linéaire. Le point de départ est l’équilibre dans les deux marchés, qui est donné par:</p>
+<p><span class="math display">\[
+\begin{aligned}
+  Y &amp;= c_0 + c_1 (Y-T) + I(r) + G \\\\
+  \frac{M^s}{p} &amp;= L(Y,r)
+\end{aligned}
+\]</span></p>
+<p>Un changement de <span class="math inline">\(\frac{M^s}{p}\)</span> provoque une chaine de changements dans <span class="math inline">\(Y\)</span> et <span class="math inline">\(r\)</span> qu’il faut considérer. Ainsi, nous devons permettre que <span class="math inline">\(Y\)</span>, <span class="math inline">\(r\)</span> et <span class="math inline">\(\frac{M^s}{p}\)</span> varient.</p>
+<p><span class="math display">\[
+\begin{aligned}
+  \mathrm{d} Y &amp;= c_1 \mathrm{d} Y - c_1 \mathrm{d} T + I^\prime \mathrm{d} r \\
+  \mathrm{d} \frac{M^s}{p} &amp;= L^\prime_Y \mathrm{d}Y + L^\prime_r \mathrm{d}r
+\end{aligned}
+\]</span></p>
+<p>De la première équation, on peut exprimer <span class="math inline">\(\mathrm{d} r\)</span> en fonction de <span class="math inline">\(\mathrm{d} Y\)</span>:</p>
+<p><span class="math display">\[
+(1-c_1) \mathrm{d}Y = I^\prime (r) \mathrm{d} r \implies \mathrm{d} r = \frac{(1-c_1)}{I^\prime (r)} \mathrm{d}Y
+\]</span></p>
+<p>En remplaçant <span class="math inline">\(\mathrm{d} r\)</span> dans la deuxième équation, on obtient:</p>
+<p><span class="math display">\[
+\begin{aligned}
+  \mathrm{d} \frac{M^s}{p} &amp;= L^\prime_Y \mathrm{d}Y + L^\prime_r \frac{(1-c_1)}{I^\prime (r)} \mathrm{d}Y \\
+  \mathrm{d} \frac{M^s}{p} &amp;= \left(L^\prime_Y + L^\prime_r \frac{(1-c_1)}{I^\prime (r)}\right) \mathrm{d}Y
+\end{aligned}
+\]</span></p>
+<p>Ainsi, le multiplicateur total de <span class="math inline">\(\frac{M^s}{p}\)</span> est:</p>
+<p><span id="eq-multiplicateur_total_m"><span class="math display">\[
+\frac{\mathrm{d}Y}{\mathrm{d} \frac{M^s}{p}} = \frac{1}{L^\prime_Y + L^\prime_r \frac{(1-c_1)}{I^\prime (r)}} &gt; 0
+\tag{5.2}\]</span></span></p>
+<p>Nous savons que ce multiplicateur est positif, car <span class="math inline">\(L^\prime_Y &gt; 0\)</span>, <span class="math inline">\(L^\prime_r &lt; 0\)</span> et <span class="math inline">\(I^\prime (r) &lt; 0\)</span>. En plus, la différence entre le multiplicateur total de <span class="math inline">\(\frac{M^s}{p}\)</span> et le multiplicateur simple de <span class="math inline">\(\frac{M^s}{p}\)</span> est le terme <span class="math inline">\(L^\prime_r \frac{(1-c_1)}{I^\prime (r)}\)</span>.</p>
+<p>Ainsi, l’effet d’une même augmentation de <span class="math inline">\(\frac{M^s}{p}\)</span> est plus important quand:</p>
+<ol type="1">
+<li>La propension marginale à consommer est plus importante, <span class="math inline">\(c_1\)</span> est plus grand. Dans ce cas, quand le taux d’intérêt diminue, la <em>même</em> augmentation de <span class="math inline">\(I(r)\)</span> estimule davantage le revenu. La courbe IS est plus plate.</li>
+<li>La sensibilité de l’investissement au taux d’intérêt est moins importante, <span class="math inline">\(I^\prime (r)\)</span> est plus petit. Dans ce cas, une petite diminution du taux d’intérêt entraîne une grande augmentation de l’investissement, ce qui engendre une plus grande augmentation du revenu. De nouveau, la courbe IS est plus plate dans ce cas.</li>
+<li>La sensibilité de la demande d’encaisses réels au taux d’íntérêt est moins importante, <span class="math inline">\(L^\prime_r\)</span> est plus petit. Comme la demande d’encaisses réels est moins sensible au taux d’intérêt, il faut une plus grande augmentation de la masse monétaire pour stimuler le revenu. Une forte diminution du taux d’intérêt provoque une grande augmentation de l’investissement, ce qui augmente le revenu. La courbe LM est plus verticale dans ce cas.</li>
+</ol>
+</section>
+<section id="trappe-de-liquidité" class="level3" data-number="5.2.1">
+<h3 data-number="5.2.1" class="anchored" data-anchor-id="trappe-de-liquidité"><span class="header-section-number">5.2.1</span> Trappe de liquidité</h3>
+<p>La possibilité qu’une augmentation de la masse monétaire se traduit par une augmentation du revenu est limitée par la possibilité que le taux d’intérêt atteigne un niveau très bas, proche de zéro ou que la demande d’encaisses réels soit très inélastique au taux d’intérêt. Dans ces deux cas, la courbe LM devient presque horizontale dans une section, ce qui signifie que les individus sont prêts à détenir n’importe quelle quantité de monnaie sans que le taux d’intérêt n’augmente.</p>
+<p>Quand le taux d’intérêt est proche de zéro, la banque centrale ne peut pas réduire davantage le taux d’intérêt pour stimuler l’économie. Avec ce taux d’intérêt très bas, les individus perçoivent la monnaie et les obligations comme des substituts parfaits, car le coût d’opportunité de détenir de la monnaie est très faible. Cela casse l’idée de la préférence pour la liquidité: maintenant les individus sont indifférents entre détenir de la monnaie ou des obligations.</p>
+<p>La <a href="#fig-lm_liquidity_trap" class="quarto-xref">Figure&nbsp;<span>5.9</span></a> montre un exemple de trappe de liquidité. À gauche, nous avons réprésenté la <em>demande d’encaisses réels</em> <span class="math inline">\(M^d = L(Y,r) = Y - r^2\)</span>. Sur le plan <span class="math inline">\((M, r)\)</span>, la courbe de demande d’encaisses réels est <span class="math inline">\(r = \sqrt{Y - M^s}\)</span>. Cependant, le taux d’intérêt ne peut pas être négatif, donc la courbe de demande d’encaisses réels est limitée à <span class="math inline">\(r \geq 0\)</span>, c’est-à-dire, <span class="math inline">\(r = \max(0, \sqrt{Y - M^d})\)</span>. Quand <span class="math inline">\(Y\)</span> augmente, la courbe se déplace vers la droite. Ainsi, pour une offre de monnaie donnée, le taux d’intérêt augmente quand <span class="math inline">\(Y\)</span> augmente. Cependant, à partir d’un niveau de <span class="math inline">\(M\)</span>, la courbe de demande devient horizontale. Si l’offre monétaire se situe dans cette section, une augmentation de <span class="math inline">\(Y\)</span> peu ne pas entraîner une augmentation du taux d’intérêt, car les individus sont prêts à détenir n’importe quelle quantité de monnaie sans que le taux d’intérêt n’augmente.</p>
+<p>La partie droite de la <a href="#fig-lm_liquidity_trap" class="quarto-xref">Figure&nbsp;<span>5.9</span></a> montre la courbe LM correspondante. Comme <span class="math inline">\(\frac{M^s}{p} = M^d = L(Y,r)\)</span>, nous avons que pour une offre de monnaie donnée, la courbe LM est <span class="math inline">\(r = \sqrt{Y-\frac{M^s}{p}}\)</span>. Quand <span class="math inline">\(\frac{M^s}{p}\)</span> augmente, la courbe LM se déplace vers la droite, mais cela n’augmente pas le revenu d’équilibre, car le taux d’intérêt ne peut pas diminuer davantage.</p>
+<div id="cell-fig-lm_liquidity_trap" class="cell" data-execution_count="11">
+<div class="cell-output cell-output-display">
+<div id="fig-lm_liquidity_trap" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-lm_liquidity_trap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="is_lm_model_part_2_files/figure-html/fig-lm_liquidity_trap-output-1.png" width="600" height="455" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lm_liquidity_trap-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5.9: Trappe de liquidité
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="le-modèle-is-lm-dans-le-monde" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="le-modèle-is-lm-dans-le-monde"><span class="header-section-number">5.3</span> Le modèle IS-LM dans le monde</h2>
+<section id="la-grande-dépression-1929-1939" class="level3" data-number="5.3.1">
+<h3 data-number="5.3.1" class="anchored" data-anchor-id="la-grande-dépression-1929-1939"><span class="header-section-number">5.3.1</span> La Grande Dépression (1929-1939)</h3>
+<p>Pendant la Grande Dépression, la demande aux États-Unis était très faible à cause de la chute de la bourse (réduction de la consommation autonome) et du faible taux d’investissement. Pour y faire face, le président Franklin D. Roosevelt a introduit le New Deal, un ensemble de programmes et de réformes économiques destinés à relancer l’économie américaine, notamment par des projets de travaux publics, des aides sociales, et des réformes financières.</p>
+<p>Analysons cette situation étape par étape avec le modèle IS-LM:</p>
+<p><strong>Avant la crise (1928):</strong> L’économie était en équilibre avec: <span class="math display">\[Y = 2 + 0.6(Y-T) + \frac{1}{r} + G\]</span></p>
+<p><strong>Pendant la crise (1929-1932):</strong> La confiance s’effondre, réduisant la consommation autonome et l’investissement: <span class="math display">\[Y = 0.5 + 0.6(Y-T) + \frac{0.5}{r} + G\]</span></p>
+<p><strong>Avec le New Deal (1933-1939):</strong> Le gouvernement augmente massivement les dépenses publiques de <span class="math inline">\(G=1\)</span> à <span class="math inline">\(G_1 = 3\)</span>:</p>
+<div id="cell-fig-great_depression_analysis" class="cell" data-execution_count="12">
+<div class="cell-output cell-output-display">
+<div id="fig-great_depression_analysis" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-great_depression_analysis-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="is_lm_model_part_2_files/figure-html/fig-great_depression_analysis-output-1.png" width="579" height="431" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-great_depression_analysis-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5.10: La Grande Dépression et le New Deal
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Le New Deal a permis de relancer l’économie en augmentant les dépenses publiques, ce qui a déplacé la courbe IS vers la droite. Cette augmentation des dépenses publiques a entraîné une augmentation du revenu national et une réduction du chômage.</p>
+</section>
+<section id="crise-en-espagne-2008-2014" class="level3" data-number="5.3.2">
+<h3 data-number="5.3.2" class="anchored" data-anchor-id="crise-en-espagne-2008-2014"><span class="header-section-number">5.3.2</span> Crise en Espagne (2008-2014)</h3>
+<p>La crise espagnole illustre parfaitement les limites de la politique budgétaire dans un contexte de contraintes extérieures.</p>
+<p><strong>Phase 1 (2008-2010): Politique expansionniste</strong> Le Plan E du gouvernement Zapatero augmente massivement les dépenses publiques pour compenser l’effondrement de la demande privée. Ce plan était très similaire au New Deal, visant à relancer l’économie par des projets de travaux publics et une augmentation des dépenses publiques. Dans le cadre du modèle IS-LM, cette augmentation des dépenses publiques a déplacé la courbe IS vers la droite, augmentant ainsi le revenu national et réduisant temporairement le chômage.</p>
+<blockquote class="blockquote">
+<p>Los más de 30.000 proyectos del fondo -conocido simplemente como Plan Zapatero- han traído un chaparrón de dinero a los ayuntamientos: 8.000 millones de euros, cifra que duplica la inversión de todos los municipios de España al año. Y han permitido el nada desdeñable logro de ocupar a más de 410.000 personas y hacer que el desempleo lleve tres meses de caídas en un momento en el que el paro se ha convertido en un drama nacional. <a href="https://elpais.com/diario/2009/08/30/economia/1251583202_850215.html">El País</a></p>
+</blockquote>
+<p><strong>Phase 2 (2010-2014): Austérité forcée</strong> Sous pression européenne, l’Espagne doit réduire son déficit, appliquant des mesures d’austérité qui aggravent la récession. Parmi les mesures d’austérité, on trouve la réduction des dépenses publiques (G) et l’augmentation des impôts (T). L’effet de ces mesures est de déplacer la courbe IS vers la gauche, réduisant le revenu national et augmentant le chômage.</p>
+<p>Aux problèmes de la crise économique s’ajoute l’importance du secteur informel en Espagne, qui a connu une expansion pendant la crise. Une caractéristique du secteur informel est l’utilisation de la monnaie pour les transactions, ce qui augmente la demande d’encaisses réels pour tout valeur de revenu <span class="math inline">\(Y\)</span>. Graphiquement, cela se traduit par un déplacement de la courbe LM vers le haut, ce qui augmente les taux d’intérêt et réduit l’investissement, aggravant ainsi la crise économique.</p>
+</section>
+<section id="exercise-en-classe-gestion-du-déficit-public-en-france-2024" class="level3" data-number="5.3.3">
+<h3 data-number="5.3.3" class="anchored" data-anchor-id="exercise-en-classe-gestion-du-déficit-public-en-france-2024"><span class="header-section-number">5.3.3</span> Exercise en classe: Gestion du déficit public en France, 2024</h3>
+<p>En 2024, la France fait face à un déficit de 5,5% du PIB, dépassant largement la limite européenne de 3%. Analysons les options disponibles.</p>
+<blockquote class="blockquote">
+<p>Ce vendredi 26 juillet [2024], la Commission européenne a annoncé placer la France en procédure de déficit excessif, compte tenu du dévissage de la trajectoire des finances publiques. En effet avec une dette publique qui atteint 110 % du PIB et un déficit public réévalué à 5,5 % du PIB à cause d’une surestimation de la croissance, la France ne respecte pas les critères posés par le Pacte de stabilité et de croissance qui demande aux Etats membres de l’Union européenne de ne pas avoir un niveau d’endettement supérieur à 60 % du PIB et de ne pas dépasser un déficit de 3 % du PIB. <a href="https://www.publicsenat.fr/actualites/economie/procedure-de-deficit-excessif-quelles-consequences-pour-la-france">Public Senat</a></p>
+</blockquote>
+<p>Les deux outils dont le gouvernement dispose pour réduire le déficit sont la réduction des dépenses publiques (<span class="math inline">\(G\)</span>) et l’augmentation des impôts (<span class="math inline">\(T\)</span>). Comme le multiplicateur (simple et total) de <span class="math inline">\(G\)</span> est plus important que celui de <span class="math inline">\(T\)</span>, une réduction des dépenses publiques d’un euro pénalise le revenu plus qu’une augmentation des impôts du même montant. Ainsi, le gouvernement devrait privilégier l’augmentation des impôts pour atteindre l’objectif de déficit de 3%. Nous pouvons analyser que ce bien le cas en utilisant le modèle IS-LM.</p>
+<p>Posons que l’économie française est décrite par les fonctions suivantes, avec des valeurs initiales de <span class="math inline">\(\frac{M^s}{p}=0.078\)</span>, <span class="math inline">\(T=0.445\)</span>, et <span class="math inline">\(G=0.5\)</span>.</p>
+<p><span class="math display">\[
+\begin{aligned}
+  Y &amp;= 0.1 + 0.4(Y-T) + 0.1 + \frac{1}{r} + G \\
+  \frac{M^s}{p} &amp;= \frac{Y}{r}
+\end{aligned}
+\]</span></p>
+<p>L’équilibre initial est donné par: <span class="math display">\[
+\begin{aligned}
+  Y &amp;= 0.1 + 0.4(Y-0.445) + 0.1 + \frac{0.078}{Y} + 0.5 \\
+  Y^2 &amp;= 0.1 Y + 0.4(Y^2-0.445 Y) + 0.1 Y + 0.078 + 0.5 Y \\
+  0 &amp;= -(1-0.4)Y^2 + 0.522 Y + 0.078 \\
+  Y &amp;= \frac{-0.522-\sqrt{0.522^2+4 \times 0.6 \times 0.078}}{-2(1-0.4)} \\
+  Y &amp;= 1 \\
+  r &amp;= 12.8205
+\end{aligned}
+\]</span></p>
+<p>Le revenu d’équilibre est de 1, le taux d’intérêt est de 0.078, et le déficit est de <span class="math inline">\(\frac{G-T}{Y} = \frac{0.5-0.445}{1} = 0.055\)</span>. Pour trouver le niveau d’impôts <span class="math inline">\(T\)</span> il <em>ne suffit pas</em> de résoudre l’équation <span class="math inline">\(\frac{G-T}{Y} = 0.03\)</span> avec <span class="math inline">\(Y=1\)</span> et <span class="math inline">\(G=0.5\)</span>, car une augmentation des impôts réduit le revenu d’équilibre.</p>
+<p>Une manière simple est de voire le problème comme un système de trois équations avec trois inconnues: <span class="math inline">\(Y\)</span>, <span class="math inline">\(r\)</span> et <span class="math inline">\(T\)</span>.</p>
+<p><span class="math display">\[
+\begin{aligned}
+  Y &amp;= 0.1 + 0.4(Y-T) + 0.1 + \frac{1}{r} + 0.5 \\\\
+  0.078 &amp;= \frac{Y}{r} \\\\
+  \frac{0.5-T}{Y} &amp;= 0.03
+\end{aligned}
+\]</span></p>
+<p>Remplaçons <span class="math inline">\(\frac{1}{r} = \frac{0.078}{Y}\)</span> et <span class="math inline">\(T = 0.5 - 0.03 Y\)</span> dans la première équation:</p>
+<p><span class="math display">\[
+Y = 0.1 + 0.4\left(Y - (0.5 - 0.03 Y)\right) + 0.1 + \frac{0.078}{Y} + 0.5
+\]</span></p>
+<p>Le niveau d’équilibre de <span class="math inline">\(Y\)</span> est <span class="math inline">\(0.9850\)</span> (une deuxième solution existe, mais elle est négative et n’a pas de sens économique). Enfin, comme <span class="math inline">\(T = 0.5 - 0.03 Y\)</span>, on trouve que <span class="math inline">\(T = 0.470\)</span>.</p>
+<p>L’autre alternative, la réduction des dépenses publiques, pourrait être proposée par le gouvernement si, par exemple, les élections présidentielles approchent et une augmentation des impôts est politiquement difficile. Dans ce cas, on cherche le niveau de dépenses publiques <span class="math inline">\(G\)</span> tel que le déficit est de 3% du revenu d’équilibre. Si l’on utilise la même approche, on peut écrire le système de trois équations avec trois inconnues: <span class="math inline">\(Y\)</span>, <span class="math inline">\(r\)</span> et <span class="math inline">\(G\)</span>.</p>
+<p><span class="math display">\[
+\begin{aligned}
+  Y &amp;= 0.1 + 0.4(Y-0.445) + 0.1 + \frac{1}{r} + G \\\\
+  0.078 &amp;= \frac{Y}{r} \\\\
+  \frac{G-0.445}{Y} &amp;= 0.03
+\end{aligned}
+\]</span></p>
+<p>La solution de ce système est <span class="math inline">\(Y = 0.9616\)</span> et <span class="math inline">\(G = 0.4738\)</span>. On voit que le revenu d’équilibre est plus bas que dans le cas précédent, car la réduction des dépenses publiques a un effet négatif sur le revenu.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Approximation au même calcul avec le multiplicateur">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Approximation au même calcul avec le multiplicateur
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>On aurait pu utiliser le multiplicateur pour obtenir l’augmentation des impôts ou à la réduction des dépenses publiques nécessaire pour ré-équilibrer le budget.</p>
+<p>Le multiplicateur des impôts est de:</p>
+<p><span class="math display">\[
+\frac{\mathrm{d}Y}{\mathrm{d}T}=-\frac{c_1}{1-c_1+I^\prime\frac{L^\prime_Y}{L^\prime_r}} = -\frac{0.4}{1-0.4+\frac{1}{Y r}}
+\]</span></p>
+<p>car <span class="math inline">\(I(r) = 0.1+\frac{1}{r}\implies I^\prime=-\frac{1}{r^2}\)</span>, et <span class="math inline">\(L(Y,r)=\frac{Y}{r} \implies L^\prime_Y = \frac{1}{r}\)</span> et <span class="math inline">\(L^\prime_r = -\frac{Y}{r^2}\)</span>.</p>
+<p>La valeur du multiplicateur au point initial <span class="math inline">\((Y=1,r=12.8205)\)</span> est <span class="math inline">\(\frac{\mathrm{d}Y}{\mathrm{d}T} = -0.078\)</span>. Cette valeur indique que, pour chaque euro que les impôts augmentent, le revenu <em>diminue</em> de 0.078. Ainsi, on cherche à résoudre:</p>
+<p><span class="math display">\[
+\frac{0.5-(0.445+\Delta T)}{1- 0.078 \times \Delta T} = 0.03 \implies \Delta T = 0.024
+\]</span></p>
+<p>Le nouveau niveau d’impôt qui équilibre le budget est <span class="math inline">\(T + \Delta T = 0.445 + 0.024 = 0.469\)</span> presque identique à la valeur trouvée précédemment (<span class="math inline">\(0.470\)</span>). De manière approximée, le niveau de revenu sera <span class="math inline">\(1-0.078 \cdot 0.024 = 0.998\)</span>.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="td" class="level2" data-number="5.4">
+<h2 data-number="5.4" class="anchored" data-anchor-id="td"><span class="header-section-number">5.4</span> TD</h2>
+<ol type="1">
+<li><p>Si la fonction de consommation est <span class="math inline">\(C = c_0 + c_1 (Y-T)\)</span> et la fonction d’investissement <span class="math inline">\(I = b_0 + b_1 Y - b_2 r\)</span>,</p>
+<ol type="1">
+<li><p>Calculez le multiplicateur (simple, sans considérer la courbe LM) d’une augmentation des dépenses publiques.</p></li>
+<li><p>Expliquez la différence avec le cas standard où <span class="math inline">\(b_1 = 0\)</span>.</p></li>
+</ol></li>
+<li><p>Comment ces événements modifient le revenu, le taux d’intérêt, la consommation et l’investissement?</p>
+<ol type="1">
+<li><p>Suite à l’invention d’un nouveau processeur, les entreprises décident de changer leurs équipements informatiques.</p></li>
+<li><p>Une vague de fraude bancaire convainc les individus d’augmenter la quantité d’argent détenu.</p></li>
+<li><p>Un libre intitulé “Retraité riche” convainc les individus d’augmenter leur épargne.</p></li>
+</ol></li>
+<li><p>Une économie subit des changements brusques dans ses paramètres de manière récurrente. La banque centrale veut stabiliser le PIB de manière à ce qu’il change le moins possible.</p>
+<ol type="1">
+<li><p>Si les chocs sont de demande (affectent la courbe IS), que devrait faire la banque centrale : fixer l’offre monétaire et laisser le taux d’intérêt s’ajuster ou ajuster l’offre monétaire pour maintenir le taux d’intérêt constant ?</p></li>
+<li><p>Et si les chocs proviennent de changements dans la demande de monnaie ?</p></li>
+</ol></li>
+<li><p>Imaginez que la demande d’encaisses réels dépend du revenu disponible <span class="math inline">\(Y-T\)</span> en lieu du revenu <span class="math inline">\(Y\)</span>, c’est-à-dire, <span class="math inline">\(L(Y-T,r)\)</span>.</p>
+<ol type="1">
+<li><p>Comment cette nouvelle fonction de demande d’encaisses réels modifie l’effet des changements des dépenses du gouvernement?</p></li>
+<li><p>Comment cette nouvelle fonction de demande d’encaisses réels modifie l’effet des changements des impôts?</p></li>
+</ol></li>
+<li><p>Avec une courbe IS standard <span class="math inline">\(Y = c_0 + c_1 (Y-T) + I(r) + G\)</span>, quelle politique déplace davantage la courbe <em>vers la droite</em>: une réduction des impôts de 100e ou une augmentation des dépenses publiques de 100e?</p></li>
+<li><p>L’économie d’un pays est décrite par les fonctions suivantes:</p></li>
+</ol>
+<p><span class="math display">\[
+\begin{aligned}
+    C &amp;= 300 + 0.6*(Y-T) \\
+    I &amp;= 700 - 80r \\
+    L(Y,r) &amp;= Y - 200r \\
+    G &amp;= 500 \\
+    T &amp;= 500 \\
+    M^s &amp;= 3000 \\
+    p &amp;= 3
+\end{aligned}
+\]</span></p>
+<pre><code>1. Tracez la courbe IS
+
+2. Tracez la courbe LM
+
+3. Calculez le niveau de revenu et le taux d'intérêt d'équilibre.
+
+4. Si les dépenses publiques augmentent de 500 à 700, quel est le nouveau équilibre?
+
+5. Avec $G=700$, imaginez que l'offre de monnaie $M^s$ augmente de $3000$ à $4500$.</code></pre>
+<ol start="7" type="1">
+<li><p>Un pays se trouve en période préélectorale, et son économie est en difficulté. Le président cherche à la relancer.</p>
+<ol type="1">
+<li><p>Quelle stratégie devrait-il adopter : augmenter les dépenses publiques ou réduire les impôts ?</p></li>
+<li><p>L’opposition critique régulièrement le gouvernement en raison du déficit budgétaire. Le président envisage la possibilité d’augmenter l’offre monétaire pour stimuler l’économie. Quels sont les avantages et les inconvénients de cette option en comparaison avec une augmentation des dépenses publiques et des impôts tout en maintenant l’équilibre budgétaire ?</p></li>
+<li><p>Le pays fait partie de l’Union Européenne, ce qui signifie qu’il ne peut pas recourir à une politique monétaire indépendante. Pour limiter les critiques de l’opposition, le président envisage d’annoncer que l’augmentation des dépenses publiques qu’il projette permettrait, en fait, de réduire le déficit par rapport au PIB. Est-ce possible ?</p></li>
+</ol></li>
+</ol>
+
+
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>La première ligne indique que tout le changement à gauche (dans <span class="math inline">\(Y\)</span>) doit être égal à touts les changements à droite. La deuxième ligne indique que tout le changement à gauche (0, car <span class="math inline">\(\frac{M^s}{p}\)</span> ne change pas) doit être égal à touts les changements à droite.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./is_lm_model.html" class="pagination-link" aria-label="Le modèle IS-LM">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Le modèle IS-LM</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./mundell_fleming.html" class="pagination-link" aria-label="Le modèle Mundell-Fleming">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Le modèle Mundell-Fleming</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

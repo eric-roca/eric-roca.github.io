@@ -1,0 +1,1843 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.34">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>2&nbsp; The OLG model – OLG</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./de_la_croix_dottori.html" rel="next">
+<link href="./index.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-3ce0956f7babb2a12842f6225a6cff9b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Èric Roca Fernández</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../../index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../teaching.html"> 
+<span class="menu-text">Teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../contact.html"> 
+<span class="menu-text">Contact</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <a href="./OLG.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./olg.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The OLG model</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./olg.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The OLG model</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./de_la_croix_dottori.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">de la Croix and Dottori (2008)</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./galor_moav.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Galor and Moav (2006)</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./galor_ozark.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Galor and Özak (2016)</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">2.1</span> Introduction</a></li>
+  <li><a href="#preliminaries" id="toc-preliminaries" class="nav-link" data-scroll-target="#preliminaries"><span class="header-section-number">2.2</span> Preliminaries</a>
+  <ul class="collapse">
+  <li><a href="#individuals-live-for-two-periods" id="toc-individuals-live-for-two-periods" class="nav-link" data-scroll-target="#individuals-live-for-two-periods"><span class="header-section-number">2.2.1</span> Individuals live for two periods</a></li>
+  </ul></li>
+  <li><a href="#assumptions" id="toc-assumptions" class="nav-link" data-scroll-target="#assumptions"><span class="header-section-number">2.3</span> Assumptions</a>
+  <ul class="collapse">
+  <li><a href="#firms" id="toc-firms" class="nav-link" data-scroll-target="#firms"><span class="header-section-number">2.3.1</span> Firms</a></li>
+  <li><a href="#households" id="toc-households" class="nav-link" data-scroll-target="#households"><span class="header-section-number">2.3.2</span> Households</a></li>
+  <li><a href="#the-behaviour-of-individuals" id="toc-the-behaviour-of-individuals" class="nav-link" data-scroll-target="#the-behaviour-of-individuals"><span class="header-section-number">2.3.3</span> The behaviour of individuals</a></li>
+  </ul></li>
+  <li><a href="#intertemporal-elasticity-of-substitution" id="toc-intertemporal-elasticity-of-substitution" class="nav-link" data-scroll-target="#intertemporal-elasticity-of-substitution"><span class="header-section-number">2.4</span> Intertemporal elasticity of substitution</a>
+  <ul class="collapse">
+  <li><a href="#cies-example" id="toc-cies-example" class="nav-link" data-scroll-target="#cies-example"><span class="header-section-number">2.4.1</span> CIES example</a></li>
+  </ul></li>
+  <li><a href="#the-savings-function" id="toc-the-savings-function" class="nav-link" data-scroll-target="#the-savings-function"><span class="header-section-number">2.5</span> The savings function</a>
+  <ul class="collapse">
+  <li><a href="#the-effect-of-wages" id="toc-the-effect-of-wages" class="nav-link" data-scroll-target="#the-effect-of-wages"><span class="header-section-number">2.5.1</span> The effect of wages</a></li>
+  <li><a href="#the-effect-of-the-interest-rate" id="toc-the-effect-of-the-interest-rate" class="nav-link" data-scroll-target="#the-effect-of-the-interest-rate"><span class="header-section-number">2.5.2</span> The effect of the interest rate</a></li>
+  </ul></li>
+  <li><a href="#temporary-equilibrium" id="toc-temporary-equilibrium" class="nav-link" data-scroll-target="#temporary-equilibrium"><span class="header-section-number">2.6</span> Temporary equilibrium</a></li>
+  <li><a href="#intertemporal-equilibrium-with-perfect-foresight" id="toc-intertemporal-equilibrium-with-perfect-foresight" class="nav-link" data-scroll-target="#intertemporal-equilibrium-with-perfect-foresight"><span class="header-section-number">2.7</span> Intertemporal equilibrium with perfect foresight</a>
+  <ul class="collapse">
+  <li><a href="#existence-of-an-intertemporal-equilibrium" id="toc-existence-of-an-intertemporal-equilibrium" class="nav-link" data-scroll-target="#existence-of-an-intertemporal-equilibrium"><span class="header-section-number">2.7.1</span> Existence of an intertemporal equilibrium</a></li>
+  <li><a href="#uniqueness-of-the-intertemporal-equilibrium" id="toc-uniqueness-of-the-intertemporal-equilibrium" class="nav-link" data-scroll-target="#uniqueness-of-the-intertemporal-equilibrium"><span class="header-section-number">2.7.2</span> Uniqueness of the intertemporal equilibrium</a></li>
+  <li><a href="#multiple-equilibria-and-non-monotonous-dynamics" id="toc-multiple-equilibria-and-non-monotonous-dynamics" class="nav-link" data-scroll-target="#multiple-equilibria-and-non-monotonous-dynamics"><span class="header-section-number">2.7.3</span> Multiple Equilibria and Non-monotonous Dynamics</a></li>
+  </ul></li>
+  <li><a href="#steady-states" id="toc-steady-states" class="nav-link" data-scroll-target="#steady-states"><span class="header-section-number">2.8</span> Steady states</a>
+  <ul class="collapse">
+  <li><a href="#steady-state-with-bark0" id="toc-steady-state-with-bark0" class="nav-link" data-scroll-target="#steady-state-with-bark0"><span class="header-section-number">2.8.1</span> Steady state with <span class="math inline">\(\bar{k}=0\)</span></a></li>
+  <li><a href="#other-steady-state" id="toc-other-steady-state" class="nav-link" data-scroll-target="#other-steady-state"><span class="header-section-number">2.8.2</span> Other steady state</a></li>
+  </ul></li>
+  <li><a href="#stability-of-the-steady-state" id="toc-stability-of-the-steady-state" class="nav-link" data-scroll-target="#stability-of-the-steady-state"><span class="header-section-number">2.9</span> Stability of the steady state</a>
+  <ul class="collapse">
+  <li><a href="#the-economy-never-goes-to-k-infty" id="toc-the-economy-never-goes-to-k-infty" class="nav-link" data-scroll-target="#the-economy-never-goes-to-k-infty"><span class="header-section-number">2.9.1</span> The economy <em>never</em> goes to <span class="math inline">\(k = +\infty\)</span></a></li>
+  </ul></li>
+  <li><a href="#examples" id="toc-examples" class="nav-link" data-scroll-target="#examples"><span class="header-section-number">2.10</span> Examples</a>
+  <ul class="collapse">
+  <li><a href="#example-1-log-utility-and-cobb-douglas" id="toc-example-1-log-utility-and-cobb-douglas" class="nav-link" data-scroll-target="#example-1-log-utility-and-cobb-douglas"><span class="header-section-number">2.10.1</span> Example 1: Log-utility and Cobb-Douglas</a></li>
+  <li><a href="#log-utility-and-ces-technology" id="toc-log-utility-and-ces-technology" class="nav-link" data-scroll-target="#log-utility-and-ces-technology"><span class="header-section-number">2.10.2</span> Log-utility and CES technology</a></li>
+  </ul></li>
+  <li><a href="#solved-example" id="toc-solved-example" class="nav-link" data-scroll-target="#solved-example"><span class="header-section-number">2.11</span> Solved example</a></li>
+  <li><a href="#the-golden-rule-level-of-capital" id="toc-the-golden-rule-level-of-capital" class="nav-link" data-scroll-target="#the-golden-rule-level-of-capital"><span class="header-section-number">2.12</span> The golden-rule level of capital</a>
+  <ul class="collapse">
+  <li><a href="#over--and-under-accumulation-of-capital" id="toc-over--and-under-accumulation-of-capital" class="nav-link" data-scroll-target="#over--and-under-accumulation-of-capital"><span class="header-section-number">2.12.1</span> Over- and under-accumulation of capital</a></li>
+  <li><a href="#example" id="toc-example" class="nav-link" data-scroll-target="#example"><span class="header-section-number">2.12.2</span> Example</a></li>
+  </ul></li>
+  <li><a href="#the-central-planner" id="toc-the-central-planner" class="nav-link" data-scroll-target="#the-central-planner"><span class="header-section-number">2.13</span> The Central Planner</a>
+  <ul class="collapse">
+  <li><a href="#planners-utility" id="toc-planners-utility" class="nav-link" data-scroll-target="#planners-utility"><span class="header-section-number">2.13.1</span> Planner’s utility</a></li>
+  <li><a href="#maximisation" id="toc-maximisation" class="nav-link" data-scroll-target="#maximisation"><span class="header-section-number">2.13.2</span> Maximisation</a></li>
+  <li><a href="#steady-state-and-modified-golden-rule" id="toc-steady-state-and-modified-golden-rule" class="nav-link" data-scroll-target="#steady-state-and-modified-golden-rule"><span class="header-section-number">2.13.3</span> Steady state and modified golden rule</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The OLG model</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introduction" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">2.1</span> Introduction</h2>
+<p>Based on <span class="citation" data-cites="De_la_Croix_2009">Croix and Michel (<a href="references.html#ref-De_la_Croix_2009" role="doc-biblioref">2009</a>)</span>.</p>
+<p>We have studied the Ramsey model, which predicts that the path derived from the competitive equilibrium is optimal. One of the main features of this model is that agents have an infinite horizon: they live forever and optimise considering an infinite horizon.</p>
+<p>The overlapping generations model changes this hypothesis and focuses on the life-cycle: agents make decisions regarding how to consume, and how much to save for retirement. This is, the OLG model assumes that agents work until some age, and then retire.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> A focus of the OLG model is the intergenerational redistribution, allowing to study:</p>
+<ul>
+<li>social security,</li>
+<li>education policies and</li>
+<li>public debt.</li>
+</ul>
+<p>The main departure with respect to the Ramsey model is that in OLG, agents are heterogeneous. Individuals live for two periods of time, and then die. In the first period, they are young and work. When old, they retire and live from savings. Hence, at any point in time, <em>two types of agents with <strong>different</strong> budget constraints exist</em>: young and adults.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<p>As we shall see, in this model the competitive path <em>may not be optimal.</em> Consequently, there may be instances in which the utility of all individuals can be increased. Therefore, the OLG model opens the door to government intervention, to reallocate consumption and savings efficiently. The OLG framework also permits the existence of bubbles and fluctuations.</p>
+<p>A basic reference for this model is <span class="citation" data-cites="diamond_1965">Diamond (<a href="references.html#ref-diamond_1965" role="doc-biblioref">1965</a>)</span> <a href="./papers/OLG_Exercises.pdf">Numerical exercises</a> <a href="./papers/Exam_2021.pdf">Sample exam</a></p>
+</section>
+<section id="preliminaries" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="preliminaries"><span class="header-section-number">2.2</span> Preliminaries</h2>
+<p>In this model, time is discrete and extends from <span class="math inline">\(t=0, 1, \ldots, \infty.\)</span> Individuals make decisions at points in time. We shall have initial conditions detailing the state of the economy at <span class="math inline">\(t=0.\)</span></p>
+<section id="individuals-live-for-two-periods" class="level3" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="individuals-live-for-two-periods"><span class="header-section-number">2.2.1</span> Individuals live for two periods</h3>
+<p>The main difference with respect to the Ramsey model is that in the OLG model, individuals live for two periods. <strong>Note:</strong> this means that, at every point in time, two generations are alive and overlap.</p>
+<p>This is relevant: the economy goes on forever but individuals only operate during some periods. Hence, there will be infinite two-period-lived generations. In particular, at <span class="math inline">\(t=0\)</span>, we will have a young and an adult generation. This adult generation will die at the end of <span class="math inline">\(t=1\)</span>, the young generation will become adults and have children: the <em>new</em> young generation of <span class="math inline">\(t=2.\)</span> Hence, we can represent the generations diagrammatically —in brackets I have denoted the year in which each generation was born.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 13%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><span class="math inline">\(t=0\)</span></th>
+<th><span class="math inline">\(t=1\)</span></th>
+<th><span class="math inline">\(t=2\)</span></th>
+<th><span class="math inline">\(t=3\)</span></th>
+<th><span class="math inline">\(t=4\)</span></th>
+<th><span class="math inline">\(t=5\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Old (t=-1)</td>
+<td>Die</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Young(t=0)</td>
+<td>Old (t=0)</td>
+<td>Die</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Young(t=1)</td>
+<td>Old (t=1)</td>
+<td>Die</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Young(t=2)</td>
+<td>Old (t=2)</td>
+<td>Die</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td>Young(t=3)</td>
+<td>Old (t=3)</td>
+<td>Die</td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>Young(t=4)</td>
+<td>Old (t=4)</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Young(t=5)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>To simplify the model, we assume that each adult born in <span class="math inline">\(t-1\)</span> has <span class="math inline">\(n&gt;-1\)</span> children. <strong>Note:</strong> we assume the number of children to be constant.<br> More complex set-ups include endogenous fertility.<br> These are the young population at time <span class="math inline">\(t\)</span> Therefore, the total population <span class="math inline">\(N\)</span> at time <span class="math inline">\(t\)</span> is composed of adults and young people.</p>
+<p><span class="math display">\[
+N_{t} = \underbrace{N_{t-1}}_{\mathrm{Adults}} + \underbrace{N_{t-1}n}_{\mathrm{Youngs}} = N_{t-1}(1+n).
+\]</span></p>
+<p>The total population at any time <span class="math inline">\(t\)</span> is:</p>
+<p><span class="math display">\[
+N_{t} = N_{0}(1+n)^{t}.
+\]</span></p>
+</section>
+</section>
+<section id="assumptions" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="assumptions"><span class="header-section-number">2.3</span> Assumptions</h2>
+<section id="firms" class="level3" data-number="2.3.1">
+<h3 data-number="2.3.1" class="anchored" data-anchor-id="firms"><span class="header-section-number">2.3.1</span> Firms</h3>
+<p>We assume that a large number of identical firms populate the economy. Firms produce a single, homogeneous good using labour and capital. The production function <span class="math inline">\(F(K,L)\)</span> has the following properties:</p>
+<p><strong>Assumption OLG 1:</strong> The production function satisfies the following properties:</p>
+<ul>
+<li><strong>OLG 1.1</strong> <span class="math inline">\(F(K, L)\)</span> is continuous and defined on <span class="math inline">\([0,+\infty)^{2},\)</span></li>
+<li><strong>OLG 1.2</strong> <span class="math inline">\(F(K, L)\)</span> has continuous derivatives of every required order on <span class="math inline">\((0,+\infty)^2,\)</span></li>
+<li><strong>OLG 1.3</strong> The production function is strictly increasing in both arguments: <span class="math inline">\(F_{i}(K, L) &gt; 0\)</span>,</li>
+<li><strong>OLG 1.4</strong> The production function is strictly concave: <span class="math display">\[\begin{align*}
+  F_{ii}(K, L) &amp; &lt; 0 \\
+  F_{ii}(K,L)  &amp; F_{jj}(K, L) - F_{ij}(K, L)F_{ji}(K, L)&gt;0
+  \end{align*}\]</span></li>
+<li><strong>OLG 1.5</strong> <span class="math inline">\(F(K, L)\)</span> is homogeneous of degree one.</li>
+<li><strong>OLG 1.6</strong> <span class="math inline">\(F(K, L)\)</span> satisfies the Inada conditions:</li>
+</ul>
+<p><span class="math display">\[\begin{align*}
+\lim_{K \rightarrow 0} F^\prime_{K}(K, L) &amp;= \lim_{L \rightarrow 0} F^\prime_{L}(K, L) = +\infty \\
+\lim_{K \rightarrow +\infty} F^\prime_{K}(K, L) &amp;= \lim_{L \rightarrow +\infty} F^\prime_{L}(K, L) = 0.
+\end{align*}\]</span></p>
+<p><strong>Note:</strong> Assumption OLG 1.4 implies that the Hessian matrix of the production function is negative definite, hence the function is strictly concave.</p>
+<p>Firms maximise real profits. Since there are many firms competing, in equilibrium they make exactly zero profits. Moreover, in equilibrium factors are paid their marginal productivity. Since the production function <span class="math inline">\(F\)</span> is homogeneous of degree, we can write it in <em>intensive</em> terms:</p>
+<p><span id="eq-prod_func"><span class="math display">\[
+f(k) \equiv F\left(\frac{K}{L},1\right), \quad k \equiv \frac{K}{L}.
+\tag{2.1}\]</span></span></p>
+<p>Because markets are competitive, capital earns its marginal product <span class="math inline">\(\partial F(K,L)/ \partial K\)</span> or, equivalently, <span class="math inline">\(f^{\prime}(k)\)</span> in intensive terms. Thus, the real interest rate at time <span class="math inline">\(t\)</span> is:</p>
+<p><span id="eq-interest_rate"><span class="math display">\[
+r_{t} = f^{\prime}(k_{t}).
+\tag{2.2}\]</span></span></p>
+<p>The marginal product of labour is given by <span class="math inline">\(\partial F(K,L)/\partial L.\)</span> In intensive terms, it is equal to:</p>
+<p><span id="eq-wage"><span class="math display">\[
+w_{t} = f(k) - f^{\prime}(k) k.
+\tag{2.3}\]</span></span></p>
+</section>
+<section id="households" class="level3" data-number="2.3.2">
+<h3 data-number="2.3.2" class="anchored" data-anchor-id="households"><span class="header-section-number">2.3.2</span> Households</h3>
+<p>Individuals live for two periods. As before, we assume perfect foresight for individuals. <strong>Assumption OLG 2</strong> Individuals have perfect foresight.</p>
+<p>When <strong>young</strong>, they are endowed with <em>one unit of labour</em> that they <em>supply inestastically.</em> <strong>Assumption OLG 3</strong> Individuals supply one unit of labour inelastically when young. They receive the ongoing wage rate <span class="math inline">\(w_{t}\)</span> and allocate this income between:</p>
+<ul>
+<li>current consumption <span class="math inline">\(c_{t}\)</span>,</li>
+<li>savings <span class="math inline">\(s_{t}\)</span> that are invested in the firms.</li>
+</ul>
+<p>Therefore, the budget constraint of a <em>young</em> individual in period <span class="math inline">\(t\)</span> is:</p>
+<p><span class="math display">\[
+w_{t} = c_{t} + s_{t}.
+\]</span></p>
+<p>Once an individual reaches old age the next period, he consumes his savings (plus the interest rate received), reproduces —exogenous fertility at rate <span class="math inline">\(n\)</span>— and dies. Old people <em>do not care</em> about anything happening after death. Therefore, an agent has one unique choice:</p>
+<ul>
+<li>consumption when adult, <span class="math inline">\(d_{t+1}.\)</span></li>
+</ul>
+<p>The budget constraint for this period is:</p>
+<p><span class="math display">\[
+s_{t}(1 - \delta + r_{t+1}) = d_{t+1}.
+\]</span></p>
+<p>with <span class="math inline">\(\delta \in (0,1)\)</span> being the capital depreciation rate.</p>
+<p>Hence, an individual faces two budget constraints. However, we can collapse both into a unique <em>intertemporal budget constraint.</em></p>
+<section id="the-intertemporal-budget-constraint" class="level4" data-number="2.3.2.1">
+<h4 data-number="2.3.2.1" class="anchored" data-anchor-id="the-intertemporal-budget-constraint"><span class="header-section-number">2.3.2.1</span> The intertemporal budget constraint</h4>
+<p>In the economy, we have consumption as the numeraire. It is more convenient for us to combine the two budget constraints corresponding to young and old ages into one single constraint. Starting from</p>
+<p><span id="eq-budget_constraints"><span class="math display">\[
+\begin{cases}
+w_{t} = c_{t} + s_{t} \\
+d_{t+1} = s_{t}(1 - \delta + r_{t+1}) = s_{t} R_{t+1}
+\end{cases}
+\tag{2.4}\]</span></span></p>
+<p>where <span class="math inline">\(R_{t} \equiv 1 - \delta + r_{t+1}\)</span> represents the return on savings, isolate <span class="math inline">\(s_{t}\)</span> in the second equation and plug it in the first one:</p>
+<p><span id="eq-int_budget"><span class="math display">\[
+w_{t} = c_{t} + \frac{d_{t+1}}{R_{t+1}}.
+\tag{2.5}\]</span></span></p>
+<p>The intertemporal budget constraint indicates that the total present value of income (<span class="math inline">\(w_{t}\)</span>, the only source of income) equals the total present value of expenditures. The present value of consumption when old <span class="math inline">\(d_{t+1}\)</span> is discounted using the interest rate <span class="math inline">\(R_{t+1}.\)</span></p>
+<p>It is clear that savings, as usual, will be a function of wages <span class="math inline">\(w\)</span> and interests <span class="math inline">\(R.\)</span> So will consumption at all periods of time.</p>
+</section>
+<section id="utility-function" class="level4" data-number="2.3.2.2">
+<h4 data-number="2.3.2.2" class="anchored" data-anchor-id="utility-function"><span class="header-section-number">2.3.2.2</span> Utility function</h4>
+<p>We suppose that the life-cycle utility function is additively separable:</p>
+<p><span id="eq-utility"><span class="math display">\[
+U(c,d) = u( c ) + \beta u(d),\, \beta \in(0,1)
+\tag{2.6}\]</span></span></p>
+<p>where <span class="math inline">\(\beta \in (0,1)\)</span> is the psychological discount factor. We assume that <span class="math inline">\(u( c )\)</span> has the properties</p>
+<p><strong>Assumption OLG 4</strong></p>
+<ul>
+<li><strong>OLG 4.1</strong> <span class="math inline">\(u^{\prime}( c ) &gt; 0,\)</span></li>
+<li><strong>OLG 4.2</strong> <span class="math inline">\(u^{\prime \prime} ( c ) &lt; 0,\)</span></li>
+<li><strong>OLG 4.3</strong> <span class="math inline">\(\lim_{c \rightarrow 0} u^{\prime}( c) = +\infty.\)</span></li>
+</ul>
+<p>The last assumption <span class="math inline">\(\lim_{c \rightarrow 0} u^{\prime}( c ) = +\infty\)</span> implies that an individual will always have a positive consumption —as long as he has enough income to finance it.</p>
+<p>Another important implication of the choice of the utility formulation is that <span class="math inline">\(c\)</span> and <span class="math inline">\(d\)</span> are normal goods: the demand is <em>not decreasing</em> in wealth. It follows from additive separability and concavity. <!--
+In the [Appendix]({{< ref "../../Mathematical_Appendix/OLG_Non-separable_Utility.md" >}}) we discuss it in more detail for a non-separable utility function.
+!--></p>
+</section>
+</section>
+<section id="the-behaviour-of-individuals" class="level3" data-number="2.3.3">
+<h3 data-number="2.3.3" class="anchored" data-anchor-id="the-behaviour-of-individuals"><span class="header-section-number">2.3.3</span> The behaviour of individuals</h3>
+<p>At time <span class="math inline">\(t\)</span>, young individuals receive their wages, consume and save while maximising the utility function.</p>
+<p><span id="eq-optimization_problem"><span class="math display">\[
+\begin{aligned}
+&amp; \max u(c_{t}) + \beta u(d_{t+1}) \\
+&amp; \mathrm{s.t.} \quad w_{t} = c_{t} + s_{t} \\
+&amp; \phantom{s.t.} \quad d_{t+1} = R_{t+1}s_{t} \\
+&amp; \phantom{s.t.} \quad c_{t} \geq 0, d_{t+1} \geq 0.
+\end{aligned}
+\tag{2.7}\]</span></span></p>
+<p>We have two possibilities to solve this problem:</p>
+<section id="substitution" class="level4" data-number="2.3.3.1">
+<h4 data-number="2.3.3.1" class="anchored" data-anchor-id="substitution"><span class="header-section-number">2.3.3.1</span> Substitution</h4>
+<p>First, we can substitute <span class="math inline">\(c_{t}\)</span> and <span class="math inline">\(d_{t+1}\)</span> in the utility function, leading to:</p>
+<p><span class="math display">\[
+u(w_{t} - s_{t}) + \beta u(R_{t+1}s_{t}).
+\]</span></p>
+<p>This function is strictly concave with respect to <span class="math inline">\(s_{t}\)</span> because of our assumptions. The solution is <em>the savings function</em>:</p>
+<p><span class="math display">\[
+s_{t} = s(w_{t}, R_{t+1}).
+\]</span></p>
+<p>The solution is interior as a consequence of the assumptions, and it is characterised by the first-order condition:</p>
+<p><span id="eq-euler"><span class="math display">\[
+u^{\prime}(w_{t} - s_{t}) = \beta R_{t+1} u^{\prime}(R_{t+1}s_{t}).
+\tag{2.8}\]</span></span></p>
+</section>
+<section id="lagrangian" class="level4" data-number="2.3.3.2">
+<h4 data-number="2.3.3.2" class="anchored" data-anchor-id="lagrangian"><span class="header-section-number">2.3.3.2</span> Lagrangian</h4>
+<p>Instead, we can use the intertemporal budget constraint and build the Lagrangian:</p>
+<p><span class="math display">\[
+\mathcal{L} = u(c_{t}) + \beta u(d_{t+1}) + \lambda_{t}(w_{t} - c_{t} - \frac{d_{t+1}}{R_{t+1}}).
+\]</span></p>
+<p>The first order conditions imply that:</p>
+<p><span class="math display">\[
+u^{\prime}(c_{t}) = \lambda_{t}, \quad \beta u^{\prime}(d_{t+1}) = \frac{\lambda_{t}}{R_{t+1}}.
+\]</span></p>
+<p>Combining both, we obtain <a href="#eq-euler" class="quarto-xref">Equation&nbsp;<span>2.8</span></a> again: <span class="math display">\[
+u^{\prime}(c_{t}) = \beta R_{t+1} u^\prime (d_{t+1}).
+\]</span></p>
+</section>
+</section>
+</section>
+<section id="intertemporal-elasticity-of-substitution" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="intertemporal-elasticity-of-substitution"><span class="header-section-number">2.4</span> Intertemporal elasticity of substitution</h2>
+<p>The intertemporal elasticity of substitution is defined as:</p>
+<p><span id="eq-intertemporal_elasticity_of_substitution"><span class="math display">\[
+\epsilon_{d_{t+1}, c_{t}} = \frac{ \partial \left( \frac{d_{t+1}}{c_{t}} \right)}{\partial R_{t+1}} \frac{ R_{t+1}}{\left( \frac{d_{t+1}}{c_{t}} \right)}.
+\tag{2.9}\]</span></span></p>
+<p>From the Euler equation we have <span class="math inline">\(\frac{u^{\prime}(c_{t})}{u^{\prime}(d_{t+1})} = \beta R_{t+1}.\)</span> So, consumption when old <span class="math inline">\(d_{t+1}\)</span> is going to be proportional to consumption when young <span class="math inline">\(c_{t}.\)</span></p>
+<p>Let <span class="math inline">\(d_{t+1} = x_{t+1} c_{t}.\)</span> Then, the intertemporal elasticity of substitution becomes:</p>
+<p><span class="math display">\[
+\epsilon_{d_{t+1}, c_{t}} = \frac{ \partial x_{t+1}}{\partial R_{t+1}} \frac{ R_{t+1}}{x_{t+1}}.
+\]</span></p>
+<p>We can compute it using the Euler equation <span class="math inline">\(u^\prime(c_{t}) = \beta R_{t+1} u^\prime(x_{t+1}c_t).\)</span> In fact, totally differentiating on both sides yields</p>
+<p><span class="math display">\[
+0 = \beta u^\prime(x_{t+1}c_t)\mathrm{d}R_{t+1} + \beta R_{t+1}u^{\prime \prime}(x_{t+1}c_t) c_{t} \mathrm{d}x_{t+1}.
+\]</span></p>
+<p>Hence,</p>
+<p><span class="math display">\[
+\frac{\mathrm{d}x_{t+1}}{\mathrm{d}R_{t+1}} = - \frac{u^\prime(x_{t+1}c_{t})}{R_{t+1}u^{\prime \prime}(x_{t+1}c_t)c_{t}} = - \frac{u^\prime (d_{t+1})}{R_{t+1}u^{\prime \prime}(d_{t+1})c_{t}}.
+\]</span></p>
+<p>The intertemporal elasticity of substitution is then given by:</p>
+<p><span class="math display">\[
+\epsilon_{d_{t+1}, c_{t}} = \frac{\mathrm{d}x_{t+1}}{\mathrm{d}R_{t+1}}\frac{R_{t+1}}{x_{t+1}} = - \frac{u^\prime (d_{t+1})}{R_{t+1}u^{\prime \prime}(d_{t+1})c_{t}}\frac{R_{t+1}}{\underbrace{x_{t+1}}_{\frac{d_{t+1}}{c_{t}}}} = - \frac{u^\prime(d_{t+1})}{u^{\prime \prime}(d_{t+1}) d_{t+1}}.
+\]</span></p>
+<p><strong>Note</strong>: the intertemporal elasticity of substitution is equal to the inverse of the coefficient of relative risk aversion. Risk averse individuals do <em>not</em> want large changes in consumption, so they have a large risk aversion and are <em>not</em> willing to trade off future and present consumption. Conversely, risk neutral individuals do not mind abrupt changes in consumption, so they are willing to trade off future and present consumption.</p>
+<p>Hence, in this model, the intertemporal elasticity of substitution coincides with the inverse of the coefficient of relative risk aversion. <strong>Note:</strong> If you read <span class="citation" data-cites="De_la_Croix_2009">Croix and Michel (<a href="references.html#ref-De_la_Croix_2009" role="doc-biblioref">2009, 12</a>)</span> , they take a different approach and also refuse to use the concept or risk aversion: the model does not feature risk.</p>
+<section id="cies-example" class="level3" data-number="2.4.1">
+<h3 data-number="2.4.1" class="anchored" data-anchor-id="cies-example"><span class="header-section-number">2.4.1</span> CIES example</h3>
+<p>We illustrate the previous concept using a constant intertemporal elasticity of substitution utility function:</p>
+<p><span class="math display">\[
+u( c ) = \frac{c^{1-\frac{1}{\sigma}}}{1-\frac{1}{\sigma}}.
+\]</span></p>
+<p>In this case, we have the following Euler condition:</p>
+<p><span class="math display">\[
+u^{\prime}(c_{t}) = \beta R_{t+1} u^{\prime}(d_{t+1}) \implies \frac{d_{t+1}}{c_{t}} = \left( \beta R_{t+1} \right)^\sigma.
+\]</span></p>
+<p>Therefore, the intertemporal elasticity of substitution is</p>
+<p><span class="math display">\[
+\epsilon_{d_{t+1}, c_{t}} = \frac{ \partial  \frac{d_{t+1}}{c_{t}} }{\partial R_{t+1}} \frac{R_{t+1}}{\color{red}{\frac{d_{t+1}}{c_{t}}}}= \sigma (\beta R_{t+1})^{\sigma-1}\beta R_{t+1} \color{red}{\frac{1}{(\beta R_{t+1})^{\sigma}}} = \sigma.
+\]</span></p>
+<p>Meanwhile, the coefficient of relative risk aversion</p>
+<p><span class="math display">\[
+RRA( c ) = - \frac{u^{\prime \prime}( c )}{u^{\prime}( c )}c = \frac{1}{\sigma} = \epsilon^{-1}_{d_{t+1},c_{t}}
+\]</span></p>
+<p>is the inverse of the intertemporal elasticity of substitution.</p>
+</section>
+</section>
+<section id="the-savings-function" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="the-savings-function"><span class="header-section-number">2.5</span> The savings function</h2>
+<p>The savings function arises by solving:</p>
+<p><span class="math display">\[
+s(w, R) = \arg \max \left[ u(w-s) + \beta u(Rs) \right].
+\]</span></p>
+<p>Taking the first derivative with respect to <span class="math inline">\(s\)</span> and solving provides an implicit function: the savings function.</p>
+<p><span class="math display">\[
+u^\prime(w-s)(-1) + \beta u^\prime(Rs)R = 0.
+\]</span></p>
+<p>Denote this function <span class="math inline">\(\phi(s,w,R)\)</span>:</p>
+<p><span class="math display">\[
+\phi(s, w, R ) = -u^\prime(w-s)+ \beta R u^\prime(Rs) = 0.
+\]</span></p>
+<p>Following from the assumption on the utility function, the savings function is continuous and continuously differentiable.</p>
+<p>We are interested in determining whether savings increase or decrease with wealth and the interest rate.</p>
+<section id="the-effect-of-wages" class="level3" data-number="2.5.1">
+<h3 data-number="2.5.1" class="anchored" data-anchor-id="the-effect-of-wages"><span class="header-section-number">2.5.1</span> The effect of wages</h3>
+<p>We begin by analysing the effect of wages on savings:</p>
+<p><span class="math display">\[
+\frac{\partial s}{\partial w} = - \frac{\frac{\partial \phi(\cdot)}{\partial w}}{\frac{\partial \phi(\cdot)}{\partial s}} = - \frac{ - u^{\prime \prime}(w-s)}{u^{\prime \prime}(w-s)+\beta R^{2} u^{\prime \prime}(Rs)} = \frac{1}{\underbrace{1+\beta R^{2} \underbrace{\frac{u^{\prime \prime}(Rs)}{u^{\prime \prime}(w-s)}}_{&gt;0}}_{&gt;1}} \in (0,1).
+\]</span></p>
+<p>We thus have that the marginal propensity to save out of income is between 0 and 1: <span class="math inline">\(0 &lt; s^{\prime}_{w}  &lt; 1,\)</span> which reflects the fact that consumption goods are normal goods.</p>
+</section>
+<section id="the-effect-of-the-interest-rate" class="level3" data-number="2.5.2">
+<h3 data-number="2.5.2" class="anchored" data-anchor-id="the-effect-of-the-interest-rate"><span class="header-section-number">2.5.2</span> The effect of the interest rate</h3>
+<p>Similarly, we compute the derivative of <span class="math inline">\(\frac{\partial s(w,R)}{\partial R}\)</span>:</p>
+<p><span class="math display">\[
+\frac{\partial s}{\partial R} = -\frac{ \beta u^{\prime}(d) + \beta R s u^{\prime \prime}(d)}{u^{\prime \prime}( c )+\beta R^{2} u^{\prime \prime}(d)} =- \frac{\beta u^{\prime}(d)\left[1-\frac{1}{\sigma (d)} \right]}{u^{\prime \prime}(c ) + \beta R^{2} u^{\prime \prime}(d)}.
+\]</span></p>
+<p>Hence, <span class="math display">\[
+\frac{\partial s}{\partial R} \gtreqqless 0 \quad \mathrm{if} \quad \sigma (d) \gtreqqless 1.
+\]</span></p>
+<p>Two effects interact in this derivative:</p>
+<ul>
+<li>Wealth effect: if the interest rate rises, we obtain more out of the same savings, hence become wealthier. We consume more of all goods —<span class="math inline">\(c_{t}\)</span> and <span class="math inline">\(d_{t+1}\)</span> are normal goods.</li>
+<li>Substitution effect: it is more profitable to save and consume <span class="math inline">\(d_{t+1},\)</span> inducing savings.</li>
+</ul>
+<p>When the inter-temporal elasticity of substitution is lower than 1, the substitution effect is dominated by the income effect. In that case, a rise in the rate of return has a negative effect on savings. When the inter-temporal elasticity of substitution is higher than 1, households are ready to exploit the rise in the remuneration of savings by consuming relatively less today. In this case, raising the rate of return boosts savings. When the inter-temporal elasticity of substitution is equal to 1 (log-utility), the income effect exactly compensates the substitution effect and there is no effect of the rate of return on savings.</p>
+<section id="example-using-a-cies-function" class="level4" data-number="2.5.2.1">
+<h4 data-number="2.5.2.1" class="anchored" data-anchor-id="example-using-a-cies-function"><span class="header-section-number">2.5.2.1</span> Example using a CIES function</h4>
+<p>Under a CIES utility, we have that:</p>
+<p><span class="math display">\[
+s(w,R) = \frac{1}{1+\beta^{-\sigma}R^{1-\sigma}}w,
+\]</span></p>
+<p>and <span class="math display">\[
+s^{\prime}_w  =\frac{1}{1+\beta^{-\sigma}R^{1-\sigma}} &gt; 0.
+\]</span></p>
+<p>However, <span class="math inline">\(s^{\prime}_{R} = - \frac{w \beta^{-\sigma} R^{-\sigma}}{\left(1+\beta^{-\sigma}R^{1-\sigma}\right)^{2}}(1-\sigma)\gtreqqless 0\)</span> depending on <span class="math inline">\(\sigma \lesseqqgtr 1.\)</span></p>
+<p><strong>Log-utility:</strong></p>
+<p>In the case of logarithmic utility, savings are independent of the interest rate <span class="math inline">\(R\)</span> and are linear in wages. Log-utility is a special case of the CIES function when <span class="math inline">\(\sigma=1.\)</span> In this case, the wealth and substitution effects cancel each other:</p>
+<p><span class="math display">\[
+s(w,R) = \frac{\beta}{1+\beta}w.
+\]</span></p>
+</section>
+<section id="example-using-a-ces-function" class="level4" data-number="2.5.2.2">
+<h4 data-number="2.5.2.2" class="anchored" data-anchor-id="example-using-a-ces-function"><span class="header-section-number">2.5.2.2</span> Example using a CES function</h4>
+<p><strong>Note:</strong> This is a transformation of the CIES function, so things will look rather similar.</p>
+<p><span class="math display">\[
+U(c,d) = \left[ \alpha c^{\frac{\epsilon-1}{\epsilon}} + (1-\alpha)d^{\frac{\epsilon-1}{\epsilon}} \right]^{\frac{\epsilon}{\epsilon-1}}.
+\]</span></p>
+<p>From here, substituting <span class="math inline">\(c=w-s\)</span> and <span class="math inline">\(d=Rs\)</span>, and solving for the optimal savings we obtain:</p>
+<p><span class="math display">\[
+\begin{aligned}
+&amp; \alpha (w-s)^{-\frac{1}{\epsilon}} = (1-\alpha) R (Rs)^{-\frac{1}{\epsilon}} \\
+&amp; s = \frac{\left[ \frac{\alpha}{1-\alpha} \right]^{-\epsilon} w}{R^{1-\epsilon} + \left[\frac{\alpha}{1-\alpha} \right]^{-\epsilon}} = \frac{w}{1+\left[ \frac{\alpha}{1-\alpha} \right]^{\epsilon} R^{1-\epsilon}}.
+\end{aligned}
+\]</span></p>
+<p>Therefore,</p>
+<p><span class="math display">\[
+s^{\prime}_{R} = - \frac{w}{\left(1+\left[ \frac{\alpha}{1-\alpha} \right]^{\epsilon} R^{1-\epsilon}\right)^{2}} \left(\frac{\alpha}{1-\alpha}\right)^{\epsilon}(1-\epsilon)R^{-\epsilon}.
+\]</span></p>
+<p>Then, when <span class="math inline">\(\epsilon &gt;1\)</span> savings increase with the interest rate: <span class="math inline">\(s^{\prime}_{R} &gt; 0.\)</span> In that case, <em>the substitution effect dominates</em>. <strong>Alternative interpretation:</strong> <span class="math inline">\(\epsilon\)</span> is the elasticity of intertemporal substitutability, hence if it is large, individuals are willing to substitute present consumption for future consumption. <strong>Alternative interpretation:</strong> <span class="math inline">\(\frac{1}{\epsilon}\)</span> measures the relative risk aversion. Hence, for large <span class="math inline">\(\epsilon\)</span> individuals accept more risk, meaning that they are willing to accept more changes in consumption. Smoothing is less important.</p>
+<p>Conversely, when <span class="math inline">\(\epsilon &lt;1\)</span>, an increase in the interest rate lowers savings: <span class="math inline">\(s^{\prime}_{R} &lt; 0.\)</span> In that case, the wealth effect dominates. <span class="math inline">\(\epsilon &lt; 1\)</span> also means that <span class="math inline">\(c\)</span> and <span class="math inline">\(d\)</span> are intertemporally complementary, and individuals want to consume them in constant proportions.</p>
+</section>
+</section>
+</section>
+<section id="temporary-equilibrium" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="temporary-equilibrium"><span class="header-section-number">2.6</span> Temporary equilibrium</h2>
+<p>Before turning to the intertemporal equilibrium and the analysis of the steady state, we study the temporary equilibrium that takes place every period.</p>
+<p>We have not discussed the firms, but they follow the same setup as in Ramsey: use capital and labour in a perfectly competitive environment.</p>
+<p>We shall work in intensive form: <span class="math inline">\(k_{t} \equiv \frac{K_{t}}{N_{t}}.\)</span></p>
+<ol type="1">
+<li><p><strong>Labour market equilibrium:</strong> <em>Only</em> young individuals supply labour. Moreover, they do so <em>inelastically</em>. During period <span class="math inline">\(t\)</span> there are <span class="math inline">\(N_{t}\)</span> young agents and, hence, the supply of labour is <span class="math inline">\(N_{t}\)</span>. Equating this to labour demand from firms <span class="math inline">\(L_{t}\)</span> gives the wage rate: <span class="math display">\[
+w_{t} = \omega\left(\frac{K_{t}}{N_{t}}\right)=\omega(k_{t}).
+\]</span></p></li>
+<li><p><strong>Capital market:</strong> <em>Only</em> old individuals own capital. Since firms operate competitively, they make zero profits. Hence, <span class="math inline">\(f^{\prime}(k_{t})K_{t}\)</span> is distributed as interests. Old households receive <span class="math inline">\(N_{t-1}R_{t}s_{t-1} = R_{t}K_{t}.\)</span> So, what old households receive must equal what firms distribute In other terms: <span class="math inline">\(R_{t}K_{t}= f^{\prime}(k_{t}) K_{t}\)</span> and <span class="math inline">\(R_t = f^\prime (k_t).\)</span></p></li>
+<li><p><strong>Good market:</strong> Finding the equilibrium for this market departs from the otherwise similar Ramsey case. Remember that we have <em>two</em> types of agents: young and old. Total production is given by:</p>
+<p><span class="math display">\[
+Y_{t} = F(K_{t}, N_{t}) = \color{red}{N_{t}} f(k_{t}).
+\]</span></p>
+<p>Total demand for goods combines the consumption of <span class="math inline">\(d_{t}\)</span>, the old generation living in period <span class="math inline">\(t\)</span>, and the demand for consumption <em>and</em> investment from the young: <span class="math inline">\(c_{t}, s_{t}.\)</span> Therefore, counting how many old and young individuals live during period <span class="math inline">\(t\)</span> we have that total demand equals:</p>
+<p><span class="math display">\[
+N_{t-1}d_{t} + N_{t}(c_{t}+s_{t}).
+\]</span></p>
+<p>The equilibrium on the goods market implies: <span class="math display">\[
+Y_{t} = N_{t-1}d_{t} + N_{t}(c_{t}+s_{t}).
+\]</span></p>
+<p>Also, we can check that total production equals total consumption: <span class="math display">\[
+N_{t}(c_{t}+s_{t}) = N_{t}w_{t}=N_{t}(f(k_{t})-k_{t}f^{\prime}(k_{t})) = Y_{t}-K_{t}f^{\prime}(k_{t}),
+\]</span></p>
+<p><span class="math display">\[
+N_{t-1}d_{t} = N_{t-1}R_{t}s_{t-1} = R_{t}K_{t} = K_{t}f^{\prime}(k_{t}).
+\]</span></p></li>
+</ol>
+<hr>
+<p>A temporary equilibrium is a set <span class="math inline">\(\\{w_{t}, R_{t}, K_{t}, L_{t}, Y_{t}, k_{t}, I_{t}, c_{t}, s_{t}, d_{t}\\}\)</span> that satisfies:</p>
+<p><span class="math display">\[
+\begin{aligned}
+     w_{t} = \omega(k_{t}), \\
+     R_{t} = f^{\prime}(k_{t}), \\
+     L_{t} = N_{t}, \\
+     Y_{t} = N_{t}f(k_{t}), \\
+     Y_{t} = N_{t-1}d_t + N_{t}(c_{t}+s_{t}) \\
+     I_{t} = N_{t}s_{t}, \\
+     c_{t} = w_{t} - s_{t}, \\
+     s_{t} = s(\omega(k_{t}),R_{t+1}), \\
+     d_{t} = R_{t}s_{t-1}.
+\end{aligned}
+\]</span></p>
+<p>The existence of a temporary equilibrium is guaranteed because the functions are single-valued.</p>
+</section>
+<section id="intertemporal-equilibrium-with-perfect-foresight" class="level2" data-number="2.7">
+<h2 data-number="2.7" class="anchored" data-anchor-id="intertemporal-equilibrium-with-perfect-foresight"><span class="header-section-number">2.7</span> Intertemporal equilibrium with perfect foresight</h2>
+<p>The equilibrium equation that links two consecutive periods is the capital accumulation equation. In particular, the savings of young individuals at period <span class="math inline">\(t\)</span> are transformed into productive capital at <span class="math inline">\(t+1.\)</span></p>
+<p><strong>Note:</strong> in this model, it is useful to write the equations first in aggregate terms and then convert them to its intensive-form representation.</p>
+<p><span class="math display">\[
+K_{t+1} = N_{t}s_{t} = N_{t} s\left( \omega(k_{t}), R_{t+1} \right).
+\]</span></p>
+<p>In intensive form:</p>
+<p><span class="math display">\[
+k_{t+1} = \frac{K_{t+1}}{\color{red}{N_{t+1}}} = \frac{N_{t}}{\color{red}{N_{t+1}}} s\left( \omega(k_{t}), R_{t+1} \right) = \frac{1}{1+n}s\left( \omega(k_{t}), R_{t+1} \right).
+\]</span></p>
+<p>Finally, we can incorporate the equilibrium in the capital market (together with perfect foresight) and replace <span class="math inline">\(R_{t+1} = f^{\prime}(k_{t+1}):\)</span></p>
+<p><span class="math display">\[
+k_{t+1} =\frac{1}{1+n}s \left( \omega(k_{t}), f^{\prime}(k_{t+1}) \right).
+\]</span></p>
+<p><strong>Intertemporal equilibrium (for perfect foresigt)</strong>: Given an initial capital stock <span class="math inline">\(k_{0} = K_{0} \big{/} N_{-1}\)</span>, an intertemporal equilibrium (for perfect foresight) is a sequence of temporary equilibria that satisfies for all <span class="math inline">\(t&gt;0\)</span> the equation:</p>
+<p><span class="math display">\[
+k_{t+1} =\frac{1}{1+n}s \left( \omega(k_{t}), f^{\prime}(k_{t+1}) \right).
+\]</span></p>
+<p><strong>Note:</strong> <span class="citation" data-cites="De_la_Croix_2009">Croix and Michel (<a href="references.html#ref-De_la_Croix_2009" role="doc-biblioref">2009, 20–27</a>)</span> discuss on pp.&nbsp;20–27 the existence and uniqueness of the intertemporal equilibrium.</p>
+<section id="existence-of-an-intertemporal-equilibrium" class="level3" data-number="2.7.1">
+<h3 data-number="2.7.1" class="anchored" data-anchor-id="existence-of-an-intertemporal-equilibrium"><span class="header-section-number">2.7.1</span> Existence of an intertemporal equilibrium</h3>
+<p>The existence of at least one temporary equilibrium is guaranteed by the properties of the functions. The proof is quite involved, though, as is presented below. Having an intertemporal equilibrium means having a solution for <span class="math inline">\(k_{t+1}\)</span> in the equation</p>
+<p><span class="math display">\[
+k_{t+1} = \frac{1}{1+n}s(\omega(k_t), f^\prime (k_{t+1})),
+\]</span></p>
+<p>where <span class="math inline">\(k_t\)</span> is predetermined at <span class="math inline">\(t.\)</span></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Proof">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Proof
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The proof uses the following equation about savings: <span class="math display">\[
+0&lt; s\left( w, f^\prime(k) \right) &lt; w.
+\]</span></p>
+<p>In words, it indicates that individuals have positive savings, and they save <em>only</em> part of their total income.</p>
+<p>Next, define <span class="math display">\[
+H(k,w) = (1+n)k - s(w, f^\prime(k))= 0.
+\]</span></p>
+<p>Basically, here we are using the definition of an intertemporal equilibrium. Having an intertemporal equilibrium is then equivalent to finding a <span class="math inline">\(k\)</span> satisfying the previous equation.</p>
+<p>We use the intermediate value theorem to show that at least one solution exists. First, we analyse the behaviour of <span class="math inline">\(H(k,w)\)</span> when <span class="math inline">\(k\)</span> tends to <span class="math inline">\(+\infty.\)</span></p>
+<p>From <span class="math inline">\(0&lt; s\left( w, f^\prime(k) \right) &lt; w,\)</span> we have</p>
+<p><span class="math display">\[
+0 &lt; \frac{s(w, f^\prime (k))}{k} &lt; \frac{w}{k}.
+\]</span></p>
+<p><strong>Limit when <span class="math inline">\(k \rightarrow +\infty\)</span></strong></p>
+<p>Keeping <span class="math inline">\(w\)</span> fixed, the limit of <span class="math inline">\(\frac{w}{k}\)</span> when <span class="math inline">\(k \rightarrow +\infty\)</span> is 0. Then,</p>
+<p><span class="math display">\[
+\lim_{k \rightarrow +\infty} \frac{s(w, f^\prime (k))}{k} = 0.
+\]</span></p>
+<p>Consequently,</p>
+<p><span class="math display">\[
+\lim_{k \rightarrow +\infty}\frac{H(w,k)}{k} = \lim_{k \rightarrow +\infty} (1+n) - \frac{s(w, f^\prime (k))}{k} = 1+n &gt; 0.
+\]</span></p>
+<p><strong>Limit when <span class="math inline">\(k \rightarrow 0\)</span></strong></p>
+<p>When <span class="math inline">\(k\)</span> tends to zero, we shall distinguish two cases regarding <span class="math inline">\(f^\prime (k)\)</span>. It can be that either</p>
+<ul>
+<li>Case <span class="math inline">\(\lim_{k \rightarrow 0} f^\prime (k) = f^\prime (0)&gt; 0\)</span> and finite. Then, the function <span class="math inline">\(s(w, f^\prime(k))\)</span> is well defined and positive and we have:</li>
+</ul>
+<p><span class="math display">\[
+\lim_{k \rightarrow 0} H(w,k) = \lim_{k \rightarrow 0} \left[(1+n)k - s(w,f^\prime (k)) \right] = -s(w, f^\prime (k)) &lt; 0.
+\]</span></p>
+<ul>
+<li><p>Case <span class="math inline">\(\lim_{k \rightarrow 0} f^\prime (k) = +\infty.\)</span> Two things can occur in that case.</p>
+<ul>
+<li><p>Savings are positive: <span class="math inline">\(\lim_{k \rightarrow 0} s(w,f^\prime (k))&gt;0.\)</span> This case is analogous to the previous one:</p>
+<p><span class="math display">\[
+  \lim_{k \rightarrow 0} H(w,k) = \lim_{k \rightarrow 0} \left[(1+n)k - s(w,f^\prime (k)) \right] = -s(w, f^\prime (k)) &lt; 0.
+  \]</span></p></li>
+<li><p>Savings tend to zero: <span class="math inline">\(\lim_{k \rightarrow 0} s(w, f^\prime (k)) = 0.\)</span> In this case, since the interest rate goes to infinity individuals tend to save zero. This implies that consumption in the second period, <span class="math inline">\(d\)</span>, tends to infinity. To see this, first notice that <span class="math inline">\(d = f^\prime (k) s(w, f^\prime (k)).\)</span> Moreover, from the first order conditions we know that: <span class="math display">\[
+  u^\prime (d) = \frac {u^\prime ( w - s)}{\beta f^\prime (k)}
+  \]</span></p>
+<p>and hence <span class="math display">\[
+  \lim_{k \rightarrow 0}u^\prime (d) = \lim_{k \rightarrow 0}\frac {u^\prime ( w - s)}{\beta f^\prime (k)}=0.
+  \]</span></p>
+<p>Hence, <span class="math inline">\(u^\prime (d)\)</span> tends to zero which means that <span class="math inline">\(d\)</span> goes to infinity. Therefore:</p>
+<p><span class="math display">\[
+  \lim_{k \rightarrow 0} f^\prime (k) s(w, f^\prime (k)) = +\infty.
+  \]</span></p>
+<p>We also know that <span class="math inline">\(0 &lt; f^\prime (k) k &lt; f(k)\)</span> because <span class="math inline">\(f^\prime (k) k + \omega(k) = f(k)\)</span> and <span class="math inline">\(\omega(k) &gt; 0.\)</span> Therefore, for a bounded <span class="math inline">\(0&lt;k&lt;1\)</span> we also have <span class="math inline">\(f^\prime (k) k &lt; f(1).\)</span> Hence, for <span class="math inline">\(k&lt;1\)</span>:</p>
+<p><span class="math display">\[
+  \frac{s(w, f^\prime (k))}{k} = \frac{f^\prime(k) s(w,f^\prime(k))}{f^\prime (k) k} &gt; \frac{f^\prime (k) s(w, f^\prime (k))}{f(1)}.
+  \]</span></p>
+<p>Then,</p>
+<p><span class="math display">\[
+  \lim_{k \rightarrow 0} \frac{s(w,f^\prime(k)}{k} = +\infty
+  \]</span></p>
+<p>and <span class="math display">\[
+  \frac{H(w,k)}{k} = 1+n-\frac{s(w,f^\prime(k)}{k} &lt; 0
+  \]</span></p>
+<p>for small <span class="math inline">\(k\)</span>.</p></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</section>
+<section id="uniqueness-of-the-intertemporal-equilibrium" class="level3" data-number="2.7.2">
+<h3 data-number="2.7.2" class="anchored" data-anchor-id="uniqueness-of-the-intertemporal-equilibrium"><span class="header-section-number">2.7.2</span> Uniqueness of the intertemporal equilibrium</h3>
+<p>Having established that at least one level <span class="math inline">\(k_{t+1}\)</span> exists that solves the equation, we would like it to be unique, thus having a unique equilibrium. Otherwise, for some level <span class="math inline">\(k\)</span> there would be multiple values for <span class="math inline">\(k_{t+1}\)</span> (meaning multiple values for the savings). Individuals lack a coordinating mechanism to select any of these equilibria.</p>
+<p>We show that the intertemporal elasticity of substitution <span class="math inline">\(\sigma\)</span> is important in determining uniqueness. In particular, if <span class="math inline">\(\sigma &gt; 1\)</span>, then the equilibrium is unique. We will revisit this issue later.</p>
+<p>We have used the intermediate value theorem to show that solutions exist. Moreover, it shows that <span class="math inline">\(\lim_{k\rightarrow 0} \frac{H(w,k)}{k} &lt; 0\)</span> and <span class="math inline">\(\lim_{k \rightarrow +\infty} \frac{H(w,k)}{k} &gt; 0.\)</span> Therefore, if <span class="math inline">\(H(w,k)\)</span> is monotonically increasing in <span class="math inline">\(k\)</span>, then there is one and only one solution to <span class="math inline">\(H(w,k)=0.\)</span> Hence, we would have a unique solution. This means that given a value <span class="math inline">\(k_{t},\)</span> we can find a unique valu <span class="math inline">\(k_{t+1}.\)</span></p>
+<p>If we take the derivative of <span class="math inline">\(H(w,k)\)</span> with respect to <span class="math inline">\(k\)</span>, we obtain:</p>
+<p><span class="math display">\[
+1+n - s^{\prime}_R f^{\prime \prime}(k).
+\]</span></p>
+<p>Consequently, in order to have a monotonous function it is sufficient to impose:</p>
+<p><strong>Assumption OLG.4</strong> : <span class="math display">\[
+1+n - s^{\prime}_R f^{\prime \prime}(k) &gt; 0.
+\]</span></p>
+<p>And then, <span class="math inline">\(k_{t+1} = g(k_{t}).\)</span></p>
+<p>In particular, this condition indicates that the effect of the interest rate on savings should <em>not</em> be too negative.</p>
+<p>Moreover, if <strong>OLG.4</strong> is verified, then <span class="math inline">\(k_{t+1}\)</span> is increasing in <span class="math inline">\(k_{t}.\)</span> Indeed,</p>
+<p><span class="math display">\[
+k_{t+1} = g(k_t, k_{t+1}) = \frac{1}{1+n} s(\omega(k_t), R(k_{t+1})).
+\]</span></p>
+<p>and</p>
+<p><span class="math display">\[
+\frac{\partial k_{t+1}}{\partial k_t} = - \frac{\frac{\partial g(k_{t}, k_{t+1})}{\partial k_t}}{\frac{\partial g(k_t, k_{t+1})}{\partial k_{t+1}}} = \frac{\overbrace{s^\prime_{\omega} \omega^\prime(k_t)}^{&gt;0}}{1+n-s^\prime_{R} \underbrace{R^\prime(k_{t+1})}_{=f^{\prime \prime} (k_{t+1}) &lt; 0}} &gt; 0,
+\]</span></p>
+<p>and <span class="math inline">\(k_{t+1}\)</span> increases in <span class="math inline">\(k_{t}.\)</span></p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Important
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Hence, if the function <span class="math inline">\(H\)</span> is monotonously increasing, the solution is unique. This condition depends on the sign of:</p>
+<p><span class="math display">\[
+\frac{\partial H(k_{t+1})}{\partial k_{t+1}} = 1 + \frac{1}{1+n}s^{\prime}_{R}f^{\prime \prime}(k_{t+1}).
+\]</span></p>
+</div>
+</div>
+<p>Finally, we can use a more restrictive —but easier to work with— assumption that ensures a unique solution for the intertemporal equilibrium. Assumption <strong>OLG.4</strong> states:</p>
+<p><span class="math display">\[
+1+n - s^{\prime}_R f^{\prime \prime}(k) &gt; 0.
+\]</span></p>
+<p>Therefore, it is sufficient to have</p>
+<p><span class="math display">\[
+s^{\prime}_R \geq 0
+\]</span></p>
+<p>meaning that savings increase with the interest rate. This behaviour is readily verified when the intertemporal elasticity of substitution is at least one. Then, to have monotonic dynamics and unique temporal equilibrium it is sufficient to have <span class="math inline">\(\sigma \geq 1.\)</span></p>
+<p>We have different cases:</p>
+<ol type="1">
+<li><span class="math inline">\(s^\prime_{R} = 0\)</span>, which happens under log-utility. In this case, <span class="math inline">\(s^\prime_{R} = 0 &gt; \frac{1+n}{R^\prime(k_{t+1})}\)</span> and <span class="math inline">\(H(k_{t+1})\)</span> is always increasing.</li>
+<li><span class="math inline">\(s^\prime_{R} &gt;0\)</span>, the intertemporal elasticity of substitution is greater than 1 and individuals are willing to trade off higher future consumption against present consumption. Savings increase to consume more in the future. Then, clearly <span class="math inline">\(s^\prime_{R} &gt; 0 &gt; \frac{1+n}{R^\prime(k_{t+1})}.\)</span></li>
+<li><span class="math inline">\(s^\prime_{R} &lt; 0\)</span>, we can have a non-monotonous capital path as <span class="math inline">\(k_{t+1}\)</span> can be increasing or decreasing with <span class="math inline">\(k_{t}\)</span>.</li>
+</ol>
+</section>
+<section id="multiple-equilibria-and-non-monotonous-dynamics" class="level3" data-number="2.7.3">
+<h3 data-number="2.7.3" class="anchored" data-anchor-id="multiple-equilibria-and-non-monotonous-dynamics"><span class="header-section-number">2.7.3</span> Multiple Equilibria and Non-monotonous Dynamics</h3>
+<p>Under case 3, the condition for uniqueness is not satisfied, multiple levels of <span class="math inline">\(k_{t+1}\)</span> solve the intertemporal equilibrium. This section is based on the <span class="citation" data-cites="groth">Groth (<a href="references.html#ref-groth" role="doc-biblioref">2016, 92–93</a>)</span></p>
+<p>In that case, the function <span class="math inline">\(g(k)\)</span> is backwards bending for some values of <span class="math inline">\(k.\)</span> This feature implies that there is more than one <em>intemporal equilibrium</em>. We ruled out such a possibility assuming that <span class="math inline">\(\sigma( c ) \geq 1\)</span>, this is, we imposed a large enough intertemporal elasticity of substitution.</p>
+<p>For instance, take an isoelastic utility function <span class="math inline">\(u( c ) = \frac{c^{1-\frac{1}{\sigma}}-1}{1-\frac{1}{\sigma}}\)</span> and a CES production with <span class="math inline">\(A=20, \, \alpha = \frac{1}{2}, \, \beta = 0.3, \, n = 1.097, \, \sigma = 0.1, \, \rho = -2.\)</span> First, since <span class="math inline">\(\sigma &lt; 1\)</span>, it allows for the possibility of having multiple temporary equilibria. Second, we can verify that this is the case. For example, if <span class="math inline">\(k_{t} = 1\)</span>, then:</p>
+<p><span class="math inline">\(k_{t+1} = \frac{1}{1+n} s(\omega(k_{t}), R(k_{t+1})) \implies k_{t+1} = \begin{cases} 0.26 \\ 1.234 \\ 5.832 \end{cases}.\)</span></p>
+<p>In fact, for the entire range <span class="math inline">\(k_{t} \in [0.76, 1.37]\)</span> there is multiplicity of equilibria. Consequently, in all these cases we also have that <span class="math inline">\(\frac{\mathrm{d}k_{t+1}}{\mathrm{d}k_t} &lt; 0.\)</span></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./images/backwards.png" class="img-fluid figure-img"></p>
+<figcaption>Multiple equilibria</figcaption>
+</figure>
+</div>
+<p>This implies that, when young individuals observe the current capital level <span class="math inline">\(k_t\)</span>, they may expect different future capital levels <span class="math inline">\(k_{t+1}\)</span> depending on their beliefs about the economy: some individuals will expect <span class="math inline">\(k_{t+1} = 0.26\)</span>, others <span class="math inline">\(k_{t+1} = 1.234\)</span>, and still others <span class="math inline">\(k_{t+1} = 5.832\)</span>. Consequently, the capital that will be realized will, in most cases, not coincide with any of these expectations. This violates the <em>perfect foresight</em> assumption, as individuals are not able to accurately predict future capital levels based on current information.</p>
+</section>
+</section>
+<section id="steady-states" class="level2" data-number="2.8">
+<h2 data-number="2.8" class="anchored" data-anchor-id="steady-states"><span class="header-section-number">2.8</span> Steady states</h2>
+<p>We assume that the intertemporal equilibrium exists and is unique. As noted when characterising the uniqueness of the temporary equilibrium, assuming that <span class="math inline">\(\sigma&gt;1\)</span> is a sufficient condition. Therefore, the dynamics of capital are given by:</p>
+<p><span class="math display">\[
+k_{t+1} = \frac{1}{1+n}s(\omega(k_{t}), f^{\prime}(k_{t+1})).
+\]</span></p>
+<p>Hence, <span class="math inline">\(k_{t+1}\)</span> is an implicit function of <span class="math inline">\(k_{t}\)</span>:</p>
+<p><span class="math display">\[
+k_{t+1} = g(k_{t}).
+\]</span></p>
+<p>The steady states of this economy can be found solving the previous equation for <span class="math inline">\(k_{t+1} = k_{t}=\bar{k}.\)</span></p>
+<p><span class="math display">\[
+\bar{k} = \frac{1}{1+n}s\left(\omega(\bar{k}), f^{\prime}(\bar{k})\right).
+\]</span></p>
+<section id="steady-state-with-bark0" class="level3" data-number="2.8.1">
+<h3 data-number="2.8.1" class="anchored" data-anchor-id="steady-state-with-bark0"><span class="header-section-number">2.8.1</span> Steady state with <span class="math inline">\(\bar{k}=0\)</span></h3>
+<p>A steady state with <span class="math inline">\(\bar{k}=0\)</span> is only possible if <span class="math inline">\(f(0)=0\)</span> or, equivalently, <span class="math inline">\(\omega(0)=0.\)</span> We may call this steady state an <em>autarky steady state.</em> In that case, since <span class="math inline">\(\omega(0)=0\)</span> and we know that individuals save a fraction of their income:</p>
+<p><span class="math display">\[
+s(\omega(0), R(0)) &lt; \omega(0) = 0.
+\]</span></p>
+<p>Hence, given zero capital, savings are equally zero and capital remains there, constituting a steady state.</p>
+<p>Alternatively, if it is possible to produce without capital (CES production function with large enough substitutability), the autarkic steady state does not exist.</p>
+<section id="example-of-the-autarkic-steady-state" class="level4" data-number="2.8.1.1">
+<h4 data-number="2.8.1.1" class="anchored" data-anchor-id="example-of-the-autarkic-steady-state"><span class="header-section-number">2.8.1.1</span> Example of the autarkic steady state</h4>
+<p>Take <span class="math inline">\(F(K,L)=(\alpha K^{\rho} + (1-\alpha)L^{\rho})^{\frac{1}{\rho}}\)</span> and <span class="math inline">\(u( c ) = \log( c ).\)</span> Furthermore, assume a low elasticity of substitution, <span class="math inline">\(\rho &lt;&lt; 0.\)</span> In intensive form, production equals:</p>
+<p><span class="math display">\[
+f(k_{t}) = (\alpha k_{t}^{\rho} + (1-\alpha))^{\frac{1}{\rho}}.
+\]</span></p>
+<p>Wages and savings are:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\omega(k_{t}) &amp;= (1-\alpha)(\alpha k^\rho + (1-\alpha))^{\frac{1}{\rho}-1} \\
+s_{t} &amp;= \frac{\beta}{1+\beta}w_{t}.
+\end{aligned}
+\]</span></p>
+<p>Then, capital accumulation becomes:</p>
+<p><span class="math display">\[
+k_{t+1} = \frac{1}{1+n}\frac{\beta}{1+\beta}(1-\alpha)\left[\alpha k_{t}^\rho + 1 - \alpha \right]^\frac{1-\rho}{\rho}.
+\]</span></p>
+<p>With low substitutability, <span class="math inline">\(\rho &lt; 0\)</span>, zero is always a possible steady state. There can be two additional, positive steady states depending on the curvature of <span class="math inline">\(k_{t+1}.\)</span></p>
+<div id="cell-fig-three" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display">
+<div id="fig-three" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-three-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="olg_files/figure-html/fig-three-output-1.png" width="634" height="434" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-three-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.1: Autarky steady state and two positive steady states
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Similarly, the Cobb-Douglas case <span class="math inline">\(\rho \rightarrow 0\)</span> also has zero as a steady state. However, it is unstable.</p>
+</section>
+</section>
+<section id="other-steady-state" class="level3" data-number="2.8.2">
+<h3 data-number="2.8.2" class="anchored" data-anchor-id="other-steady-state"><span class="header-section-number">2.8.2</span> Other steady state</h3>
+<p>The economy can also present interior steady states with <span class="math inline">\(\bar{k}&gt;0.\)</span> Unlike the Ramsey model, here we can have stable and unstable steady states, as we shall see. Moreover, the configuration varies depending on the production and utility functions.</p>
+<p><strong>Two steady states, autarky and positive</strong> This is a common configuration that arises, for instance, under a Cobb-Douglas production function and log-utility. Other functions can also exhibit this behavior, particularly those with similar functional forms.</p>
+<div id="cell-fig-two" class="cell" data-execution_count="3">
+<div class="cell-output cell-output-display">
+<div id="fig-two" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-two-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="olg_files/figure-html/fig-two-output-1.png" width="634" height="434" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-two-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.2: Autarky steady state and a positive steady state
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>Single, non-autarky steady state</strong> This steady state is characterized by a unique positive capital level <span class="math inline">\(\bar{k} &gt; 0\)</span>. This configuration requires <span class="math inline">\(f(0) &gt; 0\)</span>. With a CES production function, capital and labour must be substitutes, this is, <span class="math inline">\(&lt; 0 \rho &lt; 1\)</span>: <span class="math inline">\((\alpha k^\rho + (1-\alpha))^{\frac{1}{\rho}}.\)</span></p>
+<div id="cell-fig-single" class="cell" data-execution_count="4">
+<div class="cell-output cell-output-display">
+<div id="fig-single" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-single-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="olg_files/figure-html/fig-single-output-1.png" width="634" height="434" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-single-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.3: Single, non-autarky steady state
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>Only an autarky steady state</strong> In this case, <span class="math inline">\(f(0) = 0\)</span> is required so that the autarky steady state can exist. Moreover, it requires <span class="math inline">\(f(k_{t+1}) &lt; f(k_{t})\)</span>. This type of setup requires <span class="math inline">\(\rho &lt; 0\)</span>, this is, complementarity between capital and labor and low levels of output given the inputs.</p>
+<div id="cell-fig-only_autarky" class="cell" data-execution_count="5">
+<div class="cell-output cell-output-display">
+<div id="fig-only_autarky" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-only_autarky-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="olg_files/figure-html/fig-only_autarky-output-1.png" width="634" height="408" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-only_autarky-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.4: Only an autarky steady state
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="stability-of-the-steady-state" class="level2" data-number="2.9">
+<h2 data-number="2.9" class="anchored" data-anchor-id="stability-of-the-steady-state"><span class="header-section-number">2.9</span> Stability of the steady state</h2>
+<p>This model can feature one or several steady states. This depends on the characteristics of the production and utility functions.</p>
+<p>First, the dynamics of <span class="math inline">\(k\)</span> are monotonic: either continuously increase or decrease. This follows from assuming a unique intertemporal equilibrium. This extra assumption also implies that the intermporal elasticity of substitution is <em>not too small</em>. In particular, we operationalise <span class="citation" data-cites="De_la_Croix_2009">(<a href="references.html#ref-De_la_Croix_2009" role="doc-biblioref">Croix and Michel 2009, 25</a>)</span> it as:</p>
+<p><span class="math display">\[
+\forall c&gt;0, \quad u^\prime( c ) + c u^{\prime \prime}( c ) \geq 0 \Leftrightarrow \sigma( c ) \geq 1.
+\]</span></p>
+<p>Due to the fact the monotonicity of the dynamics, capital can converge either to <span class="math inline">\(0, \bar{k}\in (0,+\infty),\)</span> or <span class="math inline">\(+\infty.\)</span></p>
+<section id="the-economy-never-goes-to-k-infty" class="level3" data-number="2.9.1">
+<h3 data-number="2.9.1" class="anchored" data-anchor-id="the-economy-never-goes-to-k-infty"><span class="header-section-number">2.9.1</span> The economy <em>never</em> goes to <span class="math inline">\(k = +\infty\)</span></h3>
+<p>This is equivalent to saying that starting with a a high level of capital <span class="math inline">\(k_{0}\)</span>, the dynamics imply <span class="math inline">\(k_{t+1} &lt; k_{t}.\)</span></p>
+<p>First, we have that:</p>
+<p><span class="math display">\[
+g(k) = \frac{1}{1+n}s(\omega(k),f^\prime(\underbrace{g(k)}_{k_{t+1}}))&lt;\frac{\omega(k)}{1+n}.
+\]</span></p>
+<p>This holds because savings <span class="math inline">\(s\)</span> are <em>always</em> a fraction of wages <span class="math inline">\(\omega.\)</span></p>
+<p>Second, we show that:</p>
+<p><span class="math display">\[
+\lim_{k \rightarrow +\infty}\frac{g(k)}{k} = 0.
+\]</span></p>
+<p>To see the intuition for this limit, assume for a moment it holds. Then, it must be that for large enough <span class="math inline">\(k,\, g(k) = k_{t+1} &lt; k_{t}\)</span> and the dynamics are decreasing and converge to some <span class="math inline">\(\bar{k}.\)</span> In this case, <span class="math inline">\(\bar{k}\)</span> is the largest steady state, and because the dynamics are monotonic, the economy never goes to the other side of the steady state.</p>
+<p>We show next that <span class="math inline">\(\lim_{k \rightarrow +\infty}\frac{g(k)}{k} = 0.\)</span> We do so by showing that <span class="math inline">\(\lim_{k \rightarrow +\infty} \color{green}{\frac{\omega(k)}{k}} = 0.\)</span></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Proof">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Proof
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>We start by noting that:</p>
+<p><span class="math display">\[
+\color{green}{\frac{\omega(k)}{k}} = \color{red}{\frac{f(k)}{k}} - \color{blue}{f^\prime (k)} \leftarrow \omega(k) = f(k) - f^\prime (k) k.
+\]</span></p>
+<p>When <span class="math inline">\(k \rightarrow +\infty\)</span>, <strong>the first term <span class="math inline">\(\color{red}{\frac{f(k)}{k}}\)</span></strong> admits a positive limit, let’s call it <span class="math inline">\(\mathcal{l}_{1}.\)</span> This is because:</p>
+<ol type="1">
+<li><span class="math inline">\(\color{red}{\frac{f(k)}{k}} &gt; 0.\)</span></li>
+<li><span class="math inline">\(\color{red}{\frac{f(k)}{k}}\)</span> is decreasing: <span class="math display">\[
+\frac{\partial \color{red}{\frac{f(k)}{k}}}{\partial k} = \frac{f^\prime(k)k-f(k)}{k^{2}} = - \frac{f(k) - f^\prime (k) k}{k^{2}} = - \frac{\omega(k)}{k^{2}} &lt; 0.
+\]</span></li>
+</ol>
+<p>The <strong>second term <span class="math inline">\(\color{blue}{f^\prime (k)}\)</span></strong> is decreasing and positive, thus it admits a limit <span class="math inline">\(\mathcal{l}_{2}\)</span> when <span class="math inline">\(k \rightarrow +\infty.\)</span></p>
+<p>Apply the mean value theorem evaluated at <span class="math inline">\(k\)</span> and <span class="math inline">\(2k\)</span>:</p>
+<p><span class="math display">\[
+f(2k) - f(k) = (2k-k)f^\prime(k(1+\theta)), \quad \mathrm{with}\, \theta \in (0,1).
+\]</span></p>
+<p>Then,</p>
+<p><span class="math display">\[
+\frac{2f(2k)}{2k} - \frac{f(k)}{k} = f^\prime(k(1+\theta))
+\]</span></p>
+<p>Taking the limit when <span class="math inline">\(k \rightarrow +\infty\)</span> we obtain <span class="math inline">\(2\mathcal{l}_{1}-\mathcal{l}_{1} = \mathcal{l}_{2} \implies \mathcal{l}_{1} = \mathcal{l}_{2}.\)</span></p>
+<p>Finally,</p>
+<p><span class="math display">\[
+\lim_{k \rightarrow + \infty}\color{green}{\frac{\omega(k)}{k}} =\lim_{k \rightarrow +\infty}\color{red}{\frac{f(k)}{k}} - \color{blue}{f^\prime (k)}=  \mathcal{l}_{1} - \mathcal{l}_{2} = 0.
+\]</span></p>
+<p>Since <span class="math inline">\(\lim_{k \rightarrow +\infty} \color{green}{\frac{\omega(k)}{k}}=0\)</span> and <span class="math inline">\(\frac{g(k)}{k} &lt; \color{green}{\frac{\omega(k)}{k}}\)</span> then <span class="math inline">\(\lim_{k \rightarrow +\infty}\frac{g(k)}{k} = 0.\)</span> In conclusion, if the inital value of capital is large enough, the dynamics are decreasing and <span class="math inline">\(k\)</span> converges to an interior steady state <span class="math inline">\(\bar{k}.\)</span></p>
+</div>
+</div>
+</section>
+</section>
+<section id="examples" class="level2" data-number="2.10">
+<h2 data-number="2.10" class="anchored" data-anchor-id="examples"><span class="header-section-number">2.10</span> Examples</h2>
+<section id="example-1-log-utility-and-cobb-douglas" class="level3" data-number="2.10.1">
+<h3 data-number="2.10.1" class="anchored" data-anchor-id="example-1-log-utility-and-cobb-douglas"><span class="header-section-number">2.10.1</span> Example 1: Log-utility and Cobb-Douglas</h3>
+<p>Suppose that <span class="math inline">\(u(c,d) = \log ( c ) + \beta \log(d)\)</span> and <span class="math inline">\(f(k_t) = Ak_t^\alpha.\)</span></p>
+<p>The wage rate is given by <span class="math display">\[
+w_t = f(k_{t}) - f^\prime (k_{t}) = (1-\alpha)Ak_{t}^\alpha
+\]</span></p>
+<p>and the savings function is obtained solving <span class="math display">\[
+u^\prime(w_{t} - s_{t}) = \beta R_{t+1} u^\prime (R_{t+1}s_{t}).
+\]</span></p>
+<p>Rearranging and isolating <span class="math inline">\(s\)</span> we are left with the savings function</p>
+<p><span class="math display">\[
+s_{t} = \frac{\beta}{1+\beta}w_{t}.
+\]</span></p>
+<p>The dynamics are given by the capital accumulation law</p>
+<p><span class="math display">\[
+k_{t+1} = \frac{1}{1+n}s_{t} = \frac{1}{1+n}\frac{\beta}{1+\beta}w_{t} = \frac{1}{1+n}\frac{\beta}{1+\beta}(1-\alpha)Ak_{t}^\alpha.
+\]</span></p>
+<p>The model with log-utility and Cobb-Douglas production functions has two steady states: zero and a unique positive steady state. We can solve for them:</p>
+<p><span class="math display">\[
+\bar{k} = \frac{1}{1+n}\frac{\beta}{1+\beta}(1-\alpha)A\bar{k}^\alpha \implies \bar{k} = \begin{cases} 0 \\\\\\ \left(\frac{1}{1+n}\frac{\beta}{1+\beta}(1-\alpha)A\right)^{\frac{1}{1-\alpha}} \equiv \phi^\frac{1}{1-\alpha}\end{cases}.
+\]</span></p>
+<p>The dynamics are depicted in <a href="#fig-two" class="quarto-xref">Figure&nbsp;<span>2.2</span></a>.</p>
+<p><strong>Local dynamics: stability</strong></p>
+<p>We check the stability of the two steady states using the first derivative evaluated at the steady state. <strong>Note:</strong> in general we would use the Jacobian matrix, but the OLG model has only one equation in one variable.</p>
+<p>Remember that, for a discrete-time system, a <em>non-hyperbolic</em> steady state is stable if it the determinant of the Jacobian (here the absolute value of the derivative) evaluated at the steady state is in the unit circle <span class="math inline">\((-1, 1).\)</span></p>
+<p>In our case:</p>
+<p><span class="math display">\[
+g(k) = k_{t+1} = \frac{1}{1+n}\frac{\beta}{1+\beta}(1-\alpha)Ak_{t}^\alpha
+\]</span> <span class="math display">\[
+g^\prime(k) = \frac{1}{1+n}\frac{\beta}{1+\beta}(1-\alpha)\alpha Ak_{t}^{\alpha-1}&gt; 0.
+\]</span></p>
+<p>Then</p>
+<p><span class="math display">\[
+\bar{k}=0 \implies g^\prime (0) = + \infty \quad \rightarrow \mathrm{unstable}
+\]</span> <span class="math display">\[
+\bar{k}=\phi^\frac{1}{1-\alpha} \implies g^\prime(\phi^\frac{1}{1-\alpha}) = \phi \alpha \phi^\frac{\alpha-1}{1-\alpha} = \alpha \in (0,1) \quad \rightarrow \mathrm{stable}.
+\]</span></p>
+<p><strong>Only an autarky steady state</strong> In this case, <span class="math inline">\(f(0) = 0\)</span> is required so that the autarky steady state can exist. Moreover, it requires <span class="math inline">\(f(k_{t+1}) &lt; f(k_{t})\)</span>. This type of setup requires <span class="math inline">\(\rho &lt; 0\)</span>, this is, complementarity between capital and labor and low levels of output given the inputs.</p>
+</section>
+<section id="log-utility-and-ces-technology" class="level3" data-number="2.10.2">
+<h3 data-number="2.10.2" class="anchored" data-anchor-id="log-utility-and-ces-technology"><span class="header-section-number">2.10.2</span> Log-utility and CES technology</h3>
+<p>Under a CES specification, <span class="math inline">\(y_{t} = A \left[ \alpha k_{t}^\rho + (1-\alpha) \right]^\frac{1}{\rho}, \rho \leq 1\)</span> wages are given by <span class="math display">\[
+\omega_{t} = (1-\alpha)\left[\alpha k^\rho + 1 -\alpha \right]^{\frac{1-\rho}{\rho}}.
+\]</span></p>
+<p>Hence, the dynamics of capital are governed by:</p>
+<p><span class="math display">\[
+k_{t+1} = g(k_t) = \frac{1}{1+n}s_{t} = \frac{1}{1+n}\frac{\beta}{1+\beta}A(1-\alpha)\left[\alpha k_{t}^\rho + 1 - \alpha\right]^\frac{1-\rho}{\rho}.
+\]</span></p>
+<p>The curve <span class="math inline">\(g(k)\)</span> is increasing:</p>
+<p><span class="math display">\[
+g^\prime (k) = \frac{\beta A (1-\alpha)}{(1+n)(1+\beta )}(1-\rho)\left[ \alpha k^\rho + 1 - \alpha \right]^\frac{1-2 \rho}{\rho}k^{\rho -1} &gt; 0.
+\]</span></p>
+<p>Depending on the value of <span class="math inline">\(\rho\)</span> we can have different configurations regarding the steady states. Ultimately, what matters is the concavity of the function <span class="math inline">\(g(k_{t}).\)</span></p>
+<p><span class="math display">\[
+g^{\prime \prime}(k_t) = -\frac{1}{1+n}\frac{\beta}{1+\beta}A(1-\rho)\alpha\left[\alpha k^\rho+1-\alpha\right]^\frac{1-3\rho}{\rho}k^{\rho-2}\left(\rho \alpha k^\rho +(1-\alpha)(1-\rho)\right).
+\]</span></p>
+<section id="unique-steady-state-bark-0" class="level4" data-number="2.10.2.1">
+<h4 data-number="2.10.2.1" class="anchored" data-anchor-id="unique-steady-state-bark-0"><span class="header-section-number">2.10.2.1</span> Unique steady state, <span class="math inline">\(\bar{k} &gt; 0\)</span></h4>
+<p>If <span class="math inline">\(\rho \in (0,1)\)</span>, the second derivative is clearly negative, and <span class="math inline">\(g\)</span> is concave. Moreover, <span class="math inline">\(g(0)&gt;0\)</span>, so <span class="math inline">\(\bar{k} = 0\)</span> cannot be a steady state:</p>
+<p><span class="math display">\[
+g(k_{t}) = \frac{\beta A(1-\alpha)}{(1+n)(1+\beta)}(\alpha k^\rho + 1 - \alpha)^\frac{1-\rho}{\rho} \implies g(0)=\frac{\beta A(1-\alpha)^\frac{1}{\rho}}{(1+n)(1+\beta)}&gt; 0.
+\]</span></p>
+<p>In that case, the economy displays a unique steady state, and it is globally stable.</p>
+<p>See <a href="#fig-single" class="quarto-xref">Figure&nbsp;<span>2.3</span></a>.</p>
+</section>
+<section id="unique-bark0-or-multiple-steady-states" class="level4" data-number="2.10.2.2">
+<h4 data-number="2.10.2.2" class="anchored" data-anchor-id="unique-bark0-or-multiple-steady-states"><span class="header-section-number">2.10.2.2</span> Unique <span class="math inline">\(\bar{k}=0\)</span> or multiple steady states</h4>
+<p>If <span class="math inline">\(\rho &lt; 0,\)</span> the function <span class="math inline">\(g(k)\)</span> changes concavity. In particular, there exists a level <span class="math inline">\(\hat{k}\)</span> such that: <span class="math display">\[
+g^{\prime \prime}(k) &gt; 0\, \mathrm{if} \,  k &lt; \hat{k}.
+\]</span> <span class="math display">\[
+g^{\prime \prime}(k) &lt; 0\, \mathrm{if} \, k &gt; \hat{k}.
+\]</span> with <span class="math display">\[
+\hat{k} = \left( - \frac{(1-\alpha)(1-\rho)}{\rho \alpha}\right)^\frac{1}{\rho} &gt; 0 \, \mathrm{since}\, \rho &lt;0.
+\]</span> Moreover, <span class="math inline">\(g(0)=0\)</span> so <span class="math inline">\(\bar{k}=0\)</span> can be a steady state.</p>
+<p>In this case, there are two sub-cases:</p>
+<ol type="1">
+<li><p>If <span class="math inline">\(k_{t+1} &lt; k_{t} \implies \frac{\omega(k)}{k} &lt; (1+n)\frac{1+\beta}{\beta}\)</span> then the trajectory of <span class="math inline">\(k_{t+1}\)</span> is always below <span class="math inline">\(k\)</span>. Then, there is one unique steady state: <span class="math inline">\(\bar{k}=0.\)</span> The economy converges towards this unique steady state. We can derive the condition above from: <span class="math display">\[\begin{aligned}
+     k_{t+1} &lt; k_{t} &amp; \implies \frac{1}{1+n}s\left(\omega(k_{t}),R_{t+1}\right) &lt; k_{t}  \implies \\
+     \frac{1}{1+n}\frac{\beta}{1+\beta}w_t &lt; k_{t} &amp; \implies \frac{w_{t}}{k_{t}} &lt; (1+n)\frac{1+\beta}{\beta}.
+     \end{aligned}
+\]</span></p></li>
+<li><p>If there is some <span class="math inline">\(k_{t+1} &gt; k_{t} \implies \frac{\omega(k)}{k} &gt; (1+n)\frac{1+\beta}{\beta}\)</span> then there are two positive steady states <span class="math inline">\(\bar{k}_{a} &lt; \bar{k}_{b}\)</span> plus the zero steady state <span class="math inline">\(\bar{k}=0.\)</span></p>
+<ol type="1">
+<li>All trajectories starting at <span class="math inline">\(k_0 &lt; \bar{k}_{a}\)</span> converge to <span class="math inline">\(\bar{k}=0\)</span> and <span class="math inline">\(\bar{k}=0\)</span> is locally stable in the range <span class="math inline">\([0,\bar{k}_{a}].\)</span> The steady state with <span class="math inline">\(\bar{k}=0\)</span> is a <strong>poverty trap</strong>: whenever the economy starts with a low enough level of capital, it will always converge towards the <span class="math inline">\(\bar{k}=0\)</span> steady state.</li>
+<li>Trajectories starting at <span class="math inline">\(k_0=\bar{k}_{a}\)</span> remain at <span class="math inline">\(\bar{k}_{a}\)</span>. This steady state is unstable.</li>
+<li>Finally, trajectories starting with <span class="math inline">\(k_0 &gt; \bar{k}_{a}\)</span> converge towards <span class="math inline">\(\bar{k}_{b}\)</span>, which is a locally stable steady state in <span class="math inline">\((\bar{k}_{a}, +\infty).\)</span></li>
+</ol></li>
+</ol>
+<p>See <a href="#fig-only_autarky" class="quarto-xref">Figure&nbsp;<span>2.4</span></a> and <a href="#fig-three" class="quarto-xref">Figure&nbsp;<span>2.1</span></a>.</p>
+</section>
+</section>
+</section>
+<section id="solved-example" class="level2" data-number="2.11">
+<h2 data-number="2.11" class="anchored" data-anchor-id="solved-example"><span class="header-section-number">2.11</span> Solved example</h2>
+<p>Suppose that production can be parametrized using the following Cobb-Douglas specification:</p>
+<p><span class="math display">\[
+Y = F\left(K_t, L_t\right) = K_t^\frac{1}{2}L_t^\frac{1}{2}.
+\]</span></p>
+<p>Furthermore, assume the following utility function:</p>
+<p><span class="math display">\[
+u(c_t) = \frac{c_t^{1-\frac{1}{3}}-1}{1-\frac{1}{3}}
+\]</span></p>
+<p>where the intertemporal elasticity of substitution is <span class="math inline">\(-3.\)</span></p>
+<p>We can compute production function, the wage and the interest in intensive form as:</p>
+<p><span class="math display">\[
+\begin{aligned}
+    f(k_t) &amp;= k_t^\alpha \\
+    w_t &amp;= f(k_t) - f^\prime(k_t) k_t = (1-\alpha) k_t^\alpha \\
+    r_t &amp;= f^\prime(k_t) = \alpha k_t^\frac{-1}{2}
+\end{aligned}
+\]</span></p>
+<p>Similarly, the savings function can be derived from the Euler equation as follows:</p>
+<p><span class="math display">\[
+\begin{aligned}
+    u^\prime(w_t - s_t) &amp;= \beta R_{t+1} u^\prime(s_t R_{t+1}) \implies \\
+    \implies (w_t -s_t)^\frac{-1}{3} &amp;= \beta R_{t+1} (R_{t+1} s_t)^\frac{-1}{3} \implies \\
+    \implies (w_t - s_t) &amp;= \beta^{-3} R_{t+1}^{-2} s_t \implies \\
+    s_t &amp;= \frac{w_t}{1+\beta^{-3}R_{t+1}^{-2}}
+\end{aligned}
+\]</span></p>
+<p>Therefore, the capital accumulation equation is:</p>
+<p><span class="math display">\[
+\begin{aligned}
+    k_{t+1} &amp;= \frac{1}{1+n} \frac{w_t}{1+\beta^{-3} R_{t+1}^{-2}} = \frac{1}{1+n} \frac{\frac{1}{2} k_t^\frac{1}{2}}{1+\beta{-3}\left(\frac{1}{2}k_{t+1}^\frac{-1}{2}\right)^{-2}} \implies \\
+    k_{t+1} &amp;= \frac{1}{1+n} \frac{\frac{1}{2} k_t^\frac{1}{2}}{1+4\beta^{-3} k_{t+1}} \implies \\
+    \frac{1}{2} k_t^\frac{1}{2} &amp;= (1+n)k_{t+1}\left(1+4 \beta^{-3} k_{t+1}\right)  \implies \\
+    k_{t+1} &amp;= \frac{-(1+n) + \sqrt{(1+n)^2+8(1+n)\beta^{-3}k_t^\frac{1}{2}}}{8(1+n)\beta^{-3}}
+\end{aligned}
+\]</span></p>
+<p>We can then show that the autarky steady state exists. Indeed, because we have <span class="math inline">\(f(0) = 0\)</span>, then <span class="math inline">\(\bar{k} = 0\)</span> is a steady state. The economy has a second steady state, but solving for it explicitly is challenging becuase it involves a third degree polynomial. Nevertheless, let’s sketch the process, knowing that a steady state solves <span class="math inline">\(k_t = k_{t+1} = \bar{k}.\)</span> To simplify the notation, in what follows I will write <span class="math inline">\(k\)</span> instead of <span class="math inline">\(\bar{k}.\)</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+    k = \frac{-(1+n) + \sqrt{(1+n)^2+8(1+n)\beta^{-3}k^\frac{1}{2}}}{8(1+n)\beta^{-3}} &amp;\implies \\
+    1 + 8(1+n)\beta^{-3}k = \sqrt{1+8^{-3}k^\frac{1}{2}} &amp;\implies \\
+    16 \beta^{-3}k + 64 \beta^{-6} k^2 = 8 \beta^{-3} k^\frac{1}{2} &amp;\implies \\
+    k^\frac{1}{2}\left(8 \beta^{-3}k^\frac{3}{2} + k^\frac{1}{2} - 1\right) &amp;=0
+\end{aligned}
+\]</span></p>
+<p>From here, it is obvious that <span class="math inline">\(k = 0\)</span> is a steady state, as we already knew. In principle, the part in brackes may have up to three solutions, but as said, these are hard to get. Instead, we can show that one and only one (real) solution can exist by studying the stability of the steady states. Moreover, the functional form we have is similar to a square root: we have the square root of something to the power <span class="math inline">\(\frac{1}{2}\)</span>, so this means that the function will behave similar to <span class="math inline">\(x^\frac{1}{4}.\)</span> Thus, we can expect only a second steady state to exist.</p>
+<p>The derivative of the dynamic function with respect to <span class="math inline">\(k_t\)</span> is:</p>
+<p><span class="math display">\[
+\frac{\partial k_{t+1}}{\partial k_t} = \frac{1}{4\sqrt{k_t}\sqrt{(1+n)\left(1+n+\frac{8\sqrt{k_t}}{\beta^{3}}\right)}}
+\]</span></p>
+<p>When <span class="math inline">\(k_t = k_{t+1} = 0\)</span>, the value of the derivative is <span class="math inline">\(+\infty\)</span>, and thus, that steady state is non-stable. Moreover, for any value <span class="math inline">\(k&gt;0\)</span>, the derivative is between <span class="math inline">\(0\)</span> and <span class="math inline">\(1\)</span>. Therefore, any other possible steady state is stable. Because the economy cannot converge to <span class="math inline">\(k\rightarrow \infty\)</span>, and because all the potential steady states with positive capital are stable, this implies that only can exist. Otherwise, all of the would attract the dynamics, but this is impossible in this model: we must converge somewhere. In fact, the plot corresponds to <a href="#fig-two" class="quarto-xref">Figure&nbsp;<span>2.2</span></a>.</p>
+</section>
+<section id="the-golden-rule-level-of-capital" class="level2" data-number="2.12">
+<h2 data-number="2.12" class="anchored" data-anchor-id="the-golden-rule-level-of-capital"><span class="header-section-number">2.12</span> The golden-rule level of capital</h2>
+<p>The first welfare theorem states that a competitive equilibrium is Pareto optimal. However, the first welfare theorem has two requisites the Diamond model does not meet: a finite number of goods and a finite number of agents. Therefore, the allocation resulting from the competitive equilibrium may <em>not</em> be Pareto optimal. This section is based on <span class="citation" data-cites="De_la_Croix_2009">Croix and Michel (<a href="references.html#ref-De_la_Croix_2009" role="doc-biblioref">2009</a>, Ch. 2)</span> and <span class="citation" data-cites="groth">Groth (<a href="references.html#ref-groth" role="doc-biblioref">2016</a>)</span>.</p>
+<p>In the Diamond model —and different from the Ramsey model—, the capital stock on the balanced growth path may exceed the golden-rule level. This implies that a permanent increase in consumption is possible.</p>
+<p>When discussing the golden-rule level of capital, we are <em>not</em> interested in how consumption is divided between the old and the young. Rather, we seek to maximise total consumption during one period. In fact, if we maximise total consumption, the ensuing allocations between young and old will be efficient. First, let <span class="math inline">\(\mathfrak{C}_t\)</span> represent total consumption:</p>
+<p><span class="math display">\[
+\mathfrak{C}_t \equiv C_t + D_t.
+\]</span> The economy-wide resource constraint dictates that total production is either consumed or invested:</p>
+<p><span class="math display">\[
+\mathfrak{C}_t  + K_{t+1} = F(K_t, N_t)+ (1-\delta)K_t.
+\]</span></p>
+<p>Alternatively, aggregate consumption per unit of labour is:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\mathfrak{c}_t \equiv \frac{\mathfrak{C}_t}{N_t} &amp;= \frac{F(K_t, N_t) +(1-\delta)K_t - K_{t+1}}{N_t} = \\
+&amp; = f(k_t) + (1-\delta)k_t - (1+n)k_{t+1}.
+\end{aligned}
+\]</span></p>
+<p>The <em>golden-rule level of the capital-labour ratio</em> <span class="math inline">\(k^{\mathcal{GR}}\)</span> is the value of the capital-labour ratio <span class="math inline">\(k\)</span> that results in the highest possible <em>sustainable</em> level of consumption per unit of labour. The fact that it is sustainable requires that it is replicable forever. For this reason, we consider the steady state with <span class="math inline">\(k_{t+1} = k_t = \bar{k}\)</span>. The resource constraint at the steady state simplifies to:</p>
+<p><span class="math display">\[
+\bar{\mathfrak{c}} = f(\bar{k})-(\delta + n)\bar{k} \equiv \mathfrak{c}(k).
+\]</span></p>
+<p>We maximise this function with respect to <span class="math inline">\(\bar{k}\)</span>:</p>
+<p><span class="math display">\[
+\mathfrak{c}^\prime(\bar{k}) = f^\prime (\bar{k}) - (n+\delta) = 0
+\]</span></p>
+<p>The fact that <span class="math inline">\(\mathfrak{c}^{\prime \prime}(\bar{k}) = f^{\prime \prime}(\bar{k})&lt;0\)</span> assures that we have the maximum.</p>
+<p>Assuming that <span class="math inline">\(n+\delta &gt;0\)</span> and that <span class="math inline">\(f\)</span> satisfies:</p>
+<p><span class="math display">\[
+\lim_{k \rightarrow +\infty} f^\prime(k) &lt; n+ \delta &lt; \lim_{k \rightarrow 0} f^\prime(k),
+\]</span></p>
+<p>then <span class="math inline">\(\mathfrak{c}^\prime(\bar{k}) = f^\prime (\bar{k}) - (n+\delta) = 0\)</span> has a solution in <span class="math inline">\(\bar{k}\)</span> and it is unique. Hence, the golden-rule level of capital is given by:</p>
+<p><span class="math display">\[
+f^\prime(k^{\mathcal{GR}}) = n + \delta.
+\]</span></p>
+<div id="cell-fig-golden_rule" class="cell" data-execution_count="6">
+<div class="cell-output cell-output-display">
+<div id="fig-golden_rule" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-golden_rule-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="olg_files/figure-html/fig-golden_rule-output-1.png" width="606" height="431" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-golden_rule-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.5: The golden-rule level of capital
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>The highest sustainable consumption level per unit of labour is obtained when, at steady state, the net marginal productivity of capital equals the growth rate of the economy.</p>
+<section id="over--and-under-accumulation-of-capital" class="level3" data-number="2.12.1">
+<h3 data-number="2.12.1" class="anchored" data-anchor-id="over--and-under-accumulation-of-capital"><span class="header-section-number">2.12.1</span> Over- and under-accumulation of capital</h3>
+<p>The golden-rule level of capital is given by <span class="math inline">\(f^\prime(k) = n+\delta.\)</span> However, in the decentralised economy, the steady-state level of savings is highly <em>unlikely</em> to coincide with it. For instance, a log-utility function coupled with a Cobb-Douglas production function leads to a steady-state value of capital such that <span class="math inline">\(f^\prime (k) = \frac{\beta}{(1+n)(1+\beta)}^\frac{1}{1-\alpha}.\)</span> In general, <span class="math inline">\(\frac{\beta}{(1+n)(1+\beta)}^\frac{1}{1-\alpha} \neq n+\delta.\)</span></p>
+<p>If the steady-state level of the economy is such that <span class="math inline">\(f^\prime (\bar{k}) &lt; n+ \delta,\)</span> the economy has accumulated too much capital: if <span class="math inline">\(f^\prime (\bar{k}) &lt; f^\prime(k^{\mathcal{GR}}) \implies \bar{k} &gt; k^{\mathcal{GR}}.\)</span> Conversely, if the interest rate at the competitive steady state is such that <span class="math inline">\(f^\prime (\bar{k}) &gt; n + \delta,\)</span> then it lacks capital compared to the golden rule.</p>
+<section id="improving-the-situation-dynamic-inefficiency" class="level4" data-number="2.12.1.1">
+<h4 data-number="2.12.1.1" class="anchored" data-anchor-id="improving-the-situation-dynamic-inefficiency"><span class="header-section-number">2.12.1.1</span> Improving the situation: dynamic inefficiency</h4>
+<p>Let’s suppose for the moment that the decentralised economy reaches a situation of over-accumulation of capital, this is, <span class="math inline">\(f^\prime(\bar{k}) &lt; n + \delta.\)</span> It is possible to improve upon it by means of redistribution. Simply, a planner could order young individuals to save less, as to reach <span class="math inline">\(k^{\mathcal{GR}}.\)</span> Doing so increases the available total output per worker, which can be consumed either by the old or the young, improving their utility. In subsequent periods, the economy would remain at <span class="math inline">\(k^{\mathcal{GR}}\)</span>, which maximises total output per worker.</p>
+<p>In particular, assume we impose a lump-sum tax on all young individuals and we transfer it to the old generation. The transfer is fully consumed (old individuals gain utility from consuming it). Suppose the transfer is one good from each young to the old. There are <span class="math inline">\(1+n\)</span> young individuals per old individual, so the old receive <span class="math inline">\(1+n\)</span> goods. Let’s repeat this scheme every period.</p>
+<ul>
+<li>The young transfer one good to the old</li>
+<li>Consumption of the young does not change because they refrain from saving.</li>
+<li>In the future, they receive <span class="math inline">\(1+n\)</span>, which represents a return rate of <span class="math inline">\(1+n\)</span> on their “investment”.</li>
+<li>In the competitive market, they would have obtained <span class="math inline">\(f^\prime(k) &lt; n + \delta.\)</span></li>
+<li>Clearly, the return young individuals achieve under the tax system is larger, and hence they are better off.</li>
+</ul>
+<p>At the same time, old individuals are also better off. In the first period, when the reform is introduced, they consume more. Later generations obtain a higher return for the tax they pay, leaving them better off, too.</p>
+<p>When organising such scheme is possible, we say that the competitive economy was <strong>dynamically inefficient.</strong></p>
+<p><strong>Note:</strong> it is possible to solve the dynamic inefficiency introducing money. Young individuals would exchange goods for paper notes with the expectation of exchanging them back again when old.</p>
+</section>
+<section id="dynamic-efficiency" class="level4" data-number="2.12.1.2">
+<h4 data-number="2.12.1.2" class="anchored" data-anchor-id="dynamic-efficiency"><span class="header-section-number">2.12.1.2</span> Dynamic efficiency</h4>
+<p>In the opposite case, when <span class="math inline">\(\bar{k} &lt; k^\mathrm{GR}\)</span>, reaching the golden-rule level of capital requires increasing it. Suppose we are at time <span class="math inline">\(t_0\)</span>. Increasing the capital to <span class="math inline">\(k^{\mathcal{GR}}\)</span> would certainly improve consumption for all generations <span class="math inline">\(t &gt; t_0\)</span>. However, young individuals at <span class="math inline">\(t_0\)</span> should forgo some consumption to save more and build the necessary capital. Hence, the consumption of the young generation at <span class="math inline">\(t_0\)</span> necessarily decreases. Our policy of improving utility for all individuals fails in this case.</p>
+<p>We call such situations <strong>dynamically efficient</strong>: it is impossible to increase the utility of all generations.</p>
+</section>
+</section>
+<section id="example" class="level3" data-number="2.12.2">
+<h3 data-number="2.12.2" class="anchored" data-anchor-id="example"><span class="header-section-number">2.12.2</span> Example</h3>
+<p>We use a log-utility and Cobb-Douglas case to illustrate over- and under-accumulation of capital.</p>
+<p><span class="math display">\[
+U(c,d) = \log( c ) + \beta \log (d)
+\]</span> <span class="math display">\[
+f(k)= Ak^\alpha.
+\]</span></p>
+<p>The golden-rule level of capital dictates that total consumption per worker should be maximised. Using the resource constraint:</p>
+<p><span class="math display">\[
+\max \mathcal{c_t}= f(k_t) +(1-\delta)k_t  - (1+n)k_{t+1}.
+\]</span></p>
+<p>Evaluating it at the steady state yields:</p>
+<p><span class="math display">\[
+\max \mathfrak{c} = f(k) - (n+\delta)k \implies f^\prime(k^{\mathcal{GR}}) = n+\delta.
+\]</span></p>
+<p>Hence, in our case:</p>
+<p><span class="math display">\[
+A \alpha {k^{\mathcal{GR}}}^{\alpha-1} = n + \delta \implies k^{\mathcal{GR}} = \left(\frac{A\alpha}{n+\delta}\right)^\frac{1}{1-\alpha}.
+\]</span></p>
+<p>In the decentralised economy, we have that:</p>
+<p><span class="math display">\[
+k_{t+1} = \frac{1}{1+n} s(\omega(k_t), f^\prime(k_{t+1})) = \frac{1}{1+n}\frac{\beta}{1+\beta}A(1-\alpha)k_t^\alpha.
+\]</span></p>
+<p>Hence, the steady-state level of capital is:</p>
+<p><span class="math display">\[
+\bar{k} = \frac{A \beta (1-\alpha)}{(1+n)(1+\beta )}\bar{k}^\alpha \implies \bar{k} = \frac{A(1-\alpha) \beta}{(1+n)(1+\beta)}^\frac{1}{1-\alpha}.
+\]</span></p>
+<p>We have capital over-accumulation if: <span class="math inline">\(\bar{k} &gt; k^{\mathcal{GR}} \implies \frac{(n+\delta) \beta}{(1+n)(1+\beta)} &gt; \frac{\alpha}{1-\alpha}.\)</span></p>
+<p>Check <span class="citation" data-cites="Romer_2018">Romer (<a href="references.html#ref-Romer_2018" role="doc-biblioref">2018, 89–90</a>)</span> for an empirical discussion about the dynamic efficiency.</p>
+</section>
+</section>
+<section id="the-central-planner" class="level2" data-number="2.13">
+<h2 data-number="2.13" class="anchored" data-anchor-id="the-central-planner"><span class="header-section-number">2.13</span> The Central Planner</h2>
+<p>Suppose now, instead, that a central planner is in charge of organising consumption and investment for all individuals. The planner operates by aggregating individual utility, discounting future generations at the rate <span class="math inline">\(\gamma.\)</span> <strong>Note:</strong> <span class="math inline">\(\gamma\)</span> is the discount rate of future <em>generations</em>, not how young people discount old-age utility.</p>
+<p>Her utility considers the utility of all generations, including the initial old generation who owns the initial stock of capital <span class="math inline">\(k_0.\)</span></p>
+<section id="planners-utility" class="level3" data-number="2.13.1">
+<h3 data-number="2.13.1" class="anchored" data-anchor-id="planners-utility"><span class="header-section-number">2.13.1</span> Planner’s utility</h3>
+<p>Planner’s utility reads:</p>
+<p><span class="math display">\[
+\sum_{t=-1}^\infty \gamma^t U(c_t, d_{t+1}).
+\]</span></p>
+<p>Note that, although the planner can decide any allocation, she must respect the resource constraint:</p>
+<p><span class="math display">\[
+f(k_t) + (1-\delta) k_t = c_t + \frac{1}{1+n} d_t + (1+n)k_{t+1}.
+\]</span></p>
+<p>Assume that <span class="math inline">\(U(c_t, d_{t+1})\)</span> is separable: <span class="math inline">\(U(c_t, d_{t+1}) = u(c_t) + \beta u(d_{t+1}).\)</span> Expanding the utility of the planner, we can reformulate it in more convenient terms:</p>
+<p><span class="math display">\[
+\begin{aligned}
+&amp;\sum_{t=-1}^\infty \gamma^t \left(u(c_t)+\beta u(d_{t+1}) \right) = \\
+&amp;= \gamma^{-1}u(c_{-1}) +\gamma^{-1}\beta u(d_0) + \gamma^0 u(c_0)+ \gamma^0 \beta u(d_1) + \gamma^1 u(c_1) + \gamma^1 \beta u(d_2) + \ldots \\
+&amp;= \sum_{t=0}^\infty \gamma^t \left(u(c_t) + \frac{\beta}{\gamma} u(d_t) \right) + \gamma^{-1}u(c_{-1}).
+\end{aligned}
+\]</span></p>
+<p>The term <span class="math inline">\(\gamma^{-1}u(c_{-1})\)</span> represents the consumption of the generation born at <span class="math inline">\(t=-1\)</span>, but since it is a constant it will not affect the maximisation.</p>
+<p>Hence, the planner’s problem is now how to allocate consumption between the young and old that are alive during period <span class="math inline">\(t\)</span>.</p>
+</section>
+<section id="maximisation" class="level3" data-number="2.13.2">
+<h3 data-number="2.13.2" class="anchored" data-anchor-id="maximisation"><span class="header-section-number">2.13.2</span> Maximisation</h3>
+<p>We use a substitution to obtain the planner’s optimal allocation, namely, the Euler equation;</p>
+<p><span class="math display">\[
+\begin{aligned}
+&amp;\max_{k_{t+1}, c_t, d_t} \sum_{t=0}^\infty \gamma^t \left(u(c_t) + \frac{\beta}{\gamma} u(d_t)\right) \\\\\\
+&amp;\mathrm{s.t.}\, f(k\_t) + (1-\delta)k\_{t} = c\_t + \frac{1}{1+n}d\_t + (1+n)k\_{t+1}.
+\end{aligned}
+\]</span></p>
+<p><span class="math display">\[
+\max_{c_t, k_{t+1}} \sum_{t=0}^\infty \gamma^t \left( u(c_t) + \frac{\beta}{\gamma}u\Bigg(\underbrace{\left[1+n\right]\left[f(k_t)+(1-\delta)k_t -(1+n)k_{t+1} - c_t\right]\Bigg)}_{d_t}\right).
+\]</span></p>
+<p>Taking derivatives and equating them to zero yields:</p>
+<p><span class="math display">\[
+\gamma^t u^\prime(c_t) = \gamma^t \frac{\beta}{\gamma} u^\prime(d_t)(1+n)
+\]</span> <span class="math display">\[
+\gamma^t\frac{\beta}{\gamma}u^\prime (d\_t)(1+n)(1+n)=\gamma^{t+1}\frac{\beta}{\gamma}(1+n)u^\prime (d\_{t+1})\left(f^\prime (k\_{t+1}) + 1 - \delta \right).
+\]</span></p>
+<p>Combining both equations we get the Euler equation:</p>
+<p><span class="math display">\[
+u^\prime (c_t) = \beta u^\prime (d_{t+1})\left(f^\prime (k_{t+1}) + 1 -\delta \right).
+\]</span></p>
+<p>The planner’s Euler equation coincides with the decentralised one, where we had <span class="math inline">\(R_{t+1} = f^\prime(k_{t+1}) + 1 -\delta.\)</span></p>
+<p>However, the planner also allocates consumption between the young and the old at time <span class="math inline">\(t\)</span>. <span class="math display">\[
+\gamma^t u^\prime(c_t) = \gamma^t \frac{\beta}{\gamma} u^\prime(d_t)(1+n)
+\]</span></p>
+<p>In the centralised equilibrium, individuals do <em>not</em> arbitrage between young and old consumption at time <span class="math inline">\(t.\)</span> We missed this equation because individuals are short-sighted, and only derive utility while alive. Hence, they have no interest in trading off utility with the young generation once they are old.</p>
+</section>
+<section id="steady-state-and-modified-golden-rule" class="level3" data-number="2.13.3">
+<h3 data-number="2.13.3" class="anchored" data-anchor-id="steady-state-and-modified-golden-rule"><span class="header-section-number">2.13.3</span> Steady state and modified golden rule</h3>
+<p>Using the fact that <span class="math display">\[
+\gamma^t\frac{\beta}{\gamma}u^\prime (d_t)(1+n)(1+n)=\gamma^{t+1}\frac{\beta}{\gamma}(1+n)u^\prime (d_{t+1})\left(f^\prime (k_{t+1}) + 1 - \delta \right)
+\]</span></p>
+<p>we can easily characterise the steady state knowing that <span class="math inline">\(d_t = d_{t+1} = \bar{d}, k_t = k_{t+1} = \bar{k}.\)</span></p>
+<p><span class="math display">\[
+f^\prime (\bar{k}) = \frac{1+n}{\gamma}+1-\delta.
+\]</span></p>
+<p>This equation provides us with the modified golden rule: the level of capital that maximises the planner’s utility. Clearly, if <span class="math inline">\(\gamma=1\)</span>, the planner attributes the same weight to all generations and we recover the golden rule: <span class="math inline">\(f^\prime(k) = n + \delta.\)</span> As we discussed before, it is quite <em>unlikely</em> the decentralised equilibrium converges towards the golden rule (modified or not).</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-De_la_Croix_2009" class="csl-entry" role="listitem">
+Croix, David de la, and Philippe Michel. 2009. <em>A Theory of Economic Growth</em>. Cambridge, England: Cambridge University Press.
+</div>
+<div id="ref-diamond_1965" class="csl-entry" role="listitem">
+Diamond, Peter A. 1965. <span>“National Debt in a Neoclassical Growth Model.”</span> <em>The American Economic Review</em> 55 (5): 1126–50. <a href="http://www.jstor.org/stable/1809231">http://www.jstor.org/stable/1809231</a>.
+</div>
+<div id="ref-groth" class="csl-entry" role="listitem">
+Groth, Christian. 2016. <span>“Lecture Notes: Chapter 3, 2016.”</span> <a href="http://web.econ.ku.dk/okocg/MAT-OEK/Mak%C3%98k2/Mak%C3%98k2-2016/Forel%C3%A6sninger/Ch%203-2016-1.pdf" class="uri">http://web.econ.ku.dk/okocg/MAT-OEK/Mak%C3%98k2/Mak%C3%98k2-2016/Forel%C3%A6sninger/Ch%203-2016-1.pdf</a>.
+</div>
+<div id="ref-Romer_2018" class="csl-entry" role="listitem">
+Romer, David. 2018. <em>Advanced Macroeconomics</em>. 5th ed. Columbus, OH: McGraw-Hill Education.
+</div>
+</div>
+</section>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>The Ramsey model can be seen as an extension to the OLG model when agents are altruistic enough.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Other set-ups are possible within the LG framework. These can include more periods, individuals may accumulate human capital when young, etc.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./index.html" class="pagination-link" aria-label="Introduction">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./de_la_croix_dottori.html" class="pagination-link" aria-label="de la Croix and Dottori (2008)">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">de la Croix and Dottori (2008)</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

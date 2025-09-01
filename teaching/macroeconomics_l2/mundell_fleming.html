@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.34">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>6&nbsp; Le modèle Mundell-Fleming – Macroéconomie (L2)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./oa_da.html" rel="next">
+<link href="./is_lm_model_part_2.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-3ce0956f7babb2a12842f6225a6cff9b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Èric Roca Fernández</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../../index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../teaching.html"> 
+<span class="menu-text">Teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../contact.html"> 
+<span class="menu-text">Contact</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <a href="./Macroéconomie--L2-.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./mundell_fleming.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Le modèle Mundell-Fleming</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./classical_economics.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Le modèle classique</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./is_lm_model.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Le modèle IS-LM</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./is_lm_model_part_2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Politique budgétaire et monétaire dans le modèle IS-LM</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./mundell_fleming.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Le modèle Mundell-Fleming</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./oa_da.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Le modèle Offre Agrégée - Demande Agrégée</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#hypothèses-du-modèle-mundell-fleming" id="toc-hypothèses-du-modèle-mundell-fleming" class="nav-link active" data-scroll-target="#hypothèses-du-modèle-mundell-fleming"><span class="header-section-number">6.1</span> Hypothèses du modèle Mundell-Fleming</a></li>
+  <li><a href="#la-courbe-ismf" id="toc-la-courbe-ismf" class="nav-link" data-scroll-target="#la-courbe-ismf"><span class="header-section-number">6.2</span> La courbe <span class="math inline">IS^{MF}</span></a></li>
+  <li><a href="#la-courbe-lmmf" id="toc-la-courbe-lmmf" class="nav-link" data-scroll-target="#la-courbe-lmmf"><span class="header-section-number">6.3</span> La courbe <span class="math inline">LM^{MF}</span></a></li>
+  <li><a href="#ismf-et-lmmf" id="toc-ismf-et-lmmf" class="nav-link" data-scroll-target="#ismf-et-lmmf"><span class="header-section-number">6.4</span> <span class="math inline">IS^{MF}</span> et <span class="math inline">LM^{MF}</span></a></li>
+  <li><a href="#types-de-taux-de-change" id="toc-types-de-taux-de-change" class="nav-link" data-scroll-target="#types-de-taux-de-change"><span class="header-section-number">6.5</span> Types de taux de change</a>
+  <ul class="collapse">
+  <li><a href="#taux-de-change-flottant" id="toc-taux-de-change-flottant" class="nav-link" data-scroll-target="#taux-de-change-flottant"><span class="header-section-number">6.5.1</span> Taux de change flottant</a></li>
+  <li><a href="#taux-de-change-fixe" id="toc-taux-de-change-fixe" class="nav-link" data-scroll-target="#taux-de-change-fixe"><span class="header-section-number">6.5.2</span> Taux de change fixe</a></li>
+  <li><a href="#politique-commerciale-avec-taux-de-change-fixe" id="toc-politique-commerciale-avec-taux-de-change-fixe" class="nav-link" data-scroll-target="#politique-commerciale-avec-taux-de-change-fixe"><span class="header-section-number">6.5.3</span> Politique commerciale avec taux de change fixe</a></li>
+  </ul></li>
+  <li><a href="#taux-de-change-fixe-ou-flottant" id="toc-taux-de-change-fixe-ou-flottant" class="nav-link" data-scroll-target="#taux-de-change-fixe-ou-flottant"><span class="header-section-number">6.6</span> Taux de change fixe ou flottant?</a>
+  <ul class="collapse">
+  <li><a href="#attaques-spéculatifs-caisse-démission-monétaire" id="toc-attaques-spéculatifs-caisse-démission-monétaire" class="nav-link" data-scroll-target="#attaques-spéculatifs-caisse-démission-monétaire"><span class="header-section-number">6.6.1</span> Attaques spéculatifs, caisse d’émission monétaire</a></li>
+  <li><a href="#triangle-dincompatibilité-impossible-trinity" id="toc-triangle-dincompatibilité-impossible-trinity" class="nav-link" data-scroll-target="#triangle-dincompatibilité-impossible-trinity"><span class="header-section-number">6.6.2</span> Triangle d’incompatibilité (“Impossible Trinity”)</a></li>
+  </ul></li>
+  <li><a href="#td" id="toc-td" class="nav-link" data-scroll-target="#td"><span class="header-section-number">6.7</span> TD</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Le modèle Mundell-Fleming</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Le modèle de Mundell-Fleming est un modèle macroéconomique qui étend le modèle IS-LM à une économie ouverte, prenant en compte les interactions internationales. Il est essentiel pour comprendre comment les politiques monétaires et fiscales influencent les économies ouvertes, en particulier dans le contexte des taux de change flottants et fixes. Il est décrit comme “le paradigme dominant pour étudier la politique monétaire et fiscale en économie ouverte”.</p>
+<p>Le modèle Mundell-Fleming est basé sur le modèle IS-LM, mais il introduit des éléments clés pour traiter les économies ouvertes. On maintient l’hypothèse d’un <em>niveau de prix fixe</em>, ce qui permet de se concentrer sur les interactions entre le marché des biens (et donc le revenu) et le marché monétaire à court terme. La différence majeure réside dans l’hypothèse d’une <strong>petite économie ouverte</strong> avec une <strong>mobilité parfaite des capitaux</strong>, ce qui signifie que le <strong>taux d’intérêt national est déterminé par le taux d’intérêt mondial</strong>.</p>
+<p>Aujourd’hui, le modèle Mundell-Fleming utile pour analyser comment les flux internationaux de capitaux et de biens influencent les économies nationales. À l’époque de sa création, il visait à résoudre des questions cruciales sur l’efficacité des régimes de taux de change flottants par rapport aux taux fixes.</p>
+<section id="hypothèses-du-modèle-mundell-fleming" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="hypothèses-du-modèle-mundell-fleming"><span class="header-section-number">6.1</span> Hypothèses du modèle Mundell-Fleming</h2>
+<p>L’économie décrite par le modèle Mundell-Fleming repose sur plusieurs hypothèses clés:</p>
+<ol type="1">
+<li><strong>Petite économie ouverte</strong>:
+<ul>
+<li><em>Ouverte</em> signifie que l’économie commerce avec ses partenaires internationaux, entraînant des flux de biens et de capitaux.</li>
+<li><em>Petite</em> indique que l’économie ne peut pas influencer certaines variables déterminées à l’échelle mondiale, notamment le taux d’intérêt.</li>
+</ul></li>
+<li><strong>Mobilité parfaite des capitaux</strong>: Les capitaux peuvent circuler librement entre les pays
+<ul>
+<li>Conséquence: le taux d’intérêt national est déterminé par le taux d’intérêt mondial.</li>
+</ul></li>
+<li><strong>Niveau de prix fixe</strong>: Le niveau des prix est constant à court terme, ce qui permet de se concentrer sur les interactions entre le marché des biens et le marché monétaire.</li>
+</ol>
+<p>Comme l’économie commerce, nous devons tenir compte des importations et des exportations dans l’équation de la courbe IS. Cependant, la courbe LM devient plus simple car le taux d’intérêt est fixe et déterminé à l’échelle mondiale.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Petite économie ouverte">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Petite économie ouverte
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Le modèle Mundell-Fleming est conçu pour une petite économie ouverte, ce qui signifie qu’il ne prend pas en compte les effets des politiques économiques sur les taux d’intérêt mondiaux. Ainsi, le taux d’intérêt national est considéré comme exogène et constant:</p>
+<p><span id="eq-r_star"><span class="math display">
+r = r^\star
+\tag{6.1}</span></span></p>
+<p>Pour comprendre cette hypothèse, il est utile de considérer que le pays est trop petit pour influencer les taux d’intérêt mondiaux. Imaginons qu’un événement se produise dans le pays, entraînant une augmentation du taux d’intérêt national. Comme le capital est parfaitement mobile, les investisseurs étrangers seraient attirés par ce taux d’intérêt plus élevé. Ils investiraient dans le pays, augmentant l’offre de capitaux et faisant baisser le taux d’intérêt jusqu’à ce qu’il revienne à son niveau mondial <span class="math inline">r^\star</span>.</p>
+<p>Par conséquent, le taux d’intérêt national est fixé de manière exogène.</p>
+</div>
+</div>
+</section>
+<section id="la-courbe-ismf" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="la-courbe-ismf"><span class="header-section-number">6.2</span> La courbe <span class="math inline">IS^{MF}</span></h2>
+<p>Dans le modèle IS-LM, la courbe IS représente l’équilibre sur le marché des biens, où la production totale est égale à la demande globale. À différence du modèle IS-LM, cette courbe tient compte des <em>exportations nettes</em> (exportations moins importations), qui sont influencées par le taux de change.</p>
+<p>La courbe <span class="math inline">IS^{MF}</span> est définie par l’équation suivante:</p>
+<p><span id="eq-is_mf"><span class="math display">
+Y = C(Y-T) + I(r) + G + NX(e)
+\tag{6.2}</span></span></p>
+<p>Le nouveau terme <span class="math inline">NX(e)</span> représente les exportations nettes, qui dépendent du taux de change nominal <span class="math inline">e</span>.</p>
+<p>Imaginons que le pays exporte davantage. Ceci implique les exportations nettes <span class="math inline">NX(e)</span> augmentent et, donc, le revenu. L’augmentation du revenu se produit car il est nécessaire de produire les biens et services avant de pouvoir les exporter. De même, si les importations augmentent, les exportations nettes diminuent, ce qui réduit le revenu, car les importations représentent une partie de la consommation produite à l’étranger et, donc, non générée dans le pays.</p>
+<p>Nous avons indiqué que les exportations nettes <span class="math inline">NX(e)</span> dépendent du taux de change nominal <span class="math inline">e</span>.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> Ici, <span class="math inline">e</span> mesure la quantité de monnaie étrangère nécessaire pour acheter une unité de monnaie domestique. Par exemple, si <span class="math inline">e = 50</span>, cela signifie qu’il faut 50 pesos pour acheter un euro, et on pourrait écrire <span class="math inline">e = 50 \frac{USD}{EUR}</span>.</p>
+<p>Quand <span class="math inline">e</span> augmente, la monnaie domestique s’apprécie: il faut plus de monnaie étrangère pour acheter une unité de monnaie domestique.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Taux de change et importations">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Taux de change et importations
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Imaginons qu’une voiture coûte 32000 euros en France et 31500 dollars aux USA. Faisons l’hypothèse que 1 euro coûte 1.05 dollars, ainsi <span class="math inline">e=1.05 \frac{USD}{EUR}</span> et ignorons les coûts de transport.</p>
+<p>En conséquence, la voiture produite aux USA coûte <span class="math inline">31500 USD \frac{1}{1.05\frac{USD}{EUR}} = 30000 EUR</span> et on préfère importer la voiture étrangère.</p>
+<p>Imaginons que l’euro de déprécie et passe de <span class="math inline">1.05\frac{USD}{EUR}</span> à <span class="math inline">0.95\frac{USD}{EUR}</span>. La voiture étrangère coûte maintenant <span class="math inline">31500 USD \frac{1}{0.95 \frac{USD}{EUR}} = 33157 EUR</span> et, donc, on préfère acheter la voiture locale.</p>
+<p>En conséquence, une <strong>dépréciation de la monnaie augmente les exportations nettes.</strong></p>
+</div>
+</div>
+<p>Avec notre notation, les exportations nettes <span class="math inline">NX(e)</span> sont une fonction <em>décroissante</em> de <span class="math inline">e</span>: si <span class="math inline">e</span> augmente, <span class="math inline">NX(e)</span> diminue.</p>
+<p>Enfin, comme <span class="math inline">r = r^\star</span> est constant, l’investissement <span class="math inline">I(r)</span> devient constant, sauf si <span class="math inline">r^star</span> change. Ainsi, la courbe <span class="math inline">IS^{MF}</span> ne dépend pas de <span class="math inline">r</span> et peut être écrite comme suit, en sachant que quand <span class="math inline">r^\star</span> change la courbe se déplace (de manière similaire au fait que quand <span class="math inline">G</span> change la courbe IS se déplace):</p>
+<p><span id="eq-is_mf_simplified"><span class="math display">
+Y = C(Y-T) + \bar{I} + G + NX(e)
+\tag{6.3}</span></span></p>
+<p>Cette courbe est décroissante sur le plan <span class="math inline">(Y,e)</span>. Imaginons que <span class="math inline">e</span> <em>augmente</em>, et donc, <span class="math inline">NX(e)</span> diminue. La partie droite de l’équation diminue, ce qui implique que le <em>revenu <span class="math inline">Y</span> doit diminuer</em> pour que l’équation soit satisfaite.</p>
+<p>Mathématiquement, nous avons:</p>
+<p><span class="math display">
+\mathrm{d}Y = c_1 \mathrm{d}Y + NX'(e) \mathrm{d}e \implies \frac{\mathrm{d}e}{\mathrm{d}Y} = \frac{1-c_1}{NX'(e)} &lt; 0
+</span></p>
+<p>car <span class="math inline">NX'(e) &lt; 0</span> et <span class="math inline">c_1 \in (0,1)</span>.</p>
+<div id="cell-fig-is_mf" class="cell" data-execution_count="3">
+<div class="cell-output cell-output-display">
+<div id="fig-is_mf" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-is_mf-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="mundell_fleming_files/figure-html/fig-is_mf-output-1.png" width="678" height="524" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-is_mf-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.1: Courbe IS dans le modèle Mundell-Fleming
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="la-courbe-lmmf" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="la-courbe-lmmf"><span class="header-section-number">6.3</span> La courbe <span class="math inline">LM^{MF}</span></h2>
+<p>Le marché de la monnaie est représenté par la courbe <span class="math inline">LM^{MF}</span>, qui est base sur les mêmes principes que la courbe LM du modèle IS-LM. Ainsi, elle continue de représenter l’équilibre entre l’offre et la demande d’encaisses réels et l’équation de la courbe est:</p>
+<p><span id="eq-lm_mf"><span class="math display">
+\frac{M^s}{p} = L(Y,r)
+\tag{6.4}</span></span></p>
+<p>Dans cette équation, <span class="math inline">\frac{M^s}{p}</span> est la quantité d’encaisses réels offertes par la banque centrale, où <span class="math inline">M^s</span> est l’offre monétaire et <span class="math inline">p</span> est le niveau des prix. Côté demande, <span class="math inline">L(Y,r)</span> est la demande d’encaisses réels en fonction du revenu <span class="math inline">Y</span> et du taux d’intérêt <span class="math inline">r</span>. Comme les capitaux sont parfaitement mobiles, le taux d’intérêt est constant et égal au taux d’intérêt mondial <span class="math inline">r^\star</span>. Par conséquent, la courbe <span class="math inline">LM^{MF}</span> est une droite verticale, car la demande d’encaisses réels ne dépend pas du taux d’intérêt mais seulement du revenu <span class="math inline">Y</span>:</p>
+<p><span class="math display">
+L(Y,r^\star) = L(Y)
+</span></p>
+<p>Le taux de change n’intervient pas dans la courbe <span class="math inline">LM^{MF}</span>.</p>
+<div id="cell-fig-lm_mf" class="cell" data-execution_count="4">
+<div class="cell-output cell-output-display">
+<div id="fig-lm_mf" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-lm_mf-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="mundell_fleming_files/figure-html/fig-lm_mf-output-1.png" width="678" height="524" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lm_mf-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.2: Courbe LM dans le modèle Mundell-Fleming
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="ismf-et-lmmf" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="ismf-et-lmmf"><span class="header-section-number">6.4</span> <span class="math inline">IS^{MF}</span> et <span class="math inline">LM^{MF}</span></h2>
+<p>Les courbes <span class="math inline">IS^{MF}</span> et <span class="math inline">LM^{MF}</span> sont les deux éléments clés du modèle Mundell-Fleming. La courbe <span class="math inline">IS^{MF}</span> représente l’équilibre sur le marché des biens, tandis que la courbe <span class="math inline">LM^{MF}</span> représente l’équilibre sur le marché de la monnaie. L’équilibre global de l’économie est atteint lorsque les deux courbes se croisent, ce qui signifie que le niveau de revenu <span class="math inline">Y</span> et le taux de change <span class="math inline">e</span> sont en équilibre simultanément.</p>
+<p><span id="eq-mf_equilibrium"><span class="math display">
+\begin{aligned}
+    Y &amp;= C(Y-T) + I(r^\star) + G + NX(e) \\
+    \frac{M^s}{p} &amp;= L(Y, r^\star)
+\end{aligned}
+\tag{6.5}</span></span></p>
+<div id="cell-fig-mf_equilibrium" class="cell" data-execution_count="5">
+<div class="cell-output cell-output-display">
+<div id="fig-mf_equilibrium" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-mf_equilibrium-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="mundell_fleming_files/figure-html/fig-mf_equilibrium-output-1.png" width="660" height="526" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mf_equilibrium-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.3: Équilibre dans le modèle Mundell-Fleming
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="types-de-taux-de-change" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="types-de-taux-de-change"><span class="header-section-number">6.5</span> Types de taux de change</h2>
+<p>Le modèle Mundell-Fleming est particulièrement utile pour analyser les effets des politiques économiques dans le contexte de différents types de taux de change. Principalement, on peut distinguer deux types de taux de change: les taux de change flottants et les taux de change fixes.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> Comme on verra, le type de taux de change influence l’efficacité des politiques budgétaires et monétaires.</p>
+<section id="taux-de-change-flottant" class="level3" data-number="6.5.1">
+<h3 data-number="6.5.1" class="anchored" data-anchor-id="taux-de-change-flottant"><span class="header-section-number">6.5.1</span> Taux de change flottant</h3>
+<p>Dans un système de taux de change flottant, le taux de change est déterminé par les forces du marché, c’est-à-dire par l’offre et la demande de la monnaie locale par rapport à la monnaie étrangère. Ainsi, le taux de change s’ajuste en fonction des conditions économiques, des flux de capitaux et des politiques économiques. Cela veut dire que le taux de change <span class="math inline">e</span> peut varier librement en fonction des conditions du marché, y compris les politiques économiques mises en place par le gouvernement et la banque centrale.</p>
+<section id="la-politique-fiscale-sous-un-taux-de-change-flottant" class="level4" data-number="6.5.1.1">
+<h4 data-number="6.5.1.1" class="anchored" data-anchor-id="la-politique-fiscale-sous-un-taux-de-change-flottant"><span class="header-section-number">6.5.1.1</span> La politique fiscale sous un taux de change flottant</h4>
+<p>Imaginons que le gouvernement décide d’augmenter les dépenses publiques <span class="math inline">G</span> ou de réduire les impôts <span class="math inline">T</span>, avec l’objectif de stimuler l’économie. Cette politique budgétaire déplace la courbe <span class="math inline">IS^{MF}</span> vers la droite, car une augmentation de <span class="math inline">G</span> ou une réduction de <span class="math inline">T</span> augmente la demande globale et, par conséquent, le revenu <span class="math inline">Y</span>. La <a href="#fig-mf_floating_g" class="quarto-xref">Figure&nbsp;<span>6.4</span></a> montre l’effet de cette politique budgétaire.</p>
+<div id="cell-fig-mf_floating_g" class="cell" data-execution_count="6">
+<div class="cell-output cell-output-display">
+<div id="fig-mf_floating_g" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-mf_floating_g-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="mundell_fleming_files/figure-html/fig-mf_floating_g-output-1.png" width="660" height="524" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mf_floating_g-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.4: Politique budgétaire avec taux de change flottant
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Comme résultat, on observe une appréciation de la monnaie locale, c’est-à-dire, le taux de change <span class="math inline">e</span> augmente. Cependant, contrairement au modèle IS-LM, la politique budgétaire n’a aucun impact sur le niveau de revenu <span class="math inline">Y</span>.</p>
+<p>Ce résultat peut sembler surprenant, car dans le modèle IS-LM, une augmentation des dépenses publiques entraîne une augmentation du revenu.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Pourquoi la politique budgétaire n'affecte pas le revenu avec un taux de change flottant?">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Pourquoi la politique budgétaire n’affecte pas le revenu avec un taux de change flottant?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Pour comprendre pourquoi la politique budgétaire n’affecte pas le revenu dans le modèle Mundell-Fleming avec un taux de change flottant, il est essentiel de considérer les mécanismes en jeu.</p>
+<p>Revenons à une économie fermée sans commerce international. Dans une économie fermée, une augmentation de <span class="math inline">G</span> entraîne une augmentation du taux d’intérêt, car la demande de fonds pour financer les dépenses publiques augmente. Mais, quand l’économie est ouverte, les flux de capitaux internationaux entrent en jeu. Comme <strong>le taux d’intérêt local serait supérieur au taux d’intérêt mondial</strong> <span class="math inline">r^\star</span>, les investisseurs étrangers cherchent à investir dans le pays pour profiter de ce taux d’intérêt plus élevé. <strong>Cependant, pour investir dans le pays, les investisseurs étrangers doivent détenir la monnaie locale.</strong> Cela augmente la demande de monnaie locale, ce qui entraîne une appréciation de la monnaie locale, c’est-à-dire, une augmentation du taux de change <span class="math inline">e</span>. Cette appréciation rend les importations moins chères et les exportations plus chères, ce qui réduit les exportations nettes <span class="math inline">NX(e)</span>.</p>
+<ul>
+<li>Augmentation de <span class="math inline">G \rightarrow</span> Augmentation de la demande de fonds</li>
+<li>Augmentation du taux d’intérêt</li>
+<li>Entrée de capitaux étrangers</li>
+<li>Appréciation de la monnaie locale</li>
+<li>Diminution des exportations nettes <span class="math inline">NX(e)</span></li>
+<li>Équilibre atteint avec le même niveau de revenu <span class="math inline">Y</span></li>
+</ul>
+<p>Mathématiquement, comme <span class="math inline">r</span> est constant et exogène, un seul niveau de revenu est possible. En conséquence, toute augmentation de <span class="math inline">G</span> doit être compensée par une diminution de <span class="math inline">NX(e)</span> de même montant.</p>
+</div>
+</div>
+</section>
+<section id="la-politique-monétaire-sous-un-taux-de-change-flottant" class="level4" data-number="6.5.1.2">
+<h4 data-number="6.5.1.2" class="anchored" data-anchor-id="la-politique-monétaire-sous-un-taux-de-change-flottant"><span class="header-section-number">6.5.1.2</span> La politique monétaire sous un taux de change flottant</h4>
+<p>Imaginons maintenant que la banque centrale décide d’augmenter l’offre de monnaie <span class="math inline">M^s</span>. Comme le niveau de prix <span class="math inline">p</span> est constant, ceci augmente l’offre d’encaisses réels <span class="math inline">\frac{M^s}{p}</span>, ce qui déplace la courbe <span class="math inline">LM^{MF}</span> vers la droite. L’effet total de cette politique est une augmentation du revenu <span class="math inline">Y</span> et une diminution du taux de change <span class="math inline">e</span>, comme montré dans la <a href="#fig-mf_floating_ms" class="quarto-xref">Figure&nbsp;<span>6.5</span></a>.</p>
+<div id="cell-fig-mf_floating_ms" class="cell" data-execution_count="7">
+<div class="cell-output cell-output-display">
+<div id="fig-mf_floating_ms" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-mf_floating_ms-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="mundell_fleming_files/figure-html/fig-mf_floating_ms-output-1.png" width="660" height="527" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mf_floating_ms-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.5: Politique monétaire avec taux de change flottant
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Même si le résultat est équivalent à celui du modèle IS-LM, le mécanisme de transmission est différent.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Pourquoi la politique monétaire augmente le revenu avec un taux de change flottant?">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Pourquoi la politique monétaire augmente le revenu avec un taux de change flottant?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>La politique monétaire augmente le revenu avec un taux de change flottant en influençant les taux d’intérêt et les flux de capitaux.</p>
+<p>Comme dans l’analyse précédente, il est pratique de considérer d’abord une économie fermée. Dans une économie fermée, une augmentation de l’offre monétaire entraîne une baisse des taux d’intérêt, ce qui stimule l’investissement et augmente le revenu.</p>
+<p>Cependant, dans une économie ouverte, les flux de capitaux internationaux entrent en jeu. <strong>Avec un taux d’intérêt domestique plus bas que le taux d’intérêt mondial</strong> <span class="math inline">r^\star</span>, les investisseurs étrangers cherchent à investir hors du pays pour profiter de taux d’intérêt plus élevés. Ainsi, les investisseurs étrangers quittent le pays, ce qui augmente l’offre de monnaie locale et déprécie la monnaie nationale. Mais, <strong>pour quitter le pays, les investisseurs doivent vendre la monnaie locale, ce qui augmente l’offre de monnaie locale sur le marché international et la déprécie</strong>. Cette dépréciation rend les biens domestiques moins chers par rapport aux biens étrangers, ce qui augmente les exportations nettes <span class="math inline">NX(e)</span>.</p>
+<ul>
+<li>Augmentation de <span class="math inline">M \rightarrow</span> baisse du taux d’intérêt</li>
+<li>Sortie de capitaux étrangers</li>
+<li>Augmentation de l’offre de monnaie locale</li>
+<li>Dépréciation de la monnaie locale</li>
+<li>Augmentation des exportations nettes <span class="math inline">NX(e)</span></li>
+<li>Équilibre atteint avec un revenu <span class="math inline">Y</span> plus élevé</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="la-politique-commerciale-avec-taux-de-change-flottant" class="level4" data-number="6.5.1.3">
+<h4 data-number="6.5.1.3" class="anchored" data-anchor-id="la-politique-commerciale-avec-taux-de-change-flottant"><span class="header-section-number">6.5.1.3</span> La politique commerciale avec taux de change flottant</h4>
+<p>Le modèle Mundell-Fleming nous permet d’analyser l’impact des politiques commerciales (absentes dans le modèle IS-LM) sur l’économie. Ce type de politique est typiquement mise en oeuvre par le biais des tarifs douaniers, qui cherchent à protéger les industries nationales de la concurrence étrangère.</p>
+<p>Imaginons que le gouvernement <strong>décide d’augmenter les tarifs douaniers sur les importations.</strong> Cette décision déplace la courbe <span class="math inline">NX(e)</span> vers la droite, car une augmentation des tarifs douaniers sur les importations diminue les importations, augmentant ainsi les exportations nettes. <em>Rappel</em>: <span class="math inline">NX(e) = X(e) - M(e)</span> et si <span class="math inline">M(e)</span> diminue, alors <span class="math inline">NX(e)</span> augmente.</p>
+<p>Cependant, comme la courbe <span class="math inline">LM^{MF}</span> est verticale, ceci ne change pas le revenu <span class="math inline">Y</span> et le seul effet est une appréciation du taux de change <span class="math inline">e</span>, comme montré dans la <a href="#fig-mf_floating_commercial" class="quarto-xref">Figure&nbsp;<span>6.6</span></a>.</p>
+<div id="cell-fig-mf_floating_commercial" class="cell" data-execution_count="8">
+<div class="cell-output cell-output-display">
+<div id="fig-mf_floating_commercial" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-mf_floating_commercial-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="mundell_fleming_files/figure-html/fig-mf_floating_commercial-output-1.png" width="660" height="523" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mf_floating_commercial-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.6: Politique commerciale avec taux de change flottant
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Le raisonnement est similaire à celui d’une augmentation de <span class="math inline">G</span>. Quand les exportations nettes <span class="math inline">NX(e)</span> augmentent, cela génère une pression sur le revenu et le taux d’intérêt, qui augmente. Or, <span class="math inline">r</span> ne peut pas changer car il est exogène et, donc, un flux de capital entre dans le pays pour profiter de la différence de taux d’intérêt, ce qui augmente la demande de monnaie locale et, donc, apprécie le taux de change <span class="math inline">e</span>. Avec l’apréciation du taux de change, les biens domestiques deviennent plus chers par rapport aux biens étrangers, ce qui réduit les exportations nettes <span class="math inline">NX(e)</span> jusqu’à leur niveau initial, contrabalant l’effet initial de l’augmentation des tarifs douaniers.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Paradoxe de la politique commerciale">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Paradoxe de la politique commerciale
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Normalement, les pays déploient une politique commerciale pour modifier la balance commerciale. Or, le modèle Mundell-Fleming nous montre qu’avec un taux de change flottant, ce type de politique commerciale n’a aucun effet sur la balance commerciale. Meme si la restriction initiale tend à augmenter les exportations nettes, l’appréciation du taux de change réduit les exportations nettes et la balance commerciale revient à son niveau initial.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="taux-de-change-fixe" class="level3" data-number="6.5.2">
+<h3 data-number="6.5.2" class="anchored" data-anchor-id="taux-de-change-fixe"><span class="header-section-number">6.5.2</span> Taux de change fixe</h3>
+<p>Dans un système de taux de change fixe, le taux de change est maintenu constant par la banque centrale. Cela signifie que la banque centrale s’engage à acheter ou vendre sa monnaie locale contre une monnaie étrangère à un taux de change prédéterminé. Ce type de régime monétaire est souvent utilisé pour stabiliser la monnaie locale et éviter les fluctuations excessives du taux de change.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Comment un taux de change fixe est maintenu?">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Comment un taux de change fixe est maintenu?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Pour maintenir un taux de change fixe, la banque centrale doit intervenir sur le marché des changes. Elle le fait en achetant ou en vendant sa monnaie locale contre une monnaie étrangère au taux de change fixé.</p>
+<p>Par exemple, si la banque centrale fixe le taux de change à 100 yuans par euro, elle s’engage à acheter des euros à ce taux et à vendre des euros à ce même taux. Cela implique que <strong>la banque centrale doit disposer de réserves suffisantes de la monnaie étrangère</strong> pour pouvoir intervenir sur le marché. Par contre, elle peut imprimer sa propre monnaie locale pour répondre à la demande de sa monnaie.</p>
+<p>Une implication importante de ce système est que les interventions de la banque centrale modifient l’offre monétaire.</p>
+<p>Imaginons que, même si la banque centrale fixe le taux de change à 100 yuans par euro, le marché international détermine un taux de change de 150 yuans par euro. Cela veut dire qu’un euro vaut 150 yuans dans le marché international et seulement 100 yuans dans le marché local. Un arbitragiste peut acheter 300 yuans pour 2 euros dans le marché international. Ensuite, il peut vendre ces 300 yuans à la banque centrale pour obtenir 3 euros, réalisant ainsi un profit de 1 euro. Chaque fois que la banque centrale achète des yuans et vend des euros, l’offre monétaire augmente. Sur le marché international, la demande de yuans augmente, ce qui déprécie l’euro jusqu’à ce que le taux de change revienne à 100 yuans par euro.</p>
+<p>À l’inverse, si la banque centrale fixe le taux de change à 100 yuans par euro tandis que le marché international détermine un taux de change de 50 yuans par euro, un arbitragiste peut acheter 100 yuans pour 1 euro à la banque centrale et vendre les yuans pour obtenir 2 euros. Chaque fois que la banque centrale vend des yuans contre des euros, l’offre monétaire diminue (et les réserves de yuans de la banque centrale diminuent). Sur le marché international, l’offre de yuans augmente, ce qui déprecie le yuan et apprécie l’euro jusqu’à ce que le taux de change revienne à 100 yuans par euro.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="La étalon-or">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+La étalon-or
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Pendant la fin du XIXe et le début du XXe siècle, la plupart des grandes économies mondiales fonctionnaient sous l’étalon-or. Chaque pays maintenait une réserve d’or et s’engageait à échanger une unité de sa monnaie contre une quantité d’or spécifiée. Grâce à l’étalon-or, les économies mondiales maintenaient un système de taux de change fixes. Pour comprendre comment un étalon-or international fixe les taux de change, supposons que le Trésor américain soit prêt à acheter ou vendre 1 once d’or pour 100 dollars, et que la Banque d’Angleterre soit prête à acheter ou vendre 1 once d’or pour 100 livres. Ensemble, ces politiques fixent le taux de change entre le dollar et la livre : 1 dollar doit s’échanger contre 1 livre. Sinon, la loi du prix unique serait violée, et il serait profitable d’acheter de l’or dans un pays et de le vendre dans l’autre.</p>
+<p>Par exemple, supposons que le taux de change du marché soit de 2 livres par dollar. Dans ce cas, un arbitragiste pourrait acheter 200 livres pour 100 dollars, utiliser les livres pour acheter 2 onces d’or à la Banque d’Angleterre, apporter l’or aux États-Unis et le vendre au Trésor pour 200 dollars, réalisant ainsi un profit de 100 dollars. De plus, en apportant l’or des États-Unis vers l’Angleterre, l’arbitragiste augmenterait la masse monétaire aux États-Unis et diminuerait la masse monétaire en Angleterre. Ainsi, pendant l’ère de l’étalon-or, le transport international de l’or par les arbitragistes était un mécanisme automatique ajustant la masse monétaire et stabilisant les taux de change. Ce système ne fixait pas complètement les taux de change, car le transport de l’or à travers l’Atlantique était coûteux.</p>
+</div>
+</div>
+<section id="la-politique-budgétaire-sous-un-taux-de-change-fixe" class="level4" data-number="6.5.2.1">
+<h4 data-number="6.5.2.1" class="anchored" data-anchor-id="la-politique-budgétaire-sous-un-taux-de-change-fixe"><span class="header-section-number">6.5.2.1</span> La politique budgétaire sous un taux de change fixe</h4>
+<p>Imaginons que le gouvernement décide d’augmenter les dépenses publiques <span class="math inline">G</span> ou de réduire les impôts <span class="math inline">T</span>. Cette politique budgétaire déplace la courbe <span class="math inline">IS^{MF}</span> vers la droite, car une augmentation de <span class="math inline">G</span> ou une réduction de <span class="math inline">T</span> augmente la demande globale et, par conséquent, le revenu <span class="math inline">Y</span>.</p>
+<p>Ce type de politique aurait tendence à augmenter le taux d’intérêt <span class="math inline">r</span> et, donc, à attirer des capitaux étrangers. Avec une demande accrue de monnaie locale, le taux de change <span class="math inline">e</span> s’apprécierait. Cependant, dans un système de taux de change fixe, la banque centrale doit intervenir pour maintenir le taux de change constant. Cela implique que la banque centrale doit vendre de la monnaie locale et acheter de la monnaie étrangère pour maintenir le taux de change fixe. Cette intervention augmente l’offre de monnaie locale, ce qui déplace la courbe <span class="math inline">LM^{MF}</span> vers la droite. Ainsi, la politique budgétaire déplace les deux courbes <span class="math inline">IS^{MF}</span> et <span class="math inline">LM^{MF}</span> vers la droite, comme montré dans la <a href="#fig-mf_fixed_g" class="quarto-xref">Figure&nbsp;<span>6.7</span></a>. Il est important de noter que l’augmentation de l’offre de monnaie locale n’est pas une décision unilatérale de la banque centrale, mais plutôt une réponse à son engagement à maintenir le taux de change fixe.</p>
+<div id="cell-fig-mf_fixed_g" class="cell" data-execution_count="9">
+<div class="cell-output cell-output-display">
+<div id="fig-mf_fixed_g" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-mf_fixed_g-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="mundell_fleming_files/figure-html/fig-mf_fixed_g-output-1.png" width="660" height="527" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mf_fixed_g-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.7: Politique budgétaire avec taux de change fixe
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li>Augmentation de <span class="math inline">G \rightarrow</span> augmentation de la demande globale</li>
+<li>Déplacement de la courbe IS vers la droite</li>
+<li>Taux d’intérêt local augmente</li>
+<li>Demande de monnaie locale augmente</li>
+<li>Appréciation de la monnaie locale</li>
+<li>Intervention de la banque centrale pour maintenir le taux de change fixe</li>
+<li>Offre de monnaie locale augmente</li>
+<li>Nouveau équilibre atteint avec un revenu <span class="math inline">Y</span> plus élevé et un taux de change <span class="math inline">e</span> constant</li>
+</ul>
+</section>
+<section id="la-politique-monétaire-sous-un-taux-de-change-fixe" class="level4" data-number="6.5.2.2">
+<h4 data-number="6.5.2.2" class="anchored" data-anchor-id="la-politique-monétaire-sous-un-taux-de-change-fixe"><span class="header-section-number">6.5.2.2</span> La politique monétaire sous un taux de change fixe</h4>
+<p>Imaginons maintenant que la banque centrale décide d’augmenter l’offre de monnaie <span class="math inline">M^s</span>. Comme le niveau de prix <span class="math inline">p</span> est constant, ceci augmente l’offre d’encaisses réels <span class="math inline">\frac{M^s}{p}</span>, ce qui déplace la courbe <span class="math inline">LM^{MF}</span> vers la droite. Ceci aurait tendance à réduire le taux d’ítérêt <span class="math inline">r</span> et, donc, à stimuler l’économie mais, avec une économie ouverte, les investisseurs étrangers chercheraient à quitter le pays pour investir dans des actifs étrangers avec un taux d’intérêt plus élevé. Ainsi, l’offre de monnaie locale augmente, ce qui déprécie la monnaie locale. Pour maintenir le taux de change fixe, la banque centrale doit acheter de la monnaie locale et vendre de la monnaie étrangère pour stabiliser le taux de change. Ainsi, la courbe <span class="math inline">LM^{MF}</span> se déplace vers la gauche jusqu’à ce que le taux de change soit maintenu, autrement dit, jusqu’à ce que la quantité de monnaie soit celle initiale. En conclusion, la politique monétaire n’a aucun effet sous un régime de taux de change fixe. <em>En fixant un taux de change, la banque centrale abandonne son contrôle sur la politique monétaire</em>.</p>
+<div id="cell-fig-mf_fixed_ms" class="cell" data-execution_count="10">
+<div class="cell-output cell-output-display">
+<div id="fig-mf_fixed_ms" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-mf_fixed_ms-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="mundell_fleming_files/figure-html/fig-mf_fixed_ms-output-1.png" width="660" height="438" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mf_fixed_ms-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.8: Politique monétaire avec taux de change fixe
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="dévaluation" class="level4" data-number="6.5.2.3">
+<h4 data-number="6.5.2.3" class="anchored" data-anchor-id="dévaluation"><span class="header-section-number">6.5.2.3</span> Dévaluation</h4>
+<p>Dans le modèle Mundell-Fleming avec un taux de change fixe, la politique monétaire est inefficace pour influencer l’économie réelle. Néanmoins, rien n’empêche la banque centrale d’agir sur le taux de change, et en fixer un nouveau, c’est-à-dire, changer le prix de sa monnaie.</p>
+<p>Typiquement, ce type de politique vise à dévaluer la monnaie locale, car cela rend les exportations plus compétitives et permet d’augmenter la demande pour ces biens à l’étranger et donc le PIB. Pour que cela fonctionne, la banque centrale doit augmenter l’offre monétaire jusqu’à ce que le nouveau taux de change soit atteint. La <a href="#fig-mf_depreciation" class="quarto-xref">Figure&nbsp;<span>6.9</span></a> montre l’impact d’une telle dévaluation sur l’économie.</p>
+<div id="cell-fig-mf_depreciation" class="cell" data-execution_count="11">
+<div class="cell-output cell-output-display">
+<div id="fig-mf_depreciation" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-mf_depreciation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="mundell_fleming_files/figure-html/fig-mf_depreciation-output-1.png" width="660" height="506" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mf_depreciation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.9: Impact d’une dévaluation sur l’économie
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>L’effet d’une dévaluation est similaire à celui d’une augmentation des dépenses publiques, mais elle agit principalement sur le secteur extérieur de l’économie. Avec un taux de change plus bas, les exportations augmentent et les importations diminuent.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Sortie de la crise de 1930 par la dévaluation">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Sortie de la crise de 1930 par la dévaluation
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>La Grande Dépression des années 1930 était un problème mondial. Une différence clé entre les gouvernements était leur engagement envers le taux de change fixe établi par l’étalon-or international. Certains pays, comme la France, l’Allemagne, l’Italie et les Pays-Bas, ont maintenu l’ancien taux de change entre l’or et la monnaie. D’autres pays, comme le Danemark, la Finlande, la Norvège, la Suède et le Royaume-Uni, ont réduit la quantité d’or qu’ils paieraient pour chaque unité de monnaie d’environ 50 %. En réduisant la teneur en or de leurs monnaies, ces gouvernements ont dévalué leurs monnaies par rapport à celles des autres pays.</p>
+<p>L’expérience ultérieure de ces deux groupes de pays confirme la prédiction du modèle de Mundell-Fleming. Les pays qui ont poursuivi une politique de dévaluation se sont rapidement remis de la Dépression. La valeur plus faible de la monnaie a augmenté la masse monétaire, stimulé les exportations et étendu la production. En revanche, les pays qui ont maintenu l’ancien taux de change ont souffert plus longtemps d’un niveau déprimé d’activité économique.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./images/mundell_fleming_exchange_rate_production_from_eichengreen.png" class="img-fluid figure-img"></p>
+<figcaption>Taux de change et production</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./images/mundell_fleming_exchange_rate_exports_from_eichengreen.png" class="img-fluid figure-img"></p>
+<figcaption>Taux de change et exportations</figcaption>
+</figure>
+</div>
+<p>Voir l’article de <a href="https://www.earth.columbia.edu/sitefiles/file/Sachs%20Writing/1985/EconHistory_1985_ExchangeRatesandEconomicRecovery_Dec1985.PDF">Barry Eichengreen et Jeffrey Sachs</a></p>
+</div>
+</div>
+</section>
+</section>
+<section id="politique-commerciale-avec-taux-de-change-fixe" class="level3" data-number="6.5.3">
+<h3 data-number="6.5.3" class="anchored" data-anchor-id="politique-commerciale-avec-taux-de-change-fixe"><span class="header-section-number">6.5.3</span> Politique commerciale avec taux de change fixe</h3>
+<p>Enfin, un autre outil de politique économique est la politique commerciale. Si le gouvernement introduit une tarification sur les importations, elles deviendront plus chères pour les consommateurs et donc moins attractives. Cela déplace la courbe <span class="math inline">IS^{MF}</span> vers la droite, car avec moins d’importations, les exportations nettes <span class="math inline">NX(e)</span> augmentent. Cependant, un déplacement de la courbe <span class="math inline">IS^{MF}</span> vers la droite engendrerait une augmentation du taux de change <span class="math inline">e</span>, ce qui est impossible car le pays opère avec un taux de change fixe. Dans ce cas, les arbitreurs souhaiteraient vendre la monnaie locale pour acheter des devises étrangères et, pour cela, ils l’achètent moins chère auprès de la banque centrale. Cela provoque une augmentation de la masse monétaire, déplaçant ainsi la courbe <span class="math inline">LM^{MF}</span> vers la droite et augmentant le revenu par le biais d’une augmentation des exportations nettes.</p>
+<div id="cell-fig-mf_fixed_trade_policy" class="cell" data-execution_count="12">
+<div class="cell-output cell-output-display">
+<div id="fig-mf_fixed_trade_policy" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-mf_fixed_trade_policy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="mundell_fleming_files/figure-html/fig-mf_fixed_trade_policy-output-1.png" width="660" height="506" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mf_fixed_trade_policy-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6.10: Politique commerciale avec taux de change fixe
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Le résultat des politqiues commerciale restrictives est très différent selon le régime de change. Dans les deux cas, la courbe des exportations nettes se déplace vers la droite, mais seule une restriction commerciale sous un régime de taux de change fixe augmente les exportations nettes <span class="math inline">NX(e)</span>. La raison en est qu’une restriction commerciale sous un régime de taux de change fixe entraîne une expansion monétaire plutôt qu’une appréciation de la monnaie. Lorsque le revenu augmente, l’épargne augmente également, ce qui implique une augmentation des exportations nettes.</p>
+</section>
+</section>
+<section id="taux-de-change-fixe-ou-flottant" class="level2" data-number="6.6">
+<h2 data-number="6.6" class="anchored" data-anchor-id="taux-de-change-fixe-ou-flottant"><span class="header-section-number">6.6</span> Taux de change fixe ou flottant?</h2>
+<p>Chaque type de taux de change (fixe ou flottant) a ses avantages et ses inconvénients.</p>
+<p>Le principal argument en faveur d’un taux de change flottant est qu’il permet à un pays de conserver son autonomie en matière de politique monétaire. Dans un système de <em>taux fixe</em>, la politique monétaire est entièrement dédiée au maintien du taux de change au niveau annoncé, limitant ainsi sa capacité à répondre aux besoins internes de l’économie. En revanche, un régime de <em>taux flottant</em> offre aux décideurs politiques la liberté de poursuivre d’autres objectifs, tels que la stabilisation de l’emploi ou le contrôle de l’inflation. Cette flexibilité peut s’avérer cruciale en périodes de chocs économiques asymétriques, permettant à l’économie de s’ajuster plus rapidement.</p>
+<p>Cependant, les partisans des <em>taux de change fixes</em> soulignent que l’incertitude liée aux fluctuations des taux peut entraver le commerce international. Les dirigeants d’entreprises affirment souvent que cette volatilité est préjudiciable car elle accroît l’incertitude entourant les transactions internationales. Un autre argument en faveur des taux de change fixes est qu’ils peuvent servir de mécanisme disciplinaire pour l’autorité monétaire, empêchant une croissance excessive de la masse monétaire. Toutefois, il existe d’autres règles de politique monétaire qui peuvent atteindre des objectifs similaires, comme des cibles de PIB nominal ou d’inflation, sans les contraintes imposées par un taux de change fixe.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Euro">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Euro
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>L’introduction de l’euro en 2000 signifia la disparition des monnaies nationaux 19 pays européens et l’adoption d’une seule monnaie unique. Un des arguments en faveur de la monnaie unique est qu’elle permettrait de réduire les coûts de transaction dans le commerce international en éliminant les risques de change et qu’elle faciliterait aussi le tourisme.</p>
+<p>L’adoption de la monnaie unique a également porté des arguments contre. Premièrement, l’adoption de la monnaie unique a entraîné une perte de souveraineté monétaire pour les pays membres, car la politique monétaire est désormais déterminée par la Banque centrale européenne (BCE) plutôt que par les banques centrales nationales. Ainsi, aucun pays ne peut utiliser la politique monétaire pour stimuler son économie ou lutter contre le chômage. Or, pendant la crise de 2008-2013, la situation différente entre les pays du nord et du sud de l’Europe a mis en évidence les limites de la politique monétaire unique. Avec un taux de chômage de 12.2% en Italie, 16.5% au Portugal, 26.1% en Espagne et 27.3% en Grèce, un pays avec le contrôle de sa monnaie aurait pu utiliser augmenter la masse monétaire et déprécié leurs monnaies pour rendre leurs exportations plus compétitives et amortir la récession.</p>
+<p>La raison pour laquelle la BCE n’a pas déprécié l’euro pour aider ces économies en difficulté tient à la nature même de l’Union économique et monétaire. La BCE doit concilier les intérêts de tous les pays membres de la zone euro, et non ceux d’un seul pays en particulier. Le conseil des gouverneurs de la BCE est composé de représentants de chacun des États membres de la zone euro, ce qui signifie que chaque décision doit être prise en tenant compte des différentes situations économiques des pays membres. Dans ce contexte, la BCE a souvent privilégié une politique monétaire équilibrée visant à maintenir la stabilité des prix dans l’ensemble de la zone euro, même si cela signifiait ne pas répondre pleinement aux besoins spécifiques des pays les plus touchés par la crise.</p>
+</div>
+</div>
+<section id="attaques-spéculatifs-caisse-démission-monétaire" class="level3" data-number="6.6.1">
+<h3 data-number="6.6.1" class="anchored" data-anchor-id="attaques-spéculatifs-caisse-démission-monétaire"><span class="header-section-number">6.6.1</span> Attaques spéculatifs, caisse d’émission monétaire</h3>
+<p>Un taux de change fixe signifie qu’un pays décide de lier la valeur de sa monnaie à une autre devise (par exemple, l’euro ou le dollar) à un taux précis. Imaginons que la France utilise une monnaie fictive, le franc, et que la Banque de France fixe un taux de change de 1 franc = 1 euro. Pour maintenir cette parité, la Banque de France doit être prête à acheter des francs (en donnant des euros) ou à vendre des francs (en recevant des euros) à ce taux. Cependant, un problème peut survenir si les investisseurs, entreprises ou spéculateurs doutent que la Banque de France ait assez de réserves en euros pour garantir ce taux de change. Cela peut déclencher une attaque spéculative.</p>
+<p>Les spéculateurs commencent par vendre massivement des francs à la Banque de France pour obtenir des euros au taux fixe de 1 pour 1, tant que la parité tient. Cette vente massive oblige la Banque de France à puiser dans ses réserves d’euros pour acheter les francs. Si ces réserves s’épuisent, la Banque ne peut plus défendre le taux de change fixe et doit dévaluer le franc, par exemple en fixant un nouveau taux de 1 franc pour 0,8 euro. Les spéculateurs, qui ont accumulé des euros avant la dévaluation, peuvent alors racheter des francs à ce taux plus bas.</p>
+<p>Pour éviter ce genre d’attaque, un pays peut mettre en place une caisse d’émission monétaire, également appelée <em>currency board</em>. Ce système garantit que chaque unité de monnaie nationale est entièrement soutenue par une quantité équivalente de devises étrangères, comme des euros, détenues en réserve. Par exemple, si un million de francs circulent, la caisse doit avoir au moins un million d’euros en stock. Si le taux fix de change était de 1 franc = 0.5 euro, alors la caisse devrait avoir au moins 500 000 euros en réserve pour chaque million de francs en circulation. Cela permet à quiconque, qu’il s’agisse de citoyens, d’entreprises ou d’investisseurs, d’échanger des francs contre des euros au taux fixe à tout moment, ce qui renforce la confiance en la monnaie. La caisse impose une <strong>règle stricte : elle ne peut émettre de nouveaux francs que si elle reçoit une quantité équivalente d’euros dans ses réserves.</strong> Cette discipline empêche la création excessive de monnaie, limitant ainsi les risques d’inflation ou de perte de confiance, mais le prix à payer est une perte de flexibilité monétaire.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Le Royaume-Uni et le mécanisme de change européen (ERM)">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Le Royaume-Uni et le mécanisme de change européen (ERM)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Pour adopter l’euro, les pays de l’Union européenne devaient respecter plusieurs critères établis par le traité de Maastricht en 1992, connus sous le nom de critères de convergence. Parmi ces conditions, une était particulièrement importante pour la stabilité monétaire : les monnaies locales devaient participer au Mécanisme de taux de change européen (MCE, ou ERM en anglais) pendant au moins deux ans, sans dévaluation majeure. Dans ce système, les monnaies étaient liées les unes aux autres avec un taux de change central fixe, et elles ne pouvaient fluctuer que dans une bande étroite autour de ce taux. L’idée était de démontrer que la monnaie nationale pouvait rester stable face aux autres devises européennes, sans interventions excessives des banques centrales, pour préparer une union monétaire harmonieuse.</p>
+<p>La crise de 1992, souvent appelée “Mercredi noir” (Black Wednesday), a précisément remis en cause cette stabilité pour la livre sterling britannique. À l’époque, le Royaume-Uni avait rejoint l’ERM en 1990, fixant la livre à environ 2,95 marks allemands, avec l’engagement de la maintenir dans sa bande de fluctuation. Cependant, l’économie britannique traversait une période difficile : inflation élevée, récession, et une livre considérée comme surévaluée par rapport à la réalité économique, surtout après la réunification allemande qui avait renforcé le mark. Des spéculateurs, menés par l’investisseur George Soros via son fonds Quantum Fund, ont perçu cette vulnérabilité et ont lancé une attaque massive contre la livre.</p>
+<p>Soros et d’autres spéculateurs ont parié sur une dévaluation en vendant massivement des livres sterling sur les marchés des changes, échangeant la monnaie britannique contre des marks ou d’autres devises fortes. Ils ont emprunté ou acquis des milliards de livres pour les vendre, anticipant que la Banque d’Angleterre ne pourrait pas défendre indéfiniment le taux fixe. Cette pression a fait chuter la valeur de la livre, la poussant vers le bas de sa bande de fluctuation. Pour contrer cela, la Banque d’Angleterre a dépensé des réserves massives en devises étrangères (estimées à environ 3,3 milliards de livres en une journée) pour racheter des livres et stabiliser le taux. Le gouvernement a même augmenté les taux d’intérêt de manière drastique, passant de 10 % à 12 %, puis à 15 % en quelques heures, pour rendre la livre plus attractive et décourager les ventes. Mais ces mesures n’ont pas suffi : le 16 septembre 1992, la livre a dépassé les limites de sa bande, forçant le Royaume-Uni à suspendre sa participation à l’ERM et à laisser la livre flotter librement sur les marchés. Cela a entraîné une dévaluation immédiate d’environ 15 %.</p>
+</div>
+</div>
+</section>
+<section id="triangle-dincompatibilité-impossible-trinity" class="level3" data-number="6.6.2">
+<h3 data-number="6.6.2" class="anchored" data-anchor-id="triangle-dincompatibilité-impossible-trinity"><span class="header-section-number">6.6.2</span> Triangle d’incompatibilité (“Impossible Trinity”)</h3>
+<p>Dans le modèle Mundell-Fleming, on suppose que les capitaux (l’argent des investisseurs) peuvent se déplacer librement entre les pays. Cette libre mobilité des capitaux signifie que les taux d’intérêt d’un petit pays ouvert doivent s’aligner sur ceux du reste du monde. Pourquoi ? Parce que si le taux d’intérêt dans ce pays est plus élevé, les investisseurs étrangers y envoient leur argent pour profiter de meilleurs rendements, ce qui augmente la demande pour la monnaie locale et fait monter son taux de change.</p>
+<p>Le modèle montre qu’un pays doit choisir entre trois objectifs, mais ne peut en poursuivre que deux à la fois : la libre mobilité des capitaux, un taux de change fixe (une monnaie dont la valeur est liée à une autre devise, comme l’euro ou le dollar), et une politique monétaire indépendante (la capacité de la banque centrale à fixer ses propres taux d’intérêt ou à contrôler la quantité de monnaie pour influencer l’économie, par exemple pour stimuler la croissance ou contrôler l’inflation).</p>
+<p>Si un petit pays ouvert choisit la <strong>libre mobilité des capitaux et un taux de change fixe</strong>, il perd son indépendance monétaire. Pourquoi ? Pour maintenir un taux de change fixe, la banque centrale doit intervenir constamment sur le marché des changes en achetant ou vendant sa monnaie pour garder sa valeur stable et donc est incapable de fixer le taux d’intérêt de manière indépendante.</p>
+<p>Inversement, si le pays veut une <strong>politique monétaire indépendante tout en maintenant la libre mobilité des capitaux</strong>, il doit renoncer au taux de change fixe. Dans ce cas, la banque centrale peut ajuster les taux d’intérêt ou la quantité de monnaie pour gérer l’économie, mais le taux de change de la monnaie fluctuera en fonction des mouvements de capitaux.</p>
+<p>Enfin, pour avoir à la fois un <strong>taux de change fixe et une politique monétaire indépendante</strong>, le pays devrait restreindre la mobilité des capitaux. En limitant les flux d’argent entrant ou sortant, le pays peut fixer ses propres taux d’intérêt sans que ceux-ci soient immédiatement influencés par le reste du monde. Cela permet à la banque centrale de maintenir un taux de change stable tout en menant une politique monétaire adaptée à ses besoins internes, comme ajuster les taux pour contrôler l’inflation ou stimuler la croissance.</p>
+<p>Ce dilemme, souvent appelé la “trilème de Mundell”, force les pays à faire un choix stratégique.</p>
+</section>
+</section>
+<section id="td" class="level2" data-number="6.7">
+<h2 data-number="6.7" class="anchored" data-anchor-id="td"><span class="header-section-number">6.7</span> TD</h2>
+<ol type="1">
+<li><p>Expliquez comment les événements suivants impactent le revenu, le taux de change et les exportations nettes sous un <em>régime de taux de change flottant</em>.</p>
+<ol type="1">
+<li><p>Une chute de la confiance des consommateurs les pousse à réduire leur consommation et à augmenter leurs épargnes.</p></li>
+<li><p>L’apparition d’une nouvelle gamme de voitures Tesla électriques fait que les consommateurs préfèrent les voitures étrangères aux voitures nationales.</p></li>
+</ol></li>
+<li><p>Expliquez comment les événements suivants impactent le revenu, le taux de change et les exportations nettes sous un <em>régime de taux de change fixe</em>.</p>
+<ol type="1">
+<li><p>Une chute de la confiance des consommateurs les pousse à réduire leur consommation et à augmenter leurs épargnes.</p></li>
+<li><p>L’apparition d’une nouvelle gamme de voitures Tesla électriques fait que les consommateurs préfèrent les voitures étrangères aux voitures nationales.</p></li>
+</ol></li>
+<li><p>Une petite économie ouverte se décrit par les équations suivantes:</p></li>
+</ol>
+<p><span class="math display">
+\begin{aligned}
+    C &amp;= 50 + 0.75(Y-T) \\
+    I &amp;= 200 - 20r \\
+    NX &amp;= 200 - 50 e \\
+    L(Y,r) &amp;= Y - 40r \\
+    G &amp;= 200 \\
+    T &amp;= 200 \\
+    M^s &amp;= 3000 \\
+    p &amp;= 3 \\
+    r^\star &amp;= 5
+\end{aligned}
+</span></p>
+<pre><code>1. Calculez et tracez les courbes $IS^{MF}$ et $LM^{MF}$.
+
+2. Calculez le niveau d'équilibre du revenu, taux de change et exportations nettes.
+
+3. Si le taux de change est flottant, comment une augmentation de $G$ de $G_0 = 200$ à $G_1 = 250$ affecte-t-elle le revenu, le taux de change et les exportations nettes?
+Tracez un digramme.
+
+4. Si le taux de change est fixe, comment une augmentation de $G$ de $G_0 = 200$ à $G_1 = 250$ affecte-t-elle le revenu, le taux de change et les exportations nettes?</code></pre>
+<ol start="4" type="1">
+<li><p>Une petite économie ouverte avec un taux de change flottant est en récession. Si les politiciens souhaitent maintenir le revenu et ne pas changer les exportations nettes, quelle politique fiscal et monétaire doivent-ils mettre en place?</p></li>
+<li><p>Imaginons que le taux d’intérêt mondial <span class="math inline">r^\star</span> augmente.</p>
+<ol type="1">
+<li><p>Si l’économie a adopté un taux de change flottant, comment ça affecte le revenu, le taux de change et les exportations nettes?</p></li>
+<li><p>Si l’économie a adopté un taux de change fixe, comment ça affecte le revenu, le taux de change et les exportations nettes?</p></li>
+</ol></li>
+<li><p>Un politicien cherche à faire l’industrie européenne plus compétitive (que les entreprises européennes vendent plus à l’étranger).</p>
+<ol type="1">
+<li><p>Comment une modification du taux de change (nomial) affecte-t-elle les exportations nettes?</p></li>
+<li><p>Comment pourrait-on augmenter la compétitivité de l’industrie européenne sans modifier le revenu si le taux de change est flottant?</p></li>
+</ol></li>
+<li><p>Imaginez que les exportations nettes sont une fonction du taux de change et du niveau de revenu (<span class="math inline">NX(e,Y)</span>): quand le revenu augmente, les importations augmentent et donc <span class="math inline">NX(e, Y)</span> diminue.</p>
+<ol type="1">
+<li><p>Comment une augmentation de <span class="math inline">G</span> affecte le niveau de revenu d’équilibre et les exportations nettes si le taux de change est flottant?</p></li>
+<li><p>Comment une augmentation de <span class="math inline">G</span> affecte le niveau de revenu d’équilibre et les exportations nettes si le taux de change est fixe?</p></li>
+</ol></li>
+</ol>
+
+
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>Comme on travaille à court terme les prix (dans notre pays et à l’étranger) sont fixes. Ainsi, le taux de change réel et nominal sont proportionnels.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Comme on travaille à court terme les prix (dans notre pays et à l’étranger) sont fixes. Ainsi, le taux de change réel et nominal sont proportionnels.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./is_lm_model_part_2.html" class="pagination-link" aria-label="Politique budgétaire et monétaire dans le modèle IS-LM">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Politique budgétaire et monétaire dans le modèle IS-LM</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./oa_da.html" class="pagination-link" aria-label="Le modèle Offre Agrégée - Demande Agrégée">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Le modèle Offre Agrégée - Demande Agrégée</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

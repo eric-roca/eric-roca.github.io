@@ -1,0 +1,1613 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.34">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>3&nbsp; Le modèle de Solow – Macroéconomie Dynamique</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./ramsey.html" rel="next">
+<link href="./introduction.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-3ce0956f7babb2a12842f6225a6cff9b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Èric Roca Fernández</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../../index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../teaching.html"> 
+<span class="menu-text">Teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../contact.html"> 
+<span class="menu-text">Contact</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <a href="./Macroéconomie-Dynamique.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./solow.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Le modèle de Solow</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./solow.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Le modèle de Solow</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ramsey.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Le modèle de Ramsey</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">3.1</span> Introduction</a></li>
+  <li><a href="#hypothèses" id="toc-hypothèses" class="nav-link" data-scroll-target="#hypothèses"><span class="header-section-number">3.2</span> Hypothèses</a>
+  <ul class="collapse">
+  <li><a href="#fonction-de-production" id="toc-fonction-de-production" class="nav-link" data-scroll-target="#fonction-de-production"><span class="header-section-number">3.2.1</span> Fonction de production</a></li>
+  <li><a href="#fonction-de-production-cobb-douglas" id="toc-fonction-de-production-cobb-douglas" class="nav-link" data-scroll-target="#fonction-de-production-cobb-douglas"><span class="header-section-number">3.2.2</span> Fonction de production Cobb-Douglas</a></li>
+  <li><a href="#consommation-et-épargne" id="toc-consommation-et-épargne" class="nav-link" data-scroll-target="#consommation-et-épargne"><span class="header-section-number">3.2.3</span> Consommation et épargne</a></li>
+  <li><a href="#travailleurs" id="toc-travailleurs" class="nav-link" data-scroll-target="#travailleurs"><span class="header-section-number">3.2.4</span> Travailleurs</a></li>
+  </ul></li>
+  <li><a href="#variables-par-habitant" id="toc-variables-par-habitant" class="nav-link" data-scroll-target="#variables-par-habitant"><span class="header-section-number">3.3</span> Variables par habitant</a>
+  <ul class="collapse">
+  <li><a href="#variables-par-habitant-1" id="toc-variables-par-habitant-1" class="nav-link" data-scroll-target="#variables-par-habitant-1"><span class="header-section-number">3.3.1</span> Variables par habitant</a></li>
+  <li><a href="#cobb-douglas-taux-dintérêt-salaire-et-shares-parts-de-revenus" id="toc-cobb-douglas-taux-dintérêt-salaire-et-shares-parts-de-revenus" class="nav-link" data-scroll-target="#cobb-douglas-taux-dintérêt-salaire-et-shares-parts-de-revenus"><span class="header-section-number">3.3.2</span> Cobb-Douglas, taux d’intérêt, salaire et <em>shares</em> (parts de revenus)</a></li>
+  </ul></li>
+  <li><a href="#dérivation-des-dynamiques" id="toc-dérivation-des-dynamiques" class="nav-link" data-scroll-target="#dérivation-des-dynamiques"><span class="header-section-number">3.4</span> Dérivation des dynamiques</a>
+  <ul class="collapse">
+  <li><a href="#équation-daccumulation-de-capital" id="toc-équation-daccumulation-de-capital" class="nav-link" data-scroll-target="#équation-daccumulation-de-capital"><span class="header-section-number">3.4.1</span> Équation d’accumulation de capital</a></li>
+  <li><a href="#accumulation-de-capital-par-habitant" id="toc-accumulation-de-capital-par-habitant" class="nav-link" data-scroll-target="#accumulation-de-capital-par-habitant"><span class="header-section-number">3.4.2</span> Accumulation de capital par habitant</a></li>
+  </ul></li>
+  <li><a href="#vers-létat-stationnaire-existence-et-convergence" id="toc-vers-létat-stationnaire-existence-et-convergence" class="nav-link" data-scroll-target="#vers-létat-stationnaire-existence-et-convergence"><span class="header-section-number">3.5</span> Vers l’état stationnaire (existence et convergence)</a>
+  <ul class="collapse">
+  <li><a href="#diagramme-de-phase" id="toc-diagramme-de-phase" class="nav-link" data-scroll-target="#diagramme-de-phase"><span class="header-section-number">3.5.1</span> Diagramme de phase</a></li>
+  <li><a href="#existence-de-létat-stationnaire" id="toc-existence-de-létat-stationnaire" class="nav-link" data-scroll-target="#existence-de-létat-stationnaire"><span class="header-section-number">3.5.2</span> Existence de l’état stationnaire</a></li>
+  <li><a href="#convergence" id="toc-convergence" class="nav-link" data-scroll-target="#convergence"><span class="header-section-number">3.5.3</span> Convergence</a></li>
+  </ul></li>
+  <li><a href="#changement-du-taux-dépargne" id="toc-changement-du-taux-dépargne" class="nav-link" data-scroll-target="#changement-du-taux-dépargne"><span class="header-section-number">3.6</span> Changement du taux d’épargne</a></li>
+  <li><a href="#règle-dor" id="toc-règle-dor" class="nav-link" data-scroll-target="#règle-dor"><span class="header-section-number">3.7</span> Règle d’or</a>
+  <ul class="collapse">
+  <li><a href="#inefficacité-dynamique" id="toc-inefficacité-dynamique" class="nav-link" data-scroll-target="#inefficacité-dynamique"><span class="header-section-number">3.7.1</span> Inefficacité dynamique</a></li>
+  <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions"><span class="header-section-number">3.7.2</span> Questions</a></li>
+  </ul></li>
+  <li><a href="#croissance-économique" id="toc-croissance-économique" class="nav-link" data-scroll-target="#croissance-économique"><span class="header-section-number">3.8</span> Croissance économique</a>
+  <ul class="collapse">
+  <li><a href="#croissance-à-létat-stationnaire" id="toc-croissance-à-létat-stationnaire" class="nav-link" data-scroll-target="#croissance-à-létat-stationnaire"><span class="header-section-number">3.8.1</span> Croissance à l’état stationnaire</a></li>
+  <li><a href="#croissance-pendant-la-transition-et-convergence-entre-pays" id="toc-croissance-pendant-la-transition-et-convergence-entre-pays" class="nav-link" data-scroll-target="#croissance-pendant-la-transition-et-convergence-entre-pays"><span class="header-section-number">3.8.2</span> Croissance pendant la transition et convergence entre pays</a></li>
+  </ul></li>
+  <li><a href="#convergence-1" id="toc-convergence-1" class="nav-link" data-scroll-target="#convergence-1"><span class="header-section-number">3.9</span> Convergence</a>
+  <ul class="collapse">
+  <li><a href="#convergence-absolue" id="toc-convergence-absolue" class="nav-link" data-scroll-target="#convergence-absolue"><span class="header-section-number">3.9.1</span> Convergence absolue</a></li>
+  <li><a href="#convergence-conditionelle" id="toc-convergence-conditionelle" class="nav-link" data-scroll-target="#convergence-conditionelle"><span class="header-section-number">3.9.2</span> Convergence conditionelle</a></li>
+  </ul></li>
+  <li><a href="#progrès-technologique" id="toc-progrès-technologique" class="nav-link" data-scroll-target="#progrès-technologique"><span class="header-section-number">3.10</span> Progrès technologique</a>
+  <ul class="collapse">
+  <li><a href="#accumulation-de-capital" id="toc-accumulation-de-capital" class="nav-link" data-scroll-target="#accumulation-de-capital"><span class="header-section-number">3.10.1</span> Accumulation de capital</a></li>
+  <li><a href="#état-stationnaire" id="toc-état-stationnaire" class="nav-link" data-scroll-target="#état-stationnaire"><span class="header-section-number">3.10.2</span> État stationnaire</a></li>
+  <li><a href="#progrès-technologique-et-croissance-économique" id="toc-progrès-technologique-et-croissance-économique" class="nav-link" data-scroll-target="#progrès-technologique-et-croissance-économique"><span class="header-section-number">3.10.3</span> Progrès technologique et croissance économique</a></li>
+  </ul></li>
+  <li><a href="#conclusions-et-implications" id="toc-conclusions-et-implications" class="nav-link" data-scroll-target="#conclusions-et-implications"><span class="header-section-number">3.11</span> Conclusions et implications</a>
+  <ul class="collapse">
+  <li><a href="#croissance-économique-1" id="toc-croissance-économique-1" class="nav-link" data-scroll-target="#croissance-économique-1"><span class="header-section-number">3.11.1</span> Croissance économique</a></li>
+  <li><a href="#vraisemblance-du-modèle-de-solow" id="toc-vraisemblance-du-modèle-de-solow" class="nav-link" data-scroll-target="#vraisemblance-du-modèle-de-solow"><span class="header-section-number">3.11.2</span> Vraisemblance du modèle de Solow</a></li>
+  <li><a href="#a-comme-la-mésure-de-nos-non-connaisances-comptabilité-de-la-croissance" id="toc-a-comme-la-mésure-de-nos-non-connaisances-comptabilité-de-la-croissance" class="nav-link" data-scroll-target="#a-comme-la-mésure-de-nos-non-connaisances-comptabilité-de-la-croissance"><span class="header-section-number">3.11.3</span> <span class="math inline">\(A\)</span> comme la mésure de nos non-connaisances : comptabilité de la croissance</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Le modèle de Solow</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introduction" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">3.1</span> Introduction</h2>
+<p>Selon les données, la plupart des économies montrent un taux de croissance à long terme. Le modèle de Solow étudie si cela est compatible avec la simple <em>accumulation de capital physique</em>. Le terme “accumulation de capital physique” signifie que les agents économiques épargnent une partie de leurs revenus, et que cette épargne est investie pour devenir productive. Par exemple, on peut penser (ceci ne fait pas partie du modèle) que les ménages épargnent un pourcentage de leur revenu, qui est déposé auprès de la banque. Les entreprises empruntent cet argent pour investir dans de la machinerie, ce qui leur permet de produire davantage. Finalement, les ménages reçoivent un rendement sur leur épargne.</p>
+<p>Les données suggèrent que cette approche pourrait être correcte. Entre 1960 et 2000, le taux de croissance moyen était de 1.8% et le taux d’investissement moyen de 16%. Pour les pays les plus pauvres, la croissance était seulement de 0.6% avec un investissement de 10%, tandis que les pays de l’est de l’Asie ont connu un taux de croissance de 4.9% avec un investissement de 25% <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>.</p>
+<p>Les théories néoclassiques modernes (depuis Ramsey-Cass-Koopmans) commencent l’analyse par des unités décentralisées : d’un côté les ménages, de l’autre les entreprises. On suppose que les agents sont rationnels, que l’offre et la demande déterminent les prix des facteurs de production, et que les marchés sont concurrentiels (avec des modifications ici). Les ménages offrent du travail et du capital, les entreprises embauchent les travailleurs et louent le capital, les ménages épargnent, etc.</p>
+<p>Le modèle de Solow est différent et plus simple, car il fonctionne avec des agrégats macroéconomiques. Il suppose une fonction de production avec des inputs et se focalise sur l’évolution agrégée de ces inputs sans modéliser le comportement individuel. Par conséquent, il n’y a pas de marchés. D’autres hypothèses simplificatrices s’ajoutent au modèle : l’économie est fermée (pas de commerce international) et le gouvernement est absent.</p>
+<p>On étudie d’abord le modèle de Solow <em>sans</em> croissance technologique, puis on l’ajoute par la suite. En effet, l’analyse mathématique est la même, et l’effet de la croissance technologique ne complexifie pas le modèle. Des connaissances en analyse et en calcul différentiel sont nécessaires au niveau mathématique.</p>
+</section>
+<section id="hypothèses" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="hypothèses"><span class="header-section-number">3.2</span> Hypothèses</h2>
+<p>Le modèle suppose une économie fermée <em>sans</em> gouvernement. Un seul bien homogène existe et le taux d’épargne est constant et fixé de manière exogène. Le capital physique se déprécie à un taux constant et exogène. Le nombre de travailleurs augmente à un taux constant et exogène. Finalement, le modèle de Solow décrit l’économie de manière agrégée, c’est-à-dire, on ne modélise pas les agents individuels (producteurs et consommateurs).</p>
+<section id="fonction-de-production" class="level3" data-number="3.2.1">
+<h3 data-number="3.2.1" class="anchored" data-anchor-id="fonction-de-production"><span class="header-section-number">3.2.1</span> Fonction de production</h3>
+<p>Dans le modèle de base, l’économie produit un seul bien homogène (<span class="math inline">\(Y\)</span>) à l’aide d’une fonction de production. Dans l’économie, seuls deux facteurs de production existent : le capital physique (<span class="math inline">\(K\)</span>) et le travail (<span class="math inline">\(L\)</span>). La fonction de production combine ces deux inputs pour produire l’output. Le temps dans le modèle est <em>continu</em>. La fonction de production est :</p>
+<ul>
+<li>Homogène de premier degré (pour tous les facteurs de production rivaux)</li>
+<li>La production est croissante pour tous les facteurs de production</li>
+<li>Montre des rendements décroissants</li>
+<li>Satisfait les conditions d’Inada</li>
+</ul>
+<p>Ces hypothèses sur la fonction de production sont essentielles pour trouver les résultats du modèle.</p>
+<section id="homogénéité-de-premier-degré" class="level4" data-number="3.2.1.1">
+<h4 data-number="3.2.1.1" class="anchored" data-anchor-id="homogénéité-de-premier-degré"><span class="header-section-number">3.2.1.1</span> Homogénéité de premier degré</h4>
+<p><strong>Hypothèse cruciale</strong></p>
+<p>Une fonction est homogène de premier degré si le fait de dupliquer les facteurs de production double la quantité produite. Cette hypothèse semble raisonnable : si une usine avec 10 machines et 50 travailleurs produit 500 unités de production, alors en créant une deuxième usine identique, on obtiendra un total de 1000 unités de production avec 20 machines et 100 travailleurs.</p>
+<p>Mathématiquement, une fonction est homogène de premier degré si : <span id="eq-first_degree_homogeneity"><span class="math display">\[
+F\left[\lambda K, \lambda L\right] = \lambda F\left[K, L\right], \lambda \geq 0
+\tag{3.1}\]</span></span></p>
+</section>
+<section id="production-croissante" class="level4" data-number="3.2.1.2">
+<h4 data-number="3.2.1.2" class="anchored" data-anchor-id="production-croissante"><span class="header-section-number">3.2.1.2</span> Production croissante</h4>
+<p>Cette hypothèse est logique : si la quantité de capital ou de travail augmente, on produit davantage. Mathématiquement, la production est croissante si :</p>
+<p><span id="eq-increasing_production"><span class="math display">\[
+F^{\prime}_{K} F[K, L] &gt; 0, F^{\prime}_{L} F[K, L] &gt; 0
+\tag{3.2}\]</span></span></p>
+<p>Où <span class="math inline">\(F^{\prime}_{X}\)</span> indique la dérivée première par rapport à la variable <span class="math inline">\(X\)</span>.</p>
+</section>
+<section id="rendements-décroissants" class="level4" data-number="3.2.1.3">
+<h4 data-number="3.2.1.3" class="anchored" data-anchor-id="rendements-décroissants"><span class="header-section-number">3.2.1.3</span> Rendements décroissants</h4>
+<p>L’idée des rendements décroissants est centrale dans la théorie économique. Cette hypothèse indique que chaque fois que l’on augmente la quantité d’<em>un facteur de production</em>, la production augmente, mais de moins en moins. Par exemple, avec 10 machines et 50 travailleurs, la production est de 500 unités. En passant de 10 machines à 20 machines (<em>sans changer le nombre de travailleurs</em>), la production augmente de 100 unités, passant de 500 à 600. Cependant, si l’on ajoute 10 machines supplémentaires pour un total de 30, la production n’augmente que de 50 unités, passant de 600 à 650.</p>
+<p>Mathématiquement, les rendements décroissants impliquent :</p>
+<p><span id="eq-decreasing_returns"><span class="math display">\[
+F^{\prime \prime}_{K} F[K, L] &lt; 0, F^{\prime \prime}_{L} F[K, L] &lt; 0
+\tag{3.3}\]</span></span></p>
+<p>Où <span class="math inline">\(F^{\prime \prime}_{X}\)</span> indique la dérivée seconde par rapport à la variable <span class="math inline">\(X\)</span>.</p>
+</section>
+<section id="conditions-dinada" class="level4" data-number="3.2.1.4">
+<h4 data-number="3.2.1.4" class="anchored" data-anchor-id="conditions-dinada"><span class="header-section-number">3.2.1.4</span> Conditions d’Inada</h4>
+<p><strong>Hypothèse cruciale</strong></p>
+<p>Les conditions d’Inada sont une série de conditions qui décrivent le comportement de la fonction de production lorsque les facteurs de production (<span class="math inline">\(K\)</span> et <span class="math inline">\(L\)</span>) sont rares ou abondants. Ces conditions indiquent que la productivité marginale du travail et du capital est élevée lorsque ces facteurs sont proches de zéro, et qu’elle diminue à mesure que ces facteurs deviennent plus abondants.</p>
+<p>Mathématiquement, les conditions d’Inada sont les suivantes :</p>
+<p><span id="eq-inada"><span class="math display">\[
+\begin{aligned}
+\lim_{K\rightarrow 0}F^{\prime}_{K}\left[K, L\right] &amp;= \infty, \\
+\lim_{L\rightarrow 0}F^{\prime}_{L}\left[K, L\right] &amp;= \infty, \\
+\lim_{K\rightarrow \infty}F^{\prime}_{K}\left[K, L\right] &amp;= 0, \\
+\lim_{L\rightarrow \infty}F^{\prime}_{L}\left[K, L\right] &amp;= 0
+\end{aligned}
+\tag{3.4}\]</span></span></p>
+</section>
+<section id="les-inputs-sont-essentielles-pour-la-production" class="level4" data-number="3.2.1.5">
+<h4 data-number="3.2.1.5" class="anchored" data-anchor-id="les-inputs-sont-essentielles-pour-la-production"><span class="header-section-number">3.2.1.5</span> Les inputs sont essentielles pour la production</h4>
+<p>Parfois, on ajoute un condtion additionelle indiquant que chaque input, capital et travail, sont essentiels pour la production. Cela veut dire que, si l’un de ces facteurs est zéro, la production est nulle. Mathématiquement: <span id="eq-essential_inputs"><span class="math display">\[
+F[K,0] = F[0, L] = 0
+\tag{3.5}\]</span></span></p>
+<p>Cette hypothèse peut de démontrer à partir des autres hypothèses et n’est pas essentielle (voir page 77 de <em>Barro et Sala-i-Martin</em> ).</p>
+</section>
+</section>
+<section id="fonction-de-production-cobb-douglas" class="level3" data-number="3.2.2">
+<h3 data-number="3.2.2" class="anchored" data-anchor-id="fonction-de-production-cobb-douglas"><span class="header-section-number">3.2.2</span> Fonction de production Cobb-Douglas</h3>
+<p>Dans ce qui suit, pour simplifier l’analyse, nous utiliserons la fonction de production Cobb-Douglas pour toute l’analyse :</p>
+<p><span id="eq-cobb_douglas"><span class="math display">\[
+Y(t) = F\left[K(t), L(t)\right] = K(t)^\alpha L(t)^{1-\alpha}, \alpha \in (0,1)
+\tag{3.6}\]</span></span></p>
+<p>Cette fonction de production vérifie toutes les hypothèses nécessaires du modèle.</p>
+</section>
+<section id="consommation-et-épargne" class="level3" data-number="3.2.3">
+<h3 data-number="3.2.3" class="anchored" data-anchor-id="consommation-et-épargne"><span class="header-section-number">3.2.3</span> Consommation et épargne</h3>
+<p>Dans tous les modèles économiques dynamiques, l’équation d’accumulation du capital est fondamentale. Elle indique comment le capital (physique et humain) augmente au fil du temps. Dans les modèles de Solow et de Ramsey-Cass-Koopmans simples, le seul type de capital considéré est le capital physique, qui représente l’ensemble des biens utilisés dans le processus de production et qui ne sont pas consommés.</p>
+<p>Pour mieux comprendre, imaginons que l’économie produit <span class="math inline">\(Y\)</span> unités du bien final. Comme il n’y a pas de gouvernement, toute la production doit être soit consommée par les agents, soit dédiée à l’investissement. Ainsi, une partie de cette production est destinée à la consommation des agents, notée <span class="math inline">\(C(t)\)</span>, pour en tirer de l’utilité<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>. Par conséquent (comme dans le modèle IS-LM), nous avons :</p>
+<p><span id="eq-identity"><span class="math display">\[
+Y(t) = C(t) + I(t).
+\tag{3.7}\]</span></span></p>
+<p>En même temps, du point de vue des ménages, nous avons <span class="math inline">\(Y(t) - C(t) = S(t)\)</span>. C’est-à-dire que la partie qui n’est pas consommée correspond à l’épargne des ménages, notée <span class="math inline">\(S(t)\)</span>, qui représente l’ensemble des biens épargnés<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a>. Cette épargne passe par le système bancaire et devient du capital productif à la période suivante. Cependant, comme nous ne modélisons pas le système bancaire, nous pouvons imaginer que les ménages prêtent directement des biens productifs aux entreprises. Par exemple, un ménage pourrait prêter une voiture à une entreprise, un autre pourrait prêter un bâtiment, etc. Ainsi, le niveau d’investissement est égal à l’épargne : <span class="math inline">\(I(t) = S(t)\)</span>.</p>
+</section>
+<section id="travailleurs" class="level3" data-number="3.2.4">
+<h3 data-number="3.2.4" class="anchored" data-anchor-id="travailleurs"><span class="header-section-number">3.2.4</span> Travailleurs</h3>
+<p>Dans le modèle simple de Solow, le nombre de travailleurs augmente à chaque période de manière exogène. Cela reflète l’interaction entre le taux de fécondité, le taux de mortalité, les migrations, etc. Pour les pays développés, ces taux sont plus ou moins stables et supposer que ces variables sont exogènes simplifie l’analyse. D’autres modèles plus complexes cherchent à modéliser le niveau de fécondité, qui a beaucoup varié au cours de l’histoire et qui diffère également selon le niveau de revenu. Dans le cadre du modèle de Solow, la population augmente simplement au taux <span class="math inline">\(n \geq 0\)</span>.</p>
+</section>
+</section>
+<section id="variables-par-habitant" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="variables-par-habitant"><span class="header-section-number">3.3</span> Variables par habitant</h2>
+<p>Quand on compare les différents pays pour les classer en fonction du revenu, on utilise généralement le <em>revenu par habitant</em> ou la <em>production par habitant</em>. En effet, si l’on considère <span class="math inline">\(Y(t)\)</span> comme la production totale, il est normal que les pays les plus peuplés produisent davantage. Par exemple, le PIB (et non le PIB par habitant) de la Chine s’élève à environ 18 000 000 000 000 USD, tandis que celui du Luxembourg est seulement de 82 000 000 000 USD. Cependant, le niveau de richesse individuel est beaucoup plus élevé au Luxembourg, car la Chine compte environ 1 400 000 000 d’habitants contre seulement 650 000 au Luxembourg. Il est donc essentiel de mesurer le niveau de production <em>par habitant</em> afin d’établir des comparaisons appropriées et de comprendre pourquoi <strong>chaque individu est capable de produire davantage avec le développement</strong>. Les hypothèses du modèle, en particulier l’homogénéité de premier degré, nous permettent d’effectuer cette mesure.</p>
+<section id="variables-par-habitant-1" class="level3" data-number="3.3.1">
+<h3 data-number="3.3.1" class="anchored" data-anchor-id="variables-par-habitant-1"><span class="header-section-number">3.3.1</span> Variables par habitant</h3>
+<p>Rappelons ce que signifie l’homogénéité de premier degré, c’est-à-dire que la fonction présente des rendements constants à l’échelle. une fonction est dite homogène de premier degré lorsque, si l’on multiplie les entrées par une même constante <span class="math inline">\(\lambda &gt; 0\)</span>, la sortie est également multipliée par cette même constante. Ainsi, pour une fonction <span class="math inline">\(F\left[K(t), L(t)\right]\)</span> ayant des rendements constants, cela signifie que <span class="math inline">\(F\left[\lambda K(t), \lambda L(t)\right] = \lambda F\left[K(t), L(t)\right]\)</span> pour tout <span class="math inline">\(\lambda &gt; 0\)</span>.</p>
+<p>La définition est valable pour toute valeur de <span class="math inline">\(\lambda\)</span>, y compris lorsque <span class="math inline">\(\lambda = \frac{1}{L}.\)</span> Ainsi, on peut écrire :</p>
+<p><span class="math display">\[
+Y = F[K, L] \stackrel{Hom.}{\implies} \frac{Y}{L} = F\left[\frac{K}{L}, \frac{L}{L}\right] = F\left[\frac{K}{L}, 1\right]=\frac{Y}{L}.
+\]</span></p>
+<p>À partir de cette équation, on peut montrer que :</p>
+<p><span class="math display">\[
+Y(t) = L\ F\left[\frac{K}{L}, 1\right].
+\]</span></p>
+<p>Cette équation exprime le revenu total <span class="math inline">\(Y\)</span> en fonction du facteur travail <span class="math inline">\(L\)</span> et de la fonction de production <span class="math inline">\(F\left[\frac{K}{L}, 1\right]\)</span>, où <span class="math inline">\(\frac{K}{L}\)</span> représente le capital par travailleur.</p>
+<p>Pour simplifier la notation, on utilise les notations suivantes :</p>
+<ul>
+<li><span class="math inline">\(k \equiv \frac{K}{L}\)</span> : le niveau de capital par travailleur (ou par habitant)</li>
+<li><span class="math inline">\(y \equiv \frac{Y}{L}\)</span> : le niveau de production ou de revenu par travailleur (ou par habitant)</li>
+<li><span class="math inline">\(f(k) \equiv F\left(\frac{K}{L}, 1\right)\)</span> : la fonction de production en termes per capita, également appelée <em>fonction intensive</em></li>
+</ul>
+<p>Avec ces notations, nous pouvons réécrire l’équation précédente comme suit :</p>
+<p><span id="eq-production_per_worker"><span class="math display">\[
+y(t) = f(k(t))
+\tag{3.8}\]</span></span></p>
+<p>Cette équation exprime le niveau de production ou de revenu par travailleur <span class="math inline">\(y\)</span> en fonction du niveau de capital par travailleur <span class="math inline">\(k\)</span>, en utilisant la fonction de production intensive <span class="math inline">\(f(k)\)</span>.</p>
+<p>En appliquant ces méthodes à la fonction de production Cobb-Douglas :</p>
+<p><span class="math display">\[\begin{align}
+Y &amp;= F[K, L] = K^\alpha L^{1-\alpha} \implies \\
+&amp; \implies \frac{Y}{L} \equiv y = \frac{K^\alpha L^{1-\alpha}}{L} = K^\alpha L^{-\alpha} = \left(\frac{K}{L}\right)^\alpha = k^\alpha.
+\end{align}\]</span></p>
+<p>Cela signifie que le niveau de production ou de revenu par travailleur <span class="math inline">\(y\)</span> dans le modèle Cobb-Douglas est égal à la variable <span class="math inline">\(k\)</span> élevée à la puissance <span class="math inline">\(\alpha\)</span>.</p>
+</section>
+<section id="cobb-douglas-taux-dintérêt-salaire-et-shares-parts-de-revenus" class="level3" data-number="3.3.2">
+<h3 data-number="3.3.2" class="anchored" data-anchor-id="cobb-douglas-taux-dintérêt-salaire-et-shares-parts-de-revenus"><span class="header-section-number">3.3.2</span> Cobb-Douglas, taux d’intérêt, salaire et <em>shares</em> (parts de revenus)</h3>
+<p>Les parts de revenus mesurent la partie du revenu total qui est distribuée comme paiement aux propriétaires de chaque facteur de production. Dans le modèle de Solow, il y a deux facteurs de production : le capital et le travail.</p>
+<p>Dans une économie concurrentielle, chaque facteur est rémunéré selon son rendement marginal.</p>
+<p>Une propriété importante et unique de la fonction de production Cobb-Douglas est que, dans une situation de concurrence parfaite, les parts de revenus des facteurs (parts de revenus des facteurs) sont constantes, comme expliqué dans l’annexe.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> Les parts de revenus mesurent la partie du revenu total qui est distribuée comme paiement aux propriétaires de chaque facteur de production. Dans le modèle de Solow, il y a deux facteurs de production : le capital et le travail.</p>
+<p>Étant donné que nous supposons une économie concurrentielle, nous savons que chaque facteur est rémunéré selon son rendement marginal :</p>
+<ul>
+<li><span class="math inline">\(w = \frac{\partial F[K, L]}{\partial L}\)</span></li>
+<li><span class="math inline">\(R = \frac{\partial F[K, L]}{\partial K}\)</span></li>
+</ul>
+<section id="taux-dintérêt" class="level4" data-number="3.3.2.1">
+<h4 data-number="3.3.2.1" class="anchored" data-anchor-id="taux-dintérêt"><span class="header-section-number">3.3.2.1</span> Taux d’intérêt</h4>
+<p>En général, le taux d’intérêt est donné par l’expression suivante:</p>
+<p><span id="eq-interest_rate"><span class="math display">\[
+R = \frac{\partial F[K, L]}{\partial K} = \frac{\partial L F\left[\frac{K}{L}\right]}{K} = L F^\prime \left[\frac{K}{L}\right] \frac{1}{L} = f^\prime (k).
+\tag{3.9}\]</span></span></p>
+<p>Dans le cas de la fonction de production Cobb-Douglas :</p>
+<p><span class="math display">\[
+R = \frac{\partial K^\alpha L^{1-\alpha}}{\partial K} = \alpha K^{\alpha - 1}L^{1-\alpha} = \alpha k^{\alpha -1}
+\]</span></p>
+<p>Ou de manière alternative, en utilisant la règle générale :</p>
+<p><span class="math display">\[
+R = f^\prime (k)\,\ f(k) = k^\alpha \implies R = f^\prime (k) = \alpha k^{\alpha -1}.
+\]</span></p>
+</section>
+<section id="salaire" class="level4" data-number="3.3.2.2">
+<h4 data-number="3.3.2.2" class="anchored" data-anchor-id="salaire"><span class="header-section-number">3.3.2.2</span> Salaire</h4>
+<p>Le salaire peut être déterminé de manière similaire. De manière générale :</p>
+<p><span id="eq-wage"><span class="math display">\[
+w = \frac{\partial F[K,L]}{\partial L} = \frac{\partial L F\left[\frac{K}{L}\right]}{\partial L} = F\left[\frac{K}{L}\right] + F^\prime \left[\frac{K}{L}\right][-1]\frac{K}{L^2}L = f(k) - f^\prime (k) k.
+\tag{3.10}\]</span></span></p>
+<p>Dans le cas de la formulation Cobb-Douglas :</p>
+<p><span class="math display">\[
+w = \frac{\partial K^\alpha L^{1-\alpha}}{\partial L} = (1-\alpha) K^{\alpha}L^{-\alpha} = (1-\alpha) k^{\alpha}
+\]</span></p>
+<p>Ou de manière alternative, en utilisant la règle générale :</p>
+<p><span class="math display">\[
+w = f(k) - f^\prime (k) k = k^\alpha - \alpha k^{\alpha -1}k = (1-\alpha) k^\alpha.
+\]</span></p>
+</section>
+<section id="parts-de-revenus-shares" class="level4" data-number="3.3.2.3">
+<h4 data-number="3.3.2.3" class="anchored" data-anchor-id="parts-de-revenus-shares"><span class="header-section-number">3.3.2.3</span> Parts de revenus (<em>Shares</em>)</h4>
+<p>Les parts de revenu de chaque facteur se définissent comme les paiements totaux que les propriétaires de chaque facteur reçoivent en pourcentage de la production totale. Par exemple, les propriétaires du capital reçoivent <span class="math inline">\(R\)</span> unités d’intérêt par chaque unité de capital. Ainsi, ils reçoivent au total <span class="math inline">\(R K\)</span>. Il en va de même pour les travailleurs : avec un salaire de <span class="math inline">\(w\)</span>, les travailleurs qui offrent <span class="math inline">\(L\)</span> unités de travail touchent au total <span class="math inline">\(w L\)</span>.</p>
+<p>Pour trouver les parts de revenus (shares), il suffit de voir à quelle proportion <span class="math inline">\(w L\)</span> et <span class="math inline">\(R K\)</span> correspondent par rapport à la production totale. Cela se calcule de la manière suivante :</p>
+<ul>
+<li><span class="math inline">\(\frac{w\ L}{Y}\)</span></li>
+<li><span class="math inline">\(\frac{R\ K}{Y}\)</span></li>
+</ul>
+<p>Dans le cas d’une fonction de production Cobb-Douglas :</p>
+<ul>
+<li><span class="math inline">\(\frac{w\ L}{Y} \stackrel{\text{div. par}\ L}{=} \frac{w}{y} = \frac{w}{f(k)} = \frac{(1-\alpha) k^\alpha}{k^\alpha} = 1- \alpha.\)</span></li>
+<li><span class="math inline">\(\frac{R\ K}{Y} \stackrel{\text{div. par}\ L}{=} \frac{R\ k}{y} = \frac{R\ k}{f(k)} = \frac{\alpha k^{\alpha-1}k}{k^\alpha} = \alpha.\)</span></li>
+</ul>
+<p>Ainsi, dans une économie avec une fonction de production Cobb-Douglas, les travailleurs reçoivent une part <span class="math inline">\((1-\alpha)\)</span> de la production totale, tandis que les capitalistes touchent une part <span class="math inline">\(\alpha\)</span>. Ceci, qui pour l’instant semble plus une curiosité qu’autre chose, sera important par la suite.</p>
+</section>
+</section>
+</section>
+<section id="dérivation-des-dynamiques" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="dérivation-des-dynamiques"><span class="header-section-number">3.4</span> Dérivation des dynamiques</h2>
+<section id="équation-daccumulation-de-capital" class="level3" data-number="3.4.1">
+<h3 data-number="3.4.1" class="anchored" data-anchor-id="équation-daccumulation-de-capital"><span class="header-section-number">3.4.1</span> Équation d’accumulation de capital</h3>
+<p>Le modèle de Solow repose sur une hypothèse simplifiée : le taux d’épargne est le même pour tous les ménages à tout moment. En réalité, le taux d’épargne est fixé de manière exogène dans le modèle, ce qui en fait un <em>paramètre</em>. Nous notons le taux d’épargne par <span class="math inline">\(s\)</span>, qui représente la fraction de la production qui est épargnée. Il est important de noter que le taux d’épargne doit être compris entre 0 et 1, donc nous imposons <span class="math inline">\(0 \leq s \leq 1.\)</span></p>
+<p>Comme nous l’avons mentionné précédemment, l’épargne et l’investissement sont convertis en capital productif pour la période suivante. Ainsi, l’épargne contribue à l’accumulation du capital : plus une économie épargne, plus rapidement le capital s’accumule. Cependant, cela entraîne également une réduction du niveau de consommation, car <span class="math inline">\(C(t) = Y(t) - S(t) = (1-s)Y(t).\)</span> Si le taux d’épargne est élevé, le niveau de consommation doit nécessairement être réduit.</p>
+<p>La dépréciation du capital neutralise l’accumulation réalisée grâce à l’épargne. Nous postulons qu’à chaque période, une fraction <span class="math inline">\(\delta \in (0,1)\)</span> du capital accumulé devient obsolète et cesse d’être productif. Ainsi, si le niveau de capital est <span class="math inline">\(K(t), \delta K(t)\)</span> unités deviennent non productives.</p>
+<hr>
+<p><strong>Dérivées par rapport au temps</strong></p>
+<p>Nous utilisons la notation “point” pour indiquer la dérivation par rapport au temps. Cela signifie que si nous avons une fonction <span class="math inline">\(x(t)\)</span> qui dépend du temps, sa dérivée par rapport au temps est notée comme suit :</p>
+<p><span id="eq-definition_dot"><span class="math display">\[
+\frac{\mathrm{d} x(t)}{\mathrm{d} t} = \dot{x}.
+\tag{3.11}\]</span></span></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Origine">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Origine
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Tout à fait, en physique, la dérivée par rapport au temps d’une fonction qui décrit la position d’un objet donne sa vitesse instantanée à un instant donné. Par exempe, la position de l’individu est décrite par la fonction <span class="math inline">\(x(t) = 2t\)</span> où <span class="math inline">\(x\)</span> représente la position et <span class="math inline">\(t\)</span> le temps.</p>
+<p>Pour trouver la vitesse de cette personne, nous prenons la dérivée de la fonction <span class="math inline">\(x(t)\)</span> par rapport au temps, notée <span class="math inline">\(\frac{\mathrm{d}x(x)}{\mathrm{d}t}\)</span> ou <span class="math inline">\(\dot{x}\)</span>. Dans ce cas, la dérivée de <span class="math inline">\(x(t)\)</span> par rapport à <span class="math inline">\(t\)</span> est simplement 2. Donc, la vitesse de cette personne est <span class="math inline">\(\dot{x} = 2.\)</span> Cela signifie que la personne avance à une vitesse constante de 2 mètres par seconde.</p>
+</div>
+</div>
+<p>Avec les deux hypothèses précédentes, il est possible d’écrire l’équation d’accumulation de capital pour le modèle de Solow. La <em>vitesse</em> du capital, c’est-à-dire le <em>changement de son niveau</em>, est donnée par :</p>
+<p><span id="eq-capital_accumulation"><span class="math display">\[
+\dot{K}(t) = I(t) - \delta K(t) = s F\left[K(t), L(t)\right] - \delta K(t).
+\tag{3.12}\]</span></span></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Alternative">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Alternative
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Une manière parfois plus intiuitive d’arrive au même résultat est de considérer le temps de manière discrète.</p>
+<p>Ainsi, à <span class="math inline">\(t+1\)</span>, le niveau de capital est donné par :</p>
+<p><span class="math display">\[
+K_{t+1} = K_t + I_t - \delta K_t
+\]</span></p>
+<p>Et l’augmentation de capital est de</p>
+<p><span class="math display">\[
+K_{t+1} - K_t = g(k_t)
+\]</span></p>
+<p>Si en lieu d’avancer le temps d’une unité (une année) on l’avance de <span class="math inline">\(\Delta t\)</span>, l’augmentation sera de:</p>
+<p><span class="math display">\[
+K_{t+\Delta t} - K_t \approx \Delta t \cdot g(k_t)
+\]</span></p>
+<p>où $ g(x(t)) $ est maintenant interprété comme un taux de flux par unité de temps, multiplié par la durée $ t $.</p>
+<p>Le taux de changement moyen sur l’intervalle est : <span class="math display">\[
+\frac{K(t + \Delta t) - K(t)}{\Delta t} = g(K(t)).
+\]</span></p>
+<p>En prenant la limite quand <span class="math inline">\(\Delta t \to 0\)</span>, on obtient l’équation différentielle: <span class="math display">\[
+\dot{K}(t) \equiv \frac{\mathrm{d} K(t)}{\mathrm{d} t} = \lim_{\Delta t \to 0} \frac{K(t+\Delta t) - K(t)}{\Delta t} = g(K(t)).
+\]</span></p>
+<p>Une autre manière de dire le même est en partant du <a href="https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_Taylor">Théorème de Taylor</a> qui indique que pour une fonction <span class="math inline">\(x(t)\)</span> suffisamment régulière, on peut approximer <span class="math inline">\(x(t + \Delta t)\)</span> par :</p>
+<p><span class="math display">\[
+x(t + \Delta t) \approx x(t) + \dot{x}(t) \Delta t.
+\]</span></p>
+<p>Ainsi, <span class="math inline">\(x(t + \Delta t) - x(t) \approx \dot{x}(t) \Delta t\)</span>, et en divisant par <span class="math inline">\(\Delta t\)</span> et en prenant la limite quand <span class="math inline">\(\Delta t\)</span> tend vers zéro, on retrouve la définition de la dérivée.</p>
+</div>
+</div>
+<hr>
+<p>Comme on le voit, l’équation d’accumulation de capital dépend de la production totale : <span class="math inline">\(\dot{K}(t) = s \underbrace{F\left[K(t), L(t)\right]}_{=Y(t)} - \delta K(t)\)</span>, et la production dépend du niveau de capital <span class="math inline">\(K(t)\)</span> et du nombre de travailleurs <span class="math inline">\(L(t)\)</span>. Il est facile de calculer le nombre de travailleurs à un moment donné, car ils évoluent de manière exogène. Ainsi,</p>
+<p><span id="eq-population_growth"><span class="math display">\[
+L(t) = L(0)e^{nt}.
+\tag{3.13}\]</span></span></p>
+<p>De manière alternative :</p>
+<p><span class="math display">\[
+\dot{L}(t) = \frac{\partial L(t)}{\partial t} = \frac{\partial L(0)e^{nt}}{\partial t} = n L(0)e^{nt}.
+\]</span></p>
+<p>Ainsi, le taux de croissance de la population est :</p>
+<p><span class="math display">\[
+\frac{\dot{L}(t)}{L(t)} = \frac{n L(0)e^{nt}}{L(0)e^{nt}} = n.
+\]</span></p>
+</section>
+<section id="accumulation-de-capital-par-habitant" class="level3" data-number="3.4.2">
+<h3 data-number="3.4.2" class="anchored" data-anchor-id="accumulation-de-capital-par-habitant"><span class="header-section-number">3.4.2</span> Accumulation de capital par habitant</h3>
+<p>Pour l’instant, l’équation d’accumulation de capital est indiquée en termes de capital total. Il serait plus pratique de l’exprimer en termes de capital par habitant, car c’est l’unité principale du modèle (on ne compare pas le PIB de la Chine avec celui du Luxembourg, on compare le PIB par habitant). En plus, en le faisant, le modèle se simplifie car en lieu de deux variables (<span class="math inline">\(K\)</span> et <span class="math inline">\(L\)</span>), nous n’en avons plus qu’une seule (<span class="math inline">\(k\)</span>). Ainsi, au lieu de <span class="math inline">\(\dot{K}\)</span>, nous voulons calculer <span class="math inline">\(\dot{k}\)</span>. Ce changement apparemment mineur est plus complexe qu’il n’y paraît.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Nous cherchons à calculer <span class="math inline">\(\dot{k} = \dot{\left(\frac{K}{L}\right)}\)</span>, où l’opérateur <span class="math inline">\(\cdot\)</span> (dérivée par rapport au temps, opérateur vitesse) est appliqué <strong>à toute la fraction</strong> <span class="math inline">\(\frac{K}{L}\)</span>.</p>
+<p>En fait, <span class="math inline">\(\dot{\left(\frac{K}{L}\right)}\)</span> est équivalent à <span class="math inline">\(\frac{\mathrm{d}}{\mathrm{d}t}\left(\frac{K(t)}{L(t)}\right)\)</span>, c’est-à-dire la <strong><em>vitesse du capital par habitant</em></strong>. Cela diffère de :</p>
+<ul>
+<li><span class="math inline">\(\dot{K} \rightarrow\)</span> vitesse du capital (sans distinction de la population)</li>
+<li><span class="math inline">\(\dot{K}\big{/}{L} \rightarrow\)</span> vitesse du capital, divisée par la population</li>
+<li><span class="math inline">\(\frac{\dot{K}}{\dot{L}} \rightarrow\)</span> division de la vitesse du capital par la vitesse de la population.</li>
+</ul>
+</div>
+</div>
+<p>Comme <span class="math inline">\(\dot{k} = \dot{\left(\frac{K}{L}\right)} = \frac{\mathrm{d}}{\mathrm{d} t}\left(\frac{K(t)}{L(t)}\right)\)</span>, il suffit d’appliquer les règles de dérivation<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>. Ainsi :</p>
+<p><span id="eq-derivation"><span class="math display">\[
+\begin{aligned}
+\frac{\mathrm{d} \frac{K(t)}{L(t)}}{\mathrm{d} t} &amp;=
+    \frac{ \overbrace{\dot{K}(t)}^{\frac{\mathrm{d} K(t)}{\mathrm{d} t}} L(t) - \overbrace{\dot{L}(t)}^{\frac{\mathrm{d} L(t)}{\mathrm{d} t}}K(t)}{L(t)^2} \\
+&amp;= \frac{\dot{K}(t)}{L(t)} - \frac{\dot{L}(t)}{L(t)}\frac{K(t)}{L(t)} = \frac{\dot{K}(t)}{L(t)} - n k(t)
+\end{aligned}
+\tag{3.14}\]</span></span></p>
+<p>Ici, nous avons utilisé <span class="math inline">\(\frac{\dot{L}(t)}{L(t)} = \frac{n L(0)e^{nt}}{L(0)e^{nt}} = n\)</span> et défini <span class="math inline">\(k(t) \equiv \frac{K(t)}{L(t)}\)</span>.</p>
+<p>Cependant, nous avons encore un problème : notre expression pour <span class="math inline">\(\dot{k}\)</span> inclut <span class="math inline">\(\dot{K}\)</span>, ce qui la rend peu utile. Pour la simplifier, nous utilisons <span class="math inline">\(\dot{K} = s F[K,L] - \delta K\)</span> (il est à noter que cette expression n’est pas par habitant). Ainsi, à partir de :</p>
+<p><span class="math display">\[
+\dot{k} = \frac{\dot{K}(t)}{L(t)} - n k(t)
+\]</span></p>
+<p>si nous remplaçons <span class="math inline">\(\dot{K}(t)\)</span> par <span class="math inline">\(\dot{K} = s F\left[K(t), L(t)\right] - \delta K(t)\)</span>, nous obtenons :</p>
+<p><span class="math display">\[
+\begin{aligned}
+\dot{k} &amp;= \frac{\dot{K}(t)}{L(t)} - n k(t) = \frac{s F\left[K(t), L(t)\right] - \delta K(t)}{L(t)} - n k(t) = \\
+&amp;= s f(k(t)) - (n+\delta)k(t).
+\end{aligned}
+\]</span></p>
+<p>Ainsi, l’équation d’accumulation de capital par habitant est :</p>
+<p><span id="eq-accumulation"><span class="math display">\[
+\dot{k} = s f(k) - (n + \delta) k.
+\tag{3.15}\]</span></span></p>
+<p>L’<a href="#eq-accumulation" class="quarto-xref">Equation&nbsp;<span>3.15</span></a> est l’équation fondamentale du modèle de Solow. Avec la fonction de production Cobb-Douglas, elle devient <span class="math inline">\(\dot{k} = s k^\alpha - (n+\delta)k\)</span>.</p>
+<p>L’équation fondamentale du modèle de Solow nous indique comment le capital <em>par habitant</em> change avec le temps, c’est-à-dire, c’est la vitesse du capital par habitant. On y voit un facteur positif qui accélère l’accumulation de capital par habitant et un autre facteur négatif qui le freine.</p>
+<ul>
+<li><p>Facteur positif : <span class="math inline">\(s f(k)\)</span> Il est lié à l’épargne. En effet, si les ménages épargnent davantage (<span class="math inline">\(s \uparrow\)</span>) ou si la production par unité de capital est plus élevée (<span class="math inline">\(f(k) \uparrow\)</span>), alors on accumule davantage de capital. <strong>On remarque que l’épargne est une fraction de la production totale</strong>.</p></li>
+<li><p>Facteur négatif : <span class="math inline">\((n+\delta) k\)</span></p>
+<p>On peut penser à <span class="math inline">\((n+\delta)\)</span> comme étant le taux total de dépréciation du capital par habitant. D’un côté, si un plus grand nombre de machines deviennent inutilisables chaque année (<span class="math inline">\(\delta\)</span> élevé), alors on perd du capital. D’un autre côté, ici on parle de capital <em>par habitant</em>. Ainsi, si la population augmente considérablement (<span class="math inline">\(n\)</span> élevé), le nombre de machines par personne diminue (<span class="math inline">\(k\)</span> diminue).</p></li>
+</ul>
+<p>Il est possible de représenter graphiquement les deux contributions sur un même graphique, tel que la <a href="#fig-solow_basic" class="quarto-xref">Figure&nbsp;<span>3.1</span></a> le montre</p>
+<div id="cell-fig-solow_basic" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display">
+<div id="fig-solow_basic" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-solow_basic-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="solow_files/figure-html/fig-solow_basic-output-1.png" width="591" height="429" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-solow_basic-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.1: La fonction de production et l’épargne-investissement dans le modèle de Solow
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>La courbe solide représente la fonction de production (intensive) : <span class="math inline">\(f(k) = k^\alpha\)</span>. On peut observer qu’elle vérifie toutes nos hypothèses :</p>
+<ul>
+<li>Croissante (<span class="math inline">\(f^\prime (k) &gt; 0\)</span>)</li>
+<li>Concave (<span class="math inline">\(f^{\prime \prime} (k) &lt; 0\)</span>)</li>
+<li>Pente forte lorsque <span class="math inline">\(k\)</span> est proche de zéro (<span class="math inline">\(\lim_{k \rightarrow 0} f^\prime (k) = \infty\)</span>)</li>
+<li>S’aplatit lorsque <span class="math inline">\(k\)</span> tend vers l’infini (<span class="math inline">\(\lim_{k \rightarrow \infty} f^\prime (k) = 0\)</span>)</li>
+<li>La courbe commence à zéro (<span class="math inline">\(f(0) = 0\)</span>)</li>
+</ul>
+<p>La courbe en traits représente l’épargne-investissement. C’est, par définition dans le modèle, la fraction <span class="math inline">\(s\)</span> de la production totale, et donc elle présente les mêmes propriétés que la fonction <span class="math inline">\(f(x)\)</span>.</p>
+<p>Enfin, la droite grise représente le taux de dépréciation total, incluant la “vraie” dépréciation du capital (<span class="math inline">\(\delta\)</span>) ainsi que l’érosion du capital par habitant due à l’augmentation de la population <span class="math inline">\(n\)</span>. La droite de dépréciation est une droite avec une pente constante égale à <span class="math inline">\(n+\delta\)</span>.</p>
+<p>Il est possible de montrer que, en raison des propriétés des courbes, un point de croisement entre <span class="math inline">\(sf(k)\)</span> et <span class="math inline">\((n+\delta)k\)</span> existe.</p>
+<p>Ce point de croisement est appelé état stationnaire et il constitue un élément crucial du modèle Solow et de tous les modèles dynamiques<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a>.</p>
+<div class="callout callout-style-default callout-important callout-titled" title="Définition">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Définition
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Un <strong>état stationnaire</strong> est un point où les variables économiques clés ne changent plus dans le temps. Dans le modèle de Solow, cela signifie que le capital par habitant <span class="math inline">\(k\)</span> atteint un niveau stable, où l’épargne-investissement compense exactement la dépréciation du capital et la croissance de la population.</p>
+<p>Mathématiquement, cela se traduit par l’égalité suivante:</p>
+<p><span class="math display">\[
+\dot{k} = 0 \implies sf(k) = (n + \delta)k
+\]</span></p>
+<p>Autrement dit, à l’état stationnaire, l’économie ne croît plus en termes de capital par habitant, même si la population continue d’augmenter.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="vers-létat-stationnaire-existence-et-convergence" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="vers-létat-stationnaire-existence-et-convergence"><span class="header-section-number">3.5</span> Vers l’état stationnaire (existence et convergence)</h2>
+<p>De manière informelle, l’état (ou les états) stationnaires d’un modèle dynamique comme une configuration des variables dans laquelle les variables deviennent constantes une fois cette configuration est atteinte.</p>
+<p>Le modèle de Solow a une seule équation dynamique: celle du capital par habitant (<a href="#eq-accumulation" class="quarto-xref">Equation&nbsp;<span>3.15</span></a>). Avec une fonction de production Cobb-Douglas, on a:</p>
+<p><span class="math display">\[
+\dot{k} = s f(k) - (n+\delta)k = s k^\alpha - (n+\delta)k
+\]</span></p>
+<p>Par exemple, avec <span class="math inline">\(s=0.5,\, \alpha=0.3,\, n=0.1\)</span> et <span class="math inline">\(\delta=0.1\)</span>, lorsque le niveau de capital est de <span class="math inline">\(k=2\)</span>, on trouve <span class="math inline">\(\dot{k} = 0.21\)</span>. Cela signifie que le niveau de capital par habitant augmente de 0.21. Ainsi, à la période suivante, le capital est de 2.21 et il augmentera ensuite de seulement 0.19 (Vérifiez-le).</p>
+<p>Comme la pente de la courbe <span class="math inline">\(f(k)\)</span> et de <span class="math inline">\(sf(k)\)</span> <em>diminue</em> lorsque <span class="math inline">\(k\)</span> augmente, à mesure que le capital par habitant s’accumule, la vitesse d’accumulation se réduit. Cela est dû au fait que <span class="math inline">\(f^{\prime \prime}(k) = \alpha (\alpha-1)k^{\alpha-2} &lt; 0\)</span>.</p>
+<p>En même temps, chaque unité de capital par habitant subit un processus de dépréciation qui est <em>constant</em>. Par conséquent, si <span class="math inline">\(n+\delta = 0.2\)</span>, par exemple, avec 2 unités de capital, la dépréciation est de 0.4, et avec 2.21 unités, elle est de 0.442.</p>
+<p>Imaginons une économie qui commence avec peu de capital (<span class="math inline">\(k(0) \approx 0\)</span>). À ce niveau, la productivité du capital est très élevée (pente de la courbe <span class="math inline">\(f(k)\)</span>). En même temps, avec peu de capital, la dépréciation est négligeable. Par conséquent, <span class="math inline">\(\dot{k} &gt; 0\)</span> et le capital s’accumule. Maintenant, le niveau de capital a augmenté, la productivité diminue et le coût de dépréciation augmente. Ainsi, la deuxième augmentation du capital est plus faible. Ce processus se poursuit et aboutit à un point où le capital cesse d’augmenter: l’état stationnaire.</p>
+<p>Mathématiquement, si l’état stationnaire est le point où les variables du modèle ne changent plus, cela signifie que l’état stationnaire est caractérisé par <span class="math inline">\(\dot{k} = 0\)</span>. Cela correspond à:</p>
+<p><span class="math display">\[
+\dot{k} = 0 \implies sf(k) = (n+\delta)k \implies s k^\alpha = (n+\delta)k
+\]</span></p>
+<p>Ainsi, si <span class="math inline">\(k^\star\)</span> indique la valeur <span class="math inline">\(k\)</span> qui correspond à l’état stationnaire, alors on a:</p>
+<p><span class="math display">\[
+sf(k^\star) = (n+\delta)k^\star
+\]</span></p>
+<p>Avec une fonction de production Cobb-Douglas, deux états stationnaires sont possibles:</p>
+<p><span class="math display">\[
+k^\star =
+\begin{cases}
+    \left(\frac{s}{n+\delta}\right)^{\frac{1}{1-\alpha}} \\
+    0
+\end{cases}
+\]</span></p>
+<div class="callout callout-style-default callout-tip callout-titled" title="Solution">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><span class="math display">\[
+\begin{aligned}
+s k^\alpha &amp;= (n+\delta) k \implies s k^{\alpha-1} = n+\delta \implies k^{\alpha-1} = \frac{n+\delta}{s} \\
+k^\star &amp;= \left(\frac{n+\delta}{s}\right)^\frac{1}{\alpha-1} = \left(\frac{s}{n+\delta}\right)^\frac{1}{1-\alpha}
+\end{aligned}
+\]</span></p>
+<p>En plus <span class="math display">\[
+s0^\alpha = (n+\delta)0
+\]</span></p>
+</div>
+</div>
+<p>Exactement, une fois que l’économie atteint le niveau de capital <span class="math inline">\(k^\star\)</span>, le capital cesse de changer et l’économie se stabilise à cet état stationnaire. Pour le vérifier, nous pouvons calculer le taux de variation du capital <span class="math inline">\(\dot{k}\)</span> lorsque <span class="math inline">\(k=k^\star=\left(\frac{s}{n+\delta}\right)^\frac{1}{1-\alpha}\)</span>.</p>
+<p><span class="math display">\[
+\begin{aligned}
+\dot{k}{\big{|}_{k=k^\star}} &amp;= s {k^\star}^{\alpha} - (n+\delta)k^\star \\
+&amp;= s \left(\frac{s}{n+\delta}\right)^\frac{\alpha}{1-\alpha} - (n+\delta)\left(\frac{s}{n+\delta}\right)^\frac{1}{1-\alpha} = \\
+&amp;= s s^\frac{\alpha}{1-\alpha}(n+\delta)^\frac{\alpha}{\alpha-1}-s^\frac{1}{1-\alpha}(n+\delta)(n+\delta)^\frac{1}{\alpha-1} = \\
+&amp; = s^\frac{1}{1-\alpha}(n+\delta)^\frac{\alpha}{\alpha-1}-s^\frac{1}{1-\alpha}(n+\delta)^\frac{\alpha}{\alpha-1}=0.
+\end{aligned}
+\]</span></p>
+<p>L’autre état stationnaire:</p>
+<p><span class="math display">\[
+\dot{k} = s 0^\alpha -(n+\delta)0 = 0
+\]</span></p>
+<p>Par exemple, avec <span class="math inline">\(s=0.5,\, \alpha=0.3,\, n=0.1\)</span> et <span class="math inline">\(\delta=0.1\)</span>, le niveau stationnaire du capital est <span class="math inline">\(k^\star = 3.7\)</span>. En vérifiant l’équation <span class="math inline">\(\dot{k}\big{|}_{k=3.7} = 0.5 \times 3.7^{0.3} - (0.1+0.1) \times 3.7 = 0\)</span>, nous constatons que le taux de variation du capital <span class="math inline">\(\dot{k}\)</span> est nul à ce niveau stationnaire. Il est simple de vérifier que si <span class="math inline">\(k=0\)</span>, l’éparge est 0 et aussi la dépréciation.</p>
+<section id="diagramme-de-phase" class="level3" data-number="3.5.1">
+<h3 data-number="3.5.1" class="anchored" data-anchor-id="diagramme-de-phase"><span class="header-section-number">3.5.1</span> Diagramme de phase</h3>
+<p>Nous pouvons illustrer la situation à l’aide d’un diagramme de phase qui montre <span class="math inline">\(\dot{k}\)</span> en fonction de <span class="math inline">\(k\)</span>.</p>
+<div id="cell-solow_phase_diagram" class="cell" data-execution_count="3">
+<div class="cell-output cell-output-display">
+<div id="solow_phase_diagram" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="solow_files/figure-html/solow_phase_diagram-output-1.png" width="636" height="432" class="figure-img"></p>
+<figcaption>Diagramme de phase du modèle de Solow</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Dans ce diagramme, nous représentons directement la valeur de <span class="math inline">\(\dot{k}\)</span> pour chaque valeur de <span class="math inline">\(k\)</span>. Si <span class="math inline">\(\dot{k} &gt; 0\)</span>, cela signifie que l’économie accumule du capital, tandis que si <span class="math inline">\(\dot{k} &lt; 0\)</span>, cela indique une perte de capital. La perte de capital résulte du fait que l’épargne n’est pas suffisante pour compenser la dépréciation.</p>
+<p>Nous pouvons également observer que lorsque <span class="math inline">\(k\)</span> est éloigné de <span class="math inline">\(k^\star\)</span> (l’état stationnaire), <span class="math inline">\(\dot{k}\)</span> est élevé, ce qui signifie que l’économie accumule du capital à un rythme rapide. À mesure que nous nous approchons de <span class="math inline">\(k^\star\)</span>, cette vitesse d’accumulation diminue.</p>
+</section>
+<section id="existence-de-létat-stationnaire" class="level3" data-number="3.5.2">
+<h3 data-number="3.5.2" class="anchored" data-anchor-id="existence-de-létat-stationnaire"><span class="header-section-number">3.5.2</span> Existence de l’état stationnaire</h3>
+<p>Une première question à aborder est l’existence d’un (ou plusieurs) état stationnaire.</p>
+<p>Comme l’état stationnaire est défini par <span class="math inline">\(\dot{k} = 0\)</span>, nous cherchons les points où la courbe <span class="math inline">\(\dot{k} = s f(k) - (n+\delta)k\)</span> croise l’axe horizontal.</p>
+<p>À cause de l’hypothèse de nécessité, si <span class="math inline">\(k = 0\)</span> alors <span class="math inline">\(f(k) = 0\)</span> et donc <span class="math inline">\(\dot{k} = 0\)</span>. Cela signifie que <span class="math inline">\(k = 0\)</span> est un état stationnaire. En mots: si on démarre avec une économie sans capital, il n’y a pas de production, et donc il n’y a pas d’épargne ni de dépréciation, et l’économie reste sans capital.</p>
+<p>Cependant, celui-ci est un état stationnaire peu intéressant: avec une fonction de production selon laquelle <span class="math inline">\(f(0) &gt; 0\)</span>, les conclusions seront les mêmes. En plus, comme on verra plus tard, cet état stationnaire est instable et l’économie ne s’approche jamais de <span class="math inline">\(k = 0\)</span>. Enfin, une économie sans capital ne peut pas produire, ce qui rend cet état stationnaire peu pertinent.</p>
+<p>Pour ce deuxième état stationnaire, <span class="math inline">\(k &gt; 0\)</span>.</p>
+<p>Nous pouvons donc re-exprimer <span class="math inline">\(\dot{k} = 0\)</span> comme suit:</p>
+<p><span class="math display">\[
+s\frac{f(k)}{k} - (n+\delta) = 0.
+\]</span></p>
+<p>Quand <span class="math inline">\(k\rightarrow 0\)</span>, <span class="math inline">\(\frac{f(k)}{k} \rightarrow \infty\)</span> (car <span class="math inline">\(f^\prime(0) = \infty\)</span> et le théorème de L’Hôpital). Quand <span class="math inline">\(k\rightarrow \infty\)</span>, <span class="math inline">\(\frac{f(k)}{k} \rightarrow 0\)</span> (car <span class="math inline">\(f^\prime(\infty) = 0\)</span> et le théorème de L’Hôpital). Graphiquement la fonction <span class="math inline">\(s\frac{f(k)}{k} - (n+\delta)\)</span> est représentée ci-dessous:</p>
+<div id="cell-solow_phase_diagram_2" class="cell" data-execution_count="4">
+<div class="cell-output cell-output-display">
+<div id="solow_phase_diagram_2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="solow_files/figure-html/solow_phase_diagram_2-output-1.png" width="610" height="432" class="figure-img"></p>
+<figcaption>Diagramme de phase du modèle de Solow</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Enfin, la fonction <span class="math inline">\(s\frac{f(k)}{k} - (n+\delta)\)</span> est décroisante (et continue) car <span class="math inline">\(f(k)\)</span> est concave.</p>
+<p><span class="math display">\[
+\frac{\partial}{\partial k}\left(s\frac{f(k)}{k} - (n+\delta)\right) = s\frac{f^\prime(k)k - f(k)}{k^2} = - s \frac{w}{k^2} &lt; 0
+\]</span></p>
+<p>Ainsi, selon le théorème des valeurs intermédiaires, il existe un point <span class="math inline">\(k^\star &gt; 0\)</span> tel que <span class="math inline">\(s\frac{f(k^\star)}{k^\star} - (n+\delta) = 0\)</span>.</p>
+</section>
+<section id="convergence" class="level3" data-number="3.5.3">
+<h3 data-number="3.5.3" class="anchored" data-anchor-id="convergence"><span class="header-section-number">3.5.3</span> Convergence</h3>
+<p>Un autre aspect important de l’état stationnaire est la convergence. Celà se demande si toute économie, indépendamment de son niveau initial de capital par habitant <span class="math inline">\(k(0)\)</span>, finit par atteindre le même état stationnaire <span class="math inline">\(k^\star\)</span>.</p>
+<p>La réponse est oui. Nous allons le voir de manière mathématique et intuitive.</p>
+<div class="callout callout-style-default callout-important callout-titled" title="Mathématiquement">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Mathématiquement
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Nous devons montrer que pour tout <span class="math inline">\(k(0) &gt; 0\)</span>, il existe un temps <span class="math inline">\(t\)</span> tel que <span class="math inline">\(k(t) \to k^\star\)</span>. Pour cela, nous allons utiliser le <a href="https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_Hartman-Grobman">théorème de Hartman-Grobman</a>. En essence, il indique que les systèmes dynamiques non linéaires peuvent être analysés en termes de leurs comportements locaux autour des points d’équilibre. Le système dynamique dans le modèle de Solow bien qu’il n’a qu’une seule équation, est non linéaire à cause de la fonction de production <span class="math inline">\(f(k)\)</span>. En effet: <span class="math inline">\(\dot{k} = s f(k) - (n+\delta)k = s k^\alpha - (n+\delta)k\)</span>.</p>
+<p>Le théorème de Hartman-Grobman explique que les comportements locaux autour des points d’équilibre peuvent être analysés en linéarisant le système. Pour cela, il faut analyser la stabilité des points d’équilibre en examinant la matrice jacobienne du système. Pour un système en <em>temps continu</em>, si tous les valeurs propres de la matrice jacobienne ont des parties réelles négatives, alors le point d’équilibre est <strong>asymptotiquement stable</strong>. Cela signifie que si l’économie s’écarte légèrement de l’état stationnaire, les forces en présence la ramèneront vers cet état.</p>
+<p>Avec une seule équation, la matrice jacobienne est simplement la dérivée de la fonction <span class="math inline">\(\dot{k}\)</span> par rapport à <span class="math inline">\(k\)</span>, évaluée à l’état stationnaire <span class="math inline">\(k^\star\)</span>.</p>
+<p><span class="math display">\[
+\frac{\partial \dot{k}}{\partial k} = s f^\prime(k) - (n+\delta)
+\]</span></p>
+<p>Nous devons évaluer cette dérivée à l’état stationnaire <span class="math inline">\(k^\star\)</span>. Ansi:</p>
+<p><span class="math display">\[
+\frac{\partial \dot{k}}{\partial k}\big{|}_{k^\star} = s f^\prime(k^\star) - (n+\delta)
+\]</span></p>
+<p>Nous savons qu’à l’état stationnaire, <span class="math inline">\(s f(k^\star) = (n+\delta)k^\star\)</span>. Par conséquent, nous pouvons remplacer <span class="math inline">\((n+\delta)\)</span> dans la dérivée par <span class="math inline">\(\frac{s f(k^\star)}{k^\star}\)</span>.</p>
+<p><span class="math display">\[
+\begin{aligned}
+\frac{\partial \dot{k}}{\partial k}\big{|}_{k^\star} &amp;= s f^\prime(k^\star) - (n+\delta) = \\
+&amp;= s f^\prime(k^\star) - \frac{s f(k^\star)}{k^\star} = \\
+&amp;= s\left[f^\prime(k^\star) - \frac{f(k^\star)}{k^\star}\right] = \\
+&amp;= s\left[\frac{f^\prime(k^\star) k^\star - f(k^\star)}{k^\star}\right] = \\
+&amp;= s\left[\frac{-s}{k^\star}\right] = -\frac{s^2}{k^\star} &lt; 0
+\end{aligned}
+\]</span></p>
+<p>Il est évident que <span class="math inline">\(\frac{\partial \dot{k}}{\partial k}\big{|}_{k^\star} &lt; 0\)</span>, ce qui signifie que l’état stationnaire est un point d’équilibre stable. Par conséquent, n’importe où l’économie démarre, elle convergera vers cet état stationnaire.</p>
+<p><strong>Attention</strong>: un deuxième état stationnaire existe à <span class="math inline">\(k=0\)</span>. Il est nécessaire de vérifier sa stabilité en évaluant la dérivée de <span class="math inline">\(\dot{k}\)</span> à <span class="math inline">\(k=0\)</span>.</p>
+<p><span class="math display">\[
+\frac{\partial \dot{k}}{\partial k}\big{|}_{0} = s f^\prime(0) - (n+\delta) = \infty - (n+\delta) = \infty &gt; 0,
+\]</span></p>
+<p>car <span class="math inline">\(f^\prime(0) = \infty\)</span> à cause des conditions d’Inada. Ainsi, l’état stationnaire <span class="math inline">\(k=0\)</span> est un point d’équilibre instable ce qui signifie que si l’économie démarre avec un peu de capital, elle s’en éloignera et ne reviendra jamais à <span class="math inline">\(k=0\)</span>.</p>
+<p>Cependant, si l’économie commence <em>justement</em> sur un état stationnaire, elle y restera, indépendamment de sa stabilité. En effet, un état stationnaire est un point tel que, si atteint, l’économie n’en bouge plus.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled" title="Intuitivement">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Intuitivement
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Pour comprendre la convergence (et donc stabilité) de l’état stationnaire de manière intuitive, analysons les forces qui gouvernent l’évolution du capital par travailleur, <span class="math inline">\(k\)</span>. L’équation <span class="math inline">\(\dot{k} = s f(k) - (n+\delta)k\)</span> nous dit que la variation du capital (<span class="math inline">\(\dot{k}\)</span>) est la différence entre deux termes :</p>
+<p>L’investissement brut par travailleur, <span class="math inline">\(s f(k)\)</span> : une fraction <span class="math inline">\(s\)</span> de la production, qui sert à créer du nouveau capital. L’investissement de remplacement, <span class="math inline">\((n+\delta)k\)</span> : le montant nécessaire pour compenser l’usure du capital existant (<span class="math inline">\(\delta k\)</span>) et pour équiper les nouveaux travailleurs qui arrivent en raison de la croissance démographique (<span class="math inline">\(nk\)</span>). Imaginons une économie qui démarre avec un très faible niveau de capital par travailleur, <span class="math inline">\(k\)</span>. En raison de la productivité marginale décroissante, chaque unité de capital est très productive lorsque le capital est rare. La courbe de production <span class="math inline">\(f(k)\)</span> est donc très pentue au départ. Par conséquent, l’investissement brut <span class="math inline">\(s f(k)\)</span> est très élevé par rapport au niveau de capital. En parallèle, comme <span class="math inline">\(k\)</span> est faible, l’investissement de remplacement <span class="math inline">\((n+\delta)k\)</span> est lui aussi très faible. La situation est donc claire : <span class="math inline">\(s f(k) &gt; (n+\delta)k\)</span>, ce qui signifie que <span class="math inline">\(\dot{k} &gt; 0\)</span>. L’économie accumule plus de capital qu’elle n’en perd, et le stock de capital par travailleur augmente.</p>
+<p>Maintenant, à mesure que ce capital <span class="math inline">\(k\)</span> s’accumule :</p>
+<p>La productivité marginale du capital diminue. La courbe d’investissement <span class="math inline">\(s f(k)\)</span> s’aplatit. Chaque unité de capital additionnelle génère un surplus de production (et donc d’investissement) de plus en plus faible. L’investissement de remplacement <span class="math inline">\((n+\delta)k\)</span> continue d’augmenter de manière linéaire. Il faut de plus en plus d’investissement juste pour maintenir le niveau de capital par travailleur. L’écart positif entre l’investissement brut et l’investissement de remplacement se réduit donc progressivement. L’accumulation de capital se poursuit, mais à un rythme de plus en plus lent (<span class="math inline">\(\dot{k}\)</span> est positif mais décroissant).</p>
+<p>Ce processus s’arrête lorsque l’économie atteint un niveau de capital <span class="math inline">\(k^\star\)</span> où l’investissement brut est exactement égal à l’investissement de remplacement : <span class="math inline">\(s f(k^\star) = (n+\delta)k^\star\)</span>. À ce point, tout l’investissement sert à compenser l’usure et la dilution du capital. Il n’y a plus d’investissement net, donc <span class="math inline">\(\dot{k} = 0\)</span>. L’économie a atteint son état stationnaire.</p>
+<p>Le graphique ci-dessous illustre cette dynamique. En partant d’un point <span class="math inline">\(k_{low}\)</span>, l’investissement brut (la courbe) est supérieur à l’investissement de remplacement (la droite), créant une variation positive <span class="math inline">\(\dot{k}\)</span> qui pousse <span class="math inline">\(k\)</span> vers la droite. Cet effet s’affaiblit à mesure que l’on s’approche de <span class="math inline">\(k^\star\)</span>, où les deux courbes se croisent et où le mouvement s’arrête.</p>
+</div>
+</div>
+<div id="cell-fig-solow_convergence" class="cell" data-execution_count="5">
+<div class="cell-output cell-output-display">
+<div id="fig-solow_convergence" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-solow_convergence-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="solow_files/figure-html/fig-solow_convergence-output-1.png" width="603" height="141" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-solow_convergence-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.2: Dynamique de convergence vers l’état stationnaire
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="changement-du-taux-dépargne" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="changement-du-taux-dépargne"><span class="header-section-number">3.6</span> Changement du taux d’épargne</h2>
+<p>Dans le modèle de Solow, les différentes politiques mises en œuvre par les gouvernements sont plus susceptibles de modifier la valeur du taux d’épargne. Par exemple, pendant la période de la COVID, les ménages allemands ont épargné beaucoup plus que d’habitude. Il est naturel de se demander comment l’économie évolue suite à ce changement de paramètre<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a>.</p>
+<iframe src="https://d3fy651gv2fhd3.cloudfront.net/embed/?s=germanypersav&amp;v=202305251059V20230410&amp;d1=20180710&amp;d2=20220710&amp;h=300&amp;w=600" height="300" width="600" frameborder="0" scrolling="no"></iframe>
+<p>Imaginons que l’économie se trouve à son état stationnaire et que le taux d’épargne <span class="math inline">\(s\)</span> augmente. Cela signifie qu’un nouvel état stationnaire apparaît : <span class="math inline">\(k^\star_{\text{new}} = \left(\frac{s_{\text{new}}}{n+\delta}\right)^\frac{1}{1-\alpha}\)</span>. Dans le graphique suivant, l’économie passe de la situation rouge à la noire. Avec un niveau de <span class="math inline">\(s\)</span> plus élevé, elle atteint un niveau stationnaire plus important.</p>
+<div id="cell-fig-solow_phase_diagram" class="cell" data-execution_count="6">
+<div class="cell-output cell-output-display">
+<div id="fig-solow_phase_diagram" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-solow_phase_diagram-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="solow_files/figure-html/fig-solow_phase_diagram-output-1.png" width="603" height="432" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-solow_phase_diagram-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.3: Diagramme de phase du modèle de Solow
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Par contre, la transition vers le nouvel état stationnaire n’est pas immédiate. Au moment où l’épargne change, l’économie se trouve avec un niveau de capital initial <span class="math inline">\(k_{t=0}\)</span>, et ce niveau de capital ne peut changer qu’avec le cycle épargne-investissement. Cependant, lorsque le taux d’épargne passe de <span class="math inline">\(s_{\text{old}}\)</span> à <span class="math inline">\(s_{\text{new}}\)</span>, le niveau de capital se trouve <em>à gauche du <strong>nouvel</strong> état stationnaire</em>. Cela signifie que l’économie suit des changements dynamiques :</p>
+<ol type="1">
+<li>Rappel : à l’état stationnaire, l’épargne compense exactement la dépréciation, et le niveau de capital <span class="math inline">\(k\)</span> reste inchangé.</li>
+<li>Lorsqu’il y a une augmentation de l’épargne, l’économie commence à accumuler du capital, car maintenant ce qui est ajouté à l’économie est supérieur à ce qui est perdu en raison de la dépréciation.</li>
+<li>Par conséquent, le niveau de capital <span class="math inline">\(k\)</span> augmente.</li>
+<li>À mesure que <span class="math inline">\(k\)</span> augmente, la productivité marginale du capital diminue, ce qui signifie que chaque unité supplémentaire de capital contribue de moins en moins à la production totale.</li>
+<li>En même temps, à chaque augmentation de <span class="math inline">\(k\)</span>, la dépréciation augmente de manière linéaire.</li>
+<li>Finalement, l’économie atteint un nouveau état stationnaire où l’épargne compense à nouveau exactement la dépréciation, et le niveau de capital <span class="math inline">\(k\)</span> se stabilise à une valeur plus élevée qu’auparavant.</li>
+</ol>
+<div id="cell-fig-solow-convergence" class="cell" data-execution_count="7">
+<div class="cell-output cell-output-display">
+<div id="fig-solow-convergence" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-solow-convergence-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="solow_files/figure-html/fig-solow-convergence-output-1.png" width="593" height="430" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-solow-convergence-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.4: Dynamique de convergence vers l’état stationnaire
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="règle-dor" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="règle-dor"><span class="header-section-number">3.7</span> Règle d’or</h2>
+<p>Le modèle Solow montre que toute économie converge vers son état stationnaire. La valeur <span class="math inline">\(k^\star\)</span> dépend du niveau d’épargne (entre autres choses) car, avec une fonction de production Cobb-Douglas : <span class="math inline">\(k^\star = \left(\frac{\color{red}{s}}{n+\delta}\right)^\frac{1}{1-\alpha}\)</span>. Il est aussi clair que, avec un taux d’épargne plus élevé (<span class="math inline">\(s\)</span>), le niveau stationnaire augmente.</p>
+<p><strong>Exercice</strong>: montrez que le niveau <span class="math inline">\(k^\star\)</span> augmente avec <span class="math inline">\(s\)</span> (avec une fonction Cobb-Douglas).</p>
+<p>Jusqu’à présent, notre analyse a porté sur l’évolution de <span class="math inline">\(k\)</span>, mais <strong>un niveau plus élevé de <span class="math inline">\(k\)</span> n’implique pas plus de bien-être</strong>. En fait, ce qui est intéressant à regarder est le niveau de consommation. Rappelons que la consommation est la partie non épargnée : <span class="math inline">\(c = (1-s)f(k)\)</span>. Imaginons que l’économie se trouve à l’état stationnaire, ainsi la consommation stationnaire est <span class="math inline">\(c^\star = (1-s)f(k^\star)\)</span>. Avec un taux <span class="math inline">\(s\)</span> faible, on consomme une grande partie de la production (terme <span class="math inline">\(1-s\)</span>), mais on ne produit pas beaucoup car <span class="math inline">\(k^\star\)</span> est petit (terme <span class="math inline">\(f(k^\star)\)</span>). Et inversement, avec un taux d’épargne élevé, on produit beaucoup mais on consomme une fraction petite. Y a-t-il un niveau d’épargne optimal qui maximise la consommation à l’état stationnaire ?</p>
+<p>La réponse est oui: la règle d’or (<span class="math inline">\(s_{\text{gold}}\)</span>). À l’état stationnaire, <span class="math inline">\(c^\star = (1-s)f(k^\star) = f(k^\star) - \color{red}{sf(k^\star)}\)</span>. La définition d’état stationnaire est <span class="math inline">\(\dot{k} = sf(k^\star) - (n+\delta)k^\star = 0\)</span>. Par conséquent, à l’état stationnaire, nous avons que <span class="math inline">\(\color{red}{sf(k^\star) = (n+\delta)k^\star}\)</span>, et nous pouvons remplacer cette expression dans l’équation de consommation. Ainsi, nous avons :</p>
+<p><span class="math display">\[
+c^\star (s) = f(k^\star) - (n+\delta)k^\star.
+\]</span></p>
+<p>Avec la fonction de production Cobb-Douglas, nous avons :</p>
+<p><span class="math display">\[
+c^\star (s) = {k^\star}^\alpha - (n+\delta)k^\star = \left(\frac{s}{n+\delta}\right)^\frac{\alpha}{1-\alpha} - (n+\delta)\left(\frac{s}{n+\delta}\right)^\frac{1}{1-\alpha}
+\]</span></p>
+<p>car <span class="math inline">\(k^\star = \left(\frac{s}{n+\delta}\right)^\frac{1}{1-\alpha}.\)</span></p>
+<p>Par définition, la règle d’or est le taux d’épargne qui maximise la consommation à l’état stationnaire. Ainsi, pour le trouver, il suffit de maximiser <span class="math inline">\(c^\star\)</span> par rapport à <span class="math inline">\(s\)</span>.</p>
+<p><span class="math display">\[
+\begin{aligned}
+s_{gold} &amp;= \arg \max_{s} c^\star(s) = f[k^\star(s)] - (n+\delta)k^\star(s) \\
+&amp; \frac{\mathrm{d} f[k^\star(s)] - (n+\delta)k^\star (s)}{\mathrm{d} s} = 0 \implies f^\prime (k_{gold}) = (n+\delta)
+\end{aligned}
+\]</span></p>
+<p>Avec la fonction de Cobb-Douglas, on peut directement observer la dépendance entre <span class="math inline">\(c^\star\)</span> et <span class="math inline">\(s\)</span> :</p>
+<p><span class="math display">\[
+c^\star (s) = \left(\frac{s}{n+\delta}\right)^\frac{\alpha}{1-\alpha}-(n+\delta)\left(\frac{s}{n+\delta}\right)^\frac{1}{1-\alpha}
+\]</span></p>
+<div id="cell-fig:c_star" class="cell" data-execution_count="8">
+<div class="cell-output cell-output-display">
+<div id="figc_star" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="solow_files/figure-html/figc_star-output-1.png" width="621" height="430" class="figure-img"></p>
+<figcaption>Consommation stationnaire en fonction de l’épargne</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Si ensuite on maximise <span class="math inline">\(c^\star\)</span> par rapport à <span class="math inline">\(s\)</span> :</p>
+<p><span class="math display">\[\begin{align}
+\frac{\mathrm{d} \overbrace{\left(\frac{s}{n+\delta}\right)^\frac{\alpha}{1-\alpha}-(n+\delta)\left(\frac{s}{n+\delta}\right)^\frac{1}{1-\alpha}}^{c^\star}}{\mathrm{d} s} &amp;= 0 \implies \\
+\frac{\alpha}{1-\alpha}\left(\frac{s}{n+\delta}\right)^\frac{2\alpha-1}{1-\alpha}-(n+\delta)\frac{1}{1-\alpha}\left(\frac{s}{n+\delta}\right)^\frac{\alpha}{1-\alpha} &amp;= 0 \implies s_{gold} = \alpha
+\end{align}\]</span></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Vérification">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Vérification
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Pour rappel, le niveau <span class="math inline">\(s_{gold}\)</span> est celui pour lequel <span class="math inline">\(f^\prime(k(s_{gold})) = n+\delta\)</span>. Vérifions que, pour la fonction de production Cobb-Douglas, <span class="math inline">\(s_{gold} = \alpha\)</span> implique <span class="math inline">\(f^\prime(k(s_{gold})) = n+\delta\)</span>.</p>
+<p>Avec une fonction Cobb-Douglas <span class="math inline">\(f^\prime [k] = \alpha k^{\alpha-1}\)</span>. Le niveau stationnaire du capital est <span class="math inline">\(k^\star = \left(\frac{s}{n+\delta}\right)^\frac{1}{1-\alpha}\)</span>, et lorsque <span class="math inline">\(s = \alpha\)</span> <span class="math inline">\(k^\star\)</span> devient <span class="math inline">\(\left(\frac{\alpha}{n+\delta}\right)^\frac{1}{1-\alpha}.\)</span> Ainsi <span class="math inline">\(f^\prime \left[k^\star\right] = \alpha \left(\frac{\alpha}{n+\delta}\right)^{-1} = n+\delta\)</span>. On voit donc bien qu’avec <span class="math inline">\(s_{gold} = \alpha\)</span>, <span class="math inline">\(f^\prime \left[k^\star (s_{gold})\right] = n + \delta\)</span>, comme la théorie le prédit.</p>
+</div>
+</div>
+<p>Comme nous l’avons mentionné, deux effets jouent leur rôle lorsque la valeur de <span class="math inline">\(s\)</span> change: lorsque <span class="math inline">\(s\)</span> augmente, le capital stationnaire <span class="math inline">\(k^\star\)</span> augmente, ce qui entraîne une augmentation de la production (<span class="math inline">\(f(k^\star) \uparrow\)</span>).</p>
+<ul>
+<li>Comme la production a augmenté, il est possible de consommer plus (<span class="math inline">\(c^\star = f(k^\star) - (n+\delta)k^\star\)</span>).</li>
+<li>En même temps, plus de capital implique une plus grande dépréciation ($ (n+)k^$).</li>
+</ul>
+<p>Graphiquement, on peut observer l’effet d’un changement dans <span class="math inline">\(s\)</span> comme suit. L’hauteur de la courbe <span class="math inline">\((n+\delta)k\)</span> indique le niveau de dépréciation. À l’état stationnaire, l’épargne compense exactement la dépréciation, et donc, ce niveau indique la partie de la production qui est consacrée à l’épargne-investissement. Ainsi, ce qui reste entre <span class="math inline">\(f(k)\)</span> et <span class="math inline">\((n+\delta)k\)</span> est la consommation à l’état stationnaire <span class="math inline">\(c^\star\)</span>.</p>
+<div id="cell-fig-optimality_condition" class="cell" data-execution_count="9">
+<div class="cell-output cell-output-display">
+<div id="fig-optimality_condition" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-optimality_condition-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="solow_files/figure-html/fig-optimality_condition-output-1.png" width="540" height="436" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-optimality_condition-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3.5: Condition d’optimalité
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<section id="inefficacité-dynamique" class="level3" data-number="3.7.1">
+<h3 data-number="3.7.1" class="anchored" data-anchor-id="inefficacité-dynamique"><span class="header-section-number">3.7.1</span> Inefficacité dynamique</h3>
+<p>Le taux d’épargne <span class="math inline">\(s_{gold}\)</span> est celui qui maximise le niveau de consommation à l’état stationnaire. Avec une fonction de production Cobb-Douglas, <span class="math inline">\(s_{gold} = \alpha\)</span>. On peut imaginer que, pour la plupart des économies, le taux d’épargne ne coïncide pas avec l’optimal. Cependant, il est possible de déterminer les cas où l’économie pourrait faire mieux.</p>
+<p>Imaginons que l’économie soit à son état stationnaire, et supposons que le taux d’épargne soit <span class="math inline">\(s_1 &gt; s_{gold}\)</span>. Comme <span class="math inline">\(s_1 \neq s_{gold}\)</span>, la consommation stationnaire est susceptible d’être augmentée en <em>réduisant</em> le niveau d’épargne jusqu’à <span class="math inline">\(s_{gold}\)</span>. Cela constitue une stratégie gagnante :</p>
+<ol type="1">
+<li>Tout d’abord, on diminue le taux d’épargne de <span class="math inline">\(s_1\)</span> à <span class="math inline">\(s_{gold}\)</span>.</li>
+<li>L’économie avait accumulé un niveau de capital <span class="math inline">\(k^\star(s_1) &gt; k^\star(s_{gold})\)</span>. En réduisant l’épargne, la dépréciation fait diminuer le niveau de capital, et celui-ci converge vers <span class="math inline">\(k^\star(s_{gold})\)</span>.</li>
+<li>Pendant la transition, le niveau de consommation est supérieur à ce qu’on avait (<span class="math inline">\(c^\star(s_1)\)</span>).</li>
+<li>Lorsque l’économie atteint le nouvel état stationnaire <span class="math inline">\(k^\star(s_{gold})\)</span>, le niveau de consommation est maximal.</li>
+</ol>
+<p>Ainsi, avec la diminution du taux d’épargne, tout le monde gagne pendant la transition et à l’état stationnaire. Ce type de situation est connu comme une situation d’<em>inefficacité dynamique</em> et, dans le modèle de Solow, apparaît lorsque <span class="math inline">\(s &gt; s_{gold}\)</span>.</p>
+<p>En revanche, si <span class="math inline">\(s_1 &lt; s_{gold}\)</span>, il est <em>impossible</em> d’améliorer la consommation pour tous à tout moment. Il est certain que, en augmentant le niveau d’épargne, l’économie converge vers un meilleur état stationnaire. Cependant, pendant la transition, la consommation diminue : il est nécessaire d’épargner davantage, ce qui implique une réduction de la consommation.</p>
+</section>
+<section id="questions" class="level3" data-number="3.7.2">
+<h3 data-number="3.7.2" class="anchored" data-anchor-id="questions"><span class="header-section-number">3.7.2</span> Questions</h3>
+<p>Imaginez qu’une économie soit à son état stationnaire <span class="math inline">\(k^\star\)</span> et que <span class="math inline">\(f^\prime(k^\star) &gt; n + \delta\)</span>. Supposons qu’une politique augmente le taux d’épargne : le nouveau niveau de consommation stationnaire serait-il supérieur ou inférieur à celui d’aujourd’hui ?</p>
+<p>Si <span class="math inline">\(f^\prime(k^\star) &gt; n + \delta\)</span>, l’économie se trouve en région d’inefficacité dynamique. En effet, la consommation est maximale lorsque <span class="math inline">\(f^\prime(k) = n + \delta\)</span>, et si <span class="math inline">\(k\)</span> est supérieur à ce niveau, la consommation diminue. Pour le voir, nous savons que <span class="math inline">\(c^\star = f(k^\star) - (n+\delta)k^\star\)</span>. Ainsi, <span class="math inline">\(\frac{\partial^2 c}{\partial k^2} = f^{\prime \prime}(k) &lt; 0\)</span>, et la courbe a une forme de U inversé. Par conséquent, si <span class="math inline">\(k\)</span> est supérieur à <span class="math inline">\(k_{gold}\)</span> et on augmente le capital, la consommation diminue. C’est bien notre cas : l’augmentation de <span class="math inline">\(s\)</span> augmente le niveau de <span class="math inline">\(k^\star\)</span>, plongeant l’économie davantage dans la région inefficace.</p>
+</section>
+</section>
+<section id="croissance-économique" class="level2" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="croissance-économique"><span class="header-section-number">3.8</span> Croissance économique</h2>
+<p>Le modèle de Solow prédit que toute économie converge vers son état stationnaire. Ainsi, une économie qui débute avec un niveau de capital <em>par habitant</em> faible (<span class="math inline">\(k_0\)</span>) verra celui-ci augmenter jusqu’à ce qu’il atteigne l’état stationnaire. Une fois que l’économie a atteint son état stationnaire, elle y reste. Qu’est-ce que cela signifie ?</p>
+<section id="croissance-à-létat-stationnaire" class="level3" data-number="3.8.1">
+<h3 data-number="3.8.1" class="anchored" data-anchor-id="croissance-à-létat-stationnaire"><span class="header-section-number">3.8.1</span> Croissance à l’état stationnaire</h3>
+<p>Commençons par analyser l’état stationnaire. Comme <span class="math inline">\(k^\star\)</span> est constant, la production <em>par habitant</em> <span class="math inline">\(f(k^\star)\)</span> est également constante. Étant donné que <span class="math inline">\(y^\star = f(k^\star)\)</span> représente le PIB <em>par habitant</em>, la conclusion est que, <em>à long terme, le PIB par habitant est constant</em>. Si l’on préfère mesurer le bien-être avec la consommation <em>par habitant</em>, la conclusion est la même car <span class="math inline">\(c^\star = (1-s)f(k^\star)\)</span>.</p>
+<p>D’autres indicateurs, tels que le <em>PIB total</em>, sont également importants, et nous pouvons montrer qu’à l’état stationnaire, la consommation totale, la quantité totale de capital et le PIB total augmentent au rythme de <span class="math inline">\(n\)</span>. Pour cela, il suffit de reprendre les définitions et de calculer le taux de croissance de chaque variable. On indique le taux de croissance de la variable <span class="math inline">\(x\)</span> par <span class="math inline">\(g_{x}\)</span>. Lorsque le temps est continu, il se calcule comme suit: <a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a></p>
+<p><span class="math display">\[
+g_{x} = \frac{\dot{x}}{x}.
+\]</span></p>
+<p>Ainsi:</p>
+<ul>
+<li>Capital total :</li>
+</ul>
+<p><span class="math display">\[\begin{align}
+  k \equiv \frac{K}{L} &amp; \implies K = kL \implies g_{K} = \frac{\dot{kL}}{kL} = \\
+  &amp; \frac{\dot{k}L}{kL} + \frac{k\dot{L}}{kL} = \frac{\dot{k}}{k} + \frac{\dot{L}}{L} = \\
+  &amp; \quad \quad g_{K} = g_{k} + g_{L} = 0 + n = n.
+\end{align}\]</span></p>
+<p>Ici, <span class="math inline">\(g_{k} = 0\)</span> car nous sommes à l’état stationnaire et, par définition, <span class="math inline">\(k\)</span> est constant. * Production totale : <span class="math inline">\(y \equiv \frac{Y}{L} \implies Y = yL \implies g_{Y} = \frac{\dot{yL}}{yL} = g_{y} + g_{L} = n\)</span> Cela est dû au fait que <span class="math inline">\(y\)</span> à l’état stationnaire est constante. Une autre manière de voir le même:</p>
+<p><span class="math display">\[\begin{align}
+    Y &amp; = K^\alpha L^{1-\alpha} \implies g_{Y} = \frac{\dot{K^\alpha L^{1-\alpha}}}{K^\alpha L^{1-\alpha}} = \\
+    &amp; \frac{\alpha K^{\alpha-1}\dot{K}L^{1-\alpha} + (1-\alpha)K^\alpha L^{-\alpha}\dot{L}}{K^\alpha L^{1-\alpha}} \\
+    \\
+    g_{Y} &amp;= \alpha \dot{K} + (1-\alpha)\dot{L} = \alpha n + (1-\alpha) n = n.
+\end{align}\]</span></p>
+<ul>
+<li>Consommation : <span class="math inline">\(c \equiv \frac{C}{L} \implies C = cL \implies g_{C} = g_{c} + g_{L} = 0 + n.\)</span></li>
+</ul>
+<p>Dans le modèle de Solow, <em>à l’état stationnaire</em>, les variables agrégées augmentent à la même vitesse que les facteurs exogènes, ce qui conduit à une conclusion insatisfaisante. Cependant, selon les données, les économies développées, supposées être proches ou à leur état stationnaire, connaissent une croissance économique par habitant : le revenu par habitant augmente, la production par habitant augmente, etc. Il convient donc de proposer des changements dans le modèle pour mieux l’aligner avec les données.</p>
+</section>
+<section id="croissance-pendant-la-transition-et-convergence-entre-pays" class="level3" data-number="3.8.2">
+<h3 data-number="3.8.2" class="anchored" data-anchor-id="croissance-pendant-la-transition-et-convergence-entre-pays"><span class="header-section-number">3.8.2</span> Croissance pendant la transition et convergence entre pays</h3>
+<p>Un pays avec un niveau de capital inférieur à son état stationnaire, c’est-à-dire <span class="math inline">\(k &lt; k^\star\)</span>, observe un processus de croissance économique vers cet état stationnaire. Pendant cette transition, le taux de variation du capital, noté <span class="math inline">\(\dot{k}\)</span>, est positif et le capital s’accumule. De plus, à mesure que l’on se rapproche de l’état stationnaire, le taux de croissance du capital diminue jusqu’à atteindre zéro. Il est donc clair que pendant cette transition, on observe une croissance économique à la fois en termes de revenu par habitant et en termes de revenu total.</p>
+<p>En effet, avec <span class="math inline">\(\dot{k} &gt; 0\)</span>, le taux de croissance du capital <em>par habitant</em> est positif : <span class="math inline">\(g_{k} = \frac{\dot{k}}{k} &gt; 0\)</span>. Par conséquent, la production par habitant et la consommation par habitant augmentent également. Avec une fonction de type Cobb-Douglas, nous avons: <span class="math inline">\(g_{y} = g_{k^\alpha} = \alpha g_{k} &gt; 0\)</span> et <span class="math inline">\(g_{c} = g_{(1-s)y} = g_{y} &gt; 0\)</span>.</p>
+<p>Les variables en termes de revenu total augmentent également plus rapidement qu’auparavant. Par exemple, le taux de croissance du capital total est donné par <span class="math inline">\(g_{K} = g_{Lk} = g_{k} + g_{L} = \frac{\dot{k}}{k} + n &gt; n\)</span>.</p>
+</section>
+</section>
+<section id="convergence-1" class="level2" data-number="3.9">
+<h2 data-number="3.9" class="anchored" data-anchor-id="convergence-1"><span class="header-section-number">3.9</span> Convergence</h2>
+<section id="convergence-absolue" class="level3" data-number="3.9.1">
+<h3 data-number="3.9.1" class="anchored" data-anchor-id="convergence-absolue"><span class="header-section-number">3.9.1</span> Convergence absolue</h3>
+<p>Nous avons précédemment mentionné que le taux de croissance du capital par habitant est plus élevé lorsque l’économie est éloignée de son état stationnaire. En effet, le taux de croissance du capital par habitant est donné par l’équation:</p>
+<p><span class="math display">\[
+g_{k} = \frac{\dot{k}}{k} = \frac{s f(k) - (n+\delta)k}{k} = s\frac{f(k)}{k} - (n + \delta).
+\]</span></p>
+<p>Ainsi,</p>
+<p><span class="math display">\[
+\frac{\partial g_{k}}{\partial k} = s \frac{\overbrace{f^\prime (k) k - f(k)}^{=(-1)w}}{k^2} \stackrel{Cobb-Douglas}{=} s (-1)  \frac{\overbrace{(1-\alpha)k^\alpha}^{=w}}{k^2} &lt; 0.
+\]</span></p>
+<p>En conclusion, lorsque le capital par habitant s’accumule, son taux de croissance devient plus faible.</p>
+<p>Si cela est vrai, cela signifie que les pays les plus pauvres devraient afficher un taux de croissance plus élevé. Par conséquent, nous devrions observer un rattrapage, c’est-à-dire que les pays les plus pauvres connaîtraient un taux de croissance plus élevé que les pays les plus riches, ce qui entraînerait une réduction de l’écart entre eux. Cette hypothèse selon laquelle les économies les plus pauvres ont une croissance plus forte que celle des économies les plus riches sans tenir compte de leurs caractéristiques est appelée <strong>convergence absolue</strong>. Cependant, les données rejettent clairement cette prédiction.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./images/absolute_convergence.png" class="img-fluid figure-img"></p>
+<figcaption>Convergence Absolue, Barro et Sala-i-Martín, 2004</figcaption>
+</figure>
+</div>
+</section>
+<section id="convergence-conditionelle" class="level3" data-number="3.9.2">
+<h3 data-number="3.9.2" class="anchored" data-anchor-id="convergence-conditionelle"><span class="header-section-number">3.9.2</span> Convergence conditionelle</h3>
+<p>Une hypothèse sous-jacente à l’idée de la convergence absolue est que les <strong>paramètres</strong> de toutes les économies sont les mêmes. Dans le modèle de Solow, les paramètres du modèle incluent le taux d’épargne (<span class="math inline">\(s\)</span>), le taux de croissance de la population (<span class="math inline">\(n\)</span>), le taux de dépréciation (<span class="math inline">\(\delta\)</span>), et la part du capital (<span class="math inline">\(\alpha\)</span>). Nous avons déjà vu comment un taux d’épargne différent implique un état stationnaire différent.</p>
+<p>S’il est vrai que des <strong>groupes</strong> de pays similaires convergent vers un même état stationnaire, alors dans ces groupes, les pays les moins riches devraient connaître un taux de croissance plus élevé que les pays les plus riches (au sein du groupe de pays). Cette idée selon laquelle des pays similaires convergent vers un même état stationnaire est appelée <strong>convergence conditionnelle</strong>, car elle dépend des caractéristiques propres aux pays. Dans ce cas, les données confirment l’idée de la convergence conditionnelle.</p>
+<p><img src="./images/conditional_convergence_ocde.png" class="img-fluid" alt="Convergence conditionnelle, OCDE, Barro et Sala-i-Martín"> <img src="./images/conditional_convergence_usa.png" class="img-fluid" alt="Convergence conditionnelle, USA, Barro et Sala-i-Martín"></p>
+</section>
+</section>
+<section id="progrès-technologique" class="level2" data-number="3.10">
+<h2 data-number="3.10" class="anchored" data-anchor-id="progrès-technologique"><span class="header-section-number">3.10</span> Progrès technologique</h2>
+<p>L’équation la plus importante du modèle de Solow est la caractérisation de l’état stationnaire :</p>
+<p><span class="math display">\[
+\dot{k} = s f(k) - (n+\delta) k = 0.
+\]</span></p>
+<p>Une conséquence de la manière dont nous avons modélisé l’économie est que, à l’état stationnaire, la croissance du PIB par habitant est nulle. Cependant, cette prédiction contredit les données observées.</p>
+<p>Une façon d’aligner le modèle de Solow avec l’observation selon laquelle les variables par habitant augmentent est d’ajouter le progrès technologique. Cela implique de modifier les hypothèses du modèle de la manière suivante :</p>
+<ul>
+<li>La fonction de production intègre le progrès technologique : <span class="math inline">\(Y(t) = F\left[K(t), A(t)L(t)\right] = K(t)^\alpha (A(t)L(t))^{1-\alpha}\)</span> où <span class="math inline">\(A(t)\)</span> représente le niveau de technologie.</li>
+<li>Le taux de croissance de la technologie est exogène et constant : <span class="math inline">\(g_{A} = x &gt; 0\)</span>.</li>
+</ul>
+<p>La formulation de la fonction de production inclut le terme <span class="math inline">\(A(t)\)</span> en multipliant le nombre de travailleurs (<span class="math inline">\(L\)</span>). Lorsque cela se produit, on dit que la technologie est “labour-augmenting”, c’est-à-dire qu’une amélioration technologique nous permet de produire autant avec moins de travailleurs. Dans le cas général du modèle de Solow, l’introduction de la technologie de cette manière est nécessaire pour obtenir un état stationnaire avec des variables constantes. Cependant, avec la formulation Cobb-Douglas, cela n’est pas nécessaire.<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a></p>
+<p>Normalement, avec l’introduction de la technologie, on parle de “travailleurs effectifs”, de “capital par travailleur effectif”, de production “par travailleur effectif”, etc. En effet, nous devons redéfinir les anciennes variables par habitant pour les exprimer en termes de “travailleurs effectifs”.</p>
+<p><span class="math display">\[
+\hat{k} \equiv \frac{K}{AL}\,\ \hat{y} \equiv \frac{Y}{AL}\,\ \hat{c} \equiv \frac{C}{AL}
+\]</span></p>
+<p>La fonction de production reste homogène de premier degré :</p>
+<p><span class="math display">\[
+f(\hat{k}) \equiv F\left[\frac{K}{AL}, 1\right] = \frac{K^\alpha(AL)^{1-\alpha}}{AL} = \hat{k}^\alpha
+\]</span></p>
+<section id="accumulation-de-capital" class="level3" data-number="3.10.1">
+<h3 data-number="3.10.1" class="anchored" data-anchor-id="accumulation-de-capital"><span class="header-section-number">3.10.1</span> Accumulation de capital</h3>
+<p>Le capital continue de s’accumuler comme avant : les ménages épargnent une fraction constante <span class="math inline">\(s\)</span> de la production. L’épargne est transformée en investissement et s’ajoute au stock de capital, tandis que la dépréciation le diminue. Ainsi, en termes agrégés, rien ne change :</p>
+<p><span class="math display">\[
+\dot{K} = s F[K, AL] - \delta K = s K^\alpha (AL)^{1-\alpha} - \delta K.
+\]</span></p>
+<p>Comme toujours, pour éviter de suivre 3 variables (<span class="math inline">\(K, L, A\)</span>), on se focalise uniquement sur l’évolution de <span class="math inline">\(\hat{k}\)</span>. Ainsi:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\dot{\hat{k}} &amp;= \dot{\frac{K}{AL}} = \frac{\dot{K}AL - \dot{A}KL - \dot{L}AK}{A^2L^2} = \frac{\dot{K}}{AL} - \frac{\dot{A}}{A}\hat{k} - \frac{\dot{L}}{L}\hat{K} = \\
+&amp;= \frac{sF[K,AL]-\delta K}{AL} - x \hat{k} - n \hat{k} = s f(\hat{k}) - (x + n + \delta)\hat{k} = \\
+&amp; = s\hat{k}^\alpha - (x+n+\delta)\hat{k}.
+\end{aligned}
+\]</span></p>
+</section>
+<section id="état-stationnaire" class="level3" data-number="3.10.2">
+<h3 data-number="3.10.2" class="anchored" data-anchor-id="état-stationnaire"><span class="header-section-number">3.10.2</span> État stationnaire</h3>
+<p>À partir de l’équation d’accumulation de capital, on peut caractériser l’état stationnaire de l’économie comme la valeur de <span class="math inline">\(\hat{k}\)</span> telle que <span class="math inline">\(\dot{\hat{k}} = 0\)</span>. Cette fois, avec le progrès technologique, on trouve :</p>
+<p><span class="math display">\[
+\hat{k}^\star = \left(\frac{s}{n+d+x}\right)^\frac{1}{1-\alpha}
+\]</span></p>
+<p>Si on le compare avec l’état stationnaire de l’économie <em>sans</em> progrès technologique <span class="math inline">\(k^\star = \left(\frac{s}{n+d}\right)^\frac{1}{1-\alpha}\)</span>, il est inférieur. Comment est-ce possible ? C’est parce que nous ne comparons pas la même chose : avec le progrès technologique, <span class="math inline">\(\hat{k}\)</span> mesure le capital <em>par unité effective de travail</em>. Si <span class="math inline">\(\hat{k} \equiv \frac{K}{AL}\)</span>, on a <span class="math inline">\(k = \hat{k}A\)</span>.</p>
+</section>
+<section id="progrès-technologique-et-croissance-économique" class="level3" data-number="3.10.3">
+<h3 data-number="3.10.3" class="anchored" data-anchor-id="progrès-technologique-et-croissance-économique"><span class="header-section-number">3.10.3</span> Progrès technologique et croissance économique</h3>
+<p>Enfin, nous pouvons observer l’effet du progrès technologique sur la croissance économique.</p>
+<p>Tout d’abord, dans une économie sans progrès technologique, le niveau de capital par travailleur ne change pas (<span class="math inline">\(\dot{k} = 0\)</span>) une fois atteint l’état stationnaire. Cependant, cela est en contradiction avec les données.</p>
+<p>Avec le progrès technologique, l’état stationnaire est défini par <span class="math inline">\(\dot{\hat{k}} = 0\)</span>. Par conséquent, puisque <span class="math inline">\(\hat{k} = \frac{K}{AL}\)</span>, cela implique que <span class="math inline">\(k = \hat{k}A\)</span> et si <span class="math inline">\(A\)</span> augmente, le niveau de capital par habitant (<span class="math inline">\(k\)</span>) augmente également. Il est possible de calculer son taux de croissance: <span class="math inline">\(g_{k} = g_{\hat{k}} + g_{A} = 0 + x = x &gt; 0\)</span>.</p>
+<p>Le fait d’avoir incorporé le progrès technologique dans le modèle permet une croissance soutenue de l’économie, même à l’état stationnaire. Les autres variables par habitant augmentent également: <span class="math inline">\(g_{y} = g_{\hat{y}} + g_{A} = 0 + x\)</span> et <span class="math inline">\(g_{c} = g_{\hat{c}} + g_{A} = 0 + x\)</span>.</p>
+</section>
+</section>
+<section id="conclusions-et-implications" class="level2" data-number="3.11">
+<h2 data-number="3.11" class="anchored" data-anchor-id="conclusions-et-implications"><span class="header-section-number">3.11</span> Conclusions et implications</h2>
+<section id="croissance-économique-1" class="level3" data-number="3.11.1">
+<h3 data-number="3.11.1" class="anchored" data-anchor-id="croissance-économique-1"><span class="header-section-number">3.11.1</span> Croissance économique</h3>
+<p>Dans le modèle de Solow, si toutes les conditions des fonctions de production néoclassiques sont respectées, la croissance économique de long terme necessite d’un taux de croissance (exogène) de la technologie. Pour rappel, le modèle atteint toujours un état stationnaire auquel le taux de croissance (de la variable <span class="math inline">\(k\)</span>) devient zéro. Ainsi, si <span class="math inline">\(k\)</span> mesure le capital par tête, elle cesse d’augmenter; même si <span class="math inline">\(K\)</span> augmente au taux <span class="math inline">\(n\)</span>. Au contraire, si <span class="math inline">\(k\)</span> se définit comme <span class="math inline">\(\frac{K}{AL}\)</span>, la croissace du capital par tête est <span class="math inline">\(g_A &gt; 0\)</span>.</p>
+<p>L’hypothèse du modèle responsable de ce resultat est la condition d’Inada qui force la productivité marginal vers zéro quand le capital devient abondant.</p>
+</section>
+<section id="vraisemblance-du-modèle-de-solow" class="level3" data-number="3.11.2">
+<h3 data-number="3.11.2" class="anchored" data-anchor-id="vraisemblance-du-modèle-de-solow"><span class="header-section-number">3.11.2</span> Vraisemblance du modèle de Solow</h3>
+<p>Si l’on souhaite comprendre les écarts de revenu par habitant dans le monde, le modèle de Solow nous offre deux alternatives. En effet, nous avons l’équation <span class="math inline">\(y = Af(\hat{k}) = A^{1-\alpha}f(k) = A^{1-\alpha}k^\alpha\)</span>, ce qui signifie que nous avons soit :</p>
+<ol type="1">
+<li>Des écarts dans le niveau de capital par habitant, soit</li>
+<li>Des écarts dans le niveau de technologie.</li>
+</ol>
+<p>D’un côté, seule la croissance de la technologie <span class="math inline">\(A\)</span> est capable de générer une croissance économique dans l’état stationnaire. Si l’on se concentre en dehors de l’état stationnaire, il est facile de voir que la variable <span class="math inline">\(k\)</span> ne peut pas expliquer les écarts de richesse. Les estimations typiques pour la valeur de <span class="math inline">\(\alpha\)</span> donnent <span class="math inline">\(\alpha = \frac{1}{3}.\)</span></p>
+<p>Prenons l’exemple de deux pays, <span class="math inline">\(J\)</span> et <span class="math inline">\(K\)</span>, ayant le même niveau de <span class="math inline">\(A\)</span>, où <span class="math inline">\(J\)</span> est dix fois plus riche que <span class="math inline">\(K\)</span> en termes de revenu par habitant, c’est-à-dire que <span class="math inline">\(y_{J} = 10 y_{K}\)</span>. Selon la fonction de production Cobb-Douglas, <span class="math inline">\(y_{J} = A^{1-\alpha}k_{J}^\alpha\)</span> et <span class="math inline">\(y_{K} = A^{1-\alpha}k_{K}^\alpha\)</span>. Par conséquent, <span class="math inline">\(\frac{y_{J}}{y_{K}} = 10\)</span> implique <span class="math inline">\(\frac{A^{1-\alpha}k_{J}^\alpha}{A^{1-\alpha}k_{K}^\alpha} = 10\)</span>. En développant cette équation, on obtient <span class="math inline">\(\left(\frac{k_{J}}{K_{k}}\right)^{\alpha} = 10 \implies k_{J}^\alpha = 10 k_{K}^{\alpha}.\)</span> Si <span class="math inline">\(\alpha = \frac{1}{3}\)</span>, alors <span class="math inline">\(k_{J} = 1000 k_{K}\)</span>. Ainsi, pour expliquer un écart de 10 en termes de revenu par habitant, il faudrait que l’écart de capital par habitant soit de 1000. Or, nous ne voyons pas ce type d’écart dans le monde réel.</p>
+<p>Par exemple, le PIB par habitant en Allemagne est de 66132 (2023) tandis qu’en France il est de 58828, soit un écart de 1.1241. Pour expliquer cet écart uniquement par une différence de capital par habitant, il faudrait que l’Allemagne ait un niveau de capital par habitant <span class="math inline">\(1.1241 = \left(\frac{k_{\text{GER}}}{k_{\text{FRA}}}\right)^\frac{1}{3} \implies k_\text{GER} = 1.42 k_{\text{FRA}}\)</span>, soit environ 42% plus élevé que celui de la France. Cela n’est pas crédible.</p>
+<p>Par conséquent, si l’on prend le modèle de Solow au sérieux, les différences de PIB par habitant devraient provenir des différences de technologie, plus précisément des <strong>différences d’efficacité du travail</strong>. Malheureusement, le modèle de Solow ne nous dit rien sur la façon dont <span class="math inline">\(A\)</span> est créé, les raisons pour lesquelles <span class="math inline">\(A\)</span> croît plus rapidement dans un pays que dans un autre, etc. De plus, le terme <strong>efficacité du travail</strong> est un terme vague qui englobe tout ce qui n’est pas mesurable. Il englobe nos connaissances, notre éducation, notre manière d’organiser le travail, nos infrastructures, notre acceptation du risque, nos droits de propriété, etc.</p>
+<hr>
+<p>La valeur <span class="math inline">\(\alpha\)</span> prend généralement des valeurs proches de <span class="math inline">\(\frac{1}{3}\)</span>. Cela correspond à la rémunération totale du capital dans le modèle lorsque les marchés sont concurrentiels. Pour le voir, il suffit de calculer la fraction de la production totale reçue par les détenteurs de capital.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Remarque">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Remarque
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Cela n’est valable qu’avec une fonction de production Cobb-Douglas. Autres formes fonctionelles <strong>n’impliquent pas</strong> que les détenteurs de capital reçoivent une fraction constante de la production.</p>
+</div>
+</div>
+<p><span class="math display">\[\begin{align}
+\frac{RK}{Y} &amp;= \frac{R \frac{K}{L}}{\frac{Y}{L}} = \frac{Rk}{y} = \\
+&amp;=\frac{f^\prime(k) k}{f(k)} = \frac{\alpha k^{\alpha-1}k}{k^\alpha} = \alpha.
+\end{align}\]</span></p>
+<p>Ainsi, en ayant une approximation du total versé en intérêts par rapport à la production, il est possible d’estimer <span class="math inline">\(\alpha\)</span>.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Démonstration">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Démonstration
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>On cherche une forme fonctionnelle telle que: <span class="math inline">\(\frac{f^\prime (k) k}{f(k)} = z\)</span> où <span class="math inline">\(z\)</span> c’est une constante. Il s’agit donc de résoudre une équation différentielle:</p>
+<p><span class="math display">\[
+\frac{f^\prime(k)}{f(k)} = z \frac{1}{k} \implies \int \frac{f^\prime(k)}{f(k)} \mathrm{d}k = z \int \frac{1}{k} \mathrm{d}k
+\]</span></p>
+<p>En conséquence:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\log(f(k)) &amp;= z \log(k) + \log(C) \\
+\log(f(k)) &amp;= \log(Ck^z) \\
+f(k) &amp;= Ck^z
+\end{aligned}
+\]</span></p>
+<p>Ainsi, la seule forme fonctionnelle impliquant que le capital reçoive une fraction constante de la production est la fonction de type Cobb-Douglas: <span class="math inline">\(f(k)=k^\alpha.\)</span></p>
+</div>
+</div>
+<hr>
+</section>
+<section id="a-comme-la-mésure-de-nos-non-connaisances-comptabilité-de-la-croissance" class="level3" data-number="3.11.3">
+<h3 data-number="3.11.3" class="anchored" data-anchor-id="a-comme-la-mésure-de-nos-non-connaisances-comptabilité-de-la-croissance"><span class="header-section-number">3.11.3</span> <span class="math inline">\(A\)</span> comme la mésure de nos non-connaisances : comptabilité de la croissance</h3>
+<p>Il est relativement simple de montrer que <span class="math inline">\(A\)</span> mesure tout ce qui n’est pas mesurable. À partir du modèle de Solow, nous avons que le taux de croissance du PIB par habitant est donné par :</p>
+<p><span class="math display">\[
+\begin{aligned}
+y &amp;= \frac{Y}{L} = \frac{K^\alpha (AL)^{1-\alpha}}{L} = K^\alpha L^{-\alpha} A^{1-\alpha} \implies \\
+&amp; \implies g_{y} = \alpha(g_{K} - g_{L})+(1-\alpha)g_{A}.
+\end{aligned}
+\]</span></p>
+<p>Les taux de croissance du PIB par habitant (<span class="math inline">\(g_{y}\)</span>), du capital total (<span class="math inline">\(g_{K}\)</span>) et de la population (<span class="math inline">\(g_{L}\)</span>) sont faciles à estimer. En outre, si les marchés sont concurrentiels et si le capital reçoit son produit marginal, <span class="math inline">\(\alpha\)</span> correspond au pourcentage reçu par les détenteurs de capital comme fraction de la production (<span class="math inline">\(\alpha \approx \frac{1}{3}\)</span>). Ainsi, le dernier terme <span class="math inline">\((1-\alpha) g_{A}\)</span> représente en fait la part de la croissance économique que nous ne pouvons pas expliquer avec les facteurs observables. Ce terme est connu sous le nom de “résidu de Solow”.</p>
+<p>Souvent, on pense au résidu de Solow comme étant la croissance technologique, mais en réalité, il englobe tout ce qui n’est ni capital ni travail. Comme nous l’avons dit, cela comprend la technologie, mais aussi l’éducation, l’organisation industrielle, les infrastructures, etc. C’est en fait une mesure de notre ignorance des facteurs qui contribuent à la croissance économique.</p>
+
+
+</section>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>Voir Barro et Sala-i-Martín (p.&nbsp;23, 2004).<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Le modèle de Solow ne prend pas explicitement en compte l’utilité des agents. Ainsi, au lieu d’utiliser une formulation telle que <span class="math inline">\(U(c(t)) = u(c(t)) \stackrel{ex}{=} \log(c(t))\)</span>, on suppose que plus de consommation est toujours préférable (ce qui est en réalité vrai pour les fonctions d’utilité typiques).<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>On peut imaginer que chaque ménage épargne <span class="math inline">\(s(t)\)</span>, qu’il y a <span class="math inline">\(L(t)\)</span> ménages dans l’économie et donc <span class="math inline">\(S(t) = s(t)L(t)\)</span>.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Veuillez vous référer à l’annexe pour plus d’informations.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>En effet, c’est comme si on calculait la dérivée suivante : <span class="math inline">\(\frac{\mathrm{d} \frac{x^2}{\log(x)}}{\mathrm{d} x}\)</span>. La seule différence, c’est qu’au lieu d’avoir deux fonctions explicites <span class="math inline">\(x^2\)</span> et <span class="math inline">\(\log(x)\)</span>, nous avons <span class="math inline">\(K(t)\)</span> et <span class="math inline">\(L(t)\)</span>. Faire apparaître la dépendance du temps <span class="math inline">\((t)\)</span> de manière explicite aide à la dérivation.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>Comme nous le verrons, l’état stationnaire est le point où <span class="math inline">\(k\)</span> ne croît ni ne diminue, et vers lequel l’économie converge. Dans d’autres modèles, ce que l’on retrouve, c’est la où les variables principales augmentent à une vitesse constante.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>Le cas allemand était temporaire et sert seulement à motiver la description. Notre analyse porte sur des changements <em>permanents</em> de <span class="math inline">\(s\)</span>.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>Avec la fonction de production Cobb-Douglas, il n’est pas important de savoir si la technologie affecte le travail, le capital ou la production totale, car on peut toujours réécrire la fonction de production de manière à ce que la technologie ne multiplie que le travail. Ainsi, si <span class="math inline">\(A K^\alpha L^{1-\alpha} \rightarrow K^\alpha (A^\frac{1}{1-\alpha} L)^{1-\alpha}\)</span>, et si <span class="math inline">\((AK)^\alpha L^{1-\alpha} \rightarrow K^\alpha (A^\frac{1}{\alpha} L)^{1-\alpha}\)</span>.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p>Avec la fonction de production Cobb-Douglas, il n’est pas important de savoir si la technologie affecte le travail, le capital ou la production totale, car on peut toujours réécrire la fonction de production de manière à ce que la technologie ne multiplie que le travail. Ainsi, si <span class="math inline">\(A K^\alpha L^{1-\alpha} \rightarrow K^\alpha (A^\frac{1}{1-\alpha} L)^{1-\alpha}\)</span>, et si <span class="math inline">\((AK)^\alpha L^{1-\alpha} \rightarrow K^\alpha (A^\frac{1}{\alpha} L)^{1-\alpha}\)</span>.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./introduction.html" class="pagination-link" aria-label="Introduction">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./ramsey.html" class="pagination-link" aria-label="Le modèle de Ramsey">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Le modèle de Ramsey</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

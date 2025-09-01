@@ -1,0 +1,2607 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.33">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Simone Bertoli">
+<meta name="author" content="Melchior Clerc">
+<meta name="author" content="Jordan Loper">
+<meta name="author" content="Èric Roca Fernández">
+<meta name="dcterms.date" content="2024-07-18">
+<meta name="keywords" content="Cultural persistence, Tradition, Deep reproduction">
+
+<title>Understanding cultural persistence and change: a replication of Giuliano and Nunn (2021) – Èric Roca Fernández</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-b3aed8deb8408878d0e4e165d993d59e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Èric Roca Fernández</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../teaching.html"> 
+<span class="menu-text">Teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../seminars/index.qmd"> 
+<span class="menu-text">Seminars</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../contact.qmd"> 
+<span class="menu-text">Contact</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#acknoweldgements" id="toc-acknoweldgements" class="nav-link active" data-scroll-target="#acknoweldgements">Acknoweldgements</a></li>
+  <li><a href="#sec-introduction" id="toc-sec-introduction" class="nav-link" data-scroll-target="#sec-introduction"><span class="header-section-number">1</span> Introduction</a>
+  <ul class="collapse">
+  <li><a href="#our-reproduction-approach" id="toc-our-reproduction-approach" class="nav-link" data-scroll-target="#our-reproduction-approach"><span class="header-section-number">1.1</span> Our reproduction approach</a></li>
+  </ul></li>
+  <li><a href="#the-six-equations-using-individual-level-data" id="toc-the-six-equations-using-individual-level-data" class="nav-link" data-scroll-target="#the-six-equations-using-individual-level-data"><span class="header-section-number">2</span> The six equations using individual-level data</a>
+  <ul class="collapse">
+  <li><a href="#eq.-2-importance-of-tradition" id="toc-eq.-2-importance-of-tradition" class="nav-link" data-scroll-target="#eq.-2-importance-of-tradition">Eq. (2) Importance of tradition</a>
+  <ul class="collapse">
+  <li><a href="#coding-mistake" id="toc-coding-mistake" class="nav-link" data-scroll-target="#coding-mistake">Coding mistake</a></li>
+  </ul></li>
+  <li><a href="#eq.-4-within-group-marriage" id="toc-eq.-4-within-group-marriage" class="nav-link" data-scroll-target="#eq.-4-within-group-marriage">Eq. (4) Within-group marriage</a>
+  <ul class="collapse">
+  <li><a href="#coding-mistakes" id="toc-coding-mistakes" class="nav-link" data-scroll-target="#coding-mistakes">Coding mistakes</a></li>
+  <li><a href="#correcting-the-coding-mistakes" id="toc-correcting-the-coding-mistakes" class="nav-link" data-scroll-target="#correcting-the-coding-mistakes">Correcting the coding mistakes</a></li>
+  </ul></li>
+  <li><a href="#eq.-5-speaking-a-foreign-language-at-home" id="toc-eq.-5-speaking-a-foreign-language-at-home" class="nav-link" data-scroll-target="#eq.-5-speaking-a-foreign-language-at-home">Eq. (5) Speaking a foreign language at home</a>
+  <ul class="collapse">
+  <li><a href="#coding-mistakes-1" id="toc-coding-mistakes-1" class="nav-link" data-scroll-target="#coding-mistakes-1">Coding mistakes</a></li>
+  <li><a href="#correcting-the-coding-mistakes-1" id="toc-correcting-the-coding-mistakes-1" class="nav-link" data-scroll-target="#correcting-the-coding-mistakes-1">Correcting the coding mistakes</a></li>
+  </ul></li>
+  <li><a href="#eq.-6-speaking-a-foreign-language-at-home-living-with-parents" id="toc-eq.-6-speaking-a-foreign-language-at-home-living-with-parents" class="nav-link" data-scroll-target="#eq.-6-speaking-a-foreign-language-at-home-living-with-parents">Eq. (6) Speaking a foreign language at home (living with parents)</a>
+  <ul class="collapse">
+  <li><a href="#coding-mistakes-2" id="toc-coding-mistakes-2" class="nav-link" data-scroll-target="#coding-mistakes-2">Coding mistakes</a></li>
+  <li><a href="#correcting-the-coding-mistakes-2" id="toc-correcting-the-coding-mistakes-2" class="nav-link" data-scroll-target="#correcting-the-coding-mistakes-2">Correcting the coding mistakes</a></li>
+  </ul></li>
+  <li><a href="#eq.-8-indigenous-populations-speaking-a-traditional-language" id="toc-eq.-8-indigenous-populations-speaking-a-traditional-language" class="nav-link" data-scroll-target="#eq.-8-indigenous-populations-speaking-a-traditional-language">Eq. (8) Indigenous populations speaking a traditional language</a>
+  <ul class="collapse">
+  <li><a href="#coding-mistakes-3" id="toc-coding-mistakes-3" class="nav-link" data-scroll-target="#coding-mistakes-3">Coding mistakes</a></li>
+  <li><a href="#correcting-the-coding-mistakes-3" id="toc-correcting-the-coding-mistakes-3" class="nav-link" data-scroll-target="#correcting-the-coding-mistakes-3">Correcting the coding mistakes</a></li>
+  </ul></li>
+  <li><a href="#eq.-9-speaking-a-traditional-language-living-with-parents" id="toc-eq.-9-speaking-a-traditional-language-living-with-parents" class="nav-link" data-scroll-target="#eq.-9-speaking-a-traditional-language-living-with-parents">Eq. (9) Speaking a traditional language (living with parents)</a>
+  <ul class="collapse">
+  <li><a href="#coding-mistakes-4" id="toc-coding-mistakes-4" class="nav-link" data-scroll-target="#coding-mistakes-4">Coding mistakes</a></li>
+  <li><a href="#correcting-the-coding-mistakes-4" id="toc-correcting-the-coding-mistakes-4" class="nav-link" data-scroll-target="#correcting-the-coding-mistakes-4">Correcting the coding mistakes</a></li>
+  </ul></li>
+  <li><a href="#impact-of-the-corrections" id="toc-impact-of-the-corrections" class="nav-link" data-scroll-target="#impact-of-the-corrections">Impact of the corrections</a></li>
+  </ul></li>
+  <li><a href="#concluding-remarks" id="toc-concluding-remarks" class="nav-link" data-scroll-target="#concluding-remarks"><span class="header-section-number">3</span> Concluding remarks</a></li>
+  <li><a href="#sec-appendices" id="toc-sec-appendices" class="nav-link" data-scroll-target="#sec-appendices">Appendices</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="Bertoli_Clerc_Loper_Roca-Fernandez__2023.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Understanding cultural persistence and change: a replication of Giuliano and Nunn (2021)</h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Simone Bertoli <a href="mailto:simone.bertoli@uca.fr" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0000-0002-6512-0834" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Université Clermont-Auvgerne, CERDI, CNRS, IRD
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Melchior Clerc <a href="mailto:melchior_solal.clerc@uca.fr" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0009-0003-3734-8609" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Université Clermont-Auvgerne, CERDI, CNRS, IRD
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Jordan Loper <a href="mailto:jordan.loper@uca.fr" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0009-0007-7931-9944" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Université Clermont-Auvgerne, CERDI, CNRS, IRD
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Èric Roca Fernández <a href="mailto:eric.roca_fernandez@uca.fr" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0000-0003-1557-4966" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Université Clermont-Auvgerne, CERDI, CNRS, IRD
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">July 18, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+<div>
+  <div class="abstract">
+    <div class="block-title">Abstract</div>
+    <p>Giuliano and Nunn (2021) provide econometric evidence that ancestral climatic variability reduces the current importance of tradition. We conduct a “deep reproduction”, comparing the precise descriptions of the individual-level regressions in their article with the corresponding code. This analysis uncovers several major inconsistencies, also related to the code not included in their replication package. A published <em>corrigendum</em> addresses some inconsistencies we had also communicated to the Editor of REStud, but several remain, relating to a substantial portion of the observations. A realignment of the code with the text reveals a more nuanced relationship between ancestral climatic variability and tradition.</p>
+  </div>
+</div>
+
+<div>
+  <div class="keywords">
+    <div class="block-title">Keywords</div>
+    <p>Cultural persistence, Tradition, Deep reproduction</p>
+  </div>
+</div>
+
+</header>
+
+
+<section id="acknoweldgements" class="level1 unnumbered">
+<h1 class="unnumbered">Acknoweldgements</h1>
+<p>The replicated article is: Paola Giuliano and Nathan Nunn (2021), “Understanding cultural persistence and change,” <em>The Review of Economic Studies</em>, 88(4), 1541-1581. The code underlying this replication is available at: <a href="https://www.openicpsr.org/openicpsr/project/202861" class="uri">https://www.openicpsr.org/openicpsr/project/202861</a>. We are grateful to Paola Giuliano and Nathan Nunn for their engagement in our replication exercise and for providing valuable feedback to us. The content of our exchanges remains private, as we did not ask for their consent to share it. We also appreciate the comments provided by the Guest Editor, Abel Brodeur, and by two anonymous referees, as well as those received from Toman Barsbai, Denis Cogneau, Yannick Dupraz, Jesús Fernández-Huertas Moraga, Francesca Marchetta, and Jérôme Valette. We acknowledge the support received from the <em>Agence Nationale de la Recherche</em> of the French government through the program Investissements d’avenir* (ANR-10-LABX-14-01). The usual disclaimers apply.</p>
+</section>
+<section id="sec-introduction" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Introduction</h1>
+<p>Cultural persistence, the preservation of cultural traits over time, is a topic of profound importance in economics and social sciences. Research has demonstrated the enduring influence of culture on economic outcomes, such as female labor-force participation and fertility decisions. Moreover, harmful practices rooted in tradition may hinder social progress.</p>
+<p>The study published in <em>The Review of Economic Studies</em> by <span class="citation" data-cites="giuliano2021understanding">Giuliano and Nunn (<a href="#ref-giuliano2021understanding" role="doc-biblioref">2021</a>)</span> (henceforth GN, the Authors, or the original article) has garnered significant attention in economics due to its novel insights into the determinants of cultural persistence. Drawing inspiration from evolutionary anthropology, GN propose that societies that have historically experienced greater climatic variability exhibit lower persistence of cultural traits. This prediction stems from the idea that intergenerational environmental changes reduce the value of knowledge embedded in tradition, rendering it less relevant to current conditions.</p>
+<p>To test this hypothesis, GN employs a combination of theoretical modeling and econometric analyses using multiple data sources. The core of their empirical approach focuses on natives of immigrant origin residing in the United States, who provide a unique opportunity to study the effects of historical climatic variability on cultural persistence.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> By comparing immigrants from different countries with varying climatic histories but living in the same location, GN can isolate the impact of climatic variability from other confounding factors related to geography. Additionally, the analysis incorporates data on Native Americans to address concerns about unobserved heterogeneity across different countries due to different patterns of self-selection into migration to the United States from different origin countries.</p>
+<p>The findings of GN consistently support the evolutionary anthropology prediction. They show that greater ancestral intergenerational climatic variability experienced by one’s ancestors is associated with lower levels of cultural persistence, as measured by various indicators of the importance of tradition and the adherence to cultural norms. Empirically, all the results presented in GN point to a consistent negative effect of the ancestral intergenerational climatic variability experienced by one’s own ancestors on various stated and revealed measures of the importance of tradition as well as on the persistence of cultural norms. These results highlight the crucial role of past environmental factors in shaping the persistence of cultural traits.</p>
+<p>GN’s theoretical model and empirical findings have become keystones in economics, inspiring multiple articles to explore the implications of their insights. The original article has already been cited extensively, despite its recent publication, with Google Scholar reporting 364 citations and publisher metrics showing that it has received approximately 64 times more citations than the average publication in the same field (information retrieved on March 14, 2024). These citations include influential articles published in leading journals, for instance, <span class="citation" data-cites="bau2021can">Bau (<a href="#ref-bau2021can" role="doc-biblioref">2021</a>)</span>, <span class="citation" data-cites="bazzietal2019">Bazzi et al. (<a href="#ref-bazzietal2019" role="doc-biblioref">2019</a>)</span>, <span class="citation" data-cites="bazzi2020frontier">Bazzi, Fiszbein, and Gebresilasse (<a href="#ref-bazzi2020frontier" role="doc-biblioref">2020</a>)</span>, <span class="citation" data-cites="bazzi2023other">Bazzi et al. (<a href="#ref-bazzi2023other" role="doc-biblioref">2023</a>)</span>, <span class="citation" data-cites="Bursztyn">Bursztyn et al. (<a href="#ref-Bursztyn" role="doc-biblioref">2024</a>)</span>, <span class="citation" data-cites="Caprettiniandvoth">Caprettini and Voth (<a href="#ref-Caprettiniandvoth" role="doc-biblioref">2022</a>)</span>, <span class="citation" data-cites="enke2019kinship">Enke (<a href="#ref-enke2019kinship" role="doc-biblioref">2019</a>)</span>, <span class="citation" data-cites="ghosh">Ghosh, Hwang, and Squires (<a href="#ref-ghosh" role="doc-biblioref">2023</a>)</span>, <span class="citation" data-cites="michalopoulos2021folklore">Michalopoulos and Xue (<a href="#ref-michalopoulos2021folklore" role="doc-biblioref">2021</a>)</span> and <span class="citation" data-cites="valenciacaicedo">Valencia Caicedo (<a href="#ref-valenciacaicedo" role="doc-biblioref">2018</a>)</span>.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<p>Paralleling its bibliometric impact, its scientific contribution is substantial. Indeed, economists are increasingly coming to understand the long-term impact of ancestral cultural traits on contemporary outcomes. In that respect, this literature provides numerous empirical pieces of evidence of the persistence of culture across generations. On the other hand, another vivid literature presents numerous examples of rapid cultural change, such as the Protestant Reformation (see the introduction in GN), or the abandonment of traditional values following the contact with Europeans, or the implementation of national policies <span class="citation" data-cites="bau2021can">(<a href="#ref-bau2021can" role="doc-biblioref">Bau 2021</a>)</span>. GN represents a pioneering effort to answer the central and natural question that arises: when does culture persist, and when does it change?</p>
+<p>In this article, we present the results of our “deep reproduction” <span class="citation" data-cites="dreber2023framework">(<a href="#ref-dreber2023framework" role="doc-biblioref">Dreber and Johannesson 2023</a>)</span><a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> of some of the econometric results reported by GN. As defined by <span class="citation" data-cites="dreber2023framework">Dreber and Johannesson (<a href="#ref-dreber2023framework" role="doc-biblioref">2023</a>)</span>, “deep reproducibility studies, [dig] deeply into the original study including the raw data and the coding decisions to detect potential coding errors or questionable coding decisions.”<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p>
+<p>This type of reproduction is desirable because, as <span class="citation" data-cites="Kr_hmer_2023">Krähmer, Schächtele, and Schneck (<a href="#ref-Kr_hmer_2023" role="doc-biblioref">2023, 2</a>)</span> points out, “[o]pen code alleviates two problems that currently compromise the credibility of research: Errors in data preparation and misspecifications of statistical models. While model misspecification should, in principle, be discernible from the body of an article, errors in data preparation are downright impossible to spot without access to authors’ code.” This approach aligns with Clemens’s <span class="citation" data-cites="clemens2017meaning">(<a href="#ref-clemens2017meaning" role="doc-biblioref">2017</a>)</span> definition of replication, where researchers use the “same” specification, population and sample as in the original article.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> Indeed, within this framework, we conduct a replication test which “include: fixing coding errors so that the code does exactly what the original paper describes (verification)” <span class="citation" data-cites="clemens2017meaning">(<a href="#ref-clemens2017meaning" role="doc-biblioref">Clemens 2017, 329</a>)</span>. Moreover, as <span class="citation" data-cites="Huntington_Klein_2021">Huntington‐Klein et al. (<a href="#ref-Huntington_Klein_2021" role="doc-biblioref">2021</a>)</span> argue, researcher degrees of freedom, such as decisions made during data collection, preparation, and analysis, can lead to variation in results, even when replicating the same study. Accordingly, we thoroughly verified the correspondence between the specifications described in the original article and the code and estimation sample provided in the replication package of GN. Importantly, this verification was not limited to the analysis code but also extended to the data cleaning and manipulation procedures, which were not included in the replication package. By closely examining the documentation and the data, we were able to reverse-engineer certain aspects of the data processing, even in the absence of access to the original code. For example, we identified instances where variables that should have been constant over time or across subgroups of observations exhibited variations, thus revealing that the actual data manipulation is inconsistent with the description provided by GN.</p>
+<p>The replication exercise relies on three main elements: the original article by <span class="citation" data-cites="giuliano2021understanding">Giuliano and Nunn (<a href="#ref-giuliano2021understanding" role="doc-biblioref">2021</a>)</span>, a <em>corrigendum</em> published in <em>The Review of Economic Studies</em> <span class="citation" data-cites="correction">(<a href="#ref-correction" role="doc-biblioref">Giuliano and Nunn 2024</a>)</span>, and the replication package of the original article, which can be accessed at <a href="https://doi.org/10.5281/zenodo.4026093" class="uri">https://doi.org/10.5281/zenodo.4026093</a>. The latter includes the estimation samples used to estimate each equation, together with the corresponding codes.<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> However, it does not include the raw data, the code necessary to transition from the raw data to the various estimation samples, and the codes that generate the results reported in the online Appendix of GN.</p>
+<p>The <em>corrigendum</em> was published after our exchanges with the Authors and with the editor in charge of the original article. The Authors write “[s]ince the publication of the article, imprecisions in wording and omissions in the text have been pointed out.” (p.&nbsp;597).<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> However, as will become apparent in the following discussion, the <em>corrigendum</em>: (<em>i</em>) deals with only a minor subset of the inconsistencies that we had signaled to the Authors and to the Editor in charge of the original article, (<em>ii</em>) does not describe the implications of these imprecisions for the econometric exercises conducted in the original article, and, in some instances, (<em>iii</em>) generates inconsistencies with other portions of the text of the original article that have not been modified. Throughout the following discussion, references to page numbers, equations, and tables correspond to the original article unless otherwise specified. Similarly, references to line numbers pertain to the file <code>GiulianoNunn_replication.do</code> included in the replication package.</p>
+<section id="our-reproduction-approach" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="our-reproduction-approach"><span class="header-section-number">1.1</span> Our reproduction approach</h2>
+<p>The characteristics of the replication package have shaped the scope of our replication exercise. Specifically, our focus lies on two key aspects: (<em>i</em>) the results reported in the main text and (<em>ii</em>) the estimation of all the six equations using individual-level data. Point (<em>i</em>) arises from the absence of the code to reproduce the online Appendix within the replication package, limiting our analysis to the results presented in the main text alone. Point (<em>ii</em>) stems from the absence of data cleaning and manipulation codes in the replication package, making it considerably more challenging to identify potential inconsistencies between the article’s text and the excluded code that pertains to aggregate data.<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> Moreover, according to the Authors, regressions comparing “individuals with different cultural backgrounds but who live in the same city in the U.S.”<span class="citation" data-cites="giuliano2021understanding">(<a href="#ref-giuliano2021understanding" role="doc-biblioref">Giuliano and Nunn 2021, 1543</a>)</span> are superior.<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a> For these reasons, (<em>iii</em>) our focus lies on the discrepancies between code and text (i.e., a deep reproducibility) rather than the replication of the estimates because the codes and data provided on the original replication package do not allow to fully do the latter.</p>
+<p>Our replication provides detailed citations from the original article to document the precise and unambiguous descriptions of the specifications used in the six equations estimated with individual-level data. We then identify any inconsistencies between these textual descriptions and the actual code or estimation sample used.</p>
+<p>We identified two main types of inconsistencies between the code and text. The first type concerns errors in the analysis code included in the replication package, such as deviations from the specified estimation sample or variables that were impossible to construct according to the original article. The second type relates to problems with the data cleaning and manipulation code, including issues with the estimation sample, variables with distributions at odds with the text, and missing or incorrectly constructed variables. These inconsistencies are discussed in more detail in the subsequent sections.</p>
+<p>We have identified and documented inconsistencies within the six equations we analyzed, which correspond to four distinct tables and a total of 28 data columns.<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a> Discrepancies greatly vary in terms of their empirical relevance (see <a href="#fig-table_4" class="quarto-xref">Figure&nbsp;1</a>–<a href="#fig-table_7" class="quarto-xref">Figure&nbsp;3</a>).</p>
+<p>The remedies we propose to address the uncovered discrepancies are straightforward: doing so simply needs to adhere to the precise and unambiguous descriptions provided in the original article. However, it is not feasible to solve all the issues due to the lack of essential variables in the replication package.<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a> As a result, we are unable to fully re-estimate the equations in a manner consistent with the original article. Nonetheless, we want to emphasize that the exercise we present is a “deep reproduction” of the original article, and documenting these errors indicates that the original article cannot be replicated, regardless of any possible changes in the estimated coefficients.<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a></p>
+<p>It is important to clarify that we do not take a position on whether the specification described in the original article or the one actually implemented in the code is more economically sound. Our thorough reproduction aims to compare the text of the original article, which has undergone peer review, with the corresponding code. The scope of our analysis is limited to this comparison, and it does not evaluate the merits of the possible alternative specifications. Furthermore, we would like to highlight that the published <em>corrigendum</em> <span class="citation" data-cites="correction">(<a href="#ref-correction" role="doc-biblioref">Giuliano and Nunn 2024</a>)</span> has also been validated by <em>The Review of Economic Studies</em>, and we refer to its content below. Lastly, we want to clarify that, we never propose or run any specifications that deviate from those described in the paper.</p>
+<p>The rest of the paper contains six short sections, each corresponding to one equation. These are followed by a section documenting the impact of the corrections on the estimates in GN, and by a concluding section.</p>
+</section>
+</section>
+<section id="the-six-equations-using-individual-level-data" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> The six equations using individual-level data</h1>
+<p>For each equation, we first identify and describe the coding discrepancies. We then compute the share of observations affected by each discrepancy in the estimation sample used in each data column,<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a> and propose a method to realign the code with the original article’s specifications. In our online Appendix, we document the incidence of each discrepancy and present the regression results obtained by correcting all correctable errors. For each data column except for those corresponding to <a href="#eq-2" class="quarto-xref">Equation&nbsp;2</a>,<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a> we provide a figure illustrating the impact of each identified discrepancy (and combinations thereof).</p>
+<section id="eq.-2-importance-of-tradition" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="eq.-2-importance-of-tradition">Eq. (2) Importance of tradition</h2>
+<p>GN write that, when estimating <a href="#eq-2" class="quarto-xref">Equation&nbsp;2</a> using data from the World Values Survey (WVS):</p>
+<div class="hidden">
+<p><span id="eq-1"><span class="math display">\[
+\tag{1}\]</span></span></p>
+</div>
+<div class="blockquote">
+<p>“After matching <strong>respondents’ self-reported mother tongue from the WVS</strong> with ethnicity from the <em>Ethnographic Atlas</em>, we estimate:</p>
+<p><span id="eq-2"><span class="math display">\[
+Tradition_{i,e,c}=\alpha_c+\beta_2 {Climatic\ Instability}_e+ \mathbb{X}^{\prime}_i\Phi+\mathbb{X}^{\prime}_e\Omega+\epsilon_{i,e,c}
+\tag{2}\]</span></span></p>
+<p>where <span class="math inline">\(i\)</span> denotes an individual who is a member of the historical ethnic group <span class="math inline">\(e\)</span> and lives in country <span class="math inline">\(c\)</span>. <span class="math inline">\({Tradition}_{i,e,c}\)</span> is the self-reported importance of tradition, measured on an <span class="math inline">\(1-6\)</span> integer scale and increasing in the importance of tradition.” (p.&nbsp;1557, bold emphasis added).</p>
+</div>
+<section id="coding-mistake" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="coding-mistake">Coding mistake</h3>
+<ol type="1">
+<li>(Incidence: undetermined)<a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a> The WVS does not provide information on mother tongue. Instead, it only asks about the language that the respondent normally speaks at home.</li>
+</ol>
+<p>The <em>corrigendum</em> reads: “On page 1557, ‘mother tongue’ should be ‘language spoken at home’” <span class="citation" data-cites="correction">(<a href="#ref-correction" role="doc-biblioref">Giuliano and Nunn 2024</a>)</span>. We note that, for individuals of immigrant origin (i.e., foreign-born individuals and natives of foreign ancestry), the language spoken at home is a choice. Indeed, the Authors use this choice as a revealed measure of the attachment to tradition among natives of foreign ancestry in <a href="#eq-5" class="quarto-xref">Equation&nbsp;5</a> and <a href="#eq-6" class="quarto-xref">Equation&nbsp;6</a>.<a href="#fn16" class="footnote-ref" id="fnref16" role="doc-noteref"><sup>16</sup></a> Individuals of immigrant origin who are, according to the Authors, less attached to tradition are, therefore, more likely to be incorrectly assigned to the same ancestors as the natives of the country in which they reside. We refer the reader to <span class="citation" data-cites="bertoli2024_I4R">Bertoli et al. (<a href="#ref-bertoli2024_I4R" role="doc-biblioref">2024</a>)</span>, where we propose an approach, departing from a deep reproduction, to gauge the relevance of the coding mistake that we identify for <a href="#eq-2" class="quarto-xref">Equation&nbsp;2</a> in GN, which cannot be directly corrected.</p>
+</section>
+</section>
+<section id="eq.-4-within-group-marriage" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="eq.-4-within-group-marriage">Eq. (4) Within-group marriage</h2>
+<div class="hidden">
+<p><span id="eq-3"><span class="math display">\[
+\tag{3}\]</span></span></p>
+</div>
+<div class="blockquote">
+<p>[The] sample comprises all married women in all waves of the March Supplement of the Current Population Survey (CPS) [from 1994 to 2014] with at least one parent who was born outside the US. […] <span id="eq-4"><span class="math display">\[
+{I}^{In\ group\ Marriage}_{i,c,k}=\alpha_k+\beta_3 {Climatic\ Instability}_c+\mathbb{X}_c\Pi +\mathbb{X}_{c,k}\Omega+\mathbb{X}_{i}\Phi+\epsilon_{i,c,k}
+\tag{4}\]</span></span></p>
+<p>[…] The outcome of interest, <span class="math inline">\({I}^{In\ group\ Marriage}_{i,c,k}\)</span>, is an indicator variable equal to one if <strong>an individual’s spouse was born in origin country <span class="math inline">\(c\)</span> or if his or her mother or father was born in country <span class="math inline">\(c\)</span></strong>. <span class="math inline">\(\alpha_k\)</span> denotes the inclusion of residence (i.e.&nbsp;metropolitan-area) fixed effects. The vector of country-level covariates <span class="math inline">\(\mathbb{X}_{c}\)</span> includes the natural log of the current per-capita GDP in the country of origin (measured in the survey year) […] [<span class="math inline">\(\mathbb{X}_{c,k}\)</span>] includes <strong>the fraction of the population in the same metropolitan area as the individual who are first- or second-generation immigrants from the same country of origin.</strong>” (p.&nbsp;1562, bold emphasis added).</p>
+</div>
+<section id="coding-mistakes" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="coding-mistakes">Coding mistakes</h3>
+<ol type="1">
+<li><p>(Dependent variable, incidence between 2.0 and 2.8 percent) The dependent variable in <a href="#eq-4" class="quarto-xref">Equation&nbsp;4</a> is created in a portion of the code not included in the replication package. Its definition requires information on the country of birth of the spouse and of the parents-in-law. The March Supplement of the CPS provides this information <em>exclusively</em> for individuals co-residing with their spouses,<a href="#fn17" class="footnote-ref" id="fnref17" role="doc-noteref"><sup>17</sup></a> but the estimation samples in Table 4 include married individuals <em>not co-residing</em> with the spouse, with the dependent variable for them being either equal to 0 or to 1. It is not possible to create the dependent variable in a way consistent with its description provided at p.&nbsp;1562 for married individuals whose spouse is absent.</p></li>
+<li><p>(Fraction of the population, incidence of 100 percent) The control variable measuring “the fraction of the population in the same metropolitan area as the individual who are first or second-generation immigrants from the same country of origin” (p.&nbsp;1562) has actually been computed separately for each year from 1994 to 2014.</p></li>
+<li><p>(GDP 2014 - incidence between 7.9 and 8.7 percent<a href="#fn18" class="footnote-ref" id="fnref18" role="doc-noteref"><sup>18</sup></a>) The “natural log of the current per-capita GDP in the country of origin (measured in the survey year)” is entirely missing for the year 2014. Consequently, all the observations corresponding to this year are incorrectly excluded from the estimation sample.<a href="#fn19" class="footnote-ref" id="fnref19" role="doc-noteref"><sup>19</sup></a></p></li>
+<li><p>(Missing MSA 1, incidence between 17.0 and 19.2 percent) The estimation samples in the four data columns of Table 4 include individuals who reside in metropolitan areas that are not separately identified. These areas are represented by the <code>metarea</code> values 9997 (Other metropolitan areas, unidentified), 9998 (NIU, household not in a metropolitan area) or 9999 (Missing data). The <em>corrigendum</em> reads: “On page 1562, the sentence ending in ‘denotes the inclusion of residence (i.e.&nbsp;metropolitan-area) fixed effects’ should be followed by the clarifying footnote: ‘Rural locations within the United States do not have an MSA code. Throughout the paper, we treat a missing MSA as a category in the residence fixed effects’” <span class="citation" data-cites="correction">(<a href="#ref-correction" role="doc-biblioref">Giuliano and Nunn 2024</a>)</span>. It also should be noted that even after the <em>corrigendum</em>, the statement: “[b]y examining individuals who live in the same location, we are able to hold constant the contemporaneous local environment, while examining the effects of an individual’s ancestral environment” (p.&nbsp;1564) remains factually incorrect. This is because the code pools together individuals for whom the variable <code>metarea</code> is equal to 9997, 9998 or 9999 irrespective of their actual locations within the United States. Finally, the <em>corrigendum</em> does not clarify whether these three different values of the variable <code>metarea</code> are treated as distinct categories in the residence fixed effects.</p></li>
+<li><p>(Missing MSA 2, incidence between 17.0 and 19.2 percent) The control variable that measures “the fraction of the population in the same metropolitan area as the individual who are first or second-generation immigrants from the same country of origin” (p.&nbsp;1562) cannot be meaningfully defined for observations where the variable <code>metarea</code> is equal to 9997, 9998 or 9999. Additionally, this variable is not constant for individuals associated with the same foreign country <span class="math inline">\(c\)</span>, surveyed in the same year, and for whom <code>metarea</code> is equal to (for example) 9997. This inconsistency contradicts the implication of the <em>corrigendum</em> that these values of the variable are treated equally to the other non-missing values.</p></li>
+</ol>
+</section>
+<section id="correcting-the-coding-mistakes" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="correcting-the-coding-mistakes">Correcting the coding mistakes</h3>
+<ol type="1">
+<li><p>(Dependent variable) The observations for which the variable <code>marst</code> is equal to 2 (Married, spouse absent) should be excluded from the estimation sample. This correction is feasible.</p></li>
+<li><p>(Fraction of the population) The control variable should be defined in a time-invariant way. This correction is unfeasible (using the replication package).</p></li>
+<li><p>(GDP 2014) The data cleaning and manipulation code could be easily fixed. This correction is unfeasible (using the replication package), as the replication package only mentions the data source but not the exact identifier of this variable.</p></li>
+<li><p>(Missing MSA 1) The observations for which the variable <code>metarea</code> is equal to 9997, 9998 or 9999 should be excluded from the sample. This correction is feasible, but no change in the code is needed on the basis of the <em>corrigendum</em>.</p></li>
+<li><p>(Missing MSA 2) The control variable should be defined in a way that does not vary, when the variable <code>metarea</code> is equal to 9997, 9998 or 9999, across observations corresponding to a unique value of <span class="math inline">\(c\)</span>. This correction is unfeasible (using the replication package).</p></li>
+</ol>
+</section>
+</section>
+<section id="eq.-5-speaking-a-foreign-language-at-home" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="eq.-5-speaking-a-foreign-language-at-home">Eq. (5) Speaking a foreign language at home</h2>
+<p>GN estimate the following equation on a sample of individuals born in the United States and reporting a foreign ancestry in the 2000 census:</p>
+<div class="blockquote">
+<p><span id="eq-5"><span class="math display">\[\begin{split}
+     {I}^{Foreign\ Lang.}_{i,c,k}=\alpha_k+\beta {Climatic\ Instability}_c+\mathbb{X}_c\Pi +\mathbb{X}_{c,k}\Omega+\mathbb{X}_{i}\Phi+\epsilon_{i,c,k}
+     \end{split}
+\tag{5}\]</span></span></p>
+<p>“where <span class="math inline">\(i\)</span> denotes an individual, <span class="math inline">\(c\)</span> his/her ancestry, and <span class="math inline">\(k\)</span> a location of residence (metropolitan areas). The dependent variable, <span class="math inline">\({I}^{Foreign\ Lang.}_{i,c,k}\)</span>, is an indicator that equals to one if a language other than English is spoken at home. <span class="math inline">\(\alpha_k\)</span> denotes the inclusion of residence (i.e.&nbsp;metropolitan areas) fixed effects. [In footnote 24] <strong>We omit from the sample individuals from origin countries with English as an official language</strong>. <span class="math inline">\(\mathbb{X}_c\)</span> denotes ancestral country-level covariates: historical distance from the equator, historical economic development, historical political complexity, the GDP in the country of origin measured at the time of the survey, and <strong>the linguistic distance between the country of origin and the U.S.</strong>” (p.&nbsp;1565, bold emphasis added).</p>
+</div>
+<section id="coding-mistakes-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="coding-mistakes-1">Coding mistakes</h3>
+<ol type="1">
+<li><p>(English, incidence between 3.7 and 5.8 percent) The sample used to estimate <a href="#eq-5" class="quarto-xref">Equation&nbsp;5</a> includes natives with ancestry in seven distinct countries or territories (out of 84) in which English is an official language.<a href="#fn20" class="footnote-ref" id="fnref20" role="doc-noteref"><sup>20</sup></a></p>
+<p>The <em>corrigendum</em> reads:</p>
+<blockquote class="blockquote">
+“4. On page 1565, for the text ‘report their ancestry as being a non-English speaking country,’ the word ‘country’ should be ‘group’.
+<ol start="5" type="1">
+<li>In footnote 24, the text ‘individuals from origin countries with English as an official language.’ should be ‘individuals from ancestries with English as an official language and the language of instruction in higher education.’ ”</li>
+</ol>
+</blockquote>
+<p>The <em>corrigendum</em> amending the original article changes the sample selection criterion, shifting it from the level of the ancestral country to the level of each ancestral group. This modification requires defining the official language and language of instruction in higher education for each ancestral group. However, the <em>corrigendum</em> does not specify the data source used to implement this sample selection criterion, resulting in a lack of precise description of the specification of <a href="#eq-5" class="quarto-xref">Equation&nbsp;5</a>, unlike in the original article.</p>
+<p>Through personal communication with the Editor in charge of the original article, it was brought to our attention that, concerning Canada, the estimation only included natives of French Canadian ancestry and disregarded individuals who defined themselves exclusively as being of Canadian ancestry.<a href="#fn21" class="footnote-ref" id="fnref21" role="doc-noteref"><sup>21</sup></a></p>
+<p>Moving the sample selection criterion from the level of the ancestral country to the level of the ancestral group, as <span class="citation" data-cites="correction">Giuliano and Nunn (<a href="#ref-correction" role="doc-biblioref">2024</a>)</span> do, also breaks the symmetry with respect to the construction of the elements in the vector <span class="math inline">\(\mathbb{X}_c\)</span>, which includes “ancestral country-level covariates”. This discrepancy is evident for <code>lingprox_dominant_a</code>, a variable used in <code>Table5.dta</code> measuring “the linguistic distance between the country of origin and the U.S.” is borrowed from “linguistic proximity between dominant groups (Fearon data)”. As English is the dominant language in Canada, this implies that observations for <em>French</em> Canadians, identified by <code>isocode=="CAN"</code>, have a value of <code>lingprox_dominant_a</code> at 15 (i.e.&nbsp;the one associated to English), the highest value in the data.<a href="#fn22" class="footnote-ref" id="fnref22" role="doc-noteref"><sup>22</sup></a></p>
+<p>Therefore, according to <span class="citation" data-cites="correction">Giuliano and Nunn (<a href="#ref-correction" role="doc-biblioref">2024</a>)</span>, French Canadians are included in the sample as this group does not have English as its official language, even though the value measuring linguistic proximity is determined using English for Canada.</p></li>
+<li><p>(Missing MSA 1, incidence between 25.0 and 32.2 percent) The estimating sample includes observations for which the variable <code>metaread</code> is equal to 0 (Not identifiable or not in an MSA). A unique value of the fixed effect <span class="math inline">\(\alpha_k\)</span> is incorrectly assigned to these observations, bundling them together. The <em>corrigendum</em> addresses this point, as described with respect to <a href="#eq-4" class="quarto-xref">Equation&nbsp;4</a> above.</p></li>
+<li><p>(Missing MSA 2, incidence between 25.0 and 32.2 percent) The vector <span class="math inline">\(\mathbb{X}_{c,k}\)</span> includes a variable measuring the “fraction of those living in the same metropolitan area who are first-generation immigrants of the same ancestry” (p.&nbsp;1565). This variable is incorrectly defined for the observations for which the variable <code>metaread</code> is equal to 0.</p></li>
+<li><p>(Fraction, incidence between 25.0 and 32.2 percent) The variable measuring the “fraction of those living in the same metropolitan area who are first-generation immigrants of the same ancestry” (p.&nbsp;1565) varies across individuals from the same country of ancestry, and for which the variable <code>metaread</code> is equal to 0 (Not identifiable or not in an MSA).</p></li>
+<li><p>(Living with parents, incidence undetermined) Cols. (2) and (3) in Table 5 estimate <a href="#eq-5" class="quarto-xref">Equation&nbsp;5</a> separately for individuals not living and living with parents.<a href="#fn23" class="footnote-ref" id="fnref23" role="doc-noteref"><sup>23</sup></a> The sample split is done, at lines 106–108, using the variable <code>relate</code> describing the relationship of individual <span class="math inline">\(i\)</span> to the household head. Thus, the subsample of individuals “Living with parents” includes all the individuals who are children of the household head, while the subsample “Not living with parents” includes all other individuals. For three-generation households, the split is incorrect when, for instance, a grandchild of the household head co-resides with at least one of her parents, or when the household also includes a parent of the household head. In these two cases, the grandchild and the household head are incorrectly classified by GN as “Not living with parents”.</p></li>
+</ol>
+</section>
+<section id="correcting-the-coding-mistakes-1" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="correcting-the-coding-mistakes-1">Correcting the coding mistakes</h3>
+<ol type="1">
+<li><p>(English) The correction can be implemented by utilizing the variable <code>isocode</code> to identify and exclude observations associated with countries and territories where English is an official language. The correction is feasible.</p></li>
+<li><p>(Missing MSA 1) The observations with a value 0 for the variable <code>metaread</code> should be excluded from the sample. This correction is feasible, but no change in the code is needed on the basis of the correction.</p></li>
+<li><p>(Missing MSA 2) The observations with a value 0 for the variable <code>metaread</code> should be excluded from the sample because the control variable cannot be meaningfully defined for these observations. The correction is feasible.</p></li>
+<li><p>(Fraction) The fraction of the population in the same metropolitan area that are first or second-generation immigrants from the same country of origin should be treated equally to the other non-missing values. In particular, it should be time-invariant. The correction is unfeasible (using the replication package).</p></li>
+<li><p>(Living with parents) The correct sample split and the exact identification of a co-residing parent is possible using the variables <code>momloc</code> and <code>poploc</code>, which are available from IPUMS USA <span class="citation" data-cites="ipums">(<a href="#ref-ipums" role="doc-biblioref">Ruggles et al. 2023</a>)</span>.<a href="#fn24" class="footnote-ref" id="fnref24" role="doc-noteref"><sup>24</sup></a> This correction is unfeasible (using the replication package).</p></li>
+</ol>
+</section>
+</section>
+<section id="eq.-6-speaking-a-foreign-language-at-home-living-with-parents" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="eq.-6-speaking-a-foreign-language-at-home-living-with-parents">Eq. (6) Speaking a foreign language at home (living with parents)</h2>
+<div class="blockquote">
+<p>“We estimate whether the intergenerational transmission of the tradition of speaking one’s ancestral language is affected by climatic instability of the ancestral country […]:</p>
+<p><span id="eq-6"><span class="math display">\[\begin{split}
+     {I}^{Foreign\ Lang.}_{i,c,k}=\beta_1 {Climatic\ Instability}_c+\beta_2 {I}^{Parent\ Foreign\ Lang.}_{i,c,k}+\\+ \beta_3 {I}^{Parent\ Foreign\ Lang.}_{i,c,k}\times {Climatic\ Instability}_c+\\+\mathbb{X}_c\Pi +\mathbb{X}_{c,k}\Omega+\mathbb{X}_{i}\Phi+\alpha_k+\epsilon_{i,c,k}
+     \end{split}
+\tag{6}\]</span></span></p>
+<p>[…] <span class="math inline">\({I}^{Parent\ Foreign\ Lang.}_{i,c,k}\)</span>, which is an indicator variable that equals one if either the father or the mother speaks a foreign language at home.”</p>
+</div>
+<section id="coding-mistakes-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="coding-mistakes-2">Coding mistakes</h3>
+<p><a href="#eq-6" class="quarto-xref">Equation&nbsp;6</a> inherits the five coding mistakes described above with respect to <a href="#eq-5" class="quarto-xref">Equation&nbsp;5</a>:</p>
+<ol type="1">
+<li><p>(English, incidence between 5.3 and 5.8 percent)</p></li>
+<li><p>(Missing MSA 1, incidence between 25.0 and 26.1 percent)</p></li>
+<li><p>(Missing MSA 2, incidence between 25.0 and 26.1 percent)</p></li>
+<li><p>(Fraction, incidence between 25.0 and 26.1 percent)</p></li>
+<li><p>(Living with parents, incidence undetermined)</p></li>
+</ol>
+</section>
+<section id="correcting-the-coding-mistakes-2" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="correcting-the-coding-mistakes-2">Correcting the coding mistakes</h3>
+<p>The coding mistakes can be fixed as described with respect to <a href="#eq-5" class="quarto-xref">Equation&nbsp;5</a>.</p>
+</section>
+</section>
+<section id="eq.-8-indigenous-populations-speaking-a-traditional-language" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="eq.-8-indigenous-populations-speaking-a-traditional-language">Eq. (8) Indigenous populations speaking a traditional language</h2>
+<div class="hidden">
+<p><span id="eq-7"><span class="math display">\[
+\tag{7}\]</span></span></p>
+</div>
+<p>For a subsample of individuals who report a Native American tribal affiliation drawn from the 1930, 1990 and 2000 censuses,</p>
+<div class="blockquote">
+<p>“[the] estimating equation is:</p>
+<p><span id="eq-8"><span class="math display">\[
+\begin{split}
+     {I}^{Native Lang}_{i,e,k}=\alpha_k+\beta {Climatic\ Instability}_e+\mathbb{X}_e\Pi +\mathbb{X}_{i}\Phi+\epsilon_{i,e,k}
+     \end{split}
+\tag{8}\]</span></span></p>
+<p>where <span class="math inline">\(i\)</span> denotes an individual, <span class="math inline">\(e\)</span> his/her ethnic group, and <span class="math inline">\(k\)</span> a location of residence (metropolitan area). The dependent variable, <span class="math inline">\({I}^{Native Lang}_{i,e,k}\)</span>, is an indicator that equals to one if the individual reports speaking an Indigenous language at home. The specification includes location (i.e. metropolitan areas) fixed effects, <span class="math inline">\(\alpha_k\)</span>. Thus, the variation used to estimate <span class="math inline">\(\beta\)</span> is across individuals from different Native American ethnic groups, but living in the same location. [in footnote 30] <strong>The 1930, 1990 and 2000 US Censuses ask the following question: ‘Does the person speak a language other than English at home?’ If yes, the person indicates which language</strong>.” (p.&nbsp;1571, bold emphasis added).</p>
+</div>
+<section id="coding-mistakes-3" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="coding-mistakes-3">Coding mistakes</h3>
+<ol type="1">
+<li><p>(Language, incidence between 7.3 and 16.9 percent) The questionnaire of the 1930 census did not include the two questions necessary to define the dependent variable in <a href="#eq-8" class="quarto-xref">Equation&nbsp;8</a>.<a href="#fn25" class="footnote-ref" id="fnref25" role="doc-noteref"><sup>25</sup></a> For instance, the sample used in Col. (1) of Table 7 to estimate <a href="#eq-8" class="quarto-xref">Equation&nbsp;8</a> includes 11,468 obs. (9.0 percent) drawn from this census, and corresponding to 83 Native American ethnic groups.</p>
+<p>Until September 2021, IPUMS USA incorrectly coded the variable <code>language</code> for the 1930 census using the information on the mother tongue.<a href="#fn26" class="footnote-ref" id="fnref26" role="doc-noteref"><sup>26</sup></a> In reality, the question about the mother tongue should have been asked in 1930 only to foreign-born individuals.<a href="#fn27" class="footnote-ref" id="fnref27" role="doc-noteref"><sup>27</sup></a> However, it appears that some enumerators may not have followed this restriction.<a href="#fn28" class="footnote-ref" id="fnref28" role="doc-noteref"><sup>28</sup></a></p>
+<p>The replication file reveals that the dependent variable is always equal to 0 for 68 of these 83 ethnic groups in 1930. Furthermore, two groups, namely Navajo and Hopi, account for the great majority (1,860 out of 1,951) of the observations where the dependent variable in <a href="#eq-8" class="quarto-xref">Equation&nbsp;8</a> is equal to 1 in 1930.<a href="#fn29" class="footnote-ref" id="fnref29" role="doc-noteref"><sup>29</sup></a> This very strongly suggests that the question about mother tongue was not systematically asked to all Native Americans in the 1930 census.<a href="#fn30" class="footnote-ref" id="fnref30" role="doc-noteref"><sup>30</sup></a></p></li>
+<li><p>(Children 0 to 4, incidence between 3.0 and 21.4 percent) The language questions used to define <span class="math inline">\({I}^{Native Lang}_{i,e,k}\)</span> are specifically asked to individuals aged 5 and above in the 1990 and 2000 censuses.<a href="#fn31" class="footnote-ref" id="fnref31" role="doc-noteref"><sup>31</sup></a> However, in the estimation sample, there are observations corresponding to children aged 0 to 4 for whom <span class="math inline">\({I}^{Native Lang}_{i,e,k}\)</span> is always equal to 0, although it should have been marked as missing since the language questions are not applicable to individuals in this age group.</p></li>
+<li><p>(Employment, incidence between 0.1 and 61.1 percent) The question regarding employment status, which is used to define an element of the vector <span class="math inline">\(\mathbb{X}_{i}\)</span> in <a href="#eq-8" class="quarto-xref">Equation&nbsp;8</a>, is only asked to individuals aged 16 and above in the 1990 and in the 2000 census.<a href="#fn32" class="footnote-ref" id="fnref32" role="doc-noteref"><sup>32</sup></a> In the estimation of <a href="#eq-8" class="quarto-xref">Equation&nbsp;8</a>, the observations where the variable <code>empstat</code> is not available are treated as a separate category of this categorical variable. This differs from what is stated on p.&nbsp;1572, where the Authors mention that labor-force-status fixed effects have three values: employed, unemployed, and outside of the labor force.</p></li>
+<li><p>(Missing MSA, incidence between 60.2 and 75.3 percent) In the estimation sample, there are observations for which the variable <code>metarea</code> is equal to 0, indicating that the location is “Not identifiable or not in an MSA.” The <em>corrigendum</em> addresses this issue, as explained in relation to Eq. (4) above. We note that the statement “the variation used to estimated <span class="math inline">\(\beta\)</span> is across individuals from different Native American ethnic groups, but living in the same location” (p.&nbsp;1571) is factually incorrect, and not modified by the <em>corrigendum</em>.</p></li>
+<li><p>(Living with parents, incidence undetermined) “Estimates of <a href="#eq-9" class="quarto-xref">Equation&nbsp;9</a> are reported in columns 1–3 of Table 7 for all individuals (column 1), those not living with their parents (column 2), and those living with their parents (columns 3).” (p.&nbsp;1572). The split of the sample is done on the basis of the variable <code>relate</code> at lines 153 and 155 in the replication file. The remarks related to the fourth mistake for <a href="#eq-5" class="quarto-xref">Equation&nbsp;5</a> and <a href="#eq-6" class="quarto-xref">Equation&nbsp;6</a> also apply here.</p></li>
+</ol>
+</section>
+<section id="correcting-the-coding-mistakes-3" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="correcting-the-coding-mistakes-3">Correcting the coding mistakes</h3>
+<ol type="1">
+<li><p>(Language) The variable <code>year</code> can be used to exclude the observations corresponding to the 1930 census. The correction is feasible.</p></li>
+<li><p>(Children 0 to 4) The variables <code>age</code> and <code>year</code> can be used to exclude observations corresponding to children aged 0 to 4 drawn from the 1990 and the 2000 censuses. The correction is feasible.</p></li>
+<li><p>(Employment) The variables <code>age</code> and <code>year</code> can be used to exclude observations corresponding to children aged 0 to 15 drawn from the 1990 and the 2000 census. The correction is feasible.</p></li>
+<li><p>(Missing MSA) The observations in which the variable <code>metarea</code> is equal to 0 should be excluded from the sample. This correction is feasible, but no change in the code is needed on the basis of the <em>corrigendum</em>.</p></li>
+<li><p>(Living with parents) The correction for the fourth coding mistakes in <a href="#eq-5" class="quarto-xref">Equation&nbsp;5</a> and <a href="#eq-6" class="quarto-xref">Equation&nbsp;6</a> should also be applied to address this issue. The correction is not feasible (using the replication package).</p></li>
+</ol>
+</section>
+</section>
+<section id="eq.-9-speaking-a-traditional-language-living-with-parents" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="eq.-9-speaking-a-traditional-language-living-with-parents">Eq. (9) Speaking a traditional language (living with parents)</h2>
+<div class="blockquote">
+<p>“We again explore the transmission of this cultural practice [speaking an Indigenous language at home] from parents to children by estimating: <span id="eq-9"><span class="math display">\[
+\begin{split}
+     {I}^{Native\ Lang}_{i,e,k}=\alpha_k+\beta_1 {Climatic\ Instability}_e+\\
+     +\beta_2 {I}^{Parent Native Lang}_{i,e,k}+\beta_3 {I}^{Parent Native Lang}_{i,e,k} \times {Climatic\ Instability}_e+\\
+     +\mathbb{X}_e\Pi +\mathbb{X}_{i}\Phi+\epsilon_{i,e,k}
+     \end{split}
+\tag{9}\]</span></span></p>
+<p>where all variables are defined as in Equation 8 and <span class="math inline">\({I}^{Parent Native Lang}_{i,e,k}\)</span> is an indicator variable that equals one if individual <span class="math inline">\(i\)</span>’s parents speak an indigenous language at home.” (p.&nbsp;1572).</p>
+</div>
+<p><a href="#eq-9" class="quarto-xref">Equation&nbsp;9</a> is estimated for individuals drawn from the 1930, 1990 and 2000 censuses reporting an affiliation to a Native American tribe and “living with parents” (p.&nbsp;1572).</p>
+<section id="coding-mistakes-4" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="coding-mistakes-4">Coding mistakes</h3>
+<p><a href="#eq-9" class="quarto-xref">Equation&nbsp;9</a> inherits the five coding mistakes described above for <a href="#eq-8" class="quarto-xref">Equation&nbsp;8</a>:</p>
+<ol type="1">
+<li><p>(Language, incidence between 13.8 and 16.9 percent)</p></li>
+<li><p>(Children 0 to 4, incidence between 16.0 and 17.0 percent)</p></li>
+<li><p>(Employment, incidence between 59.1 and 59.2 percent)</p></li>
+<li><p>(Missing MSA, incidence between 73.0 and 75.3 percent)</p></li>
+<li><p>(Living with parents, incidence undetermined).</p></li>
+</ol>
+</section>
+<section id="correcting-the-coding-mistakes-4" class="level3 unnumbered">
+<h3 class="unnumbered anchored" data-anchor-id="correcting-the-coding-mistakes-4">Correcting the coding mistakes</h3>
+<p>The coding mistakes can be fixed as described with respect to <a href="#eq-8" class="quarto-xref">Equation&nbsp;8</a>.</p>
+</section>
+</section>
+<section id="impact-of-the-corrections" class="level2 unnumbered">
+<h2 class="unnumbered anchored" data-anchor-id="impact-of-the-corrections">Impact of the corrections</h2>
+<p>Our “deep reproduction” exercise reveals significant discrepancies between the original study’s reported results and those obtained using the textual definitions provided in the article, even after accounting for the content of the <em>corrigendum</em>. We now examine the consequences of these discrepancies for the validity of the original study’s findings. In particular, we investigate how the identified issues affect the statistical precision, <span class="math inline">\(p\)</span>-values, and magnitude of the original estimates. By doing so, we provide a comprehensive understanding of the implications of our reproduction failure, shedding light on the robustness of the original study’s conclusions.</p>
+<p>To facilitate the exposition of the consequences of reproduction failure, we opt for a graphical representation of the results rather than the more traditional tabular format. This choice is motivated by the complexity of the errors identified, which often involve multiple corrections for each equation. Creating a table to analyze the impact of each error separately would imply generating a multitude of tables, akin to the original, but correcting one mistake at a time. Furthermore, we can also correct several errors and combinations of errors, making a tabular presentation cumbersome. Instead, we create figures that provide a concise and intuitive visualization of the results.</p>
+<p>For each targeted specification, we generate a figure that compares the original estimation with the corrected results. The figure displays the original estimation, including confidence intervals, in red, alongside the corrected results, in blue. The graphical representation also includes information on sample size and <span class="math inline">\(R^2\)</span>, with a section for comments on the corrections implemented. The corrected results are presented relative to the baseline, original regression. <a href="#fig-table_4" class="quarto-xref">Figure&nbsp;1</a> provides an overview of the impact of each error in Table 4, <a href="#fig-table_5" class="quarto-xref">Figure&nbsp;2</a> focuses on Table 5 whereas <a href="#fig-table_7" class="quarto-xref">Figure&nbsp;3</a> centers on Table 7. Additionally, <a href="#tbl-replication_tab_4_v1" class="quarto-xref">Table&nbsp;3</a> and <a href="#tbl-replication_tab_4_v2" class="quarto-xref">Table&nbsp;4</a> in our Online Appendix present the results of Table 4 after implementing the (feasible) corrections we identified in previous sections.<a href="#fn33" class="footnote-ref" id="fnref33" role="doc-noteref"><sup>33</sup></a> Similarly, <a href="#tbl-replication_tab_5" class="quarto-xref">Table&nbsp;5</a> present the corrected estimates corresponding to Table 5. Finally, <a href="#tbl-replication_tab_7_v1" class="quarto-xref">Table&nbsp;6</a> and <span class="citation" data-cites="tbl:replication_tab_7_v2">(<a href="#ref-tbl:replication_tab_7_v2" role="doc-biblioref"><strong>tbl:replication_tab_7_v2?</strong></a>)</span> display the coefficients of Table 7 once the corrections are introduced.<a href="#fn34" class="footnote-ref" id="fnref34" role="doc-noteref"><sup>34</sup></a></p>
+<p>Our “deep reproduction” exercise reveals a total of 26 coding mistakes in the original study. Notably, 53.5 percent of these mistakes (14 out of 26) could be fixed using the codes and data provided in the original replication package. Upon correcting the coding mistakes, we observe substantial changes in the estimates, with some coefficients undergoing dramatic shifts in magnitude and significance. In particular, Table 5 appears to be rather fragile to our proposed corrections, with 5 out of 7 results loosing significance once all corrections are introduced. For instance, the coefficient on the main variable of interest changes from -0.767 to -0.427 in Col. (3), a 38 percent decrease in magnitude, and becomes insignificant. The remaining tables are impacted to a lesser extent. Overall, applying the corrections, 53.0 percent of the main estimates (9 out of 17) become indistinguishable from zero, highlighting the significance of these errors for the validity of the original study’s findings.</p>
+<div id="fig-table_4" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-table_4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Estimates of Equation 4
+</figcaption>
+<div aria-describedby="fig-table_4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-table_4" style="flex-basis: 47.5%;justify-content: flex-start;">
+<div id="fig-table_4_col_1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<figcaption class="quarto-float-caption-top quarto-subfloat-caption quarto-subfloat-fig" id="fig-table_4_col_1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) Table 4, Col. (1)
+</figcaption>
+<div aria-describedby="fig-table_4_col_1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./Figures/Replication_Table_4_Column_1.webp" class="img-fluid figure-img" data-ref-parent="fig-table_4">
+</div>
+</figure>
+</div>
+</div>
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 5.0%;justify-content: flex-start;">
+<p>&nbsp;</p>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-table_4" style="flex-basis: 47.5%;justify-content: flex-start;">
+<div id="fig-table_4_col_2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<figcaption class="quarto-float-caption-top quarto-subfloat-caption quarto-subfloat-fig" id="fig-table_4_col_2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) Table 4, Col. (2)
+</figcaption>
+<div aria-describedby="fig-table_4_col_2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./Figures/Replication_Table_4_Column_2.webp" class="img-fluid figure-img" data-ref-parent="fig-table_4">
+</div>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-table_4" style="flex-basis: 47.5%;justify-content: flex-start;">
+<div id="fig-table_4_col_3" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<figcaption class="quarto-float-caption-top quarto-subfloat-caption quarto-subfloat-fig" id="fig-table_4_col_3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(c) Table 4, Col. (3)
+</figcaption>
+<div aria-describedby="fig-table_4_col_3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./Figures/Replication_Table_4_Column_3.webp" class="img-fluid figure-img" data-ref-parent="fig-table_4">
+</div>
+</figure>
+</div>
+</div>
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 5.0%;justify-content: flex-start;">
+<p>&nbsp;</p>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-table_4" style="flex-basis: 47.5%;justify-content: flex-start;">
+<div id="fig-table_4_col_4" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<figcaption class="quarto-float-caption-top quarto-subfloat-caption quarto-subfloat-fig" id="fig-table_4_col_4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(d) Table 4, Col. (4)
+</figcaption>
+<div aria-describedby="fig-table_4_col_4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./Figures/Replication_Table_4_Column_4.webp" class="img-fluid figure-img" data-ref-parent="fig-table_4">
+</div>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="fignote quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<p><em>Notes: </em> This figure compares the original estimation (black) with the corrected results (gray) for <a href="#eq-4" class="quarto-xref">Equation&nbsp;4</a>, originally reported in Table 4 of GN. The graphical representation focuses on the main coefficient of interest in each column (interaction term where applicable), and includes confidence intervals, sample size, and <span class="math inline">\(R^2\)</span>, with comments on the corrections implemented.</p>
+</div>
+</div>
+</div>
+</figure>
+</div>
+<div id="fig-table_5" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-table_5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Estimates of Equations 5 and 6
+</figcaption>
+<div aria-describedby="fig-table_5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-table_5" style="flex-basis: 47.5%;justify-content: flex-start;">
+<div id="fig-table_5_col_1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<figcaption class="quarto-float-caption-top quarto-subfloat-caption quarto-subfloat-fig" id="fig-table_5_col_1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) Table 5, Col. (1)
+</figcaption>
+<div aria-describedby="fig-table_5_col_1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./Figures/Replication_Table_5_Column_1.webp" class="img-fluid figure-img" style="width:80.0%" data-ref-parent="fig-table_5">
+</div>
+</figure>
+</div>
+</div>
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 5.0%;justify-content: flex-start;">
+<p>&nbsp;</p>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-table_5" style="flex-basis: 47.5%;justify-content: flex-start;">
+<div id="fig-table_5_col_2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<figcaption class="quarto-float-caption-top quarto-subfloat-caption quarto-subfloat-fig" id="fig-table_5_col_2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) Table 5, Col. (2)
+</figcaption>
+<div aria-describedby="fig-table_5_col_2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./Figures/Replication_Table_5_Column_2.webp" class="img-fluid figure-img" style="width:80.0%" data-ref-parent="fig-table_5">
+</div>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-table_5" style="flex-basis: 47.5%;justify-content: flex-start;">
+<div id="fig-table_5_col_3" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<figcaption class="quarto-float-caption-top quarto-subfloat-caption quarto-subfloat-fig" id="fig-table_5_col_3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(c) Table 5, Col. (3)
+</figcaption>
+<div aria-describedby="fig-table_5_col_3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./Figures/Replication_Table_5_Column_3.webp" class="img-fluid figure-img" style="width:80.0%" data-ref-parent="fig-table_5">
+</div>
+</figure>
+</div>
+</div>
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 5.0%;justify-content: flex-start;">
+<p>&nbsp;</p>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-table_5" style="flex-basis: 47.5%;justify-content: flex-start;">
+<div id="fig-table_5_col_4" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<figcaption class="quarto-float-caption-top quarto-subfloat-caption quarto-subfloat-fig" id="fig-table_5_col_4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(d) Table 5, Col. (4)
+</figcaption>
+<div aria-describedby="fig-table_5_col_4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./Figures/Replication_Table_5_Column_4.webp" class="img-fluid figure-img" style="width:80.0%" data-ref-parent="fig-table_5">
+</div>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-table_5" style="flex-basis: 47.5%;justify-content: flex-start;">
+<div id="fig-table_5_col_5" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<figcaption class="quarto-float-caption-top quarto-subfloat-caption quarto-subfloat-fig" id="fig-table_5_col_5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(e) Table 5, Col. (5)
+</figcaption>
+<div aria-describedby="fig-table_5_col_5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./Figures/Replication_Table_5_Column_5.webp" class="img-fluid figure-img" style="width:80.0%" data-ref-parent="fig-table_5">
+</div>
+</figure>
+</div>
+</div>
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 5.0%;justify-content: flex-start;">
+<p>&nbsp;</p>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-table_5" style="flex-basis: 47.5%;justify-content: flex-start;">
+<div id="fig-table_5_col_6" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<figcaption class="quarto-float-caption-top quarto-subfloat-caption quarto-subfloat-fig" id="fig-table_5_col_6-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(f) Table 5, Col. (6)
+</figcaption>
+<div aria-describedby="fig-table_5_col_6-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./Figures/Replication_Table_5_Column_6.webp" class="img-fluid figure-img" style="width:80.0%" data-ref-parent="fig-table_5">
+</div>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 26.2%;justify-content: flex-start;">
+<p>&nbsp;</p>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-table_5" style="flex-basis: 47.6%;justify-content: flex-start;">
+<div id="fig-table_5_col_7" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<figcaption class="quarto-float-caption-top quarto-subfloat-caption quarto-subfloat-fig" id="fig-table_5_col_7-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(g) Table 5, Col. (7)
+</figcaption>
+<div aria-describedby="fig-table_5_col_7-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./Figures/Replication_Table_5_Column_7.webp" class="img-fluid figure-img" style="width:80.0%" data-ref-parent="fig-table_5">
+</div>
+</figure>
+</div>
+</div>
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 26.2%;justify-content: flex-start;">
+<p>&nbsp;</p>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="fignote quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<p><em>Notes: </em> This figure compares the original estimation (black) with the corrected results (gray) for <a href="#eq-5" class="quarto-xref">Equation&nbsp;5</a> and <a href="#eq-6" class="quarto-xref">Equation&nbsp;6</a>, originally reported in Table 5 of GN. The graphical representation focuses on the main coefficient of interest in each column (interaction term where applicable), and includes confidence intervals, sample size, and <span class="math inline">\(R^2\)</span>, with comments on the corrections implemented.</p>
+</div>
+</div>
+</div>
+</figure>
+</div>
+<div id="fig-table_7" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-table_7-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Estimates of Equations 8 and 9
+</figcaption>
+<div aria-describedby="fig-table_7-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-table_7" style="flex-basis: 47.5%;justify-content: flex-start;">
+<div id="fig-table_7_col_1" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<figcaption class="quarto-float-caption-top quarto-subfloat-caption quarto-subfloat-fig" id="fig-table_7_col_1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) Table 7, Col. (1)
+</figcaption>
+<div aria-describedby="fig-table_7_col_1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./Figures/Replication_Table_7_Column_1.webp" class="img-fluid figure-img" style="width:80.0%" data-ref-parent="fig-table_7">
+</div>
+</figure>
+</div>
+</div>
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 5.0%;justify-content: flex-start;">
+<p>&nbsp;</p>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-table_7" style="flex-basis: 47.5%;justify-content: flex-start;">
+<div id="fig-table_7_col_2" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<figcaption class="quarto-float-caption-top quarto-subfloat-caption quarto-subfloat-fig" id="fig-table_7_col_2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) Table 7, Col. (2)
+</figcaption>
+<div aria-describedby="fig-table_7_col_2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./Figures/Replication_Table_7_Column_2.webp" class="img-fluid figure-img" style="width:80.0%" data-ref-parent="fig-table_7">
+</div>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-table_7" style="flex-basis: 47.5%;justify-content: flex-start;">
+<div id="fig-table_7_col_3" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<figcaption class="quarto-float-caption-top quarto-subfloat-caption quarto-subfloat-fig" id="fig-table_7_col_3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(c) Table 7, Col. (3)
+</figcaption>
+<div aria-describedby="fig-table_7_col_3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./Figures/Replication_Table_7_Column_3.webp" class="img-fluid figure-img" style="width:80.0%" data-ref-parent="fig-table_7">
+</div>
+</figure>
+</div>
+</div>
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 5.0%;justify-content: flex-start;">
+<p>&nbsp;</p>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-table_7" style="flex-basis: 47.5%;justify-content: flex-start;">
+<div id="fig-table_7_col_4" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<figcaption class="quarto-float-caption-top quarto-subfloat-caption quarto-subfloat-fig" id="fig-table_7_col_4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(d) Table 7, Col. (4)
+</figcaption>
+<div aria-describedby="fig-table_7_col_4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./Figures/Replication_Table_7_Column_4.webp" class="img-fluid figure-img" style="width:80.0%" data-ref-parent="fig-table_7">
+</div>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-table_7" style="flex-basis: 47.5%;justify-content: flex-start;">
+<div id="fig-table_7_col_5" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<figcaption class="quarto-float-caption-top quarto-subfloat-caption quarto-subfloat-fig" id="fig-table_7_col_5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(e) Table 7, Col. (5)
+</figcaption>
+<div aria-describedby="fig-table_7_col_5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./Figures/Replication_Table_7_Column_5.webp" class="img-fluid figure-img" style="width:80.0%" data-ref-parent="fig-table_7">
+</div>
+</figure>
+</div>
+</div>
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 5.0%;justify-content: flex-start;">
+<p>&nbsp;</p>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-table_7" style="flex-basis: 47.5%;justify-content: flex-start;">
+<div id="fig-table_7_col_6" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<figcaption class="quarto-float-caption-top quarto-subfloat-caption quarto-subfloat-fig" id="fig-table_7_col_6-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(f) Table 7, Col. (6)
+</figcaption>
+<div aria-describedby="fig-table_7_col_6-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./Figures/Replication_Table_7_Column_6.webp" class="img-fluid figure-img" style="width:80.0%" data-ref-parent="fig-table_7">
+</div>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 26.2%;justify-content: flex-start;">
+<p>&nbsp;</p>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-table_7" style="flex-basis: 47.6%;justify-content: flex-start;">
+<div id="fig-table_7_col_7" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<figcaption class="quarto-float-caption-top quarto-subfloat-caption quarto-subfloat-fig" id="fig-table_7_col_7-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(g) Table 7, Col. (7)
+</figcaption>
+<div aria-describedby="fig-table_7_col_7-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./Figures/Replication_Table_7_Column_7.webp" class="img-fluid figure-img" style="width:80.0%" data-ref-parent="fig-table_7">
+</div>
+</figure>
+</div>
+</div>
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 26.2%;justify-content: flex-start;">
+<p>&nbsp;</p>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="fignote quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<p><em>Notes: </em> This figure compares the original estimation (black) with the corrected results (gray) for <a href="#eq-8" class="quarto-xref">Equation&nbsp;8</a> and <a href="#eq-9" class="quarto-xref">Equation&nbsp;9</a>, originally reported in Table 7 of GN. The graphical representation focuses on the main coefficient of interest in each column (interaction term where applicable), and includes confidence intervals, sample size, and <span class="math inline">\(R^2\)</span>, with comments on the corrections implemented.</p>
+</div>
+</div>
+</div>
+</figure>
+</div>
+</section>
+</section>
+<section id="concluding-remarks" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> Concluding remarks</h1>
+<p>Our “deep reproduction” of the individual-level analysis from the study by <span class="citation" data-cites="giuliano2021understanding">Giuliano and Nunn (<a href="#ref-giuliano2021understanding" role="doc-biblioref">2021</a>)</span> was unsuccessful. Despite the Authors’ <em>corrigendum</em> <span class="citation" data-cites="correction">(<a href="#ref-correction" role="doc-biblioref">Giuliano and Nunn 2024</a>)</span>, which addresses some imprecision in the original text, we identified several remaining discrepancies between the precise descriptions provided in the article and the corresponding code included in the replication package. These inconsistencies span multiple aspects of the analysis, including variable definitions, sample selection criteria, and regression specifications. Our exercise suggests that correcting for these inconsistencies has a significant impact on the results, which, upon re-examination, reveal a more nuanced relationship between ancestral climatic variability and tradition.</p>
+<p>The deep reproduction exercise highlights the importance of ensuring consistency between the descriptions in published work and the underlying analysis code and data. Comprehensive replication packages, including all necessary files, can greatly facilitate verification efforts and enhance research transparency, and the steps taken in this direction by economic journals, such as the <em>Review of Economic Studies</em>, are clearly positive.</p>
+</section>
+<section id="sec-appendices" class="level1 unnumbered">
+<h1 class="unnumbered">Appendices</h1>
+<div id="tbl-errors_in_original_appendix" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-errors_in_original_appendix-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1: Synthesis of the corrections.
+</figcaption>
+<div aria-describedby="tbl-errors_in_original_appendix-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Eq. num</th>
+<th style="text-align: center;">Inconsistency</th>
+<th style="text-align: center;">Correction</th>
+<th style="text-align: center;">Applied</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">2</td>
+<td style="text-align: center;">The information used is not on mother tongue, but on the language that the respondent speaks at home</td>
+<td style="text-align: center;">N/A</td>
+<td style="text-align: center;">No</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">4</td>
+<td style="text-align: center;">The dependent variable is defined only for individuals co-residing with their spouses</td>
+<td style="text-align: center;">Exclude from the estimation sample observations for which the variable marst is equal to 2 (Married, spouse absent)</td>
+<td style="text-align: center;">Yes</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">The control variable measuring “the fraction of the population in the same metropolitan area as the individual who are first or second-generation immigrants from the same country of origin” (p.&nbsp;1562) is computed separately for each year from 1994 to 2014</td>
+<td style="text-align: center;">Compute the variable in a time-invariant way</td>
+<td style="text-align: center;">No</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">The “natural log of the current per-capita GDP in the country of origin (measured in the survey year)” is entirely missing for the year 2014</td>
+<td style="text-align: center;">Add the GPD data for 2014</td>
+<td style="text-align: center;">No</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">The estimation samples include individuals that reside in metropolitan areas that are not separately identified (i.e. “Other metropolitan areas, unidentified”; “NIU, household not in a metropolitan area”; “Missing data”)</td>
+<td style="text-align: center;">Exclude observations for which the variable <code>metarea</code> is equal to 9997, 9998 and 9999</td>
+<td style="text-align: center;">Yes</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">The control variable measuring “the fraction of the population in the same metropolitan area as the individual who are first or second-generation immigrants from the same country of origin” (p.&nbsp;1562) is not constant, for individuals associated to the same foreign country <span class="math inline">\(c\)</span>, surveyed in the same year</td>
+<td style="text-align: center;">The control variable should be defined in a way that does not vary, when the variable metarea is equal to 9997, 9998 or 9999, across observations corresponding to a unique value of <span class="math inline">\(c\)</span></td>
+<td style="text-align: center;">No</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">5–6</td>
+<td style="text-align: center;">The value of the variable <code>lingprox_dominant_a</code> associated with Canada corresponds to English and stands at 15. However, the estimation sample excludes natives of Canadian ancestry, but includes natives of French Canadian ancestry</td>
+<td style="text-align: center;">Exclude observations for which isocode is “CAN” or replace the value of lingprox_dominant_a by the one corresponding to French (1)</td>
+<td style="text-align: center;">Yes</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">The estimation sample include individuals that reside in metropolitan areas that are not separately identified (i.e. “Not identifiable or not in an MSA”)</td>
+<td style="text-align: center;">Exclude observation for which he variable metarea is equal to 0</td>
+<td style="text-align: center;">Yes</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">The variable measuring the “fraction of those living in the same metropolitan area who are first-generation immigrants of the same ancestry” (p.&nbsp;1565) is incorrectly defined for the observations for which the variable metaread is equal to 0.</td>
+<td style="text-align: center;">Exclude observation for which the variable metarea is equal to 0</td>
+<td style="text-align: center;">Yes</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">The split between living and not living with parents is done using the variable relate, which only describes the relationship of individual <span class="math inline">\(i\)</span> to the household head</td>
+<td style="text-align: center;">Use the variables <code>momloc</code> and <code>poploc</code>, available from IPUMS USA (Ruggles et al., 2023).</td>
+<td style="text-align: center;">No</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">8–9</td>
+<td style="text-align: center;">The questionnaire of the 1930 census did not include the two questions necessary to define the dependent variable</td>
+<td style="text-align: center;">Exclude the observations drawn from the 1930 census</td>
+<td style="text-align: center;">Yes</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">The two questions necessary to define the dependent variable are asked to individuals aged 5 and above</td>
+<td style="text-align: center;">Exclude the observations for children aged 0 to 4</td>
+<td style="text-align: center;">Yes</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">The question necessary to define the employment status is asked to individuals aged 16 and above</td>
+<td style="text-align: center;">Exclude the observations for children aged 0 to 15</td>
+<td style="text-align: center;">Yes</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">The estimation sample include individuals that reside in metropolitan areas that are not separately identified (i.e. “Not identifiable or not in an MSA”).</td>
+<td style="text-align: center;">Exclude observation for which the variable <code>metarea</code> is equal to 0.</td>
+<td style="text-align: center;">Yes</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">The split between living and not living with parents is done using the variable <code>relate</code>, which only describes the relationship of individual i to the household head</td>
+<td style="text-align: center;">Use the variables <code>momloc</code> and <code>poploc</code>, available from IPUMS USA (Ruggles et al., 2023)</td>
+<td style="text-align: center;">No</td>
+</tr>
+</tbody>
+</table>
+<div class="fignote">
+<p><em>Notes: </em> Summary of the corrections.</p>
+</div>
+</div>
+</figure>
+</div>
+<div id="tbl-synthesis" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-synthesis-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;2: Appendix tables associated with equations containing mistakes.
+</figcaption>
+<div aria-describedby="tbl-synthesis-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Table number</th>
+<th style="text-align: center;">Column number</th>
+<th style="text-align: center;">Equation number</th>
+<th style="text-align: center;"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">A25</td>
+<td style="text-align: center;">1-5</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">A26</td>
+<td style="text-align: center;">1-5</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">A27</td>
+<td style="text-align: center;">1-5</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">A30</td>
+<td style="text-align: center;">1-5</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">A31</td>
+<td style="text-align: center;">1-5</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<div class="fignote">
+<p><em>Notes: </em> This tables describes the errors in the original appendix.</p>
+</div>
+</div>
+</figure>
+</div>
+<div id="tbl-replication_tab_4_v1" class="table-responsive quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-replication_tab_4_v1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;3: Correction of Table 4 - Women and men marrying a spouse from their origin country, using CPS 1994-2014 (not excluding observations for which the metropolitan area is missing).
+</figcaption>
+<div aria-describedby="tbl-replication_tab_4_v1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="table-responsive">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th colspan="5" style="text-align: left;">Dependant variable: indicator variable for spouse being from the same origin country</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;"><em>Sample</em></td>
+<td colspan="2" style="text-align: center;">Married women</td>
+<td colspan="2" style="text-align: center;">Married men</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><em>Origin country identified from</em></td>
+<td style="text-align: center;">Father</td>
+<td style="text-align: center;">Mother</td>
+<td style="text-align: center;">Father</td>
+<td style="text-align: center;">Mother</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(1)</td>
+<td style="text-align: center;">(2)</td>
+<td style="text-align: center;">(3)</td>
+<td style="text-align: center;">(4)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Climatic instability</td>
+<td style="text-align: center;">-0.278<sup>*</sup></td>
+<td style="text-align: center;">-0.489<sup>***</sup></td>
+<td style="text-align: center;">-0.107</td>
+<td style="text-align: center;">-0.255<sup>*</sup></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.155)</td>
+<td style="text-align: center;">(0.178)</td>
+<td style="text-align: center;">(0.140)</td>
+<td style="text-align: center;">(0.150)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Country-level controls:</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Distance from equator</td>
+<td style="text-align: center;">-0.006<sup>**</sup></td>
+<td style="text-align: center;">-0.005</td>
+<td style="text-align: center;">-0.008<sup>***</sup></td>
+<td style="text-align: center;">-0.009<sup>***</sup></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.003)</td>
+<td style="text-align: center;">(0.003)</td>
+<td style="text-align: center;">(0.003)</td>
+<td style="text-align: center;">(0.003)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Economic complexity</td>
+<td style="text-align: center;">0.006</td>
+<td style="text-align: center;">0.015</td>
+<td style="text-align: center;">-0.013</td>
+<td style="text-align: center;">-0.023</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.028)</td>
+<td style="text-align: center;">(0.037)</td>
+<td style="text-align: center;">(0.040)</td>
+<td style="text-align: center;">(0.039)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Political hierarchies</td>
+<td style="text-align: center;">0.094<sup>***</sup></td>
+<td style="text-align: center;">0.088<sup>***</sup></td>
+<td style="text-align: center;">0.094<sup>**</sup></td>
+<td style="text-align: center;">0.088<sup>**</sup></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.028)</td>
+<td style="text-align: center;">(0.030)</td>
+<td style="text-align: center;">(0.038)</td>
+<td style="text-align: center;">(0.039)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Ln (per capita GDP)</td>
+<td style="text-align: center;">-0.002</td>
+<td style="text-align: center;">-0.019</td>
+<td style="text-align: center;">-0.001</td>
+<td style="text-align: center;">-0.003</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.031)</td>
+<td style="text-align: center;">(0.035)</td>
+<td style="text-align: center;">(0.037)</td>
+<td style="text-align: center;">(0.036)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Genetic distance from the US</td>
+<td style="text-align: center;">0.030</td>
+<td style="text-align: center;">0.009</td>
+<td style="text-align: center;">0.012</td>
+<td style="text-align: center;">-0.008</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.047)</td>
+<td style="text-align: center;">(0.055)</td>
+<td style="text-align: center;">(0.045)</td>
+<td style="text-align: center;">(0.046)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Fraction of population in location who</td>
+<td style="text-align: center;">3.405<sup>***</sup></td>
+<td style="text-align: center;">3.622<sup>***</sup></td>
+<td style="text-align: center;">3.104<sup>***</sup></td>
+<td style="text-align: center;">3.430<sup>***</sup></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">are 1st or 2nd-generation immigrants</td>
+<td style="text-align: center;">(0.509)</td>
+<td style="text-align: center;">(0.655)</td>
+<td style="text-align: center;">(0.520)</td>
+<td style="text-align: center;">(0.503)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">from same country of origin</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Individual controls</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Number of countries</td>
+<td style="text-align: center;">108</td>
+<td style="text-align: center;">105</td>
+<td style="text-align: center;">110</td>
+<td style="text-align: center;">105</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Mean (st.dev.) of dependent variable</td>
+<td style="text-align: center;">0.33 (0.47)</td>
+<td style="text-align: center;">0.32 (0.47)</td>
+<td style="text-align: center;">0.28 (0.45)</td>
+<td style="text-align: center;">0.29 (0.45)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Observations</td>
+<td style="text-align: center;">35,075</td>
+<td style="text-align: center;">33,083</td>
+<td style="text-align: center;">37,641</td>
+<td style="text-align: center;">34,891</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Original observations</td>
+<td style="text-align: center;">36,082</td>
+<td style="text-align: center;">34,045</td>
+<td style="text-align: center;">38,419</td>
+<td style="text-align: center;">35,639</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(R^{2}\)</span></td>
+<td style="text-align: center;">0.251</td>
+<td style="text-align: center;">0.267</td>
+<td style="text-align: center;">0.228</td>
+<td style="text-align: center;">0.251</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="fignote">
+<p><em>Notes: </em> Mistake (Dependent variable) is corrected. Mistake (Missing MSA 1) is not corrected. Mistakes (Fraction of the population) and (GDP 2014) cannot be corrected. Except for these corrections, the specification is strictly the same as in GN.</p>
+</div>
+</div>
+</figure>
+</div>
+<div id="tbl-replication_tab_4_v2" class="table-responsive quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-replication_tab_4_v2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;4: Correction of Table 4 - Women and men marrying a spouse from their origin country, using CPS 1994-2014 (excluding observations for which the metropolitan area is missing).
+</figcaption>
+<div aria-describedby="tbl-replication_tab_4_v2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="table-responsive">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th colspan="5" style="text-align: left;">Dependant variable: indicator variable for spouse being from the same origin country</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;"><em>Sample</em></td>
+<td colspan="2" style="text-align: center;">Married women</td>
+<td colspan="2" style="text-align: center;">Married men</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><em>Origin country identified from</em></td>
+<td style="text-align: center;">Father</td>
+<td style="text-align: center;">Mother</td>
+<td style="text-align: center;">Father</td>
+<td style="text-align: center;">Mother</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(1)</td>
+<td style="text-align: center;">(2)</td>
+<td style="text-align: center;">(3)</td>
+<td style="text-align: center;">(4)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Climatic instability</td>
+<td style="text-align: center;">-0.330<sup>*</sup></td>
+<td style="text-align: center;">-0.528<sup>**</sup></td>
+<td style="text-align: center;">-0.146</td>
+<td style="text-align: center;">-0.294<sup>*</sup></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.194)</td>
+<td style="text-align: center;">(0.209)</td>
+<td style="text-align: center;">(0.166)</td>
+<td style="text-align: center;">(0.176)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Country-level controls:</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Distance from equator</td>
+<td style="text-align: center;">-0.006<sup>**</sup></td>
+<td style="text-align: center;">-0.005</td>
+<td style="text-align: center;">-0.008<sup>**</sup></td>
+<td style="text-align: center;">-0.009<sup>***</sup></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.003)</td>
+<td style="text-align: center;">(0.003)</td>
+<td style="text-align: center;">(0.003)</td>
+<td style="text-align: center;">(0.003)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Economic complexity</td>
+<td style="text-align: center;">0.008</td>
+<td style="text-align: center;">0.014</td>
+<td style="text-align: center;">-0.015</td>
+<td style="text-align: center;">-0.021</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.029)</td>
+<td style="text-align: center;">(0.037)</td>
+<td style="text-align: center;">(0.043)</td>
+<td style="text-align: center;">(0.041)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Political hierarchies</td>
+<td style="text-align: center;">0.094<sup>***</sup></td>
+<td style="text-align: center;">0.088<sup>***</sup></td>
+<td style="text-align: center;">0.095<sup>**</sup></td>
+<td style="text-align: center;">0.091<sup>**</sup></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.029)</td>
+<td style="text-align: center;">(0.031)</td>
+<td style="text-align: center;">(0.040)</td>
+<td style="text-align: center;">(0.039)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Ln (per capita GDP)</td>
+<td style="text-align: center;">-0.007</td>
+<td style="text-align: center;">-0.023</td>
+<td style="text-align: center;">-0.002</td>
+<td style="text-align: center;">-0.006</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.033)</td>
+<td style="text-align: center;">(0.036)</td>
+<td style="text-align: center;">(0.040)</td>
+<td style="text-align: center;">(0.038)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Genetic distance from the US</td>
+<td style="text-align: center;">0.017</td>
+<td style="text-align: center;">-0.002</td>
+<td style="text-align: center;">0.007</td>
+<td style="text-align: center;">-0.017</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.048)</td>
+<td style="text-align: center;">(0.054)</td>
+<td style="text-align: center;">(0.047)</td>
+<td style="text-align: center;">(0.046)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Fraction of population in location who</td>
+<td style="text-align: center;">3.321<sup>***</sup></td>
+<td style="text-align: center;">3.564<sup>***</sup></td>
+<td style="text-align: center;">2.938<sup>***</sup></td>
+<td style="text-align: center;">3.244<sup>***</sup></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">are 1st or 2nd-generation immigrants</td>
+<td style="text-align: center;">(0.515)</td>
+<td style="text-align: center;">(0.644)</td>
+<td style="text-align: center;">(0.558)</td>
+<td style="text-align: center;">(0.530)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">from same country of origin</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Individual controls</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Number of countries</td>
+<td style="text-align: center;">106</td>
+<td style="text-align: center;">105</td>
+<td style="text-align: center;">110</td>
+<td style="text-align: center;">105</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Mean (st.dev.) of dependent variable</td>
+<td style="text-align: center;">0.35 (0.48)</td>
+<td style="text-align: center;">0.34 (0.48)</td>
+<td style="text-align: center;">0.31 (0.46)</td>
+<td style="text-align: center;">0.31 (0.46)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Observations</td>
+<td style="text-align: center;">28,860</td>
+<td style="text-align: center;">27,427</td>
+<td style="text-align: center;">30,413</td>
+<td style="text-align: center;">28,342</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Original observations</td>
+<td style="text-align: center;">36,082</td>
+<td style="text-align: center;">34,045</td>
+<td style="text-align: center;">38,419</td>
+<td style="text-align: center;">35,639</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(R^{2}\)</span></td>
+<td style="text-align: center;">0.250</td>
+<td style="text-align: center;">0.263</td>
+<td style="text-align: center;">0.229</td>
+<td style="text-align: center;">0.249</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="fignote">
+<p><em>Notes: </em> Mistakes (Dependent variable) and (Missing MSA 1) are corrected. Mistakes (Fraction of the population) and (GDP 2014) cannot be corrected. Except for these corrections, the specification is strictly the same as in GN.</p>
+</div>
+</div>
+</figure>
+</div>
+<div id="tbl-replication_tab_5" class="table-responsive quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-replication_tab_5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;5: Correction of Table 5 - Speaking a foreign language at home, from 2000 Census (excluding all English-speaking countries).
+</figcaption>
+<div aria-describedby="tbl-replication_tab_5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="table-responsive">
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td colspan="7" style="text-align: center;">Dep. variable: Indicator for speaking an Indigenous language at home</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">All 2nd gen+ individuals</td>
+<td style="text-align: center;">Not living with parents</td>
+<td colspan="5" style="text-align: center;">Living with parents</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(1)</td>
+<td style="text-align: center;">(2)</td>
+<td style="text-align: center;">(3)</td>
+<td style="text-align: center;">(4)</td>
+<td style="text-align: center;">(5)</td>
+<td style="text-align: center;">(6)</td>
+<td style="text-align: center;">(7)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Climatic instability</td>
+<td style="text-align: center;">-0.003</td>
+<td style="text-align: center;">0.055</td>
+<td style="text-align: center;">-0.427<sup>**</sup></td>
+<td style="text-align: center;">-0.121</td>
+<td style="text-align: center;">-0.131</td>
+<td style="text-align: center;">0.132</td>
+<td style="text-align: center;">0.125</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.179)</td>
+<td style="text-align: center;">(0.192)</td>
+<td style="text-align: center;">(0.214)</td>
+<td style="text-align: center;">(0.097)</td>
+<td style="text-align: center;">(0.098)</td>
+<td style="text-align: center;">(0.084)</td>
+<td style="text-align: center;">(0.083)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Father speaks a foreign language</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">0.503<sup>***</sup></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">0.791<sup>***</sup></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">(0.029)</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">(0.058)</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Mother speaks foreign lang.<span class="math inline">\(\times\)</span> Climatic instability</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-1.074<sup>***</sup></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">(0.240)</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Mother speaks a foreign language</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">0.511<sup>***</sup></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">0.809<sup>***</sup></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">(0.030)</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">(0.056)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Father speaks foreign lang.<span class="math inline">\(\times\)</span> Climatic instability</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-1.102<sup>***</sup></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">(0.225)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Individual controls</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Number of countries</td>
+<td style="text-align: center;">77</td>
+<td style="text-align: center;">77</td>
+<td style="text-align: center;">77</td>
+<td style="text-align: center;">77</td>
+<td style="text-align: center;">77</td>
+<td style="text-align: center;">77</td>
+<td style="text-align: center;">77</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Mean (st.dev.) of dependent variable</td>
+<td style="text-align: center;">0.13 (0.34)</td>
+<td style="text-align: center;">0.11 (0.32)</td>
+<td style="text-align: center;">0.25 (0.43)</td>
+<td style="text-align: center;">0.25 (0.43)</td>
+<td style="text-align: center;">0.25 (0.43)</td>
+<td style="text-align: center;">0.25 (0.43)</td>
+<td style="text-align: center;">0.25 (0.43)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Observations</td>
+<td style="text-align: center;">2,294,290</td>
+<td style="text-align: center;">1,994,785</td>
+<td style="text-align: center;">299,505</td>
+<td style="text-align: center;">229,166</td>
+<td style="text-align: center;">280,396</td>
+<td style="text-align: center;">229,166</td>
+<td style="text-align: center;">280,396</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Original observations</td>
+<td style="text-align: center;">3,343,097</td>
+<td style="text-align: center;">2,915,673</td>
+<td style="text-align: center;">427,424</td>
+<td style="text-align: center;">330,226</td>
+<td style="text-align: center;">400,062</td>
+<td style="text-align: center;">330,226</td>
+<td style="text-align: center;">400,062</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><span class="math inline">\(R^{2}\)</span></td>
+<td style="text-align: center;">0.332</td>
+<td style="text-align: center;">0.298</td>
+<td style="text-align: center;">0.420</td>
+<td style="text-align: center;">0.588</td>
+<td style="text-align: center;">0.602</td>
+<td style="text-align: center;">0.592</td>
+<td style="text-align: center;">0.606</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="fignote">
+<p><em>Notes: </em> Mistakes (Missing MSA 2) and (English) are corrected. Mistake (Living with parents) cannot be corrected. Except for these corrections, the specification is strictly the same as in GN.</p>
+</div>
+</div>
+</figure>
+</div>
+<div id="tbl-replication_tab_7_v1" class="table-responsive quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-replication_tab_7_v1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;6: Correction of Table 7 - Whether Indigenous populations of the United States speak their traditional language at home: individual-level estimates (not excluding observations for which the metropolitan area is missing).
+</figcaption>
+<div aria-describedby="tbl-replication_tab_7_v1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="table-responsive">
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td colspan="7" style="text-align: center;">Dep. variable: Indicator for speaking a foreign language at home</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">All 2nd gen+ individuals</td>
+<td style="text-align: center;">Not living with parents</td>
+<td colspan="5" style="text-align: center;">Living with parents</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(1)</td>
+<td style="text-align: center;">(2)</td>
+<td style="text-align: center;">(3)</td>
+<td style="text-align: center;">(4)</td>
+<td style="text-align: center;">(5)</td>
+<td style="text-align: center;">(6)</td>
+<td style="text-align: center;">(7)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Climatic instability</td>
+<td style="text-align: center;">-1.290<sup>***</sup></td>
+<td style="text-align: center;">-1.282<sup>***</sup></td>
+<td style="text-align: center;">-1.284<sup>***</sup></td>
+<td style="text-align: center;">-0.712<sup>***</sup></td>
+<td style="text-align: center;">-0.547<sup>***</sup></td>
+<td style="text-align: center;">-0.356<sup>**</sup></td>
+<td style="text-align: center;">-0.193</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.424)</td>
+<td style="text-align: center;">(0.437)</td>
+<td style="text-align: center;">(0.357)</td>
+<td style="text-align: center;">(0.179)</td>
+<td style="text-align: center;">(0.160)</td>
+<td style="text-align: center;">(0.152)</td>
+<td style="text-align: center;">(0.149)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Father speaks an Indigenous language</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">0.448<sup>***</sup></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">0.677<sup>***</sup></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">(0.051)</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">(0.063)</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Father speaks an Indigenous lang.<span class="math inline">\(\times\)</span> Climatic instability</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-0.902<sup>***</sup></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">(0.169)</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Mother speaks an Indigenous language</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">0.471<sup>***</sup></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">0.694<sup>***</sup></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">(0.046)</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">(0.051)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Mother speaks an Indigenous lang.<span class="math inline">\(\times\)</span> Climatic instability</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-0.878<sup>***</sup></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">(0.196)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Individual controls</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Number of ethnic groups</td>
+<td style="text-align: center;">19</td>
+<td style="text-align: center;">19</td>
+<td style="text-align: center;">19</td>
+<td style="text-align: center;">19</td>
+<td style="text-align: center;">19</td>
+<td style="text-align: center;">19</td>
+<td style="text-align: center;">19</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Number of clusters (grid cells)</td>
+<td style="text-align: center;">18</td>
+<td style="text-align: center;">18</td>
+<td style="text-align: center;">18</td>
+<td style="text-align: center;">18</td>
+<td style="text-align: center;">18</td>
+<td style="text-align: center;">18</td>
+<td style="text-align: center;">18</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Mean (st.dev.) of dependent variable</td>
+<td style="text-align: center;">0.21 (0.41)</td>
+<td style="text-align: center;">0.21 (0.41)</td>
+<td style="text-align: center;">0.23 (0.42)</td>
+<td style="text-align: center;">0.31 ( 0.46)</td>
+<td style="text-align: center;">0.29 (0.46)</td>
+<td style="text-align: center;">0.31 (0.46)</td>
+<td style="text-align: center;">0.29 (0.46)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Observations</td>
+<td style="text-align: center;">81,221</td>
+<td style="text-align: center;">67,964</td>
+<td style="text-align: center;">13,257</td>
+<td style="text-align: center;">6,166</td>
+<td style="text-align: center;">9,557</td>
+<td style="text-align: center;">6,166</td>
+<td style="text-align: center;">9,557</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Original observations</td>
+<td style="text-align: center;">128,005</td>
+<td style="text-align: center;">79,235</td>
+<td style="text-align: center;">48,770</td>
+<td style="text-align: center;">25,794</td>
+<td style="text-align: center;">35,403</td>
+<td style="text-align: center;">25,794</td>
+<td style="text-align: center;">35,403</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(R^{2}\)</span></td>
+<td style="text-align: center;">0.396</td>
+<td style="text-align: center;">0.399</td>
+<td style="text-align: center;">0.395</td>
+<td style="text-align: center;">0.557</td>
+<td style="text-align: center;">0.564</td>
+<td style="text-align: center;">0.564</td>
+<td style="text-align: center;">0.570</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="fignote">
+<p><em>Notes: </em> Mistakes (Language), (Children 0 to 4) and (Employment) are corrected. Mistake (Missing MSA) is not corrected. Mistake (Living with parents) cannot be corrected. Except for these corrections, the specification is strictly the same as in GN.</p>
+</div>
+</div>
+</figure>
+</div>
+<div id="tbl-replication_tab_7_v2" class="table-responsive quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-replication_tab_7_v2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;7: Correction of Table 7 - Whether Indigenous populations of the United States speak their traditional language at home: individual-level estimates (excluding observations for which the metropolitan area is missing).
+</figcaption>
+<div aria-describedby="tbl-replication_tab_7_v2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="table-responsive">
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td colspan="7" style="text-align: center;">Dep. variable: Indicator for speaking a foreign language at home</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">All 2nd gen+ individuals</td>
+<td style="text-align: center;">Not living with parents</td>
+<td colspan="5" style="text-align: center;">Living with parents</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(1)</td>
+<td style="text-align: center;">(2)</td>
+<td style="text-align: center;">(3)</td>
+<td style="text-align: center;">(4)</td>
+<td style="text-align: center;">(5)</td>
+<td style="text-align: center;">(6)</td>
+<td style="text-align: center;">(7)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Climatic instability</td>
+<td style="text-align: center;">-0.364</td>
+<td style="text-align: center;">-0.380</td>
+<td style="text-align: center;">-0.140</td>
+<td style="text-align: center;">-0.172</td>
+<td style="text-align: center;">0.064</td>
+<td style="text-align: center;">0.040</td>
+<td style="text-align: center;">0.107</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: center;">(0.268)</td>
+<td style="text-align: center;">(0.275)</td>
+<td style="text-align: center;">(0.191)</td>
+<td style="text-align: center;">(0.116)</td>
+<td style="text-align: center;">(0.072)</td>
+<td style="text-align: center;">(0.095)</td>
+<td style="text-align: center;">(0.093)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Father speaks an Indigenous language</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">0.362<sup>***</sup></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">0.628<sup>***</sup></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">(0.062)</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">(0.097)</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Father speaks an Indigenous lang.<span class="math inline">\(\times\)</span> Climatic instability</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-1.041<sup>**</sup></td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">(0.483)</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Mother speaks an Indigenous language</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">0.408<sup>***</sup></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">0.456<sup>***</sup></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">(0.058)</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">(0.110)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Mother speaks an Indigenous lang.<span class="math inline">\(\times\)</span> Climatic instability</td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">-0.185</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;">(0.438)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Individual controls</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+<td style="text-align: center;">Yes</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Number of ethnic groups</td>
+<td style="text-align: center;">19</td>
+<td style="text-align: center;">19</td>
+<td style="text-align: center;">19</td>
+<td style="text-align: center;">18</td>
+<td style="text-align: center;">19</td>
+<td style="text-align: center;">18</td>
+<td style="text-align: center;">19</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Number of clusters (grid cells)</td>
+<td style="text-align: center;">18</td>
+<td style="text-align: center;">18</td>
+<td style="text-align: center;">18</td>
+<td style="text-align: center;">17</td>
+<td style="text-align: center;">18</td>
+<td style="text-align: center;">17</td>
+<td style="text-align: center;">18</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Mean (st.dev.) of dependent variable</td>
+<td style="text-align: center;">0.10 (0.30)</td>
+<td style="text-align: center;">0.10 (0.31)</td>
+<td style="text-align: center;">0.09 (0.29)</td>
+<td style="text-align: center;">0.15 (0.35)</td>
+<td style="text-align: center;">0.13 (0.34)</td>
+<td style="text-align: center;">0.15 (0.35)</td>
+<td style="text-align: center;">0.13 (0.34)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Observations</td>
+<td style="text-align: center;">34,092</td>
+<td style="text-align: center;">29,500</td>
+<td style="text-align: center;">4,592</td>
+<td style="text-align: center;">1,791</td>
+<td style="text-align: center;">2,903</td>
+<td style="text-align: center;">1,791</td>
+<td style="text-align: center;">2,903</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Original observations</td>
+<td style="text-align: center;">128,005</td>
+<td style="text-align: center;">79,235</td>
+<td style="text-align: center;">48,770</td>
+<td style="text-align: center;">25,794</td>
+<td style="text-align: center;">35,403</td>
+<td style="text-align: center;">25,794</td>
+<td style="text-align: center;">35,403</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><span class="math inline">\(R^{2}\)</span></td>
+<td style="text-align: center;">0.381</td>
+<td style="text-align: center;">0.386</td>
+<td style="text-align: center;">0.416</td>
+<td style="text-align: center;">0.533</td>
+<td style="text-align: center;">0.562</td>
+<td style="text-align: center;">0.542</td>
+<td style="text-align: center;">0.562</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="fignote">
+<p><em>Notes: </em> Mistakes (Language), (Children 0 to 4), (Employment) and (Missing MSA) are corrected. Mistake (Living with parents) cannot be corrected. Except for these corrections, the specification is strictly the same as in GN.</p>
+</div>
+</div>
+</figure>
+</div>
+</section>
+<section id="references" class="level1 unnumbered">
+<h1 class="unnumbered">References</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Acemoglu_2021" class="csl-entry" role="listitem">
+Acemoglu, Daron, Georgy Egorov, and Konstantin Sonin. 2021. <span>“Institutional Change and Institutional Persistence.”</span> In <em>The Handbook of Historical Economics</em>, edited by Alberto Bisin and Giovanni Federico, 365–89. Elsevier. <a href="https://doi.org/10.1016/b978-0-12-815874-6.00021-6">https://doi.org/10.1016/b978-0-12-815874-6.00021-6</a>.
+</div>
+<div id="ref-Alesina_2007" class="csl-entry" role="listitem">
+Alesina, Alberto, and Nicola Fuchs-Schündeln. 2007. <span>“Good-Bye Lenin (or Not?): The Effect of Communism on People’s Preferences.”</span> <em>American Economic Review</em> 97 (4): 1507–28. <a href="https://doi.org/10.1257/aer.97.4.1507">https://doi.org/10.1257/aer.97.4.1507</a>.
+</div>
+<div id="ref-bau2021can" class="csl-entry" role="listitem">
+Bau, Natalie. 2021. <span>“Can Policy Change Culture? Government Pension Plans and Traditional Kinship Practices.”</span> <em>American Economic Review</em> 111 (6): 1880–1917.
+</div>
+<div id="ref-bazzi2023other" class="csl-entry" role="listitem">
+Bazzi, Samuel, Andreas Ferrara, Martin Fiszbein, Thomas Pearson, and Patrick A Testa. 2023. <span>“The Other Great Migration: Southern Whites and the New Right.”</span> <em>The Quarterly Journal of Economics</em> 138 (3): 1577–647.
+</div>
+<div id="ref-bazzi2020frontier" class="csl-entry" role="listitem">
+Bazzi, Samuel, Martin Fiszbein, and Mesay Gebresilasse. 2020. <span>“Frontier Culture: The Roots and Persistence of <span>‘Rugged Individualism’</span> in the United States.”</span> <em>Econometrica</em> 88 (6): 2329–68.
+</div>
+<div id="ref-bazzietal2019" class="csl-entry" role="listitem">
+Bazzi, Samuel, Arya Gaduh, Alexander D. Rothenberg, and Maisy Wong. 2019. <span>“Unity in Diversity? How Intergroup Contact Can Foster Nation Building.”</span> <em>American Economic Review</em> 109 (11): 3978–4025. <a href="https://doi.org/10.1257/aer.20180174">https://doi.org/10.1257/aer.20180174</a>.
+</div>
+<div id="ref-bertoli2023migration" class="csl-entry" role="listitem">
+Bertoli, Simone, Melchior Clerc, Jordan Loper, and Èric Roca Fernández. 2023. <span>“Migration and the Epidemiological Approach: When History Matters.”</span>
+</div>
+<div id="ref-bertoli2024_I4R" class="csl-entry" role="listitem">
+———. 2024. <span>“Understanding Cultural Persistence and Change: A Replication of Giuliano and Nunn (2021).”</span>
+</div>
+<div id="ref-Bisin_Alberto2021-05-11" class="csl-entry" role="listitem">
+Bisin, Alberto, and Giovanni Federico, eds. 2021. <em>The Handbook of Historical Economics</em>. Paperback. Academic Press.
+</div>
+<div id="ref-Bursztyn" class="csl-entry" role="listitem">
+Bursztyn, Leonardo, Thomas Chaney, Tarek A. Hassan, and Aakaash Rao. 2024. <span>“The Immigrant Next Door.”</span> <em>American Economic Review</em> 114 (2): 348–84. <a href="https://doi.org/10.1257/aer.20220376">https://doi.org/10.1257/aer.20220376</a>.
+</div>
+<div id="ref-Caprettiniandvoth" class="csl-entry" role="listitem">
+Caprettini, Bruno, and Hans-Joachim Voth. 2022. <span>“<span>New Deal, New Patriots: How 1930s Government Spending Boosted Patriotism During World War&nbsp;II</span>.”</span> <em>The Quarterly Journal of Economics</em> 138 (1): 465–513. <a href="https://doi.org/10.1093/qje/qjac028">https://doi.org/10.1093/qje/qjac028</a>.
+</div>
+<div id="ref-ciafactbook" class="csl-entry" role="listitem">
+Central Intelligence Agency. 2021. <span>“<span>The World Factbook 2021</span>.”</span> <a href="https://www.cia.gov/the-world-factbook/">https://www.cia.gov/the-world-factbook/</a>.
+</div>
+<div id="ref-clemens2017meaning" class="csl-entry" role="listitem">
+Clemens, Michael A. 2017. <span>“The Meaning of Failed Replications: A Review and Proposal.”</span> <em>Journal of Economic Surveys</em> 31 (1): 326–42.
+</div>
+<div id="ref-dreber2023framework" class="csl-entry" role="listitem">
+Dreber, Anna, and Magnus Johannesson. 2023. <span>“A Framework for Evaluating Reproducibility and Replicability in Economics.”</span>
+</div>
+<div id="ref-enke2019kinship" class="csl-entry" role="listitem">
+Enke, Benjamin. 2019. <span>“Kinship, Cooperation, and the Evolution of Moral Systems.”</span> <em>The Quarterly Journal of Economics</em> 134 (2): 953–1019.
+</div>
+<div id="ref-fernandez2011does" class="csl-entry" role="listitem">
+Fernández, Raquel. 2011. <span>“Does Culture Matter?”</span> In <em>Handbook of Social Economics</em>, edited by Jess Benhabib, Alberto Bisin, and Matthew O. Jackson, 1:481–510. Elsevier.
+</div>
+<div id="ref-ghosh" class="csl-entry" role="listitem">
+Ghosh, Arkadev, Sam Il Myoung Hwang, and Munir Squires. 2023. <span>“<span class="nocase">Economic Consequences of Kinship: Evidence From U.S. Bans on Cousin Marriage</span>.”</span> <em>The Quarterly Journal of Economics</em> 138 (4): 2559–2606. <a href="https://doi.org/10.1093/qje/qjad018">https://doi.org/10.1093/qje/qjad018</a>.
+</div>
+<div id="ref-giuliano2021understanding" class="csl-entry" role="listitem">
+Giuliano, Paola, and Nathan Nunn. 2021. <span>“Understanding Cultural Persistence and Change.”</span> <em>The Review of Economic Studies</em> 88 (4): 1541–81.
+</div>
+<div id="ref-correction" class="csl-entry" role="listitem">
+———. 2024. <span>“<span class="nocase">Correction to: Understanding Cultural Persistence and Change</span>.”</span> <em>The Review of Economic Studies</em> 91 (1): 597.
+</div>
+<div id="ref-Huntington_Klein_2021" class="csl-entry" role="listitem">
+Huntington‐Klein, Nick, Andreu Arenas, Emily Beam, Marco Bertoni, Jeffrey R. Bloem, Pralhad Burli, Naibin Chen, et al. 2021. <span>“The Influence of Hidden Researcher Decisions in Applied Microeconomics.”</span> <em>Economic Inquiry</em> 59 (3): 944–60. <a href="https://doi.org/10.1111/ecin.12992">https://doi.org/10.1111/ecin.12992</a>.
+</div>
+<div id="ref-Kr_hmer_2023" class="csl-entry" role="listitem">
+Krähmer, Daniel, Laura Schächtele, and Andreas Schneck. 2023. <span>“Care to Share? Experimental Evidence on Code Sharing Behavior in the Social Sciences.”</span> Edited by Simon Porcher. <em>PLOS ONE</em> 18 (8): e0289380. <a href="https://doi.org/10.1371/journal.pone.0289380">https://doi.org/10.1371/journal.pone.0289380</a>.
+</div>
+<div id="ref-michalopoulos2021folklore" class="csl-entry" role="listitem">
+Michalopoulos, Stelios, and Melanie Meng Xue. 2021. <span>“Folklore.”</span> <em>The Quarterly Journal of Economics</em> 136 (4): 1993–2046.
+</div>
+<div id="ref-ipums" class="csl-entry" role="listitem">
+Ruggles, Steven, Sarah Flood, Matthew Sobek, Danika Brockman, Grace Cooper, Stephanie Richards, and Megan Schouweiler. 2023. <span>“IPUMS USA: Version 13.0 [Dataset].”</span>
+</div>
+<div id="ref-Slotwinski_2022" class="csl-entry" role="listitem">
+Slotwinski, Michaela, and Alois Stutzer. 2022. <span>“Women Leaving the Playpen: The Emancipating Role of Female Suffrage.”</span> <em>The Economic Journal</em> 133 (650): 812–44. <a href="https://doi.org/10.1093/ej/ueac077">https://doi.org/10.1093/ej/ueac077</a>.
+</div>
+<div id="ref-valenciacaicedo" class="csl-entry" role="listitem">
+Valencia Caicedo, Felipe. 2018. <span>“<span class="nocase">The Mission: Human Capital Transmission, Economic Persistence, and Culture in South America</span>.”</span> <em>The Quarterly Journal of Economics</em> 134 (1): 507–56. <a href="https://doi.org/10.1093/qje/qjy024">https://doi.org/10.1093/qje/qjy024</a>.
+</div>
+<div id="ref-Voth_2021" class="csl-entry" role="listitem">
+Voth, Hans-Joachim. 2021. <span>“Persistence – Myth and Mystery.”</span> In <em>The Handbook of Historical Economics</em>, edited by Alberto Bisin and Giovanni Federico, 243–67. Elsevier. <a href="https://doi.org/10.1016/b978-0-12-815874-6.00015-0">https://doi.org/10.1016/b978-0-12-815874-6.00015-0</a>.
+</div>
+<div id="ref-enwiki:1160531031" class="csl-entry" role="listitem">
+Wikipedia contributors. 2023. <span>“List of Official Languages by Country and Territory — <span>Wikipedia</span><span>,</span> the Free Encyclopedia.”</span> <a href="https://en.wikipedia.org/w/index.php?title=List_of_official_languages_by_country_and_territory&amp;oldid=1160531031">https://en.wikipedia.org/w/index.php?title=List_of_official_languages_by_country_and_territory&amp;oldid=1160531031</a>.
+</div>
+</div>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>In this way, GN overcome the challenges arising from the correlation between historical and current climatic variability. The literature on the determinants of culture refers to this setup in which individuals from different origins residing in a single location are compared as the “epidemiological approach” <span class="citation" data-cites="fernandez2011does">(see <a href="#ref-fernandez2011does" role="doc-biblioref">Fernández 2011</a>)</span>. We refer the reader to a companion paper <span class="citation" data-cites="bertoli2023migration">(<a href="#ref-bertoli2023migration" role="doc-biblioref">Bertoli et al. 2023</a>)</span> which discusses the analytical challenges related to the use of self-reported ancestry to identify the foreign countries of origin of natives, as GN do in a portion of their work.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>The literature on persistence and rapid cultural change is vast and multifaceted. For a comprehensive overview, see <span class="citation" data-cites="Bisin_Alberto2021-05-11">Bisin and Federico (<a href="#ref-Bisin_Alberto2021-05-11" role="doc-biblioref">2021</a>)</span>; in particular, <span class="citation" data-cites="Voth_2021">Voth (<a href="#ref-Voth_2021" role="doc-biblioref">2021</a>)</span> provides a thorough survey of the persistence literature in historical economics, while <span class="citation" data-cites="Acemoglu_2021">Acemoglu, Egorov, and Sonin (<a href="#ref-Acemoglu_2021" role="doc-biblioref">2021</a>)</span> offers a conceptual framework for understanding institutional persistence and change. Empirical studies have also shed light on the dynamics of cultural change, such as <span class="citation" data-cites="Alesina_2007">Alesina and Fuchs-Schündeln (<a href="#ref-Alesina_2007" role="doc-biblioref">2007</a>)</span>, which examines the effect of communism on people’s preferences, and <span class="citation" data-cites="Slotwinski_2022">Slotwinski and Stutzer (<a href="#ref-Slotwinski_2022" role="doc-biblioref">2022</a>)</span>, which investigates the impact of religious doctrine on democratization.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Last version accessed: 30 November 2023.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>We cite the earlier I4R Discussion Paper version of <span class="citation" data-cites="dreber2023framework">Dreber and Johannesson (<a href="#ref-dreber2023framework" role="doc-biblioref">2023</a>)</span>, as requested by a referee, but the term “deep reproducibility” appears in a later version of the paper, posted on SSRN on May 25, 2023, and last revised on November 30, 2023, available at <a href="https://dx.doi.org/10.2139/ssrn.4458153" class="uri">https://dx.doi.org/10.2139/ssrn.4458153</a>.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>The definition of “same” in the context of <span class="citation" data-cites="clemens2017meaning">Clemens (<a href="#ref-clemens2017meaning" role="doc-biblioref">2017</a>)</span> is crucial in our exercise: “[t]he ‘same’ specification, population, or sample means the same as reported in the original paper, not necessarily what was contained in the code and data used by the original paper. Thus for example if code used in the original paper contains an error such that it does not run exactly the regressions that the original paper said it does, new code that fixes the error is nevertheless using the ‘same’ specifications (as described in the paper).” (p.&nbsp;328).<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>We successfully verified the computational reproducibility of the results in GN for which the code is included.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p><span class="citation" data-cites="correction">Giuliano and Nunn (<a href="#ref-correction" role="doc-biblioref">2024</a>)</span> acknowledges our contribution to this <em>corrigendum</em>.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>It should be noted, however, that there are instances where it is possible to infer inconsistencies between the original article’s text and the analysis code, particularly when the aggregate data is directly linked to underlying individual-level data used in other equations. For example, coding errors in the generation of the dependent variable in Eq. (8) extend to Eq. (10), as the latter equation simply aggregates the individual-level data used to estimate the former (see Tables 8 and 10). Additionally, the final point of the <em>corrigendum</em> <span class="citation" data-cites="correction">(<a href="#ref-correction" role="doc-biblioref">Giuliano and Nunn 2024</a>)</span> addresses an inconsistency between the original article’s text and the corresponding analysis code using aggregate data.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p>Regressions using indigenous population are similarly regarded. Eq. (2) uses individual-level data but only compares “individuals living in the same country but belonging to different ethnic groups." <span class="citation" data-cites="giuliano2021understanding">(<a href="#ref-giuliano2021understanding" role="doc-biblioref">Giuliano and Nunn 2021, 1543</a>)</span><a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn10"><p>We refer the reader to Table <a href="#tab:synthesis" data-reference-type="ref" data-reference="tab:synthesis">[tab:synthesis]</a> in the online Appendix for a summary of the identified inconsistencies, the corrections we propose and whether we implemented them or not. This Table also associates each inconsistency to the equation in which it appears. <a href="#tbl-errors_in_original_appendix" class="quarto-xref">Table&nbsp;1</a> indicates the Tables and Columns with errors in the original Appendix, together with the equations that these estimated.<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn11"><p>For instance, we mention that cohabiting parents and children could be identified using the variables <code>poploc</code> and <code>momloc</code>. These variables are not included in the replication package, and since individual identifiers have been removed, it is impossible to merge the data from the replication package with the original information from IPUMS.<a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn12"><p>For the reader’s interest, our online Appendix presents the results obtained when we simultaneously correct all feasible discrepancies. Additionally, <a href="#fig-table_4" class="quarto-xref">Figure&nbsp;1</a>–<a href="#fig-table_7" class="quarto-xref">Figure&nbsp;3</a> illustrate the estimates obtained when addressing different combinations of these discrepancies. These figures serve to evaluate the impact of resolving various issues on the estimated coefficient of the variable of interest.<a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn13"><p><a href="#eq-2" class="quarto-xref">Equation&nbsp;2</a> is estimated in the six data columns of Table 2; <a href="#eq-4" class="quarto-xref">Equation&nbsp;4</a> is estimated in the four data columns of Table 4; <a href="#eq-5" class="quarto-xref">Equation&nbsp;5</a> in Cols. (1)-(5) in Table 5; <a href="#eq-6" class="quarto-xref">Equation&nbsp;6</a> in Cols. (6) and (7) in Table 5; <a href="#eq-8" class="quarto-xref">Equation&nbsp;8</a> in Cols. (1)-(5) in Table 7, and <a href="#eq-9" class="quarto-xref">Equation&nbsp;9</a> in Cols. (6) and (7) in Table 7.<a href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn14"><p>We do not provide corrections for <a href="#eq-2" class="quarto-xref">Equation&nbsp;2</a>, because the code that exactly follows the description given in the original article is impossible to estimate, as a variable is simply not available in the data, and because the <em>corrigendum</em> realigns the text with the corresponding code.<a href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn15"><p>The actual incidence depends on the (unobserved) share of each estimation sample for which the mother tongue is not the language normally spoken at home.<a href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn16"><p>“Since children born to immigrant parents in the U.S. are almost always fluent in English, they face the decision of whether to continue speaking their traditional language at home. They face this decision both when they live with their parents as children and when they live on their own with their own family. Thus, as a revealed measure of the importance of maintaining tradition, we examine the extent to which a foreign language is spoken at home among the children of immigrants. Speaking a foreign language at home indicates that the children of the immigrants were taught their origin language, which is a sign of the parents and children valuing their tradition.” (p.&nbsp;1565).<a href="#fnref16" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn17"><p>See, for instance, User Note 1 in Appendix G of the Codebook of the 1994 March Supplement of the CPS, available at: <a href="https://cps.ipums.org/cps/resources/codebooks/cpsmarapr94.pdf" class="uri">https://cps.ipums.org/cps/resources/codebooks/cpsmarapr94.pdf</a> (last accessed: June 25, 2023).<a href="#fnref17" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn18"><p>For each equation, the incidence have been computed by dividing the number of observations corresponding to countries with a non-missing GDP in 2013, but a missing GDP in 2014 and all other variables that are non-missing, by the total number of observations in the sample<a href="#fnref18" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn19"><p>This variable is also <em>entirely</em> missing for some countries of origin (e.g., Argentina, Syria), leading to their exclusion from the estimation. However, the exact same control variable exists for these countries for the year 2000 in <a href="#eq-5" class="quarto-xref">Equation&nbsp;5</a> and <a href="#eq-6" class="quarto-xref">Equation&nbsp;6</a>.<a href="#fnref19" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn20"><p>The seven countries or territories are Canada, Puerto Rico, the Philippines, India, Samoa, Pakistan, and Eritrea; we identify countries and territories where English is an official language by cross-checking <span class="citation" data-cites="enwiki:1160531031">Wikipedia contributors (<a href="#ref-enwiki:1160531031" role="doc-biblioref">2023</a>)</span> and <span class="citation" data-cites="ciafactbook">Central Intelligence Agency (<a href="#ref-ciafactbook" role="doc-biblioref">2021</a>)</span>, retaining only the cases in which both data sources report English as an official language.<a href="#fnref20" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn21"><p>The replication package includes the three-digit ISO code of the country of ancestry, not the name of the ancestral group.<a href="#fnref21" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn22"><p>Notice that the linguistic proximity between the United States and France (French) is 1; the only other country of ancestry with a value of 15 (the value corresponding to English) is Samoa, which is also a country with English as an official language, and the second highest value is 8 (for Puerto Rico), a territory with English as an official language, and the average linguistic proximity stands at 2.2 in the Authors’ original sample; this contributes to explain why the limited share of observations corresponding to countries where English is an official language play such a pivotal role in the significance of the variable of interest.<a href="#fnref22" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn23"><p>“In columns 2 and 3, we split the samples into those not living with their parents and those living with their parents.” (p.&nbsp;1567).<a href="#fnref23" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn24"><p>These variables provide the identifiers of the co-residing mother and father. See, for instance, <a href="https://usa.ipums.org/usa-action/variables/MOMLOC#availability_section" class="uri">https://usa.ipums.org/usa-action/variables/MOMLOC#availability_section</a> (last accessed on May 31, 2023). Using these variables also avoids incorrectly identifying a step-father as the father of the child, something that may occur using <code>relate</code>.<a href="#fnref24" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn25"><p>See <a href="https://usa.ipums.org/usa-action/variables/LANGUAGE#availability_section" class="uri">https://usa.ipums.org/usa-action/variables/LANGUAGE#availability_section</a> (last accessed on May 31, 2023).<a href="#fnref25" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn26"><p>See <a href="https://usa.ipums.org/usa-action/revisions#revision_02_09_2021" class="uri">https://usa.ipums.org/usa-action/revisions#revision_02_09_2021</a> (last accessed on October 23, 2023); we thank Paola Giuliano and Nathan Nunn for bringing this to our attention.<a href="#fnref26" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn27"><p>See <a href="https://usa.ipums.org/usa-action/variables/MTONGUE#description_section" class="uri">https://usa.ipums.org/usa-action/variables/MTONGUE#description_section</a> (last accessed on October 23, 2023).<a href="#fnref27" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn28"><p>Private communication with Paola Giuliano and Nathan Nunn, who contacted IPUMS USA for clarification.<a href="#fnref28" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn29"><p>The share of observations where the dependent variable equals 1 is 91.0 for Navajo and 99.2 percent for Hopi in 1930.<a href="#fnref29" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn30"><p>It is worth noting that the replication package only includes the binary dependent variable and does not provide information on the language associated with each individual.<a href="#fnref30" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn31"><p>See <a href="https://usa.ipums.org/usa-action/variables/LANGUAGE#universe_section" class="uri">https://usa.ipums.org/usa-action/variables/LANGUAGE#universe_section</a> (last accessed on June 6, 2023).<a href="#fnref31" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn32"><p>See <a href="https://usa.ipums.org/usa-action/variables/EMPSTAT#universe_section" class="uri">https://usa.ipums.org/usa-action/variables/EMPSTAT#universe_section</a> (last accessed on October 23, 2023).<a href="#fnref32" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn33"><p>These two tables differ in their treatment of observations with a missing metropolitan area. The former includes those while the latter does not.<a href="#fnref33" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn34"><p>Similarly to Table 4, we present two variants of Table 7. The first includes observations with a missing metropolitan area. The second does not.<a href="#fnref34" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{bertoli2024,
+  author = {Bertoli, Simone and Clerc, Melchior and Loper, Jordan and
+    Roca Fernández, Èric},
+  title = {Understanding Cultural Persistence and Change: A Replication
+    of {Giuliano} and {Nunn} (2021)},
+  date = {2024-07-18},
+  doi = {10.1111/ecin.13242},
+  langid = {en},
+  abstract = {Giuliano and Nunn (2021) provide econometric evidence that
+    ancestral climatic variability reduces the current importance of
+    tradition. We conduct a “deep reproduction”, comparing the precise
+    descriptions of the individual-level regressions in their article
+    with the corresponding code. This analysis uncovers several major
+    inconsistencies, also related to the code not included in their
+    replication package. A published *corrigendum* addresses some
+    inconsistencies we had also communicated to the Editor of REStud,
+    but several remain, relating to a substantial portion of the
+    observations. A realignment of the code with the text reveals a more
+    nuanced relationship between ancestral climatic variability and
+    tradition.}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-bertoli2024" class="csl-entry quarto-appendix-citeas" role="listitem">
+Bertoli, Simone, Melchior Clerc, Jordan Loper, and Èric Roca Fernández.
+2024. <span>“Understanding Cultural Persistence and Change: A
+Replication of Giuliano and Nunn (2021).”</span> Economic Inquiry. July
+18, 2024. <a href="https://doi.org/10.1111/ecin.13242">https://doi.org/10.1111/ecin.13242</a>.
+</div></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2023 Èric Roca Fernández. Last updated: {{&lt; last-modified &gt;}}</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

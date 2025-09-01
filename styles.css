@@ -1,0 +1,207 @@
+/* Make the profile image a perfect circle */
+.profile-image {
+    width: 150px;        /*  Keep width consistent */
+    height: 150px;       /*  Set height EQUAL to width */
+    border-radius: 50%;  /*  This makes it a circle */
+    object-fit: cover;   /* Prevents distortion, fills the circle */
+    display: block;      /* Important for centering */
+    margin-left: auto;  /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+    
+  }
+
+.author-image {
+  width: 50px;        /*  Keep width consistent */
+  height: 50px;       /*  Set height EQUAL to width */
+  border-radius: 50%;  /*  This makes it a circle */
+  object-fit: cover;   /* Prevents distortion, fills the circle */
+  vertical-align: baseline;
+  margin-bottom: 0.5rem;
+  line-height: 1;
+  max-width: 100%;
+}
+
+.author {
+  vertical-align: baseline;
+}
+
+  .about-me {
+    /*Added some top margin*/
+    margin-top: -1em; /*Start point, tune later*/
+  
+  }
+
+  /* Center content vertically and horizontally */
+  .center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    text-align: center; /*Centers the text, too! */
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  h2, h2 {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+
+.center-content strong {
+    font-weight: 800; /* Extra bold for name */
+    font-size: 1.5rem; /* Adjust size if needed */
+}
+
+.center-content br + span {
+    color: #777; /* Light grey for Assistant Professor */
+    font-size: 0.9rem; /* Smaller font */
+    font-weight: 300; /* Lighter weight */
+}
+
+.center-content a {
+    font-size: 0.9rem; /* Same size as Assistant Professor */
+    color: #1565C0; /* Keep default link color */
+    text-decoration: none;
+}
+
+.center-content a:hover {
+    text-decoration: underline;
+}
+  
+  /* Style the social icons (using Flexbox) */
+.social-icons {
+    display: flex;
+    justify-content: center; /* Center icons horizontally */
+    gap: 10px; /* Spacing between icons */
+    margin-top: 1em; /* Space above the icons*/
+  }
+  
+  .social-icons a {
+    color: #1565c0;
+    font-size: 1.25rem;
+    text-decoration: none; /* Remove underlines from links*/
+  }
+
+  .research-item {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+
+  .research-box {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+}
+
+
+
+
+/* Title of the article */
+.article-title {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: bold;
+  text-decoration: none; /* Remove underline by default */
+  line-height: 1.2; /* Adjust this value to control the spacing between lines */
+}
+
+
+/* Hover effect for the article link */
+.article-title:hover {
+  color: inherit; /* Keeps the color the same on hover (you can change this if you want a different hover color) */
+  text-decoration: none; /* Ensures the link doesn't get underlined on hover */
+}
+
+/* Author name */
+.author {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Publication date */
+.publication-date {
+  font-size: 0.75rem;
+  color: #777;
+}
+
+/* Journal details */
+.journal-details {
+  font-size: 0.75rem;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+/* Abstract text */
+.abstract {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Button styles */
+.button {
+  display: inline-block;
+  background-color: #007BFF;
+  color: white;
+  padding: 0.3rem 0.4rem;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  font-size: 0.75rem;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Prizes styling */
+.prizes {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: #555;
+  font-weight: bold;
+}
+
+/* Styling for the horizontal ruler */
+hr.divider {
+  border: 0;               /* Remove the default border */
+  border-top: 1px solid #ddd; /* Add a subtle light gray top border */
+  margin: 20px 0;           /* Add vertical spacing around the ruler */
+}
+
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  width: 100%;   /* Ensures the image scales to the container's width */
+  height: auto;  /* Keeps the aspect ratio intact */
+  max-width: 100%; /* Prevents the image from exceeding the container's width */
+  border: 2px solid #333;   /* Adds a 2px solid light gray border around the image */
+  border-radius: 0px;       /* Optional: Adds rounded corners to the border */
+}
+
+.caption {
+  position: relative;
+  bottom: 0.75rem;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 0.5rem;
+  text-align: right;
+  padding-right: 1%;
+}
+
+.fignote {
+  font-size: 0.75rem;
+  color: #555;
+  margin-top: 10px;
+  text-align: left;
+}

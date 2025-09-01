@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.34">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>4&nbsp; Le modèle de Ramsey – Macroéconomie Dynamique</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./references.html" rel="next">
+<link href="./solow.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-3ce0956f7babb2a12842f6225a6cff9b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Èric Roca Fernández</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../../index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../teaching.html"> 
+<span class="menu-text">Teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../contact.html"> 
+<span class="menu-text">Contact</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <a href="./Macroéconomie-Dynamique.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./ramsey.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Le modèle de Ramsey</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./solow.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Le modèle de Solow</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ramsey.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Le modèle de Ramsey</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#hypothèses" id="toc-hypothèses" class="nav-link active" data-scroll-target="#hypothèses"><span class="header-section-number">4.1</span> Hypothèses</a>
+  <ul class="collapse">
+  <li><a href="#producteurs" id="toc-producteurs" class="nav-link" data-scroll-target="#producteurs"><span class="header-section-number">4.1.1</span> Producteurs</a></li>
+  <li><a href="#ménages" id="toc-ménages" class="nav-link" data-scroll-target="#ménages"><span class="header-section-number">4.1.2</span> Ménages</a></li>
+  </ul></li>
+  <li><a href="#optimisation" id="toc-optimisation" class="nav-link" data-scroll-target="#optimisation"><span class="header-section-number">4.2</span> Optimisation</a>
+  <ul class="collapse">
+  <li><a href="#hamiltonien" id="toc-hamiltonien" class="nav-link" data-scroll-target="#hamiltonien"><span class="header-section-number">4.2.1</span> Hamiltonien</a></li>
+  <li><a href="#léquation-deuler" id="toc-léquation-deuler" class="nav-link" data-scroll-target="#léquation-deuler"><span class="header-section-number">4.2.2</span> L’équation d’Euler</a></li>
+  </ul></li>
+  <li><a href="#dynamiques" id="toc-dynamiques" class="nav-link" data-scroll-target="#dynamiques"><span class="header-section-number">4.3</span> Dynamiques</a>
+  <ul class="collapse">
+  <li><a href="#état-stationnaire" id="toc-état-stationnaire" class="nav-link" data-scroll-target="#état-stationnaire"><span class="header-section-number">4.3.1</span> État stationnaire</a></li>
+  <li><a href="#c-locus" id="toc-c-locus" class="nav-link" data-scroll-target="#c-locus"><span class="header-section-number">4.3.2</span> c-locus</a></li>
+  <li><a href="#k-locus" id="toc-k-locus" class="nav-link" data-scroll-target="#k-locus"><span class="header-section-number">4.3.3</span> k-locus</a></li>
+  <li><a href="#diagramme-de-phase" id="toc-diagramme-de-phase" class="nav-link" data-scroll-target="#diagramme-de-phase"><span class="header-section-number">4.3.4</span> Diagramme de phase</a></li>
+  </ul></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">4.4</span> Conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Le modèle de Ramsey</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Le modèle de Ramsey, un modèle de croissance néoclassique, a été élaboré par Frank Ramsey en 1928. Bien qu’il partage des similitudes avec le modèle de Solow, il présente plusieurs différences majeures.</p>
+<ul>
+<li>Dans le modèle de Ramsey, l’épargne est <strong>endogénéisée</strong>. En d’autres termes, il explique comment les agents économiques déterminent leur taux d’épargne. Par opposition, le modèle de Solow considère l’épargne comme exogène, c’est-à-dire qu’elle est définie par les équations du modèle. Le modèle de Ramsey démontre que le taux d’épargne optimal est influencé par divers facteurs, tels que le taux de croissance de la population, le taux de rendement du capital et le coefficient d’aversion au risque des agents économiques.</li>
+<li>Le modèle de Ramsey intègre l’<strong>intertemporalité</strong>, signifiant que les agents économiques prennent en compte les conséquences futures de leurs décisions actuelles. À l’inverse, le modèle de Solow suppose que les agents économiques ne considèrent pas ces implications futures.</li>
+<li>Enfin, le modèle de Ramsey est axé sur l’<strong>optimisation</strong>, cherchant à maximiser le bien-être des agents économiques sur toute la période. Le modèle de Solow, en revanche, ne s’engage pas dans cette maximisation du bien-être.</li>
+</ul>
+<p>Le modèle de Ramsey montre que le taux d’épargne optimal est déterminé par un certain nombre de facteurs, tels que le taux de croissance de la population, le taux de rendement du capital et le coefficient d’aversion au risque des agents économiques. Cependant, le modèle de Solow ne prend pas en compte ces facteurs. L’endogénéisation de l’épargne dans le modèle de Ramsey le rend plus réaliste que le modèle de Solow. En effet, dans la réalité, le taux d’épargne est déterminé par les décisions des agents économiques et non pas imposé par le modèle lui-même.</p>
+<p>Le modèle de Ramsey a été employé pour analyser un vaste ensemble de problématiques économiques, telles que la croissance économique, l’épargne, l’investissement, l’éducation et l’environnement. Il représente un outil crucial pour les économistes cherchant à comprendre les mécanismes sous-jacents à la croissance économique et à élaborer des politiques économiques susceptibles d’améliorer le bien-être économique.</p>
+<section id="hypothèses" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="hypothèses"><span class="header-section-number">4.1</span> Hypothèses</h2>
+<p>Dans le modèle de Ramsey, les agents cherchent à optimiser leur comportement pour maximiser leur utilité. La version simplifiée du modèle inclut deux catégories d’agents :</p>
+<ul>
+<li>Producteurs</li>
+<li>Consommateurs</li>
+</ul>
+<p>Les agents de chaque catégorie présentent des caractéristiques similaires:</p>
+<ul>
+<li>Nombreux et identiques, un seul agent représentatif est modélisé pour chaque catégorie.</li>
+<li>La concurrence est pure et parfaite sur l’ensemble des marchés :
+<ul>
+<li>Marchés du travail</li>
+<li>Marché de capital</li>
+<li>Marché des biens</li>
+</ul></li>
+<li>Les agents ont une capacité de prévision parfaite du futur, ce qui implique qu’ils disposent d’une clairvoyance parfaite.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></li>
+</ul>
+<section id="producteurs" class="level3" data-number="4.1.1">
+<h3 data-number="4.1.1" class="anchored" data-anchor-id="producteurs"><span class="header-section-number">4.1.1</span> Producteurs</h3>
+<p>Dans le modèle de Ramsey, un grand nombre d’entreprises identiques produisent un bien homogène à l’aide de la même technologie. Pour produire, les entreprises louent du capital et recrutent des travailleurs.</p>
+<p>La production utilise une fonction de production identique à celle du modèle de Solow:</p>
+<ul>
+<li>Elle est homogène de degré un (pour tous les facteurs de production rivaux)</li>
+<li>La production est croissante pour chaque facteur de production</li>
+<li>Elle présente des rendements décroissants</li>
+<li>Elle respecte les conditions d’Inada</li>
+</ul>
+<p>Dans le modèle de Ramsey, les fonctions de production intensives ou par travailleur sont utilisées: <span class="math inline">\(y(t) = f(k(t))\)</span></p>
+<section id="fonction-de-production-cobb-douglas" class="level4" data-number="4.1.1.1">
+<h4 data-number="4.1.1.1" class="anchored" data-anchor-id="fonction-de-production-cobb-douglas"><span class="header-section-number">4.1.1.1</span> Fonction de production Cobb-Douglas</h4>
+<p>Dans ce qui suit, pour simplifier l’analyse, on utilisera la fonction de production Cobb-Douglas comme suit:</p>
+<p><span class="math display">\[
+Y(t) = F\left[K(t), L(t)\right] = K(t)^\alpha L(t)^{1-\alpha}, \alpha \in (0,1)
+\]</span></p>
+<p>Cette fonction de production respecte toutes les hypothèses requises du modèle.</p>
+<p><span class="math display">\[
+\begin{aligned}
+Y &amp;= F[K, L] = K^\alpha L^{1-\alpha} \implies \\
+&amp; \implies \frac{Y}{L} \equiv y = \frac{K^\alpha L^{1-\alpha}}{L} = K^\alpha L^{-\alpha} = \left(\frac{K}{L}\right)^\alpha = k^\alpha.
+\end{aligned}
+\]</span></p>
+</section>
+<section id="salaire-et-taux-dintérêt" class="level4" data-number="4.1.1.2">
+<h4 data-number="4.1.1.2" class="anchored" data-anchor-id="salaire-et-taux-dintérêt"><span class="header-section-number">4.1.1.2</span> Salaire et taux d’intérêt</h4>
+<p>Les facteurs de production, tels que le travail et le capital, sont rémunérés en fonction de leur productivité marginale. Il faut noter que le modèle de Ramsey partage certaines caractéristiques avec le modèle de Solow, par exemple, le salaire et le taux d’intérêt sont déterminés de la même manière.</p>
+<p>Le taux d’intérêt, dans le modèle de Ramsey, est donné par l’expression suivante : <span class="math inline">\(R = \frac{\partial F[K, L]}{\partial K} = \frac{\partial L F\left[\frac{K}{L}\right]}{K} = L F^\prime \left[\frac{K}{L}\right] \frac{1}{L} = f^\prime (k).\)</span></p>
+<p>Pour la fonction de production Cobb-Douglas, le taux d’intérêt est: <span class="math inline">\(R = \frac{\partial K^\alpha L^{1-\alpha}}{\partial K} = \alpha K^{\alpha - 1}L^{1-\alpha} = \alpha k^{\alpha -1}\)</span></p>
+<p>Le salaire, tout comme le taux d’intérêt, est déterminé en calculant la productivité marginale du travail (<span class="math inline">\(L\)</span>): <span class="math inline">\(w = \frac{\partial F[K,L]}{\partial L} = \frac{\partial L F\left[\frac{K}{L}\right]}{\partial L} = F\left[\frac{K}{L}\right] + F^\prime \left[\frac{K}{L}\right][-1]\frac{K}{L^2}L = f(k) - f^\prime (k) k\)</span>.</p>
+<p>Avec la fonction de production Cobb-Douglas, le salaire est calculé comme suit: <span class="math inline">\(w = \frac{\partial K^\alpha L^{1-\alpha}}{\partial L} = (1-\alpha) K^{\alpha}L^{-\alpha} = (1-\alpha) k^{\alpha}\)</span> Dans ce cas, le salaire augmente à mesure que la quantité de capital par travailleur, <span class="math inline">\(k\)</span>, augmente.</p>
+</section>
+</section>
+<section id="ménages" class="level3" data-number="4.1.2">
+<h3 data-number="4.1.2" class="anchored" data-anchor-id="ménages"><span class="header-section-number">4.1.2</span> Ménages</h3>
+<p>Contrairement aux entreprises, le traitement des ménages dans le modèle de Ramsey est très différent de celui dans le modèle de Solow. En fait, dans le modèle de Solow, les ménages étaient presque absents: ils épargnaient à un taux constant et exogène, sans se soucier du niveau de consommation. Cela est radicalement différent dans le modèle de Ramsey: les décisions sont micro-fondées, ce qui signifie qu’ils optimisent pour maximiser leur utilité.</p>
+<p>Les ménages tirent leur utilité de la consommation, ce qui est au cœur de leurs décisions d’épargne et d’investissement. Ils comprennent que la valeur d’une même consommation varie à travers le temps; consommer aujourd’hui ne procure pas le même niveau de satisfaction que consommer dans un an, par exemple. Mais, en réduisant la consommation aujourd’hui, il est possible d’épargner et ainsi gagner de l’intérêt et consommer plus dans le futur. Pour maximiser leur utilité, les ménages doivent <em>arbitrer</em> entre la consommation présente et la consommation future. Le modèle de Ramsey suppose que les ménages ont une durée de vie infinie, ce qui simplifie l’analyse de leurs choix intertemporels.</p>
+<p>Finalement, de manière similaire au modèle de Solow, on postule que la population croît à un taux constant. Ainsi, la taille de la population à un moment donné est décrite par l’équation, <span class="math inline">\(L(t) = L(0)e^{nt}.\)</span> Pour simplifier, nous posons <span class="math inline">\(L(0) = 1\)</span> où <span class="math inline">\(n&gt;0\)</span> est le taux de croissance de la population. Pour tant,</p>
+<p><span class="math display">\[
+L(t) = e^{nt}.
+\]</span></p>
+<p>Si <span class="math inline">\(C(t)\)</span> est la consommation totale de l’économie à l’instant <span class="math inline">\(t\)</span>, la consommation par habitant est donnée par <span class="math inline">\(c(t) \equiv \frac{C(t)}{L(t)}.\)</span></p>
+<section id="utilité-des-ménages" class="level4" data-number="4.1.2.1">
+<h4 data-number="4.1.2.1" class="anchored" data-anchor-id="utilité-des-ménages"><span class="header-section-number">4.1.2.1</span> Utilité des ménages</h4>
+<p>Pour <em>chaque ménage</em>, nous exprimons l’utilité comme suit: <span class="math display">\[
+U = \int_{0}^{\infty} e^{-\rho t} e^{nt} u\left(c(t)\right) \mathrm{d}t = \int_{0}^{\infty} e^{-(\rho-n) t} u\left(c(t)\right) \mathrm{d}t
+\]</span></p>
+<p>Dans cette équation:</p>
+<ul>
+<li><span class="math inline">\(\rho &gt; 0\)</span> représente le taux de préférence temporel, illustrant la priorité accordée à la consommation présente par rapport à la consommation future.</li>
+<li><span class="math inline">\(t\)</span> symbolise le temps, considéré comme continu.</li>
+<li><span class="math inline">\(c(t)\)</span> désigne le niveau de consommation à l’instant <span class="math inline">\(t\)</span>.</li>
+<li><span class="math inline">\(e^{nt}\)</span> reflète le nombre de membres du ménage, prenant en compte la croissance démographique.</li>
+<li><span class="math inline">\(u(\cdot)\)</span> est la fonction d’utilité instantanée, qui mesure la satisfaction retirée de la consommation à un moment précis.</li>
+</ul>
+<p>La fonction d’utilité instantanée <span class="math inline">\(u(\cdot)\)</span> permet de convertir un niveau de consommation en un niveau d’utilité correspondant. Cette fonction est à la fois croissante et concave, indiquant que les ménages apprécient la consommation et que leur utilité s’accroît avec celle-ci, mais de manière décroissante. L’utilité instantanée met ainsi en évidence l’effet de la satiété. La fonction d’utilité CRRA (Constant Relative Risk Aversion) est fréquemment employée et se présente comme suit : <span class="math display">\[
+u(c(t)) = \frac{c(t)^{1-\theta}-1}{1-\theta}.
+\]</span></p>
+<p>où <span class="math inline">\(\theta\)</span> est un paramètre exprimant l’aversion au risque. Ce paramètre détermine dans quelle mesure un ménage est disposé à troquer de la consommation actuelle contre de la consommation future.</p>
+<p>Le taux de préférence temporel (noté ici par <span class="math inline">\(\rho\)</span>) est un indicateur illustrant l’importance que les ménages accordent à la consommation présente par rapport à la consommation future. Un taux de préférence temporel élevé implique que les ménages privilégient une consommation accrue aujourd’hui plutôt que dans le futur. Inversement, un taux de préférence temporel faible suggère que les ménages sont plus enclins à consommer davantage dans le futur et moins aujourd’hui. Le terme <span class="math inline">\(e^{nt}\)</span>, qui apparaît comme un multiplicateur dans l’expression, représente la taille totale du ménage.</p>
+<p>En effet, l’utilité totale est la somme des flux d’utilité instantanée (ici réprésentée par une intégrale). Pour illustrer ce point, imaginons un instant qu’un individu ne vivait que pour deux périodes. On pourrait exprimer son utilité totale pendant sa vie comme la somme des utilités pendant la première période et celle de la deuxième période, <span class="math inline">\(U = u(c(1)) + u(c(2)) = \sum_{t=0}^{2} u(c(t)).\)</span> Cependant, puisque les individus sont supposés vivre indéfiniment et que le temps est considéré comme continu, nous utilisons l’expression précédente sous forme d’intégrale: <span class="math display">\[
+U=\int_0^\infty e^{-(\rho-n)t}u(c(t))\mathrm{d}t.
+\]</span></p>
+</section>
+<section id="contrainte-budgétaire-et-capital" class="level4" data-number="4.1.2.2">
+<h4 data-number="4.1.2.2" class="anchored" data-anchor-id="contrainte-budgétaire-et-capital"><span class="header-section-number">4.1.2.2</span> Contrainte budgétaire et capital</h4>
+<p>Dans le modèle de Ramsey, les ménages détiennent le capital qui est créé à travers l’épargne et que les entreprises empruntent. En outre, les ménages offrent leur travail aux entreprises. Pour chaque ressource, ils obtiennent le taux d’intérêt <span class="math inline">\(r(t)\)</span> et le salaire <span class="math inline">\(w(t)\)</span>. Finalement, les ressources sont utilisées pour:</p>
+<ul>
+<li>Financer la consommation</li>
+<li>Épargner</li>
+</ul>
+<p>Comme dans le modèle de Solow, le capital est créé à travers de l’épargne, mettant l’accent sur l’accumulation du capital comme moteur de la croissance économique. La totalité du capital <span class="math inline">\(K(t)\)</span> est détenue par les ménages. À chaque période, l’économie ajoute la quantité de capital <span class="math inline">\(\dot{K}(t)\)</span> au stock existant. Ceci correspond à la part du revenu non consommée. De plus, une partie du capital se déprécie à un taux <span class="math inline">\(\delta\)</span>. Par conséquent, le changement dans le niveau agrégé du capital est donné par:</p>
+<p><span class="math display">\[
+\dot{K}(t) = \overbrace{w(t)L(t) + r(t)K(t)}^{revenu} - C(t) - \delta K(t)
+\]</span></p>
+<p>Si l’on souhaite obtenir l’évolution du capital par ménage, il faut diviser par <span class="math inline">\(L(t)\)</span>.</p>
+<p><span class="math display">\[
+\begin{aligned}
+\dot{k}(t) &amp;= \dot{\frac{K(t)}{L(t)}} = \frac{\dot{K}(t)L(t) - \dot{L}(t)K(t)}{L(t)^2} \\
+\dot{k}(t) &amp;= \frac{\left[w(t)L(t) + r(t)K(t) - C(t) - \delta K(t)\right]L(t) - \dot{L}(t)K(t)}{L(t)^2} \\
+\dot{k}(t) &amp;= w(t) + r(t)k(t) - c(t) - \delta k(t) - n k(t)
+\end{aligned}
+\]</span></p>
+<p>On constate que:</p>
+<ul>
+<li>Un salaire ou un taux d’intérêt plus élevé permet d’épargner davantage.</li>
+<li>Une consommation plus élevée réduit l’épargne.</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="optimisation" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="optimisation"><span class="header-section-number">4.2</span> Optimisation</h2>
+<p>Dans le modèle de Ramsey, les ménages choisissent leur niveau de consommation de manière optimale pour maximiser leur utilité. Nous avons tous les ingrédients nécessaires pour écrire et résoudre le problème d’optimisation.</p>
+<p>La <em>fonction objective</em> est la valeur de l’utilité totale:</p>
+<p><span class="math display">\[
+U = \int_{0}^{\infty} e^{-\rho t} e^{nt} u\left(c(t)\right) \mathrm{d}t
+\]</span></p>
+<p>Les ménages peuvent décider librement combien consommer, et cela détermine le niveau de capital futur.</p>
+<p><span class="math display">\[
+\dot{k}(t) = w(t) + r(t)k(t) - c(t) - \delta k(t) - n k(t).
+\]</span></p>
+<p>Le problème d’optimisation consiste donc à déterminer la trajectoire optimale de la consommation, <span class="math inline">\(c(t)\)</span>, qui maximise l’utilité intertemporelle des ménages, tout en respectant les contraintes liées à l’évolution du capital par travailleur, <span class="math inline">\(k(t)\)</span>.</p>
+<section id="hamiltonien" class="level3" data-number="4.2.1">
+<h3 data-number="4.2.1" class="anchored" data-anchor-id="hamiltonien"><span class="header-section-number">4.2.1</span> Hamiltonien</h3>
+<p>Le problème des ménages est de nature dynamique, et les décisions prises à l’instant <span class="math inline">\(t\)</span> ont des conséquences sur toutes les périodes futures. Si, par exemple, un ménage choisit d’augmenter sa consommation aujourd’hui, le niveau d’épargne se réduit, entrainant une baisse de la création de capital. De ce fait, il y aura moins de capital demain, réduisant la production, diminuant les salaires tout en élevant le taux d’intérêt, ce qui a un impact sur le revenu des ménages.</p>
+<p>Pour résoudre ce genre de problématiques, on applique le concept d’<em>Hamiltonien</em>. C’est une méthode mathématique permettant de déterminer la trajectoire optimale de la consommation en tenant compte de tous les effets en chaîne.</p>
+<p>On écrit le Hamiltonien comme suit:</p>
+<p><span class="math display">\[\begin{aligned}
+\mathcal{H} &amp;=  e^{-(\rho-n) t} u\left(c(t)\right) + \\
+&amp; + \lambda(t) \left[ w(t) + r(t)k(t) - c(t) - \delta k(t) - n k(t)\right]
+\end{aligned}
+\]</span></p>
+<p>Pour résoudre le problème, on doit effectivement calculer les deux dérivées suivantes:</p>
+<ul>
+<li><span class="math inline">\(\frac{\partial \mathcal{H}}{\partial c} = 0\)</span></li>
+<li><span class="math inline">\(\frac{\partial \mathcal{H}}{\partial k} + \dot{\lambda} = 0\)</span></li>
+</ul>
+<p>Pour notre cas, ces dérivées sont les suivantes:</p>
+<ul>
+<li><span class="math inline">\(\frac{\partial \mathcal{H}}{\partial c} \implies e^{-(\rho - n)t} u^\prime(c(t)) - \lambda(t) = 0\)</span></li>
+<li><span class="math inline">\(\frac{\partial \mathcal{H}}{\partial k} + \dot{\lambda} \implies \lambda(t)\left[r(t) - \delta - n \right] + \dot{\lambda}(t) = 0\)</span></li>
+</ul>
+<p>Effectivement, nous avons maintenant un système comprenant deux équations dynamiques (en gardant à l’esprit que <span class="math inline">\(c\)</span> est une fonction de <span class="math inline">\(t: c(t)\)</span>, ainsi que <span class="math inline">\(\lambda\)</span> et <span class="math inline">\(r\)</span>):</p>
+<p><span class="math display">\[
+\begin{aligned}
+        0 =&amp; e^{-(\rho - n)t} u^\prime(c) - \lambda \\
+        0 =&amp; \lambda\left[r - \delta - n \right] + \dot{\lambda}
+\end{aligned}
+\]</span></p>
+<p><strong>Objectif</strong>: Jusqu’à présent, le modèle nous a fourni une équation dynamique pour le capital: <span class="math display">\[
+\dot{k} =  w(t) + r(t)k(t) - c(t) - \delta k(t) - n k(t).
+\]</span></p>
+<p>Cette équation montre comment le capital évolue (change) selon le niveau de capital existant (<span class="math inline">\(k(t)\)</span>) et selon le niveau de consommation (<span class="math inline">\(c(t)\)</span>). Nous cherchons une équation pareille pour la consommation.</p>
+<p>On voit bien que la deuxième équation inclut <span class="math inline">\(\lambda\)</span> et <span class="math inline">\(\dot{\lambda}\)</span>. La première équation nous donne directement la valeur de <span class="math inline">\(\lambda\)</span>. Enfin, sachant que <span class="math inline">\(\dot{\lambda}\)</span> n’est autre que la dérivée de <span class="math inline">\(\lambda\)</span> par rapport aux temps, nous avons que:</p>
+<p><span class="math display">\[
+\begin{aligned}
+        \lambda =&amp; e^{-(\rho - n)t} u^\prime(c) \implies \\
+        \dot{\lambda} =&amp; e^{-(\rho - n)t} u^\prime(c)(-(\rho-n)) + e^{-(\rho-n)t}u^{\prime \prime}(c)\dot{c} \\
+\end{aligned}
+\]</span></p>
+<p>Ainsi, si nous introduisons ces conditions dans la deuxième équation elle devient :</p>
+<p><span class="math display">\[
+\begin{aligned}
+    0 =&amp; \lambda\left[r - \delta - n \right] + \dot{\lambda} \\
+    -\dot{\lambda} =&amp; \lambda\left[r - \delta - n \right]
+\end{aligned}
+\]</span></p>
+<p><span class="math display">\[
+\begin{aligned}
+    -\left[\overbrace{e^{-(\rho - n)t} u^\prime(c)(-(\rho-n)) + e^{-(\rho-n)t}u^{\prime \prime}(c)\dot{c}}^{\dot{\lambda}}\right] =&amp; \\
+    =\overbrace{e^{-(\rho - n)t} u^\prime(c)}^{\lambda}\left[r - \delta - n \right]  
+\end{aligned}
+\]</span></p>
+<p>Divisant les deux côtés par <span class="math inline">\(e^{-(\rho-n)t} &gt; 0\)</span> :</p>
+<p><span class="math display">\[
+\begin{aligned}
+    -\left[u^\prime(c)(-(\rho-n)) + u^{\prime \prime}(c)\dot{c}\right] =&amp; u^\prime(c)\left[r - \delta - n \right]  \\
+    u^\prime(c)(\rho-n) - u^{\prime \prime}(c)\dot{c} =&amp; u^\prime(c)\left[r - \delta - n \right]  \\
+    \rho-n - \frac{u^{\prime \prime}(c)}{u^\prime(c)}\dot{c} =&amp; r - \delta - n  
+\end{aligned}
+\]</span></p>
+<p>Comme <span class="math inline">\(u^\prime(c) &gt; 0\)</span>, on peut aussi diviser par cette valeur :</p>
+<p><span class="math display">\[
+\begin{aligned}
+    \rho - \frac{u^{\prime \prime}(c)}{u^\prime(c)}\dot{c} =&amp; r - \delta   \\
+\end{aligned}
+\]</span></p>
+<p>Finalement, on sait que la valeur du coefficient d’aversion au risque (<span class="math inline">\(\sigma\)</span>) est :</p>
+<p><span class="math display">\[
+\sigma = -\frac{u^{\prime\prime}(c)}{u^{\prime} (c)}c
+\]</span></p>
+<p>Ainsi</p>
+<p><span class="math display">\[
+\sigma = -\frac{u^{\prime\prime}(c)}{u^\prime (c)}c \implies -\frac{u^{\prime\prime}(c)}{u^\prime(c)} = \frac{\sigma}{c}
+\]</span></p>
+<p>Ainsi :</p>
+<p><span class="math display">\[
+\begin{aligned}
+    \rho - \frac{u^{\prime \prime}(c)}{u^\prime (c)}\dot{c} =&amp; r - \delta   \\
+    \rho + \frac{\sigma}{c}\dot{c} =&amp; r - \delta   \\
+    \frac{\dot{c}}{c} =&amp; \frac{1}{\sigma}(r - \delta - \rho)
+\end{aligned}
+\]</span></p>
+<p>Cette dernière équation s’appelle <strong>Équation d’Euler</strong> et elle est fondamentale dans les modèles dynamiques.</p>
+<section id="sigma-et-lélasticité-de-substitution-intertemporelle" class="level4" data-number="4.2.1.1">
+<h4 data-number="4.2.1.1" class="anchored" data-anchor-id="sigma-et-lélasticité-de-substitution-intertemporelle"><span class="header-section-number">4.2.1.1</span> <span class="math inline">\(\sigma\)</span> et l’élasticité de substitution intertemporelle</h4>
+<p>Lors de l’optimisation, la valeur <span class="math inline">\(\sigma\)</span> apparait de manière (plus ou moins) naturelle. Or, dans le modèle, le risque n’existe pas, et il est donc difficile de comprendre la raison pour laquelle <span class="math inline">\(\sigma\)</span> apparait.</p>
+<p>Néanmoins, <span class="math inline">\(\sigma\)</span> mésure aussi le taux d’élastion de substitution intertemporelle: le niveau auquel les ménages sont prêts à accepter des écarts de consommation entre les différentes périodes quand C’est-à-dire, s’ils veulent que la consommation soit toujours pareille ou s’ils acceptent des une consommation moins élevé pendant certains périodes pour béneficier, par exemple, d’un taux d’intérêt plus élevé. La définition de l’élasticité de substitution intertemporelle est la suivante, où <span class="math inline">\(t\)</span> et <span class="math inline">\(s\)</span> indiquent deux périodes de temps proches: <span class="math display">\[
+\sigma(c_t, c_s) = \frac{\frac{u^\prime (c_t)}{u^\prime (c_s)}}{\frac{c_s}{c_t}}\frac{\mathrm{d}\frac{c_s}{c_t}}{\mathrm{d}\frac{u^\prime (c_t)}{u^\prime (c_s)}}
+\]</span></p>
+<p>Si on développe les différentiels <span class="math inline">\(\mathrm{d}\)</span> rappelant que si <span class="math inline">\(y = f(x)\)</span> le différentiel <span class="math inline">\(\mathrm{d}y\)</span> est <span class="math inline">\(\mathrm{d}y = f^\prime (x) \mathrm{d}x.\)</span> Ainsi, avec la régle du quotient:</p>
+<p><span class="math display">\[
+\frac{\frac{u^\prime (c_t)}{u^\prime (c_s)}}{\frac{c_s}{c_t}} \frac{\mathrm{d}\frac{c_s}{c_t}}{\mathrm{d}\frac{u^\prime (c_t)}{u^\prime (c_s)}}
+\]</span> <span class="math display">\[
+\frac{\frac{u^\prime (c_t)}{u^\prime (c_s)}}{\frac{c_s}{c_t}} \frac{\frac{c_t \mathrm{d}c_s - c_s \mathrm{d}c_t}{c_t^2}}{\frac{u^\prime (c_s) u^{\prime \prime} (c_t) \mathrm{d}c_t - u^\prime (c_t) u^{\prime \prime}(c_s)\mathrm{d}c_s }{{u^\prime(c_s)}^2}}
+\]</span></p>
+<p>Comme on travail en temps continu, on peut laisser <span class="math inline">\(s\)</span> s’approcher de <span class="math inline">\(t\)</span>, <span class="math inline">\(s\rightarrow t\)</span> et, donc <span class="math inline">\(c_s\rightarrow c_t\)</span>. Ainsi: <span class="math display">\[
+\begin{aligned}
+\sigma(c_t, c_s) &amp;= \overbrace{\frac{\frac{u^\prime (c_t)}{u^\prime (c_s)}}{\frac{c_s}{c_t}}}^{=1} \frac{\frac{c_t \mathrm{d}c_s - c_s \mathrm{d}c_t}{c_t^2}}{\frac{u^\prime (c_s) u^{\prime \prime} (c_t) \mathrm{d}c_t - u^\prime (c_t) u^{\prime \prime}(c_s)\mathrm{d}c_s }{{u^\prime(c_s)}^2}}  \\
+%
+\sigma(c_t, c_s) &amp;= \frac{\frac{c_t \mathrm{d}c_s - c_t \mathrm{d}c_t}{c_t^2}}{\frac{u^\prime (c_t) u^{\prime \prime} (c_t) \mathrm{d}c_t - u^\prime (c_t) u^{\prime \prime}(c_t)\mathrm{d}c_s }{{u^\prime(c_t)}^2}} \\
+%
+\sigma(c_t, c_s) &amp;= \frac{\frac{\mathrm{d}c_s - \mathrm{d}c_t}{c_t}}{\frac{u^\prime (c_t) u^{\prime \prime} (c_t) (\mathrm{d}c_t - \mathrm{d}c_s)}{{u^\prime(c_t)}^2}} \\
+%
+\sigma(c_t, c_s) &amp;= \frac{\frac{\mathrm{d}c_s - \mathrm{d}c_t}{c_t}}{\frac{u^{\prime \prime} (c_t) (\mathrm{d}c_t - \mathrm{d}c_s)}{{u^\prime(c_t)}}} \\
+%
+\sigma(c_t, c_s) &amp;= - \frac{\frac{\mathrm{d}c_s - \mathrm{d}c_t}{c_t}}{\frac{u^{\prime \prime} (c_t) (\mathrm{d}c_s - \mathrm{d}c_t)}{{u^\prime(c_t)}}} \\
+%
+\sigma(c_t, c_s) &amp;= - \frac{\frac{1}{c_t}}{\frac{u^{\prime \prime} (c_t) }{{u^\prime(c_t)}}} \\
+%
+\sigma(c_t) &amp;= - \frac{u^{\prime} (c_t) }{u^{\prime \prime}(c_t)}\frac{1}{c_t}
+\end{aligned}
+\]</span></p>
+</section>
+</section>
+<section id="léquation-deuler" class="level3" data-number="4.2.2">
+<h3 data-number="4.2.2" class="anchored" data-anchor-id="léquation-deuler"><span class="header-section-number">4.2.2</span> L’équation d’Euler</h3>
+<p>Dans le modèle de Ramsey, l’équation d’Euler s’écrit (faisant explicite le fait que <span class="math inline">\(r\)</span> change avec le temps) :</p>
+<p><span class="math display">\[
+\frac{\dot{c}}{c} = \frac{1}{\sigma}\left(r(t) - \delta - \rho\right)
+\]</span></p>
+<p>Elle indique l’évolution de la consommation <span class="math inline">\(\dot{c}\)</span>. Au fait, comme nous avons <span class="math inline">\(\frac{\dot{c}}{c}\)</span>, ce qui nous montre c’est le taux de croissance de la consommation. Rappelons que si <span class="math inline">\(\dot{c} &gt; 0\)</span>, la consommation augmente. Elle reflète que :</p>
+<ul>
+<li>La consommation par tête augmente (ou diminue) selon l’écart entre le taux d’intérêt (<span class="math inline">\(r(t)\)</span>) et l’importance que les ménages donnent au futur (<span class="math inline">\(\rho\)</span>). Ceci correspond au trade-off entre consommer aujourd’hui ou attendre:
+<ul>
+<li>D’un côté, les ménages sont impatients et préfèrent consommer aujourd’hui</li>
+<li>De l’autre, attendre à consommer permet d’épargner plus et consommer plus pendant le futur.</li>
+<li>Un taux d’intérêt plus important implique qu’il est plus intéressant d’épargner, par conséquent, la consommation augmente avec le temps (<span class="math inline">\(\dot{c} &gt; 0\)</span>).</li>
+<li>Si les deux forces sont en équilibre (<span class="math inline">\(r(t) = \rho\)</span>), la consommation ne change pas (<span class="math inline">\(\dot{c} = 0\)</span>).</li>
+</ul></li>
+<li>Le rôle de <span class="math inline">\(\sigma\)</span> est aussi important. <span class="math inline">\(\sigma\)</span> est le niveau d’aversion au risque et <span class="math inline">\(\frac{1}{\sigma}\)</span> mesure l’<em>élasticité de substitution intertemporel</em>. Ainsi, quand <span class="math inline">\(\sigma\)</span> est grande, l’élasticité est basse. Cette élasticité mesure la disposition à accepter des niveaux de consommation différents au cours du temps. Pourtant, avec un niveau <span class="math inline">\(\frac{1}{\sigma}\)</span> faible, les ménages préfèrent ne pas avoir d’écarts de consommation entre les différentes périodes. On le voit bien : si <span class="math inline">\(\frac{1}{\sigma}\)</span> est faible, <span class="math inline">\(\dot{c}\)</span> est faible aussi, et par conséquent, la consommation à peine augmente.</li>
+</ul>
+</section>
+</section>
+<section id="dynamiques" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="dynamiques"><span class="header-section-number">4.3</span> Dynamiques</h2>
+<p>Nous avons vu que le comportement de l’économie dans le modèle de Ramsey se décrit par deux équations dynamiques: <span class="math display">\[
+\begin{aligned}
+    \dot{k}(t) =&amp; w(t) + r(t)k(t) - c(t) - \delta k(t) - n k(t) \\
+    \frac{\dot{c}}{c} =&amp; \frac{1}{\sigma}(r(t) - \rho - \delta)
+\end{aligned}
+\]</span></p>
+<p>La résolution de ce système d’équations permet d’obtenir l’évolution optimale du capital et de la consommation intertemporels dans le modèle de Ramsey.</p>
+<p>Nous avons aussi les valeurs d’équilibre pour le salaire et le taux d’intérêt (<span class="math inline">\(w(t)\,r(t)\)</span>). Pourtant, nous pouvons fermer le modèle et exprimer le système exclusivement en termes de <span class="math inline">\(k(t)\)</span> et <span class="math inline">\(c(t)\)</span>. En fait:</p>
+<p><span class="math display">\[
+\begin{aligned}
+w(t) &amp;= f(k(t)) - f^\prime (k(t)) k(t) \\
+r(t) &amp;= f^\prime (k(t))
+\end{aligned}
+\]</span></p>
+<p>Ainsi, en équilibre, <span class="math inline">\(\dot{k}(t) = w(t) + r(t)k(t) - c(t) - \delta k(t) - n k(t)\)</span> devient :</p>
+<p><span class="math display">\[
+\dot{k}(t) = f(k(t)) - c(t) - (n + \delta) k(t)
+\]</span></p>
+<p>Cela a du sens: à niveau agrégé, le capital qu’on accumule est égal à tout ce qui est produit (<span class="math inline">\(f(k)\)</span>) moins ce qu’on consomme (<span class="math inline">\(c\)</span>) et ce qu’on perd (<span class="math inline">\(\delta\)</span>). Le terme <span class="math inline">\(n\)</span> reflet l’augmentation de la population, car nous travaillons en par tête. Ainsi, le système dynamique est: <span class="math display">\[
+\begin{aligned}
+    \dot{k}(t) =&amp; \textcolor{red}{f(k(t))} - c(t) - (n + \delta) k(t) \\
+    \frac{\dot{c}}{c} =&amp; \frac{1}{\sigma}(\textcolor{red}{f^\prime(k(t))} - \rho - \delta)
+\end{aligned}
+\]</span></p>
+<section id="état-stationnaire" class="level3" data-number="4.3.1">
+<h3 data-number="4.3.1" class="anchored" data-anchor-id="état-stationnaire"><span class="header-section-number">4.3.1</span> État stationnaire</h3>
+<p>Comme dans le modèle de Solow, on s’intéresse à l’existence d’un (ou plusieurs) état stationnaire. C’est-à-dire, une situation telle que, une fois atteinte, l’économie reste là sans plus bouger. Un état stationnaire est une situation où les variables économiques majeures comme le capital par tête et la consommation par tête restent constantes à long terme, reflétant un équilibre stable dans l’économie. Dans le modèle de Solow, il était facile de voir qu’un tel état existait car <span class="math inline">\(\dot{k} = sf(k) - (n+\delta)k\)</span> c’est une seule équation dynamique.</p>
+<p>Dans le modèle de Ramsey, nous avons un système avec deux équations dynamiques. Cela veut dire que, dans l’état stationnaire, <span class="math inline">\(k\)</span> <em>et</em> <span class="math inline">\(c\)</span> doivent rester inchangés. Autrement dit, l’état stationnaire est caractérisé par:</p>
+<p><span class="math display">\[
+\begin{aligned}
+    \dot{k} =&amp; 0 \\
+    \dot{c} =&amp; 0
+\end{aligned}
+\]</span></p>
+<p>On indique, comme avant, les variables stationnaires avec une étoile. Ainsi, <span class="math inline">\(k^\star,c^\star\)</span> sont telles que:</p>
+<p><span class="math display">\[
+\begin{aligned}
+    0 =&amp; f(k^\star) - c^\star - (n + \delta) k^\star \\
+    0 =&amp; \frac{1}{\sigma}(f^\prime(k^\star) - \rho - \delta)
+\end{aligned}
+\]</span></p>
+<p>Il est possible de montrer qu’un tel état doit exister et qu’il a <span class="math inline">\(k^\star &gt; 0\,c^\star&gt;0\)</span>.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Démonstration">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Démonstration
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>À partir de l’équation dynamique pour la consommation, si <span class="math inline">\(\dot{c} = 0\)</span>, nous avons que:</p>
+<ul>
+<li><p>Soit <span class="math inline">\(c^\star = 0\)</span> qui n’est pas optimale car <span class="math inline">\(u^\prime(c) &gt; 0\)</span>.</p></li>
+<li><p>Soit <span class="math inline">\(f^\prime(k^\star) = \rho + \delta\)</span>. Comme <span class="math inline">\(\rho + \delta &gt; 0\)</span>, et <span class="math inline">\(f^\prime\)</span> est décroissant et prend valeurs entre <span class="math inline">\(+\infty\)</span> et <span class="math inline">\(0\)</span>, une seule valeur <span class="math inline">\(k^\star\)</span> qui satisfait la condition existe.</p></li>
+<li><p>Comme <span class="math inline">\(c^\star = f(k^\star) - (n+\delta)k^\star\)</span>, étant donné que <span class="math inline">\(k^\star&gt; 0\)</span> existe, il doit aussi exister <span class="math inline">\(c^\star\)</span>. En principe, rien n’empêche <span class="math inline">\(c^{\star} &lt; 0\)</span>, sauf une condition que nous n’avons pas présentée: la condition de transversalité (aussi appelée condition de Pontryagin). En premier lieu, <span class="math inline">\(\dot{k} = 0\)</span> implique <span class="math inline">\(c^\star = f(k^\star)-(n+\delta)k^\star\)</span>. Vu les propriétés de <span class="math inline">\(f(k)\)</span>, cette fonction (et la consommation stationnaire) atteint un maximum quand <span class="math inline">\(f^\prime(k) = n + \delta\)</span>.</p>
+<p>De l’autre côté, la condition de stationnarieté pour <span class="math inline">\(c\)</span> implique <span class="math inline">\(f^\prime(k) = \rho + \delta.\)</span> Ainsi, à priori, le maximum de consommation peut être à gauche ou à droite de la droite <span class="math inline">\(\dot{c} = 0\)</span>. La condition de transversalité assure qu’il soit à gauche, c’est-à-dire, avant le maximum et, par conséquent, que <span class="math inline">\(c^\star &gt; 0.\)</span></p>
+<p>Voir <em>Barro et Sala-i-Martín, p.&nbsp;101</em>.</p></li>
+</ul>
+</div>
+</div>
+<p>Pour analyser la stationnarité des deux variables <span class="math inline">\(k\)</span> et <span class="math inline">\(c\)</span> de manière indépendante, on commence par étudier les conditions des variables pour lesquelles <span class="math inline">\(\dot{c}= 0\)</span> et <span class="math inline">\(\dot{k} = 0.\)</span></p>
+</section>
+<section id="c-locus" class="level3" data-number="4.3.2">
+<h3 data-number="4.3.2" class="anchored" data-anchor-id="c-locus"><span class="header-section-number">4.3.2</span> c-locus</h3>
+<p>Tout d’abord, débutons l’analyse en étudiant les dynamiques de la consommation dans le modèle de Ramsey. L’équation <span class="math inline">\(\frac{\dot{c}}{c} = \frac{1}{\sigma}(f^\prime(k) - \rho - \delta)\)</span> montre comment <span class="math inline">\(c\)</span> évolue en fonction de <span class="math inline">\(k\)</span> (car <span class="math inline">\(k\)</span> est la seule variable qui apparaît). Premièrement, intéressons-nous aux valeurs de <span class="math inline">\(k\)</span> pour lesquelles la consommation ne change pas. Cela nous permet d’obtenir une partie de l’état stationnaire, car il comprend à la fois <span class="math inline">\(k\)</span> et <span class="math inline">\(c\)</span>. Si la consommation reste constante, alors <span class="math inline">\(\dot{c} = 0\)</span> et par conséquent:</p>
+<p><span class="math display">\[
+\begin{aligned}
+0 &amp;= \frac{1}{\sigma}\left(f^\prime(k) - \rho - \delta\right). \\
+0 &amp;= \left(f^\prime(k) - \rho - \delta\right). \\
+k &amp;= f^{{\prime}^{-1}}(\rho + \delta)
+\end{aligned}
+\]</span></p>
+<p>La dernière ligne indique la valeur spécifique de <span class="math inline">\(k\)</span> pour laquelle <span class="math inline">\(c\)</span> ne change pas, Cependant, nous pouvons également démontrer de manière simple que lorsque <span class="math inline">\(k\)</span> prend une valeur différente de cette valeur d’équilibre, la consommation <span class="math inline">\(c\)</span> change. Procédons à cette démonstration !</p>
+<p>La fonction <span class="math inline">\(f^\prime(k)\)</span> est décroissante, avec <span class="math inline">\(\lim_{k\rightarrow 0}f^\prime(k) = \infty\)</span> et <span class="math inline">\(\lim_{k\rightarrow +\infty} f^\prime(k) = 0.\)</span> Puisque <span class="math inline">\(\rho + \delta &gt; 0\)</span>, il doit exister une valeur entre <span class="math inline">\((0, +\infty)\)</span> telle que <span class="math inline">\(f^\prime(k) = \rho + \delta.\)</span> Ceci est une application du <a href="https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_des_valeurs_interm%C3%A9diaires">Théorème des valeurs intermédiaires</a> Par exemple, si <span class="math inline">\(f(k)\)</span> est une fonction Cobb-Douglas, soit <span class="math inline">\(f^\prime(k) = \alpha k^{\alpha-1}\)</span>, alors la valeur <span class="math inline">\(k\)</span> pour laquelle <span class="math inline">\(\dot{c} = 0\)</span> est <span class="math inline">\(k = \left(\frac{\rho+\delta}{\alpha}\right)^{\frac{1}{\alpha-1}}.\)</span> Visuellement:</p>
+<div id="cell-fig-kcdotzero" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display">
+<div id="fig-kcdotzero" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-kcdotzero-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="ramsey_files/figure-html/fig-kcdotzero-output-1.png" width="601" height="429" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-kcdotzero-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.1: Trouver <span class="math inline">\(k\)</span> tel que <span class="math inline">\(\dot{c} = 0\)</span>
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Pour simplifier, dissons que quand <span class="math inline">\(k = k^\spadesuit \implies \dot{c} = 0.\)</span> Nous avons identifié que lorsque <span class="math inline">\(k=k^\spadesuit\)</span>m cela implique que <span class="math inline">\(\dot{c} = 0.\)</span> Examinons maintenant ce qui se passe lorsque <span class="math inline">\(k\)</span> prend une valeur différente, par exemple <span class="math inline">\(k &gt; k^\spadesuit.\)</span> Pour ce faire, nous utilisons l’équation dynamique de <span class="math inline">\(c:\)</span></p>
+<p><span class="math display">\[
+\frac{\dot{c}}{c} = \frac{1}{\sigma}(f^\prime(k) - \rho - \delta).
+\]</span></p>
+<p>Lorsque <span class="math inline">\(k &gt; k^\spadesuit\)</span>, cela implique que <span class="math inline">\(f^\prime(k) &lt; f^\prime(k^\spadesuit)\)</span>, car la fonction <span class="math inline">\(f^\prime(k)\)</span> est décroissante. En revenant à notre équation dynamique de <span class="math inline">\(c:\)</span></p>
+<p><span class="math display">\[
+\frac{\dot{c}}{c} = \frac{1}{\sigma}(f^\prime(k) - \rho - \delta) &lt; \frac{1}{\sigma}(f^\prime(k^\spadesuit) - \rho - \delta) = 0.
+\]</span></p>
+<p>Nous observons que lorsque <span class="math inline">\(k &gt; k^\spadesuit\)</span>, l’équation dynamique de <span class="math inline">\(c\)</span> est négative, ce qui signifie que <span class="math inline">\(\dot{c} &lt; 0\)</span> et que la consommation diminue. Graphiquement:</p>
+<div id="cell-fig-cdynamics" class="cell" data-execution_count="3">
+<div class="cell-output cell-output-display">
+<div id="fig-cdynamics" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-cdynamics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="ramsey_files/figure-html/fig-cdynamics-output-1.png" width="600" height="468" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cdynamics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.2: Dynamiques de consommation
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="k-locus" class="level3" data-number="4.3.3">
+<h3 data-number="4.3.3" class="anchored" data-anchor-id="k-locus"><span class="header-section-number">4.3.3</span> k-locus</h3>
+<p>Nous procédons de manière similaire pour le capital. Dans ce cas-là, nous cherchons les <em>combinaisons</em> de <span class="math inline">\(k\)</span> et <span class="math inline">\(c\)</span> pour lesquelles le capital reste inchangé. Ceci est clair en observant l’équation dynamique du capital: <span class="math inline">\(\dot{k} = f(k) - c - (n+\delta)k.\)</span> Ainsi, si <span class="math inline">\(\dot{k} = 0\)</span>, alors <span class="math display">\[
+c = f(k) - (n+\delta)k
+\]</span></p>
+<p>le capital ne change pas.</p>
+<p>Avec une fonction Cobb-Douglas, le capital reste constant si <span class="math inline">\(c = k^\alpha - (n+\delta)k.\)</span> Il est clair qu’il s’agit des combinaisons de capital et consommation. Par exemple, si $= 0.3, n = 0.1, = 0.1$, quand <span class="math inline">\(k = 1\)</span> et <span class="math inline">\(c = 1^{0.3} - (0.1 + 0.1)\times 1 = 0.8\)</span> le capital ne change pas. Nous pouvons le vérifier car <span class="math inline">\(\dot{k} = 1^{0.3} - 0.8 - (0.1 + 0.1)\times 1 = 0.\)</span> En revanche, si <span class="math inline">\(c = 0.5\)</span>, alors <span class="math inline">\(\dot{k} = 1^{0.3} - 0.5 - (0.1 + 0.1)\times 1 = 0.3 &gt; 0\)</span> et le capital augmente.</p>
+<p>Nous pouvons tracer toutes les combinaisons de <span class="math inline">\(k\)</span> et <span class="math inline">\(c\)</span> qui impliquent <span class="math inline">\(\dot{k} = 0.\)</span> Étant donné les propriétés de <span class="math inline">\(f(k)\)</span> et le fait que <span class="math inline">\(\dot{k} = 0 \implies c = f(k) - (n+\delta)k\)</span>, la courbe aura la forme d’une parabole inversée. De manière graphique:</p>
+<div id="cell-fig-kdynamics" class="cell" data-execution_count="4">
+<div class="cell-output cell-output-display">
+<div id="fig-kdynamics" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-kdynamics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="ramsey_files/figure-html/fig-kdynamics-output-1.png" width="553" height="402" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-kdynamics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.3: Dynamiques de capital
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="diagramme-de-phase" class="level3" data-number="4.3.4">
+<h3 data-number="4.3.4" class="anchored" data-anchor-id="diagramme-de-phase"><span class="header-section-number">4.3.4</span> Diagramme de phase</h3>
+<p>L’état stationnaire de l’économie est défini comme la combinaison de <span class="math inline">\(k\)</span> et <span class="math inline">\(c\)</span> telle que <span class="math inline">\(\dot{k} = \dot{c} = 0.\)</span> Ainsi, puisque nous avons deux courbes, une pour <span class="math inline">\(\dot{k}= 0\)</span> et une autre pour <span class="math inline">\(\dot{c} = 0\,\)</span>, l’état stationnaire correspond au point où ces deux courbes se croisent.</p>
+<p>Enfin, nous pouvons combiner les dynamiques de <span class="math inline">\(k\)</span> et <span class="math inline">\(c\)</span> pour trouver les dynamiques de l’économie grâce à un diagramme de phase. La combinaison divise l’espace en quatre quadrants, avec des dynamiques distinctes dans chaque quadrant.</p>
+<ul>
+<li>Bas-gauche: <span class="math inline">\(k\)</span> augmente, <span class="math inline">\(c\)</span> augmente</li>
+<li>Haut-gauche: <span class="math inline">\(k\)</span> diminue, <span class="math inline">\(c\)</span> augmente</li>
+<li>Bas-droite: <span class="math inline">\(k\)</span> augmente, <span class="math inline">\(c\)</span> diminue</li>
+<li>Haut-droite: <span class="math inline">\(k\)</span> diminue, <span class="math inline">\(c\)</span> diminue</li>
+</ul>
+<div id="cell-fig-phase" class="cell" data-execution_count="5">
+<div class="cell-output cell-output-display">
+<div id="fig-phase" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-phase-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="ramsey_files/figure-html/fig-phase-output-1.png" width="560" height="413" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-phase-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.4: Diagramme de phase
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Dans le modèle de Ramsey, la plupart de trajectoires sont indésirables, car l’économie finit avec:</p>
+<ul>
+<li>Soit pas de capital (<span class="math inline">\(k = 0\)</span>) et, par conséquent, pas de production ni de consommation</li>
+<li>Soit pas de consommation (<span class="math inline">\(c = 0\)</span>).</li>
+</ul>
+<div id="cell-fig-trajectoires" class="cell" data-execution_count="6">
+<div class="cell-output cell-output-display">
+<div id="fig-trajectoires" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-trajectoires-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="ramsey_files/figure-html/fig-trajectoires-output-1.png" width="414" height="418" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-trajectoires-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.5: Trajectories sur le diagramme de phase
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Néanmoins, il existe deux chemins (saddle path) qui mènent vers le point stationnaire.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> <strong>Note</strong>: dans le modèle de Ramsey, le niveau de consommation stationnaire est inférieur au maximum qu’il pourrait atteindre. Cela est dû au fait que les ménages sont impatients et préfèrent consommer aujourd’hui.</p>
+</section>
+</section>
+<section id="conclusion" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">4.4</span> Conclusion</h2>
+<p>Le modèle Ramsey prédit également que l’économie converge vers un état stationnaire. Il se distingue du modèle de Solow parce que les ménages choisissent de manière optimale leur épargne. En effet, dans le modèle de Ramsey, le taux d’épargne est donné par: <span class="math display">\[
+s(t) = 1 - \frac{c(t)}{f(k(t))}.
+\]</span></p>
+<p>Comme l’évolution de <span class="math inline">\(c\)</span> ne suit pas l’évolution de <span class="math inline">\(f(k)\)</span>, le taux d’épargne n’est plus constant.</p>
+<p>Contrairement au modèle de Solow, les ménages du modèle de Ramsey doivent bien choisir le niveau de consommation initiale pour éviter de se retrouver dans une trajectoire non-optimale. Même en supposant que cela est possible, les conclusions tirées des dynamiques plus riches ne sont pas très différentes de celles du modèle de Solow. Effectivement, une fois atteint l’état stationnaire, <span class="math inline">\(\dot{c} = \dot{k} = 0\)</span>, le capital par tête n’augmente ni diminue, et il en va de même pour le niveau de consommation par tête. En même temps, la consommation agrégée et le capital agrégé augmentent au taux <span class="math inline">\(n &gt; 0\)</span>. Comme dans le modèle de Solow, un niveau de croissance constant du capital par tête, et donc de la production et consommation par tête, à l’état stationnaire nécessite un taux exogène de croissance économique. Ainsi, on aboutit à la même conclusion : si l’on veut comprendre la croissance économique, il est nécessaire de comprendre comment la technologie (au sens large du résidu de Solow) évolue.</p>
+<p>Comme le modèle de Ramsey repose sur l’hypothèse que les ménages sont capables d’optimiser parfaitement leur consommation et leur épargne, il offre un outil pour étudier la réponse de l’économie à divers chocs, comme les chocs technologiques, les chocs de demande ou les chocs de l’offre. Il permet d’analyser la dynamique de l’économie suite à ces chocs et comment les ménages ajustent leur comportement en conséquence.</p>
+
+
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>La prévision parfaite du futur est une hypothèse simplificatrice qui élimine l’incertitude et permet de se concentrer sur les décisions optimales.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>La stabilité de l’état stationnaire (c’est-à-dire, la convergence vers lui) est liée à des conditions suffisantes sur les paramètres du modèle, telles que la concavité de la fonction de production, le taux d’escompte subjectif et l’élasticité de substitution intertemporelle.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Le théorem de Blanchard-Khan permet de déterminer si une économie converge toujours vers l’état stationnaire (sans importer où elle commence); si la convergence n’est possible que pour certaines combinaisons initiales (notre cas); ou si l’économie ne converge jamais vers l’état stationnaire.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./solow.html" class="pagination-link" aria-label="Le modèle de Solow">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Le modèle de Solow</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./references.html" class="pagination-link" aria-label="References">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

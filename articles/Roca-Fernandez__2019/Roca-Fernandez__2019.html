@@ -1,0 +1,1438 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.33">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Èric Roca Fernández">
+<meta name="dcterms.date" content="2019-06-21">
+<meta name="keywords" content="State capacity, Inheritance, Primogeniture, Marriage, Gender equality">
+
+<title>In the Name of the Father: Inheritance Systems and the Dynamics of State Capacity – Èric Roca Fernández</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-b3aed8deb8408878d0e4e165d993d59e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Èric Roca Fernández</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../teaching.html"> 
+<span class="menu-text">Teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../seminars/index.qmd"> 
+<span class="menu-text">Seminars</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../contact.qmd"> 
+<span class="menu-text">Contact</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#acknowledgements" id="toc-acknowledgements" class="nav-link active" data-scroll-target="#acknowledgements">Acknowledgements</a></li>
+  <li><a href="#sec-introduction" id="toc-sec-introduction" class="nav-link" data-scroll-target="#sec-introduction"><span class="header-section-number">1</span> Introduction</a></li>
+  <li><a href="#related-literature-and-historical-context" id="toc-related-literature-and-historical-context" class="nav-link" data-scroll-target="#related-literature-and-historical-context"><span class="header-section-number">2</span> Related literature and historical context</a></li>
+  <li><a href="#sec-model" id="toc-sec-model" class="nav-link" data-scroll-target="#sec-model"><span class="header-section-number">3</span> The Model</a>
+  <ul class="collapse">
+  <li><a href="#sec-timing" id="toc-sec-timing" class="nav-link" data-scroll-target="#sec-timing"><span class="header-section-number">3.1</span> Dynamics</a></li>
+  <li><a href="#sec-marriages" id="toc-sec-marriages" class="nav-link" data-scroll-target="#sec-marriages"><span class="header-section-number">3.2</span> Marriages</a></li>
+  </ul></li>
+  <li><a href="#sec-simulation" id="toc-sec-simulation" class="nav-link" data-scroll-target="#sec-simulation"><span class="header-section-number">4</span> Simulations and Results</a></li>
+  <li><a href="#sec-conclusion" id="toc-sec-conclusion" class="nav-link" data-scroll-target="#sec-conclusion"><span class="header-section-number">5</span> Conclusion</a></li>
+  <li><a href="#sec-history" id="toc-sec-history" class="nav-link" data-scroll-target="#sec-history"><span class="header-section-number">6</span> Historical background</a>
+  <ul class="collapse">
+  <li><a href="#sec-feudalism" id="toc-sec-feudalism" class="nav-link" data-scroll-target="#sec-feudalism"><span class="header-section-number">6.1</span> Feudalism and primogeniture</a></li>
+  <li><a href="#womens-access-to-inheritance" id="toc-womens-access-to-inheritance" class="nav-link" data-scroll-target="#womens-access-to-inheritance"><span class="header-section-number">6.2</span> Women’s access to inheritance</a></li>
+  </ul></li>
+  <li><a href="#sec-marriage_app" id="toc-sec-marriage_app" class="nav-link" data-scroll-target="#sec-marriage_app"><span class="header-section-number">7</span> The Marriage Market</a></li>
+  <li><a href="#sec-country-unification" id="toc-sec-country-unification" class="nav-link" data-scroll-target="#sec-country-unification"><span class="header-section-number">8</span> Country Unification</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="Roca-Fernandez__2019.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">In the Name of the Father: Inheritance Systems and the Dynamics of State Capacity</h1>
+</div>
+
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Èric Roca Fernández <a href="mailto:eric.roca_fernandez@uca.fr" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0000-0003-1557-4966" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Aix-Marseille Université, CNRS, EHESS, Centrale Marseille, IRD, AMSE
+          </p>
+      </div>
+  </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">June 21, 2019</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+<div>
+  <div class="abstract">
+    <div class="block-title">Abstract</div>
+    <p>This paper examines how the degree of gender-egalitarianism embedded in inheritance rules impacts state capacity at its early stages during medieval times. We present a theoretical model in which building state capacity enables nobles to raise taxes and overcome rivals. The model addresses the use of inheritance to consolidate landholding dynasties, also accommodating inter-state marriages between landed heirs. On the one hand, dynastic continuity —of utmost importance to European medieval lords— directly encourages statebuilding. Male-biased inheritance rules historically maximise the likelihood of dynastic continuity. We weigh this effect against the indirect impact of the more frequent land merging marriages under gender-egalitarian rules. Contrary to the literature, our results suggest that gender-egalitarian norms —offering a low probability of dynastic continuity— promote state capacity in the short run more than gender-biased norms.</p>
+  </div>
+</div>
+
+<div>
+  <div class="keywords">
+    <div class="block-title">Keywords</div>
+    <p>State capacity, Inheritance, Primogeniture, Marriage, Gender equality</p>
+  </div>
+</div>
+
+</header>
+
+
+<section id="acknowledgements" class="level1 unnumbered">
+<h1 class="unnumbered">Acknowledgements</h1>
+<p>I thank the participants of the “2015 Warwick Growth Economic Workshop” and the “8th Louvain Symposium in Economic Dynamics” an seminars at Brown University, Université catholique de Louvain and Université de Luxembourg for their useful comments. I am indebted to Jacob Weisdorf, David de la Croix, Luca Pensieroso and Fabio Mariani for their support, critiques and encouragement. Helpful suggestions and discussion with Thierry Verdier, Mathias Thoenig, Marc Goñi, David Weil and Mark Putterman have improved this paper. I thank the two anonymous referees for their comments on this paper. This research project was supported by an FSR grant on “Family, marriage and economic development” and the “ARC project 15/19-063” on “Family transformations: incentives and norms”, both financed by the French-speaking community of Belgium. This work was also supported by French National Research Agency Grant ANR-17-EURE-0020.</p>
+</section>
+<section id="sec-introduction" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Introduction</h1>
+<p>Well-functioning states are the result of centuries of continuous improvements in state capacity. The economic literature documents a clear relationship between state capacity and economic development, with the former providing property rights, judicial systems and market-supporting institutions: <span class="citation" data-cites="Bockstette_2002">Bockstette, Chanda, and Putterman (<a href="#ref-Bockstette_2002" role="doc-biblioref">2002</a>)</span>, <span class="citation" data-cites="Besley_2011">Besley (<a href="#ref-Besley_2011" role="doc-biblioref">2011</a>)</span>, <span class="citation" data-cites="Fukuyama_2012">Fukuyama (<a href="#ref-Fukuyama_2012" role="doc-biblioref">2012</a>)</span>. In particular, longer histories of state-level institutions are linked to economic prosperity in <span class="citation" data-cites="Chanda_2007">Chanda and Putterman (<a href="#ref-Chanda_2007" role="doc-biblioref">2007</a>)</span>, <span class="citation" data-cites="Dincecco_2014">Dincecco and Katz (<a href="#ref-Dincecco_2014" role="doc-biblioref">2014</a>)</span> and <span class="citation" data-cites="Borcan_2017">Borcan, Olsson, and Putterman (<a href="#ref-Borcan_2017" role="doc-biblioref">2017</a>)</span>.</p>
+<p>Our theoretical paper is concerned with the process of building state capacity in its early stages, focusing on the resurgence of state centralisation in the European context during medieval times. The nascent states then replacing the Roman Empire invested in state capacity to provide security and defence against neighbours. In the economic literature, state capacity is usually expanded to overcome rivals and control resources. We examine this initial process of state-building, focusing on a neglected institutional factor: the degree of gender-egalitarianism embedded in inheritance rules. In doing so, we illustrate how gender equality may have impacted the process of state creation and, indirectly, affected economic prosperity, complementing the literature on state formation. However, this paper does not attempt to rationalise how modern states build state capacity. Specifically, we analyse how state capacity evolves under two different norms in the context of medieval Europe. We compare male-preference cognatic primogeniture, a norm that grants men preferential access to inheritance, with absolute primogeniture, a norm that treats genders alike. The choice of a particular rule is likely to be endogenous and possibly related to how women are perceived in a society. However, this paper exogenously fixes norms to compare their outcomes. Under the male-preference rule, a woman can only inherit if she has no living brothers. In contrast, absolute primogeniture selects the oldest sibling as heir, regardless of gender.</p>
+<p>We introduce the concept of dynastic continuity, where landholdings are related to a family name for generations. A long-lasting system of identification was actively sought by European elites during the middle ages, as we detail later. As fiefs descend through inheritance, a member of the elite who expects his dynasty to continue will devote more resources to state capacity because its benefits remain attached to his family name. Male-biased inheritance rules incentivise state-building: historically, men ensured highly-valued dynastic continuity.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> In addition to this, our model accommodates inter-state marriages between land-inheriting heirs. These marriages lead to the accumulation of land, generating a wealth effect. We weigh the direct effect of more likely dynastic continuity under gender-biased norms against the wealth effect, more salient under gender-neutral rules.</p>
+<p>Our model thus captures the incentive to build state capacity for land-based countries, as rulers sought territorial expansion to increase the prestige and influence of their dynasties. Although small and well-organised states did not territorially expand until late, their lords engaged in internal battles for control. Considering marriages intended to merge wealth and political power as well broadens the scope of our model and encompasses such cases, as <a href="#sec-country-unification" class="quarto-xref">Section&nbsp;8</a> illustrates.</p>
+<p>We find that state capacity accumulates faster under gender-egalitarian rules in the short run. This novel result revises the literature and indicates that fast wealth accumulation can make up for lower probability of dynastic continuity. Nonetheless, in the long run results are reversed. The differing rate of inter-state marriages between inheritance rules explains our results. In particular, wealth accumulation through marriages is delayed under gender-biased norms, as this system naturally generates less marriages. However, the total number of possible marriages is fixed, and eventually both systems converge towards the same distribution of wealth. After wealth differences vanish, the direct effect of a higher probability of dynastic continuity dominates, delivering the higher levels of state capacity typically found in the economic literature. Moreover, this last result provides a rationale —beyond short-term considerations regarding dynastic continuity— for the pervasive prevalence of male-preference cognatic primogeniture in the European context. Finally, although our model principally addresses the evolution of state capacity, we conclude that gender equality may have had major indirect consequences on economic development through state capacity building.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+</section>
+<section id="related-literature-and-historical-context" class="level1" data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Related literature and historical context</h1>
+<p><strong>State capacity and its determinants.</strong> The concept of <em>state capacity</em> refers to and measures a state’s capacity to obtain compliance from individuals, and how far-reaching this ability is. <span class="citation" data-cites="McAdam_2001">McAdam, Tarrow, and Tilly (<a href="#ref-McAdam_2001" role="doc-biblioref">2001, 78</a>)</span> define it as “the degree of control state agents exercise over persons, activities, and resources within their government’s territorial jurisdiction”. Ottervik’s (<span class="citation" data-cites="Ottervik_2013">(<a href="#ref-Ottervik_2013" role="doc-biblioref">2013</a>)</span>) definition is similar and enumerates indicators of state capacity.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> Among these, tax collection stands out because an “effective political system should be able to extract resources, aggregate them, and use them for national purposes” <span class="citation" data-cites="Walder_1995">(<a href="#ref-Walder_1995" role="doc-biblioref">Walder 1995, 21:90–91</a>)</span>.</p>
+<p>In the economic literature, conflict promotes state capacity because it enhances tax collection efficiency, thereby increasing the likelihood of victory. This relationship lies at the core of theoretical state-building models, which typically oppose two agents.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> For example, state-building and tax collection respond to external threats in <span class="citation" data-cites="Besley_2008">Besley and Persson (<a href="#ref-Besley_2008" role="doc-biblioref">2008</a>)</span>. <span class="citation" data-cites="Dincecco_2014">Dincecco and Katz (<a href="#ref-Dincecco_2014" role="doc-biblioref">2014</a>)</span> empirically validate the hypothesis that centralised states are more efficient at levying taxes than fragmented states, and <span class="citation" data-cites="Persson_2009">Besley and Persson (<a href="#ref-Persson_2009" role="doc-biblioref">2009</a>)</span> confirm that a longer history of belligerency is correlated with state capacity. Our model uses conflict as a driver, since rulers wage war to control resources.<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> However, we arbitrarily extend the set of contenders. Furthermore, in line with the historical development of state capacity, in our model the Lords’ budget constraint dynamically changes, reflecting the outcome of the war in preceding periods. Thus, we better capture the inceptive for waging war: controlling the neighbours’ land and resources.</p>
+<p>The literature also emphasises that political stability —the probability of continued rule— fosters state capacity building. Typically, it introduces opposing groups that can alternate in power and make transfers to their people. Building state capacity increases tax collection efficiency and, therefore, potential transfers to the group in power in subsequent periods, see <span class="citation" data-cites="Besley_2008">Besley and Persson (<a href="#ref-Besley_2008" role="doc-biblioref">2008</a>)</span> and <span class="citation" data-cites="Persson_2009">Besley and Persson (<a href="#ref-Persson_2009" role="doc-biblioref">2009</a>)</span>. <span class="citation" data-cites="Besley_2013">Besley, Ilzetzki, and Persson (<a href="#ref-Besley_2013" role="doc-biblioref">2013</a>)</span> find some empirical support for this hypothesis. We extend this concept by incorporating the idea of dynastic continuity and, consistent with the literature, find that it increases investments in state capacity. However, the literature suggests a one-to-one mapping between the probability of continued rule and state-building at odds with actual inheritance practices.<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> In fact, male-preference cognatic primogeniture permits dynastic extinction: when the issue consists of only daughters, the dynasty disappears and the son-in-law takes control of the landholdings. Insofar inter-state marriages generate a wealth effect that boosts state capacity building, our research suggests that a reduction in the probability of dynastic continuity may present a dynamic advantage. In particular, allowing women to inherit opens the possibility of marrying a son to an heiress, thereby increasing family landholdings. In that sense, a sufficiently low, but positive, probability of feminine inheritance may maximise the expected landholdings of a dynasty.</p>
+<p>Other determinants of state capacity identified in <span class="citation" data-cites="Persson_2009">Besley and Persson (<a href="#ref-Persson_2009" role="doc-biblioref">2009</a>)</span> include the country’s wealth, the demand for public goods and political representativeness.<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> <span class="citation" data-cites="Johnson_2014">Johnson and Koyama (<a href="#ref-Johnson_2014" role="doc-biblioref">2014</a>)</span> further argue that greater homogeneity allowed England to move away from cabal tax farming before France, while <span class="citation" data-cites="Gennaioli_2015">Gennaioli and Voth (<a href="#ref-Gennaioli_2015" role="doc-biblioref">2015</a>)</span> model how regional cohesiveness facilitates centralisation. Finally, <span class="citation" data-cites="Johnson_2017">Johnson and Koyama (<a href="#ref-Johnson_2017" role="doc-biblioref">2017</a>)</span> review historical determinants of state capacity.</p>
+<p><strong>European medieval context.</strong> The collapse of the Roman Empire, once a powerful unified entity, generated a plethora of regional polities seeking to expand militarily at the expense of others, as larger domains provided more income and accrued greater political influence and prestige.<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> According to <span class="citation" data-cites="Smith_1776">Smith (<a href="#ref-Smith_1776" role="doc-biblioref">2015 [1776]</a>)</span>, power and greatness depended on estate size, which explains the prevalence among elites of primogeniture, a system that keeps landholdings intact.<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a> Male-preference cognatic primogeniture ensures dynastic continuity by linking a surname to landholdings, something which in the medieval context was of the utmost importance,<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a> even to the extent of disqualifying direct family members as heirs. <span class="citation" data-cites="Spring_1993">Spring (<a href="#ref-Spring_1993" role="doc-biblioref">1993</a>)</span> note that landowners used male-preference cognatic primogeniture to maintain a family’s relationship to the land, contrary to common-law requirements.<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a> Historical accounts show that testators preferred to bequeath to an outsider or a distant relative rather than face dynastic extinction. In such cases, wills made clear provisions for the continuation of the family name. For instance, Robert Marmyon specified his heir should “take the name Marmyon” to avoid “extinction [...] and to ensure that its estates would continue in the name of Marmyon”, see <span class="citation" data-cites="Payling_1992">Payling (<a href="#ref-Payling_1992" role="doc-biblioref">1992, 34</a>)</span>. <a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a> In that sense, dynastic preservation took precedence over genetic perpetuation, even though direct descendants were not left empty-handed and were bypassed only when dynastic continuity was threatened. <span class="citation" data-cites="Hurwich_1998">Hurwich (<a href="#ref-Hurwich_1998" role="doc-biblioref">1998</a>)</span> notes that the German nobility avoided exogamy even with the “wealthiest of the urban patriciate” to “maintain and elevate the lineage”. However, the nobility sought to enlarge their progeny so as to maximise the likelihood of dynastic continuity.<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a> The concept of dynastic continuity we introduce reflects this desire to ensure that the family name is identified with landholdings. Surname transmission is crucial and, to continue a dynasty, heirship and surnames should descend through the same gender. <a href="#sec-history" class="quarto-xref">Section&nbsp;6</a> provides additional historic details regarding the evolution of inheritance rules and the medieval context.</p>
+<p>Our model distinguishes between inheritance rules based on whether or not women could inherit. Historically, European regions systematically favoured men during medieval times, and the system of male-preference cognatic primogeniture was widely used (<span class="citation" data-cites="Drell_2013">Drell (<a href="#ref-Drell_2013" role="doc-biblioref">2013</a>)</span>).<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a> Male-preference cognatic primogeniture only allows a daughter to become heiress if she has no living brothers. We contrast it with absolute primogeniture, which selects the oldest sibling regardless of gender.</p>
+<p>Male-preference cognatic primogeniture maintained landholdings intact and preserved their identification with the dynasty because men were favoured. <a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a> Moreover, large estates provided enough income to fulfil the military obligations of the feudal system, although this made internal instability costlier.<a href="#fn16" class="footnote-ref" id="fnref16" role="doc-noteref"><sup>16</sup></a></p>
+<p>This was the case in England for all tenures after Henry I. Western France’s Capetians always designated one son as heir and Norman dukes traditionally applied primogeniture favouring sons, according to <span class="citation" data-cites="Le_Patourel_1971">Patourel (<a href="#ref-Le_Patourel_1971" role="doc-biblioref">1971</a>)</span> and <span class="citation" data-cites="Jewell_1996">Jewell (<a href="#ref-Jewell_1996" role="doc-biblioref">1996, 122</a>)</span>. Frankish Chamavian, Thuringian and Lombard codes also prevented women from inheriting land, see <span class="citation" data-cites="Nelson_2013">Nelson and Rio (<a href="#ref-Nelson_2013" role="doc-biblioref">2013</a>)</span>. Similarly, <span class="citation" data-cites="Ros_2012">Ros (<a href="#ref-Ros_2012" role="doc-biblioref">2012</a>)</span> and <span class="citation" data-cites="Piniella_1986">Piniella del Valle (<a href="#ref-Piniella_1986" role="doc-biblioref">1986</a>)</span> indicate that Catalonia actively applied male-preference primogeniture until very recent times. The more stringent Salic Law, completely forbidding women from inheriting, applied in Salian lands until tempered by King Chilperic’s edict (<span class="citation" data-cites="Herlihy_1962">Herlihy (<a href="#ref-Herlihy_1962" role="doc-biblioref">1962</a>)</span>). Visigothic tradition also favoured men.<a href="#fn17" class="footnote-ref" id="fnref17" role="doc-noteref"><sup>17</sup></a></p>
+<p>Inheritance rules and practices evolved over time, and the importance of primogeniture decreased. In particular, <span class="citation" data-cites="Bertocchi_2006">Bertocchi (<a href="#ref-Bertocchi_2006" role="doc-biblioref">2006</a>)</span> argues that the prevalence of primogeniture diminishes as nascent states take over defence provision, replacing individual lords. Primogeniture was crucial to meeting the costs of private defence by keeping large income-generating domains intact. <span class="citation" data-cites="Dunbar_2016">Dunbar (<a href="#ref-Dunbar_2016" role="doc-biblioref">2016</a>)</span> reasons similarly.<a href="#fn18" class="footnote-ref" id="fnref18" role="doc-noteref"><sup>18</sup></a></p>
+<p>Finally, our model introduces the historically common inter-state marriages, see <span class="citation" data-cites="Habakkuk_1950">Habakkuk (<a href="#ref-Habakkuk_1950" role="doc-biblioref">1950</a>)</span>, <span class="citation" data-cites="Clay_1968">Clay (<a href="#ref-Clay_1968" role="doc-biblioref">1968</a>)</span> and <span class="citation" data-cites="Girouard_1978">Girouard (<a href="#ref-Girouard_1978" role="doc-biblioref">1978</a>)</span>. Such marriages increased estate size because heiresses “brought lands to husband[s]” (<span class="citation" data-cites="Holt_1985">Holt (<a href="#ref-Holt_1985" role="doc-biblioref">1985</a>)</span>, see also <span class="citation" data-cites="Rodrigues_2007">Rodrigues (<a href="#ref-Rodrigues_2007" role="doc-biblioref">2007</a>)</span> and <span class="citation" data-cites="Debris_2005">Debris (<a href="#ref-Debris_2005" role="doc-biblioref">2005</a>)</span>), precluding female dynasties. Including these marriages leads to a wealth effect, whereby larger polities invest more, as in <span class="citation" data-cites="Lagerlof_2014">Lagerlöf (<a href="#ref-Lagerlof_2014" role="doc-biblioref">2014</a>)</span>. However in our model, polity size results from a unification process acting through both war and marriage.<a href="#fn19" class="footnote-ref" id="fnref19" role="doc-noteref"><sup>19</sup></a></p>
+<p>The remainder of the paper is organised as follows: <a href="#sec-model" class="quarto-xref">Section&nbsp;3</a> introduces the static part of the theoretical model. <a href="#sec-timing" class="quarto-xref">Section&nbsp;3.1</a> incorporates the marriage market for land-inheritors which, together with war, generates the dynamics. We simulate the evolution of state capacity under both inheritance rules in <a href="#sec-simulation" class="quarto-xref">Section&nbsp;4</a>. <a href="#sec-conclusion" class="quarto-xref">Section&nbsp;5</a> concludes.</p>
+</section>
+<section id="sec-model" class="level1" data-number="3">
+<h1 data-number="3"><span class="header-section-number">3</span> The Model</h1>
+<p>Our model is based on an overlapping generations framework with discrete time. Consider a region <span class="math inline">\(\mathcal{L}\)</span> divided into smaller sub-regions at period <span class="math inline">\(t=0.\)</span> Each sub-region is a <em>manor</em>, indexed by <span class="math inline">\(i=1,2,\ldots,I_{t}\)</span>. The size of manors, denoted <span class="math inline">\(x_{t}^{i}&gt;0\)</span>, is normalised such that <span class="math inline">\(\sum_{i \in \mathcal{L}_t} x_{t}^{i} = 1\)</span>. Each manor is ruled by a Lord who lives for two periods and makes decisions when adult. His preferences are given by: <span id="eq-preferences"><span class="math display">\[
+\mathcal{U}_{t}^{i}=\ln\left(c_{t}^{i}\right)+\gamma\ln\left(x_{t+1}^{i}\right),
+\tag{1}\]</span></span> where <span class="math inline">\(c_{t}^{i}&gt;0\)</span> represents consumption during adulthood and <span class="math inline">\(x_{t+1}^{i}\in\left(0,1\right)\)</span> the size of the manor his heir will receive, after the war process but before marriages. Future manor size is discounted by <span class="math inline">\(\gamma\in\left(0,1\right)\)</span>, the probability of dynastic continuity. As we show later, inheritance rules determine its value. For the moment, with probability <span class="math inline">\(1-\gamma\)</span> dynastic continuity ends and the incumbent Lord derives no utility as his dynasty disappears, losing all prestige and influence. In that sense, Lords care about the continuation of their dynasty and not about the perpetuation of genetic material. The utility formulation indicates this clearly, with no value attached to having surviving offspring.<a href="#fn20" class="footnote-ref" id="fnref20" role="doc-noteref"><sup>20</sup></a> Lords are in fact powerless to avoid dynastic extinction and strictly follow inheritance rules.<a href="#fn21" class="footnote-ref" id="fnref21" role="doc-noteref"><sup>21</sup></a> Similarly, a small manor after the war process, captured by <span class="math inline">\(x_{t+1}^{i}\)</span>, only provides limited benefits in terms of prestige. The entire manor and dynasty may even disappear if the Lord does not invest enough in state capacity and the army.<a href="#fn22" class="footnote-ref" id="fnref22" role="doc-noteref"><sup>22</sup></a></p>
+<p>Since total area is constant, the size of a manor can increase only at the expense of some neighbour. Conflict continuously arises because Lords seek to enlarge their estates. We model conflict through a war process such that, at every period of time, Lords battle all-against-all.<a href="#fn23" class="footnote-ref" id="fnref23" role="doc-noteref"><sup>23</sup></a> Lords hire soldiers to battle and their efficiency is increased by state capacity. Following <span class="citation" data-cites="Skaperdas_1996">Skaperdas (<a href="#ref-Skaperdas_1996" role="doc-biblioref">1996</a>)</span>, the outcome of the war is a new distribution of land: <span id="eq-war_outcome"><span class="math display">\[
+x_{t+1}^{i}=\frac{\left(1+A_{t}^{i}+g_{t}^{i}\right)\left.b_{t}^{i}\right.^{\phi}}{\sum_{i\in\mathcal{L}_{t}}\left(1+A_{t}^{i}+g_{t}^{i}\right)\left.b_{t}^{i}\right.^{\phi}},\forall i\in\mathcal{L}_{t},
+\tag{2}\]</span></span> where <span class="math inline">\(b_{t}^{i}&gt;0\)</span> is the number of soldiers hired, <span class="math inline">\(\phi&gt;0\)</span> measures their relative importance in the war process, <span class="math inline">\(A_{t}^{i}\)</span> represents state capacity during period <span class="math inline">\(t\)</span> and <span class="math inline">\(g_{t}^{i}\)</span> indicates the amount invested in state-building.<a href="#fn24" class="footnote-ref" id="fnref24" role="doc-noteref"><sup>24</sup></a> We argue that a more capable state better organises its military because it has more officials and better internal coordination. To simplify the problem, we assume that Lords ignore the externality caused by a unilateral increase in the number of soldiers or in state capacity. This allows analytical results to be derived, at the expense of inconsistent behaviour when there is only one manor.<a href="#fn25" class="footnote-ref" id="fnref25" role="doc-noteref"><sup>25</sup></a> However, the qualitative results —especially during the transition phase, when multiple manors exist— would not change if we adopted a more complex approach. Substituting <a href="#eq-war_outcome" class="quarto-xref">Equation&nbsp;2</a> into Equation <a href="#eq-preferences" class="quarto-xref">Equation&nbsp;1</a> yields an equivalent expression for utility: <span id="eq-optimisation_problem"><span class="math display">\[
+\mathcal{U}_{t}^{i}=\ln\left(c_{t}^{i}\right)+\gamma\ln\left(\left(1+A_{t}^{i}+g_{t}^{i}\right)\left.b_{t}^{i}\right.^{\phi}\right),\forall i\in\mathcal{L}_{t}.
+\tag{3}\]</span></span></p>
+<p>A Lord’s income depends on manor size and state capacity. In particular, a homogeneous final good is produced in each manor, using land alone.<a href="#fn26" class="footnote-ref" id="fnref26" role="doc-noteref"><sup>26</sup></a> Total production is shared between the Lord and the commoners under a crop-sharing agreement.<a href="#fn27" class="footnote-ref" id="fnref27" role="doc-noteref"><sup>27</sup></a> We impose constant shares over time and across manors: the Lord receives <span class="math inline">\(\psi\in\left(0,1\right)\)</span> and the remaining <span class="math inline">\(1-\psi\)</span> goes to the commoners. Further, the Lords can levy certain taxes on the commoners’ share. In keeping with the literature, the effective tax rate is given by <span class="math inline">\(\tau_{t}^{i}=\frac{A_{t}^{i}+g_{t}^{i}}{1+A_{t}^{i}+g_{t}^{i}}\)</span> which increases in line with state capacity and investments. State capacity does not depreciate over time. Lord <em>i</em>’s budget constraint is: <span id="eq-budget"><span class="math display">\[\begin{aligned}
+Z_{t}^{i} &amp; \equiv &amp; \psi Y_{t}^{i}+\left(1-\psi\right)Y_{t}^{i}\frac{A_{t}^{i}+g_{t}^{i}}{1+A_{t}^{i}+g_{t}^{i}}=c_{t}^{i}+p_{b}b_{t}^{i}+p_{g}g_{t}^{i},
+\end{aligned}
+\tag{4}\]</span></span> where <span class="math inline">\(p_{b}&gt;0\)</span> represents the costs associated with hiring a soldier and <span class="math inline">\(p_{g}&gt;0\)</span> the cost of increasing state capacity.<a href="#fn28" class="footnote-ref" id="fnref28" role="doc-noteref"><sup>28</sup></a> <a href="#eq-preferences" class="quarto-xref">Equation&nbsp;1</a> and the budget constraint provide two reasons to invest in state capacity: first, it contributes positively to the outcome of war and, second, it allows for greater taxation. Given this, some Lords might invest in state capacity even when facing dynastic extinction, because tax income can be consumed.</p>
+<p>Both the optimal number of soldiers, investment in state capacity and comparative statics are given in the following Propositions.</p>
+<div id="prp-optimal_solution" class="theorem proposition">
+<p><span class="theorem-title"><strong>Proposition 1</strong></span> The Lords’ optimal decision is given by the unique triplet <span class="math inline">\(\left(c_{t}^{i},b_{t}^{i},g_{t}^{i}\right)\)</span> such that: <span class="math display">\[\begin{aligned}
+\begin{split}
+    b_{t}^{i}&amp; =B\left(g_{t}^{i}\right)=%
+        \frac{\gamma \phi (Y_{t}^{i} (\psi + A_{t}^{i}+g_{t}^{i} )-p_{b}g_{t}^{i} (1 + A_{t}^{i}+g_{t}^{i}))}{p_{b} (1+A_{t}^{i}+g_{t}^{i}) (1+\gamma \phi )}\\
+    g_{t}^{i}&amp; =G\left(g_{t}^{i}\right)=\max\left\{ 0, g|G_{1}\left(g\right)=0\right\} ,
+    \\
+    c_{t}^{i}&amp; =C\left(b_{t}^{i},g_{t}^{i}\right)=Z_{t}^{i}-p_{b}b_{t}^{i}-p_{g}g_{t}^{i},
+\end{split}
+\end{aligned}\]</span> where <span class="math inline">\(G_{1}\left(g_{t}^{i}\right)=%
+\frac{\gamma}{1+A_{t}^{i}+g_{t}^{i}}+%
+\frac{(1+\gamma \phi) \left(p_{g} (1+A_{t}^{i}+g_{t}^{i})^2-(1-\psi )
+Y_{t}^{i}\right)}{(1+A_{t}^{i}+g_{t}^{i}) ( p_{g}g_{t}^{i} (1+A_{t}^{i}+g_{t}^{i})-Y_{t}^{i} (\psi+A_{t}^{i}+g_{t}^{i} ))}.\)</span></p>
+</div>
+<p>The next Propositions derive the main analytical results. First, <a href="#prp-optimal_solution" class="quarto-xref">Proposition&nbsp;1</a> establishes the relationship between the probability of dynastic continuity, <span class="math inline">\(\gamma\)</span>, and state capacity building.</p>
+<div id="prp-direct_effect" class="theorem proposition">
+<p><span class="theorem-title"><strong>Proposition 2</strong></span> State capacity building increases with the probability of dynastic continuity: <span class="math inline">\(\frac{\partial g_{t}^{i}}{\partial \gamma} \geq 0\)</span>.*</p>
+</div>
+<div id="cor-other_reasons" class="theorem corollary">
+<p><span class="theorem-title"><strong>Corollary 1</strong></span> Investments in state capacity are positive when dynastic continuity tends to zero if wealth <span class="math inline">\(Y_{t}^{i}\)</span> is large enough, and accumulated state capacity <span class="math inline">\(A_{t}^{i}\)</span> is low: <span class="math inline">\(\lim_{\gamma \to 0} g_{t}^{i} = \frac{Y_{t}^{i} \left( 1 - \psi \right)}{\sqrt{p_{g}}}-1-A_{t}^{i}\)</span>.*</p>
+</div>
+<p><a href="#prp-direct_effect" class="quarto-xref">Proposition&nbsp;2</a> indicates that, as the probability of dynastic continuity increases, Lords optimally allocate more resources to increase state capacity. This relationship is akin to Proposition 6 in <span class="citation" data-cites="Persson_2009">Besley and Persson (<a href="#ref-Persson_2009" role="doc-biblioref">2009</a>)</span>. <a href="#cor-other_reasons" class="quarto-xref">Corollary&nbsp;1</a> establishes that state-building is compatible with low likelihood of dynastic continuity. In that case, state capacity serves to increase tax revenue, which can be used for consumption. Other reasons may compel a Lord to invest in state capacity. For instance, investments can signal commitment to bureaucrats, reducing their incentive to revolt, particularly during transitions between Lords. Similarly, fertility is an endogenous variable that increases the probability of dynastic continuity under male-preference cognatic primogeniture, and Lords may be willing to trade off state capacity against higher values of <span class="math inline">\(\gamma\)</span>.<a href="#fn29" class="footnote-ref" id="fnref29" role="doc-noteref"><sup>29</sup></a></p>
+<p>We will weigh this effect against the indirect effect of more marriages under gender-egalitarian rules, which entail a lower probability of dynastic continuity. The effect of marriages operates through land-merging and affects manor sizes and wealth. <a href="#prp-indirect_effect" class="quarto-xref">Proposition&nbsp;3</a> establishes that wealth positively affects state-building, a result familiar from the literature, see Proposition 4 in <span class="citation" data-cites="Persson_2009">Besley and Persson (<a href="#ref-Persson_2009" role="doc-biblioref">2009</a>)</span>.</p>
+<div id="prp-indirect_effect" class="theorem proposition">
+<p><span class="theorem-title"><strong>Proposition 3</strong></span> State capacity building increases with wealth: <span class="math inline">\(\frac{\partial g_{t}^{i}}{\partial Y_{t}^{i}} \geq 0\)</span>.*</p>
+</div>
+<p>Finally, <a href="#prp-Comparative_statics" class="quarto-xref">Proposition&nbsp;4</a> presents additional comparative statics.</p>
+<div id="prp-Comparative_statics" class="theorem proposition">
+<p><span class="theorem-title"><strong>Proposition 4</strong></span> At the optimum, <span class="math inline">\(\frac{\partial b_{t}^{i}}{\partial Y_{t}^{i}}&gt;0\)</span>, <span class="math inline">\(\frac{\partial b_{t}^{i}}{A_{t}^{i}}&gt;0\)</span> and <span class="math inline">\(\frac{\partial g_{t}^{i}}{A_{t}^{i}}&lt;0\)</span>. Also, at the optimum, <span class="math inline">\(\frac{\partial g_{t}^{i}}{\partial \psi}\geq 0\)</span>, <span class="math inline">\(\frac{\partial g_{t}^{i}}{\partial p_{b}}=0\)</span>, <span class="math inline">\(\frac{\partial g_{t}^{i}}{\partial p_{g}}&lt;0\)</span> and <span class="math inline">\(\frac{\partial g_{t}^{i}}{\partial \phi}&lt;0.\)</span> Regarding soldiers, we have that <span class="math inline">\(\frac{\partial b_t^{i}}{\partial \gamma}\geq 0\)</span>, <span class="math inline">\(\frac{\partial b_{t}^{i}}{\partial \phi}\geq 0\)</span>, <span class="math inline">\(\frac{\partial b_{t}^{i}}{\partial \psi}\geq 0\)</span> and <span class="math inline">\(\frac{\partial b_{t}^{i}}{\partial p_{b}}&lt;0\)</span>.*</p>
+</div>
+<p><a href="#prp-Comparative_statics" class="quarto-xref">Proposition&nbsp;4</a> shows that army size increases in <span class="math inline">\(Y_{t}^{i}\)</span> and <span class="math inline">\(A_{t}^{i}\)</span>. Moreover, <span class="math inline">\(g_{t}^{i}\)</span> also increases with <span class="math inline">\(Y_{t}^{i}\)</span>. However, although <span class="math inline">\(g_{t}^{i}\)</span> decreases with its accumulated level, if <span class="math inline">\(A_{t}^{j}&gt;A_{t}^{i}\)</span> then <span class="math inline">\(A_{t}^{j}+g_{t}^{j}&gt;A_{t}^{i}+g_{t}^{i}\)</span>. Hence, a larger and more developed manor will capture more land from its opponents and, failing any counterbalancing force, it will continuously expand, creating an empire. Also, <a href="#prp-Comparative_statics" class="quarto-xref">Proposition&nbsp;4</a> indicates that the optimal number of soldiers decreases with its price. On the other hand, if the relative importance of soldiers in the war process, measured by <span class="math inline">\(\phi\)</span>, increases, the optimal response is to deploy more, thereby taking advantage of the value they add. Finally, a higher <span class="math inline">\(\psi\)</span> means that Lords own more resources and depend less on taxation income, although it reduces the incentive to tax commoners. Since soldiers are a normal good, an increase in income increases demand for them. Similar reasoning can be applied to <span class="math inline">\(g_{t}^{i}\)</span>. The negative relationship with <span class="math inline">\(\phi\)</span> follows from the substitutability between soldiers and state capacity.</p>
+<p>A crucial aspect of this model is the delicate relationship between gender and surname-carrying. The surname-carrying gender —male— perpetuates the dynasty and institutions that favour male inheritance favour state capacity building, because Lords care about dynastic continuity. This generates the relationship between <span class="math inline">\(\gamma\)</span> and state capacity in our model. In this respect, a gender-discriminating inheritance rule only promotes state capacity if heirship and surnames descend through the same gender. On the other hand, the number of men and women on the marriage market for land-inheriting heirs is balanced under a gender-neutral inheritance rule.<a href="#fn30" class="footnote-ref" id="fnref30" role="doc-noteref"><sup>30</sup></a> Consequently, there are more marriages under this rule, and landholdings are merged more often and become larger.<a href="#fn31" class="footnote-ref" id="fnref31" role="doc-noteref"><sup>31</sup></a> This provides an indirect lever that fosters state-building, as investments increase with Lords’ income.</p>
+<section id="sec-timing" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="sec-timing"><span class="header-section-number">3.1</span> Dynamics</h2>
+<p>Up to now we have restricted our attention to a static problem. This section describes the dynamic behaviour of the model, significantly influenced by the outcome of the marriage market and war, which consolidate landholdings. In what follows, we assume that tiny manors resulting from the war process are integrated into larger entities.<a href="#fn32" class="footnote-ref" id="fnref32" role="doc-noteref"><sup>32</sup></a></p>
+<p>In the context of the model, decisions are made under uncertainty with respect to dynastic continuity. In particular, an heir’s gender is only revealed at a testator’s death, and this announcement is deferred until the Lord’s offspring reaches adulthood.<a href="#fn33" class="footnote-ref" id="fnref33" role="doc-noteref"><sup>33</sup></a> Taking this into consideration, we propose that events unfold in the following manner:<a href="#fn34" class="footnote-ref" id="fnref34" role="doc-noteref"><sup>34</sup></a></p>
+<ol type="1">
+<li><p>Lords decide <span class="math inline">\(c_{t}^{i},\,b_{t}^{i}\,\mathrm{and}\,g_{t}^{i}\)</span>.</p></li>
+<li><p>War takes place.</p></li>
+<li><p>Heir’s gender is revealed and marriages are arranged.</p></li>
+</ol>
+</section>
+<section id="sec-marriages" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="sec-marriages"><span class="header-section-number">3.2</span> Marriages</h2>
+<p>We consider a marriage market for land-inheriting heirs in which all participants have perfect information. Prospective spouses sort candidates according to wealth, that is, the preferred match is the richest individual of the opposite gender. As there are not necessarily the same number of men and women on this market, unmatched individuals are assumed to marry a non-heir child of a nobleman or a noble from elsewhere in the world. In medieval Europe, the elite deployed certain marriage strategies for their children: marriages were normally only arranged between spouses of similar rank.<a href="#fn35" class="footnote-ref" id="fnref35" role="doc-noteref"><sup>35</sup></a> We capture this aspect by assuming that only potential spouses who are similar enough in terms of wealth can marry. In particular, the distance between them must be below a certain threshold, <span class="math inline">\(\delta_{t}\)</span>, for them to wed.<a href="#fn36" class="footnote-ref" id="fnref36" role="doc-noteref"><sup>36</sup></a></p>
+<p>Under these conditions, spouse selection follows a refined version of <span class="citation" data-cites="Gale_1962">Gale and Shapley (<a href="#ref-Gale_1962" role="doc-biblioref">1962</a>)</span>. In our case, the outcome is intuitive. A Lord will marry his heir(ess) to the best possible candidate within his rank. This leads to a swift process of land concentration within the upper echelons of wealth distribution. <a href="#sec-marriage_app" class="quarto-xref">Section&nbsp;7</a> formalises the marriage market, and we assume that the state capacity of a merged manor is the average of its constituent parts.</p>
+<p>It is important to note that inheritance rules and the stochastic realisation of children’s gender determine the outcome of the marriage market. In particular, heirs’ gender determines the number of men and women on the marriage market, and hence the number of possible marriages. Each inheritance rule incorporates mechanisms that can potentially lead to higher levels of state capacity. On the one hand, male-preference cognatic primogeniture offers a higher probability of dynastic continuity, directly encouraging state-building. Under such a rule a woman can only inherit if she has no living brothers. Therefore, a dynasty survives with a probability of <span class="math inline">\(1-0.5^\Phi\)</span> for a man with <span class="math inline">\(\Phi\)</span> children.<a href="#fn37" class="footnote-ref" id="fnref37" role="doc-noteref"><sup>37</sup></a> This is higher than the respective probability under absolute primogeniture, 0.5, because the latter dictates that the oldest sibling inherits. Hence, discount rates are such that <span class="math inline">\(\gamma^{M}&gt;\gamma^{A}\)</span>. On the other hand, absolute primogeniture balances the number of land-inheriting heirs and heiresses. Correspondingly, more land-merging occurs through marriages, which generates a wealth effect that encourages state-building. Because of the non-trivial, stochastic behaviour of the model when it comes to heirs’ gender, we resort to numerical simulations to analyse the implications of different inheritance rules.</p>
+</section>
+</section>
+<section id="sec-simulation" class="level1" data-number="4">
+<h1 data-number="4"><span class="header-section-number">4</span> Simulations and Results</h1>
+<p>At the beginning of each period, 30 manors exist. Simulations follow the steps outlined above, and we run 1000 simulations for each inheritance rule.</p>
+<p><strong>Parametrisation.</strong> The value of most of the parameters for the simulations is chosen from historical sources. The number of children per Lord comes from <span class="citation" data-cites="Russell_1958">Russell (<a href="#ref-Russell_1958" role="doc-biblioref">1958</a>)</span>. French data show that 4.15 children survived their father. In England, the number was lower: 2.35. We take 3 as the number of children per Lord. Consequently, the effective discount rates are <span class="math inline">\(\gamma^{M}=1-0.5^{\Phi}=1-0.5^{3}\)</span> and <span class="math inline">\(\gamma^{A}=0.5\)</span>.</p>
+<p>The crop-sharing rule value is the average of the extreme cases presented in <span class="citation" data-cites="Slicher_1966">Slicher van Bath (<a href="#ref-Slicher_1966" role="doc-biblioref">1966</a>)</span>. Therefore, <span class="math inline">\(\psi=5/12\)</span>. We use <span class="citation" data-cites="Sanchez_2003">Sánchez Martı́nez et al. (<a href="#ref-Sanchez_2003" role="doc-biblioref">2003</a>)</span> and <span class="citation" data-cites="banegas2010aprovisionament">Banegas López (<a href="#ref-banegas2010aprovisionament" role="doc-biblioref">2010</a>)</span> to compute the cost of soldiers, comparing their daily cost (2 <em>sous</em>) with the typical daily expenditure on food for a nobleman (1.6 <em>sous</em>). The real cost of a soldier is then <span class="math inline">\(p_{b}=1.2\)</span>.<a href="#fn38" class="footnote-ref" id="fnref38" role="doc-noteref"><sup>38</sup></a> We proceed similarly to compute the cost of taxation. Following <span class="citation" data-cites="Verdes_2004">Verdés Pijuan (<a href="#ref-Verdes_2004" role="doc-biblioref">2004, 153</a>)</span>, in the town of Cervera during the year 1424, the <em>racional</em>, that is, an auditor, received no less than 330 <em>sous</em><a href="#fn39" class="footnote-ref" id="fnref39" role="doc-noteref"><sup>39</sup></a> in yearly wages. A <em>racional</em> had to work three days a week or around 150 days per year, which gives us an equivalent wage of 2.2 <em>sous</em> per day. There is, though, a large discrepancy between this figure and English references.<a href="#fn40" class="footnote-ref" id="fnref40" role="doc-noteref"><sup>40</sup></a> We initially follow the first estimate and set <span class="math inline">\(p_{g}=1.375\)</span>.</p>
+<p>Finally, for each simulation we draw initial manor sizes <span class="math inline">\(\left(x_{t}^{i}\right)\)</span> from a uniform distribution between 1 and 2 and we set the initial level of state capacity equal to zero. The disappearance threshold is set at <span class="math inline">\(\delta=0.01,\)</span> that is, one-hundredth of the minimum original size. We use a time-varying marriage threshold equal to one standard deviation in manor size. The value of <span class="math inline">\(\phi\)</span> is larger than 1 by assumption and equals <span class="math inline">\(1+\frac{1}{10^{11}}\)</span>, which delivers a slow evolution of the economy by hampering the effect war has on the distribution of manor sizes. <a href="#tbl-parameters" class="quarto-xref">Table&nbsp;1</a> summarises the parametrisation.</p>
+<div id="tbl-parameters" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl quarto-uncaptioned" id="tbl-parameters-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1
+</figcaption>
+<div aria-describedby="tbl-parameters-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Parameter</th>
+<th style="text-align: left;">Value</th>
+<th style="text-align: left;">Source</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\psi\)</span></td>
+<td style="text-align: left;">5/12</td>
+<td style="text-align: left;"><span class="citation" data-cites="Slicher_1966">Slicher van Bath (<a href="#ref-Slicher_1966" role="doc-biblioref">1966</a>)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\Phi\)</span></td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;"><span class="citation" data-cites="Russell_1958">Russell (<a href="#ref-Russell_1958" role="doc-biblioref">1958</a>)</span>.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\phi\)</span></td>
+<td style="text-align: left;"><span class="math inline">\(1+1/10^{11}\)</span></td>
+<td style="text-align: left;">Arbitrarily set to obtain slow transitions.</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(p_{b}\)</span></td>
+<td style="text-align: left;">1.375</td>
+<td style="text-align: left;"><span class="citation" data-cites="banegas2010aprovisionament">Banegas López (<a href="#ref-banegas2010aprovisionament" role="doc-biblioref">2010</a>)</span> and <span class="citation" data-cites="Sanchez_2003">Sánchez Martı́nez et al. (<a href="#ref-Sanchez_2003" role="doc-biblioref">2003</a>)</span>.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(p_{g}\)</span></td>
+<td style="text-align: left;">1.2</td>
+<td style="text-align: left;"><span class="citation" data-cites="banegas2010aprovisionament">Banegas López (<a href="#ref-banegas2010aprovisionament" role="doc-biblioref">2010</a>)</span> and <span class="citation" data-cites="Verdes_2004">Verdés Pijuan (<a href="#ref-Verdes_2004" role="doc-biblioref">2004</a>)</span>.</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\gamma^{M}\)</span></td>
+<td style="text-align: left;">7/8</td>
+<td style="text-align: left;"><span class="math inline">\(\gamma^{M}=1-0.5^\Phi.\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(\gamma^{A}\)</span></td>
+<td style="text-align: left;">1/2</td>
+<td style="text-align: left;"><span class="math inline">\(\gamma^{A}=1-0.5.\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(\delta\)</span></td>
+<td style="text-align: left;">0.01</td>
+<td style="text-align: left;">Arbitrarily set to 1/100 of the minimum initial size.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</figure>
+</div>
+<p>In the remaining part of this Section, we comment on the results. Unless stated otherwise, <em>marriages</em> refer to marriages between a land-inheriting heir and heiress. Candidates on the marriage market are ranked according to the size of their manors.</p>
+<p><strong>Results:</strong> <a href="#fig-avg_state_capacity" class="quarto-xref">Figure&nbsp;1</a> illustrates the evolution over time of the average level of state capacity for each inheritance rule. The solid line corresponds to male-preference cognatic primogeniture and the dashed line to absolute primogeniture.</p>
+<p>Simulations provide evidence that, in the long run, a gender-biased inheritance rule allows higher average levels of state capacity to be achieved. However, it is also clear that, in the short run, gender-egalitarian rules boost state capacity more. This supports the previous intuition on the importance of marriages in merging manors and the significance of the income effect. In that sense, even if <span class="math inline">\(\gamma\)</span> is lower under absolute primogeniture, wealth accumulation through marriages more than compensates for it.<a href="#fn41" class="footnote-ref" id="fnref41" role="doc-noteref"><sup>41</sup></a> The subsequent reversal occurs because, in the long run, land is also concentrated through marriages under male-preference cognatic primogeniture, albeit at a slower rate. Thus, how long the rules apply is crucial in determining which of them is best, and the direct effect of dynastic continuity only dominates when the distribution of manor sizes is similar enough between regimes.</p>
+<div id="fig-avg_state_capacity" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-avg_state_capacity-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Average state capacity
+</figcaption>
+<div aria-describedby="fig-avg_state_capacity-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
+<p><img src="./Figures/state_capacity.webp" class="img-fluid figure-img"></p>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="fignote quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<p><em>Notes: </em> This Figure represents average levels of state capacity reached in the simulations for each period, distinguishing between inheritance rules. The solid line corresponds to male-preference cognatic primogeniture and the dashed line to absolute primogeniture.</p>
+</div>
+</div>
+</div>
+</figure>
+</div>
+<p>As stated, marriages between heirs are a decisive factor in shaping the evolution of state capacity. When there are no restrictions on the marriage market, the marriage rate —that is, the total number of actual marriages relative to the number of participants in the market— is higher under absolute primogeniture.<a href="#fn42" class="footnote-ref" id="fnref42" role="doc-noteref"><sup>42</sup></a> Our simulations show marriage rates of 0.41 and 0.125 for absolute and male-preference cognatic primogeniture respectively during the first period, when the number of participants is largest and <span class="math inline">\(\delta\)</span> is less binding. Regional unification through marriage occurs faster initially under absolute primogeniture, generating larger manors that invest more in developing state capacity. This explains why this inheritance rule is associated with greater average state capacity in the short run.</p>
+<p>On the other hand, a gender-biased rule promotes state capacity through the direct effect of <span class="math inline">\(\gamma\)</span>. Although initially, average manor size is smaller due to fewer marriages, the manors large enough to build state capacity are of similar size under both rules. <a href="#fig-manor_size_manors_that_invest" class="quarto-xref">Figure&nbsp;2 (a)</a> confirms this is the case, especially from period five onward. In these cases, <span class="math inline">\(\gamma^{M}&gt;\gamma^{A}\)</span> coupled with similar manor size results in higher average spending on state-building under male-preference cognatic primogeniture. <a href="#fig-avg_investment_manors_that_invest" class="quarto-xref">Figure&nbsp;2 (b)</a> depicts average expenditure on building state capacity when only Lords investing a positive amount of resources are considered. Note that male-preference cognatic primogeniture overtakes absolute primogeniture even before manor size equalises, suggesting that the political stability conferred by dynastic continuity is a powerful driver of state-building. Finally, <a href="#fig-avg_investment" class="quarto-xref">Figure&nbsp;2 (c)</a> presents the percentage of Lords that invest in state-building. Again, when manors are similar in size, not only do Lords invest more under male-preference cognatic primogeniture, but also more Lords invest.</p>
+<div id="fig-evolution" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-evolution-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Evolution of <span class="math inline">\(Y\)</span> and investments.
+</figcaption>
+<div aria-describedby="fig-evolution-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-evolution" style="flex-basis: 47.5%;justify-content: flex-start;">
+<div id="fig-manor_size_manors_that_invest" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<figcaption class="quarto-float-caption-top quarto-subfloat-caption quarto-subfloat-fig" id="fig-manor_size_manors_that_invest-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) Avg. size, manors that invest.
+</figcaption>
+<div aria-describedby="fig-manor_size_manors_that_invest-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./Figures/avg_y.webp" class="img-fluid figure-img" data-ref-parent="fig-evolution">
+</div>
+</figure>
+</div>
+</div>
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 5.0%;justify-content: flex-start;">
+<p>&nbsp;</p>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-evolution" style="flex-basis: 47.5%;justify-content: flex-start;">
+<div id="fig-avg_investment_manors_that_invest" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<figcaption class="quarto-float-caption-top quarto-subfloat-caption quarto-subfloat-fig" id="fig-avg_investment_manors_that_invest-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) Avg. investment of investors.
+</figcaption>
+<div aria-describedby="fig-avg_investment_manors_that_invest-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./Figures/avg_investment_if_invests.webp" class="img-fluid figure-img" data-ref-parent="fig-evolution">
+</div>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 26.2%;justify-content: flex-start;">
+<p>&nbsp;</p>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-evolution" style="flex-basis: 47.6%;justify-content: flex-start;">
+<div id="fig-avg_investment" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<figcaption class="quarto-float-caption-top quarto-subfloat-caption quarto-subfloat-fig" id="fig-avg_investment-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(c) % that invest.
+</figcaption>
+<div aria-describedby="fig-avg_investment-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./Figures/invests.webp" class="img-fluid figure-img" data-ref-parent="fig-evolution">
+</div>
+</figure>
+</div>
+</div>
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 26.2%;justify-content: flex-start;">
+<p>&nbsp;</p>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="fignote quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<p><em>Notes: </em> This Figure presents the average evolution of several variables. <a href="#fig-manor_size_manors_that_invest" class="quarto-xref">Figure&nbsp;2 (a)</a> depicts the average manor size of manors that build state capacity. <a href="#fig-avg_investment_manors_that_invest" class="quarto-xref">Figure&nbsp;2 (b)</a> shows the average expenditure in state-building for the cases with positive investments. Finally, <a href="#fig-avg_investment" class="quarto-xref">Figure&nbsp;2 (c)</a> presents the percentage of Lords that devote resources to state-building.</p>
+</div>
+</div>
+</div>
+</figure>
+</div>
+<p>All in all, our simulations indicate that a higher probability of dynastic continuity does not guarantee higher levels of state capacity in the short run, once richer dynamics —inter-state marriages— are incorporated in the model. Nonetheless, in the long run, the importance of dynastic continuity re-emerges because income differences vanish with time. The number of marriages is limited and, eventually, a gender-discriminating rule catches up.<a href="#fn43" class="footnote-ref" id="fnref43" role="doc-noteref"><sup>43</sup></a></p>
+<p><strong>Sensitivity analysis.</strong> Given the variations present in the estimates of the parameters, especially <span class="math inline">\(p_{g}\)</span>, we diligently conduct a series of robustness tests. In a first approach, we modify the value of the parameters one at a time. In all cases, the main result holds, that is, absolute primogeniture delivers higher levels of state capacity in the short run, only to be outperformed by male-preference cognatic primogeniture in the long run.</p>
+<p>However, the dynamics are impacted, and the point at which male-preference cognatic primogeniture begins to outperform absolute primogeniture depends on the exact value of the parameters. We explore the relationship between the different parameters and this turning point in the relative performance of the two inheritance rules. In particular, starting from the baseline parametrisation in <a href="#tbl-parameters" class="quarto-xref">Table&nbsp;1</a>, we allow one parameter to take on different values while holding the rest at their baseline level. For each combination, we run one hundred simulations. Finally, we compute the average time at which male-preference cognatic primogeniture lastingly overtakes absolute primogeniture. Figure <a href="#fig:sensitivity" data-reference-type="ref" data-reference="fig:sensitivity">3</a> presents the results. The horizontal axis represents the value of the parameter we change. The vertical axis indicates the average time at which male-preference cognatic primogeniture begins to deliver greater average state capacity. Notice that parameters vary over a relatively large interval.</p>
+<div id="fig-sensitivity" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-fig" id="fig-sensitivity-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Timing of male-preference cognatic primogeniture take-over.
+</figcaption>
+<div aria-describedby="fig-sensitivity-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-sensitivity" style="flex-basis: 47.5%;justify-content: flex-start;">
+<div id="fig-sensitivity_pg" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<figcaption class="quarto-float-caption-top quarto-subfloat-caption quarto-subfloat-fig" id="fig-sensitivity_pg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) <span class="math inline">\(p_g\)</span>
+</figcaption>
+<div aria-describedby="fig-sensitivity_pg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./Figures/Comparator/pg.webp" class="img-fluid figure-img" data-ref-parent="fig-sensitivity">
+</div>
+</figure>
+</div>
+</div>
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 5.0%;justify-content: flex-start;">
+<p>&nbsp;</p>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-sensitivity" style="flex-basis: 47.5%;justify-content: flex-start;">
+<div id="fig-sensitivity_pb" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<figcaption class="quarto-float-caption-top quarto-subfloat-caption quarto-subfloat-fig" id="fig-sensitivity_pb-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) <span class="math inline">\(p_b\)</span>
+</figcaption>
+<div aria-describedby="fig-sensitivity_pb-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./Figures/Comparator/pb.webp" class="img-fluid figure-img" data-ref-parent="fig-sensitivity">
+</div>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-sensitivity" style="flex-basis: 47.5%;justify-content: flex-start;">
+<div id="fig-sensitivity_phi" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<figcaption class="quarto-float-caption-top quarto-subfloat-caption quarto-subfloat-fig" id="fig-sensitivity_phi-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(c) <span class="math inline">\(\phi\)</span>
+</figcaption>
+<div aria-describedby="fig-sensitivity_phi-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./Figures/Comparator/phi.webp" class="img-fluid figure-img" data-ref-parent="fig-sensitivity">
+</div>
+</figure>
+</div>
+</div>
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 5.0%;justify-content: flex-start;">
+<p>&nbsp;</p>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-sensitivity" style="flex-basis: 47.5%;justify-content: flex-start;">
+<div id="fig-sensitivity_psi" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<figcaption class="quarto-float-caption-top quarto-subfloat-caption quarto-subfloat-fig" id="fig-sensitivity_psi-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(d) <span class="math inline">\(\psi\)</span>
+</figcaption>
+<div aria-describedby="fig-sensitivity_psi-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./Figures/Comparator/psi.webp" class="img-fluid figure-img" data-ref-parent="fig-sensitivity">
+</div>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 26.2%;justify-content: flex-start;">
+<p>&nbsp;</p>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-sensitivity" style="flex-basis: 47.6%;justify-content: flex-start;">
+<div id="fig-sensitivity_children" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<figcaption class="quarto-float-caption-top quarto-subfloat-caption quarto-subfloat-fig" id="fig-sensitivity_children-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(e)
+</figcaption>
+<div aria-describedby="fig-sensitivity_children-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./Figures/Comparator/children.webp" class="img-fluid figure-img" data-ref-parent="fig-sensitivity">
+</div>
+</figure>
+</div>
+</div>
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 26.2%;justify-content: flex-start;">
+<p>&nbsp;</p>
+</div>
+</div>
+<div class="quarto-layout-row">
+<div class="fignote quarto-layout-cell" style="flex-basis: 100.0%;justify-content: flex-start;">
+<p><em>Notes: </em> This Figure represents the time at which male-preference cognatic primogeniture overtakes absolute primogeniture in terms of average state capacity for different values of the parameters. <a href="#fig-sensitivity_pg" class="quarto-xref">Figure&nbsp;3 (a)</a> modifies the cost of building state capacity, <span class="math inline">\(p_g\)</span>. <a href="#fig-sensitivity_pb" class="quarto-xref">Figure&nbsp;3 (b)</a> changes the cost an army, <span class="math inline">\(p_b\)</span> while <a href="#fig-sensitivity_phi" class="quarto-xref">Figure&nbsp;3 (c)</a> focuses on the effect soldiers have for the outcome of war, <span class="math inline">\(\phi\)</span>. <a href="#fig-sensitivity_psi" class="quarto-xref">Figure&nbsp;3 (d)</a> varies the share of output Lords appropriate, <span class="math inline">\(\psi\)</span>. Finally, <a href="#fig-sensitivity_children" class="quarto-xref">Figure&nbsp;3 (e)</a> alters Lords’ offspring.</p>
+</div>
+</div>
+</div>
+</figure>
+</div>
+<p>First, we focus on the effect of <span class="math inline">\(p_{g}\)</span>. <a href="#fig-sensitivity_pg" class="quarto-xref">Figure&nbsp;3 (a)</a> indicates that increasing <span class="math inline">\(p_{g}\)</span> tends to slow down the process. In fact, the entire evolution of state capacity is delayed because investments are now more costly. However, the slowdown is more salient for male-preference cognatic primogeniture. This hints at the importance of the marriage market in generating manors that are wealthy enough to invest in state-building. Indeed, as <span class="math inline">\(p_{g}\)</span> rises, the wealth threshold that determines investment in state capacity does so as well.</p>
+<p>Second, values for <span class="math inline">\(p_{b}\)</span> are changed and the rest held at their baseline level. <a href="#fig-sensitivity_pb" class="quarto-xref">Figure&nbsp;3 (b)</a> displays the results of this exercise. In general, no clear pattern emerges, and the spread of timing of male-preference cognatic primogeniture outperformance is tight. This is because the contribution of war toward wealth accumulation is similar under both norms. In particular, although Lords devote less resources to the army, the reduction is similar for all of them. Hence, the outcome of war is akin to that of the baseline case, as is the evolution of state capacity.</p>
+<p>We continue by analysing the effect of <span class="math inline">\(\phi\)</span>, measuring men’s effect on war outcomes. The results are shown in <a href="#fig-sensitivity_phi" class="quarto-xref">Figure&nbsp;3 (c)</a>. If <span class="math inline">\(\phi\)</span> increases, deploying marginally more soldiers contributes more than linearly to the outcome of war —as long as <span class="math inline">\(\phi&gt;1\)</span>—. Hence, for a given difference in army size, higher values of <span class="math inline">\(\phi\)</span> imply widening differences in the outcome. Therefore, as <span class="math inline">\(\phi\)</span> grows, Lords that have vanquished neighbours appropriate more land from them. This speeds up wealth accumulation and, consequently, male-preference cognatic primogeniture reaches the threshold determining investment in state capacity faster.</p>
+<p>The effect <span class="math inline">\(\psi\)</span> has on the reversal of outperformance between absolute primogeniture and male-preference cognatic primogeniture is negative, as <a href="#fig-sensitivity_psi" class="quarto-xref">Figure&nbsp;3 (d)</a> reveals. The overall influence of <span class="math inline">\(\psi\)</span> is twofold. On the one hand, a higher value means that Lords appropriate a larger share of output and rely less on taxation, which negatively impacts state-building. On the other hand, Lords are wealthier because they receive more output. The reversal clearly occurs later as <span class="math inline">\(\psi\)</span> increases. Taken together, the reduced incentive to invest in state capacity dominates the wealth effect. In other words, the reduction in the marginal return on state capacity means that only wealthy Lords invest, and Lords are in general wealthier under absolute primogeniture.</p>
+<p>Finally, we analyse the effect of changing Lords’ progeny, <span class="math inline">\(\Phi\)</span>, in <a href="#fig-sensitivity_children" class="quarto-xref">Figure&nbsp;3 (e)</a>. As noted previously, this has no effect under absolute primogeniture, as the heir is always the first-born and hence the discount rate <span class="math inline">\(\gamma^{A}\)</span> remains constant at 0.5. However, <span class="math inline">\(\gamma^{M} = 1-0.5^{\Phi}\)</span> and its exact value increases with Lords’ offspring, directly boosting state capacity. Nonetheless, a higher value of <span class="math inline">\(\Phi\)</span> also reduces the probability that there will be an heiress under male-preference cognatic primogeniture —it equals <span class="math inline">\(0.5^\Phi\)</span>—. As a consequence, the process of land accumulation through marriages is severely hindered. Simulations give mixed results. The direct effect is stronger at low levels of <span class="math inline">\(\Phi\)</span>, when <span class="math inline">\(\gamma^{M}\)</span> rises more rapidly, as illustrated by the initial drop shown on the graph. However, despite a higher direct incentive, simulations indicate that the more offspring Lords have, the longer it takes male-preference cognatic primogeniture to outperform absolute primogeniture.</p>
+</section>
+<section id="sec-conclusion" class="level1" data-number="5">
+<h1 data-number="5"><span class="header-section-number">5</span> Conclusion</h1>
+<p>This paper addresses the evolution of state capacity at its early stages, focusing on the European medieval period. It shows that gender equality regarding access to inheritance affects the evolution of state capacity among nascent states during that time. Departing from the literature, it introduces inheritance rules and inter-state marriages in a simple theoretical model of state-building. The paper argues that the degree of gender-egalitarianism embedded in inheritance rules affects the development of state capacity. Two mechanisms are at play. First, the surname-carrying gender —typically male— ensures dynastic continuity. Institutions that favour male inheritance incentivise investments in state capacity because the nobility cares about dynastic continuity. Second, there is an indirect effect of more land-merging marriages under gender-egalitarian rules, which boosts income and encourages larger investments in state capacity. The role of dynastic continuity is often highlighted in the literature, but the second mechanism has been neglected. However, our analysis concerns only the historical evolution of state capacity and does not shed light on how modern states may build it.</p>
+<p>Our results revise the importance of dynastic continuity, indicating that time considerations are relevant as well. In particular, gender-egalitarian rules —offering a lower probability of dynastic continuity— deliver higher levels of state capacity in the short run. However, this lead is only temporary: land-merging marriages take place under gender-discriminating rules, only the pace is slower. Since the number of possible marriages is finite, gender-biased rules catch up, landholdings become of similar size and the direct effect dominates. In addition to land, marriages can also merge wealth and political power, leading to a broader interpretation of the effects of inheritance rules, not confined to territorial-based states. Finally, in the light of the evidence relating state capacity and development, our results indicate that gender equality in inheritance rules indirectly affects the latter through the process of state-building.</p>
+<p>The paper provides a rationale for the pervasive use of male-favouring inheritance rules in the European medieval context that goes beyond dynastic continuity: such rules also generate higher levels of state capacity. Despite the fact that European regions historically favoured men, precluding cross-country comparisons, our work still delivers some testable implications regarding state-building. First, the model indicates that regions where more marriages occurred were likely to develop state capacity more. Second, nobles who were fortunate enough to have a clear male, dynasty-continuing succession were likely to invest more resources in advancing the state. Finally, the importance of inter-state marriages was probably greater for small, high-capacity states not pursuing territorial expansion. These outcomes can be empirically tested.</p>
+</section>
+<section id="sec-history" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> Historical background</h1>
+<section id="sec-feudalism" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="sec-feudalism"><span class="header-section-number">6.1</span> Feudalism and primogeniture</h2>
+<p>According to <span class="citation" data-cites="Reynolds_1996">Reynolds (<a href="#ref-Reynolds_1996" role="doc-biblioref">1996</a>)</span>, under the feudal system first introduced by Carolingian rulers, lords were to “protect and maintain” vassals in exchange for military aid and court counselling in a society with no central government. This exchange involved transferring the control of fiefs from lords to vassals, to provide the latter with income to support their duties. Initially, this was only a lifetime arrangement, but its transmission through inheritance soon became common, and was already accepted for some domains as early as 877 in France and 1037 in Germany and Italy.</p>
+<p>The military origins of fiefdom and the financial burden vassal obligations represented explain the prevalence of primogeniture, as “continual subdivision of and parcelling out of military tenures was a source of weakness to the organisation for the defence of the kingdom” (<span class="citation" data-cites="Cecil_1895">Cecil (<a href="#ref-Cecil_1895" role="doc-biblioref">1895, 31</a>)</span>). For such reasons, William I of England and Frederick Barbarossa declared honorary fiefs carrying duties indivisible, while King Edward I of England acknowledged that “undivided [lands] are quite sufficient for the service of the state [... but once] divided [...] no one portion suffices even for its owner’s maintenance”, see <span class="citation" data-cites="Holdsworth_1902">Willian Searle (<a href="#ref-Holdsworth_1902" role="doc-biblioref">1902, 3:174</a>)</span>.</p>
+<p>The importance of preserving estates complete is best exemplified by the practices employed. Noblemen generally had a large progeny to ensure dynastic continuity. However, some families forced up to 40% of their sons to remain single to avoid estate division, apparently jeopardising their direct genetic success, see <span class="citation" data-cites="Debris_2005">Debris (<a href="#ref-Debris_2005" role="doc-biblioref">2005, 24–26</a>)</span> and <span class="citation" data-cites="Hurwich_1998">Hurwich (<a href="#ref-Hurwich_1998" role="doc-biblioref">1998</a>)</span>. Moreover, primogeniture ensured the economic success of only one son. Blocking the immediate transmission of genetic material or selecting a sole heir may seem counterproductive arrangements for the long-term diffusion of genetic material. However, <span class="citation" data-cites="Hrdy_1993">Hrdy and Judge (<a href="#ref-Hrdy_1993" role="doc-biblioref">1993</a>)</span> indicate these may be optimal in land-based societies.<a href="#fn44" class="footnote-ref" id="fnref44" role="doc-noteref"><sup>44</sup></a> In particular, the authors argue that, if wealth determines marriage prospects, then bestowing land to a sole heir increases the probability of producing a grandson. In that sense, strategies that prevent estate division focus on the long-term survival of the dynasty: “unequal treatment of heirs was a strategy to minimize the probability of dying without surviving grandchildren”. <span class="citation" data-cites="Bergstrom_1994">Bergstrom (<a href="#ref-Bergstrom_1994" role="doc-biblioref">1994</a>)</span> reasons similarly and argues that keeping inheritances intact increased elite members’ fitness. Focusing on the aristocracy, <span class="citation" data-cites="Voland_1995">Voland and Dunbar (<a href="#ref-Voland_1995" role="doc-biblioref">1995</a>)</span> note that restraining fertility enhanced the heir’s fitness when the intertemporal preservation of status and lineage survival mattered. <span class="citation" data-cites="Chu_1991">Chu (<a href="#ref-Chu_1991" role="doc-biblioref">1991</a>)</span> offers a theoretical model focusing on this quality-quantity trade-off whereby primogeniture emerges as the optimal inheritance rule to avoid dynastic extinction.</p>
+<p>Observers relate the cost of privately providing security to fief indivisibility. In fact, “the security of a landed estate depended upon its greatness”, whereas estate division would “ruin it” by easing “incursions of its neighbours”, see <span class="citation" data-cites="Smith_1776">Smith (<a href="#ref-Smith_1776" role="doc-biblioref">2015 [1776]</a>)</span>. <span class="citation" data-cites="Blackstone_1766">Blackstone (<a href="#ref-Blackstone_1766" role="doc-biblioref">1766, 215</a>)</span> reasons similarly, adding that younger brothers were encouraged by the system to enter alternative occupations: the military, mercantile, civil and ecclesiastical positions, see also <span class="citation" data-cites="Betzig_1995">Betzig (<a href="#ref-Betzig_1995" role="doc-biblioref">1995</a>)</span> and <span class="citation" data-cites="Debris_2005">Debris (<a href="#ref-Debris_2005" role="doc-biblioref">2005, 24–25</a>)</span>. The practice of fief indivisibility, particularly through primogeniture, better protected landownership against external attacks by selecting the eldest and most able son to inherit the responsibility of organising the defence, see <span class="citation" data-cites="Brenner_1985">Brenner (<a href="#ref-Brenner_1985" role="doc-biblioref">1985</a>)</span>. However, external security came at the cost of internal instability caused by quarrels between siblings, see <span class="citation" data-cites="Bloch_1989">Bloch (<a href="#ref-Bloch_1989" role="doc-biblioref">1989, 134–35</a>)</span> and <span class="citation" data-cites="Duby_1983">Duby (<a href="#ref-Duby_1983" role="doc-biblioref">1983, 93–94</a>)</span>.</p>
+<p>Despite the general prevalence of primogeniture, estate division was a common practice during the early medieval times, and was gradually abandoned. Partition may have been an optimal system in earlier times, particularly if the cost of privately providing security and defence increased over time. In that sense, the shift in inheritance rules may reflect technological changes. Alternatively, agency problems in managing large estates could explain the adoption of inheritance division. In any case, ancient British custom dictated that all sons should share any inheritance, and in some regions women were also allowed to inherit (<span class="citation" data-cites="Cecil_1895">Cecil (<a href="#ref-Cecil_1895" role="doc-biblioref">1895, 26–27</a>)</span> and <span class="citation" data-cites="Le_Patourel_1971">Patourel (<a href="#ref-Le_Patourel_1971" role="doc-biblioref">1971</a>)</span>). The Saxons, however, represent a notable exception: typically, the eldest son was sole heir. William the Conqueror imported the Norman tradition of primogeniture, imposing it on military tenures. Other landholdings followed suit. Finally, around the 13th century in England, daughters shared an inheritance as co-heiresses if they had no living brothers, according to <span class="citation" data-cites="Brenner_1985">Brenner (<a href="#ref-Brenner_1985" role="doc-biblioref">1985</a>)</span>. The author argues that dividing the inheritance avoided conflict between the husbands of the sisters. This was the case in the Marshal and Peverel families, see <span class="citation" data-cites="Leyser_2013">Leyser (<a href="#ref-Leyser_2013" role="doc-biblioref">2013, 119</a>)</span> and <span class="citation" data-cites="Ward_1995">Ward (<a href="#ref-Ward_1995" role="doc-biblioref">1995, 101</a>)</span>. However, estate division was partly counteracted by sending younger daughters into monastic life, see <span class="citation" data-cites="Ward_1995">Ward (<a href="#ref-Ward_1995" role="doc-biblioref">1995, 21–22</a>)</span>.</p>
+<p>Transition from partitioning to intact inheritances occurred in French territories under the Capetian dynasty. <span class="citation" data-cites="Bloch_1961">Bloch (<a href="#ref-Bloch_1961" role="doc-biblioref">1961, 197</a>)</span> date the beginning of dynastic inheritance at around the year 1000 in Anjou and 1066 in Normandy, from where it reached the British Isles. Outside the common pattern, there were cases of divided inheritances: <span class="citation" data-cites="Evergates_2007">Evergates (<a href="#ref-Evergates_2007" role="doc-biblioref">2011</a>)</span> gives some examples in the province of Champagne between 1100 and 1300 and <span class="citation" data-cites="Barlow_1983">Barlow (<a href="#ref-Barlow_1983" role="doc-biblioref">1983</a>)</span> explains the process that culminated in the division of William the Conqueror’s possessions between his two eldest sons. Germanic tradition, however, varied over time. Inheritance was first established in 1037 by King Conrad II, who stated that land should descend to the son. The new ruling initially applied to Italian landholdings, but was subsequently introduced in Germany. It reached Carinthia, Swabia and Holland by the 12th century, unifying inheritance rules throughout the Empire. However, during the 13th century German princes embraced partitioning to exercise their power in opposition to the emperor. Primogeniture was restored as the inheritance rule after the Thirty Years War.</p>
+</section>
+<section id="womens-access-to-inheritance" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="womens-access-to-inheritance"><span class="header-section-number">6.2</span> Women’s access to inheritance</h2>
+<p>A second aspect related to inheritance rules concerns the treatment of women. According to <span class="citation" data-cites="Herlihy_1962">Herlihy (<a href="#ref-Herlihy_1962" role="doc-biblioref">1962</a>)</span>, barriers to female inheritance of land were first introduced by the Salic Law. This law completely banned women from inheriting land and brought about arguments and difficulties in identifying the proper heir. Barring women was aligned with the Germanic tribes’ customs, see <span class="citation" data-cites="Klapisch_1994">Klapisch-Zuber et al. (<a href="#ref-Klapisch_1994" role="doc-biblioref">1994, 171</a>)</span>. King Chilperic relaxed the requirement and allowed women to inherit in the same way as men if all the surviving offspring were daughters. Other codes of law mutated as well, partly allowing women to inherit. For instance, Visigothic laws equally divided inheritances among all children in the case of intestate succession (<span class="citation" data-cites="Klapisch_1994">Klapisch-Zuber et al. (<a href="#ref-Klapisch_1994" role="doc-biblioref">1994, 177</a>)</span>). However, under several German codes, male preference was observed: Norman (<span class="citation" data-cites="Le_Patourel_1971">Patourel (<a href="#ref-Le_Patourel_1971" role="doc-biblioref">1971</a>)</span>, <span class="citation" data-cites="Jewell_1996">Jewell (<a href="#ref-Jewell_1996" role="doc-biblioref">1996</a>)</span>), Chamavian, Thuringian, Saxon and Lombard (<span class="citation" data-cites="Nelson_2013">Nelson and Rio (<a href="#ref-Nelson_2013" role="doc-biblioref">2013</a>)</span> and <span class="citation" data-cites="Klapisch_1994">Klapisch-Zuber et al. (<a href="#ref-Klapisch_1994" role="doc-biblioref">1994, 177</a>)</span>) and Visigothic in Catalonia (<span class="citation" data-cites="Ros_2012">Ros (<a href="#ref-Ros_2012" role="doc-biblioref">2012</a>)</span> and <span class="citation" data-cites="Piniella_1986">Piniella del Valle (<a href="#ref-Piniella_1986" role="doc-biblioref">1986</a>)</span>).</p>
+<p>In general, scholars advance the importance of defence to explain the rise of primogeniture and the exclusion of women. <span class="citation" data-cites="Bloch_1961">Bloch (<a href="#ref-Bloch_1961" role="doc-biblioref">1961, 200</a>)</span> relate the ubiquitous male preference in inheritance rules to military duties and <span class="citation" data-cites="Brenner_1985">Brenner (<a href="#ref-Brenner_1985" role="doc-biblioref">1985</a>)</span> reasons similarly. In fact, the core of the feudal system consisted in the exchange of means of maintenance for military aid, where men had a comparative advantage. However, inheritance rules usually did not completely exclude women from succession. Whenever a daughter inherited a landed estate, marriage customs took care of the seeming contradiction of a woman in charge of armies. Husbands took over the responsibility attached to the fiefdom, including wealth management, see <span class="citation" data-cites="Drell_2013">Drell (<a href="#ref-Drell_2013" role="doc-biblioref">2013</a>)</span>. However, decision-making reverted to husbands as well, giving an impetus and incentive to younger sons to search for heiresses to marry and thus become part of the landed elite. In that sense, <span class="citation" data-cites="Holt_1985">Holt (<a href="#ref-Holt_1985" role="doc-biblioref">1985</a>)</span> indicates that an heiress “brought land to husband and ultimately to children” through inheritance. Marriages between inheritors from different countries were commonly used during the middle ages to increase estate size, see <span class="citation" data-cites="Habakkuk_1950">Habakkuk (<a href="#ref-Habakkuk_1950" role="doc-biblioref">1950</a>)</span>, <span class="citation" data-cites="Clay_1968">Clay (<a href="#ref-Clay_1968" role="doc-biblioref">1968</a>)</span> and <span class="citation" data-cites="Girouard_1978">Girouard (<a href="#ref-Girouard_1978" role="doc-biblioref">1978</a>)</span>.</p>
+<p>According to <span class="citation" data-cites="Brenner_1985">Brenner (<a href="#ref-Brenner_1985" role="doc-biblioref">1985</a>)</span>, population density reduced the benefits of primogeniture as interactions between individuals became more frequent and complex. The state replaced kinship in providing protection and law enforcement. Hence, the incentive to maintain large landholdings to provide expensive services reduced. English landlords were allowed to freely distribute land —with some restrictions— in 1540, and this was further extended in 1597. Similarly, Burgundy, Orléans and Moulins eased estate division around the same time. However, advances in terms of gender equality were slower. French revolutionaries introduced gender equality in inheritance during 1791, although the law was repealed during the First Empire. Nordic countries passed laws introducing equality during the second half of the 19th century, while Italy incorporated it in 1865. Succession to the throne of England and Scotland followed male-preference cognatic primogeniture until 2013, when it was changed to absolute primogeniture. However, the peerage still follows male-preference cognatic primogeniture. Other European kingdoms followed a similar transition during the 20th century: Sweden, the Netherlands, Norway, Belgium, Denmark and Luxembourg, moving away from a male-preferential treatment into absolute primogeniture. The institution of male-preference cognatic primogeniture still survives in Monegasque and Spanish royal succession laws.</p>
+</section>
+</section>
+<section id="sec-marriage_app" class="level1" data-number="7">
+<h1 data-number="7"><span class="header-section-number">7</span> The Marriage Market</h1>
+<p>On the marriage market, potential spouses sort candidates according to their wealth. Formally, let <span class="math inline">\(\mathcal{M}_{t}\subset\mathcal{L}_{t}\)</span> be the set of manors that have a male heir and <span class="math inline">\(\mathcal{F}_{t}\subset\mathcal{L}_{t}\)</span> be the set of manors that have a female heiress before marriages are arranged. Let <span class="math inline">\(\Psi\left(\text{·}\right)\)</span> measure the relevant variable that determines marriages —for instance, wealth—, <span class="math inline">\(D\left(i,k\right)\)</span> measure the distance between two potential spouses and let <span class="math inline">\(d_{t}&gt;0\)</span> be the threshold value during period <span class="math inline">\(t\)</span>. Finally, let <span class="math inline">\(\mu_{t}^{i,k}=1\)</span> if there is a marriage between the male heir of manor <span class="math inline">\(i\in\mathcal{M}_{t}\)</span> and the female heiress of manor <span class="math inline">\(k\in\mathcal{F}_{t}\)</span>, and <span class="math inline">\(\mu_{t}^{i,k}=0\)</span> otherwise. The outcome of the marriage market is summarised in the following Proposition:</p>
+<div id="prp-Marriage_function" class="theorem proposition">
+<p><span class="theorem-title"><strong>Proposition 5</strong></span> <em>The marriage market outcome described above is given by a set of <span class="math inline">\(\mu_t^{i,k}=\{0,1\}\)</span> denoting marriages between heir <span class="math inline">\(i\)</span> and heiress <span class="math inline">\(k\)</span> such that aggregate valuations are maximised, each potential partner marries at most once or remains single and potential partners that marry are similar: <span class="math display">\[\mu_{t}^{i,k}=\arg\underset{\mu_{t}^{i,k}}{\max}\sum_{i}\sum_{k}\left(\Psi\left(i\right)+\Psi\left(k\right)\right)^{2}\mu_{t}^{i,k},\]</span> such that <span class="math inline">\(\forall i\in\mathcal{M}_{t},\,\forall k\in\mathcal{F}_{t}\)</span> <span class="math inline">\(\mu_{t}^{i,k}=\left\{ 0,1\right\} ,\,\sum_{k}\mu_{t}^{i,k}\leq1,\,\sum_{i}\mu_{t}^{i,k}\leq1,\,
+\\
+\mu_{t}^{i,k}D\left(i,k\right)\leq d_{t},\,\sum_{i}\sum_{k}\mu_{t}^{i,k}=\min\left\{ \left|\mathcal{M}_{t}\right|,\left|\mathcal{F}_{t}\right|\right\}.\)</span></em></p>
+</div>
+<p><a href="#prp-Marriage_function" class="quarto-xref">Proposition&nbsp;5</a> deserves some comments. First, the valuation for any given candidate is common to all potential partners. Equal valuation and functional super-modularity generate positive assortativeness. Constraints indicate that each potential couple is either married or not, individuals can only marry once, spouses must be close enough to marry and the total number of marriages equals the number of heirs or heiresses, whichever is smaller.</p>
+</section>
+<section id="sec-country-unification" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> Country Unification</h1>
+<p>The model and the simulations predict, in general, a decrease in the number of manors over time. This holds true for countries like the present-day United Kingdom or France, which emerged as unified entities early. However, other regions like northern Italy and Germany witnessed a later process of unification, remaining fragmented for centuries, especially compared to neighbouring regions. This Section amends the model to reconcile it with the specific patterns observed in different regions.</p>
+<p>Medieval northern Italy was formed by independent city-states ruled by local elites during the high and late middle ages. Conflicts among elites over control of a city were common and involved the use of violence, see <span class="citation" data-cites="Martines_1968">Martines (<a href="#ref-Martines_1968" role="doc-biblioref">1968</a>)</span>. According to <span class="citation" data-cites="Hughes_1975">Hughes (<a href="#ref-Hughes_1975" role="doc-biblioref">1975, 7</a>)</span>, medieval Genoa operated under “a system of long-lasting alliance within lineages and enmity between them [which] gave pattern to the seemingly pointless warfare played out on the streets of medieval Genoa and in its <em>contado</em>”. <span class="citation" data-cites="Lansing_1991">Lansing (<a href="#ref-Lansing_1991" role="doc-biblioref">2014</a>)</span> explains the case of Florence, where competition among lineages for the control of neighbourhoods was common and none achieved long-lasting supremacy. Similar conflicts arose in Venice, although according to <span class="citation" data-cites="Greif_1995">Greif (<a href="#ref-Greif_1995" role="doc-biblioref">1995</a>)</span>, Venetians managed to reduce inter-clan tension through the mechanism they devised to choose the Doge. Remarkably, the city of Siena had to call Florence to help put an end to an internal riot between the Tolomei and Salimbeni families (<span class="citation" data-cites="Bowsky_1982">Bowsky (<a href="#ref-Bowsky_1982" role="doc-biblioref">1981, 166</a>)</span>). Finally, <span class="citation" data-cites="Jones_1965">Jones (<a href="#ref-Jones_1965" role="doc-biblioref">1965</a>)</span> also considers clan structures as a crucial aspect of the Italian middle ages: a clan acted together in all activities, especially for its defence.</p>
+<p>From this evidence, we can presume that elites focused on gaining influence in their city. From the point of view of the model, we can associate a city-state with region <span class="math inline">\(\mathcal{L}\)</span>. Similarly, former manors can be represented by clans. The marriage market will show friction as well, since opposing clans’ heirs were not allowed to marry. Suppose that clans have similar initial conditions in terms of income <span class="math inline">\(Y\)</span>. According to the model, there will be minor changes in the distribution of wealth over time, as all clans will make similar war efforts. We can also expect similar marriages to be arranged within each opposing group. Thus, unification will be a lengthy process. The general model can be modified to accommodate clan rivalry on the marriage market by defining <span class="math inline">\(\mathcal{N}&gt;1\)</span> groups and assuming that marriages can only be arranged within each of these groups.</p>
+<p>The Holy Roman Empire —the closest equivalent to Germany— presents a substantially different case. It was not a single country like France or England, but consisted of several principalities, duchies, counties and Free Imperial Cities, each ruled by a prince who enjoyed a large degree of autonomy. The Emperor’s succession was also different, insofar as the Holy Roman Empire elected the Emperor from its princes, instead of relying on some form of inheritance. To be elected as Emperor, a prince would have to convince his peers, usually through promises to grant them more rights. Therefore, the Emperor himself wielded little power within the empire in terms of capacity to intervene in state affairs, even lacking an imperial tax-system.<a href="#fn45" class="footnote-ref" id="fnref45" role="doc-noteref"><sup>45</sup></a> Moreover, Holy Roman Empire princes practised partitioned inheritance, dividing the land among sons.<a href="#fn46" class="footnote-ref" id="fnref46" role="doc-noteref"><sup>46</sup></a> These characteristics can be replicated in the model by setting <span class="math inline">\(\gamma=0,\)</span> that is, certainty for a prince that his lineage will not rule in the next period. Accordingly, no investment in state-building or in the army is expected. This is partly consistent with reality: the Empire lacked an imperial tax-system and <span class="citation" data-cites="Ertman_1997">Ertman (<a href="#ref-Ertman_1997" role="doc-biblioref">1997, 237</a>)</span> indicates that only in 1450 did it begin building an administration as a response to outside pressure. <span class="math inline">\(\gamma=0\)</span> also mean no military conquests. Indeed, inheritance —the Kingdom of Burgundy— and marriage —Italy— represented the largest territorial expansion mechanisms for the Empire. Lack of military growth is consistent with the organisation of the Empire, since neither the Emperor nor princes would have benefited from it: conquered lands would have been introduced as new states.</p>
+<p>Despite the fact that the Empire as a whole only began to build a state relatively late, its princes were more willing to do so, see <span class="citation" data-cites="Evans_2012">Evans and Wilson (<a href="#ref-Evans_2012" role="doc-biblioref">2011</a>, Ch. 4)</span>. A more efficient bureaucratic apparatus increased tax revenues that could then be used to raise an army. This was especially true for Savoy and Brandenburg, which tried to expand at the expense of weak neighbours. In the end, lack of unification through marriages between state heirs was a consequence of the inheritance policy. If the number of heirs exceeds two, marriages cannot counteract the multiplication of territorial units caused by partitioned inheritances. An additional feature of inheritances in the Holy Roman Empire was that they were calculated to avoid entailing to daughters, which exacerbated the effect by over-representing men on the marriage market.</p>
+</section>
+<section id="references" class="level1 unnumbered">
+<h1 class="unnumbered">References</h1>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Aghion_2018" class="csl-entry" role="listitem">
+Aghion, Philippe, Xavier Jaravel, Torsten Persson, and Dorothée Rouzet. 2018. <span>“Education and Military Rivalry.”</span> <em>Journal of the European Economic Association</em> 17 (2): 376–412. <a href="https://doi.org/10.1093/jeea/jvy022">https://doi.org/10.1093/jeea/jvy022</a>.
+</div>
+<div id="ref-Alesina_1997" class="csl-entry" role="listitem">
+Alesina, Alberto, and Enrico Spolaore. 1997. <span>“On the Number and Size of Nations.”</span> <em>The Quarterly Journal of Economics</em> 112 (4): 1027–56. <a href="https://doi.org/10.1162/003355300555411">https://doi.org/10.1162/003355300555411</a>.
+</div>
+<div id="ref-Alesina_2006" class="csl-entry" role="listitem">
+———. 2006. <span>“Conflict, Defense Spending, and the Number of Nations.”</span> <em>European Economic Review</em> 50 (1): 91–120. <a href="https://doi.org/10.1016/j.euroecorev.2004.06.003">https://doi.org/10.1016/j.euroecorev.2004.06.003</a>.
+</div>
+<div id="ref-Arrizabalaga_2009" class="csl-entry" role="listitem">
+Arrizabalaga, Marie-Pierre. 2009. <span>“Marriage Strategies and Well-Being Among Nineteenth-Century <span>B</span>asque Propertied Families.”</span> In <em>The Transmission of Well-Being: Gendered Marriage Strategies and Inheritance Systems in <span>E</span>urope (17th-20th Centuries)</em>, edited by Margarida Durães and Antoinette Fauve-Chamoux, 53–74. Bern: Peter Lang.
+</div>
+<div id="ref-banegas2010aprovisionament" class="csl-entry" role="listitem">
+Banegas López, Ramon Agustı́. 2010. <span>“L’aprovisionament de Carn a <span>Barcelona</span> Durant Els Segles <span>XIV</span> i <span>XV</span>.”</span> <em>Butllet<span>ı́</span> de La Societat Catalana d’Estudis Hist<span>ò</span>rics</em> 1 (19): 167–77.
+</div>
+<div id="ref-Barlow_1983" class="csl-entry" role="listitem">
+Barlow, Frank. 1983. <em>William Rufus</em>. Berkeley: University of California Press.
+</div>
+<div id="ref-Bean_1973" class="csl-entry" role="listitem">
+Bean, Richard. 1973. <span>“War and the Birth of the Nation State.”</span> <em>The Journal of Economic History</em> 33 (01): 203–21. <a href="https://doi.org/10.1017/s0022050700076531">https://doi.org/10.1017/s0022050700076531</a>.
+</div>
+<div id="ref-Bergstrom_1994" class="csl-entry" role="listitem">
+Bergstrom, Ted. 1994. <span>“Primogeniture, Monogamy, and Reproductive Success in a Stratified Society.”</span> University of Michigan, Center for Research on Economic; Social Theory, Department of Economics.
+</div>
+<div id="ref-Bertocchi_2006" class="csl-entry" role="listitem">
+Bertocchi, Graziella. 2006. <span>“The Law of Primogeniture and the Transition from Landed Aristocracy to Industrial Democracy.”</span> <em>Journal of Economic Growth</em> 11 (1): 43–70. <a href="https://doi.org/10.1007/s10887-006-7405-4">https://doi.org/10.1007/s10887-006-7405-4</a>.
+</div>
+<div id="ref-Besley_2011" class="csl-entry" role="listitem">
+Besley, Timothy. 2011. <em>Pillars of Prosperity : The Political Economics of Development Clusters</em>. Princeton: Princeton University Press.
+</div>
+<div id="ref-Besley_2013" class="csl-entry" role="listitem">
+Besley, Timothy, Ethan Ilzetzki, and Torsten Persson. 2013. <span>“Weak States and Steady States: The Dynamics of Fiscal Capacity.”</span> <em>American Economic Journal: Macroeconomics</em> 5 (4): 205–35. <a href="https://doi.org/10.1257/mac.5.4.205">https://doi.org/10.1257/mac.5.4.205</a>.
+</div>
+<div id="ref-Besley_2008" class="csl-entry" role="listitem">
+Besley, Timothy, and Torsten Persson. 2008. <span>“Wars and State Capacity.”</span> <em>Journal of the European Economic Association</em> 6 (2-3): 522–30. <a href="https://doi.org/10.1162/jeea.2008.6.2-3.522">https://doi.org/10.1162/jeea.2008.6.2-3.522</a>.
+</div>
+<div id="ref-Persson_2009" class="csl-entry" role="listitem">
+———. 2009. <span>“The Origins of State Capacity: Property Rights, Taxation, and Politics.”</span> <em>American Economic Review</em> 99 (4): 1218–44. <a href="https://doi.org/10.1257/aer.99.4.1218">https://doi.org/10.1257/aer.99.4.1218</a>.
+</div>
+<div id="ref-Betzig_1995" class="csl-entry" role="listitem">
+Betzig, Laura. 1995. <span>“Medieval Monogamy.”</span> <em>Journal of Family History</em> 20 (2): 181–216. <a href="https://doi.org/10.1177/036319909602000204">https://doi.org/10.1177/036319909602000204</a>.
+</div>
+<div id="ref-Blackstone_1766" class="csl-entry" role="listitem">
+Blackstone, William. 1766. <em>Commentaries on the Laws of England</em>. Commentaries on the Laws of England, v. 2. Oxford: Clarendon Press.
+</div>
+<div id="ref-Bloch_1961" class="csl-entry" role="listitem">
+Bloch, Marc. 1961. <em>Feudal Society</em>. Feudal Society. Chicago: University of Chicago Press.
+</div>
+<div id="ref-Bloch_1989" class="csl-entry" role="listitem">
+———. 1989. <em>Feudal Society: Vol 1: The Growth and Ties of Dependence</em>. 2nd ed. Abingdon: Routledge.
+</div>
+<div id="ref-Bockstette_2002" class="csl-entry" role="listitem">
+Bockstette, Valerie, Areendam Chanda, and Louis Putterman. 2002. <span>“States and Markets: The Advantage of an Early Start.”</span> <em>Journal of Economic Growth</em> 7 (4): 347–69. <a href="https://doi.org/10.1023/a:1020827801137">https://doi.org/10.1023/a:1020827801137</a>.
+</div>
+<div id="ref-Bonney_1999" class="csl-entry" role="listitem">
+Bonney, Richard. 1999. <em>The Rise of the Fiscal State in Europe c.1200<span></span>1815</em>. Oxford University Press. <a href="https://doi.org/10.1093/acprof:oso/9780198204022.001.0001">https://doi.org/10.1093/acprof:oso/9780198204022.001.0001</a>.
+</div>
+<div id="ref-Borcan_2017" class="csl-entry" role="listitem">
+Borcan, Oana, Ola Olsson, and Louis Putterman. 2017. <span>“State History and Economic Development: Evidence from Six Millennia.”</span> <em>Journal of Economic Growth</em> 23 (1): 1–40. <a href="https://doi.org/10.1007/s10887-017-9152-0">https://doi.org/10.1007/s10887-017-9152-0</a>.
+</div>
+<div id="ref-Bouchard_1981" class="csl-entry" role="listitem">
+Bouchard, Constance B. 1981. <span>“Consanguinity and Noble Marriages in the Tenth and Eleventh Centuries.”</span> <em>Speculum</em> 56 (2): 268–87. <a href="https://doi.org/10.2307/2846935">https://doi.org/10.2307/2846935</a>.
+</div>
+<div id="ref-Bowsky_1982" class="csl-entry" role="listitem">
+Bowsky, William. 1981. <em>A Medieval Italian Commune : Siena Under the Nine, 1287-1355</em>. Berkeley: University of California Press.
+</div>
+<div id="ref-Brenner_1985" class="csl-entry" role="listitem">
+Brenner, Gabrielle A. 1985. <span>“Why Did Inheritance Laws Change?”</span> <em>International Review of Law and Economics</em> 5 (1): 91–106. <a href="https://doi.org/10.1016/0144-8188(85)90020-1">https://doi.org/10.1016/0144-8188(85)90020-1</a>.
+</div>
+<div id="ref-Cecil_1895" class="csl-entry" role="listitem">
+Cecil, Evelyn. 1895. <em>Primogeniture: A Short History of Its Development in Various Countries and Its Practical Effects</em>. London: J. Murray.
+</div>
+<div id="ref-Chanda_2007" class="csl-entry" role="listitem">
+Chanda, Areendam, and Louis Putterman. 2007. <span>“Early Starts, Reversals and Catch-up in the Process of Economic Development.”</span> <em>Scandinavian Journal of Economics</em> 109 (2): 387–413. <a href="https://doi.org/10.1111/j.1467-9442.2007.00497.x">https://doi.org/10.1111/j.1467-9442.2007.00497.x</a>.
+</div>
+<div id="ref-Chu_1991" class="csl-entry" role="listitem">
+Chu, C. Y. Cyrus. 1991. <span>“Primogeniture.”</span> <em>Journal of Political Economy</em> 99 (1): 78–99. <a href="https://doi.org/10.1086/261741">https://doi.org/10.1086/261741</a>.
+</div>
+<div id="ref-Clay_1968" class="csl-entry" role="listitem">
+Clay, Christopher. 1968. <span>“Marriage, Inheritance, and the Rise of Large Estates in <span>E</span>ngland, 1660<span></span>1815.”</span> <em>The Economic History Review</em> 21 (3): 503–18. <a href="https://doi.org/10.1111/j.1468-0289.1968.tb01672.x">https://doi.org/10.1111/j.1468-0289.1968.tb01672.x</a>.
+</div>
+<div id="ref-Cokayne_1887" class="csl-entry" role="listitem">
+Cokayne, George E. 1887. <em>Complete Peerage of England, Scotland, Ireland, Great Britain and the United Kingdom, Extant, Extinct, or Dormant</em>. Complete Peerage of England, Scotland, Ireland, Great Britain and the United Kingdom, Extant, Extinct, or Dormant, v. 1. London: G. Bell &amp; sons.
+</div>
+<div id="ref-de_la_Croix_2008" class="csl-entry" role="listitem">
+Croix, David de la, and Davide Dottori. 2008. <span>“Easter <span>I</span>sland’s Collapse: A Tale of a Population Race.”</span> <em>Journal of Economic Growth</em> 13 (1): 27–55. <a href="https://doi.org/10.1007/s10887-007-9025-z">https://doi.org/10.1007/s10887-007-9025-z</a>.
+</div>
+<div id="ref-Debris_2005" class="csl-entry" role="listitem">
+Debris, Cyrille. 2005. <em><span>“Tu Felix <span>A</span>ustria, Nube”</span> : La Dynastie de <span>H</span>absbourg Et Sa Politique Matrimoniale à La Fin Du <span>M</span>oyen <span>A</span>ge (<span>XIIIe-XVIe</span> Siècles)</em>. Turnhout: Brepols Publishers. <a href="https://doi.org/10.1484/m.hifa-eb.4.00048">https://doi.org/10.1484/m.hifa-eb.4.00048</a>.
+</div>
+<div id="ref-Dincecco_2014" class="csl-entry" role="listitem">
+Dincecco, Mark, and Gabriel Katz. 2014. <span>“State Capacity and Long-Run Economic Performance.”</span> <em>The Economic Journal</em> 126 (590): 189–218. <a href="https://doi.org/10.1111/ecoj.12161">https://doi.org/10.1111/ecoj.12161</a>.
+</div>
+<div id="ref-Drell_2013" class="csl-entry" role="listitem">
+Drell, Joanna. 2013. <span>“Aristocratic Economies: Women and the Family.”</span> In <em>The <span>O</span>xford Handbook of Women and Gender in Medieval <span>E</span>urope</em>, edited by Judith Bennett and Ruth Karras. Oxford: Oxford University Press. <a href="https://doi.org/10.1093/oxfordhb/9780199582174.013.001">https://doi.org/10.1093/oxfordhb/9780199582174.013.001</a>.
+</div>
+<div id="ref-Duby_1962" class="csl-entry" role="listitem">
+Duby, Georges. 1962. <em>L’<span>é</span>conomie Rurale Et La Vie Des Campagnes Dans l’<span>O</span>ccident m<span>é</span>di<span>é</span>val</em>. Champ Historique. Paris: Aubier.
+</div>
+<div id="ref-Duby_1983" class="csl-entry" role="listitem">
+———. 1983. <em>The Knight, the Lady and the Priest: The Making of Modern Marriage in Medieval <span>F</span>rance</em>. Chicago: University of Chicago Press.
+</div>
+<div id="ref-Dunbar_2016" class="csl-entry" role="listitem">
+Dunbar, Lyle. 2016. <em>House of <span>D</span>unbar: Part i - <span>R</span>ise of the <span>E</span>arls of <span>D</span>unbar (the Rise and Fall of a <span>S</span>cottish Noble Family Book 1)</em>. Pennsauken: BookBaby.
+</div>
+<div id="ref-Dyer_1989" class="csl-entry" role="listitem">
+Dyer, Christopher. 1989. <em>Standards of Living in the Later Middle Ages: Social Change in <span>E</span>ngland c.1200-1520</em>. Cambridge: Cambridge University Press.
+</div>
+<div id="ref-Ertman_1997" class="csl-entry" role="listitem">
+Ertman, Thomas. 1997. <em>Birth of the <span>L</span>eviathan: Building States and Regimes in Medieval and Early Modern <span>E</span>urope</em>. Cambridge: Cambridge University Press.
+</div>
+<div id="ref-Evans_2012" class="csl-entry" role="listitem">
+Evans, Robert, and Peter Wilson. 2011. <em>The <span>H</span>oly <span>R</span>oman <span>E</span>mpire, 1495-1806</em>. Vol. 1. Studies of the <span>G</span>erman Historical Institute. Oxford: <span>OUP/German Historical Institute</span>.
+</div>
+<div id="ref-Evergates_2007" class="csl-entry" role="listitem">
+Evergates, Theodore. 2011. <em>The Aristocracy in the County of <span>C</span>hampagne, 1100-1300</em>. The Middle Ages Series. Philadelphia: University of Pennsylvania Press.
+</div>
+<div id="ref-Fukuyama_2012" class="csl-entry" role="listitem">
+Fukuyama, Francis. 2012. <em>The Origins of Political Order: From Prehuman Times to the French Revolution</em>. New <span>Y</span>ork: Farrar, Straus; Giroux.
+</div>
+<div id="ref-Gale_1962" class="csl-entry" role="listitem">
+Gale, David, and Lloyd S. Shapley. 1962. <span>“College Admissions and the Stability of Marriage.”</span> <em>The American Mathematical Monthly</em> 69 (1): 9–15. <a href="https://doi.org/10.1080/00029890.1962.11989827">https://doi.org/10.1080/00029890.1962.11989827</a>.
+</div>
+<div id="ref-Gennaioli_2015" class="csl-entry" role="listitem">
+Gennaioli, Nicola, and Hans-Joachim Voth. 2015. <span>“State Capacity and Military Conflict.”</span> <em>The Review of Economic Studies</em> 82 (4): 1409–48. <a href="https://doi.org/10.1093/restud/rdv019">https://doi.org/10.1093/restud/rdv019</a>.
+</div>
+<div id="ref-Girouard_1978" class="csl-entry" role="listitem">
+Girouard, Mark. 1978. <em>Life in the English Country House: A Social and Architectural History</em>. New <span>H</span>aven: Yale University Press.
+</div>
+<div id="ref-Gobbi_2018" class="csl-entry" role="listitem">
+Gobbi, Paula, and Marc Goñi. 2018. <span>“Childless Aristocrats. <span>I</span>nheritance and the Extensive Margin of Fertility.”</span> Working {Paper} 12744. Centre for Economic Policy Research.
+</div>
+<div id="ref-Greif_1995" class="csl-entry" role="listitem">
+Greif, Avner. 1995. <span>“Political Organizations, Social Structure, and Institutional Success: Reflections from <span>G</span>enoa and <span>V</span>enice During the Commercial Revolution.”</span> <em>Journal of Institutional and Theoretical Economics (JITE)/Zeitschrift f<span>ü</span>r Die Gesamte Staatswissenschaft</em>, 734–40.
+</div>
+<div id="ref-Habakkuk_1950" class="csl-entry" role="listitem">
+Habakkuk, Hrothgar J. 1950. <span>“Marriage Settlements in the Eighteenth Century.”</span> <em>Transactions of the Royal Historical Society</em> 32: 15. <a href="https://doi.org/10.2307/3678475">https://doi.org/10.2307/3678475</a>.
+</div>
+<div id="ref-Hansen_2000" class="csl-entry" role="listitem">
+Hansen, Mogens Herman. 2000. <em>A Comparative Study of Thirty City-State Cultures: An Investigation Conducted by the <span>C</span>openhagen <span>P</span>olis <span>C</span>entre</em>. Vol. 21. Historisk-Filosofiske Skrifter. Copenhagen: Kongelige Danske Videnskabernes Selskab.
+</div>
+<div id="ref-Herlihy_1962" class="csl-entry" role="listitem">
+Herlihy, David. 1962. <span>“Land, Family and Women in Continental <span>E</span>urope, 701-1200.”</span> <em>Traditio</em> 18: 89–120. <a href="https://doi.org/10.1017/s0362152900018134">https://doi.org/10.1017/s0362152900018134</a>.
+</div>
+<div id="ref-Hicks_1998" class="csl-entry" role="listitem">
+Hicks, Michael. 1998. <span>“Cement or Solvent? <span>K</span>inship and Politics in Late Medieval <span>E</span>ngland: The Case of the <span>N</span>evilles.”</span> <em>History</em> 83 (269): 31–46. <a href="https://doi.org/10.1111/1468-229x.00061">https://doi.org/10.1111/1468-229x.00061</a>.
+</div>
+<div id="ref-Holt_1985" class="csl-entry" role="listitem">
+Holt, James C. 1985. <span>“Presidential <span>A</span>ddress: Feudal Society and the Family in Early Medieval <span>E</span>ngland: <span>IV</span>. <span>T</span>he Heiress and the Alien.”</span> <em>Transactions of the Royal Historical Society</em> 35: 1. <a href="https://doi.org/10.2307/3679174">https://doi.org/10.2307/3679174</a>.
+</div>
+<div id="ref-Hrdy_1993" class="csl-entry" role="listitem">
+Hrdy, Sarah Blaffer, and Debra S. Judge. 1993. <span>“Darwin and the Puzzle of Primogeniture.”</span> <em>Human Nature</em> 4 (1): 1–45. <a href="https://doi.org/10.1007/bf02734088">https://doi.org/10.1007/bf02734088</a>.
+</div>
+<div id="ref-Hughes_1975" class="csl-entry" role="listitem">
+Hughes, Diane Owen. 1975. <span>“Urban Growth and Family Structure in Medieval <span>G</span>enoa.”</span> <em>Past and Present</em> 66 (1): 3–28. <a href="https://doi.org/10.1093/past/66.1.3">https://doi.org/10.1093/past/66.1.3</a>.
+</div>
+<div id="ref-Hurwich_1998" class="csl-entry" role="listitem">
+Hurwich, Judith J. 1998. <span>“Marriage Strategy Among the <span>G</span>erman Nobility, 1400<span></span>1699.”</span> <em>Journal of Interdisciplinary History</em> 29 (2): 169–95. <a href="https://doi.org/10.1162/002219598551661">https://doi.org/10.1162/002219598551661</a>.
+</div>
+<div id="ref-Ives_1983" class="csl-entry" role="listitem">
+Ives, Eric W. 1983. <em>The Common Lawyers of Pre-<span>R</span>eformation <span>E</span>ngland, <span>T</span>homas <span>K</span>ebell: A Case Study</em>. Cambridge: Cambridge University Press.
+</div>
+<div id="ref-Jewell_1996" class="csl-entry" role="listitem">
+Jewell, Helen. 1996. <em>Women in Medieval England</em>. Manchester, <span>N</span>ew <span>Y</span>ork: Manchester University Press.
+</div>
+<div id="ref-Johnson_2014" class="csl-entry" role="listitem">
+Johnson, Noel D., and Mark Koyama. 2014. <span>“Tax Farming and the Origins of State Capacity in <span>E</span>ngland and <span>F</span>rance.”</span> <em>Explorations in Economic History</em> 51 (January): 1–20. <a href="https://doi.org/10.1016/j.eeh.2013.07.005">https://doi.org/10.1016/j.eeh.2013.07.005</a>.
+</div>
+<div id="ref-Johnson_2017" class="csl-entry" role="listitem">
+———. 2017. <span>“States and Economic Growth: Capacity and Constraints.”</span> <em>Explorations in Economic History</em> 64 (April): 1–20. <a href="https://doi.org/10.1016/j.eeh.2016.11.002">https://doi.org/10.1016/j.eeh.2016.11.002</a>.
+</div>
+<div id="ref-Jones_1965" class="csl-entry" role="listitem">
+Jones, Philip J. 1965. <span>“Communes and Despots: The City State in Late-Medieval <span>I</span>taly.”</span> <em>Transactions of the Royal Historical Society</em> 15: 71. <a href="https://doi.org/10.2307/3678817">https://doi.org/10.2307/3678817</a>.
+</div>
+<div id="ref-Klapisch_1994" class="csl-entry" role="listitem">
+Klapisch-Zuber, Christiane, Georges Duby, Pauline S. Pantel, and Michelle Perrot. 1994. <em>A History of Women in the <span>W</span>est: Silences of the Middle Ages. 2</em>. A History of Women in the West. Cambridge, Massachusetts: Belknap Press of Harvard University Press.
+</div>
+<div id="ref-Kokkonen_2014" class="csl-entry" role="listitem">
+Kokkonen, Andrej, and Anders Sundell. 2014. <span>“Delivering Stability<span></span>primogeniture and Autocratic Survival in <span>E</span>uropean Monarchies 1000<span></span>1800.”</span> <em>American Political Science Review</em> 108 (2): 438–53. <a href="https://doi.org/10.1017/s000305541400015x">https://doi.org/10.1017/s000305541400015x</a>.
+</div>
+<div id="ref-Gigliola_2018" class="csl-entry" role="listitem">
+Kotlyar, Ilya. 2018. <span>“The Evolution of the <span>S</span>cots Law and Practice of Succession: 1300-2000.”</span> In <em>Succession Law, Practice and Society in Europe Across the Centuries</em>, edited by Maria Gigliola di Renzo Villata. <span>N</span>ew <span>Y</span>ork: Springer International Publishing. <a href="https://doi.org/10.1007/978-3-319-76258-6">https://doi.org/10.1007/978-3-319-76258-6</a>.
+</div>
+<div id="ref-Lagerlof_2003" class="csl-entry" role="listitem">
+Lagerlöf, Nils-Petter. 2003. <span>“Gender Equality and Long-Run Growth.”</span> <em>Journal of Economic Growth</em> 8 (4): 403–26. <a href="https://doi.org/10.1023/a:1026256917489">https://doi.org/10.1023/a:1026256917489</a>.
+</div>
+<div id="ref-Lagerlof_2010" class="csl-entry" role="listitem">
+———. 2010. <span>“From <span>M</span>althusian War to <span>S</span>olovian Peace.”</span> <em>Review of Economic Dynamics</em> 13 (3): 616–36. <a href="https://doi.org/10.1016/j.red.2009.10.008">https://doi.org/10.1016/j.red.2009.10.008</a>.
+</div>
+<div id="ref-Lagerlof_2014" class="csl-entry" role="listitem">
+———. 2014. <span>“Population, Technology and Fragmentation: The <span>E</span>uropean Miracle Revisited.”</span> <em>Journal of Development Economics</em> 108 (May): 87–105. <a href="https://doi.org/10.1016/j.jdeveco.2014.01.007">https://doi.org/10.1016/j.jdeveco.2014.01.007</a>.
+</div>
+<div id="ref-Lansing_1991" class="csl-entry" role="listitem">
+Lansing, Carol. 2014. <em>The Florentine Magnates: Lineage and Faction in a Medieval Commune</em>. Princeton Legacy Library. Princeton: Princeton University Press.
+</div>
+<div id="ref-Leyser_2013" class="csl-entry" role="listitem">
+Leyser, Henrietta. 2013. <em>Medieval Women: Social History of Women in England 450-1500</em>. London: Orion.
+</div>
+<div id="ref-Martines_1968" class="csl-entry" role="listitem">
+Martines, Lauro. 1968. <span>“Political Conflict in the <span>I</span>talian City States.”</span> <em>Government and Opposition</em> 3 (01): 69–91. <a href="https://doi.org/10.1111/j.1477-7053.1968.tb01286.x">https://doi.org/10.1111/j.1477-7053.1968.tb01286.x</a>.
+</div>
+<div id="ref-McAdam_2001" class="csl-entry" role="listitem">
+McAdam, Douga, Sidney Tarrow, and Charles Tilly. 2001. <em>Dynamics of Contention</em>. Cambridge Studies in Contentious Politics. Cambridge: Cambridge University Press.
+</div>
+<div id="ref-McLaughlin_1990" class="csl-entry" role="listitem">
+McLaughlin, Megan. 1990. <span>“The Woman Warrior: Gender, Warfare and Society in Medieval <span>E</span>urope.”</span> <em>Women’s Studies</em> 17 (3-4): 193–209. <a href="https://doi.org/10.1080/00497878.1990.9978805">https://doi.org/10.1080/00497878.1990.9978805</a>.
+</div>
+<div id="ref-McNamara_1973" class="csl-entry" role="listitem">
+McNamara, Jo Ann, and Suzanne Wemple. 1973. <span>“The Power of Women Through the Family in Medieval <span>E</span>urope: 500-1100.”</span> <em>Feminist Studies</em> 1: 126–41. <a href="https://doi.org/10.2307/1566483">https://doi.org/10.2307/1566483</a>.
+</div>
+<div id="ref-Nelson_2013" class="csl-entry" role="listitem">
+Nelson, Janet L., and Alice Rio. 2013. <span>“Women and Laws in Early Medieval Europe.”</span> In <em>The <span>O</span>xford Handbook of Women and Gender in Medieval <span>E</span>urope</em>, edited by Judith Bennett and Ruth Karras. Oxford: Oxford University Press. <a href="https://doi.org/10.1093/oxfordhb/9780199582174.013.035">https://doi.org/10.1093/oxfordhb/9780199582174.013.035</a>.
+</div>
+<div id="ref-Norman_1979" class="csl-entry" role="listitem">
+Norman, Alexander V. B., and Don Pottinger. 1979. <em>English Weapons &amp; Warfare, 449-1660</em>. New <span>Y</span>ork: Prentice-Hall.
+</div>
+<div id="ref-Ottervik_2013" class="csl-entry" role="listitem">
+Ottervik, Mattias. 2013. <span>“<span>Conceptualizing</span> <span class="nocase">and</span> <span>Measuring</span> <span>State</span> <span>Capacity</span>.”</span> 20. <em>QoG Working Paper Series</em>. Vol. 2013. The Quality of Government Institute.
+</div>
+<div id="ref-Le_Patourel_1971" class="csl-entry" role="listitem">
+Patourel, John Le. 1971. <span>“The <span>N</span>orman Succession, 996<span></span>11351.”</span> <em>The English Historical Review</em> <span>LXXXVI</span> (<span>CCCXXXIX</span>): 225–50. <a href="https://doi.org/10.1093/ehr/lxxxvi.cccxxxix.225">https://doi.org/10.1093/ehr/lxxxvi.cccxxxix.225</a>.
+</div>
+<div id="ref-Payling_1992" class="csl-entry" role="listitem">
+Payling, Simon J. 1992. <span>“Arbitration, Perpetual Entails and Collateral Warranties in Late-Medieval <span>E</span>ngland: A Case Study.”</span> <em>The Journal of Legal History</em> 13 (1): 32–62. <a href="https://doi.org/10.1080/01440369208531048">https://doi.org/10.1080/01440369208531048</a>.
+</div>
+<div id="ref-Payling_2001" class="csl-entry" role="listitem">
+———. 2001. <span>“The Economics of Marriage in Late Medieval <span>E</span>ngland: The Marriage of Heiresses.”</span> <em>The Economic History Review</em> 54 (3): 413–29. <a href="https://doi.org/10.1111/1468-0289.00197">https://doi.org/10.1111/1468-0289.00197</a>.
+</div>
+<div id="ref-Persson_2004" class="csl-entry" role="listitem">
+Persson, Torsten, and Guido Tabellini. 2004. <span>“Constitutional Rules and Fiscal Policy Outcomes.”</span> <em>American Economic Review</em> 94 (1): 25–45. <a href="https://doi.org/10.1257/000282804322970689">https://doi.org/10.1257/000282804322970689</a>.
+</div>
+<div id="ref-Piniella_1986" class="csl-entry" role="listitem">
+Piniella del Valle, María. 1986. <em>Los Pirineos: Estudios de Antropología Social e Historia: Actas Del Coloquio Celebrado En La Casa de Velázquez, Los Días 22 y 23 de Octubre 1981 (French Edition)</em>. Madrid: Universidad Complutense.
+</div>
+<div id="ref-Reynolds_1996" class="csl-entry" role="listitem">
+Reynolds, Susan. 1996. <em>Fiefs and Vassals: The Medieval Evidence Reinterpreted</em>. oxford: Clarendon Press.
+</div>
+<div id="ref-Rodrigues_2007" class="csl-entry" role="listitem">
+Rodrigues, Ana Maria SA. 2007. <span>“For the Honor of Her Lineage and Body: The Dowers and Dowries of Some Late Medieval Queens of <span>P</span>ortugal.”</span> <em>E-Journal of Portuguese History</em> 5 (1): 1.
+</div>
+<div id="ref-Ros_2012" class="csl-entry" role="listitem">
+Ros, Rosa. 2012. <span>“The Decline of Indivisible Inheritance in <span>C</span>atalonia.”</span> <em>Journal of Family History</em> 37 (1): 68–84. <a href="https://doi.org/10.1177/0363199011428048">https://doi.org/10.1177/0363199011428048</a>.
+</div>
+<div id="ref-Russell_1958" class="csl-entry" role="listitem">
+Russell, J. C. 1958. <span>“Late Ancient and Medieval Population.”</span> <em>Transactions of the American Philosophical Society</em> 48 (3): 1. <a href="https://doi.org/10.2307/1005708">https://doi.org/10.2307/1005708</a>.
+</div>
+<div id="ref-Sanchez_2003" class="csl-entry" role="listitem">
+Sánchez Martı́nez, Manuel et al. 2003. <span>“<span>‘<span>D</span>efensar Lo Principat de <span>C</span>athalunya’</span> En La Segunda Mitad Del Siglo <span>XIV</span>: De La Prestaci<span>ó</span>n Militar Al Impuesto.”</span> <em>Estudios Sobre Fiscalidad y Finanzas Reales y Urbanas</em>.
+</div>
+<div id="ref-Skaperdas_1996" class="csl-entry" role="listitem">
+Skaperdas, Stergios. 1996. <span>“Contest Success Functions.”</span> <em>Economic Theory</em> 7 (2): 283–90. <a href="https://doi.org/10.1007/bf01213906">https://doi.org/10.1007/bf01213906</a>.
+</div>
+<div id="ref-Slicher_1966" class="csl-entry" role="listitem">
+Slicher van Bath, Bernanrd Hendrik. 1966. <em>The Agrarian History of Western Europe, a.d. 500-1850</em>. London: E. Arnold.
+</div>
+<div id="ref-Smith_1776" class="csl-entry" role="listitem">
+Smith, Adam. 2015 [1776]. <em>The Wealth of Nations (Xist Classics)</em>. Irvine: Xist Classics.
+</div>
+<div id="ref-Spring_1993" class="csl-entry" role="listitem">
+Spring, Eileen. 1993. <em>Law, Land and Family : Aristocratic Inheritance in <span>E</span>ngland, 1300 to 1800</em>. Chapel Hill: The University of North Carolina Press.
+</div>
+<div id="ref-Steensel_2012" class="csl-entry" role="listitem">
+Steensel, Arie van. 2012. <span>“Kinship, Property, and Identity.”</span> <em>Journal of Family History</em> 37 (3): 247–69. <a href="https://doi.org/10.1177/0363199012439516">https://doi.org/10.1177/0363199012439516</a>.
+</div>
+<div id="ref-Strickland_2001" class="csl-entry" role="listitem">
+Strickland, Matthew J. 2001. <span>“Killing or Clemency? Ransom, Chilvarly and Changing Attitudes to Defeated Opponents in Britain and Northern France, 7-12th Centuries.”</span> In <em>Krieg in Mittelalter</em>, edited by Hans-Henning Kortü, 93–122. Berlin: Walter de Gruyter.
+</div>
+<div id="ref-Tilly_1985" class="csl-entry" role="listitem">
+Tilly, Charles, Peter B. Evans, Dietrich Rueschemeyer, and Theda Skocpol. 1985. <em>War Making and State Making as Organized Crime</em>. Cambridge: Cambridge University Press.
+</div>
+<div id="ref-Verdes_2004" class="csl-entry" role="listitem">
+Verdés Pijuan, Pere. 2004. <em>"Per <span class="nocase">ç</span>o Que La Vila No Vage a Perdici<span>ó</span>": La Gesti<span>ó</span> Del Deute p<span>ú</span>blic En Un Municipi Catal<span>à</span> (Cervera, 1387-1516)</em>. Madrid: Editorial CSIC-CSIC Press.
+</div>
+<div id="ref-Voland_1995" class="csl-entry" role="listitem">
+Voland, Eckart, and Robin I. M. Dunbar. 1995. <span>“Resource Competition and Reproduction.”</span> <em>Human Nature</em> 6 (1): 33–49. <a href="https://doi.org/10.1007/bf02734134">https://doi.org/10.1007/bf02734134</a>.
+</div>
+<div id="ref-Volokh_2009" class="csl-entry" role="listitem">
+Volokh, Alexander. 2009. <span>“Property Rights and Contract Form in Medieval <span>E</span>urope.”</span> <em>American Law and Economics Review</em> 11 (2): 399–450. <a href="https://doi.org/10.1093/aler/ahp012">https://doi.org/10.1093/aler/ahp012</a>.
+</div>
+<div id="ref-Walder_1995" class="csl-entry" role="listitem">
+Walder, Andrew G. 1995. <em>The Waning of the Communist State: Economic Origins of Political Decline in China and Hungary</em>. Vol. 21. Studies on China. Berkeley: University of California Press.
+</div>
+<div id="ref-Ward_1995" class="csl-entry" role="listitem">
+Ward, Jennifer C. 1995. <em>Women of the <span>E</span>nglish Nobility and Gentry, 1066-1500</em>. Manchester Medieval Sources Series. Manchester: Manchester University Press.
+</div>
+<div id="ref-Whaley_2012" class="csl-entry" role="listitem">
+Whaley, Joachim. 2012. <em>Germany and the Holy Roman Empire: Volume i: Maximilian i to the Peace of Westphalia, 1493-1648</em>. Vol. 1. Germany and the Holy Roman Empire. Oxford: Oxford University Press.
+</div>
+<div id="ref-Holdsworth_1902" class="csl-entry" role="listitem">
+Willian Searle, Holdsworth. 1902. <em>A History of <span>E</span>nglish Law</em>. Vol. 3. London: <span>M</span>ethuen.
+</div>
+</div>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>The gender privileged by a given inheritance rule is irrelevant in our model. What is important is that both dynasties and landholdings descend through the same gender. However, we acknowledge historic customs.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Contrary to our findings, increasing levels of gender equality, broadly understood, induce economic growth in a pre-modern set-up, see <span class="citation" data-cites="Lagerlof_2003">Lagerlöf (<a href="#ref-Lagerlof_2003" role="doc-biblioref">2003</a>)</span>. Insofar as state capacity is conducive to economic prosperity, our model indicates that gender discrimination, at least in some specific domains such as inheritance rules and for critical junctures, may be growth-enhancing.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>His definition reads “the ability of the state to [...] coax compliant behaviour from the individuals”.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>The role of state capacity as a lever to increase tax revenue to fund armies was early acknowledged by <span class="citation" data-cites="Bean_1973">Bean (<a href="#ref-Bean_1973" role="doc-biblioref">1973</a>)</span>, <span class="citation" data-cites="Tilly_1985">Tilly et al. (<a href="#ref-Tilly_1985" role="doc-biblioref">1985</a>)</span> and <span class="citation" data-cites="Bonney_1999">Bonney (<a href="#ref-Bonney_1999" role="doc-biblioref">1999, 9</a>)</span>.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Fighting for the control of scarce resources impacts other outcomes: fertility levels, with fatal consequences, in <span class="citation" data-cites="de_la_Croix_2008">Croix and Dottori (<a href="#ref-de_la_Croix_2008" role="doc-biblioref">2008</a>)</span> and education expenditure in <span class="citation" data-cites="Aghion_2018">Aghion et al. (<a href="#ref-Aghion_2018" role="doc-biblioref">2018</a>)</span>. Economic development and industrialisation stifle war-making in <span class="citation" data-cites="Lagerlof_2010">Lagerlöf (<a href="#ref-Lagerlof_2010" role="doc-biblioref">2010</a>)</span>, as industry reduces the need for land.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>Complete female discrimination would imply choosing a brother or nephew as heir, who might change surname to continue the dynasty.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p><span class="citation" data-cites="Persson_2004">Persson and Tabellini (<a href="#ref-Persson_2004" role="doc-biblioref">2004</a>)</span> document that more representative parliamentary and proportional democracies achieve higher state capacity when measured by government spending.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p><span class="citation" data-cites="Girouard_1978">Girouard (<a href="#ref-Girouard_1978" role="doc-biblioref">1978</a>)</span> details additional advantages.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p><span class="citation" data-cites="Kokkonen_2014">Kokkonen and Sundell (<a href="#ref-Kokkonen_2014" role="doc-biblioref">2014</a>)</span> find that countries where primogeniture was the inheritance system developed more, both in the past and in the present, than those that elected their ruler or applied agnatic seniority. Primogeniture avoided conflict because it clearly designated a young heir, delivering stability.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn10"><p><span class="citation" data-cites="Debris_2005">Debris (<a href="#ref-Debris_2005" role="doc-biblioref">2005, 29</a>)</span> writes that “the risk of dynastic extinction was not to be taken lightly [...] because perpetuity was the [...] condition for the development of dynastic power”, own translation from French.<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn11"><p>French Basques also circumvented the law to stick to primogeniture, see <span class="citation" data-cites="Arrizabalaga_2009">Arrizabalaga (<a href="#ref-Arrizabalaga_2009" role="doc-biblioref">2009</a>)</span>. Similarly, the British <em>fee tail</em> institution aimed at preserving estates intact, see also <span class="citation" data-cites="Gobbi_2018">Gobbi and Goñi (<a href="#ref-Gobbi_2018" role="doc-biblioref">2018</a>)</span>.<a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn12"><p><span id="fot:importance_continuity" data-label="fot:importance_continuity"></span> Several other accounts support the <em>fear</em> of lineage extinction. <span class="citation" data-cites="Clay_1968">Clay (<a href="#ref-Clay_1968" role="doc-biblioref">1968</a>)</span> details the case of the Marquess of Halifax, who disinherited his daughter and demanded that his heir adopt his family name. <span class="citation" data-cites="Payling_2001">Payling (<a href="#ref-Payling_2001" role="doc-biblioref">2001</a>)</span> describes a similar case within the Drayton family and notes that others married an heiress to a non-heir son while bequeathing to a male relative. Several wills clearly specify that heirs adopt the testator’s family name and bear arms unchanged, see <span class="citation" data-cites="Cokayne_1887">Cokayne (<a href="#ref-Cokayne_1887" role="doc-biblioref">1887</a>)</span>. <span class="citation" data-cites="Hicks_1998">Hicks (<a href="#ref-Hicks_1998" role="doc-biblioref">1998, 32</a>)</span> summarises the idea simply: “preservation of the line and the family name really mattered”. Finally, <span class="citation" data-cites="Chu_1991">Chu (<a href="#ref-Chu_1991" role="doc-biblioref">1991</a>)</span> shows that primogeniture emerges as the optimal inheritance rule that minimises the risk of lineage extinction, see also references therein.<a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn13"><p><span id="fn:importance_continuity" data-label="fn:importance_continuity"></span> For instance, Maximilian I, Holy Roman Emperor, reflected at length on remarriage because he had only one son, see <span class="citation" data-cites="Debris_2005">Debris (<a href="#ref-Debris_2005" role="doc-biblioref">2005, 35</a>)</span>. However, it is interesting to observe that genetic perpetuation had its own limits, as <span class="citation" data-cites="Debris_2005">Debris (<a href="#ref-Debris_2005" role="doc-biblioref">2005, 24–26</a>)</span> illustrates. In particular, the author observes that incumbent lords had high fertility rates. However, many of these children were forced to remain single, up to 40% of sons in some families, to “keep fiefdoms together”. Similar figures appear in <span class="citation" data-cites="Hurwich_1998">Hurwich (<a href="#ref-Hurwich_1998" role="doc-biblioref">1998</a>)</span>. Appendix <a href="#sec:feudalism" data-reference-type="ref" data-reference="sec:feudalism">6.1</a> rationalises this behaviour.<a href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn14"><p>The Visigoths allowed women to inherit if parents died intestate and Burgundian codes favoured sisters over brothers when nubile girls died, see <span class="citation" data-cites="Drell_2013">Drell (<a href="#ref-Drell_2013" role="doc-biblioref">2013, 10</a>)</span>.<a href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn15"><p><span class="citation" data-cites="Gigliola_2018">Kotlyar (<a href="#ref-Gigliola_2018" role="doc-biblioref">2018, 170</a>)</span> indicates that “preference for males was practically universal in feudal Europe reflecting the initial origin of fiefs”.<a href="#fnref15" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn16"><p>Inheritances transitioned from partitioned to intact. The model we develop does not consider the former case, but these were common in Britain before the Norman Conquest, in France under the Carolingians and for a while in the Holy Roman Empire, see <a href="#sec-history" class="quarto-xref">Section&nbsp;6</a>.<a href="#fnref16" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn17"><p>By 1242, German princes embraced estate division. The practice lasted until the Thirty Years War. This “reckless division” <span class="citation" data-cites="Cecil_1895">(<a href="#ref-Cecil_1895" role="doc-biblioref">Cecil 1895</a>)</span> created more opportunities for war to break out, as well as a potential barrier to prosperity.<a href="#fnref17" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn18"><p>Gender-biased inheritance rules in favour of men may reflect the military origins of fiefs and the need to organise their defence. War is a prototypical male activity, and men are in general less risk-averse than women. This explains the extensive use of inheritance rules that preferentially select men. Moreover, to perpetuate dynastic continuity, surnames need to descend through the gender most likely to inherit landholdings. We conjecture that this delicate relationship may explain the joint prevalence of men as surname carriers and men being preferentially treated in inheritance rules.<a href="#fnref18" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn19"><p>Our model is quite simple regarding regional dynamics and predicts unification. <span class="citation" data-cites="Alesina_1997 Alesina_2006">Alesina and Spolaore (<a href="#ref-Alesina_1997" role="doc-biblioref">1997</a>, <a href="#ref-Alesina_2006" role="doc-biblioref">2006</a>)</span> model the optimal number of countries and its relation to state capacity and war.<a href="#fnref19" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn20"><p>Introducing endogenous fertility provides a margin that directly affects the probability of dynastic continuity under male-preference cognatic primogeniture. Although it may deliver interesting dynamics, the model is no longer tractable, as it introduces an endogenous discount rate. We refer the reader to <a href="#sec-introduction" class="quarto-xref">Section&nbsp;1</a> and <a href="#sec-history" class="quarto-xref">Section&nbsp;6</a> for a discussion about the importance of dynastic continuity.<a href="#fnref20" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn21"><p>For the sake of simplicity, the model disregards partitioned inheritances, which consisted in the division of an estate between siblings. Although historically relevant, the practice was progressively abandoned in favour of undivided inheritances, in particular primogeniture. Agency problems in managing large estates or marriage strategies may explain the practice of inheritance division. Furthermore, records indicate that children’s equal value also induced Lords to divide inheritances, see <span class="citation" data-cites="McNamara_1973">McNamara and Wemple (<a href="#ref-McNamara_1973" role="doc-biblioref">1973</a>)</span> and references therein. Introducing such practices would slow down the dynamics of the model but would not alter the qualitative results. <a href="#sec-history" class="quarto-xref">Section&nbsp;6</a> provides more information on the historical evolution of inheritance practices, and on the relationship between feudal obligations and the practice of primogeniture.<a href="#fnref21" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn22"><p>Other incentives for waging war may be related to fear of annihilation and family destruction and captivity. The model already accommodates the possibility of annihilation, represented by the extreme case of manor size going to zero. In particular, <a href="#sec-timing" class="quarto-xref">Section&nbsp;3.1</a> proposes that tiny manors are completely obliterated during war. Although we do not explicitly model it, family destruction and captivity may be correlated to estate size. For the sake of simplicity, we abstract from these additional considerations. Historically, <span class="citation" data-cites="Strickland_2001">Strickland (<a href="#ref-Strickland_2001" role="doc-biblioref">2001</a>)</span> explains that during the medieval period knights and lords were typically spared, either for a ransom or out of mercy.<a href="#fnref22" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn23"><p>To accommodate this battle process which does not consider the distance to the battlefield, think of <span class="math inline">\(\mathcal{L}_{t}\)</span> as a doughnut with manors on its surface and battles taking place in the central hole.<a href="#fnref23" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn24"><p>State capacity building fosters economic development by introducing market-supporting institutions, property rights and judicial systems. Here, for simplicity, the model does not capture this aspect. The introduction of such a mechanism would generate additional income for Lords that invest in state capacity, rewarding them. Furthermore, it would provide clear results relating state capacity to economic development through gender equality. However, this paper indirectly relates the two, although without the reinforcing effect that state capacity exerts through development.<a href="#fnref24" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn25"><p>Clearly, if there is only one manor it faces no risk of losing any territory due to an attack and its optimal number of soldiers is zero. However, assuming the externality is ignored, all manors will inevitably hire a positive number of soldiers and invest in state capacity if financially feasible.<a href="#fnref25" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn26"><p>Introducing labour input through commoners delivers the same qualitative results. Furthermore, allowing commoners released from productive labour activities to participate in war also yields similar results. In particular, under the linear specification <span class="math inline">\(Y_{t}^{i} = n_{t}^{i} - b_{t}^{i} + x_{t}^{i}\)</span>, where <span class="math inline">\(n_{t}^{i}\)</span> are commoners and <span class="math inline">\(b_{t}^{i}\)</span> represents those participating in war, results are qualitatively the same.<a href="#fnref26" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn27"><p>Lords historically used crop-sharing or leases to allocate production, see <span class="citation" data-cites="Slicher_1966">Slicher van Bath (<a href="#ref-Slicher_1966" role="doc-biblioref">1966</a>)</span>. The burden supported by peasants varied between <span class="math inline">\(\frac{1}{2}\)</span> and <span class="math inline">\(\frac{1}{3}\)</span>, depending on land fertility<span id="fn:crop_sharing" data-label="fn:crop_sharing"></span>. <span class="citation" data-cites="Duby_1962">Duby (<a href="#ref-Duby_1962" role="doc-biblioref">1962</a>)</span> and <span class="citation" data-cites="Volokh_2009">Volokh (<a href="#ref-Volokh_2009" role="doc-biblioref">2009</a>)</span> find that share-cropping was more common in continental Europe while leasing was preferred in England.<a href="#fnref27" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn28"><p>No payments are required to maintain a certain level of state capacity once it is reached. However, results do not qualitatively change under a proportional tax farming system. In that case, tax income would be <span class="math inline">\((1-\psi)(1-\zeta)Y_{t}^{i}\frac{A_{t}^{i}+g_{t}^{i}}{1+A_{t}^{i}+g_{t}^{i}}\)</span> where <span class="math inline">\(\zeta\in\left(0,1\right)\)</span> represents the proportion of taxes officials keep as payment.<a href="#fnref28" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn29"><p>Under male-preference cognatic primogeniture, the probability of dynastic continuity equals <span class="math inline">\(1-0.5^{\Phi}\)</span>, where <span class="math inline">\(\Phi\)</span> denotes the number of children. By increasing fertility, a Lord can partly insure himself against dynastic extinction.<a href="#fnref29" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn30"><p>Men and women are equally likely to inherit under a gender-egalitarian rule. Hence, equal numbers of men and women inherit land. Gender-biased rules over-represent one gender among land-inheritors and, consequently, fewer marriages between them can be arranged.<a href="#fnref30" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn31"><p>Such marriages also combined wealth and political power, which we do not incorporate in the model.<a href="#fnref31" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn32"><p>Removing small manors improves the numeric accuracy of the simulations. Indeed, <a href="#eq-war_outcome" class="quarto-xref">Equation&nbsp;2</a> and <span class="math inline">\(b_{t}^{i} &gt; 0\)</span> imply that no manor disappears due to conflict but they become infinitesimally small. At any rate, such tiny manors would be obliterated by more militarily capable rivals, and removing them is a natural step.<a href="#fnref32" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn33"><p>Marrying an heir to an heiress before the death of her father was a risky business, see <span class="citation" data-cites="Payling_2001">Payling (<a href="#ref-Payling_2001" role="doc-biblioref">2001</a>)</span>. Arguably, waging war and deciding strategic alliances through pre-marital arrangements entailed a similar risk.<a href="#fnref33" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn34"><p>This particular sequence of events does not allow Lords to enter into treaties based on future marriages. Although relevant, that strategic aspect is not captured by the model and treaties are concluded in the aftermath of war. In any case, family bonds <em>per se</em> did not ensure peace among the parties. Charles the Bald’s conflicts with his brothers and nephew are good examples. <span class="citation" data-cites="Hicks_1998">Hicks (<a href="#ref-Hicks_1998" role="doc-biblioref">1998</a>)</span> explores the case of the Neville family, <span class="citation" data-cites="McLaughlin_1990">McLaughlin (<a href="#ref-McLaughlin_1990" role="doc-biblioref">1990, 199</a>)</span> cites the case of Richilde of Hainaut who fought her brother-in-law and Arnould III of Guînes who battled against his own son.<a href="#fnref34" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn35"><p>For instance, <span class="citation" data-cites="Bouchard_1981">Bouchard (<a href="#ref-Bouchard_1981" role="doc-biblioref">1981</a>)</span> explains the difficulties of early Capetians in finding suitable queens for their sons. <span class="citation" data-cites="Hurwich_1998">Hurwich (<a href="#ref-Hurwich_1998" role="doc-biblioref">1998</a>)</span> analyses the marriage pattern of the German lower nobility and finds that men tended to marry upwards on the social ladder, due to the way children from unequal marriages were treated. In Zeeland, there are records of marriages between spouses from different strata, but most marriages were arranged between spouses of similar rank, see <span class="citation" data-cites="Steensel_2012">Steensel (<a href="#ref-Steensel_2012" role="doc-biblioref">2012</a>)</span>.<a href="#fnref35" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn36"><p>Alternatively, inheritors can be classified into <span class="math inline">\(\mathcal{N}&gt;1\)</span> groups according to their wealth. Only marriages between spouses who belong to the same group would be feasible.<a href="#fnref36" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn37"><p>Introducing endogenous fertility would not change the results for absolute primogeniture, because the gender of the heir is independent of number of children. However, it would introduce a strategic variable under male-preference cognatic primogeniture. Assuming a high enough cost of children, only wealthier Lords could secure dynastic continuity, thereby incentivising them for state-building and giving them an additional advantage during the war. We conjecture that qualitative results would remain similar, although probably the dynamics of male-preference cognatic primogeniture would be expedited.<a href="#fnref37" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn38"><p>English soldiers had a similar real cost, as compared to expenditure on nobles’ food, ranging between 0.428 for an archer and 2.57 for cavalrymen. The real cost of infantry was 1.14. Data on expenditures on food for nobles from <span class="citation" data-cites="Dyer_1989">Dyer (<a href="#ref-Dyer_1989" role="doc-biblioref">1989, 65</a>)</span> for the year 1380, and on wages from <span class="citation" data-cites="Norman_1979">Norman and Pottinger (<a href="#ref-Norman_1979" role="doc-biblioref">1979, 79</a>)</span>.<a href="#fnref38" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn39"><p>The source says they received no less than 30 <em>florins</em>. One <em>florin</em> corresponded to 11 <em>sous.</em><a href="#fnref39" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn40"><p><span class="citation" data-cites="Ives_1983">Ives (<a href="#ref-Ives_1983" role="doc-biblioref">1983, 323</a>)</span> reports that a sergeant received £10 per circuit. This figure represents a real cost of 0.93. The real cost of an ordinary judge is estimated at 4.69. In <span class="citation" data-cites="Dyer_1989">Dyer (<a href="#ref-Dyer_1989" role="doc-biblioref">1989, 47</a>)</span>, the real cost of a lawyer is 2.44.<a href="#fnref40" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn41"><p>Wealth also accumulates through war, but its outcome is similar for both regimes.<a href="#fnref41" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn42"><p>This follows from the fact that under this rule, the probability of observing a land-inheriting heir equals the probability of observing a land-inheriting heiress: absolute primogeniture means that the oldest sibling inherits. In contrast, under male-preference cognatic primogeniture, there are more land-inheriting sons than land-inheriting daughters. Consequently, few land-merging marriages can be arranged. Younger brothers seek an heiress to marry or enter alternative occupations, see <a href="#sec-history" class="quarto-xref">Section&nbsp;6</a> and footnote 13. When the number of participants in the marriage market tends to infinity, the ratio of marriages to participants approaches 0.5 under absolute primogeniture and 0.125 under male-preference cognatic primogeniture.<a href="#fnref42" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn43"><p>In that sense, the model predicts regional unification as manors merge. <a href="#sec-country-unification" class="quarto-xref">Section&nbsp;8</a> explores two cases of late unification in the European context and proposes amendments to reconcile the model with these cases.<a href="#fnref43" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn44"><p><span class="citation" data-cites="Hrdy_1993">Hrdy and Judge (<a href="#ref-Hrdy_1993" role="doc-biblioref">1993</a>)</span> are concerned about farmer families. However, the survival of elite members also depended on landholding size, as discussed above.<a href="#fnref44" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn45"><p>An Emperor’s revenue originated in the lands he controlled as a prince, a reason for which Johanek concludes that “the emperor was not really in a position to govern the Empire” (<span class="citation" data-cites="Hansen_2000">Hansen (<a href="#ref-Hansen_2000" role="doc-biblioref">2000, 21:295</a>)</span>).<a href="#fnref45" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn46"><p>The secular elector princes were forced to practise primogeniture to avoid land division, beginning from the Golden Bull of 1356, see <span class="citation" data-cites="Whaley_2012">Whaley (<a href="#ref-Whaley_2012" role="doc-biblioref">2012, 1:27</a>)</span>.<a href="#fnref46" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section><section class="quarto-appendix-contents" id="quarto-reuse"><h2 class="anchored quarto-appendix-heading">Reuse</h2><div class="quarto-appendix-contents"><div><a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{roca_fernández2019,
+  author = {Roca Fernández, Èric},
+  title = {In the {Name} of the {Father:} {Inheritance} {Systems} and
+    the {Dynamics} of {State} {Capacity}},
+  volume = {25},
+  number = {4},
+  date = {2019-06-21},
+  doi = {10.1017/S1365100519000476},
+  langid = {en},
+  abstract = {This paper examines how the degree of
+    gender-egalitarianism embedded in inheritance rules impacts state
+    capacity at its early stages during medieval times. We present a
+    theoretical model in which building state capacity enables nobles to
+    raise taxes and overcome rivals. The model addresses the use of
+    inheritance to consolidate landholding dynasties, also accommodating
+    inter-state marriages between landed heirs. On the one hand,
+    dynastic continuity \—of utmost importance to European
+    medieval lords\— directly encourages statebuilding.
+    Male-biased inheritance rules historically maximise the likelihood
+    of dynastic continuity. We weigh this effect against the indirect
+    impact of the more frequent land merging marriages under
+    gender-egalitarian rules. Contrary to the literature, our results
+    suggest that gender-egalitarian norms —offering a low probability of
+    dynastic continuity— promote state capacity in the short run more
+    than gender-biased norms.}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-roca_fernández2019" class="csl-entry quarto-appendix-citeas" role="listitem">
+Roca Fernández, Èric. 2019. <span>“In the Name of the Father:
+Inheritance Systems and the Dynamics of State Capacity.”</span>
+Macroeconomic Dynamics. June 21, 2019. <a href="https://doi.org/10.1017/S1365100519000476">https://doi.org/10.1017/S1365100519000476</a>.
+</div></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2023 Èric Roca Fernández. Last updated: {{&lt; last-modified &gt;}}</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
