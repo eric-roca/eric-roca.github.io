@@ -22,7 +22,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -253,10 +273,30 @@ ul.task-list li input[type="checkbox"] {
 <section id="objectifs-du-cours" class="level2" data-number="1.1">
 <h2 data-number="1.1" class="anchored" data-anchor-id="objectifs-du-cours"><span class="header-section-number">1.1</span> Objectifs du cours</h2>
 <p>À l’issue de ce cours, les étudiants seront capables de :</p>
-<p><strong>Objectifs théoriques :</strong> - Maîtriser les modèles fondamentaux de croissance économique (Solow, Ramsey) et comprendre leurs mécanismes de fonctionnement - Analyser les concepts d’état stationnaire, de convergence absolue et conditionnelle - Comprendre le rôle du progrès technologique, de l’accumulation de capital et des rendements décroissants</p>
-<p><strong>Objectifs techniques :</strong> - Résoudre des problèmes d’optimisation dynamique en temps continu - Maîtriser l’utilisation de l’hamiltonien et des équations d’Euler - Analyser la stabilité des équilibres à l’aide de diagrammes de phase - Interpréter les résultats de statique comparative dans les modèles dynamiques</p>
-<p><strong>Objectifs empiriques :</strong> - Analyser les données de croissance internationale et identifier les faits stylisés - Évaluer empiriquement les hypothèses de convergence</p>
-<p><strong>Objectifs appliqués :</strong> - Évaluer les politiques économiques affectant la croissance à long terme - Comprendre les débats sur les inégalités de développement entre pays - Formuler des recommandations de politique économique fondées sur la théorie de la croissance</p>
+<p><strong>Objectifs théoriques :</strong></p>
+<ul>
+<li>Maîtriser les modèles fondamentaux de croissance économique (Solow, Ramsey) et comprendre leurs mécanismes de fonctionnement</li>
+<li>Analyser les concepts d’état stationnaire, de convergence absolue et conditionnelle</li>
+<li>Comprendre le rôle du progrès technologique, de l’accumulation de capital et des rendements décroissants</li>
+</ul>
+<p><strong>Objectifs techniques :</strong></p>
+<ul>
+<li>Résoudre des problèmes d’optimisation dynamique en temps continu</li>
+<li>Maîtriser l’utilisation de l’hamiltonien et des équations d’Euler</li>
+<li>Analyser la stabilité des équilibres à l’aide de diagrammes de phase</li>
+<li>Interpréter les résultats de statique comparative dans les modèles dynamiques</li>
+</ul>
+<p><strong>Objectifs empiriques :</strong></p>
+<ul>
+<li>Analyser les données de croissance internationale et identifier les faits stylisés</li>
+<li>Évaluer empiriquement les hypothèses de convergence</li>
+</ul>
+<p><strong>Objectifs appliqués :</strong></p>
+<ul>
+<li>Évaluer les politiques économiques affectant la croissance à long terme</li>
+<li>Comprendre les débats sur les inégalités de développement entre pays</li>
+<li>Formuler des recommandations de politique économique fondées sur la théorie de la croissance</li>
+</ul>
 </section>
 <section id="prérequis" class="level2" data-number="1.2">
 <h2 data-number="1.2" class="anchored" data-anchor-id="prérequis"><span class="header-section-number">1.2</span> Prérequis</h2>
@@ -290,21 +330,21 @@ ul.task-list li input[type="checkbox"] {
 <section id="manuel-principal" class="level3" data-number="1.5.1">
 <h3 data-number="1.5.1" class="anchored" data-anchor-id="manuel-principal"><span class="header-section-number">1.5.1</span> Manuel principal</h3>
 <ul>
-<li><span class="citation" data-cites="Romer_2018">@Romer_2018</span></li>
+<li><span class="citation" data-cites="Romer_2018">ROMER (<a href="references.html#ref-Romer_2018" role="doc-biblioref">2018</a>)</span></li>
 </ul>
 </section>
 <section id="manuels-complémentaires" class="level3" data-number="1.5.2">
 <h3 data-number="1.5.2" class="anchored" data-anchor-id="manuels-complémentaires"><span class="header-section-number">1.5.2</span> Manuels complémentaires</h3>
 <ul>
-<li><span class="citation" data-cites="Barro_2003">@Barro_2003</span></li>
-<li><span class="citation" data-cites="Campante_2021">@Campante_2021</span> <a href="https://press.lse.ac.uk/books/m/10.31389/lsepress.ame">Disponible gratuitement en ligne</a></li>
+<li><span class="citation" data-cites="Barro_2003">Barro and Sala-i-Martin (<a href="references.html#ref-Barro_2003" role="doc-biblioref">2003</a>)</span></li>
+<li><span class="citation" data-cites="Campante_2021">Campante, Sturzenegger, and Velasco (<a href="references.html#ref-Campante_2021" role="doc-biblioref">2021</a>)</span> <a href="https://press.lse.ac.uk/books/m/10.31389/lsepress.ame">Disponible gratuitement en ligne</a></li>
 </ul>
 </section>
 <section id="ressources-complémentaires" class="level3" data-number="1.5.3">
 <h3 data-number="1.5.3" class="anchored" data-anchor-id="ressources-complémentaires"><span class="header-section-number">1.5.3</span> Ressources complémentaires</h3>
 <ul>
-<li><span class="citation" data-cites="Weil_2016">@Weil_2016</span></li>
-<li><span class="citation" data-cites="Acemoglu_2016">@Acemoglu_2016</span></li>
+<li><span class="citation" data-cites="Weil_2016">Weil (<a href="references.html#ref-Weil_2016" role="doc-biblioref">2016</a>)</span></li>
+<li><span class="citation" data-cites="Acemoglu_2016">Acemoglu, Laibson, and List (<a href="references.html#ref-Acemoglu_2016" role="doc-biblioref">2016</a>)</span></li>
 </ul>
 </section>
 </section>
@@ -316,6 +356,23 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-Acemoglu_2016" class="csl-entry" role="listitem">
+Acemoglu, Daron, David Laibson, and John A List. 2016. <em>Macroéconomie</em>. Erpi.
+</div>
+<div id="ref-Barro_2003" class="csl-entry" role="listitem">
+Barro, Robert J, and Xavier I Sala-i-Martin. 2003. <em>Economic Growth</em>. 2nd ed. The MIT Press. London, England: MIT Press.
+</div>
+<div id="ref-Campante_2021" class="csl-entry" role="listitem">
+Campante, Filipe, Federico Sturzenegger, and Andrés Velasco. 2021. <em>Advanced Macroeconomics: An Easy Guide</em>. LSE Press. <a href="https://doi.org/10.31389/lsepress.ame">https://doi.org/10.31389/lsepress.ame</a>.
+</div>
+<div id="ref-Romer_2018" class="csl-entry" role="listitem">
+ROMER. 2018. <em>Advanced Macroeconomics</em>. 5th ed. Columbus, OH: McGraw-Hill Education.
+</div>
+<div id="ref-Weil_2016" class="csl-entry" role="listitem">
+Weil, David. 2016. <em>Economic Growth</em>. 3rd ed. London, England: Routledge.
+</div>
+</div>
 </section>
 </section>
 
