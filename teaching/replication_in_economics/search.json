@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Replication in Economics: A Practical Guide",
     "section": "",
-    "text": "1 Introduction\nThis course provides a practical introduction to the essential elements of research replication in economics. It covers project organization, data management, coding practices in Stata and Python, and collaborative version control using Git. The primary goal is to equip students with the skills to conduct replicable research and to navigate the replication process effectively.",
+    "text": "1 Syllabus\nThis course provides a practical introduction to the essential elements of research replication in economics. It covers project organization, data management, coding practices in Stata and Python, and collaborative version control using Git. The primary goal is to equip students with the skills to conduct replicable research and to navigate the replication process effectively.",
     "crumbs": [
       "Home",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Replication in Economics: A Practical Guide</span>"

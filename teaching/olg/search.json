@@ -4,10 +4,10 @@
     "href": "index.html",
     "title": "OLG",
     "section": "",
-    "text": "1 Introduction\nThis course provides a comprehensive introduction to the Overlapping Generations (OLG) model, one of the most versatile and influential frameworks in modern macroeconomics. Unlike the Ramsey model with infinitely-lived agents, the OLG framework captures the realistic life-cycle dynamics where individuals live for finite periods, making decisions about consumption, savings, and intergenerational transfers.\nThe OLG model is particularly powerful for analyzing issues that involve intergenerational considerations, such as social security systems, public debt sustainability, educational policies, and long-run economic development. The course combines theoretical foundations with applications to contemporary economic research, demonstrating how this framework helps us understand fundamental questions about economic growth, inequality, and policy design.\nThrough the study of cutting-edge research papers, we explore how economists use the OLG framework to investigate diverse phenomena from the evolution of social preferences to environmental sustainability.",
+    "text": "1 Syllabus\nThis course provides a comprehensive introduction to the Overlapping Generations (OLG) model, one of the most versatile and influential frameworks in modern macroeconomics. Unlike the Ramsey model with infinitely-lived agents, the OLG framework captures the realistic life-cycle dynamics where individuals live for finite periods, making decisions about consumption, savings, and intergenerational transfers.\nThe OLG model is particularly powerful for analyzing issues that involve intergenerational considerations, such as social security systems, public debt sustainability, educational policies, and long-run economic development. The course combines theoretical foundations with applications to contemporary economic research, demonstrating how this framework helps us understand fundamental questions about economic growth, inequality, and policy design.\nThrough the study of cutting-edge research papers, we explore how economists use the OLG framework to investigate diverse phenomena from the evolution of social preferences to environmental sustainability.",
     "crumbs": [
       "Home",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Syllabus</span>"
     ]
   },
   {
@@ -18,7 +18,7 @@
     "text": "1.1 Course Objectives\nUpon completion of this course, students will be able to:\nTheoretical Foundations: - Master the core OLG model with its key assumptions and derive competitive equilibria - Understand the fundamental differences between OLG and Ramsey models, particularly regarding dynamic efficiency - Analyze steady-state properties, stability conditions, and the possibility of multiple equilibria - Comprehend the golden rule and its welfare implications\nTechnical Skills: - Solve household optimization problems in a life-cycle context with perfect foresight - Characterize intertemporal equilibria and analyze their existence and uniqueness - Evaluate the welfare properties of competitive equilibria and identify potential market failures\nResearch Applications: - Critically analyze how contemporary researchers extend the basic OLG framework - Understand applications to cultural evolution, environmental economics, and development - Develop skills to formulate and solve original research questions using the OLG framework",
     "crumbs": [
       "Home",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Syllabus</span>"
     ]
   },
   {
@@ -29,7 +29,7 @@
     "text": "1.2 Prerequisites\n\nIntermediate Microeconomics (consumer theory, optimization)\nMathematical Methods for Economics (differential calculus, basic dynamic systems)\nIntroduction to Macroeconomics\nBasic knowledge of econometrics is helpful but not required",
     "crumbs": [
       "Home",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Syllabus</span>"
     ]
   },
   {
@@ -40,7 +40,7 @@
     "text": "1.3 Course Format\n\nDuration: 10 sessions (2 hours per session)",
     "crumbs": [
       "Home",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Syllabus</span>"
     ]
   },
   {
@@ -51,7 +51,7 @@
     "text": "1.4 Assessment\nStudent evaluation consists of:\n\nFinal Examination (100%): Comprehensive exam covering theoretical concepts, model applications, and analysis of research papers discussed in class",
     "crumbs": [
       "Home",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Syllabus</span>"
     ]
   },
   {
@@ -62,7 +62,7 @@
     "text": "1.5 Contact Information\n\nInstructor: Eric Roca (eric.roca_fernandez@uca.fr)\nOffice Hours: By appointment",
     "crumbs": [
       "Home",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Syllabus</span>"
     ]
   },
   {
@@ -73,7 +73,7 @@
     "text": "1.6 Bibliography\n\n1.6.1 Core Textbooks\n\nCroix and Michel (2009)\nCampante, Sturzenegger, and Velasco (2021) Freely available online\n\n\n\n1.6.2 Research Papers\n\nDiamond (1965)\nGalor and Moav (2006)\nGalor and Özak (2016)\nCroix and Dottori (2008)\n\n\n\n\n\nCampante, Filipe, Federico Sturzenegger, and Andrés Velasco. 2021. Advanced Macroeconomics: An Easy Guide. LSE Press. https://doi.org/10.31389/lsepress.ame.\n\n\nCroix, David de la, and Davide Dottori. 2008. “Easter Island’s Collapse: A Tale of a Population Race.” Journal of Economic Growth 13 (1): 27–55.\n\n\nCroix, David de la, and Philippe Michel. 2009. A Theory of Economic Growth. Cambridge, England: Cambridge University Press.\n\n\nDiamond, Peter A. 1965. “National Debt in a Neoclassical Growth Model.” The American Economic Review 55 (5): 1126–50. http://www.jstor.org/stable/1809231.\n\n\nGalor, Oded, and Omer Moav. 2006. “Das Human-Kapital: A Theory of the Demise of the Class Structure.” Review of Economic Studies 73 (1): 85–117. https://doi.org/10.1111/j.1467-937x.2006.00370.x.\n\n\nGalor, Oded, and Ömer Özak. 2016. “The Agricultural Origins of Time Preference.” American Economic Review 106 (10): 3064–3103. https://doi.org/10.1257/aer.20150020.",
     "crumbs": [
       "Home",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Syllabus</span>"
     ]
   },
   {

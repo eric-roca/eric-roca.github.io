@@ -4,10 +4,10 @@
     "href": "index.html",
     "title": "Macroéconomie (L2)",
     "section": "",
-    "text": "1 Introduction\nCe cours de macroéconomie porte sur l’analyse des fluctuations économiques de court terme et sur les outils de politique économique à la disposition des gouvernements. Nous aborderons les modèles fondamentaux (IS-LM, Mundell-Fleming, OA-DA) permettant de comprendre les récessions, le chômage, l’inflation et les réponses possibles en matière de politique budgétaire et monétaire.\nLe cours alterne théorie, modélisation mathématique, analyse empirique et applications concrètes à l’actualité économique.",
+    "text": "1 Syllabus\nCe cours de macroéconomie porte sur l’analyse des fluctuations économiques de court terme et sur les outils de politique économique à la disposition des gouvernements. Nous aborderons les modèles fondamentaux (IS-LM, Mundell-Fleming, OA-DA) permettant de comprendre les récessions, le chômage, l’inflation et les réponses possibles en matière de politique budgétaire et monétaire.\nLe cours alterne théorie, modélisation mathématique, analyse empirique et applications concrètes à l’actualité économique.",
     "crumbs": [
       "Home",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Macroéconomie 2</span>"
     ]
   },
   {
@@ -18,7 +18,7 @@
     "text": "1.1 Objectifs du cours\nÀ l’issue de ce cours, les étudiants seront capables de :\nObjectifs théoriques : - Comprendre les fondements des modèles IS-LM, Mundell-Fleming et OA-DA - Analyser les mécanismes de transmission des politiques économiques - Expliquer les causes des fluctuations économiques à court terme\nObjectifs techniques : - Résoudre graphiquement et analytiquement les modèles macroéconomiques standards - Interpréter les effets des politiques budgétaires et monétaires - Utiliser les outils de statique comparative\nObjectifs appliqués : - Lire et interpréter des données macroéconomiques réelles - Évaluer l’efficacité des politiques économiques selon le contexte institutionnel - Discuter des débats de politique économique actuels",
     "crumbs": [
       "Home",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Macroéconomie 2</span>"
     ]
   },
   {
@@ -29,7 +29,7 @@
     "text": "1.2 Prérequis\n\nMacroéconomie de base (comptabilité nationale, marché du travail)\nMéthodes quantitatives (algèbre, dérivées, résolution d’équations)",
     "crumbs": [
       "Home",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Macroéconomie 2</span>"
     ]
   },
   {
@@ -40,7 +40,7 @@
     "text": "1.3 Format du cours\n\nDurée : 30 heures (10 séances de 3 heures), cours magistral\nTravaux Dirigés : Les exercices sont disponibles en ligne. Il est fortement recommandé de les préparer avant chaque séance de TD pour en tirer le maximum de bénéfices.",
     "crumbs": [
       "Home",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Macroéconomie 2</span>"
     ]
   },
   {
@@ -51,7 +51,7 @@
     "text": "1.4 Évaluation\nL’évaluation se fait en contrôle continu :\n\nDeux examens QCM pendant le semestre (50% chacun)\n\nQCM 1 : à mi-parcours\nQCM 2 : en fin de semestre\n\nParticipation et préparation des TD : non notée mais fortement recommandée pour la réussite",
     "crumbs": [
       "Home",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Macroéconomie 2</span>"
     ]
   },
   {
@@ -62,7 +62,7 @@
     "text": "1.5 Bibliographie\n\n1.5.1 Manuel principal\n\nMankiw (2023)\nBlanchard and Cohen (2020)\n\n\n\n1.5.2 Plaquettes TD\n\nTD 1\nTD 2\nTD 3\nTD 4",
     "crumbs": [
       "Home",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Macroéconomie 2</span>"
     ]
   },
   {
@@ -73,7 +73,7 @@
     "text": "1.6 Contact et disponibilités\n\nEnseignant : Eric Roca (eric.roca_fernandez@uca.fr)\nHeures de bureau : Sur rendez-vous",
     "crumbs": [
       "Home",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Macroéconomie 2</span>"
     ]
   },
   {
@@ -84,7 +84,7 @@
     "text": "1.7 Échantillon d’Annales\n\n\n\n\n\n\nExemple des questions posées lors des années précédentes\n\n\n\n\n\nDans le modèle classique, une réduction des dépenses publiques:\n\nAugmente le PIB et l’investissement\nN’affecte pas le PIB mais augmente l’investissement\nAugmente le PIB sans modifier l’investissement\nRéduit les prix et le PIB\nAugmente les prix et diminue la consommation, sans modifier le PIB\nAugmente le taux d’intérêt.\n\nDans le modèle IS-LM, les effets d’une augmentation de l’offre de monnaie sont:\n\nAucun effet sur le taux d’intérêt et une diminution du revenu\nUne augmentation du taux d’intérêt et une diminution du revenu\nUne diminution du taux d’intérêt et une augmentation du revenu\nUne augmentation du taux d’intérêt et une augmentation du revenu\nUne diminution du taux d’intérêt et une diminution du revenu\nAucun effet sur le taux d’intérêt et une augmentation du revenu\n\nDans le modèle IS-LM, une augmentation des dépenses publiques de 100 euros est plus efficace pour stimuler l’économie qu’une réduction d’impôts de 100 euros:\n\nSeulement si la propension marginale à consommer est faible\nSeulement si la propension marginale à consommer est élevée\nSeulement si l’effet d’éviction est faible\nSeulement si l’effet d’éviction est élevé\nToujours\nJamais\n\nDans le cadre du modèle IS-LM, si une réduction d’impôts de 100€ est mise en place, dans quel cas l’effet multiplicateur sur la production sera-t-il le plus important?\n\nQuand elle est destinée aux ménages avec une propension marginale à consommer de 0.9\nQuand elle est destinée aux ménages avec une propension marginale à consommer de 0.7\nQuand elle est destinée aux ménages avec une propension marginale à consommer de 0.5\nQuand elle est destinée aux ménages avec une propension marginale à consommer de 0.3\nL’effet multiplicateur est le même quel que soit le groupe ciblé\nL’effet multiplicateur dépend uniquement du taux d’intérêt\n\nDans le modèle IS-LM, imaginez que \\(Y = \\overbrace{2 + 0.5(Y-0.1)}^{C(Y-T)} + \\overbrace{1.725 - r}^{I(r)} + \\overbrace{1.825}^{G}\\) et \\(\\overbrace{9.5}^{\\frac{M^s}{p}} = Y - r.\\) Initialement, le revenu d’équilibre est \\(Y=10\\) et le taux d’intérêt est \\(r=0.5.\\) Si la confiance des investisseurs en l’économie diminue et la fonction d’investissement devient \\(I(r) = 1 - r,\\), quel est le niveau de déficit par rapport au PIB (\\(\\frac{G-T}{Y}\\)) du gouvernement s’il ajuste \\(G\\) pour garantir l’amortissement complet de ce choc négagif?\n\n10.0% (0.100)\n17.6% (0.176)\n21.1% (0.211)\n24.5% (0.245)\n27.3% (0.273)\n31.1% (0.311)\n\nDans le modèle Mundell-Fleming pour une petite économie ouverte avec taux de change fixe:\n\nLa politique budgétaire est inefficace pour stimuler l’économie\nLa politique monétaire est inefficace pour stimuler l’économie\nLes politiques budgétaire et monétaire sont efficaces pour stimuler l’économie\nNi la politique budgétaire ni la politique monétaire ne sont efficaces pour stimuler l’économie\nLa politique budgétaire doit soutenir le taux de change, ce qui la rend inefficace\nLa politique monétaire doit soutenir le taux de change, ce qui la rend efficace\n\nLorsque le taux d’intérêt mondial (\\(r^\\star\\)) augmente dans une économie à taux de change flottant:\n\nLe revenu augmente et la monnaie se déprécie\nLe revenu diminue et la monnaie s’apprécie\nLe revenu et le taux de change restent inchangés\nLe revenu diminue et la monnaie se déprécie\nLe revenu reste stable mais la monnaie s’apprécie fortement\nLes exportations nettes diminuent et le revenu augmente\n\n\n\n\n\n\n\n\nBlanchard, Olivier, and Daniel Cohen. 2020. Macroéconomie + Quiz. Upper Saddle River, NJ: Pearson.\n\n\nMankiw, Gregory. 2023. Macroéconomie.",
     "crumbs": [
       "Home",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Macroéconomie 2</span>"
     ]
   },
   {
