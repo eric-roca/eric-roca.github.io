@@ -91,6 +91,35 @@ div.csl-indent {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -244,6 +273,7 @@ div.csl-indent {
   <li><a href="#plaquettes-td" id="toc-plaquettes-td" class="nav-link" data-scroll-target="#plaquettes-td"><span class="header-section-number">1.5.2</span> Plaquettes TD</a></li>
   </ul></li>
   <li><a href="#contact-et-disponibilités" id="toc-contact-et-disponibilités" class="nav-link" data-scroll-target="#contact-et-disponibilités"><span class="header-section-number">1.6</span> Contact et disponibilités</a></li>
+  <li><a href="#échantillon-dannales" id="toc-échantillon-dannales" class="nav-link" data-scroll-target="#échantillon-dannales"><span class="header-section-number">1.7</span> Échantillon d’Annales</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -344,6 +374,87 @@ div.csl-indent {
 <li>Enseignant : Eric Roca (<a href="mailto:eric.roca_fernandez@uca.fr">eric.roca_fernandez@uca.fr</a>)</li>
 <li>Heures de bureau : Sur rendez-vous</li>
 </ul>
+</section>
+<section id="échantillon-dannales" class="level2" data-number="1.7">
+<h2 data-number="1.7" class="anchored" data-anchor-id="échantillon-dannales"><span class="header-section-number">1.7</span> Échantillon d’Annales</h2>
+<div class="callout callout-style-default callout-tip callout-titled" title="Exemple des questions posées lors des années précédentes">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Exemple des questions posées lors des années précédentes
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Dans le modèle <em>classique</em>, une réduction des dépenses publiques:</strong></p>
+<ol type="1">
+<li>Augmente le PIB et l’investissement</li>
+<li>N’affecte pas le PIB mais augmente l’investissement</li>
+<li>Augmente le PIB sans modifier l’investissement</li>
+<li>Réduit les prix et le PIB</li>
+<li>Augmente les prix et diminue la consommation, sans modifier le PIB</li>
+<li>Augmente le taux d’intérêt.</li>
+</ol>
+<p><strong>Dans le modèle IS-LM, les effets d’une augmentation de l’offre de monnaie sont:</strong></p>
+<ol type="1">
+<li>Aucun effet sur le taux d’intérêt et une diminution du revenu</li>
+<li>Une augmentation du taux d’intérêt et une diminution du revenu</li>
+<li>Une diminution du taux d’intérêt et une augmentation du revenu</li>
+<li>Une augmentation du taux d’intérêt et une augmentation du revenu</li>
+<li>Une diminution du taux d’intérêt et une diminution du revenu</li>
+<li>Aucun effet sur le taux d’intérêt et une augmentation du revenu</li>
+</ol>
+<p><strong>Dans le modèle IS-LM, une augmentation des dépenses publiques de 100 euros est plus efficace pour stimuler l’économie qu’une réduction d’impôts de 100 euros:</strong></p>
+<ol type="1">
+<li>Seulement si la propension marginale à consommer est faible</li>
+<li>Seulement si la propension marginale à consommer est élevée</li>
+<li>Seulement si l’effet d’éviction est faible</li>
+<li>Seulement si l’effet d’éviction est élevé</li>
+<li>Toujours</li>
+<li>Jamais</li>
+</ol>
+<p><strong>Dans le cadre du modèle IS-LM, si une réduction d’impôts de 100€ est mise en place, dans quel cas l’effet multiplicateur sur la production sera-t-il le plus important?</strong></p>
+<ol type="1">
+<li>Quand elle est destinée aux ménages avec une propension marginale à consommer de 0.9</li>
+<li>Quand elle est destinée aux ménages avec une propension marginale à consommer de 0.7</li>
+<li>Quand elle est destinée aux ménages avec une propension marginale à consommer de 0.5</li>
+<li>Quand elle est destinée aux ménages avec une propension marginale à consommer de 0.3</li>
+<li>L’effet multiplicateur est le même quel que soit le groupe ciblé</li>
+<li>L’effet multiplicateur dépend uniquement du taux d’intérêt</li>
+</ol>
+<p><strong>Dans le modèle IS-LM, imaginez que <span class="math inline">\(Y = \overbrace{2 + 0.5(Y-0.1)}^{C(Y-T)} + \overbrace{1.725 - r}^{I(r)} + \overbrace{1.825}^{G}\)</span> et <span class="math inline">\(\overbrace{9.5}^{\frac{M^s}{p}} = Y - r.\)</span> Initialement, le revenu d’équilibre est <span class="math inline">\(Y=10\)</span> et le taux d’intérêt est <span class="math inline">\(r=0.5.\)</span> Si la confiance des investisseurs en l’économie diminue et la fonction d’investissement devient <span class="math inline">\(I(r) = 1 - r,\)</span>, quel est le niveau de déficit par rapport au PIB (<span class="math inline">\(\frac{G-T}{Y}\)</span>) du gouvernement s’il ajuste <span class="math inline">\(G\)</span> pour garantir l’amortissement <em>complet</em> de ce choc négagif?</strong></p>
+<ol type="1">
+<li>10.0% (0.100)</li>
+<li>17.6% (0.176)</li>
+<li>21.1% (0.211)</li>
+<li>24.5% (0.245)</li>
+<li>27.3% (0.273)</li>
+<li>31.1% (0.311)</li>
+</ol>
+<p><strong>Dans le modèle Mundell-Fleming pour une petite économie ouverte avec taux de change fixe:</strong></p>
+<ol type="1">
+<li>La politique budgétaire est inefficace pour stimuler l’économie</li>
+<li>La politique monétaire est inefficace pour stimuler l’économie</li>
+<li>Les politiques budgétaire et monétaire sont efficaces pour stimuler l’économie</li>
+<li>Ni la politique budgétaire ni la politique monétaire ne sont efficaces pour stimuler l’économie</li>
+<li>La politique budgétaire doit soutenir le taux de change, ce qui la rend inefficace</li>
+<li>La politique monétaire doit soutenir le taux de change, ce qui la rend efficace</li>
+</ol>
+<p><strong>Lorsque le taux d’intérêt mondial (<span class="math inline">\(r^\star\)</span>) augmente dans une économie à taux de change flottant:</strong></p>
+<ol type="1">
+<li>Le revenu augmente et la monnaie se déprécie</li>
+<li>Le revenu diminue et la monnaie s’apprécie</li>
+<li>Le revenu et le taux de change restent inchangés</li>
+<li>Le revenu diminue et la monnaie se déprécie</li>
+<li>Le revenu reste stable mais la monnaie s’apprécie fortement</li>
+<li>Les exportations nettes diminuent et le revenu augmente</li>
+</ol>
+</div>
+</div>
+</div>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
