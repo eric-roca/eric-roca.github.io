@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.34">
+<meta name="generator" content="quarto-1.8.24">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -34,14 +34,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="./is_lm_model_part_2.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-3ce0956f7babb2a12842f6225a6cff9b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-8aac1957c9cdfe409a5df9367aa7061b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -98,7 +99,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -123,6 +124,8 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Èric Roca Fernández</span>
     </a>
@@ -194,6 +197,10 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      </a>
+      </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
@@ -320,7 +327,7 @@ window.Quarto = {
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Petite économie ouverte
+<span class="screen-reader-only">Note</span>Petite économie ouverte
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -350,7 +357,7 @@ Y = C(Y-T) + I(r) + G + NX(e)
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Taux de change et importations
+<span class="screen-reader-only">Note</span>Taux de change et importations
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -467,7 +474,7 @@ Figure&nbsp;6.4: Politique budgétaire avec taux de change flottant
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Pourquoi la politique budgétaire n’affecte pas le revenu avec un taux de change flottant?
+<span class="screen-reader-only">Note</span>Pourquoi la politique budgétaire n’affecte pas le revenu avec un taux de change flottant?
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -509,7 +516,7 @@ Figure&nbsp;6.5: Politique monétaire avec taux de change flottant
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Pourquoi la politique monétaire augmente le revenu avec un taux de change flottant?
+<span class="screen-reader-only">Note</span>Pourquoi la politique monétaire augmente le revenu avec un taux de change flottant?
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -553,7 +560,7 @@ Figure&nbsp;6.6: Politique commerciale avec taux de change flottant
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Paradoxe de la politique commerciale
+<span class="screen-reader-only">Note</span>Paradoxe de la politique commerciale
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -571,7 +578,7 @@ Paradoxe de la politique commerciale
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Comment un taux de change fixe est maintenu?
+<span class="screen-reader-only">Note</span>Comment un taux de change fixe est maintenu?
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -588,7 +595,7 @@ Comment un taux de change fixe est maintenu?
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-La étalon-or
+<span class="screen-reader-only">Note</span>La étalon-or
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -668,7 +675,7 @@ Figure&nbsp;6.9: Impact d’une dévaluation sur l’économie
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Sortie de la crise de 1930 par la dévaluation
+<span class="screen-reader-only">Note</span>Sortie de la crise de 1930 par la dévaluation
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -722,7 +729,7 @@ Figure&nbsp;6.10: Politique commerciale avec taux de change fixe
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Euro
+<span class="screen-reader-only">Note</span>Euro
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -742,7 +749,7 @@ Euro
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Le Royaume-Uni et le mécanisme de change européen (ERM)
+<span class="screen-reader-only">Note</span>Le Royaume-Uni et le mécanisme de change européen (ERM)
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -879,13 +886,14 @@ Tracez un digramme.
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

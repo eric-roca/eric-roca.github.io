@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.34">
+<meta name="generator" content="quarto-1.8.24">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -34,14 +34,15 @@ ul.task-list li input[type="checkbox"] {
 <link href="./classical_economics.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-3ce0956f7babb2a12842f6225a6cff9b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-8aac1957c9cdfe409a5df9367aa7061b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -84,7 +85,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -109,6 +110,8 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Èric Roca Fernández</span>
     </a>
@@ -180,6 +183,10 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      </a>
+      </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
@@ -294,7 +301,7 @@ window.Quarto = {
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note
+<span class="screen-reader-only">Note</span>Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -320,7 +327,7 @@ Y = C(Y-T) + I(r) + \bar{G} \implies S \equiv \overbrace{Y - C(Y-T) -T}^{S^P} + 
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note
+<span class="screen-reader-only">Note</span>Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -372,7 +379,7 @@ Note
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Animal spirits
+<span class="screen-reader-only">Note</span>Animal spirits
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -404,7 +411,7 @@ C = c_0 + c_1(Y-T)
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note
+<span class="screen-reader-only">Note</span>Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -470,7 +477,7 @@ Warning&nbsp;4.1: Important
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Exemple
+<span class="screen-reader-only">Note</span>Exemple
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -487,7 +494,7 @@ Exemple
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Le multiplicateur des dépenses publiques calculé de manière alternative
+<span class="screen-reader-only">Important</span>Le multiplicateur des dépenses publiques calculé de manière alternative
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -537,7 +544,7 @@ Le multiplicateur des dépenses publiques calculé de manière alternative
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Exemple
+<span class="screen-reader-only">Note</span>Exemple
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -554,7 +561,7 @@ Exemple
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Le multiplicateur des impôts calculé de manière alternative
+<span class="screen-reader-only">Important</span>Le multiplicateur des impôts calculé de manière alternative
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -579,7 +586,7 @@ Le multiplicateur des impôts calculé de manière alternative
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Cas d’étude: réduction des impôts de Kennedy et Bush
+<span class="screen-reader-only">Note</span>Cas d’étude: réduction des impôts de Kennedy et Bush
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -624,7 +631,7 @@ Y = c_0 + c_1(Y-T) + I(r) + \bar{G}
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Exemple
+<span class="screen-reader-only">Note</span>Exemple
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -672,13 +679,13 @@ Y = C(Y-T) + I(r) + \bar{G}
 </ol>
 <p>Si nous fixons un niveau de production d’équilibre <span class="math inline">\((Y)\)</span>, l’augmentation des dépenses publiques <span class="math inline">\((\bar{G})\)</span> augmente la partie droite de l’équation, et donc, pour rétablir l’équilibre, cette même partie doit diminuer. Comme nous avons fixé <span class="math inline">\(Y\)</span> et <span class="math inline">\(T\)</span> est exogène la seule possibilité est que la partie <span class="math inline">\(I(r)\)</span> diminue. En rappelant que <span class="math inline">\(I(r)\)</span> est une fonction décroissante du taux d’intérêt <span class="math inline">\((r)\)</span>, cela signifie que le taux d’intérêt doit augmenter pour rétablir l’équilibre. Ainsi, si les dépenses publiques <span class="math inline">\((G)\)</span> augmentent, la courbe IS se déplace vers le haut, c’est-à-dire que <em>pour chaque niveau de production</em> <span class="math inline">\((Y)\)</span>, le taux d’intérêt <span class="math inline">\((r)\)</span> augmente.</p>
 <p>De manière équivalente, si nous fixons le taux d’intérêt <span class="math inline">\((r)\)</span> et analysons comment le niveau de production d’équilibre <span class="math inline">\((Y)\)</span> doit changer pour rétablir l’équilibre, nous avons que l’augmentation des dépenses publiques <span class="math inline">\((\bar{G})\)</span> augmente la partie droite de l’équation, et donc, pour rétablir l’équilibre, la partie gauche doit augmenter. L’augmentation de <span class="math inline">\(Y\)</span> entraîne une augmentation de la consommation <span class="math inline">\((C(Y-T))\)</span> car <span class="math inline">\(Y\)</span> apparaît dans la fonction de consommation, mais il est possible de calculer exactement l’augmentation nécessaire. Enfin, pour chaque niveau de taux d’intérêt <span class="math inline">\((r)\)</span>, le niveau de production d’équilibre <span class="math inline">\((Y)\)</span> augmente, et donc la courbe IS se déplace vers la droite.</p>
-<p>La manière mathématique de calculer le premier déplacement de la courbe IS est de calculer les dérivées partielles de l’équation d’équilibre du marché des biens et services par rapport à <span class="math inline">\(G\)</span> et <span class="math inline">\(r\)</span> pour trouver <span class="math inline">\(\frac{\mathrm{d}Y}{\mathrm{d}G}\)</span>.</p>
+<p>La manière mathématique de calculer le premier déplacement de la courbe IS est de calculer les dérivées partielles de l’équation d’équilibre du marché des biens et services par rapport à <span class="math inline">\(G\)</span> et <span class="math inline">\(r\)</span> pour trouver <span class="math inline">\(\frac{\mathrm{d}r}{\mathrm{d}G}\)</span>.</p>
 <p><span class="math display">\[
 0 = \frac{\partial I(r)}{\partial r} \mathrm{d}r + \frac{\partial G}{\partial G} \mathrm{d}G
 \]</span></p>
-<p>En isolant <span class="math inline">\(\frac{\mathrm{d}Y}{\mathrm{d}G}\)</span>, nous avons:</p>
+<p>En isolant <span class="math inline">\(\frac{\mathrm{d}r}{\mathrm{d}G}\)</span>, nous avons:</p>
 <p><span class="math display">\[
-\frac{\mathrm{d}Y}{\mathrm{d}G} = - \frac{\partial I(r)}{\partial r} \cdot \frac{1}{\frac{\partial Y}{\partial Y}} = - \frac{\partial I(r)}{\partial r} &gt; 0
+\frac{\mathrm{d}r}{\mathrm{d}G} = - \frac{\partial I(r)}{\partial r} \cdot \frac{1}{\frac{\partial Y}{\partial Y}} = - \frac{\partial I(r)}{\partial r} &gt; 0
 \]</span></p>
 <p>Cela indique que, pour un niveau de production <span class="math inline">\((Y)\)</span> donné, si les dépenses publiques <span class="math inline">\((G)\)</span> augmentent, le taux d’intérêt <span class="math inline">\((r)\)</span> doit augmenter pour rétablir l’équilibre, déplaçant la courbe IS vers le haut.</p>
 <p>Par rapport à la deuxième possibilité, si nous fixons le taux d’intérêt <span class="math inline">\((r)\)</span> et analysons comment le niveau de production d’équilibre <span class="math inline">\((Y)\)</span> doit changer pour rétablir l’équilibre, nous devons calculer les dérivées partielles de l’équation d’équilibre du marché des biens et services par rapport à <span class="math inline">\(G\)</span> et <span class="math inline">\(Y\)</span> pour trouver <span class="math inline">\(\frac{\mathrm{d}Y}{\mathrm{d}G}\)</span>: comment <span class="math inline">\(Y\)</span> change quand <span class="math inline">\(G\)</span> change pour un niveau de taux d’intérêt <span class="math inline">\((r)\)</span> fixe tel que l’équation d’équilibre est vérifiée.</p>
@@ -696,7 +703,7 @@ Y = C(Y-T) + I(r) + \bar{G}
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Note
+<span class="screen-reader-only">Important</span>Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -719,12 +726,12 @@ Figure&nbsp;4.2: Augmentation de G et déplacement de la courbe IS
 </div>
 </div>
 <div class="callout callout-style-default callout-important callout-titled" title="Vérification">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Vérification
+<span class="screen-reader-only">Important</span>Vérification
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -737,7 +744,7 @@ Y = 10 + 0.6(Y-3) + \frac{1}{0.4} + 8
 <p>Quand <span class="math inline">\(G\)</span> augmente de 10, nous avons: <span class="math display">\[
 Y = 10 + 0.6(Y-3) + \frac{1}{0.4} + 18 \implies Y = 71.75
 \]</span></p>
-<p>L’augmentation de <span class="math inline">\(Y\)</span> est de <span class="math inline">\(20\)</span>, ce qui correspond à l’augmentation de <span class="math inline">\(G\)</span> multipliée par le multiplicateur des dépenses publiques, qui est <span class="math inline">\(\frac{1}{1-c_1} = \frac{1}{1-0.6} = 2.5\)</span>. Dans ce cas, l’augmentation de <span class="math inline">\(Y\)</span> est de <span class="math inline">\(10 \cdot 2.5 = 25\)</span>, ce qui correspond à l’augmentation de <span class="math inline">\(G\)</span> multipliée par le multiplicateur des dépenses publiques.</p>
+<p>L’augmentation de <span class="math inline">\(Y\)</span> est de <span class="math inline">\(25\)</span>, ce qui correspond à l’augmentation de <span class="math inline">\(G\)</span> multipliée par le multiplicateur des dépenses publiques, qui est <span class="math inline">\(\frac{1}{1-c_1} = \frac{1}{1-0.6} = 2.5\)</span>. Dans ce cas, l’augmentation de <span class="math inline">\(Y\)</span> est de <span class="math inline">\(10 \cdot 2.5 = 25\)</span>, ce qui correspond à l’augmentation de <span class="math inline">\(G\)</span> multipliée par le multiplicateur des dépenses publiques.</p>
 <p>Nous obtenon le même résultat pour toute valeur de <span class="math inline">\(r\)</span>. Par exemple, si nous prenons <span class="math inline">\(r = 1\)</span>, nous avons: <span class="math display">\[
 Y = 10 + 0.6(Y-3) + \frac{1}{1} + 8 \implies Y = 43
 \]</span></p>
@@ -799,12 +806,12 @@ Figure&nbsp;4.3: Réduction des impôts et déplacement de la courbe IS
 </div>
 </div>
 <div class="callout callout-style-default callout-important callout-titled" title="Vérification">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Vérification
+<span class="screen-reader-only">Important</span>Vérification
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -849,7 +856,7 @@ Y = 10 + 0.6(Y-2) + \frac{1}{0.4} + 8 \implies Y = 48.25
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Cas d’étude: Les multiplicateurs dans le débat économique (Mankiw, p.322)
+<span class="screen-reader-only">Important</span>Cas d’étude: Les multiplicateurs dans le débat économique (Mankiw, p.322)
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -905,7 +912,7 @@ Cas d’étude: Les multiplicateurs dans le débat économique (Mankiw, p.322)
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Exemple
+<span class="screen-reader-only">Important</span>Exemple
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -976,7 +983,7 @@ Figure&nbsp;4.5: Déplacement de la courbe LM
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Le multiplicateur de la monnaie
+<span class="screen-reader-only">Important</span>Le multiplicateur de la monnaie
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -1150,13 +1157,14 @@ D'où vient la différence?</code></pre>
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
