@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.34">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>6&nbsp; Version Control with Git for Reproducible Research – Replication in Economics: A Practical Guide</title>
+<title>7&nbsp; Version Control with Git for Reproducible Research – Replication in Economics: A Practical Guide</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -68,14 +68,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="./python-replication.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-3ce0956f7babb2a12842f6225a6cff9b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-8aac1957c9cdfe409a5df9367aa7061b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -118,6 +119,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Èric Roca Fernández</span>
     </a>
@@ -155,7 +158,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./git-collaboration.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Version Control with Git for Reproducible Research</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./git-collaboration.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Version Control with Git for Reproducible Research</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -165,6 +168,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      </a>
+      </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
@@ -175,32 +182,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./preparing_readme_file.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Preparing the README</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Preparing the README</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./folder_organization.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Folder Organization and Data Management</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Folder Organization and Data Management</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./stata-replication.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Replication with Stata: Best Practices</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Replication with Stata: Best Practices</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./python-replication.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Replication with Python and Quarto: Best Practices</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Replication with Python and Quarto: Best Practices</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./git-collaboration.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Version Control with Git for Reproducible Research</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Version Control with Git for Reproducible Research</span></span></a>
   </div>
 </li>
     </ul>
@@ -213,24 +226,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#what-is-git-and-why-bother" id="toc-what-is-git-and-why-bother" class="nav-link active" data-scroll-target="#what-is-git-and-why-bother"><span class="header-section-number">6.1</span> What is Git and Why Bother?</a>
+  <li><a href="#what-is-git-and-why-bother" id="toc-what-is-git-and-why-bother" class="nav-link active" data-scroll-target="#what-is-git-and-why-bother"><span class="header-section-number">7.1</span> What is Git and Why Bother?</a>
   <ul class="collapse">
-  <li><a href="#git-vs.-github-and-others" id="toc-git-vs.-github-and-others" class="nav-link" data-scroll-target="#git-vs.-github-and-others"><span class="header-section-number">6.1.1</span> Git vs.&nbsp;GitHub (and others)</a></li>
+  <li><a href="#git-vs.-github-and-others" id="toc-git-vs.-github-and-others" class="nav-link" data-scroll-target="#git-vs.-github-and-others"><span class="header-section-number">7.1.1</span> Git vs.&nbsp;GitHub (and others)</a></li>
   </ul></li>
-  <li><a href="#the-basic-workflow" id="toc-the-basic-workflow" class="nav-link" data-scroll-target="#the-basic-workflow"><span class="header-section-number">6.2</span> The Basic Workflow</a>
+  <li><a href="#the-basic-workflow" id="toc-the-basic-workflow" class="nav-link" data-scroll-target="#the-basic-workflow"><span class="header-section-number">7.2</span> The Basic Workflow</a>
   <ul class="collapse">
-  <li><a href="#initializing-a-repository" id="toc-initializing-a-repository" class="nav-link" data-scroll-target="#initializing-a-repository"><span class="header-section-number">6.2.1</span> 1. Initializing a Repository</a></li>
-  <li><a href="#the-.gitignore-file-tell-git-what-to-ignore" id="toc-the-.gitignore-file-tell-git-what-to-ignore" class="nav-link" data-scroll-target="#the-.gitignore-file-tell-git-what-to-ignore"><span class="header-section-number">6.2.2</span> 2. The <code>.gitignore</code> File: Tell Git What to Ignore</a></li>
-  <li><a href="#saving-your-work-add-and-commit" id="toc-saving-your-work-add-and-commit" class="nav-link" data-scroll-target="#saving-your-work-add-and-commit"><span class="header-section-number">6.2.3</span> 3. Saving Your Work: Add and Commit</a></li>
+  <li><a href="#initializing-a-repository" id="toc-initializing-a-repository" class="nav-link" data-scroll-target="#initializing-a-repository"><span class="header-section-number">7.2.1</span> 1. Initializing a Repository</a></li>
+  <li><a href="#the-.gitignore-file-tell-git-what-to-ignore" id="toc-the-.gitignore-file-tell-git-what-to-ignore" class="nav-link" data-scroll-target="#the-.gitignore-file-tell-git-what-to-ignore"><span class="header-section-number">7.2.2</span> 2. The <code>.gitignore</code> File: Tell Git What to Ignore</a></li>
+  <li><a href="#saving-your-work-add-and-commit" id="toc-saving-your-work-add-and-commit" class="nav-link" data-scroll-target="#saving-your-work-add-and-commit"><span class="header-section-number">7.2.3</span> 3. Saving Your Work: Add and Commit</a></li>
   </ul></li>
-  <li><a href="#collaboration-push-pull-and-remotes" id="toc-collaboration-push-pull-and-remotes" class="nav-link" data-scroll-target="#collaboration-push-pull-and-remotes"><span class="header-section-number">6.3</span> Collaboration: Push, Pull, and Remotes</a>
+  <li><a href="#collaboration-push-pull-and-remotes" id="toc-collaboration-push-pull-and-remotes" class="nav-link" data-scroll-target="#collaboration-push-pull-and-remotes"><span class="header-section-number">7.3</span> Collaboration: Push, Pull, and Remotes</a>
   <ul class="collapse">
-  <li><a href="#a-typical-co-author-workflow" id="toc-a-typical-co-author-workflow" class="nav-link" data-scroll-target="#a-typical-co-author-workflow"><span class="header-section-number">6.3.1</span> A Typical Co-author Workflow</a></li>
-  <li><a href="#merge-conflicts-when-you-edit-the-same-thing" id="toc-merge-conflicts-when-you-edit-the-same-thing" class="nav-link" data-scroll-target="#merge-conflicts-when-you-edit-the-same-thing"><span class="header-section-number">6.3.2</span> Merge Conflicts: When You Edit the Same Thing</a></li>
+  <li><a href="#a-typical-co-author-workflow" id="toc-a-typical-co-author-workflow" class="nav-link" data-scroll-target="#a-typical-co-author-workflow"><span class="header-section-number">7.3.1</span> A Typical Co-author Workflow</a></li>
+  <li><a href="#merge-conflicts-when-you-edit-the-same-thing" id="toc-merge-conflicts-when-you-edit-the-same-thing" class="nav-link" data-scroll-target="#merge-conflicts-when-you-edit-the-same-thing"><span class="header-section-number">7.3.2</span> Merge Conflicts: When You Edit the Same Thing</a></li>
   </ul></li>
-  <li><a href="#branches-a-safe-place-to-experiment" id="toc-branches-a-safe-place-to-experiment" class="nav-link" data-scroll-target="#branches-a-safe-place-to-experiment"><span class="header-section-number">6.4</span> Branches: A Safe Place to Experiment</a>
+  <li><a href="#branches-a-safe-place-to-experiment" id="toc-branches-a-safe-place-to-experiment" class="nav-link" data-scroll-target="#branches-a-safe-place-to-experiment"><span class="header-section-number">7.4</span> Branches: A Safe Place to Experiment</a>
   <ul class="collapse">
-  <li><a href="#branching-workflow" id="toc-branching-workflow" class="nav-link" data-scroll-target="#branching-workflow"><span class="header-section-number">6.4.1</span> Branching Workflow</a></li>
+  <li><a href="#branching-workflow" id="toc-branching-workflow" class="nav-link" data-scroll-target="#branching-workflow"><span class="header-section-number">7.4.1</span> Branching Workflow</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -240,7 +253,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Version Control with Git for Reproducible Research</span></h1>
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Version Control with Git for Reproducible Research</span></h1>
 </div>
 
 
@@ -257,8 +270,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="what-is-git-and-why-bother" class="level2" data-number="6.1">
-<h2 data-number="6.1" class="anchored" data-anchor-id="what-is-git-and-why-bother"><span class="header-section-number">6.1</span> What is Git and Why Bother?</h2>
+<section id="what-is-git-and-why-bother" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="what-is-git-and-why-bother"><span class="header-section-number">7.1</span> What is Git and Why Bother?</h2>
 <p>Git is a version control system. Think of it as a “save” button for your entire project folder, not just a single file. It tracks every change you make to your code, allowing you to revert to any previous version at any time. For research, this is invaluable.</p>
 <p><strong>Why use Git?</strong></p>
 <ul>
@@ -299,8 +312,8 @@ index e2d2607..93f26b3 100644
 <li><strong>Experimentation:</strong> You can safely test new ideas (e.g., a different model specification) without breaking your main analysis.</li>
 <li><strong>Backup:</strong> When used with a remote hosting service, it’s a backup of your entire codebase.</li>
 </ul>
-<section id="git-vs.-github-and-others" class="level3" data-number="6.1.1">
-<h3 data-number="6.1.1" class="anchored" data-anchor-id="git-vs.-github-and-others"><span class="header-section-number">6.1.1</span> Git vs.&nbsp;GitHub (and others)</h3>
+<section id="git-vs.-github-and-others" class="level3" data-number="7.1.1">
+<h3 data-number="7.1.1" class="anchored" data-anchor-id="git-vs.-github-and-others"><span class="header-section-number">7.1.1</span> Git vs.&nbsp;GitHub (and others)</h3>
 <p>This is a common point of confusion.</p>
 <ul>
 <li><strong>Git</strong> is the software on your computer that tracks changes.</li>
@@ -309,16 +322,16 @@ index e2d2607..93f26b3 100644
 <p>You use Git locally on your machine, and then <code>push</code> your changes to a service like GitHub to collaborate or for backup.</p>
 </section>
 </section>
-<section id="the-basic-workflow" class="level2" data-number="6.2">
-<h2 data-number="6.2" class="anchored" data-anchor-id="the-basic-workflow"><span class="header-section-number">6.2</span> The Basic Workflow</h2>
-<section id="initializing-a-repository" class="level3" data-number="6.2.1">
-<h3 data-number="6.2.1" class="anchored" data-anchor-id="initializing-a-repository"><span class="header-section-number">6.2.1</span> 1. Initializing a Repository</h3>
+<section id="the-basic-workflow" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="the-basic-workflow"><span class="header-section-number">7.2</span> The Basic Workflow</h2>
+<section id="initializing-a-repository" class="level3" data-number="7.2.1">
+<h3 data-number="7.2.1" class="anchored" data-anchor-id="initializing-a-repository"><span class="header-section-number">7.2.1</span> 1. Initializing a Repository</h3>
 <p>In your main project folder, run this command once:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> init</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> init</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>This creates a hidden <code>.git</code> folder where Git will store the entire history of your project.</p>
 </section>
-<section id="the-.gitignore-file-tell-git-what-to-ignore" class="level3" data-number="6.2.2">
-<h3 data-number="6.2.2" class="anchored" data-anchor-id="the-.gitignore-file-tell-git-what-to-ignore"><span class="header-section-number">6.2.2</span> 2. The <code>.gitignore</code> File: Tell Git What to Ignore</h3>
+<section id="the-.gitignore-file-tell-git-what-to-ignore" class="level3" data-number="7.2.2">
+<h3 data-number="7.2.2" class="anchored" data-anchor-id="the-.gitignore-file-tell-git-what-to-ignore"><span class="header-section-number">7.2.2</span> 2. The <code>.gitignore</code> File: Tell Git What to Ignore</h3>
 <p>This is the most important step for a research project. You do <strong>not</strong> want to track data files, temporary files, or large output files (like PDFs or LaTeX tables) with Git. <strong>Git is for code</strong>.</p>
 <p>Create a file named <code>.gitignore</code> in your project’s root directory and add the names of files and folders to ignore.</p>
 <pre><code># .gitignore
@@ -354,37 +367,37 @@ _quarto/
 .DS_Store
 Thumbs.db</code></pre>
 </section>
-<section id="saving-your-work-add-and-commit" class="level3" data-number="6.2.3">
-<h3 data-number="6.2.3" class="anchored" data-anchor-id="saving-your-work-add-and-commit"><span class="header-section-number">6.2.3</span> 3. Saving Your Work: Add and Commit</h3>
+<section id="saving-your-work-add-and-commit" class="level3" data-number="7.2.3">
+<h3 data-number="7.2.3" class="anchored" data-anchor-id="saving-your-work-add-and-commit"><span class="header-section-number">7.2.3</span> 3. Saving Your Work: Add and Commit</h3>
 <p>Saving changes is a two-step process. You should only do these once you have made <strong>significant changes</strong> to your code, not every minor edit or every time you save. Think about Git as a history book: you would not write about every single detail, just the important events.</p>
 <ol type="1">
 <li><p><strong>Stage changes with <code>git add</code></strong>: Once you are ready to track changes, tell Git which files you want to include in your next snapshot.</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Stage a specific file</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Stage a specific file</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add code/analysis.do</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Stage all changes in the current directory (respects .gitignore)</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
 <li><p><strong>Commit changes with <code>git commit</code></strong>: Save the staged files as a snapshot in the project’s history. You must include a message describing the change.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add initial regression for model 1"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Add initial regression for model 1"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <blockquote class="blockquote">
 <p><strong>Tip:</strong> Write clear, concise commit messages. They are your research logbook. “Fix bug” is bad. “Fix bug where sample was not correctly filtered for women” is good.</p>
 </blockquote></li>
 </ol>
 </section>
 </section>
-<section id="collaboration-push-pull-and-remotes" class="level2" data-number="6.3">
-<h2 data-number="6.3" class="anchored" data-anchor-id="collaboration-push-pull-and-remotes"><span class="header-section-number">6.3</span> Collaboration: Push, Pull, and Remotes</h2>
+<section id="collaboration-push-pull-and-remotes" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="collaboration-push-pull-and-remotes"><span class="header-section-number">7.3</span> Collaboration: Push, Pull, and Remotes</h2>
 <p>To collaborate, you first need to host your repository on a service like GitHub. After creating a repository on the website, it will give you a URL. You link your local repository to it like this:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Add a remote named "origin" (a standard convention)</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin <span class="op">&lt;</span>URL_from_GitHub<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Add a remote named "origin" (a standard convention)</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin <span class="op">&lt;</span>URL_from_GitHub<span class="op">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
 <li><p><strong><code>git push</code></strong>: Upload your committed changes to the remote repository.</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push origin main</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
 <li><p><strong><code>git pull</code></strong>: Download changes from the remote repository. <strong>Always do this before you start working.</strong></p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> pull origin main</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
 </ul>
-<section id="a-typical-co-author-workflow" class="level3" data-number="6.3.1">
-<h3 data-number="6.3.1" class="anchored" data-anchor-id="a-typical-co-author-workflow"><span class="header-section-number">6.3.1</span> A Typical Co-author Workflow</h3>
+<section id="a-typical-co-author-workflow" class="level3" data-number="7.3.1">
+<h3 data-number="7.3.1" class="anchored" data-anchor-id="a-typical-co-author-workflow"><span class="header-section-number">7.3.1</span> A Typical Co-author Workflow</h3>
 <ol type="1">
 <li><strong>You (start of day):</strong> <code>git pull</code> to get your co-author’s latest changes.</li>
 <li><strong>You:</strong> Work on your code, cleaning data or running a new analysis.</li>
@@ -393,11 +406,11 @@ Thumbs.db</code></pre>
 <li><strong>Co-author (next day):</strong> Repeats the cycle, starting with <code>git pull</code>.</li>
 </ol>
 </section>
-<section id="merge-conflicts-when-you-edit-the-same-thing" class="level3" data-number="6.3.2">
-<h3 data-number="6.3.2" class="anchored" data-anchor-id="merge-conflicts-when-you-edit-the-same-thing"><span class="header-section-number">6.3.2</span> Merge Conflicts: When You Edit the Same Thing</h3>
+<section id="merge-conflicts-when-you-edit-the-same-thing" class="level3" data-number="7.3.2">
+<h3 data-number="7.3.2" class="anchored" data-anchor-id="merge-conflicts-when-you-edit-the-same-thing"><span class="header-section-number">7.3.2</span> Merge Conflicts: When You Edit the Same Thing</h3>
 <p>A merge conflict happens when you and a co-author change the <em>same lines</em> in the <em>same file</em>. Git doesn’t know which version to keep, so it asks you to decide.</p>
 <p>Imagine you both edit line 5 of <code>analysis.do</code>. When you <code>git pull</code>, Git will stop and mark the file with a conflict:</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">// ... some stata code ...</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">// ... some stata code ...</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</span>
 <span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="kw">reg</span> gdp growth controls, <span class="kw">robust</span></span>
@@ -405,7 +418,7 @@ Thumbs.db</code></pre>
 <span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="kw">reg</span> gdp growth controls, <span class="kw">cluster</span>(region)</span>
 <span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a>&gt;&gt;&gt;&gt;&gt;&gt;&gt; fa345b2... Add clustered standard errors</span>
 <span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="co">// ... more stata code ...</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="co">// ... more stata code ...</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
 <li><code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</code>: This is <strong>your</strong> version.</li>
 <li><code>=======</code>: Separates the two versions.</li>
@@ -417,17 +430,17 @@ Thumbs.db</code></pre>
 <li><p>Delete the lines you <em>don’t</em> want to keep.</p></li>
 <li><p>Delete the Git markers (<code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>, <code>=======</code>, <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>).</p></li>
 <li><p>The final code should be exactly what you want it to be. For example:</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">// ... some stata code ...</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">// ... some stata code ...</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="kw">reg</span> gdp growth controls, <span class="kw">cluster</span>(region)</span>
 <span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="co">// ... more stata code ...</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="co">// ... more stata code ...</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
 <li><p>Save the file, then <code>git add</code> and <code>git commit</code> to finalize the merge.</p></li>
 </ol>
 </section>
 </section>
-<section id="branches-a-safe-place-to-experiment" class="level2" data-number="6.4">
-<h2 data-number="6.4" class="anchored" data-anchor-id="branches-a-safe-place-to-experiment"><span class="header-section-number">6.4</span> Branches: A Safe Place to Experiment</h2>
+<section id="branches-a-safe-place-to-experiment" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="branches-a-safe-place-to-experiment"><span class="header-section-number">7.4</span> Branches: A Safe Place to Experiment</h2>
 <p>By default, you work on a branch called <code>main</code> (or <code>master</code>). A branch is like a parallel timeline for your project. They are incredibly useful for research.</p>
 <div class="cell" data-layout-align="default">
 <div class="cell-output-display">
@@ -455,19 +468,19 @@ Thumbs.db</code></pre>
 <ul>
 <li><p><strong>Experiment safely:</strong> Want to try a completely new statistical method? Create a branch. If it doesn’t work out, you can just delete the branch, and your <code>main</code> code is untouched.</p></li>
 <li><p><strong>Respond to referee reports:</strong> This is a killer feature. When you get a “revise and resubmit,” create a branch for it.</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a new branch for the first revision and switch to it</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> revision-1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a new branch for the first revision and switch to it</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout <span class="at">-b</span> revision-1</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Now you can make all the changes the referees requested. Your <code>main</code> branch still represents the original submitted version. When you’re done, you can <code>merge</code> the changes from <code>revision-1</code> back into <code>main</code>.</p></li>
 </ul>
-<section id="branching-workflow" class="level3" data-number="6.4.1">
-<h3 data-number="6.4.1" class="anchored" data-anchor-id="branching-workflow"><span class="header-section-number">6.4.1</span> Branching Workflow</h3>
+<section id="branching-workflow" class="level3" data-number="7.4.1">
+<h3 data-number="7.4.1" class="anchored" data-anchor-id="branching-workflow"><span class="header-section-number">7.4.1</span> Branching Workflow</h3>
 <ol type="1">
 <li><p><strong>Create a new branch:</strong> <code>bash     git branch try-new-instrument</code></p></li>
 <li><p><strong>Switch to it:</strong> <code>bash     git checkout try-new-instrument</code></p></li>
 <li><p><strong>Work as usual:</strong> <code>add</code>, <code>commit</code>, <code>push</code>. Your changes are isolated on this branch.</p></li>
 <li><p><strong>Merge it back (if successful):</strong> When you’re happy with the experiment, switch back to <code>main</code> and merge the changes.</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout main</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> merge try-new-instrument</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> checkout main</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> merge try-new-instrument</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
 </ol>
 
 
@@ -526,13 +539,14 @@ Thumbs.db</code></pre>
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -877,7 +891,7 @@ Thumbs.db</code></pre>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./python-replication.html" class="pagination-link" aria-label="Replication with Python and Quarto: Best Practices">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Replication with Python and Quarto: Best Practices</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Replication with Python and Quarto: Best Practices</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

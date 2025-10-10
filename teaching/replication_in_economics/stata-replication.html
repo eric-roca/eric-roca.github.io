@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.34">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>4&nbsp; Replication with Stata: Best Practices – Replication in Economics: A Practical Guide</title>
+<title>5&nbsp; Replication with Stata: Best Practices – Replication in Economics: A Practical Guide</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -69,14 +69,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="./folder_organization.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-3ce0956f7babb2a12842f6225a6cff9b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-8aac1957c9cdfe409a5df9367aa7061b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -115,6 +116,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Èric Roca Fernández</span>
     </a>
@@ -152,7 +155,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./stata-replication.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Replication with Stata: Best Practices</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./stata-replication.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Replication with Stata: Best Practices</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -162,6 +165,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      </a>
+      </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
@@ -172,32 +179,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./preparing_readme_file.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Preparing the README</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Preparing the README</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./folder_organization.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Folder Organization and Data Management</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Folder Organization and Data Management</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./stata-replication.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Replication with Stata: Best Practices</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Replication with Stata: Best Practices</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./python-replication.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Replication with Python and Quarto: Best Practices</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Replication with Python and Quarto: Best Practices</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./git-collaboration.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Version Control with Git for Reproducible Research</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Version Control with Git for Reproducible Research</span></span></a>
   </div>
 </li>
     </ul>
@@ -210,16 +223,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#stata-setting-up-for-reproducibility" id="toc-stata-setting-up-for-reproducibility" class="nav-link active" data-scroll-target="#stata-setting-up-for-reproducibility"><span class="header-section-number">4.1</span> Stata: Setting Up for Reproducibility</a>
+  <li><a href="#stata-setting-up-for-reproducibility" id="toc-stata-setting-up-for-reproducibility" class="nav-link active" data-scroll-target="#stata-setting-up-for-reproducibility"><span class="header-section-number">5.1</span> Stata: Setting Up for Reproducibility</a>
   <ul class="collapse">
-  <li><a href="#use-global-variables-for-paths" id="toc-use-global-variables-for-paths" class="nav-link" data-scroll-target="#use-global-variables-for-paths"><span class="header-section-number">4.1.1</span> 1. Use Global Variables for Paths</a></li>
-  <li><a href="#managing-ado-packages-for-replication" id="toc-managing-ado-packages-for-replication" class="nav-link" data-scroll-target="#managing-ado-packages-for-replication"><span class="header-section-number">4.1.2</span> 2. Managing Ado Packages for Replication</a></li>
-  <li><a href="#comment-generously" id="toc-comment-generously" class="nav-link" data-scroll-target="#comment-generously"><span class="header-section-number">4.1.3</span> 3. Comment Generously</a></li>
-  <li><a href="#write-reusable-code-functions-and-loops" id="toc-write-reusable-code-functions-and-loops" class="nav-link" data-scroll-target="#write-reusable-code-functions-and-loops"><span class="header-section-number">4.1.4</span> 4. Write Reusable Code: Functions and Loops</a></li>
-  <li><a href="#separate-analysis-and-table-generation" id="toc-separate-analysis-and-table-generation" class="nav-link" data-scroll-target="#separate-analysis-and-table-generation"><span class="header-section-number">4.1.5</span> 5. Separate Analysis and Table Generation</a></li>
-  <li><a href="#general-workflow-example" id="toc-general-workflow-example" class="nav-link" data-scroll-target="#general-workflow-example"><span class="header-section-number">4.1.6</span> 6. General Workflow Example</a></li>
+  <li><a href="#use-global-variables-for-paths" id="toc-use-global-variables-for-paths" class="nav-link" data-scroll-target="#use-global-variables-for-paths"><span class="header-section-number">5.1.1</span> 1. Use Global Variables for Paths</a></li>
+  <li><a href="#managing-ado-packages-for-replication" id="toc-managing-ado-packages-for-replication" class="nav-link" data-scroll-target="#managing-ado-packages-for-replication"><span class="header-section-number">5.1.2</span> 2. Managing Ado Packages for Replication</a></li>
+  <li><a href="#comment-generously" id="toc-comment-generously" class="nav-link" data-scroll-target="#comment-generously"><span class="header-section-number">5.1.3</span> 3. Comment Generously</a></li>
+  <li><a href="#write-reusable-code-functions-and-loops" id="toc-write-reusable-code-functions-and-loops" class="nav-link" data-scroll-target="#write-reusable-code-functions-and-loops"><span class="header-section-number">5.1.4</span> 4. Write Reusable Code: Functions and Loops</a></li>
+  <li><a href="#separate-analysis-and-table-generation" id="toc-separate-analysis-and-table-generation" class="nav-link" data-scroll-target="#separate-analysis-and-table-generation"><span class="header-section-number">5.1.5</span> 5. Separate Analysis and Table Generation</a></li>
+  <li><a href="#general-workflow-example" id="toc-general-workflow-example" class="nav-link" data-scroll-target="#general-workflow-example"><span class="header-section-number">5.1.6</span> 6. General Workflow Example</a></li>
   </ul></li>
-  <li><a href="#latex" id="toc-latex" class="nav-link" data-scroll-target="#latex"><span class="header-section-number">4.2</span> Latex</a></li>
+  <li><a href="#latex" id="toc-latex" class="nav-link" data-scroll-target="#latex"><span class="header-section-number">5.2</span> Latex</a></li>
   </ul>
 </nav>
     </div>
@@ -228,7 +241,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Replication with Stata: Best Practices</span></h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Replication with Stata: Best Practices</span></h1>
 </div>
 
 
@@ -245,18 +258,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="stata-setting-up-for-reproducibility" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="stata-setting-up-for-reproducibility"><span class="header-section-number">4.1</span> Stata: Setting Up for Reproducibility</h2>
+<section id="stata-setting-up-for-reproducibility" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="stata-setting-up-for-reproducibility"><span class="header-section-number">5.1</span> Stata: Setting Up for Reproducibility</h2>
 <p>Stata is a powerful tool for empirical research, but reproducibility requires discipline and structure. Here’s how to set up your project for robust, transparent replication.</p>
-<section id="use-global-variables-for-paths" class="level3" data-number="4.1.1">
-<h3 data-number="4.1.1" class="anchored" data-anchor-id="use-global-variables-for-paths"><span class="header-section-number">4.1.1</span> 1. Use Global Variables for Paths</h3>
+<section id="use-global-variables-for-paths" class="level3" data-number="5.1.1">
+<h3 data-number="5.1.1" class="anchored" data-anchor-id="use-global-variables-for-paths"><span class="header-section-number">5.1.1</span> 1. Use Global Variables for Paths</h3>
 <p>Define all key directories at the top of your main do-file. This makes your code portable and easy to maintain.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">global</span> project_path <span class="st">"/path/to/your/project"</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">global</span> project_path <span class="st">"/path/to/your/project"</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">global</span> data_original <span class="st">"$project_path/data/original"</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">global</span> data_temp     <span class="st">"$project_path/data/temporary"</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="kw">global</span> code          <span class="st">"$project_path/code"</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">global</span> output        <span class="st">"$project_path/paper"</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="kw">global</span> ado           <span class="st">"$project_path/ado"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="kw">global</span> ado           <span class="st">"$project_path/ado"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -271,8 +284,8 @@ Tip
 </div>
 </div>
 </section>
-<section id="managing-ado-packages-for-replication" class="level3" data-number="4.1.2">
-<h3 data-number="4.1.2" class="anchored" data-anchor-id="managing-ado-packages-for-replication"><span class="header-section-number">4.1.2</span> 2. Managing Ado Packages for Replication</h3>
+<section id="managing-ado-packages-for-replication" class="level3" data-number="5.1.2">
+<h3 data-number="5.1.2" class="anchored" data-anchor-id="managing-ado-packages-for-replication"><span class="header-section-number">5.1.2</span> 2. Managing Ado Packages for Replication</h3>
 <p>It is quite common to add new capabilities to Stata via user-written packages (ado files), for instance, the <code>estout</code>, <code>ivreg2</code> or <code>reghdfe</code>. These packages are updated and may lead to changes in your results. Ideally, we would indicate somewhere which versions of these packages were used, but this is only being slowly worked on as an <code>ado</code> package. We can circumvent this issue by storing <code>ado</code> files within a project-specific folder. By doing so, we can update them as needed and <strong>bundle this folder</strong> with our replication package.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
 <ul>
 <li><strong>Create a project-specific ado folder</strong> (e.g., <code>ado/</code>, see above).</li>
@@ -282,11 +295,11 @@ Tip
 </ul></li>
 <li><strong>Bundle this ado folder with your replication package</strong> so users get the exact versions you used.</li>
 </ul>
-<div class="sourceCode" id="cb2"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Create a project-specific ado directory</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Create a project-specific ado directory</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ot">sysdir</span> <span class="kw">set</span> <span class="ot">PLUS</span> <span class="st">"$ado"</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co">// Install packages into this folder</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="kw">ssc</span> install estout, <span class="kw">replace</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="kw">ssc</span> install estout, <span class="kw">replace</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -298,7 +311,7 @@ Important
 </div>
 <div class="callout-body-container callout-body">
 <p>Make sure to change the <code>sysdir</code> settings in your scripts to point to the correct <code>ado</code> folder. For instance, in your master file, add</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ot">sysdir</span> <span class="kw">set</span> <span class="ot">PLUS</span> <span class="st">"$ado"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ot">sysdir</span> <span class="kw">set</span> <span class="ot">PLUS</span> <span class="st">"$ado"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -315,14 +328,14 @@ Tip
 </div>
 </div>
 </section>
-<section id="comment-generously" class="level3" data-number="4.1.3">
-<h3 data-number="4.1.3" class="anchored" data-anchor-id="comment-generously"><span class="header-section-number">4.1.3</span> 3. Comment Generously</h3>
+<section id="comment-generously" class="level3" data-number="5.1.3">
+<h3 data-number="5.1.3" class="anchored" data-anchor-id="comment-generously"><span class="header-section-number">5.1.3</span> 3. Comment Generously</h3>
 <ul>
 <li><strong>Explain your logic, not just the syntax.</strong><br>
 Comments help your future self and others understand why you did something.</li>
 <li><strong>Document assumptions, data quirks, and any manual steps.</strong></li>
 </ul>
-<div class="sourceCode" id="cb4"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">/*</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">/*</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co">    Main regressions on population density and settlement patterns</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co">    Add covariates little by little</span></span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co">*/</span></span>
@@ -331,17 +344,17 @@ Comments help your future self and others understand why you did something.</li>
 <span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    eststo model_<span class="ot">`v'</span>_ea1</span>
 <span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    <span class="kw">reg</span> <span class="ot">`v'</span> <span class="ot">$EA2</span></span>
 <span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    eststo model_<span class="ot">`v'</span>_ea2</span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="write-reusable-code-functions-and-loops" class="level3" data-number="4.1.4">
-<h3 data-number="4.1.4" class="anchored" data-anchor-id="write-reusable-code-functions-and-loops"><span class="header-section-number">4.1.4</span> 4. Write Reusable Code: Functions and Loops</h3>
+<section id="write-reusable-code-functions-and-loops" class="level3" data-number="5.1.4">
+<h3 data-number="5.1.4" class="anchored" data-anchor-id="write-reusable-code-functions-and-loops"><span class="header-section-number">5.1.4</span> 4. Write Reusable Code: Functions and Loops</h3>
 <ul>
 <li><strong>Encapsulate repetitive tasks in programs (functions).</strong></li>
 <li><strong>Use loops to iterate over variables, controls, or specifications.</strong></li>
 <li>This makes it easy to add/remove variables or change specifications later.</li>
 </ul>
 <p>In your main do-file, indicate groups of variables that you reuse together.</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">/******************************************************</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">/******************************************************</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co">* Sets of controls</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co">******************************************************/</span></span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
@@ -360,9 +373,9 @@ Comments help your future self and others understand why you did something.</li>
 <span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a><span class="co">******************************************************/</span></span>
 <span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a><span class="kw">global</span> outcomes_ea_3            <span class="st">"v31 v30"</span>;</span>
-<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a><span class="kw">global</span> outcomes_ea_1            <span class="st">"v33 v66 v90 tasks technology strategy writing explanation"</span>;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a><span class="kw">global</span> outcomes_ea_1            <span class="st">"v33 v66 v90 tasks technology strategy writing explanation"</span>;</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>The following is a relatively complex Stata program that determines the appropriate regression model based on the outcome variable. It was useful to avoid forgetting control variables and ensuring the correct model specification. Then, if regressions with <code>v90</code> were to be run under OLS, it would be enough to modify the global macro <code>ols_regs</code> and <code>probit_regs</code>.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">/******************************************************</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">/******************************************************</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co">* Programs</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co">******************************************************/</span></span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
@@ -477,17 +490,17 @@ Comments help your future self and others understand why you did something.</li>
 <span id="cb6-113"><a href="#cb6-113" aria-hidden="true" tabindex="-1"></a>            <span class="kw">continue</span>;</span>
 <span id="cb6-114"><a href="#cb6-114" aria-hidden="true" tabindex="-1"></a>        };</span>
 <span id="cb6-115"><a href="#cb6-115" aria-hidden="true" tabindex="-1"></a>    };</span>
-<span id="cb6-116"><a href="#cb6-116" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span>;</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb6-116"><a href="#cb6-116" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span>;</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Now you can loop over outcomes and always use the right model and controls:</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">foreach</span> v <span class="kw">of</span> <span class="kw">global</span> outcomes {</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">foreach</span> v <span class="kw">of</span> <span class="kw">global</span> outcomes {</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    reg_model <span class="st">"`v'"</span></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">local</span> controls = <span class="fu">r</span>(controls)</span>
 <span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">local</span> method = <span class="fu">r</span>(method)</span>
 <span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    <span class="ot">`method'</span> <span class="ot">`v'</span> <span class="ot">`controls'</span></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="separate-analysis-and-table-generation" class="level3" data-number="4.1.5">
-<h3 data-number="4.1.5" class="anchored" data-anchor-id="separate-analysis-and-table-generation"><span class="header-section-number">4.1.5</span> 5. Separate Analysis and Table Generation</h3>
+<section id="separate-analysis-and-table-generation" class="level3" data-number="5.1.5">
+<h3 data-number="5.1.5" class="anchored" data-anchor-id="separate-analysis-and-table-generation"><span class="header-section-number">5.1.5</span> 5. Separate Analysis and Table Generation</h3>
 <ul>
 <li><strong>First, generate all results and store them (e.g., with <code>eststo</code>).</strong>
 <ul>
@@ -497,13 +510,13 @@ Comments help your future self and others understand why you did something.</li>
 <li>This keeps your workflow modular and easier to debug.</li>
 </ul>
 </section>
-<section id="general-workflow-example" class="level3" data-number="4.1.6">
-<h3 data-number="4.1.6" class="anchored" data-anchor-id="general-workflow-example"><span class="header-section-number">4.1.6</span> 6. General Workflow Example</h3>
+<section id="general-workflow-example" class="level3" data-number="5.1.6">
+<h3 data-number="5.1.6" class="anchored" data-anchor-id="general-workflow-example"><span class="header-section-number">5.1.6</span> 6. General Workflow Example</h3>
 <ol type="1">
 <li><strong>Set up paths and globals</strong> at the top of your master do-file.</li>
 <li><strong>Install dependencies</strong> (once, not in the replication package).</li>
 </ol>
-<div class="sourceCode" id="cb8"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">/*</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">/*</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="co">  1-Master.do</span></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="co">  This file sets up the environment, loads data, and runs the main analysis.</span></span>
 <span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="co">  Adjust paths and globals as needed.</span></span>
@@ -531,11 +544,11 @@ Comments help your future self and others understand why you did something.</li>
 <span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a><span class="co">// Analysis</span></span>
 <span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a><span class="kw">do</span> <span class="st">"$code/2-Data_cleaning.do"</span></span>
 <span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a><span class="kw">do</span> <span class="st">"$code/3-Analysis.do"</span></span>
-<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a><span class="kw">do</span> <span class="st">"$code/4-Results.do"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a><span class="kw">do</span> <span class="st">"$code/4-Results.do"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ol start="3" type="1">
 <li><strong>Prepare data</strong>: load, clean, and save to <code>data/temporary</code>.</li>
 </ol>
-<div class="sourceCode" id="cb9"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">/*</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">/*</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="co">  2-Data_cleaning.do</span></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="co">  This file handles data loading, cleaning, and preparation.</span></span>
 <span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="co">*/</span></span>
@@ -543,11 +556,11 @@ Comments help your future self and others understand why you did something.</li>
 <span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="kw">use</span> <span class="st">"$data_original/your_data.dta"</span>, <span class="kw">clear</span></span>
 <span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>* Document your <span class="kw">data</span> cleaning steps here</span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="kw">save</span> <span class="st">"$data_temp/cleaned_data.dta"</span>, <span class="kw">replace</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="kw">save</span> <span class="st">"$data_temp/cleaned_data.dta"</span>, <span class="kw">replace</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ol start="4" type="1">
 <li><strong>Run analysis</strong>: loop over outcomes, use functions for model selection, store results.</li>
 </ol>
-<div class="sourceCode" id="cb10"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">/*</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">/*</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="co">  3-Analysis.do</span></span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="co">  This file contains the main analysis code.</span></span>
 <span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="co">*/</span></span>
@@ -559,11 +572,11 @@ Comments help your future self and others understand why you did something.</li>
 <span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">local</span> method = <span class="fu">r</span>(method)</span>
 <span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>    <span class="ot">`method'</span> <span class="ot">`v'</span> <span class="ot">`controls'</span></span>
 <span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>    eststo <span class="ot">`method'</span>_<span class="ot">`v'</span></span>
-<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ol start="5" type="1">
 <li><strong>Generate tables/figures</strong>: in a dedicated script, using stored results. The tables (and figures) should <em>never be edited</em> manually. If you need to make changes, update the code and re-run the analysis. This ensures reproducibility and reduces errors.</li>
 </ol>
-<div class="sourceCode" id="cb11"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">/*</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">/*</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="co">  4-Results.do</span></span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="co">  This file generates tables and figures from the stored results.</span></span>
 <span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="co">*/</span></span>
@@ -611,13 +624,13 @@ Comments help your future self and others understand why you did something.</li>
 <span id="cb11-46"><a href="#cb11-46" aria-hidden="true" tabindex="-1"></a><span class="st">    stats(fe tim geo ethnic con r2_p N, fmt(0 0 0 0 0 3 0)</span></span>
 <span id="cb11-47"><a href="#cb11-47" aria-hidden="true" tabindex="-1"></a><span class="st">        layout("</span>\multicolumn{1}{c}{@}<span class="st">" "</span>\multicolumn{1}{c}{@}<span class="st">" "</span>\multicolumn{1}{c}{@}<span class="st">" "</span>\multicolumn{1}{c}{@}<span class="st">" "</span>\multicolumn{1}{c}{@}<span class="st">" "</span>\multicolumn{1}{S}{@}<span class="st">" "</span>\multicolumn{1}{c}{@}<span class="st">")</span></span>
 <span id="cb11-48"><a href="#cb11-48" aria-hidden="true" tabindex="-1"></a><span class="st">        labels("</span>Fixed effects<span class="st">" "</span>Time Fixed Effects<span class="st">" "</span>Geography<span class="st">" "</span>Ethnic<span class="st">" "</span>Controls Seshat<span class="st">" "</span>\midrule \(R^{2}\)/Pseudo-\(R^{2}\)<span class="st">" "</span>Observations<span class="st">"));</span></span>
-<span id="cb11-49"><a href="#cb11-49" aria-hidden="true" tabindex="-1"></a><span class="st">#delimit cr </span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb11-49"><a href="#cb11-49" aria-hidden="true" tabindex="-1"></a><span class="st">#delimit cr </span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 </section>
-<section id="latex" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="latex"><span class="header-section-number">4.2</span> Latex</h2>
+<section id="latex" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="latex"><span class="header-section-number">5.2</span> Latex</h2>
 <p>With a Stata code that generates readily usable LaTeX tables and figures, you can easily integrate your results into your academic papers. Again, the tables (and figures) should <em>never be edited</em> manually. If you need to make changes, update the code and re-run the analysis. This ensures reproducibility and reduces errors. For instance, do not export tables as Excel or Word files to make formatting changes. Integrating the results in LaTeX is straightforward with the right Stata commands.</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode latex code-with-copy"><code class="sourceCode latex"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>Table <span class="kw">\ref</span>{<span class="ex">tab:development</span>} presents the results of regressions using the Ethnographic Atlas and Seshat datasets.</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode latex code-with-copy"><code class="sourceCode latex"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>Table <span class="kw">\ref</span>{<span class="ex">tab:development</span>} presents the results of regressions using the Ethnographic Atlas and Seshat datasets.</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="kw">\begin</span>{<span class="ex">table</span>}[htbp]</span>
 <span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="fu">\centering</span></span>
@@ -629,7 +642,7 @@ Comments help your future self and others understand why you did something.</li>
 <span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a><span class="fu">\tablenotes</span>{</span>
 <span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>    Notes: This table presents the results of the main regressions for each dataset. (...)</span>
 <span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a><span class="kw">\end</span>{<span class="ex">table</span>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a><span class="kw">\end</span>{<span class="ex">table</span>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Here, the <code>\input{tables/Table_Development.tex}</code> command directly includes the LaTeX code generated by Stata, ensuring that your tables are always up-to-date with your latest analysis. <code>\tablenotes</code> is a personal Latex macro for adding table-specific notes.</p>
 <p>However, another challenge remains: referring to specific values in the table. For instance, you might want to reference the coefficient for population density in the Ethnographic Atlas dataset. While it is possible to automate this, this is not straightforward in Stata. For example, it is possible to export the results to a CSV file, refer to them with placeholders and use a script to replace the placeholders with the actual values. As we will see in the next section, this is much easier in Quarto.</p>
 
@@ -694,13 +707,14 @@ Comments help your future self and others understand why you did something.</li>
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -1045,12 +1059,12 @@ Comments help your future self and others understand why you did something.</li>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./folder_organization.html" class="pagination-link" aria-label="Folder Organization and Data Management">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Folder Organization and Data Management</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Folder Organization and Data Management</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./python-replication.html" class="pagination-link" aria-label="Replication with Python and Quarto: Best Practices">
-        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Replication with Python and Quarto: Best Practices</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Replication with Python and Quarto: Best Practices</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
