@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>5&nbsp; Exercises – Macroéconomie Dynamique</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./references.html" rel="next">
+<link href="./ramsey.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-8aac1957c9cdfe409a5df9367aa7061b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Èric Roca Fernández</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../../index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../teaching.html"> 
+<span class="menu-text">Teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../contact.html"> 
+<span class="menu-text">Contact</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <a href="./Macroéconomie-Dynamique.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./exercises.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Exercises</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      </a>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Macroéconomie Dynamique</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./solow.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Le modèle de Solow</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ramsey.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Le modèle de Ramsey</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./exercises.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Exercises</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#modèle-de-solow" id="toc-modèle-de-solow" class="nav-link active" data-scroll-target="#modèle-de-solow"><span class="header-section-number">5.1</span> Modèle de Solow</a>
+  <ul class="collapse">
+  <li><a href="#exercise-1" id="toc-exercise-1" class="nav-link" data-scroll-target="#exercise-1"><span class="header-section-number">5.1.1</span> Exercise 1</a></li>
+  <li><a href="#exercise-2" id="toc-exercise-2" class="nav-link" data-scroll-target="#exercise-2"><span class="header-section-number">5.1.2</span> Exercise 2</a></li>
+  <li><a href="#exercise-3" id="toc-exercise-3" class="nav-link" data-scroll-target="#exercise-3"><span class="header-section-number">5.1.3</span> Exercise 3</a></li>
+  <li><a href="#exercise-4" id="toc-exercise-4" class="nav-link" data-scroll-target="#exercise-4"><span class="header-section-number">5.1.4</span> Exercise 4</a></li>
+  <li><a href="#exercise-5" id="toc-exercise-5" class="nav-link" data-scroll-target="#exercise-5"><span class="header-section-number">5.1.5</span> Exercise 5</a></li>
+  <li><a href="#exercise-6" id="toc-exercise-6" class="nav-link" data-scroll-target="#exercise-6"><span class="header-section-number">5.1.6</span> Exercise 6</a></li>
+  <li><a href="#exercice-7" id="toc-exercice-7" class="nav-link" data-scroll-target="#exercice-7"><span class="header-section-number">5.1.7</span> Exercice 7</a></li>
+  <li><a href="#exercise-8" id="toc-exercise-8" class="nav-link" data-scroll-target="#exercise-8"><span class="header-section-number">5.1.8</span> Exercise 8</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Exercises</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="modèle-de-solow" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="modèle-de-solow"><span class="header-section-number">5.1</span> Modèle de Solow</h2>
+<section id="exercise-1" class="level3" data-number="5.1.1">
+<h3 data-number="5.1.1" class="anchored" data-anchor-id="exercise-1"><span class="header-section-number">5.1.1</span> Exercise 1</h3>
+<p>Fonction de production néoclassique. Montrez que la fonction de production de type Cobb-Douglas satisfait les conditions d’une fonction néoclassique.</p>
+<p><strong>Solution:</strong></p>
+<p>Les propriétés d’une fonction de prodcution néoclassique sont les suivantes:</p>
+<ol type="1">
+<li>Homogène de degré 1.</li>
+<li>Est croissante dans les facteurs de production.</li>
+<li>Montre des rendements décroissants.</li>
+<li>Satisfait les conditions d’Inada.</li>
+</ol>
+<p>Ainsi, si la fonction de production est <span class="math inline">\(F\left[K, L\right] = K^\alpha L^{1-\alpha},\, \alpha \in (0,1)\)</span>, l’application directe de la définition d’homogénéité de premier degrée donne:</p>
+<p><span class="math display">\[
+F[\lambda K, \lambda L] = \left(\lambda K\right)^\alpha \left(\lambda L\right)^{1-\alpha} = \lambda^\alpha K^\alpha \lambda^{1-\alpha} L^{1-\alpha} = \lambda K^\alpha L^{1-\alpha} = \lambda F[K, L].
+\]</span></p>
+<p>La fonction est aussi croissante dans les facteurs de production.</p>
+<p><span class="math display">\[\frac{\partial F[K,L]}{\partial K} = \alpha K^{\alpha-1}L^{1-\alpha} &gt; 0.\]</span></p>
+<p><span class="math display">\[\frac{\partial F[K,L]}{\partial L} = (1 - \alpha) K^{\alpha}L^{-\alpha} &gt; 0.\]</span></p>
+<p>Les facteurs montrent des rendements décroissants.</p>
+<p><span class="math display">\[\frac{\partial^2 F[K,L]}{\partial K^2} = \alpha (\alpha - 1) K^{\alpha-2}L^{1-\alpha} &lt; 0.\]</span> <span class="math display">\[\frac{\partial^2 F[K,L]}{\partial K^L} = (1 - \alpha)(-\alpha) K^{\alpha}L^{-\alpha-1} &lt; 0.\]</span></p>
+<p>Finalement, les conditions d’Inada sont les respectées:</p>
+<p><span class="math display">\[\lim_{K\rightarrow 0}F^\prime_{K} = \lim_{L\rightarrow 0}\alpha K^{\alpha-1}L^{1-\alpha} = \infty\]</span> <span class="math display">\[\lim_{L\rightarrow 0}F^\prime_{L} = \lim_{L\rightarrow 0}(1-\alpha) K^{\alpha}L^{-\alpha} = \infty\]</span> <span class="math display">\[\lim_{K\rightarrow \infty}F^\prime_{K} = \lim_{L\rightarrow \infty}\alpha K^{\alpha-1}L^{1-\alpha} = 0\]</span> <span class="math display">\[\lim_{L\rightarrow \infty}F^\prime_{L} = \lim_{L\rightarrow \infty}(1-\alpha) K^{\alpha}L^{-\alpha} = 0\]</span></p>
+</section>
+<section id="exercise-2" class="level3" data-number="5.1.2">
+<h3 data-number="5.1.2" class="anchored" data-anchor-id="exercise-2"><span class="header-section-number">5.1.2</span> Exercise 2</h3>
+<p>Montrez que, si les facteurs de production (travail et capital) sont remunerés à leur taux marginal, la remuneration total épuise la production. C’est-à-dire, montrez que <span class="math inline">\(wL + rK = Y = F(K,L).\)</span></p>
+<p><strong>Solution:</strong></p>
+<p>En un premier temps, on peux se contenter d’évoquer le théorème d’Euler à propos des fonctions homogènes. Il dit que, si <span class="math inline">\(F(K,L)\)</span> est une fonction homogène, alors <span class="math inline">\(F^\prime_K K + F^\prime_L L = \lambda F(K,L).\)</span></p>
+<p>Comme la fonction de production est homogène de premier degré, <span class="math inline">\(\lambda = 1\)</span> et on retrouve ce qu’on cherche:</p>
+<p><span class="math display">\[
+\overbrace{F^\prime_K}^{r} K + \overbrace{F^\prime_L}^{w} L = F(K,L).
+\]</span></p>
+<p>Ainsi, le totale des payements épuise la production.</p>
+<p>Il est possible de montrer cela d’une autre manière en partant de <span class="math inline">\(wL +rK\)</span> et utilisant les valeurs <span class="math inline">\(w = f(k) - f^\prime(k) k\)</span> et <span class="math inline">\(r = f^\prime(k).\)</span></p>
+<p>En effet, si l’on divise <span class="math inline">\(wL + rK\)</span> de <span class="math inline">\(L\)</span>, on obtient <span class="math inline">\(w + rk = f(k) - f^\prime(k) k + f^\prime(k) k = f(k).\)</span> Comme <span class="math inline">\(F(K,L) = Lf(k)\)</span>, on a <span class="math inline">\(Lf(k) = wL + rK.\)</span></p>
+</section>
+<section id="exercise-3" class="level3" data-number="5.1.3">
+<h3 data-number="5.1.3" class="anchored" data-anchor-id="exercise-3"><span class="header-section-number">5.1.3</span> Exercise 3</h3>
+<p>Avec une fonction de production de type Cobb-Douglas où <span class="math inline">\(Y=K^\alpha L^{1-\alpha},\, \alpha \in (0,1)\)</span>, montrez que:</p>
+<ol type="1">
+<li>La fonction d’accumulation de capital suit <span class="math inline">\(\dot{k} = sk^\alpha -(n+\delta)k\)</span>.</li>
+<li>L’économie a deux états stationnaires: <span class="math inline">\(k^\star_0 = 0\)</span> et <span class="math inline">\(k^\star_1 = \left(\frac{s}{n+\delta}\right)^\frac{1}{1-\alpha}.\)</span></li>
+<li>L’économie ne converge pas vers le premier état stationnarie mais elle converge vers le deuxième.</li>
+</ol>
+<p><strong>Solution:</strong></p>
+<ol type="1">
+<li><p>Pour trouver la fonction d’accumulation du capital en termes intensives il est nécessaire d’exprimer la production en termes intesifs. Ainsi:</p>
+<p><span class="math display">\[
+y \equiv \frac{Y}{L} = \frac{1}{L}K^\alpha L^{1-\alpha} = k^\alpha.
+\]</span></p>
+<p>Le capital total s’accumule selon <span class="math display">\[
+\dot{K} = sF(K,L)-\delta K.
+\]</span></p>
+<p>Par conséquent, <span class="math display">\[
+\left(\dot{\frac{K}{L}}\right) = \frac{\dot{K}L-\dot{L}K}{L^2} = \frac{sK^\alpha L^{1-\alpha}-\delta K}{L} - n k = sk^\alpha - (n+\delta)k.
+\]</span></p></li>
+<li><p>L’état stationnaire est la valeur <span class="math inline">\(k\)</span> telle que <span class="math inline">\(\dot{k} = 0\)</span>. Par conséquent:</p>
+<p><span class="math display">\[
+\dot{k} = 0 \implies sk^\alpha = (n+\delta)k \implies k^\star_0 =0
+\]</span></p>
+<p>ou <span class="math display">\[
+k^\star_1 = \left(\frac{s}{n+\delta}\right)^\frac{1}{1-\alpha}.
+\]</span></p></li>
+<li><p>Nous pouvons montrer la convergence vers chaque état stationnaire comme suit:</p>
+<ol type="1">
+<li><p>Prenons le premier, <span class="math inline">\(k^\star_0 = 0\)</span>. Quand <span class="math inline">\(k\)</span> est proche de cette valeur, <span class="math inline">\(\dot{k}\)</span> prends des valeurs importants:</p>
+<ol type="1">
+<li>Avec le diagram de phase ci-dessous, on voit que quand <span class="math inline">\(k\)</span> est positive et proche de 0, <span class="math inline">\(\dot{k} &gt; 0.\)</span> Comme <span class="math inline">\(k\)</span> est proche de 0, la productivité du capital est importante et, par conséquent, une petite augmentation de celui-ci augmente beaucoup la production (car <span class="math inline">\(\lim_{k \rightarrow 0}f^\prime(k) = \infty\)</span>). De l’autre coté, <span class="math inline">\((n+\delta)k\)</span> ne va pas beaucoup augmenter car le terme est linéaire en <span class="math inline">\(k\)</span>.</li>
+<li>Selon le thèorem de Hartman-Grobman <span class="math inline">\(\frac{\partial \dot{k}}{k} = s \alpha \frac{1}{k^{1-\alpha}} - (n+\delta).\)</span> Si l’on évalue la dérivée à <span class="math inline">\(k = 0\)</span>, on obtient <span class="math inline">\(+\infty\)</span>, et donc, on s’éloigne de cet état stationnaire.</li>
+</ol>
+<p>En conclusion, <span class="math inline">\(\dot{k} &gt; 0\)</span> quand <span class="math inline">\(k\)</span> est proche de 0. Ainsi, si une économie commence avec peu de capital, elle va en accumuler.</p></li>
+<li><p>Le deuxième état stationnaire <span class="math inline">\(k^\star_1 = \frac{s}{n+\delta}^\frac{1}{1-\alpha}\)</span>.</p>
+<ol type="1">
+<li>Avec le diagram de phase, si on bouge à droite de l’état stationnaire on a <span class="math inline">\(\dot{k} &lt; 0\)</span>. Ceci est dû au fait qu’augmenter le capital génère plus de production, mais d’une manière décroissante (rendements marginaux décroissants). En revanche, la dépréciation est linéaire en <span class="math inline">\(k\)</span> et affecte le capital de la même manière indépendamment de son niveau. Ainsi, on ajoute une petite augmentation de la production, qui va se traduire par une petite augmentation de l’épargne, mais on perd plus à cause de la dépréciation. L’effet total est donc une diminution du capital <span class="math inline">\(\dot{k} &lt; 0.\)</span> Donc, si on passe au-delà de l’état stationnaire, on perd du capital et donc on y revient. La même analyse peut se faire quand <span class="math inline">\(k\)</span> est légèrement inférieur à <span class="math inline">\(k^\star_1\)</span>.</li>
+<li>Selon le thèorem de Hartman-Grobman <span class="math inline">\(\frac{\partial \dot{k}}{k} = s \frac{1}{k^{1-\alpha}} - (n+\delta).\)</span> Si l’on évalue la dérivée à <span class="math inline">\(k = \left(\frac{s}{n+\delta}\right)^\frac{1}{1-\alpha}\)</span>, on obtient <span class="math inline">\((\alpha-1) (n+\delta) &lt; 0\)</span>. Ainsi, autour de l’état stationnaire, on s’en approche.</li>
+</ol>
+<p>En conclusion, quand on est proche de <span class="math inline">\(k^\star_1\)</span>, si l’économie a un niveau de capital légerement inférieur, elle va en accumuler. Et au contraire, si l’économie a un niveau de capital légèrement supérieur, elle va en perdre. Ainsi, l’économie converge vers l’état stationnaire <span class="math inline">\(k^\star_1.\)</span></p></li>
+</ol></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./images/solow_phase_diagram.png" class="img-fluid figure-img"></p>
+<figcaption>Diagramme de phase de Solow</figcaption>
+</figure>
+</div>
+</section>
+<section id="exercise-4" class="level3" data-number="5.1.4">
+<h3 data-number="5.1.4" class="anchored" data-anchor-id="exercise-4"><span class="header-section-number">5.1.4</span> Exercise 4</h3>
+<p>Imaginez que, suit à une décision politique, les ménages épargnent davantage. Si on suppose qu’avant le changement l’économie était à son état stationnaire, quelles sont les consequèneces de l’augmentation du taux d’épargne? Expliquez les effets <strong>sur le capital par tête</strong> et la <strong>consommation par tête</strong> à court à long terme. Pour simplifier, imaginez que la technologie ne s’ammeliore pas.</p>
+<p><strong>Solution:</strong></p>
+<p>Suite au changement, l’économie accumule davantage de capital. En effet, à l’état stationnaire (situation initiale) on avait que</p>
+<p><span class="math display">\[
+\dot{k_0} = sf(k_0) - (n+\delta)k_0 = 0.
+\]</span></p>
+<p>Si <span class="math inline">\(s\)</span> augmente, <span class="math inline">\(\dot{k} &gt; 0\)</span> car <span class="math inline">\(\frac{\partial \dot{k}}{\partial s} = f(k_0) &gt; 0\)</span> et le capital par tête s’accumule. La consommation à l’état stationnaire était donnée par <span class="math inline">\(c = (1-s)f(k)\)</span>. Avec l’augmentation de <span class="math inline">\(s\)</span>, la consommation diminue.</p>
+<p>À longue terme, un nouveau état stationnaire est atteint. Ceci montrera un niveau de capital par tête plus élevé car l’économie a accumulé davantage de capital. En effet, le niveau de capital stationnaire est défini par</p>
+<p><span class="math display">\[
+\frac{f(k)}{k} = \frac{n+\delta}{s}.
+\]</span></p>
+<p>Ainsi, si <span class="math inline">\(s\)</span> augmente la partie droite diminue, et donc, la partie gauche doit diminuer aussi. Le comportement de la partie gauche vient donné par</p>
+<p><span class="math display">\[
+\frac{\partial \frac{f(k)}{k}}{\partial k} = \frac{f^\prime(k)k - f(k)}{k^2} = - \frac{w}{k^2} &lt; 0.
+\]</span></p>
+<p>Par conséquence, comme la partie gauche doit diminuer, il faut que <span class="math inline">\(k^\star\)</span> augmente.</p>
+<p>La consommation à l’état stationnaire était donnée par</p>
+<p><span class="math display">\[
+c = f(k) - (n+\delta)k
+\]</span> car <span class="math inline">\(sf(k) = n + \delta k\)</span>.</p>
+<p>Cette fonction a une forme d’U inversé car <span class="math inline">\(f^\prime(k) - (n+\delta) &gt; 0\)</span> quand <span class="math inline">\(k\)</span> est petit et <span class="math inline">\(&lt;0\)</span> quand <span class="math inline">\(k\)</span> est grand. En plus, <span class="math inline">\(f^{\prime \prime} &lt; 0.\)</span> Ainsi, suite à l’augmentation de <span class="math inline">\(s\)</span>, si à l’origine la consommation était supériore au niveau d’or (<span class="math inline">\(c^{\text{gold}} \implies f^{\prime}(k) = n+\delta\)</span>) <span class="math inline">\(k^{\star}\)</span> augmente. Par conséquent, <span class="math inline">\(f^\prime(k)\)</span> diminue et la consommation diminue. Ceci est une application de la règle d’or: si la consommation stationnaire excede la consommation d’or, une diminution du taux d’épargne permet d’augmenter la nouvelle consommation stationnaire.</p>
+<p>Si, au contraire, la consommation stationnaire initiale était inferieure au niveau d’or, l’augmentation de <span class="math inline">\(s\)</span> peut augmenter la nouvelle consommation stationnaire, ou la diminuire.</p>
+<p>Il est important noter qu’à long terme, le capital par tête cesse d’augmenter et que le taux de croissance du capital sera toujours le même qu’avant le changement: <span class="math inline">\(\frac{\dot{K}}{K} = n.\)</span></p>
+</section>
+<section id="exercise-5" class="level3" data-number="5.1.5">
+<h3 data-number="5.1.5" class="anchored" data-anchor-id="exercise-5"><span class="header-section-number">5.1.5</span> Exercise 5</h3>
+<p>Dans le cadre du modèle de Solow (sans croissance exogène), montrez que deux états stationnaires existent.</p>
+<p><strong>Solution:</strong></p>
+<p>L’état stationnaire est définit comme la situation telle que <span class="math inline">\(\dot{k} = 0\)</span>. Dans le modèle simple,</p>
+<p><span class="math display">\[
+\dot{k} = sf(k)-(n+\delta)k.
+\]</span></p>
+<p>Ainsi, l’état stationnaire implique</p>
+<p><span class="math display">\[
+sf(k) = (n+\delta)k.
+\]</span></p>
+<p>On voit que, si <span class="math inline">\(k^\star = 0\)</span>, l’écononomie est stationnaire car <span class="math inline">\(f(0) = 0\)</span> (hypothèse d’essentialité). Ce état stationnaire n’est pas très interessant car sans capital la production est égale à <span class="math inline">\(0\)</span>, et sans production la consommation est également nulle.</p>
+<p>Un deuxième état stationnaire avec <span class="math inline">\(k^\star &gt; 0\)</span> existe. La démonstration est plus simple si, en lieu de chercher à resoudre <span class="math inline">\(\dot{k} = 0\)</span>, on cherche à résoudre <span class="math inline">\(\frac{\dot{k}}{k} = 0\)</span>. Comme <span class="math inline">\(k^\star &gt; 0\)</span>, la division de <span class="math inline">\(\dot{k}\)</span> par <span class="math inline">\(k\)</span> est possible.</p>
+<p>Nous cherchons un <span class="math inline">\(k^\star\)</span> tel que</p>
+<p><span class="math display">\[
+\frac{\dot{k}}{k} = s\frac{f(k)}{k} - (n+\delta) = 0.
+\]</span></p>
+<p>Si on dénote par <span class="math inline">\(H(k) = \frac{\dot{k}}{k} -(n+\delta)\)</span>, nous avons que:</p>
+<p><span class="math display">\[
+\lim_{k\rightarrow 0} H(k) = +\infty
+\]</span></p>
+<p>Cépendant,</p>
+<p><span class="math display">\[
+\lim_{k\rightarrow 0} \frac{sf(k)}{k} - (n+\delta)
+\]</span></p>
+<p>est indéterminée (type <span class="math inline">\(\frac{0}{0}\)</span>). En applicant la règle de l’Hôpital, la limite est equivalent à</p>
+<p><span class="math display">\[
+\lim_{k \rightarrow 0} \frac{sf^\prime(k)}{1} = +\infty
+\]</span></p>
+<p>à cause des conditions d’Inada. Ainsi, quand <span class="math inline">\(k \to 0\)</span>, <span class="math inline">\(H(k)\)</span> est positive.</p>
+<p>En revanche,</p>
+<p><span class="math display">\[
+\lim_{k \rightarrow \infty} H(k) = - (n+\delta) &lt; 0.
+\]</span></p>
+<p>Enfin, la fonction <span class="math inline">\(H(k)\)</span> est continue. Selon le théorème des valeurs intermédiaires, il existe <strong>au moins</strong> une valeur <span class="math inline">\(k^\star &gt; 0\)</span> telle que <span class="math inline">\(H(k^\star) = 0\)</span>.</p>
+<p>Nous pouvons aussi montrer de manière simple qu’il n’existe <strong>qu’une seule telle valeur</strong>. Pour ce faire, il suffit de montrer que la fonction <span class="math inline">\(H(k)\)</span> est strictement decroissante. En effet,</p>
+<p><span class="math display">\[
+\frac{\partial H(k)}{\partial k} = s\frac{f^\prime(k)k - f(k)}{k^2} = (-1) s\frac{f(k) - f^\prime(k)k}{k^2} = (-1)s\frac{w}{k^2} &lt; 0.
+\]</span></p>
+</section>
+<section id="exercise-6" class="level3" data-number="5.1.6">
+<h3 data-number="5.1.6" class="anchored" data-anchor-id="exercise-6"><span class="header-section-number">5.1.6</span> Exercise 6</h3>
+<p>Imaginez que la fonction de production est donnée par <span class="math inline">\(Y = AK + BL\)</span>.</p>
+<ol type="1">
+<li>Est-ce que cette fonction de production est néoclassique?</li>
+<li>Quelles sont les conditions des fonctions néoclassiques qui ne sont pas satisfaites?</li>
+<li>Écrivez la fonction d’accumulation de capital pour le modèle de Solow.</li>
+<li>Sous quelles conditions l’économie converge vers un état stationnaire?</li>
+<li>Sous quelles conditions l’économie montre croissance endogène (sans fin)?</li>
+</ol>
+<p><strong>Solutions:</strong></p>
+<ol type="1">
+<li><p>No, la fonction de production n’est pas néoclassique.</p></li>
+<li><p>Les rendements sont constants pour chaque facteur: <span class="math display">\[
+F^{\prime \prime}_{K}(K, L) = 0,
+\]</span> <span class="math display">\[
+F^{\prime \prime}_{L}(K, L) = 0
+\]</span> Cela implique que les conditions d’Inada ne sont pas réspectées, nottamment <span class="math inline">\(\lim_{K\to \infty}F^\prime_{K} = \lim_{L\to \infty}F^\prime_{L} = 0\)</span>.</p></li>
+<li><p>Le capital continue de s’accumuler comme toujours: <span class="math inline">\(\dot{K} = sF(K,L) - \delta K.\)</span> Ainsi, si <span class="math inline">\(k \equiv \frac{K}{L}\)</span>, nous avons que</p>
+<p><span class="math display">\[
+\dot{k} = \frac{\dot{K}L - \dot{L}K}{L^2} = s(Ak + B) - \delta k - n k.
+\]</span></p>
+<p>Et donc,</p>
+<p><span class="math display">\[
+\dot{k} = s(Ak + B) - (n+\delta)k.
+\]</span></p></li>
+<li><p>Le taux de croissance du capital par tête est:</p>
+<p><span class="math display">\[
+\frac{\dot{k}}{k} = sA - \delta + \frac{sB}{k}
+\]</span></p>
+<p>Le niveau de capital par tête stationnaire est: <span class="math display">\[
+\dot{k} = 0 \implies k^\star = (-1)\frac{sB}{sA-\delta}.
+\]</span></p>
+<p>On voit déjà que si <span class="math inline">\(sA - \delta &gt; 0\)</span> alors <span class="math inline">\(k^\star &lt; 0.\)</span> En plus, pour converger vers l’état stationnaire il est nécessaire que:</p>
+<ol type="1">
+<li>Quand <span class="math inline">\(k\)</span> est petit, le taux de croissance soit positive (typiquement grand).</li>
+<li>Quand <span class="math inline">\(k \to \infty\)</span>, le taux de croissance soit négative (quand <span class="math inline">\(k\)</span> est trop grand, l’économie perd du capita). Avec <span class="math inline">\(\frac{\dot{k}}{k} = sA - \delta + \frac{sB}{k}\)</span>, on a:</li>
+</ol>
+<p><span class="math display">\[
+\lim_{k \rightarrow 0} \dot{k} = +\infty
+\]</span></p>
+<p><span class="math display">\[
+\lim_{k \rightarrow \infty} \dot{k} = sA - \delta
+\]</span> Ainsi, pour avoir convergence il faut que</p>
+<p><span class="math display">\[
+sA - \delta &lt; 0,
+\]</span> autrement dit <span class="math inline">\(sA &lt; \delta.\)</span> En plus, avec cette condition, <span class="math inline">\(k^\star &gt; 0.\)</span></p></li>
+<li><p>Si l’économie a un taux de croissance toujours positive, elle a une croissance endogène. Dans ce cas là, il faut vérifier sous quelles conditions <span class="math inline">\(k\)</span> ne cesse jamais d’augmenter. Comme <span class="math inline">\(\frac{\dot{k}}{k} = sA - \delta + \frac{sB}{k}\)</span>, il suffit que <span class="math inline">\(sA - \delta &gt; 0\)</span>.</p></li>
+</ol>
+</section>
+<section id="exercice-7" class="level3" data-number="5.1.7">
+<h3 data-number="5.1.7" class="anchored" data-anchor-id="exercice-7"><span class="header-section-number">5.1.7</span> Exercice 7</h3>
+<p>Supposez que la fonction de production est de type CES:</p>
+<p><span class="math display">\[
+F(K,L) = (\alpha K^\rho + (1-\alpha) L^\rho)^\frac{1}{\rho}.
+\]</span></p>
+<p>Déterminez la fonction de production équivalente en termes intensifs et calculez le salaire et le taux d’intérêt.</p>
+<p><strong>Solution:</strong></p>
+<p>Si la fonction de production est <span class="math display">\[
+F(K,L) = (\alpha K^\rho + (1-\alpha) L^\rho)^\frac{1}{\rho},
+\]</span> en termes intensifs, nous aurons:</p>
+<p><span class="math display">\[\begin{align*}
+  &amp;y \equiv \frac{Y}{L} = \frac{(\alpha K^\rho + (1-\alpha) L^\rho)^\frac{1}{\rho}}{L} \\
+  &amp;y = L^{-1}(\alpha K^\rho + (1-\alpha) L^\rho)^\frac{1}{\rho} \\
+  &amp;y = L^\frac{-\rho}{\rho} \left(\alpha K^\rho + (1-\alpha) L^\rho\right)^\frac{1}{\rho} \\
+  &amp;y = \left(L^{-\rho}\left[\alpha K^\rho + (1-\alpha) L^\rho\right]\right)^\frac{1}{\rho} \\
+  &amp;y = \left(\alpha k^\rho + (1-\alpha) \right)^\frac{1}{\rho}
+\end{align*}\]</span></p>
+<p>Le salaire et le taux d’intérêt peuvent être calculés en termes intensifs utilisant les définitions:</p>
+<p><span class="math display">\[\begin{align*}
+  r &amp;= f^\prime(k) = \alpha k^{\rho-1}\left(\alpha k^\rho + (1-\alpha) \right)^{\frac{1}{\rho}-1} \\
+  w &amp;= f(k) - f^\prime(k) k = \\
+    &amp;= \left(\alpha k^\rho + (1-\alpha) \right)^{\frac{1}{\rho}} - \alpha k^{\rho-1}\left(\alpha k^\rho + (1-\alpha) \right)^{\frac{1}{\rho}-1} = \\
+    &amp;= \left(\alpha k^\rho + (1-\alpha)\right)^{\frac{1}{\rho}-1}\left(\textcolor{red}{\alpha k^\rho + (1-\alpha) - \alpha k^\rho})\right) =\\
+    &amp;= \textcolor{red}{(1-\alpha)}(\alpha k^\rho + (1-\alpha))^{\frac{1}{\rho}-1}
+\end{align*}\]</span></p>
+</section>
+<section id="exercise-8" class="level3" data-number="5.1.8">
+<h3 data-number="5.1.8" class="anchored" data-anchor-id="exercise-8"><span class="header-section-number">5.1.8</span> Exercise 8</h3>
+<p>Si le taux d’intérêt d’un pays qui se trouve à l’état stationnaire est inférieur à <span class="math inline">\((n+\delta)\)</span>, quelle politique pourriez-vous proposer pour augmenter la consommation du pays de manière à ce que toutes les générations y gagnent?</p>
+<p><strong>Solution:</strong></p>
+<p>La règle d’or établie que le niveau de capital qui maximise la consommation stationnaire est: <span class="math inline">\(f^\prime(k^\star) = n+\delta.\)</span></p>
+<p>Disions que le pays ait un niveau de capital stationnaire égal à <span class="math inline">\(k^\dagger.\)</span> Si le taux d’intérêt du pays est inférieure à <span class="math inline">\(n+\delta\)</span>, cela implique que <span class="math inline">\(f^\prime(k^\dagger) &lt; n + \delta\)</span> car le taux d’intérêt est <span class="math inline">\(f^\prime(k)\)</span>.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./ramsey.html" class="pagination-link" aria-label="Le modèle de Ramsey">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Le modèle de Ramsey</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./references.html" class="pagination-link" aria-label="References">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
