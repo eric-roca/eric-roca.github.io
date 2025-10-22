@@ -236,6 +236,7 @@ window.Quarto = {
    
   <ul>
   <li><a href="#croissance-économique" id="toc-croissance-économique" class="nav-link active" data-scroll-target="#croissance-économique"><span class="header-section-number">2.1</span> Croissance économique</a></li>
+  <li><a href="#échantillon-dannales" id="toc-échantillon-dannales" class="nav-link" data-scroll-target="#échantillon-dannales"><span class="header-section-number">2.2</span> Échantillon d’Annales</a></li>
   </ul>
 </nav>
     </div>
@@ -298,7 +299,78 @@ PIB_{2000} = PIB_{1870} \times e^{(g(2000-1870))}
 <p>La première extension suppose simplement une augmentation exogène de la technologie. Dans ce cas, le PIB par habitant peut continuer à augmenter. Cependant, cela ne nous aide pas à comprendre pourquoi les pays sont différents, car cela revient à dire que leur taux de croissance technologique est différent.</p>
 <p>Le modèle <strong>Ramsey-Cass-Koopmans (1965)</strong> modifie le modèle de Solow en permettant aux ménages de décider de manière optimale combien épargner. Dans le modèle de Solow, le taux d’épargne était exogène. Cette modification rend le modèle plus complexe et enrichit les dynamiques, mais les conclusions restent les mêmes.</p>
 <p>D’autres modèles tentent de modéliser la croissance technologique de manière plus explicite. Par exemple, Arrow (1962) et Romer (1986) proposent des modèles où les connaissances sont acquises par le biais de la production (apprentissage par la pratique). Du point de vue théorique, cela revient à considérer la croissance technologique comme une externalité de la production. Plus tard, Romer (1987, 1990) ajoute un secteur de l’économie dédié à la création d’idées et introduit la concurrence imparfaite pour protéger les idées. Une autre approche pour modéliser la création de nouvelles idées est le paradigme schumpétérien, où les individus inventent des nouvelles technologies qui surpassent les précédentes, par exemple Aghion et Howitt (1992).</p>
-<p><a href="./uploads/Exam_Macro_Dynamique_2023.pdf">Examen 2023</a></p>
+</section>
+<section id="échantillon-dannales" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="échantillon-dannales"><span class="header-section-number">2.2</span> Échantillon d’Annales</h2>
+<div class="callout callout-style-default callout-tip callout-titled" title="Exemple des questions posées lors des années précédentes">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Exemple des questions posées lors des années précédentes
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ol type="1">
+<li><p>On suppose une économie comme celle décrite dans le modèle de Solow :</p>
+<ul>
+<li>Un seul bien homogène existe.</li>
+<li>De nombreuses entreprises homogènes produisent ce bien avec une fonction de production Cobb-Douglas.</li>
+<li>La production nécessite du capital <span class="math inline">\(K\)</span> et du travail <span class="math inline">\(L\)</span>.</li>
+<li>La concurrence est pure et parfaite, et les facteurs de production sont rémunérés à leur productivité marginale.</li>
+<li>Des ménages homogènes épargnent une faction constante <span class="math inline">\(s\)</span> de leur revenu.</li>
+<li>La population augmente au taux constant et exogène <span class="math inline">\(n &gt; 0.\)</span></li>
+<li>Le temps <span class="math inline">\(t\)</span> est continu.</li>
+</ul>
+<p>Ainsi, au moment <span class="math inline">\(t\)</span>, la production totale est <span class="math inline">\(Y(t) = K(t)^\alpha L(t)^{1-\alpha}\)</span>.</p>
+<ol type="1">
+<li><p>Si l’on denote le capital par tête comme <span class="math inline">\(k(t) \equiv \frac{K(t)}{L(t)}\)</span> et la production par tête comme <span class="math inline">\(y(t) = \frac{Y(t)}{L{t}}\)</span>, écrivez la fonction de production en termes intensifs, c’est-à-dire, trouvez une équation <span class="math inline">\(y = f(k).\)</span></p></li>
+<li><p>Calculez le salaire et le taux d’intérêt.</p></li>
+<li><p>Dans cette économie, le capital physique s’accumule selon l’équation dynamique <span class="math inline">\(\dot{K}(t) = s Y(t) - \delta K(t)\)</span> où <span class="math inline">\(\delta \in (0,1)\)</span> est le taux de dépréciation du capital. Déduisez l’équation d’accumulation du capital par tête, c’est-à-dire, l’équation pour <span class="math inline">\(\dot{k}(t)\)</span>.</p></li>
+<li><p>Définissez, avec vos propres mots, le concept d’état stationnaire, et calculez tous les états stationnaires qui existent pour cette économie.</p></li>
+<li><p>Décrivez les dynamiques de l’économie, c’est-à-dire, expliquez comment le capital par tête évolue avec le temps. Vous pouvez vous aider d’un graphique ou faire référence à l’idée de stabilité des états stationnaires.</p></li>
+</ol></li>
+<li><p>Dans le modèle de Ramsey, les deux équations dynamiques qui expliquent l’évolution de l’économie sont : <span class="math display">\[\begin{align*}
+  \frac{\dot{c}(t)}{c(t)} &amp;= \frac{1}{\theta}\left(f^\prime(k(t)) - \rho - \delta \right) \\
+  \dot{k}(t) &amp;= f(k) - c(t) - (n + \delta) k(t)
+\end{align*}\]</span></p>
+<ol type="1">
+<li><p>Expliquez pour quoi la consommation</p>
+<ul>
+<li>augmente avec l’élasticité de substitution intertemporelle <span class="math inline">\(\left(\frac{1}{\theta}\right).\)</span></li>
+<li>diminue avec la valuer de <span class="math inline">\(\rho\)</span> (bias pour le présent, aidez-vous de la fonction d’utilité pour en discuter)</li>
+</ul></li>
+<li><p>Tracez le diagramme de phase qui correspond à l’économie.</p>
+<ol type="1">
+<li>À partir de l’équation dynamique pour le capital, montrez l’ensemble de points où <span class="math inline">\(\dot{k}(t) = 0\)</span> et expliquez les dynamiques du capital lorsque la consommation n’assure pas <span class="math inline">\(\dot{k}(t) = 0\)</span>, c’est-à-dire, lorsque <span class="math inline">\(c\)</span> est plus grand (ou plus petite) que la valeur qui assure <span class="math inline">\(\dot{k}(t) = 0.\)</span></li>
+<li>À partir de l’équation dynamique pour la consommation, montrez l’ensemble de points où <span class="math inline">\(\dot{c}(t) = 0\)</span> et expliquez les dynamiques de la cosommation lorsque le capital n’assure pas <span class="math inline">\(\dot{c}(t) = 0\)</span>, c’est-à-dire, lorsque <span class="math inline">\(k\)</span> est plus grand (ou plus petite) que la valeur qui assure <span class="math inline">\(\dot{c}(t) = 0.\)</span></li>
+<li>Combinez les dynamiques du capital et de la consommation pour illustrer les différentes dynamiques globales qui peuvent exister dans le modèle de Ramsey, et indiquez au moins une possible évolution du capital et de la consommation qui amène vers l’état stationnaire.</li>
+</ol></li>
+</ol></li>
+<li><p>Dans le contexte du modèle de Solow, veuillez expliquer la règle d’or. On distingue deux cas différents selon que le niveau stationnaire du capital (<span class="math inline">\(\bar{k}\)</span>) est plus élevé ou plus bas que celui correspondant à la règle d’or (<span class="math inline">\(k_\text{gold}\)</span>): situation d’ineficacité dynamique et situation d’éfficacité dynamique.</p>
+<ol type="1">
+<li>Expliquez comment l’économie peut sortir de la situation d’ineficacité dynamique et atteindre une situation Pareto-optimale.</li>
+<li>Expliquez pour quoi il n’est pas possible d’introduire une telle politique pour sortir de la situation d’efficacité dynamique.</li>
+</ol></li>
+<li><p>Dans le modèle de Solow avec une fonction de production Cobb-Douglas, le taux de croissance du capital (par tête) est défini comme suit: <span class="math inline">\(g_k \equiv \frac{\dot{k}(t)}{k(t)} = s k(t)^{\alpha -1} - (n+\delta).\)</span></p>
+<ol type="1">
+<li>Montrez que ce taux de croissance <span class="math inline">\(g_k\)</span> diminue avec le niveau de capital existant <span class="math inline">\(k(t).\)</span></li>
+<li>Quelles sont les implications en termes de convergence économique entre pays ?</li>
+<li>Pourquoi une comparaison entre pays, comme celle présentée dans le graphique suivant, ne montre-t-elle pas de convergence ?</li>
+</ol></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./images/absolute_convergence.jpg" class="img-fluid figure-img"></p>
+<figcaption>Convergence</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
 
 
 </section>
