@@ -1,0 +1,1635 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>2&nbsp; The OLG model – OLG</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./de_la_croix_dottori.html" rel="next">
+<link href="./index.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-cca0a89ef804043ef52c15dbdbde7d3d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Èric Roca Fernández</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./../../research.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./../../teaching.html"> 
+<span class="menu-text">Teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./../../contact.html"> 
+<span class="menu-text">Contact</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+    <a href="./OLG.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
+    <div class="dropdown">
+      <a href="" title="Share" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label="Share"><i class="bi bi-share"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://twitter.com/intent/tweet?url=|url|">
+              <i class="bi bi-twitter pe-1"></i>
+            Twitter
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://www.facebook.com/sharer/sharer.php?u=|url|">
+              <i class="bi bi-facebook pe-1"></i>
+            Facebook
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item quarto-navbar-tools-item" href="https://www.linkedin.com/sharing/share-offsite/?url=|url|">
+              <i class="bi bi-linkedin pe-1"></i>
+            LinkedIn
+            </a>
+          </li>
+      </ul>
+    </div>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./olg.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The OLG model</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">The OLG Model</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./olg.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The OLG model</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./de_la_croix_dottori.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">de la Croix and Dottori (2008)</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./galor_moav.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Galor and Moav (2006)</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./galor_ozark.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Galor and Özak (2016)</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">2.1</span> Introduction</a></li>
+  <li><a href="#preliminaries" id="toc-preliminaries" class="nav-link" data-scroll-target="#preliminaries"><span class="header-section-number">2.2</span> Preliminaries</a>
+  <ul class="collapse">
+  <li><a href="#individuals-live-for-two-periods" id="toc-individuals-live-for-two-periods" class="nav-link" data-scroll-target="#individuals-live-for-two-periods"><span class="header-section-number">2.2.1</span> Individuals live for two periods</a></li>
+  </ul></li>
+  <li><a href="#assumptions" id="toc-assumptions" class="nav-link" data-scroll-target="#assumptions"><span class="header-section-number">2.3</span> Assumptions</a>
+  <ul class="collapse">
+  <li><a href="#firms" id="toc-firms" class="nav-link" data-scroll-target="#firms"><span class="header-section-number">2.3.1</span> Firms</a></li>
+  <li><a href="#households" id="toc-households" class="nav-link" data-scroll-target="#households"><span class="header-section-number">2.3.2</span> Households</a></li>
+  <li><a href="#the-behaviour-of-individuals" id="toc-the-behaviour-of-individuals" class="nav-link" data-scroll-target="#the-behaviour-of-individuals"><span class="header-section-number">2.3.3</span> The behaviour of individuals</a></li>
+  </ul></li>
+  <li><a href="#examples-of-utility-functions-and-savings-behavior" id="toc-examples-of-utility-functions-and-savings-behavior" class="nav-link" data-scroll-target="#examples-of-utility-functions-and-savings-behavior"><span class="header-section-number">2.4</span> Examples of utility functions and savings behavior</a>
+  <ul class="collapse">
+  <li><a href="#example-1-log-utility" id="toc-example-1-log-utility" class="nav-link" data-scroll-target="#example-1-log-utility"><span class="header-section-number">2.4.1</span> Example 1: Log-utility</a></li>
+  <li><a href="#example-2-general-cies-utility" id="toc-example-2-general-cies-utility" class="nav-link" data-scroll-target="#example-2-general-cies-utility"><span class="header-section-number">2.4.2</span> Example 2: General CIES utility</a></li>
+  </ul></li>
+  <li><a href="#temporary-equilibrium" id="toc-temporary-equilibrium" class="nav-link" data-scroll-target="#temporary-equilibrium"><span class="header-section-number">2.5</span> Temporary equilibrium</a></li>
+  <li><a href="#intertemporal-equilibrium-with-perfect-foresight" id="toc-intertemporal-equilibrium-with-perfect-foresight" class="nav-link" data-scroll-target="#intertemporal-equilibrium-with-perfect-foresight"><span class="header-section-number">2.6</span> Intertemporal equilibrium with perfect foresight</a>
+  <ul class="collapse">
+  <li><a href="#from-aggregate-to-per-capita-capital-accumulation" id="toc-from-aggregate-to-per-capita-capital-accumulation" class="nav-link" data-scroll-target="#from-aggregate-to-per-capita-capital-accumulation"><span class="header-section-number">2.6.1</span> From aggregate to per-capita capital accumulation</a></li>
+  <li><a href="#the-intertemporal-equilibrium" id="toc-the-intertemporal-equilibrium" class="nav-link" data-scroll-target="#the-intertemporal-equilibrium"><span class="header-section-number">2.6.2</span> The intertemporal equilibrium</a></li>
+  <li><a href="#why-explicit-solutions-are-difficult" id="toc-why-explicit-solutions-are-difficult" class="nav-link" data-scroll-target="#why-explicit-solutions-are-difficult"><span class="header-section-number">2.6.3</span> Why explicit solutions are difficult</a></li>
+  <li><a href="#existence-and-uniqueness-brief-remarks" id="toc-existence-and-uniqueness-brief-remarks" class="nav-link" data-scroll-target="#existence-and-uniqueness-brief-remarks"><span class="header-section-number">2.6.4</span> Existence and uniqueness (brief remarks)</a></li>
+  </ul></li>
+  <li><a href="#steady-states" id="toc-steady-states" class="nav-link" data-scroll-target="#steady-states"><span class="header-section-number">2.7</span> Steady states</a>
+  <ul class="collapse">
+  <li><a href="#the-autarky-steady-state-bark-0" id="toc-the-autarky-steady-state-bark-0" class="nav-link" data-scroll-target="#the-autarky-steady-state-bark-0"><span class="header-section-number">2.7.1</span> The autarky steady state: <span class="math inline">\(\bar{k} = 0\)</span></a></li>
+  <li><a href="#interior-steady-states-bark-0" id="toc-interior-steady-states-bark-0" class="nav-link" data-scroll-target="#interior-steady-states-bark-0"><span class="header-section-number">2.7.2</span> Interior steady states: <span class="math inline">\(\bar{k} &gt; 0\)</span></a></li>
+  <li><a href="#example-cobb-douglas-production-and-log-utility" id="toc-example-cobb-douglas-production-and-log-utility" class="nav-link" data-scroll-target="#example-cobb-douglas-production-and-log-utility"><span class="header-section-number">2.7.3</span> Example: Cobb-Douglas production and log-utility</a></li>
+  </ul></li>
+  <li><a href="#stability-analysis-the-hartman-grobman-theorem" id="toc-stability-analysis-the-hartman-grobman-theorem" class="nav-link" data-scroll-target="#stability-analysis-the-hartman-grobman-theorem"><span class="header-section-number">2.8</span> Stability analysis: The Hartman-Grobman theorem</a>
+  <ul class="collapse">
+  <li><a href="#stability-of-the-autarky-steady-state" id="toc-stability-of-the-autarky-steady-state" class="nav-link" data-scroll-target="#stability-of-the-autarky-steady-state"><span class="header-section-number">2.8.1</span> Stability of the autarky steady state</a></li>
+  <li><a href="#stability-of-the-interior-steady-state" id="toc-stability-of-the-interior-steady-state" class="nav-link" data-scroll-target="#stability-of-the-interior-steady-state"><span class="header-section-number">2.8.2</span> Stability of the interior steady state</a></li>
+  <li><a href="#global-dynamics" id="toc-global-dynamics" class="nav-link" data-scroll-target="#global-dynamics"><span class="header-section-number">2.8.3</span> Global dynamics</a></li>
+  </ul></li>
+  <li><a href="#sec-fertility" id="toc-sec-fertility" class="nav-link" data-scroll-target="#sec-fertility"><span class="header-section-number">2.9</span> Application: Fertility and education choices</a>
+  <ul class="collapse">
+  <li><a href="#model-setup" id="toc-model-setup" class="nav-link" data-scroll-target="#model-setup"><span class="header-section-number">2.9.1</span> Model setup</a></li>
+  <li><a href="#household-optimization" id="toc-household-optimization" class="nav-link" data-scroll-target="#household-optimization"><span class="header-section-number">2.9.2</span> Household optimization</a></li>
+  <li><a href="#solving-for-fertility-and-education" id="toc-solving-for-fertility-and-education" class="nav-link" data-scroll-target="#solving-for-fertility-and-education"><span class="header-section-number">2.9.3</span> Solving for fertility and education</a></li>
+  <li><a href="#human-capital-dynamics" id="toc-human-capital-dynamics" class="nav-link" data-scroll-target="#human-capital-dynamics"><span class="header-section-number">2.9.4</span> Human capital dynamics</a></li>
+  <li><a href="#gdp-per-worker-dynamics" id="toc-gdp-per-worker-dynamics" class="nav-link" data-scroll-target="#gdp-per-worker-dynamics"><span class="header-section-number">2.9.5</span> GDP per worker dynamics</a></li>
+  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion"><span class="header-section-number">2.9.6</span> Discussion</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">The OLG model</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introduction" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">2.1</span> Introduction</h2>
+<p>Based on <span class="citation" data-cites="De_la_Croix_2009">Croix and Michel (<a href="references.html#ref-De_la_Croix_2009" role="doc-biblioref">2009</a>)</span>.</p>
+<p>The overlapping generations (OLG) model focuses on the life-cycle: agents make decisions regarding how to consume and how much to save for retirement. Individuals live for two periods of time, work when young, and retire when old. This framework is particularly useful for studying intergenerational redistribution, allowing us to analyze:</p>
+<ul>
+<li>social security systems,</li>
+<li>education policies, and</li>
+<li>public debt.</li>
+</ul>
+<p>The key feature of the OLG model is that agents are heterogeneous by age. In the first period of life, individuals are young and work. When old, they retire and live from savings. Hence, at any point in time, <em>two types of agents with <strong>different</strong> budget constraints coexist</em>: young and old.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>A basic reference for this model is <span class="citation" data-cites="diamond_1965">Diamond (<a href="references.html#ref-diamond_1965" role="doc-biblioref">1965</a>)</span>.</p>
+</section>
+<section id="preliminaries" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="preliminaries"><span class="header-section-number">2.2</span> Preliminaries</h2>
+<p>In this model, time is discrete and extends from <span class="math inline">\(t=0, 1, \ldots, \infty.\)</span> Individuals make decisions at points in time. We shall have initial conditions detailing the state of the economy at <span class="math inline">\(t=0.\)</span></p>
+<section id="individuals-live-for-two-periods" class="level3" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="individuals-live-for-two-periods"><span class="header-section-number">2.2.1</span> Individuals live for two periods</h3>
+<p>Individuals live for two periods, meaning that, at every point in time, two generations are alive and overlap.</p>
+<p>This is relevant: the economy goes on forever but individuals only operate during some periods. Hence, there will be infinite two-period-lived generations. In particular, at <span class="math inline">\(t=0\)</span>, we will have a young and an adult generation. This adult generation will die at the end of <span class="math inline">\(t=1\)</span>, the young generation will become adults and have children: the <em>new</em> young generation of <span class="math inline">\(t=2.\)</span> Hence, we can represent the generations diagrammatically —in brackets I have denoted the year in which each generation was born.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 17%">
+<col style="width: 13%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><span class="math inline">\(t=0\)</span></th>
+<th><span class="math inline">\(t=1\)</span></th>
+<th><span class="math inline">\(t=2\)</span></th>
+<th><span class="math inline">\(t=3\)</span></th>
+<th><span class="math inline">\(t=4\)</span></th>
+<th><span class="math inline">\(t=5\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Old (t=-1)</td>
+<td>Die</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Young(t=0)</td>
+<td>Old (t=0)</td>
+<td>Die</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Young(t=1)</td>
+<td>Old (t=1)</td>
+<td>Die</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Young(t=2)</td>
+<td>Old (t=2)</td>
+<td>Die</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td>Young(t=3)</td>
+<td>Old (t=3)</td>
+<td>Die</td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td>Young(t=4)</td>
+<td>Old (t=4)</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Young(t=5)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>To simplify the model, we assume that each adult born in <span class="math inline">\(t-1\)</span> has <span class="math inline">\(n&gt;-1\)</span> children.</p>
+<p><strong>Note:</strong> we assume the number of children to be constant.<br> More complex set-ups include endogenous fertility (see <a href="#sec-fertility" class="quarto-xref"><span>Section 2.9</span></a>).</p>
+<p>These are the young population at time <span class="math inline">\(t\)</span> Therefore, the total population <span class="math inline">\(N\)</span> at time <span class="math inline">\(t\)</span> is composed of adults and young people.</p>
+<p><span class="math display">\[
+N_{t} = \underbrace{N_{t-1}}_{\mathrm{Adults}} + \underbrace{N_{t-1}n}_{\mathrm{Youngs}} = N_{t-1}(1+n).
+\]</span></p>
+<p>The total population at any time <span class="math inline">\(t\)</span> is:</p>
+<p><span class="math display">\[
+N_{t} = N_{0}(1+n)^{t}.
+\]</span></p>
+</section>
+</section>
+<section id="assumptions" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="assumptions"><span class="header-section-number">2.3</span> Assumptions</h2>
+<section id="firms" class="level3" data-number="2.3.1">
+<h3 data-number="2.3.1" class="anchored" data-anchor-id="firms"><span class="header-section-number">2.3.1</span> Firms</h3>
+<p>We assume that a large number of identical firms populate the economy. Firms produce a single, homogeneous good using capital and labour. Each firm solves the following profit maximization problem:</p>
+<p><span class="math display">\[
+\max_{K_t, L_t} \quad F(K_t, L_t) - r_t K_t - w_t L_t
+\]</span></p>
+<p>where <span class="math inline">\(F(K,L)\)</span> is the production function, <span class="math inline">\(r_t\)</span> is the rental rate of capital, and <span class="math inline">\(w_t\)</span> is the wage rate.</p>
+<p>We assume the production function satisfies standard neoclassical properties:</p>
+<p><strong>Assumption OLG 1:</strong> The production function <span class="math inline">\(F(K, L)\)</span> is:</p>
+<ul>
+<li><strong>OLG 1.1</strong> Continuous and twice continuously differentiable,</li>
+<li><strong>OLG 1.2</strong> Strictly increasing in both arguments: <span class="math inline">\(F_{K}(K, L) &gt; 0\)</span> and <span class="math inline">\(F_{L}(K, L) &gt; 0\)</span>,</li>
+<li><strong>OLG 1.3</strong> Strictly concave: <span class="math inline">\(F_{KK}(K, L) &lt; 0\)</span>, <span class="math inline">\(F_{LL}(K, L) &lt; 0\)</span>,</li>
+<li><strong>OLG 1.4</strong> Homogeneous of degree one (constant returns to scale),</li>
+<li><strong>OLG 1.5</strong> Satisfies the Inada conditions:</li>
+</ul>
+<p><span class="math display">\[\begin{align*}
+\lim_{K \rightarrow 0} F_{K}(K, L) &amp;= \lim_{L \rightarrow 0} F_{L}(K, L) = +\infty \\
+\lim_{K \rightarrow +\infty} F_{K}(K, L) &amp;= \lim_{L \rightarrow +\infty} F_{L}(K, L) = 0.
+\end{align*}\]</span></p>
+<p>Since there are many firms competing in perfect competition, in equilibrium firms make zero profits and factors are paid their marginal products. The first-order conditions for profit maximization are:</p>
+<p><span class="math display">\[\begin{align*}
+F_{K}(K_t, L_t) &amp;= r_t \\
+F_{L}(K_t, L_t) &amp;= w_t
+\end{align*}\]</span></p>
+<p>Since the production function <span class="math inline">\(F\)</span> is homogeneous of degree one, we can write it in <em>intensive</em> (per-worker) terms:</p>
+<p><span id="eq-prod_func"><span class="math display">\[
+f(k) \equiv F\left(\frac{K}{L},1\right), \quad k \equiv \frac{K}{L}.
+\tag{2.1}\]</span></span></p>
+<p>Using Euler’s theorem for homogeneous functions, we have <span class="math inline">\(F(K,L) = F_K(K,L) \cdot K + F_L(K,L) \cdot L\)</span>. Dividing by <span class="math inline">\(L\)</span> and using the definition of <span class="math inline">\(k\)</span>:</p>
+<p><span class="math display">\[
+f(k) = f'(k) \cdot k + w
+\]</span></p>
+<p>Therefore, the factor prices in intensive form are:</p>
+<p><span id="eq-interest_rate"><span class="math display">\[
+r_{t} = f^{\prime}(k_{t})
+\tag{2.2}\]</span></span></p>
+<p><span id="eq-wage"><span class="math display">\[
+w_{t} = f(k_t) - f^{\prime}(k_t) k_t.
+\tag{2.3}\]</span></span></p>
+<section id="example-cobb-douglas-production-function" class="level4" data-number="2.3.1.1">
+<h4 data-number="2.3.1.1" class="anchored" data-anchor-id="example-cobb-douglas-production-function"><span class="header-section-number">2.3.1.1</span> Example: Cobb-Douglas production function</h4>
+<p>We now derive the key relationships for the Cobb-Douglas production function, which we will use throughout the rest of the chapter. Consider:</p>
+<p><span class="math display">\[
+F(K_t, L_t) = K_t^{\alpha} L_t^{1-\alpha}, \quad \alpha \in (0,1).
+\]</span></p>
+<p>This function satisfies all our assumptions (OLG 1.1–1.5). In intensive form:</p>
+<p><span class="math display">\[
+f(k_t) = F\left(\frac{K_t}{L_t}, 1\right) = \left(\frac{K_t}{L_t}\right)^{\alpha} = k_t^{\alpha}.
+\]</span></p>
+<p>The marginal products are:</p>
+<p><span class="math display">\[\begin{align*}
+f'(k_t) &amp;= \alpha k_t^{\alpha - 1} \\
+f(k_t) - f'(k_t) k_t &amp;= k_t^{\alpha} - \alpha k_t^{\alpha-1} \cdot k_t = (1-\alpha) k_t^{\alpha}
+\end{align*}\]</span></p>
+<p>Therefore, under Cobb-Douglas production, the factor prices are:</p>
+<p><span class="math display">\[\begin{align*}
+r_t &amp;= \alpha k_t^{\alpha - 1} \\
+w_t &amp;= (1-\alpha) k_t^{\alpha}
+\end{align*}\]</span> {#eq-cobb_douglas_prices}</p>
+<p><strong>Note:</strong> The parameter <span class="math inline">\(\alpha\)</span> represents capital’s share in total output, while <span class="math inline">\((1-\alpha)\)</span> is labour’s share. These shares remain constant regardless of the capital-labour ratio <span class="math inline">\(k_t\)</span>.</p>
+</section>
+</section>
+<section id="households" class="level3" data-number="2.3.2">
+<h3 data-number="2.3.2" class="anchored" data-anchor-id="households"><span class="header-section-number">2.3.2</span> Households</h3>
+<p>Individuals live for two periods. As before, we assume perfect foresight for individuals.</p>
+<p><strong>Assumption OLG 2</strong> Individuals have perfect foresight.</p>
+<p>When <strong>young</strong>, they are endowed with <em>one unit of labour</em> that they <em>supply inestastically.</em></p>
+<p><strong>Assumption OLG 3</strong> Individuals supply one unit of labour inelastically when young. They receive the ongoing wage rate <span class="math inline">\(w_{t}\)</span> and allocate this income between:</p>
+<ul>
+<li>current consumption <span class="math inline">\(c_{t}\)</span>,</li>
+<li>savings <span class="math inline">\(s_{t}\)</span> that are invested in the firms.</li>
+</ul>
+<p>Therefore, the budget constraint of a <em>young</em> individual in period <span class="math inline">\(t\)</span> is:</p>
+<p><span class="math display">\[
+w_{t} = c_{t} + s_{t}.
+\]</span></p>
+<p>Once an individual reaches old age the next period, he consumes his savings (plus the interest rate received), reproduces —exogenous fertility at rate <span class="math inline">\(n\)</span>— and dies. Old people <em>do not care</em> about anything happening after death. Therefore, an agent has one unique choice:</p>
+<ul>
+<li>consumption when adult, <span class="math inline">\(d_{t+1}.\)</span></li>
+</ul>
+<p>The budget constraint for this period is:</p>
+<p><span class="math display">\[
+s_{t}(1 - \delta + r_{t+1}) = d_{t+1}.
+\]</span></p>
+<p>with <span class="math inline">\(\delta \in (0,1)\)</span> being the capital depreciation rate.</p>
+<p>Hence, an individual faces two budget constraints. However, we can collapse both into a unique <em>intertemporal budget constraint.</em></p>
+<section id="the-intertemporal-budget-constraint" class="level4" data-number="2.3.2.1">
+<h4 data-number="2.3.2.1" class="anchored" data-anchor-id="the-intertemporal-budget-constraint"><span class="header-section-number">2.3.2.1</span> The intertemporal budget constraint</h4>
+<p>In the economy, we have consumption as the numeraire. It is more convenient for us to combine the two budget constraints corresponding to young and old ages into one single constraint. Starting from</p>
+<p><span id="eq-budget_constraints"><span class="math display">\[
+\begin{cases}
+w_{t} = c_{t} + s_{t} \\
+d_{t+1} = s_{t}(1 - \delta + r_{t+1}) = s_{t} R_{t+1}
+\end{cases}
+\tag{2.4}\]</span></span></p>
+<p>where <span class="math inline">\(R_{t} \equiv 1 - \delta + r_{t+1}\)</span> represents the return on savings, isolate <span class="math inline">\(s_{t}\)</span> in the second equation and plug it in the first one:</p>
+<p><span id="eq-int_budget"><span class="math display">\[
+w_{t} = c_{t} + \frac{d_{t+1}}{R_{t+1}}.
+\tag{2.5}\]</span></span></p>
+<p>The intertemporal budget constraint indicates that the total present value of income (<span class="math inline">\(w_{t}\)</span>, the only source of income) equals the total present value of expenditures. The present value of consumption when old <span class="math inline">\(d_{t+1}\)</span> is discounted using the interest rate <span class="math inline">\(R_{t+1}.\)</span></p>
+<p>It is clear that savings, as usual, will be a function of wages <span class="math inline">\(w\)</span> and interests <span class="math inline">\(R.\)</span> So will consumption at all periods of time.</p>
+</section>
+<section id="utility-function" class="level4" data-number="2.3.2.2">
+<h4 data-number="2.3.2.2" class="anchored" data-anchor-id="utility-function"><span class="header-section-number">2.3.2.2</span> Utility function</h4>
+<p>We suppose that the life-cycle utility function is additively separable:</p>
+<p><span id="eq-utility"><span class="math display">\[
+U(c,d) = u( c ) + \beta u(d),\, \beta \in(0,1)
+\tag{2.6}\]</span></span></p>
+<p>where <span class="math inline">\(\beta \in (0,1)\)</span> is the psychological discount factor. We assume that <span class="math inline">\(u( c )\)</span> has the properties</p>
+<p><strong>Assumption OLG 4</strong></p>
+<ul>
+<li><strong>OLG 4.1</strong> <span class="math inline">\(u^{\prime}( c ) &gt; 0,\)</span></li>
+<li><strong>OLG 4.2</strong> <span class="math inline">\(u^{\prime \prime} ( c ) &lt; 0,\)</span></li>
+<li><strong>OLG 4.3</strong> <span class="math inline">\(\lim_{c \rightarrow 0} u^{\prime}( c) = +\infty.\)</span></li>
+</ul>
+<p>The last assumption <span class="math inline">\(\lim_{c \rightarrow 0} u^{\prime}( c ) = +\infty\)</span> implies that an individual will always have a positive consumption —as long as he has enough income to finance it.</p>
+<p>Another important implication of the choice of the utility formulation is that <span class="math inline">\(c\)</span> and <span class="math inline">\(d\)</span> are normal goods: the demand is <em>not decreasing</em> in wealth. It follows from additive separability and concavity. <!--
+In the [Appendix]({{< ref "../../Mathematical_Appendix/OLG_Non-separable_Utility.md" >}}) we discuss it in more detail for a non-separable utility function.
+!--></p>
+</section>
+</section>
+<section id="the-behaviour-of-individuals" class="level3" data-number="2.3.3">
+<h3 data-number="2.3.3" class="anchored" data-anchor-id="the-behaviour-of-individuals"><span class="header-section-number">2.3.3</span> The behaviour of individuals</h3>
+<p>At time <span class="math inline">\(t\)</span>, young individuals receive their wages, consume and save while maximising the utility function.</p>
+<p><span class="math display">\[\begin{align*}
+&amp; \max u(c_{t}) + \beta u(d_{t+1}) \\
+&amp; \mathrm{s.t.} \quad w_{t} = c_{t} + s_{t} \\
+&amp; \phantom{s.t.} \quad d_{t+1} = R_{t+1}s_{t} \\
+&amp; \phantom{s.t.} \quad c_{t} \geq 0, d_{t+1} \geq 0.
+\end{align*}\]</span> {#eq-optimization_problem}</p>
+<p>We have two possibilities to solve this problem:</p>
+<section id="substitution" class="level4" data-number="2.3.3.1">
+<h4 data-number="2.3.3.1" class="anchored" data-anchor-id="substitution"><span class="header-section-number">2.3.3.1</span> Substitution</h4>
+<p>First, we can substitute <span class="math inline">\(c_{t}\)</span> and <span class="math inline">\(d_{t+1}\)</span> in the utility function, leading to:</p>
+<p><span class="math display">\[
+u(w_{t} - s_{t}) + \beta u(R_{t+1}s_{t}).
+\]</span></p>
+<p>This function is strictly concave with respect to <span class="math inline">\(s_{t}\)</span> because of our assumptions. The solution is <em>the savings function</em>:</p>
+<p><span class="math display">\[
+s_{t} = s(w_{t}, R_{t+1}).
+\]</span></p>
+<p>The solution is interior as a consequence of the assumptions, and it is characterised by the first-order condition:</p>
+<p><span id="eq-euler"><span class="math display">\[
+u^{\prime}(w_{t} - s_{t}) = \beta R_{t+1} u^{\prime}(R_{t+1}s_{t}).
+\tag{2.7}\]</span></span></p>
+</section>
+<section id="lagrangian" class="level4" data-number="2.3.3.2">
+<h4 data-number="2.3.3.2" class="anchored" data-anchor-id="lagrangian"><span class="header-section-number">2.3.3.2</span> Lagrangian</h4>
+<p>Instead, we can use the intertemporal budget constraint and build the Lagrangian:</p>
+<p><span class="math display">\[
+\mathcal{L} = u(c_{t}) + \beta u(d_{t+1}) + \lambda_{t}(w_{t} - c_{t} - \frac{d_{t+1}}{R_{t+1}}).
+\]</span></p>
+<p>The first order conditions imply that:</p>
+<p><span class="math display">\[
+u^{\prime}(c_{t}) = \lambda_{t}, \quad \beta u^{\prime}(d_{t+1}) = \frac{\lambda_{t}}{R_{t+1}}.
+\]</span></p>
+<p>Combining both, we obtain <a href="#eq-euler" class="quarto-xref">Equation&nbsp;<span>2.7</span></a> again: <span class="math display">\[
+u^{\prime}(c_{t}) = \beta R_{t+1} u^\prime (d_{t+1}).
+\]</span></p>
+</section>
+</section>
+</section>
+<section id="examples-of-utility-functions-and-savings-behavior" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="examples-of-utility-functions-and-savings-behavior"><span class="header-section-number">2.4</span> Examples of utility functions and savings behavior</h2>
+<p>To understand how individuals save, we now consider two specific cases that illustrate different aspects of the savings decision.</p>
+<section id="example-1-log-utility" class="level3" data-number="2.4.1">
+<h3 data-number="2.4.1" class="anchored" data-anchor-id="example-1-log-utility"><span class="header-section-number">2.4.1</span> Example 1: Log-utility</h3>
+<p>The simplest case is logarithmic utility:</p>
+<p><span class="math display">\[
+u(c) = \log(c).
+\]</span></p>
+<p>This is a special case of the CIES utility function with <span class="math inline">\(\sigma = 1\)</span>. From the Euler equation <a href="#eq-euler" class="quarto-xref">Equation&nbsp;<span>2.7</span></a>, we have:</p>
+<p><span class="math display">\[
+\frac{1}{w_t - s_t} = \beta R_{t+1} \frac{1}{R_{t+1} s_t}
+\]</span></p>
+<p>Simplifying:</p>
+<p><span class="math display">\[
+\frac{1}{w_t - s_t} = \frac{\beta}{s_t}
+\]</span></p>
+<p>Solving for <span class="math inline">\(s_t\)</span>:</p>
+<p><span class="math display">\[
+s_t = \beta(w_t - s_t) \implies s_t(1 + \beta) = \beta w_t
+\]</span></p>
+<p>Therefore, the savings function under log-utility is:</p>
+<p><span id="eq-log_savings"><span class="math display">\[
+s_t = \frac{\beta}{1+\beta} w_t.
+\tag{2.8}\]</span></span></p>
+<p><strong>Key properties:</strong></p>
+<ul>
+<li>Savings are a constant fraction of wage income,</li>
+<li>Savings are <strong>independent</strong> of the interest rate <span class="math inline">\(R_{t+1}\)</span>,</li>
+<li>The marginal propensity to save is <span class="math inline">\(\frac{\beta}{1+\beta} \in (0,1)\)</span>.</li>
+</ul>
+<p>This result shows that under log-utility, the wealth effect and substitution effect of interest rate changes exactly cancel out.</p>
+</section>
+<section id="example-2-general-cies-utility" class="level3" data-number="2.4.2">
+<h3 data-number="2.4.2" class="anchored" data-anchor-id="example-2-general-cies-utility"><span class="header-section-number">2.4.2</span> Example 2: General CIES utility</h3>
+<p>Now consider the constant intertemporal elasticity of substitution (CIES) utility function:</p>
+<p><span class="math display">\[
+u(c) = \frac{c^{1-\frac{1}{\sigma}}}{1-\frac{1}{\sigma}}, \quad \sigma &gt; 0.
+\]</span></p>
+<p>The parameter <span class="math inline">\(\sigma\)</span> is the <strong>intertemporal elasticity of substitution</strong>: it measures the willingness to substitute consumption across time in response to changes in relative prices (the interest rate).</p>
+<p>From the Euler equation:</p>
+<p><span class="math display">\[
+(w_t - s_t)^{-\frac{1}{\sigma}} = \beta R_{t+1} (R_{t+1} s_t)^{-\frac{1}{\sigma}}
+\]</span></p>
+<p>Rearranging:</p>
+<p><span id="eq-cies_ratio"><span class="math display">\[
+\frac{d_{t+1}}{c_t} = \frac{R_{t+1} s_t}{w_t - s_t} = (\beta R_{t+1})^{\sigma}.
+\tag{2.9}\]</span></span></p>
+<p>While we cannot solve explicitly for <span class="math inline">\(s_t\)</span> in general, we can analyze how savings respond to changes in the interest rate using <strong>implicit differentiation</strong>.</p>
+<section id="the-effect-of-interest-rates-on-savings-implicit-differentiation" class="level4" data-number="2.4.2.1">
+<h4 data-number="2.4.2.1" class="anchored" data-anchor-id="the-effect-of-interest-rates-on-savings-implicit-differentiation"><span class="header-section-number">2.4.2.1</span> The effect of interest rates on savings: implicit differentiation</h4>
+<p>To analyze how savings respond to changes in the interest rate, we use the <strong>implicit function theorem</strong>. Define the function <span class="math inline">\(\phi(s, w, R)\)</span> from the Euler equation:</p>
+<p><span class="math display">\[
+\phi(s, w, R) = -u'(w-s) + \beta R u'(Rs) = 0.
+\]</span></p>
+<p>This implicitly defines the savings function <span class="math inline">\(s = s(w, R)\)</span>. By the implicit function theorem:</p>
+<p><span class="math display">\[
+\frac{\partial s}{\partial R} = -\frac{\frac{\partial \phi}{\partial R}}{\frac{\partial \phi}{\partial s}}.
+\]</span></p>
+<p>Computing the partial derivatives:</p>
+<p><span class="math display">\[\begin{align*}
+\frac{\partial \phi}{\partial R} &amp;= \beta u'(Rs) + \beta R u''(Rs) s = \beta u'(d)\left[1 + \frac{u''(d)}{u'(d)} Rs\right] \\
+&amp;= \beta u'(d)\left[1 - \frac{1}{\sigma(d)}\right]
+\end{align*}\]</span></p>
+<p>where we use the fact that <span class="math inline">\(\sigma(d) = -\frac{u'(d)}{u''(d)d}\)</span> is the elasticity of intertemporal substitution evaluated at <span class="math inline">\(d = Rs\)</span>.</p>
+<p>Similarly:</p>
+<p><span class="math display">\[
+\frac{\partial \phi}{\partial s} = u''(w-s) + \beta R^2 u''(Rs) &lt; 0
+\]</span></p>
+<p>by concavity of <span class="math inline">\(u\)</span>. Therefore:</p>
+<p><span id="eq-ds_dR"><span class="math display">\[
+\frac{\partial s}{\partial R} = -\frac{\beta u'(d)\left[1 - \frac{1}{\sigma(d)}\right]}{u''(c) + \beta R^2 u''(d)}.
+\tag{2.10}\]</span></span></p>
+<p>The sign of this derivative depends on whether <span class="math inline">\(\sigma(d) \gtreqqless 1\)</span>:</p>
+<p><span class="math display">\[
+\frac{\partial s}{\partial R} \begin{cases}
+&gt; 0 &amp; \text{if } \sigma &gt; 1 \text{ (substitution effect dominates)} \\
+= 0 &amp; \text{if } \sigma = 1 \text{ (log-utility: effects cancel)} \\
+&lt; 0 &amp; \text{if } \sigma &lt; 1 \text{ (wealth effect dominates)}
+\end{cases}
+\]</span></p>
+<p><strong>Economic interpretation:</strong></p>
+<p>Two opposing forces determine the sign:</p>
+<ul>
+<li><strong>Substitution effect</strong>: A higher interest rate makes future consumption cheaper relative to present consumption, encouraging more savings.</li>
+<li><strong>Wealth effect</strong>: A higher interest rate means that the same savings yield more future consumption, so individuals can save less and still achieve their desired consumption when old.</li>
+</ul>
+<p>When <span class="math inline">\(\sigma &gt; 1\)</span>, individuals are willing to substitute consumption across time, and the substitution effect dominates. When <span class="math inline">\(\sigma &lt; 1\)</span>, individuals prefer smooth consumption paths, and the wealth effect dominates. When <span class="math inline">\(\sigma = 1\)</span> (log-utility), both effects exactly cancel.</p>
+</section>
+</section>
+</section>
+<section id="temporary-equilibrium" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="temporary-equilibrium"><span class="header-section-number">2.5</span> Temporary equilibrium</h2>
+<p>Before turning to the intertemporal equilibrium and the analysis of the steady state, we study the temporary equilibrium that takes place every period.</p>
+<p>Recall that firms use capital and labour in a perfectly competitive environment, paying factors their marginal products as derived in <a href="#eq-interest_rate" class="quarto-xref">Equation&nbsp;<span>2.2</span></a> and <a href="#eq-wage" class="quarto-xref">Equation&nbsp;<span>2.3</span></a>.</p>
+<ol type="1">
+<li><p><strong>Labour market equilibrium:</strong> <em>Only</em> young individuals supply labour, and they do so <em>inelastically</em> (one unit each). During period <span class="math inline">\(t\)</span> there are <span class="math inline">\(N_{t}\)</span> young agents, hence labour supply equals <span class="math inline">\(N_{t}\)</span>. Equating this to labour demand from firms determines the wage rate: <span class="math display">\[
+w_{t} = f(k_t) - f'(k_t)k_t \equiv \omega(k_{t}).
+\]</span></p></li>
+<li><p><strong>Capital market:</strong> <em>Only</em> old individuals own capital (from their savings when young). The capital stock at time <span class="math inline">\(t\)</span> equals the savings of the young generation from period <span class="math inline">\(t-1\)</span>: <span class="math display">\[
+K_t = N_{t-1} s_{t-1}.
+\]</span> Since firms operate competitively with zero profits, they pay the rental rate: <span class="math display">\[
+R_t = f'(k_t).
+\]</span></p></li>
+<li><p><strong>Goods market:</strong> Total production at time <span class="math inline">\(t\)</span> is: <span class="math display">\[
+Y_{t} = F(K_{t}, N_{t}) = N_{t} f(k_{t}).
+\]</span></p>
+<p>Total demand for goods comes from:</p>
+<ul>
+<li>Old generation consumption: <span class="math inline">\(N_{t-1}d_{t}\)</span></li>
+<li>Young generation consumption and savings: <span class="math inline">\(N_{t}(c_{t}+s_{t})\)</span></li>
+</ul>
+<p>Market clearing requires: <span class="math display">\[
+Y_{t} = N_{t-1}d_{t} + N_{t}(c_{t}+s_{t}).
+\]</span></p></li>
+</ol>
+<hr>
+<p><strong>Definition:</strong> A temporary equilibrium is a set <span class="math inline">\(\\{w_{t}, R_{t}, K_{t}, L_{t}, Y_{t}, k_{t}, c_{t}, s_{t}, d_{t}\\}\)</span> that satisfies:</p>
+<p><span class="math display">\[\begin{align*}
+     w_{t} &amp;= \omega(k_{t}), \\
+     R_{t} &amp;= f^{\prime}(k_{t}), \\
+     L_{t} &amp;= N_{t}, \\
+     Y_{t} &amp;= N_{t}f(k_{t}), \\
+     Y_{t} &amp;= N_{t-1}d_t + N_{t}(c_{t}+s_{t}), \\
+     c_{t} &amp;= w_{t} - s_{t}, \\
+     s_{t} &amp;= s(\omega(k_{t}),R_{t+1}), \\
+     d_{t} &amp;= R_{t}s_{t-1}.
+\end{align*}\]</span></p>
+<p>The existence of a temporary equilibrium is guaranteed because all functions are continuous and well-defined.</p>
+</section>
+<section id="intertemporal-equilibrium-with-perfect-foresight" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="intertemporal-equilibrium-with-perfect-foresight"><span class="header-section-number">2.6</span> Intertemporal equilibrium with perfect foresight</h2>
+<p>The equilibrium equation that links consecutive periods is the <strong>capital accumulation equation</strong>. In particular, the savings of young individuals at period <span class="math inline">\(t\)</span> are transformed into productive capital at <span class="math inline">\(t+1.\)</span></p>
+<section id="from-aggregate-to-per-capita-capital-accumulation" class="level3" data-number="2.6.1">
+<h3 data-number="2.6.1" class="anchored" data-anchor-id="from-aggregate-to-per-capita-capital-accumulation"><span class="header-section-number">2.6.1</span> From aggregate to per-capita capital accumulation</h3>
+<p><strong>Note:</strong> In the OLG model, it is essential to carefully distinguish between aggregate and per-capita variables. We work through this transformation step by step.</p>
+<p><strong>Step 1: Aggregate capital accumulation</strong></p>
+<p>The capital stock at time <span class="math inline">\(t+1\)</span> equals the total savings of all young individuals at time <span class="math inline">\(t\)</span>:</p>
+<p><span class="math display">\[
+K_{t+1} = N_{t} s_{t}.
+\]</span></p>
+<p>Since there are <span class="math inline">\(N_t\)</span> young individuals at time <span class="math inline">\(t\)</span>, each saving <span class="math inline">\(s_t\)</span>, total savings equal <span class="math inline">\(N_t s_t\)</span>.</p>
+<p><strong>Step 2: Definition of per-capita capital</strong></p>
+<p>The capital-labour ratio (per-capita capital) at time <span class="math inline">\(t+1\)</span> is defined as:</p>
+<p><span class="math display">\[
+k_{t+1} = \frac{K_{t+1}}{N_{t+1}}.
+\]</span></p>
+<p><strong>Important:</strong> Note that we divide by <span class="math inline">\(N_{t+1}\)</span> (the number of young workers at <span class="math inline">\(t+1\)</span>), not by <span class="math inline">\(N_t\)</span>. This is because <span class="math inline">\(k_{t+1}\)</span> represents capital per young worker at time <span class="math inline">\(t+1\)</span>.</p>
+<p><strong>Step 3: Combining both equations</strong></p>
+<p>Substituting <span class="math inline">\(K_{t+1} = N_t s_t\)</span> into the definition of <span class="math inline">\(k_{t+1}\)</span>:</p>
+<p><span class="math display">\[
+k_{t+1} = \frac{K_{t+1}}{N_{t+1}} = \frac{N_{t} s_{t}}{N_{t+1}}.
+\]</span></p>
+<p><strong>Step 4: Using population growth</strong></p>
+<p>Recall from the preliminaries that <span class="math inline">\(N_{t+1} = N_t(1+n)\)</span>, where <span class="math inline">\(n\)</span> is the population growth rate.Substituting:</p>
+<p><span class="math display">\[
+k_{t+1} = \frac{N_{t} s_{t}}{N_t(1+n)} = \frac{s_{t}}{1+n}.
+\]</span></p>
+<p>Therefore, the per-capita capital accumulation equation is:</p>
+<p><span id="eq-capital_accumulation"><span class="math display">\[
+k_{t+1} = \frac{1}{1+n} s_{t}.
+\tag{2.11}\]</span></span></p>
+<p><strong>Interpretation:</strong> This equation shows that per-capita capital growth depends on:</p>
+<ol type="1">
+<li>Individual savings <span class="math inline">\(s_t\)</span> (the numerator),</li>
+<li>Population growth <span class="math inline">\(n\)</span> (the denominator).</li>
+</ol>
+<p>Even if individuals save a constant amount, per-capita capital can fall if population grows too fast.</p>
+</section>
+<section id="the-intertemporal-equilibrium" class="level3" data-number="2.6.2">
+<h3 data-number="2.6.2" class="anchored" data-anchor-id="the-intertemporal-equilibrium"><span class="header-section-number">2.6.2</span> The intertemporal equilibrium</h3>
+<p>Now we incorporate the equilibrium conditions from the markets. Young individuals at time <span class="math inline">\(t\)</span> choose savings based on:</p>
+<ol type="1">
+<li>Their wage income: <span class="math inline">\(w_t = \omega(k_t)\)</span></li>
+<li>Their expectation of the future interest rate: <span class="math inline">\(R_{t+1} = f'(k_{t+1})\)</span></li>
+</ol>
+<p>Under perfect foresight, individuals correctly anticipate <span class="math inline">\(R_{t+1}\)</span>. Therefore, <span class="math inline">\(s_t = s(\omega(k_t), f'(k_{t+1}))\)</span>, and the capital accumulation equation becomes:</p>
+<p><span id="eq-intertemporal_equilibrium"><span class="math display">\[
+k_{t+1} = \frac{1}{1+n} s(\omega(k_t), f'(k_{t+1})).
+\tag{2.12}\]</span></span></p>
+<p><strong>Definition:</strong> Given an initial capital stock <span class="math inline">\(k_{0} = K_{0} / N_{-1}\)</span>, an <strong>intertemporal equilibrium with perfect foresight</strong> is a sequence of temporary equilibria <span class="math inline">\(\\{k_t\\}_{t=0}^{\infty}\)</span> that satisfies <a href="#eq-intertemporal_equilibrium" class="quarto-xref">Equation&nbsp;<span>2.12</span></a> for all <span class="math inline">\(t \geq 0\)</span>.</p>
+<p><strong>Key observation:</strong> Equation <a href="#eq-intertemporal_equilibrium" class="quarto-xref">Equation&nbsp;<span>2.12</span></a> is an <strong>implicit</strong> equation for <span class="math inline">\(k_{t+1}\)</span> as a function of <span class="math inline">\(k_t\)</span>, because <span class="math inline">\(k_{t+1}\)</span> appears on both sides (inside the savings function through <span class="math inline">\(f'(k_{t+1})\)</span>).</p>
+</section>
+<section id="why-explicit-solutions-are-difficult" class="level3" data-number="2.6.3">
+<h3 data-number="2.6.3" class="anchored" data-anchor-id="why-explicit-solutions-are-difficult"><span class="header-section-number">2.6.3</span> Why explicit solutions are difficult</h3>
+<p>For general utility and production functions, we cannot write an explicit formula <span class="math inline">\(k_{t+1} = g(k_t)\)</span>.This is because:</p>
+<ol type="1">
+<li>The savings function <span class="math inline">\(s(w, R)\)</span> depends on the future interest rate <span class="math inline">\(R_{t+1} = f'(k_{t+1})\)</span>,</li>
+<li>This creates an implicit relationship that typically cannot be solved algebraically.</li>
+</ol>
+<p><strong>Exception:</strong> Under <strong>log-utility</strong>, savings are independent of the interest rate (<a href="#eq-log_savings" class="quarto-xref">Equation&nbsp;<span>2.8</span></a>), so <span class="math inline">\(s_t = \frac{\beta}{1+\beta}w_t\)</span> In this case, we can write an explicit capital accumulation equation:</p>
+<p><span id="eq-capital_log"><span class="math display">\[
+k_{t+1} = \frac{1}{1+n} \cdot \frac{\beta}{1+\beta} \omega(k_t).
+\tag{2.13}\]</span></span></p>
+<p>This is a major simplification that we will exploit when analyzing dynamics and steady states.</p>
+</section>
+<section id="existence-and-uniqueness-brief-remarks" class="level3" data-number="2.6.4">
+<h3 data-number="2.6.4" class="anchored" data-anchor-id="existence-and-uniqueness-brief-remarks"><span class="header-section-number">2.6.4</span> Existence and uniqueness (brief remarks)</h3>
+<p>The implicit nature of <a href="#eq-intertemporal_equilibrium" class="quarto-xref">Equation&nbsp;<span>2.12</span></a> raises questions about existence and uniqueness:</p>
+<ul>
+<li>Does a solution <span class="math inline">\(k_{t+1}\)</span> exist for every <span class="math inline">\(k_t\)</span>?</li>
+<li>Is this solution unique?</li>
+</ul>
+<p>For our purposes, we note the following results (see <span class="citation" data-cites="De_la_Croix_2009">Croix and Michel (<a href="references.html#ref-De_la_Croix_2009" role="doc-biblioref">2009</a>, Ch. 2)</span> for detailed proofs):</p>
+<ol type="1">
+<li><p><strong>Existence:</strong> Under our assumptions (OLG 1-4), at least one temporary equilibrium exists for any <span class="math inline">\(k_t \geq 0\)</span>.</p></li>
+<li><p><strong>Uniqueness:</strong> Uniqueness is guaranteed if the intertemporal elasticity of substitution is sufficiently large. A sufficient condition is <span class="math inline">\(\sigma \geq 1\)</span>. When <span class="math inline">\(\sigma &lt; 1\)</span>, multiple equilibria can arise, leading to indeterminacy and potential coordination failures.</p></li>
+</ol>
+<p>For the remainder of this chapter, we assume <span class="math inline">\(\sigma \geq 1\)</span>, which ensures:</p>
+<ul>
+<li>Unique temporary equilibria,</li>
+<li>Monotonic dynamics: <span class="math inline">\(k_{t+1} = g(k_t)\)</span> is a well-defined function,</li>
+<li>Tractable analysis of steady states and stability.</li>
+</ul>
+</section>
+</section>
+<section id="steady-states" class="level2" data-number="2.7">
+<h2 data-number="2.7" class="anchored" data-anchor-id="steady-states"><span class="header-section-number">2.7</span> Steady states</h2>
+<p>A <strong>steady state</strong> is a capital-labour ratio <span class="math inline">\(\bar{k}\)</span> that remains constant over time: if <span class="math inline">\(k_t = \bar{k}\)</span>, then <span class="math inline">\(k_{t+1} = \bar{k}\)</span>. From <a href="#eq-intertemporal_equilibrium" class="quarto-xref">Equation&nbsp;<span>2.12</span></a>, a steady state satisfies: <span id="eq-steady_state"><span class="math display">\[
+\bar{k} = \frac{1}{1+n}s(\omega(\bar{k}), f'(\bar{k})).
+\tag{2.14}\]</span></span></p>
+<p>This equation may have multiple solutions. We consider two important cases.</p>
+<section id="the-autarky-steady-state-bark-0" class="level3" data-number="2.7.1">
+<h3 data-number="2.7.1" class="anchored" data-anchor-id="the-autarky-steady-state-bark-0"><span class="header-section-number">2.7.1</span> The autarky steady state: <span class="math inline">\(\bar{k} = 0\)</span></h3>
+<p>If <span class="math inline">\(f(0) = 0\)</span> (production requires capital), then <span class="math inline">\(\bar{k} = 0\)</span> is always a steady state. When <span class="math inline">\(k_t = 0\)</span>:</p>
+<ul>
+<li>Wages are zero: <span class="math inline">\(\omega(0) = 0\)</span>,</li>
+<li>Young individuals have no income, hence cannot save: <span class="math inline">\(s_t = 0\)</span>,</li>
+<li>Next period’s capital remains zero: <span class="math inline">\(k_{t+1} = 0\)</span>.</li>
+</ul>
+<p>This is called the <strong>autarky steady state</strong> or <strong>poverty trap</strong>. Whether the economy converges to this state depends on the initial conditions and the stability properties.</p>
+</section>
+<section id="interior-steady-states-bark-0" class="level3" data-number="2.7.2">
+<h3 data-number="2.7.2" class="anchored" data-anchor-id="interior-steady-states-bark-0"><span class="header-section-number">2.7.2</span> Interior steady states: <span class="math inline">\(\bar{k} &gt; 0\)</span></h3>
+<p>The economy may also have positive steady states where <span class="math inline">\(\bar{k} &gt; 0\)</span>. Unlike the autarky state, these steady states feature positive production, consumption, and welfare. Finding interior steady states analytically requires solving <a href="#eq-steady_state" class="quarto-xref">Equation&nbsp;<span>2.14</span></a>, which is typically impossible for general functions. However, with specific functional forms, we can make progress.</p>
+<div id="cell-fig-three" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display">
+<div id="fig-three" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-three-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="olg_files/figure-html/fig-three-output-1.png" width="634" height="434" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-three-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.1: Autarky steady state and two positive steady states
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Similarly, the Cobb-Douglas case <span class="math inline">\(\rho \rightarrow 0\)</span> also has zero as a steady state. However, it is unstable.</p>
+</section>
+<section id="example-cobb-douglas-production-and-log-utility" class="level3" data-number="2.7.3">
+<h3 data-number="2.7.3" class="anchored" data-anchor-id="example-cobb-douglas-production-and-log-utility"><span class="header-section-number">2.7.3</span> Example: Cobb-Douglas production and log-utility</h3>
+<p>We now work through the complete analysis for the benchmark case: Cobb-Douglas production with log-utility. This combination allows us to derive explicit solutions and fully characterize the dynamics.</p>
+<p><strong>Setup:</strong></p>
+<ul>
+<li>Production: <span class="math inline">\(f(k_t) = k_t^{\alpha}\)</span>, <span class="math inline">\(\alpha \in (0,1)\)</span></li>
+<li>Utility: <span class="math inline">\(u(c) = \log(c)\)</span></li>
+<li>Wages: <span class="math inline">\(w_t = (1-\alpha) k_t^{\alpha}\)</span> (from <span class="quarto-unresolved-ref">?eq-cobb_douglas_prices</span>)</li>
+<li>Savings: <span class="math inline">\(s_t = \frac{\beta}{1+\beta} w_t\)</span> (from <a href="#eq-log_savings" class="quarto-xref">Equation&nbsp;<span>2.8</span></a>)</li>
+</ul>
+<p><strong>Capital accumulation:</strong></p>
+<p>Combining <a href="#eq-capital_log" class="quarto-xref">Equation&nbsp;<span>2.13</span></a> with the Cobb-Douglas wage:</p>
+<p><span class="math display">\[
+k_{t+1} = \frac{1}{1+n} \cdot \frac{\beta}{1+\beta} \cdot (1-\alpha) k_t^{\alpha}.
+\]</span></p>
+<p>Define <span class="math inline">\(\phi \equiv \frac{\beta(1-\alpha)}{(1+n)(1+\beta)}\)</span>, then:</p>
+<p><span id="eq-dynamics_cobb_log"><span class="math display">\[
+k_{t+1} = g(k_t) = \phi k_t^{\alpha}.
+\tag{2.15}\]</span></span></p>
+<p>This is an explicit, autonomous difference equation. The dynamics are fully determined by the function <span class="math inline">\(g(k_t)\)</span>.</p>
+<p><strong>Finding steady states:</strong></p>
+<p>A steady state <span class="math inline">\(\bar{k}\)</span> satisfies <span class="math inline">\(\bar{k} = g(\bar{k}) = \phi \bar{k}^{\alpha}\)</span>. Rearranging:</p>
+<p><span class="math display">\[
+\bar{k}^{1-\alpha} = \phi.
+\]</span></p>
+<p>This equation has two solutions:</p>
+<ol type="1">
+<li><strong>Autarky:</strong> <span class="math inline">\(\bar{k}_1 = 0\)</span></li>
+<li><strong>Interior:</strong> <span class="math inline">\(\bar{k}_2 = \phi^{\frac{1}{1-\alpha}} = \left[\frac{\beta(1-\alpha)}{(1+n)(1+\beta)}\right]^{\frac{1}{1-\alpha}}\)</span></li>
+</ol>
+<p>The interior steady state <span class="math inline">\(\bar{k}_2\)</span> is positive and economically meaningful.</p>
+<div id="cell-fig-steady_cobb_log" class="cell" data-execution_count="3">
+<div class="cell-output cell-output-display">
+<div id="fig-steady_cobb_log" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-steady_cobb_log-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="olg_files/figure-html/fig-steady_cobb_log-output-1.png" width="634" height="434" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-steady_cobb_log-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.2: Steady states in the Cobb-Douglas with log-utility case
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="stability-analysis-the-hartman-grobman-theorem" class="level2" data-number="2.8">
+<h2 data-number="2.8" class="anchored" data-anchor-id="stability-analysis-the-hartman-grobman-theorem"><span class="header-section-number">2.8</span> Stability analysis: The Hartman-Grobman theorem</h2>
+<p>To determine whether the economy converges to a steady state, we analyze local stability using the <strong>Hartman-Grobman theorem</strong>. This theorem states that the local behavior of a nonlinear dynamical system near a steady state is determined by its <strong>linearization</strong> at that point.</p>
+<p>For a one-dimensional discrete-time system <span class="math inline">\(k_{t+1} = g(k_t)\)</span>, the linearization around a steady state <span class="math inline">\(\bar{k}\)</span> is:</p>
+<p><span class="math display">\[
+k_{t+1} - \bar{k} \approx g'(\bar{k})(k_t - \bar{k}).
+\]</span></p>
+<p>The <strong>eigenvalue</strong> of this linear system is simply <span class="math inline">\(\lambda = g'(\bar{k})\)</span>. The steady state is:</p>
+<ul>
+<li><strong>Locally stable</strong> (attractive) if <span class="math inline">\(|\lambda| &lt; 1\)</span>,</li>
+<li><strong>Unstable</strong> (repelling) if <span class="math inline">\(|\lambda| &gt; 1\)</span>,</li>
+<li><strong>Indeterminate</strong> if <span class="math inline">\(|\lambda| = 1\)</span> (requires higher-order analysis).</li>
+</ul>
+<p><strong>Note:</strong> For our one-dimensional system, the “Jacobian matrix” is just the scalar <span class="math inline">\(g'(\bar{k})\)</span>, and the “eigenvalue” is this scalar itself.</p>
+<section id="stability-of-the-autarky-steady-state" class="level3" data-number="2.8.1">
+<h3 data-number="2.8.1" class="anchored" data-anchor-id="stability-of-the-autarky-steady-state"><span class="header-section-number">2.8.1</span> Stability of the autarky steady state</h3>
+<p>For <span class="math inline">\(\bar{k}_1 = 0\)</span>:</p>
+<p><span class="math display">\[
+g'(k) = \phi \alpha k^{\alpha - 1}.
+\]</span></p>
+<p>Taking the limit as <span class="math inline">\(k \to 0\)</span>:</p>
+<p><span class="math display">\[
+\lim_{k \to 0} g'(k) = \lim_{k \to 0} \phi \alpha k^{\alpha - 1} = +\infty
+\]</span></p>
+<p>because <span class="math inline">\(\alpha - 1 &lt; 0\)</span>. Since <span class="math inline">\(|g'(0)| = +\infty &gt; 1\)</span>, the autarky steady state is <strong>locally unstable</strong>.</p>
+<p><strong>Interpretation:</strong> If the economy starts with any <span class="math inline">\(k_0 &gt; 0\)</span> (even arbitrarily small), it will move away from <span class="math inline">\(k = 0\)</span> toward the interior steady state.</p>
+</section>
+<section id="stability-of-the-interior-steady-state" class="level3" data-number="2.8.2">
+<h3 data-number="2.8.2" class="anchored" data-anchor-id="stability-of-the-interior-steady-state"><span class="header-section-number">2.8.2</span> Stability of the interior steady state</h3>
+<p>For <span class="math inline">\(\bar{k}_2 = \phi^{\frac{1}{1-\alpha}}\)</span>:</p>
+<p><span class="math display">\[
+g'(\bar{k}_2) = \phi \alpha \bar{k}_2^{\alpha - 1}.
+\]</span></p>
+<p>Substitute <span class="math inline">\(\bar{k}_2^{1-\alpha} = \phi\)</span>, which implies <span class="math display">\[
+\bar{k}_2^{\alpha-1} = \left(\bar{k}_2^{1-\alpha}\right)^{-1} \cdot \bar{k}_2^{0} = \frac{1}{\phi}.
+\]</span></p>
+<p>Therefore:</p>
+<p><span class="math display">\[
+g'(\bar{k}_2) = \phi \alpha \cdot \frac{1}{\phi} = \alpha.
+\]</span></p>
+<p>Since <span class="math inline">\(\alpha \in (0,1)\)</span>, we have <span class="math inline">\(|g'(\bar{k}_2)| = \alpha &lt; 1\)</span>. The interior steady state is <strong>locally stable</strong>.</p>
+<p><strong>Interpretation:</strong> For any initial capital <span class="math inline">\(k_0\)</span> in a neighborhood of <span class="math inline">\(\bar{k}_2\)</span>, the economy converges to <span class="math inline">\(\bar{k}_2\)</span> over time.</p>
+</section>
+<section id="global-dynamics" class="level3" data-number="2.8.3">
+<h3 data-number="2.8.3" class="anchored" data-anchor-id="global-dynamics"><span class="header-section-number">2.8.3</span> Global dynamics</h3>
+<p>We can say more about global behavior:</p>
+<ol type="1">
+<li><p><strong>For any <span class="math inline">\(k_0 &gt; 0\)</span>:</strong> The function <span class="math inline">\(g(k) = \phi k^{\alpha}\)</span> is increasing and concave. Since the autarky steady state is unstable and the interior steady state is stable, any initial <span class="math inline">\(k_0 &gt; 0\)</span> converges to <span class="math inline">\(\bar{k}_2\)</span>.</p></li>
+<li><p><strong>Monotonic convergence:</strong></p>
+<ul>
+<li>If <span class="math inline">\(k_0 &lt; \bar{k}_2\)</span>: The sequence <span class="math inline">\(\\{k_t\\}\)</span> is increasing and converges from below.</li>
+<li>If <span class="math inline">\(k_0 &gt; \bar{k}_2\)</span>: The sequence <span class="math inline">\(\\{k_t\\}\)</span> is decreasing and converges from above.</li>
+</ul></li>
+<li><p><strong>Rate of convergence:</strong> The speed of convergence is determined by <span class="math inline">\(\alpha\)</span>. Smaller <span class="math inline">\(\alpha\)</span> (lower capital share) implies faster convergence.</p></li>
+</ol>
+<p><strong>Graphical representation:</strong> The dynamics are illustrated by plotting <span class="math inline">\(k_{t+1} = \phi k_t^{\alpha}\)</span> against the 45-degree line <span class="math inline">\(k_{t+1} = k_t\)</span>.</p>
+<div id="cell-fig-two" class="cell" data-execution_count="4">
+<div class="cell-output cell-output-display">
+<div id="fig-two" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-two-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="olg_files/figure-html/fig-two-output-1.png" width="634" height="434" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-two-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.3: Autarky steady state and a positive steady state
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>Single, non-autarky steady state</strong> This steady state is characterized by a unique positive capital level <span class="math inline">\(\bar{k} &gt; 0\)</span>. This configuration requires <span class="math inline">\(f(0) &gt; 0\)</span>. With a CES production function, capital and labour must be substitutes, this is, <span class="math inline">\(&lt; 0 \rho &lt; 1\)</span>: <span class="math inline">\((\alpha k^\rho + (1-\alpha))^{\frac{1}{\rho}}.\)</span></p>
+<div id="cell-fig-single" class="cell" data-execution_count="5">
+<div class="cell-output cell-output-display">
+<div id="fig-single" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-single-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="olg_files/figure-html/fig-single-output-1.png" width="634" height="434" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-single-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.4: Single, non-autarky steady state
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>Only an autarky steady state</strong> In this case, <span class="math inline">\(f(0) = 0\)</span> is required so that the autarky steady state can exist. Moreover, it requires <span class="math inline">\(f(k_{t+1}) &lt; f(k_{t})\)</span>. This type of setup requires <span class="math inline">\(\rho &lt; 0\)</span>, this is, complementarity between capital and labor and low levels of output given the inputs.</p>
+<div id="cell-fig-only_autarky" class="cell" data-execution_count="6">
+<div class="cell-output cell-output-display">
+<div id="fig-only_autarky" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-only_autarky-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="olg_files/figure-html/fig-only_autarky-output-1.png" width="634" height="408" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-only_autarky-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.5: Only an autarky steady state
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="sec-fertility" class="level2" data-number="2.9">
+<h2 data-number="2.9" class="anchored" data-anchor-id="sec-fertility"><span class="header-section-number">2.9</span> Application: Fertility and education choices</h2>
+<p>So far, we have treated the population growth rate <span class="math inline">\(n\)</span> as exogenous. However, households make deliberate choices about fertility and investment in children’s human capital. These decisions are central to understanding economic development and the demographic transition.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<p>We now extend the model to incorporate the <strong>quality-quantity trade-off</strong>: parents must decide between having more children (quantity) and investing more in each child’s education (quality). In this version, we abstract from capital accumulation to focus on human capital dynamics.</p>
+<section id="model-setup" class="level3" data-number="2.9.1">
+<h3 data-number="2.9.1" class="anchored" data-anchor-id="model-setup"><span class="header-section-number">2.9.1</span> Model setup</h3>
+<p><strong>Production:</strong> Output is produced using human capital and raw labor: <span id="eq-production_hk"><span class="math display">\[
+Y_t = H_t^{\alpha} L_t^{1-\alpha}
+\tag{2.16}\]</span></span></p>
+<p>where <span class="math inline">\(H_t\)</span> is the aggregate level of human capital in the economy and <span class="math inline">\(L_t\)</span> is raw labor input. The output per worker is: <span class="math display">\[
+y_t = y_t^{\alpha}.
+\]</span></p>
+<p>Since workers own both factors of production (their human capital and their raw labor), they receive the entire output as wages: <span id="eq-wage_hk"><span class="math display">\[
+w_t = h_t^{\alpha}.
+\tag{2.17}\]</span></span></p>
+<p>Alternatively, if we let <span class="math inline">\(L_t\)</span> be the raw labor (hours) supplied by workers and each supplies <span class="math inline">\(l_t\)</span> units, then <span class="math inline">\(L_t = N_t l_t\)</span> where <span class="math inline">\(N_t\)</span> is the number of workers. Similarly, if each worker has human capital <span class="math inline">\(h_t\)</span>, then <span class="math inline">\(H_t = h_t L_t = h_t N_t l_t\)</span>. Thus, total production is:</p>
+<p><span class="math display">\[
+Y_t = H_t^{\alpha} L_t^{1-\alpha} = (h_t N_t l_t)^{\alpha} (N_t l_t)^{1-\alpha} = h_t^{\alpha} (N_t l_t) = h_t^{\alpha} L_t.
+\]</span></p>
+<p>Thus, output per worker is <span class="math inline">\(y_t = h_t^{\alpha}\)</span>. Because workers own their human capital, they receive the entire output as wages: <span class="math inline">\(w_t = h_t^{\alpha}\)</span>.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If we wanted to have two factors of production (human capital and raw labor) paid separately, under a Cobb-Douglas production function, like <span class="math inline">\(Y = L^{\beta} H^{1-\beta}\)</span>, then the wage paid to raw labor would be:</p>
+<p><span class="math display">\[
+w_{raw} = \beta \left(\frac{Y}{L}\right).
+\]</span></p>
+<p>and the return to human capital would be:</p>
+<p><span class="math display">\[
+r_{human} = (1-\beta) \left(\frac{Y}{H}\right).
+\]</span></p>
+<p>Because a worker supplies 1 unit of raw labor and has <span class="math inline">\(h\)</span> units of human capital, their total income would be:</p>
+<p><span class="math display">\[\begin{align*}
+w =&amp; w_{raw} + r_{human} h = \beta \left(\frac{Y}{L}\right) + (1-\beta) \left(\frac{Y}{H}\right) h \\
+  =&amp; \beta \left(\frac{Y}{L}\right) + (1-\beta) \left(\frac{Y}{h L}\right) h = y .
+\end{align*}\]</span></p>
+</div>
+</div>
+<p><strong>Preferences:</strong> Households live for one period and care about their own consumption, the number of children, and the human capital of their children: <span id="eq-utility_hk"><span class="math display">\[
+U_t = \log(c_t) + \gamma \log(n_t e_{t+1}^{\beta})
+\tag{2.18}\]</span></span></p>
+<p>where:</p>
+<ul>
+<li><span class="math inline">\(c_t\)</span> is consumption,</li>
+<li><span class="math inline">\(n_t \geq 0\)</span> is the number of children,</li>
+<li><span class="math inline">\(e_{t+1} \geq 0\)</span> is the education (human capital) investment per child,</li>
+<li><span class="math inline">\(\gamma &gt; 0\)</span> measures the weight on children,</li>
+<li><span class="math inline">\(\beta \in (0,1)\)</span> captures the relative importance of child quality.</li>
+</ul>
+<p><strong>Budget constraint:</strong> Raising children requires time. Each child requires <span class="math inline">\(\phi &gt; 0\)</span> units of parental time, reducing time available for work. The household’s time endowment is normalized to 1, so time available for work is <span class="math inline">\(1 - \phi n_t\)</span>.</p>
+<p>Parents allocate their wage income between consumption and education investment: <span id="eq-budget_hk"><span class="math display">\[
+w_t(1 - \phi n_t) = c_t + n_t e_{t+1}.
+\tag{2.19}\]</span></span></p>
+<p><strong>Feasibility:</strong> We require <span class="math inline">\(\phi n_t \leq 1\)</span> to ensure non-negative labor supply.</p>
+</section>
+<section id="household-optimization" class="level3" data-number="2.9.2">
+<h3 data-number="2.9.2" class="anchored" data-anchor-id="household-optimization"><span class="header-section-number">2.9.2</span> Household optimization</h3>
+<p>Substituting the budget constraint into the utility function: <span class="math display">\[
+U_t = \log[w_t(1 - \phi n_t) - n_t e_{t+1}] + \gamma \log(n_t e_{t+1}^{\beta}).
+\]</span></p>
+<p>Using properties of logarithms: <span id="eq-utility_substituted"><span class="math display">\[
+U_t = \log[w_t(1 - \phi n_t) - n_t e_{t+1}] + \gamma \log(n_t) + \gamma \beta \log(e_{t+1}).
+\tag{2.20}\]</span></span></p>
+<p><strong>First-order conditions:</strong></p>
+<ol type="1">
+<li><p><strong>With respect to <span class="math inline">\(n_t\)</span>:</strong> <span id="eq-foc_n_hk"><span class="math display">\[
+\frac{w_t \phi + e_{t+1}}{w_t(1 - \phi n_t) - n_t e_{t+1}} = \frac{\gamma}{n_t}
+\tag{2.21}\]</span></span></p></li>
+<li><p><strong>With respect to <span class="math inline">\(e_{t+1}\)</span>:</strong> <span id="eq-foc_e_hk"><span class="math display">\[
+\frac{n_t}{w_t(1 - \phi n_t) - n_t e_{t+1}} = \frac{\gamma \beta}{e_{t+1}}
+\tag{2.22}\]</span></span></p></li>
+</ol>
+<p>Let <span class="math inline">\(c_t = w_t(1 - \phi n_t) - n_t e_{t+1}\)</span>. Then the FOCs become:</p>
+<p>From <a href="#eq-foc_n_hk" class="quarto-xref">Equation&nbsp;<span>2.21</span></a>: <span id="eq-foc_n_simplified"><span class="math display">\[
+\frac{w_t \phi + e_{t+1}}{c_t} = \frac{\gamma}{n_t} \implies \gamma c_t = n_t(w_t \phi + e_{t+1}).
+\tag{2.23}\]</span></span></p>
+<p>From <a href="#eq-foc_e_hk" class="quarto-xref">Equation&nbsp;<span>2.22</span></a>: <span id="eq-foc_e_simplified"><span class="math display">\[
+\frac{n_t}{c_t} = \frac{\gamma \beta}{e_{t+1}} \implies \gamma \beta c_t = n_t e_{t+1}.
+\tag{2.24}\]</span></span></p>
+</section>
+<section id="solving-for-fertility-and-education" class="level3" data-number="2.9.3">
+<h3 data-number="2.9.3" class="anchored" data-anchor-id="solving-for-fertility-and-education"><span class="header-section-number">2.9.3</span> Solving for fertility and education</h3>
+<p>From <a href="#eq-foc_n_simplified" class="quarto-xref">Equation&nbsp;<span>2.23</span></a> and <a href="#eq-foc_e_simplified" class="quarto-xref">Equation&nbsp;<span>2.24</span></a>, we can isolate the denominator <span class="math inline">\(c_t\)</span> in both.</p>
+<p>From <a href="#eq-foc_n_simplified" class="quarto-xref">Equation&nbsp;<span>2.23</span></a>: <span class="math display">\[
+c_t = \frac{n_t (w_t \phi + e_{t+1})}{\gamma}
+\]</span></p>
+<p>And from <a href="#eq-foc_e_simplified" class="quarto-xref">Equation&nbsp;<span>2.24</span></a>:</p>
+<p><span class="math display">\[
+c_t = \frac{n_t e_{t+1}}{\gamma \beta}
+\]</span></p>
+<p>Thus, equating these two expressions for <span class="math inline">\(c_t\)</span>:</p>
+<p><span class="math display">\[
+\frac{n_t (w_t \phi + e_{t+1})}{\gamma} = \frac{n_t e_{t+1}}{\gamma \beta}.
+\]</span></p>
+<p>Dividing both sides by <span class="math inline">\(n_t\)</span> (assuming <span class="math inline">\(n_t &gt; 0\)</span>, which will always be the case due to the logarithm in the utility) and multiplying through by <span class="math inline">\(\gamma\)</span>:</p>
+<p><span class="math display">\[
+w_t \phi + e_{t+1} = \frac{e_{t+1}}{\beta}.
+\]</span></p>
+<p>Rearranging:</p>
+<p><span class="math display">\[
+e_{t+1} = \frac{\beta \phi}{1 - \beta} w_t.
+\]</span></p>
+<p>Next, substituting <span class="math inline">\(e_{t+1}\)</span> back into either expression for <span class="math inline">\(c_t\)</span> (we use <a href="#eq-foc_e_simplified" class="quarto-xref">Equation&nbsp;<span>2.24</span></a>):</p>
+<p><span class="math display">\[
+\frac{w_t \phi + e_{t+1}}{w_t (1 - \phi n_t) - n_t e_{t+1}} = \frac{\gamma}{n_t}.
+\]</span></p>
+<p>Thus,</p>
+<p><span class="math display">\[
+\frac{w_t \phi +\frac{\beta w_t \phi}{1 - \beta}}{w_t (1 - \phi n_t) - n_t \frac{\beta w_t \phi}{1 - \beta}} = \frac{\gamma}{n_t}.
+\]</span></p>
+<p>Dividing numerator and denominator on the left-hand side by <span class="math inline">\(w_t\)</span>:</p>
+<p><span class="math display">\[
+\frac{\phi +\frac{\beta\phi}{1 - \beta}}{(1 - \phi n_t) - n_t \frac{\beta \phi}{1 - \beta}} = \frac{\gamma}{n_t}.
+\]</span></p>
+<p>Multiplying the left-hand side numerator and denominator by <span class="math inline">\((1 - \beta)\)</span> to clear the fraction:</p>
+<p><span class="math display">\[
+\frac{\phi (1-\beta) + \beta\phi}{(1 - \beta)(1 - \phi n_t) - n_t \beta \phi} = \frac{\gamma}{n_t}.
+\]</span></p>
+<p>Rearranging:</p>
+<p><span class="math display">\[
+\phi n = \gamma (1-\beta)(1-\phi n) - \gamma n \beta \phi.
+\]</span></p>
+<p>Collecting terms involving <span class="math inline">\(n_t\)</span> on the left-hand side and isolating <span class="math inline">\(n_t\)</span>:</p>
+<p><span class="math display">\[
+n_t = \frac{\gamma(1-\beta)}{(1+\gamma) \phi}.
+\]</span></p>
+<p><strong>Key results:</strong></p>
+<ol type="1">
+<li><p><strong>Fertility is constant:</strong> <span class="math inline">\(n_t = \frac{\gamma(1-\beta)}{(1+\gamma) \phi}\)</span> depends only on parameters.</p></li>
+<li><p><strong>Education is proportional to wages:</strong> <span class="math inline">\(e_{t+1} = \frac{\beta \phi}{1-\beta} w_t\)</span>. As the economy develops and wages rise, parents invest more in each child’s human capital.</p></li>
+</ol>
+</section>
+<section id="human-capital-dynamics" class="level3" data-number="2.9.4">
+<h3 data-number="2.9.4" class="anchored" data-anchor-id="human-capital-dynamics"><span class="header-section-number">2.9.4</span> Human capital dynamics</h3>
+<p>Since wages equal <span class="math inline">\(w_t = h_t^{\alpha}\)</span> and human capital equals the education received in the previous period (<span class="math inline">\(h_t = e_t\)</span>), we have: <span id="eq-hk_dynamics"><span class="math display">\[
+e_{t+1} = \frac{\beta \phi}{1-\beta} h_t^{\alpha}.
+\tag{2.25}\]</span></span></p>
+<p>This is a first-order difference equation in education/human capital. In the next period: <span id="eq-hk_evolution"><span class="math display">\[
+h_{t+1} = e_{t+1} = \frac{\beta \phi}{1-\beta} h_t^{\alpha}.
+\tag{2.26}\]</span></span></p>
+<p>Let <span class="math inline">\(A = \frac{\beta \phi}{1-\beta}\)</span>. Then: <span id="eq-hk_simple"><span class="math display">\[
+h_{t+1} = A h_t^{\alpha}.
+\tag{2.27}\]</span></span></p>
+<p><strong>Steady state:</strong> At steady state, <span class="math inline">\(h_{t+1} = h_t = h^*\)</span>: <span id="eq-hk_ss"><span class="math display">\[
+h^* = A (h^*)^{\alpha} \implies (h^*)^{1-\alpha} = A \implies h^* = A^{\frac{1}{1-\alpha}}.
+\tag{2.28}\]</span></span></p>
+<p><strong>Stability:</strong> Deriving the dynamic equation <a href="#eq-hk_simple" class="quarto-xref">Equation&nbsp;<span>2.27</span></a> and evaluating at the steady state: <span class="math display">\[
+\frac{\partial h_{t+1}}{\partial h_t} = A \alpha h_t^{\alpha - 1}.
+\]</span></p>
+<p>At steady state: <span class="math display">\[
+\left. \frac{\partial h_{t+1}}{\partial h_t} \right|_{h_t = h^\star} = A \alpha (h^*)^{\alpha - 1} = A \alpha \cdot \frac{1}{A} = \alpha.
+\]</span></p>
+<p>Since <span class="math inline">\(\alpha \in (0,1)\)</span>, this converges to the steady state from any initial condition.</p>
+</section>
+<section id="gdp-per-worker-dynamics" class="level3" data-number="2.9.5">
+<h3 data-number="2.9.5" class="anchored" data-anchor-id="gdp-per-worker-dynamics"><span class="header-section-number">2.9.5</span> GDP per worker dynamics</h3>
+<p>Since <span class="math inline">\(y_t = h_t^{\alpha}\)</span>, GDP per worker evolves according to: <span id="eq-gdp_dynamics"><span class="math display">\[
+y_t = h_t^{\alpha} = \left( A h_{t-1}^{\alpha} \right)^{\alpha} = A^{\alpha} h_{t-1}^{\alpha^2}.
+\tag{2.29}\]</span></span></p>
+<p>More generally, from <span class="math inline">\(h_t = A h_{t-1}^{\alpha}\)</span>: <span class="math display">\[
+y_t = h_t^{\alpha}.
+\]</span></p>
+<p>At steady state: <span id="eq-gdp_ss"><span class="math display">\[
+y^\star = (h^\star)^{\alpha} = A^{\frac{\alpha}{1-\alpha}}.
+\tag{2.30}\]</span></span></p>
+<div id="cell-fig-hk-dynamics" class="cell" data-execution_count="7">
+<div class="cell-output cell-output-display">
+<div id="fig-hk-dynamics" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-hk-dynamics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="olg_files/figure-html/fig-hk-dynamics-output-1.png" width="1141" height="372" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-hk-dynamics-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.6: Human capital and GDP dynamics
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="discussion" class="level3" data-number="2.9.6">
+<h3 data-number="2.9.6" class="anchored" data-anchor-id="discussion"><span class="header-section-number">2.9.6</span> Discussion</h3>
+<p>This application illustrates how the OLG framework can be extended to analyze human capital accumulation through education choices:</p>
+<ol type="1">
+<li><p><strong>Endogenous growth:</strong> Unlike models with exogenous human capital, here education investments respond to wages, creating a feedback loop between human capital and productivity.</p></li>
+<li><p><strong>Quality-quantity trade-off:</strong> Parents optimally choose fertility <span class="math inline">\(n_t = \frac{\gamma(1-\beta)}{(1+\gamma) \phi}\)</span> and education per child <span class="math inline">\(e_{t+1} = \frac{\beta \phi w_t}{1-\beta}\)</span>. The parameter <span class="math inline">\(\beta\)</span> governs the relative importance of quality vs.&nbsp;quantity.</p></li>
+<li><p><strong>Convergence:</strong> The economy converges to a steady state level of human capital <span class="math inline">\(h^* = \left(\frac{\beta \phi}{1-\beta}\right)^{\frac{1}{1-\alpha}}\)</span> and GDP per worker <span class="math inline">\(y^* = (h^*)^{\alpha}\)</span>.</p></li>
+<li><p><strong>Policy implications:</strong> Policies that reduce the time cost of children (<span class="math inline">\(\phi\)</span>) or increase the value of education (<span class="math inline">\(\beta\)</span>) can raise long-run human capital and income levels.</p></li>
+</ol>
+<p>For further reading on these topics and empirical evidence, see the comprehensive survey by <span class="citation" data-cites="doepke_hannusch_kindermann_tertilt_2023">Doepke et al. (<a href="references.html#ref-doepke_hannusch_kindermann_tertilt_2023" role="doc-biblioref">2023</a>)</span>.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
+<div id="ref-De_la_Croix_2009" class="csl-entry" role="listitem">
+Croix, David de la, and Philippe Michel. 2009. <em>A Theory of Economic Growth</em>. Cambridge University Press.
+</div>
+<div id="ref-diamond_1965" class="csl-entry" role="listitem">
+Diamond, Peter A. 1965. <span>“National Debt in a Neoclassical Growth Model.”</span> <em>The American Economic Review</em> 55 (5): 1126–50. <a href="http://www.jstor.org/stable/1809231">http://www.jstor.org/stable/1809231</a>.
+</div>
+<div id="ref-doepke_hannusch_kindermann_tertilt_2023" class="csl-entry" role="listitem">
+Doepke, Matthias, Anne Hannusch, Fabian Kindermann, and Michèle Tertilt. 2023. <span>“The Economics of Fertility: A New Era.”</span> <em>Handbook of the Economics of the Family</em> 1: 151–254.
+</div>
+</div>
+</section>
+</section>
+<section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p>Other set-ups are possible within the OLG framework. These can include more periods, individuals may accumulate human capital when young, endogenous labor supply, etc.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>For a comprehensive review of the economics of fertility and family economics, see <span class="citation" data-cites="doepke_hannusch_kindermann_tertilt_2023">Doepke et al. (<a href="references.html#ref-doepke_hannusch_kindermann_tertilt_2023" role="doc-biblioref">2023</a>)</span>.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./index.html" class="pagination-link" aria-label="The OLG Model">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">The OLG Model</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./de_la_croix_dottori.html" class="pagination-link" aria-label="de la Croix and Dottori (2008)">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">de la Croix and Dottori (2008)</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
